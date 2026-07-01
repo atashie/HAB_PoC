@@ -1,0 +1,304 @@
+{
+  "_meta": {
+    "what": "Operational freshwater cyanoHAB monitoring/forecasting TOOLS a user can access today. Each attribute traces to a source dossier key in ../../Research/_sources/ (resolves in ../../Research/REFERENCES.md). 'n/r' = not reported by the sources (never guessed).",
+    "scope": "Freshwater cyanobacteria only. Where a parent program also covers marine HABs, the row is scoped to its freshwater component and flagged (marine_parent).",
+    "quality_tiers": {
+      "established-operational": "Deployed public product with peer-reviewed AND out-of-sample validation + a baseline.",
+      "operational-unbenchmarked": "Deployed/public but no skill metric stated in the corpus.",
+      "vendor-self-report": "Commercial; validation claimed but no disclosed baseline or peer review.",
+      "research-grade": "Peer-reviewed model with reported skill; not an operational public product."
+    },
+    "org_types": [
+      "federal",
+      "state-local",
+      "private",
+      "academic",
+      "ngo",
+      "intl-govt"
+    ],
+    "model_types": [
+      "empirical-RS",
+      "statistical-ML",
+      "mechanistic",
+      "in-situ-sampling"
+    ],
+    "generated": "2026-07-01",
+    "fields_note": "coverage = country/region/state served; spatial_res_m = spatial resolution in metres (or 'point (in-situ)'/'n/r'). Added 2026-07-01 for the forecast-tools table.",
+    "method_vs_data_note": "model_type is the METHOD (how it turns data into output). 'Data fusion' is NOT a method — it is a DATA STRATEGY (combining multiple sources), recorded in data_strategy, and is carried out BY a statistical/ML or mechanistic method. (The models slide keeps algorithm and data-signal as separate axes; this mirrors that.)"
+  },
+  "tools": [
+    {
+      "id": "cyan",
+      "name": "EPA CyAN / CyANWeb",
+      "org": "US EPA (with NASA, NOAA, USGS)",
+      "org_type": "federal",
+      "model_type": "empirical-RS",
+      "horizon": "nowcast (current bloom extent)",
+      "refresh": "daily + 7-day max-value composites",
+      "spatial_res": "~300 m (Sentinel-3 OLCI); resolves 2,000+ larger lakes",
+      "access": "free",
+      "year": "2015",
+      "quality_tier": "established-operational",
+      "quality_basis": "Operational; Cyanobacteria Index validated 84% accuracy / 87% precision / 90% recall vs combined toxin+cell ground truth [ACAD-045]; 60%/69% true-positive vs state events/advisories [ACAD-006]",
+      "water_scope": "freshwater",
+      "keys": [
+        "FED-008",
+        "FED-009",
+        "FED-010",
+        "FED-048",
+        "ACAD-045",
+        "ACAD-006"
+      ],
+      "note": "The spectral backbone of US freshwater HAB monitoring. Detects biomass presence, NOT toxin identity/level; blind to sub-pixel small lakes and nearshore scums.",
+      "coverage": "USA (CONUS + Alaska; 2,000+ lakes)",
+      "spatial_res_m": "300 m"
+    },
+    {
+      "id": "epa7day",
+      "name": "EPA experimental 7-day cyanoHAB forecast",
+      "org": "US EPA",
+      "org_type": "federal",
+      "model_type": "statistical-ML",
+      "horizon": "forecast (7-day)",
+      "refresh": "weekly",
+      "spatial_res": "~300 m; 2,000+ lakes",
+      "access": "free",
+      "year": "2024 (beta)",
+      "quality_tier": "established-operational",
+      "quality_basis": "Underlying model peer-reviewed & tested on a fully out-of-sample year (2021): 90% accuracy, AUC 0.95, but only 49% precision (overpredicts — health-protective bias) [ACAD-050]",
+      "water_scope": "freshwater",
+      "keys": [
+        "FED-060",
+        "FED-012",
+        "FED-016",
+        "FED-017",
+        "ACAD-050"
+      ],
+      "note": "SAME SYSTEM as research model M1 (Slide 2): the operational product IS the Bayesian/INLA fusion model. Counted once here as a product, once there as a model.",
+      "coverage": "USA (2,000+ lakes, CONUS)",
+      "spatial_res_m": "300 m",
+      "data_strategy": "multi-source fusion (satellite CI + weather + lake morphology)"
+    },
+    {
+      "id": "noaa_erie",
+      "name": "NOAA Lake Erie HAB Forecast + bulletin",
+      "org": "NOAA NCCOS / GLERL",
+      "org_type": "federal",
+      "model_type": "mechanistic",
+      "horizon": "nowcast + ≥ 96-hr (~4-day) bloom-position forecast + seasonal severity outlook",
+      "refresh": "twice-weekly bulletins (bloom season)",
+      "spatial_res": "hydrodynamic model grid + satellite imagery",
+      "access": "free",
+      "year": "~2008 (3-D sub-surface model added 2020)",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Long-running operational product; no accuracy/skill figure stated anywhere in the corpus (n/r). Underlying transport models compared vs satellite bloom fields [ACAD-024]",
+      "water_scope": "freshwater",
+      "keys": [
+        "FED-024",
+        "FED-025",
+        "FED-064",
+        "ACAD-024",
+        "ACAD-051"
+      ],
+      "note": "Couples a hydrodynamic model with satellite imagery + particle transport. Product side of research model M9.",
+      "coverage": "USA (Lake Erie)",
+      "spatial_res_m": "300 m (satellite input)",
+      "data_strategy": "multi-source fusion (satellite imagery + hydrodynamic physics)"
+    },
+    {
+      "id": "noaa_habms",
+      "name": "NOAA HAB Monitoring System",
+      "org": "NOAA NCCOS",
+      "org_type": "federal",
+      "model_type": "empirical-RS",
+      "horizon": "nowcast / near-real-time",
+      "refresh": "n/r",
+      "spatial_res": "n/r",
+      "access": "free",
+      "year": "n/r",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Operational monitoring/short-term products; no skill metric in corpus",
+      "water_scope": "freshwater component (marine_parent)",
+      "keys": [
+        "FED-061"
+      ],
+      "note": "Parent program covers 13 water bodies incl. coastal/estuarine; scoped here to its freshwater component (marine excluded per scope).",
+      "coverage": "USA (multiple lakes/estuaries)",
+      "spatial_res_m": "n/r"
+    },
+    {
+      "id": "fl_dep",
+      "name": "Florida DEP Algal Bloom Dashboard",
+      "org": "Florida Dept. of Environmental Protection",
+      "org_type": "state-local",
+      "model_type": "in-situ-sampling",
+      "horizon": "nowcast (current sampled status)",
+      "refresh": "~weekly / as-sampled",
+      "spatial_res": "point / sampling-site",
+      "access": "free",
+      "year": "n/r",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Sampling + citizen-report dashboard; not a predictive model (no skill metric)",
+      "water_scope": "freshwater component (marine_parent)",
+      "keys": [
+        "SLG-001",
+        "SLG-007"
+      ],
+      "note": "Parent dashboard prominently covers marine red tide (Karenia brevis); scoped here to its freshwater cyanoHAB component.",
+      "coverage": "USA (Florida)",
+      "spatial_res_m": "point (in-situ)"
+    },
+    {
+      "id": "ny_nyhabs",
+      "name": "NY NYHABS notifications & map",
+      "org": "NY State Dept. of Environmental Conservation",
+      "org_type": "state-local",
+      "model_type": "in-situ-sampling",
+      "horizon": "nowcast (current advisories)",
+      "refresh": "as-reported",
+      "spatial_res": "point / sampling-site",
+      "access": "free",
+      "year": "2019",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Citizen-science + agency reporting/mapping; not predictive",
+      "water_scope": "freshwater",
+      "keys": [
+        "SLG-003"
+      ],
+      "note": "Crowdsourced 'Know it, Avoid it, Report it' model — a design reference for an accessible field tool.",
+      "coverage": "USA (New York)",
+      "spatial_res_m": "point (in-situ)"
+    },
+    {
+      "id": "ca_swamp",
+      "name": "California SWAMP FHAB + satellite screening",
+      "org": "California State Water Resources Control Board",
+      "org_type": "state-local",
+      "model_type": "empirical-RS",
+      "horizon": "nowcast (screening + advisories)",
+      "refresh": "n/r",
+      "spatial_res": "satellite screening + point sampling",
+      "access": "free",
+      "year": "~2014 (program)",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Statewide program pairing satellite remote screening for larger waterbodies with ambient monitoring; no skill metric in corpus",
+      "water_scope": "freshwater",
+      "keys": [
+        "SLG-012",
+        "SLG-006"
+      ],
+      "note": "One of the few state programs explicitly fusing a remote-sensing screen with in-situ monitoring.",
+      "coverage": "USA (California)",
+      "spatial_res_m": "satellite + point"
+    },
+    {
+      "id": "oh_hab",
+      "name": "Ohio HAB response (Lake Erie region)",
+      "org": "Ohio EPA / Ohio Dept. of Health",
+      "org_type": "state-local",
+      "model_type": "in-situ-sampling",
+      "horizon": "nowcast (advisories)",
+      "refresh": "as-sampled",
+      "spatial_res": "point / public-water-system intake",
+      "access": "free",
+      "year": "2016",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Mature state advisory program implementing federal cyanotoxin thresholds; satellite-imagery-supported; not predictive",
+      "water_scope": "freshwater",
+      "keys": [
+        "SLG-004",
+        "SLG-005"
+      ],
+      "note": "Among the most mature state HAB advisory frameworks; directly relevant to Lake Erie.",
+      "coverage": "USA (Ohio; Lake Erie region)",
+      "spatial_res_m": "point (in-situ)"
+    },
+    {
+      "id": "ut_or_adv",
+      "name": "Utah / Oregon recreational advisory systems",
+      "org": "Utah DEQ/DHHS; Oregon Health Authority",
+      "org_type": "state-local",
+      "model_type": "in-situ-sampling",
+      "horizon": "nowcast (current advisories)",
+      "refresh": "as-sampled (seasonal)",
+      "spatial_res": "point / waterbody",
+      "access": "free",
+      "year": "n/r",
+      "quality_tier": "operational-unbenchmarked",
+      "quality_basis": "Toxin-confirmed tiered advisories; explicitly note only a fraction of waterbodies are monitored [SLG-008]",
+      "water_scope": "freshwater",
+      "keys": [
+        "SLG-002",
+        "SLG-008"
+      ],
+      "note": "Candid coverage-gap statements ('when in doubt, stay out') illustrate where satellite screening could complement sparse in-situ monitoring.",
+      "coverage": "USA (Utah, Oregon)",
+      "spatial_res_m": "point (in-situ)"
+    },
+    {
+      "id": "bluegreen",
+      "name": "BlueGreen BGi Water Health Intelligence",
+      "org": "BlueGreen Water Technologies",
+      "org_type": "private",
+      "model_type": "statistical-ML",
+      "horizon": "forecast (vendor-stated 'proactive', days–weeks)",
+      "refresh": "n/r",
+      "spatial_res": "n/r",
+      "access": "paid",
+      "year": "2025",
+      "quality_tier": "vendor-self-report",
+      "quality_basis": "Commercial platform fusing satellite + in-situ + weather (5+ yr); no disclosed validation or baseline",
+      "water_scope": "freshwater",
+      "keys": [
+        "PVT-001"
+      ],
+      "note": "Closest commercial analog to a satellite+in-situ fusion tool; claims unverified in corpus.",
+      "coverage": "Global (commercial)",
+      "spatial_res_m": "n/r",
+      "data_strategy": "multi-source fusion (satellite + in-situ + weather)",
+      "method_note": "Vendor analytics platform; underlying algorithm undisclosed — classified statistical/ML as the best-supported assumption. Its multi-source FUSION is a data strategy, recorded in data_strategy (not a method)."
+    },
+    {
+      "id": "cyanolakes",
+      "name": "CyanoLakes",
+      "org": "CyanoLakes (Pty) Ltd",
+      "org_type": "private",
+      "model_type": "empirical-RS",
+      "horizon": "nowcast + forecast (vendor-stated up to 3 weeks; '80%/70% at 1-/2-week lead')",
+      "refresh": "n/r",
+      "spatial_res": "~300 m / 10 m (Sentinel)",
+      "access": "freemium (free + paid tiers)",
+      "year": "n/r (~2014)",
+      "quality_tier": "vendor-self-report",
+      "quality_basis": "Commercial satellite subscription; accuracy figures are vendor self-report with no disclosed baseline",
+      "water_scope": "freshwater",
+      "keys": [
+        "PVT-003"
+      ],
+      "note": "Private-sector analog to the CyAN signal, with a paid forecast claim.",
+      "coverage": "Global (commercial)",
+      "spatial_res_m": "10-300 m"
+    },
+    {
+      "id": "eomap",
+      "name": "EOMAP water-quality service",
+      "org": "EOMAP GmbH & Co. KG",
+      "org_type": "private",
+      "model_type": "empirical-RS",
+      "horizon": "nowcast / hindcast",
+      "refresh": "n/r",
+      "spatial_res": "~10 m",
+      "access": "paid (proprietary)",
+      "year": "n/r",
+      "quality_tier": "vendor-self-report",
+      "quality_basis": "Physics-based commercial retrieval (chlorophyll/CDOM/turbidity); no disclosed HAB-specific validation in corpus",
+      "water_scope": "freshwater (also coastal)",
+      "keys": [
+        "PVT-008"
+      ],
+      "note": "Physics-based (non-ML) commercial alternative for water-quality retrieval.",
+      "coverage": "Global (commercial)",
+      "spatial_res_m": "~10 m"
+    }
+  ]
+}

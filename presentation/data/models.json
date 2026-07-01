@@ -1,0 +1,420 @@
+{
+  "_meta": {
+    "what": "Cutting-edge / representative freshwater cyanoHAB research MODELS. Each attribute traces to a source dossier key (resolves in ../../Research/REFERENCES.md). 'n/r' = not reported.",
+    "emphasis": "Features/datasets used and which are MOST important. IMPORTANT CAVEAT: feature 'importance' here = how often a feature is a model's top-ranked predictor, a correlational, model-internal finding — NOT a causal driver. Water temperature is frequently top-ranked but is often a seasonal-cycle proxy; some models rank phycocyanin or nutrients/geolocation first.",
+    "feature_figure_rule": "The feature-frequency figure counts a model toward a feature only if features_reported=true AND the feature is in its 'features' list (from its dossier). Review/surrogate/sensor-benchmark entries and abstract-only entries with no stated feature list have features_reported=false and are excluded from the count (N stated on the figure).",
+    "feature_vocab": [
+      "water_temperature",
+      "nutrients",
+      "precipitation",
+      "wind_mixing",
+      "satellite_reflectance",
+      "prior_bloom_state",
+      "hydrology_flow",
+      "pH",
+      "dissolved_oxygen",
+      "lake_morphology",
+      "geolocation",
+      "phycocyanin_signal"
+    ],
+    "generated": "2026-07-01",
+    "model_universe": "15 inventory entries = 14 nowcasting/forecasting MODELS (is_model=true) + 1 literature review (M13/ACAD-068, is_model=false, shown as context). Of the 14 models, 10 report an environmental feature list (features_reported=true).",
+    "feature_classes": {
+      "weather": [
+        "precipitation",
+        "wind_mixing"
+      ],
+      "hydroclimate": [
+        "water_temperature",
+        "hydrology_flow"
+      ],
+      "static": [
+        "geolocation",
+        "lake_morphology"
+      ],
+      "earth-obs / bloom signal": [
+        "satellite_reflectance",
+        "prior_bloom_state",
+        "phycocyanin_signal"
+      ],
+      "chemistry": [
+        "pH",
+        "dissolved_oxygen",
+        "nutrients"
+      ]
+    },
+    "phycocyanin_note": "phycocyanin_signal = the cyanobacteria-specific blue pigment's optical signal; used in satellite EO (abs ~620nm) but in ACAD-037 it is an IN-SITU fluorescence-probe measurement (a direct bloom-abundance proxy). Grouped with the bloom-signal class."
+  },
+  "models": [
+    {
+      "id": "M1",
+      "name": "Bayesian spatiotemporal fusion (INLA), 2,192 US lakes",
+      "org_type": "federal / academic",
+      "algorithm": "Bayesian hierarchical spatiotemporal (INLA)",
+      "target": "bloom occurrence probability",
+      "spatial": "2,192 US lakes (~300 m pixels)",
+      "temporal": "7-day forecast, weekly",
+      "mode": "forecast",
+      "data_signal": "fusion",
+      "features": [
+        "satellite_reflectance",
+        "water_temperature",
+        "precipitation",
+        "lake_morphology"
+      ],
+      "top_features": [
+        "satellite_reflectance",
+        "water_temperature"
+      ],
+      "features_reported": true,
+      "skill": "Out-of-sample 2021: 90% acc, AUC 0.95, 88% sens, 91% spec, but 49% precision (overpredicts). Note: source has an unresolved internal sample-count discrepancy",
+      "keys": [
+        "ACAD-050",
+        "FED-017"
+      ],
+      "note": "The operational EPA 7-day forecast IS this model (also Slide-1 tool).",
+      "is_model": true
+    },
+    {
+      "id": "M2",
+      "name": "R-INLA spatial (SPDE) + AR1, 103 Florida lakes",
+      "org_type": "academic",
+      "algorithm": "Bayesian spatiotemporal (R-INLA, SPDE + AR1)",
+      "target": "microcystin exceedance probability",
+      "spatial": "103 FL lakes",
+      "temporal": "1-week-ahead forecast",
+      "mode": "forecast",
+      "data_signal": "fusion",
+      "features": [
+        "satellite_reflectance",
+        "prior_bloom_state"
+      ],
+      "top_features": [
+        "prior_bloom_state"
+      ],
+      "features_reported": true,
+      "skill": "AUC 0.95 holdout -> 0.89 true 1-week forecast; spatial structure gave the largest fit gain; AR1 alpha=0.90 (strong persistence)",
+      "keys": [
+        "ACAD-092",
+        "ACAD-093"
+      ],
+      "note": "Shows persistence (prior state) is a large part of near-term skill; authors don't expect accuracy beyond ~2 weeks.",
+      "is_model": true
+    },
+    {
+      "id": "M3",
+      "name": "Gradient-boosting + attention CNN-LSTM ensemble",
+      "org_type": "academic",
+      "algorithm": "XGBoost/LightGBM/CatBoost + attention CNN-LSTM",
+      "target": "cyanobacteria cell density",
+      "spatial": "single river weir (Nakdong, Korea)",
+      "temporal": "weekly forecast",
+      "mode": "forecast",
+      "data_signal": "in-situ",
+      "features": [
+        "water_temperature",
+        "pH",
+        "dissolved_oxygen",
+        "nutrients",
+        "precipitation"
+      ],
+      "top_features": [
+        "water_temperature"
+      ],
+      "features_reported": true,
+      "skill": "R^2 = 0.89-0.93",
+      "keys": [
+        "ACAD-043"
+      ],
+      "note": "In-situ only (no satellite); Korea.",
+      "is_model": true
+    },
+    {
+      "id": "M4",
+      "name": "Explainable LSTM + SHAP, 102 sites",
+      "org_type": "academic",
+      "algorithm": "LSTM (deep learning) + SHAP interpretation",
+      "target": "chlorophyll / bloom",
+      "spatial": "102 sites, China",
+      "temporal": "forecast",
+      "mode": "forecast",
+      "data_signal": "in-situ + weather",
+      "features": [
+        "water_temperature",
+        "nutrients",
+        "precipitation"
+      ],
+      "top_features": [
+        "water_temperature"
+      ],
+      "features_reported": true,
+      "skill": "mean NSE 0.48 (median 0.52), beat 8 ML baselines; but 30% of sites 'poor' (NSE<0.3) - highly site-dependent",
+      "keys": [
+        "ACAD-048"
+      ],
+      "note": "Water temperature = top SHAP driver nationally (11.7%). In-situ + ERA5 reanalysis; no satellite.",
+      "is_model": true
+    },
+    {
+      "id": "M5",
+      "name": "Interpretable CatBoost + SHAP, Yilong Lake",
+      "org_type": "academic",
+      "algorithm": "CatBoost (gradient boosting) + SHAP",
+      "target": "bloom likelihood",
+      "spatial": "Yilong Lake, China",
+      "temporal": "prediction (near-term)",
+      "mode": "forecast",
+      "data_signal": "in-situ",
+      "features": [
+        "nutrients",
+        "water_temperature"
+      ],
+      "top_features": [
+        "nutrients"
+      ],
+      "features_reported": true,
+      "skill": "AUC = 0.948 (best of 10 models compared)",
+      "keys": [
+        "ACAD-060"
+      ],
+      "note": "Abstract-level detail; full feature list only partially reported.",
+      "is_model": true
+    },
+    {
+      "id": "M6",
+      "name": "Intelligible ML early-warning, Lake Müggelsee",
+      "org_type": "academic",
+      "algorithm": "XGBoost + evolutionary rule-learner (HEA) vs LSTM",
+      "target": "bloom occurrence (early warning)",
+      "spatial": "Lake Müggelsee, Germany",
+      "temporal": "5-day forecast, high-frequency in-situ",
+      "mode": "forecast",
+      "data_signal": "in-situ",
+      "features": [
+        "phycocyanin_signal",
+        "water_temperature",
+        "nutrients"
+      ],
+      "top_features": [
+        "phycocyanin_signal"
+      ],
+      "features_reported": true,
+      "skill": "Tree/rule models generalized; LSTM failed to generalize on daily data. NOTE: under a published Comment/rebuttal [ACAD-110]",
+      "keys": [
+        "ACAD-037"
+      ],
+      "note": "EXCEPTION to 'temperature is #1': phycocyanin ranks first here (temperature 2nd). Illustrates feature importance is model- and site-specific.",
+      "is_model": true
+    },
+    {
+      "id": "M7",
+      "name": "ANN vs SVM reservoir alert-level",
+      "org_type": "academic",
+      "algorithm": "Artificial neural network / support vector machine",
+      "target": "algae alert level",
+      "spatial": "S. Korean drinking-water reservoir",
+      "temporal": "forecast (6-7 day = efficient sampling interval, not lead time)",
+      "mode": "forecast",
+      "data_signal": "in-situ",
+      "features": [],
+      "top_features": [],
+      "features_reported": false,
+      "skill": "ANN outperformed SVM (abstract-only; no metric)",
+      "keys": [
+        "ACAD-001"
+      ],
+      "note": "Specific input variables not reported in accessible abstract (features n/r).",
+      "is_model": true
+    },
+    {
+      "id": "M8",
+      "name": "RF + boosting ensemble vs CNN/ANN",
+      "org_type": "academic",
+      "algorithm": "Random forest + boosting ensemble",
+      "target": "alert level",
+      "spatial": "Korean reservoir",
+      "temporal": "forecast",
+      "mode": "forecast",
+      "data_signal": "in-situ",
+      "features": [],
+      "top_features": [],
+      "features_reported": false,
+      "skill": "78.7% test accuracy; beat 1D-CNN and ANN",
+      "keys": [
+        "ACAD-117"
+      ],
+      "note": "~9 yr met/hydro/water-quality data; specific top features n/r.",
+      "is_model": true
+    },
+    {
+      "id": "M9",
+      "name": "NOAA Lake Erie 3-D transport (mechanistic)",
+      "org_type": "federal",
+      "algorithm": "3-D Lagrangian / Eulerian / property-carrying particle transport",
+      "target": "Microcystis bloom position/biomass",
+      "spatial": "Lake Erie (hydrodynamic grid)",
+      "temporal": "≥96-hr forecast",
+      "mode": "forecast",
+      "data_signal": "fusion",
+      "features": [
+        "satellite_reflectance",
+        "wind_mixing",
+        "hydrology_flow"
+      ],
+      "top_features": [
+        "wind_mixing",
+        "hydrology_flow"
+      ],
+      "features_reported": true,
+      "skill": "Transport formulations compared vs satellite bloom fields over multiple seasons",
+      "keys": [
+        "ACAD-024",
+        "ACAD-051",
+        "ACAD-100",
+        "FED-042"
+      ],
+      "note": "Satellite-initialized + physics. Companion toxin model [ACAD-051] forecasts 7-day microcystin TRANSPORT/fate (not early warning). Research side of NOAA Erie product.",
+      "is_model": true
+    },
+    {
+      "id": "M10",
+      "name": "Coupled hydrodynamic-algal biomass, Lake Taihu",
+      "org_type": "academic",
+      "algorithm": "Coupled hydrodynamic-biogeochemical (mechanistic)",
+      "target": "bloom biomass",
+      "spatial": "Lake Taihu, China",
+      "temporal": "short-term forecast",
+      "mode": "forecast",
+      "data_signal": "in-situ + physical",
+      "features": [
+        "nutrients",
+        "hydrology_flow",
+        "wind_mixing"
+      ],
+      "top_features": [],
+      "features_reported": true,
+      "skill": "n/r (operational forecast system)",
+      "keys": [
+        "ACAD-052"
+      ],
+      "note": "Requires an 18-buoy monitoring network - data-intensive.",
+      "is_model": true
+    },
+    {
+      "id": "M11",
+      "name": "Multi-source fusion severity classifier (Sentinel-2 + DEM + climate)",
+      "org_type": "academic",
+      "algorithm": "Random forest + LightGBM + multi-input neural net (ensemble)",
+      "target": "bloom severity class (5-class)",
+      "spatial": "small US inland waters (Sentinel-2, 10 m)",
+      "temporal": "≤20-day image window (nowcast/classification)",
+      "mode": "nowcast",
+      "data_signal": "fusion",
+      "features": [
+        "satellite_reflectance",
+        "geolocation",
+        "water_temperature",
+        "precipitation",
+        "wind_mixing",
+        "lake_morphology"
+      ],
+      "top_features": [
+        "geolocation"
+      ],
+      "features_reported": true,
+      "skill": "6th of field (RA-RMSE 0.81 vs 0.76 winner); 62.8% exact-class, 89.5% severe-case accuracy",
+      "keys": [
+        "ACAD-008"
+      ],
+      "note": "TOP feature = longitude/geolocation, a regionally-learned, explicitly NON-transferable correlational proxy (NOT a driver). Temp/precip/wind are contributing climate inputs. Simpler segmentation-based entries beat this fused ensemble.",
+      "is_model": true
+    },
+    {
+      "id": "M12",
+      "name": "WASP eutrophication process model, Lake Winnipeg",
+      "org_type": "academic",
+      "algorithm": "WASP mechanistic eutrophication (process-based)",
+      "target": "phytoplankton biomass / water quality (scenario)",
+      "spatial": "Lake Winnipeg, Canada",
+      "temporal": "scenario simulation (not short-term forecast)",
+      "mode": "simulation",
+      "data_signal": "in-situ + loads",
+      "features": [
+        "nutrients",
+        "hydrology_flow"
+      ],
+      "top_features": [
+        "nutrients"
+      ],
+      "features_reported": true,
+      "skill": "calibration/validation study",
+      "keys": [
+        "ACAD-108"
+      ],
+      "note": "Represents N & P cycling + 3 phytoplankton groups (incl. N-fixers). Process-based, not data-driven.",
+      "is_model": true
+    },
+    {
+      "id": "M13",
+      "name": "Frontier synthesis: 168-study cross-review (1997-2025)",
+      "org_type": "academic",
+      "algorithm": "review (all model families)",
+      "target": "n/a (survey)",
+      "spatial": "global",
+      "temporal": "n/a",
+      "mode": "review",
+      "data_signal": "n/a",
+      "features": [],
+      "top_features": [],
+      "features_reported": false,
+      "skill": "Reports deep learning (esp. LSTM) strongest median (R^2 0.89, >90% acc in many apps); hybrids highest accuracy; flags limited transferability across water bodies",
+      "keys": [
+        "ACAD-068"
+      ],
+      "note": "Best single 'state of the frontier' anchor; do not treat any single in-study accuracy as a general benchmark.",
+      "is_model": false
+    },
+    {
+      "id": "M14",
+      "name": "Deep-learning surrogate of a process model (hybrid)",
+      "org_type": "academic",
+      "algorithm": "modular deep-learning surrogate emulating Delft3D",
+      "target": "process-model emulation (biomass)",
+      "spatial": "n/r",
+      "temporal": "forecast",
+      "mode": "forecast",
+      "data_signal": "hybrid",
+      "features": [],
+      "top_features": [],
+      "features_reported": false,
+      "skill": "NSE 0.644 -> 0.930 vs the process model it emulates",
+      "keys": [
+        "ACAD-104"
+      ],
+      "note": "Emerging hybrid strategy: ML surrogate makes an expensive mechanistic model fast.",
+      "is_model": true
+    },
+    {
+      "id": "M15",
+      "name": "NASA PACE hyperspectral cyanoHAB validation",
+      "org_type": "federal",
+      "algorithm": "hyperspectral retrieval (Ocean Color Instrument)",
+      "target": "cyanobacteria cell density + chlorophyll-a",
+      "spatial": "3 US lakes (~1 km)",
+      "temporal": "nowcast (detection benchmark)",
+      "mode": "nowcast",
+      "data_signal": "satellite",
+      "features": [
+        "satellite_reflectance"
+      ],
+      "top_features": [],
+      "features_reported": false,
+      "skill": "R^2 0.84 vs operational CyAN benchmark; ~halved chl-a retrieval error (NRMSE 21.6% vs 38.7%)",
+      "keys": [
+        "ACAD-106"
+      ],
+      "note": "Cutting-edge SENSOR (2026); detection/retrieval benchmark, not a forecast model. Excluded from feature-frequency count.",
+      "is_model": true
+    }
+  ]
+}
