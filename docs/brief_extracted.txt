@@ -1,0 +1,212 @@
+# SePRO Lead Data Scientist Finalist Case Study — verbatim text extraction
+# Source (authoritative): SePRO/SePRO_Lead_Data_Scientist_Presentation_Brief.pdf
+# Extracted with pdfplumber; text-only convenience copy.
+
+===== PAGE 1 =====
+Lead Data Scientist Finalist Case Study
+SePRO Corporation | Water-Resource & Plant-Protection Science
+Why we're asking you to do this
+You're a finalist for the Lead Data Scientist role at SePRO. This will be SePRO's first data
+science hire, so it's a foundational role: the person who builds the analytics capability, sets the
+standards, and earns trust across R&D, Commercial, and Operations. This case study is the
+capstone of our process and your chance to show how you'd do exactly that.
+We'd rather see how you think and build than ask you to grind through several exercises, so this
+is the one prepared deliverable in our process. You'll present it in person to the team you'd be
+working with. What we hope to see is your judgment, your rigor, your scientific credibility, and
+your instinct as a builder.
+Time and scope: Please plan for a focused effort, in the range of 6 to 8 hours across the week
+we've given you. We've kept this to a single deliverable on purpose. A crisp design and a thin
+working slice will tell us far more than an exhaustive build, so once you've shown your thinking,
+please stop. Feel free to use whatever public data, libraries, and AI or coding tools you'd
+normally reach for.
+Presentation: You'll present in person to a cross-functional panel that spans scientific, platform,
+commercial, and operations stakeholders. Plan for roughly 45 minutes to present, followed by
+about 30 minutes of discussion and Q&A.
+About the role, briefly
+The Lead Data Scientist builds SePRO's data science capability across three areas:
+strengthening how research and field-trial data connect to real-world efficacy; building
+diagnostic and prescriptive tools that turn data into recommendations; and bringing predictive
+analytics to commercial and operational decisions. Across all three, the throughline is the same:
+turn complex, fragmented data into decision-ready insight that holds up to scrutiny, and put it
+into tools people actually use.
+This case study centers on the diagnostic and prescriptive part of that mandate, where
+SePRO's science, data, and customer impact meet most directly.
+The challenge
+Design an approach to a water-health diagnostic and treatment recommendation
+that fuses remote-sensing or satellite signals with in-situ aquatic data, is
+explainable and defensible enough to support a product claim, and could
+realistically be built into a tool SePRO and its customers would use. Show your
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 1
+
+===== PAGE 2 =====
+thinking with real public data, build a small working version, and sketch how you
+would stand it up and scale it.
+The most natural problem to anchor on is the harmful algal bloom (HAB): cyanobacteria blooms
+that threaten drinking-water sources, recreational waters, and aquatic ecosystems, and that
+SePRO's customers need to get ahead of. Public satellite programs such as EPA, NASA, and
+NOAA's CyAN detect bloom signals from space, and public in-situ networks report the water
+chemistry underneath. Fusing the two is exactly the kind of spectral-signal-meets-aquatic-
+science diagnostic this role is built around, and the operational truth is that timing and targeting
+matter most: a recommendation made two weeks early, in the right water body, is worth far
+more than a perfect one made after a bloom is visible.
+You have latitude in how you frame the specific question. A few directions that work well:
+• Risk scoring or forecasting: which water bodies are most likely to bloom in the coming
+weeks, and what drives that risk?
+• Early-warning detection: flagging when a water body's combined satellite and in-situ
+readings depart from its normal pattern.
+• Driver and treatment analysis: which conditions best explain bloom activity, and what
+that implies for where, when, and how to intervene.
+If you'd rather anchor on an adjacent SePRO-relevant water or plant problem, you're welcome
+to. We'd just ask that you share your reasoning, still follow the structure below, and keep the
+spectral-plus-aquatic, claims-defensible spirit of the prompt.
+What to deliver
+Part A: The analysis
+Take the problem through the full data science arc, with your reasoning visible along the way.
+Our team thinks about this in roughly these stages: define, acquire, prepare, explore, model,
+evaluate, communicate, and deploy. You don't need to belabor each, but we'd love to see the
+judgment behind them.
+1. Define it. The specific question you chose and the decision it informs. Who uses the
+answer, and what do they do differently because of it?
+2. Acquire and integrate. Bring together at least two distinct public sources, ideally pairing a
+remote-sensing or satellite signal with in-situ aquatic or weather data. Tell us where it
+came from and how you accessed it.
+3. Inspect and prepare. Show us the data's rough edges, such as gaps, biases, sampling
+artifacts, and detection limits, and how you handled them. Thoughtful data handling
+matters to us as much as a clean result.
+4. Explore. The patterns and relationships you found, and what they ruled in or out. A little
+care around correlation versus causation goes a long way.
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 2
+
+===== PAGE 3 =====
+5. Model. A method suited to the question. Fit and rigor count for more than sophistication,
+and a well-validated simple model is very welcome. Be clear about your assumptions, how
+you validated, and where data leakage or overfitting could creep in.
+6. Evaluate. How you know the result is meaningful, the metrics that fit the decision, and
+how confident you are.
+7. Land the “so what.” Translate it into a recommendation a SePRO user or customer could
+act on, with a clear-eyed view of where it applies and where it reaches its limits.
+A word on defensibility: because SePRO's recommendations can sit behind product claims,
+we care a lot about whether your approach is explainable and auditable. Wherever you can,
+show why the model says what it says, not just what it predicts.
+Part B: The tool
+Build a small, working, interactive tool that puts your analysis in the hands of a non-technical
+user. Picture a SePRO field or technical specialist, or a customer, who needs the answer rather
+than the code.
+• It should run and be ready to demo live. Running locally or sharing a link are both fine.
+• It should draw directly on your Part A analysis, so the two tell one story. A user might
+select a water body or set of conditions and get back a risk readout, a recommended
+action window, or the key drivers.
+• Please use the stack and tools you'd naturally reach for, whether that's Streamlit, Gradio,
+a notebook-as-app, a plain web page, a React app, or anything else that lets you move
+quickly. AI-assisted development is very welcome. We're looking for builder instinct, not a
+finished product. (Please note: SePRO will reimburse you up to $150 of token usage
+for the tool build should you wish to vibe code with your preferred LLM.)
+Part C: From prototype to platform
+Finally, step back and tell us how you'd make this real. A short, practical view (a few slides or a
+sketch) on:
+• Data architecture: how you'd connect and scale the inputs, given that SePRO's data lives
+across research, field-trial, lab, sensor, satellite, distributor, and commercial systems.
+• Production and monitoring: how you'd deploy it, keep it explainable and auditable, and
+watch for model drift over time.
+• The first 6 to 12 months: where you'd start if you were standing up this capability at
+SePRO, and what you'd build first.
+How to present
+Pitch your story to a mixed audience: the panel spans scientific, platform, commercial, and
+operations stakeholders, so part of what we're watching is how you translate between the
+domain, the data work, and the business. Plan for roughly 45 minutes to present, then about 30
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 3
+
+===== PAGE 4 =====
+minutes of discussion and Q&A. With your consent, we’ll use AI tools to record the session so
+the full panel can refer back later and focus on your presentation instead of note-taking.
+A structure we'd suggest, which you're welcome to adapt:
+1. Problem and decision (about 5 min): what you chose to explore and why it matters to
+SePRO.
+2. Data and approach (about 10 min): your sources, what proved difficult, and your key
+preparation and modeling choices.
+3. Findings, validation, and defensibility (about 10 min): what you learned, how confident
+you are, and why it would hold up behind a claim.
+4. Live tool demo (about 8 min): show it working, and talk us through your build choices.
+5. From prototype to platform (about 8 min): architecture, production, monitoring, and
+your first 6 to 12 months.
+6. Recommendation and discussion (remaining time, then Q&A): the action you'd
+suggest, and a conversation with the panel.
+Please touch on all six areas, and feel free to shift the time around as your story calls for.
+The technical deep dive
+After your presentation, we'll set up a shorter, recorded follow-up: a relaxed, screen-sharing
+walkthrough session where you take us through your code, your data sources, and the
+analytical choices behind your results. Think of it as a conversation about how you built things
+rather than a test. With your consent, we’ll record the session so the full panel can review your
+technical depth, since not everyone can join live.
+A few ground rules
+• Public data only. Please use only public data, and steer clear of anything proprietary,
+confidential, or personal, or anything you don't have the right to use. Using LLM’s to curate
+data is also fine, and you are welcome to synthesize some data if it helps backstop your
+work in some meaningful way that couldn’t be achieved via public real data sources. A
+citation for each source is all we need.
+• AI and coding tools are welcome. Use them the way you normally would, and feel free
+to tell us what you used and where your own judgment shaped the result. We're hiring an
+analytic builder, and using good tools well is part of that.
+• Reasonable assumptions are fine. Where SePRO-specific detail would help and you
+don't have it, make a sensible assumption and tell us what you assumed.
+• Tell us about your trade-offs. If you took shortcuts or set things aside for time, we'd like
+to hear about them. Noting a known limitation reflects well on you.
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 4
+
+===== PAGE 5 =====
+• Please send materials ahead of your presentation: your slides (or equivalent) and a short
+list of the data sources you used, with links, for our reference. You'll demo the work
+yourself during the session.
+Suggested public data sources
+These are entirely optional, offered simply so you don't spend your budget hunting for data:
+• EPA Cyanobacteria Assessment Network (CyAN): satellite-derived cyanobacteria
+detection for U.S. lakes (the spectral signal), including weekly cyanoHAB forecasting
+research and links to the underlying Sentinel-3 and Landsat imagery.
+https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan
+• Water Quality Portal: in-situ water chemistry from USGS, EPA, and more than 400
+agencies, covering nutrients, chlorophyll-a, temperature, and more.
+https://www.waterqualitydata.us/
+• USGS National Water Information System (NWIS): streamflow, gage, and water data,
+with dataRetrieval packages available for R and Python. https://waterdata.usgs.gov/
+• EPA National Aquatic Resource Surveys / National Lakes Assessment: standardized
+lake condition and nutrient data. https://www.epa.gov/national-aquatic-resource-surveys
+• NOAA / National Weather Service: temperature, precipitation, and climate data to pair
+with water data. https://www.ncei.noaa.gov/
+• State environmental and DEQ lake-monitoring programs: many publish open bloom
+advisories and monitoring data.
+What we're hoping to see
+We'll be paying attention to how sharply you framed the problem and tied it to a real decision,
+the judgment in how you'd source and architect the data, the rigor and honesty of your modeling
+and validation, whether your approach is explainable and defensible enough to stand behind a
+claim, the builder instinct behind your tool and your plan to operationalize it, and how clearly you
+carry a mixed-audience panel and defend your choices. Because this is SePRO's first data
+science hire, we weight the ability to build production-grade tools and to engage credibly with
+the science especially highly.
+There's no single right answer here. We're far more interested in how you reason and build your
+way through an open problem than in a polished result.
+A few questions you might have
+Do I need a background in aquatics or HABs? Not at all. Part of the role is reasoning about
+an unfamiliar domain and earning scientific credibility quickly, so that's part of what we hope to
+see. A little reading tends to go a long way.
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 5
+
+===== PAGE 6 =====
+Can I use a model, library, or AI tool I haven't tried before? Absolutely. Learning quickly and
+using tools well is a positive sign for us.
+What if my analysis doesn't turn up a strong result? That's common and completely fine. A
+clear account of what the data does and doesn't support is a great outcome, and it's exactly the
+kind of honesty that holds up behind a claim.
+How polished should the tool be? Function comes well before beauty. A thin proof-of-concept
+that does something useful is exactly what we're hoping for.
+How much should I invest in Part C? Keep it short and practical. We want your instincts on
+architecture, production, and sequencing, not a full architecture document.
+Will I need to send you my code or data? No. You keep full ownership of everything you
+create. You'll walk us through your code and methods live in a recorded screen-share after your
+presentation, and all we ask in advance is a list of the data sources you used.
+How should I split my time? Lean toward the analysis and the thinking. The tool and the
+prototype-to-platform view should each be a focused, lightweight slice that supports the story.
+If anything is unclear before your session, just reply to this email and we'll be glad to help. We're
+looking forward to seeing how you think.
+Warm regards,
+The SePRO Hiring Team
+SePRO Corporation | Lead Data Scientist Finalist Case Study Page 6

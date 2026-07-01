@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Environment / secrets
+.env
+.env.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data — never commit large or raw pulls; cache locally, re-fetch via scripts
+data/raw/
+data/cache/
+*.parquet
+*.nc
+*.tif
+*.tiff
+
+# Notebook/tool outputs
+*.log
