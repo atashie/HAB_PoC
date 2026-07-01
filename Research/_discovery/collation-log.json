@@ -1,0 +1,62 @@
+{
+  "basic-science": {
+    "category": "basic-science",
+    "status": "ok",
+    "overall": "pass",
+    "subtopics": 6,
+    "keys_cited": 70,
+    "keys_not_cited": 4,
+    "contested_points": 6,
+    "unsupported_synthesis": 0,
+    "bad_keys": 0,
+    "readme_chars": 36939
+  },
+  "treatment-and-management": {
+    "category": "treatment-and-management",
+    "status": "ok",
+    "overall": "pass",
+    "subtopics": 6,
+    "keys_cited": 60,
+    "keys_not_cited": 8,
+    "contested_points": 8,
+    "unsupported_synthesis": 1,
+    "bad_keys": 0,
+    "readme_chars": 36558
+  },
+  "remote-sensing": {
+    "category": "remote-sensing",
+    "status": "ok",
+    "overall": "flag",
+    "subtopics": 7,
+    "keys_cited": 43,
+    "keys_not_cited": 0,
+    "contested_points": 7,
+    "unsupported_synthesis": 1,
+    "bad_keys": 0,
+    "readme_chars": 40153
+  },
+  "in-situ-and-weather-data": {
+    "category": "in-situ-and-weather-data",
+    "status": "ok",
+    "overall": "pass",
+    "subtopics": 9,
+    "keys_cited": 46,
+    "keys_not_cited": 0,
+    "contested_points": 7,
+    "unsupported_synthesis": 0,
+    "bad_keys": 0,
+    "readme_chars": 40453
+  },
+  "models-and-methods": {
+    "category": "models-and-methods",
+    "status": "ok",
+    "overall": "flag",
+    "subtopics": 16,
+    "keys_cited": 43,
+    "keys_not_cited": 0,
+    "contested_points": 8,
+    "unsupported_synthesis": 2,
+    "bad_keys": 0,
+    "readme_chars": 42204
+  }
+}

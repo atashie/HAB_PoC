@@ -1,0 +1,86 @@
+---
+key: FED-032
+title: Recommendations for Cyanobacteria and Cyanotoxin Monitoring in Recreational Waters, Revision 1 (EPA 823-R-19-001)
+authors_or_org: U.S. Environmental Protection Agency (EPA), Office of Water
+year: 2019
+url: https://www.epa.gov/sites/default/files/2019-09/documents/recommend-cyano-rec-water-2019-update.pdf
+access_date: 2026-07-01
+tier: FED
+source_type: U.S. federal government guidance/recommendations document (non-binding, EPA Office of Water)
+categories: [basic-science, in-situ-and-weather-data, treatment-and-management]
+relevance: High
+full_text_access: full
+fetch_status: ok
+review_severity: clean
+review_overall: pass
+---
+
+# Recommendations for Cyanobacteria and Cyanotoxin Monitoring in Recreational Waters, Revision 1 (EPA 823-R-19-001)
+
+**What it is.** A September 2019 EPA Office of Water guidance document (EPA 823-R-19-001, Revision 1) that lays out a voluntary, non-binding four-step framework — assess vulnerability/prioritize, observe for blooms, monitor for cyanotoxins, follow up — to help recreational-water managers and public health officials decide whether a bloom or cyanotoxins pose a health risk and whether to issue an advisory or closure. It includes EPA's 2019 recommended recreational-water criteria for microcystins and cylindrospermopsin, WHO (2003) guidance tiers, and a review of visual, analytical, and satellite-based monitoring tools with their stated strengths and weaknesses.
+
+## Key claims
+*(each tagged with its blind-review verdict)*
+
+- **[✓ verified]** EPA frames the document around a voluntary four-step conceptual monitoring program: (1) assess vulnerability and prioritize waters, (2) observe for blooms throughout the season, (3) monitor for cyanotoxins, (4) follow up.
+  - *evidence:* Stated as the document's organizing framework in the Foreword; each step is then given its own section later in the document. (Foreword, p. 1)
+  - *quote:* "Step 1: Assess vulnerability of the water body to HABs and prioritize recreational waters for monitoring"
+- **[✓ verified]** EPA explicitly states the document's recommendations are not legally binding, do not create legal rights, and do not substitute for Clean Water Act provisions or EPA regulations.
+  - *evidence:* Stated directly in the Disclaimer section, framing the entire document as voluntary guidance rather than enforceable rule. (Disclaimer, p. 1)
+  - *quote:* "These monitoring recommendations do not impose legally binding requirements on the U.S. Environmental Protection Agency (EPA), states, tribes, or the public."
+- **[✓ verified]** EPA (citing Loftin et al., 2008) characterizes 'extremely high' cyanobacterial bloom cell densities as being above roughly 20,000 to 100,000 cells/mL.
+  - *evidence:* Given as background in the Step 1 discussion of what a bloom is, sourced to a cited reference rather than presented as an EPA-derived figure. (Step 1 intro (Section 1), p. 3)
+  - *quote:* "extremely high densities are typically defined as greater than 20,000 to 100,000 cells per mL) (Loftin et al., 2008)"
+- **[✓ verified]** The source associates exposure to elevated cyanobacterial cell densities with dermal effects (skin rash), ear/eye infections, and gastrointestinal distress, stated as an association rather than a described causal mechanism.
+  - *evidence:* Presented as background health-effects context in Step 1, without describing a dose-response or mechanistic pathway. (Step 1 intro (Section 1), p. 3)
+  - *quote:* "Exposure to elevated cyanobacterial cells densities has been associated to dermal effects such as skin rashes, ear and eye infections and gastrointestinal distress."
+- **[✓ verified]** Table 1 sets EPA's 2019 recommended recreational-water cyanotoxin criteria at two magnitude thresholds (8 µg/L and 15 µg/L, one for microcystins and one for total cylindrospermopsin), assessed over 10-day periods, with a frequency trigger of more than 3 'excursions' per recreational season recurring across more than one year indicating the water is not supporting recreational use.
+  - *evidence:* Table 1 body and footnotes a/b define the magnitude, duration, frequency, and excursion terms; states/tribes may adopt either or both toxin recommendations. (Table 1 and footnotes a, b, p. 4)
+  - *quote:* "An excursion is defined as a ten-day assessment period with an observed toxin concentration higher than the criteria magnitude."
+- **[✓ verified]** WHO (2003) guidance (Table 2), used by several U.S. states for swimming advisories, defines four relative-probability tiers from 'Low' (<20,000 cyanobacteria cells/mL, <10 µg/L chlorophyll a, <10 µg/L microcystin) to 'Very High' (>10,000,000 cells/mL, >5,000 µg/L chlorophyll a, >2,000 µg/L microcystin); the microcystin values in this table were derived from the cell-density values rather than measured independently.
+  - *evidence:* Table 2 plus its footnote clarify that the microcystin column is not an independent measurement but a derivation from the cyanobacteria cell-density column — relevant to treating the two columns as independent lines of evidence. (Table 2 and footnote a, p. 4)
+  - *quote:* "WHO (2003) derived the microcystin concentrations from the cyanobacterial cell density levels."
+- **[✓ verified]** Visual/field observation cannot confirm whether cyanotoxins are present: unsafe toxin levels can occur with no visible bloom, so only laboratory testing of the water confirms cyanotoxin presence.
+  - *evidence:* Stated twice in the document (Step 2 introduction and Section 2.1 on field/visual identification) as a limitation of relying on visual bloom indicators alone. (Step 2 intro, p. 5–6)
+  - *quote:* "toxins can be present at unsafe levels without a visual bloom, and the presence of cyanotoxins can only be confirmed through testing of the water."
+- **[✓ verified]** Cyanotoxin production is not a fixed or predictable property of a bloom — it is highly variable and depends on environmental conditions and which cyanobacterial species is present.
+  - *evidence:* Stated directly as a caveat immediately following the discussion of visual bloom indicators, underscoring why bloom presence/density is not a reliable stand-in for toxin risk. (Step 2 intro, p. 6)
+  - *quote:* "Cyanotoxin production by cyanobacteria is highly variable and strongly influenced by the environmental conditions as well as the specific cyanobacteria causing the bloom."
+- **[✓ verified]** NOAA satellite imagery is already used operationally to help predict blooms in western Lake Erie and the Gulf of Mexico, and the NOAA/EPA/USGS/NASA CyAN partnership aims to build a nationwide early-warning cyanobacteria indicator from satellite data — but the source states this approach is unsuitable for all waterbodies because typical satellite resolution and revisit frequency are limited.
+  - *evidence:* Described in Section 2.2 ('Predictive and Remote Monitoring Tools') as both a capability (operational use in named water bodies, CyAN's early-warning goal) and an explicitly stated technical limitation on resolution and cadence. (Section 2.2 'Predictive and Remote Monitoring Tools', p. 7–8)
+  - *quote:* "Satellite imagery may not be appropriate for all waterbodies because most satellites support resolutions (e.g., 30 m – 1 km) that are adequate only for moderate- to larger-sized lakes and usually at a frequency of no more than once a week."
+- **[✓ verified]** Across the reviewed cyanotoxin detection methods (ELISA, HPLC with MS/UV-PDA, PPIA, LC/MS, qPCR/microarrays, microscopy), the source states no single method is best: chromatographic methods are accurate but congener-limited (may underestimate total risk), PCR-based methods are rapid but may overestimate risk if toxin genes are present without toxin release, and ELISA kits (the most commonly used field method) lack congener specificity and can cross-react.
+  - *evidence:* Stated in Step 3/Section 3.1, citing comparative method studies (Gaget 2017; Loftin 2008), with specific over-/under-estimation failure modes attributed to each method class. (Step 3, Section 3.1 'Methods', p. 9–10)
+  - *quote:* "there is no single, best method. Each method has its strengths and weaknesses."
+- **[✓ verified]** As an example of risk-based monitoring prioritization, Utah's environmental agency identified 16 'sensitive' water bodies for close swim-season monitoring, selected using designated use, proximity to population, number of recreational users, and history of blooms.
+  - *evidence:* Given as a real state-program example illustrating how EPA's Step 1 prioritization criteria can be applied in practice. (Section 1.2, p. 5)
+  - *quote:* "the Utah Department of Environmental Quality identified 16 sensitive water bodies to monitor closely throughout the swim season"
+
+## Data / numbers
+- "Extremely high" cyanobacterial bloom density (Step 1, citing Loftin et al., 2008): >20,000 to 100,000 cells/mL — no error bar given, stated as a typical definitional threshold rather than a measured statistic.
+- Table 1 (p.4) EPA 2019 recommended recreational-water cyanotoxin magnitude thresholds: 8 µg/L and 15 µg/L, one value for microcystins and one for total cylindrospermopsin. NOTE: the pre-extracted table's column/row layout is garbled by PDF-table extraction and does not unambiguously indicate which numeric value pairs with which toxin (see fetch_notes) — reported here without asserting the pairing.
+- Table 1 duration criterion: evaluated within each 10-day assessment period across the recreational season ("1 in 10-day assessment period").
+- Table 1 frequency/'excursion' criterion: not more than 3 excursions per recreational season; an excursion = a 10-day assessment period whose observed toxin concentration exceeds the criteria magnitude; the water is flagged as not supporting recreational use if that >3-excursion pattern recurs in more than one year.
+- Table 2, WHO (2003) 4-tier guidance — cyanobacteria (cells/mL) | chlorophyll-a (µg/L) | microcystin (µg/L): Low <20,000 | <10 | <10; Moderate 20,000–100,000 | 10–50 | 10–20; High >100,000–10,000,000 | 50–5,000 | 20–2,000; Very High >10,000,000 | >5,000 | >2,000. Footnote states the microcystin column was derived from the cell-density column, not independently measured.
+- Satellite remote-sensing constraints stated by the source (Section 2.2): spatial resolution ~30 m–1 km (suitable only for moderate-to-large lakes); temporal revisit frequency no more than about once per week.
+- Utah risk-based prioritization example: 16 'sensitive' water bodies selected for close swim-season monitoring (Section 1.2, p.5).
+
+## Methods
+This is a recommendations/guidance document, not a primary research study; it surveys and evaluates monitoring approaches used by others rather than presenting new data or a new model. It covers: (1) visual/field identification (jar or float test, shoreline inspection, crowdsourced apps like BloomWatch) — usable as an initial screen, but the source states it cannot confirm or rule out cyanotoxin presence since toxins can occur without a visible bloom; (2) satellite/remote sensing (NOAA imagery; the NOAA/EPA/USGS/NASA CyAN partnership) — used operationally to help predict blooms in western Lake Erie and the Gulf of Mexico and intended to become a nationwide early-warning system, but stated to be limited to moderate-to-large lakes by ~30 m–1 km resolution and roughly weekly revisit frequency; (3) cell-count/biomass/pigment indicators (microscopy counts, biovolume, chlorophyll-a, phycocyanin, nutrient levels) — framed as an inexpensive 'weight of evidence' interim step, not a substitute for direct toxin testing, because toxin production is 'highly variable' and not tied to cell density alone; and (4) direct analytical cyanotoxin methods (ELISA, HPLC with MS/UV-PDA, PPIA, LC/MS, qPCR/microarrays) — the source states no single method is best: chromatographic methods are accurate but congener-limited (may underestimate total risk), qPCR is rapid but may overestimate risk (detects toxin-producing genes even when toxin is not produced/released), and ELISA (the most commonly used field method) lacks congener specificity and can cross-react.
+
+## Stated limitations
+EPA states throughout that these are voluntary, non-binding recommendations — not a regulation, conferring no legal rights, and not superseding Clean Water Act provisions; states/tribes may adopt one, both, or neither toxin criterion. Visual/field bloom observation cannot confirm toxin presence or absence ("can only be confirmed through testing of the water"). Cyanotoxin production is described as "highly variable" and dependent on environmental conditions and species, decoupling it from bloom visibility or density. Satellite remote sensing is explicitly stated as inappropriate for some waterbodies given typical 30 m–1 km resolution and no-better-than-weekly revisit frequency, limiting it to moderate/large lakes. No single cyanotoxin detection method is best for all purposes: chromatographic methods may underestimate total risk (congener-limited), qPCR/gene-based methods may overestimate risk, and ELISA kits "have limitations in specificity and are not congener specific," with possible cross-reactivity. WHO's Table 2 microcystin action levels are derived from cyanobacterial cell-density data rather than independently measured.
+
+## Tensions with other findings
+This source repeatedly cautions that bloom visibility, cell density, and biomass are only an "interim step" or "weight of evidence" input and not a substitute for direct toxin measurement, since toxin production is "highly variable" and can occur (or not) independent of cell density/visible bloom — this complicates any HAB framing (including remote-sensing- or chlorophyll-based early-warning products) that treats a satellite-derived cyanobacteria/chlorophyll index as a direct proxy for toxin risk rather than a screening signal. The source's own stated satellite-resolution (~30 m–1 km) and cadence (≤weekly) limits are in tension with treating CyAN-type satellite products as adequate for small lakes or as a fine-grained (sub-weekly) early-warning signal. WHO's Table 2 microcystin action levels are explicitly derived from the cell-density column rather than independently measured, which complicates citing the WHO cell-count and WHO microcystin thresholds as two independent corroborating lines of evidence — they are the same underlying figure expressed twice. Finally, the stated absence of a single "best" toxin-detection method (with qPCR prone to overestimating and chromatographic/ELISA methods prone to underestimating or missing congeners) complicates literature comparisons across studies that rely on only one detection method as if it fully captured toxin risk.
+
+## Blind adversarial review
+- **Overall:** pass
+- **Unsupported claims:** 0
+- **Reviewer notes:** All 11 claims are supported by the source text. Every numerical claim (cell densities, toxin thresholds, geographic locations) is verifiable in the provided excerpt. The analyst accurately captured both explicit factual statements and nuanced qualifications (e.g., correctly noting that microcystin values in WHO Table 2 are derived rather than measured independently, and that satellite capabilities have documented limitations). No hallucinated numbers detected. No significant caveats dropped."
+
+## Provenance
+- Canonical URL: https://www.epa.gov/sites/default/files/2019-09/documents/recommend-cyano-rec-water-2019-update.pdf
+- Access date: 2026-07-01
+- Full-text access: full | Fetch status: ok
+- Fetch notes: Worked entirely from the pre-extracted, windowed source text (head + 7 keyword windows, ~38,917 chars total document); no WebFetch of the PDF was performed, per instructions. No WebSearch was performed either, since all bibliographic metadata (title, EPA document number 823-R-19-001, "Revision 1," publication month/year September 2019, issuing office "Office of Water") is already stated explicitly within the provided text — nothing was missing to confirm. Two extraction-quality caveats affected claim-writing: (1) Table 1's column headers ("Total"/"Cylindrospermopsin"/"Microcystins"/"Magnitude Duration Frequency"/"Magnitude"/"(µg/L)"/"(µg/L)") are visibly reflowed/interleaved by the PDF-to-text conversion, so although the two magnitude values "8" and "15" are genuinely present in the source, their toxin-to-value pairing cannot be confirmed from the extracted text alone — this is flagged rather than resolved by outside knowledge, per the rule against using prior/training knowledge of this source. (2) A few bare "..." markers in the supplied text mark stitch points between separately extracted keyword-windows (confirmed by one such marker splitting the word "Or...ganization" mid-word); any sentence spanning such a marker (e.g., the CyAN early-warning goal sentence) was treated as potentially missing text in between and was paraphrased rather than quoted verbatim, while sentences on either side of, but not spanning, such markers were quoted directly since they were substantively continuous. full_text_access is reported as "full" per the closest available schema enum, though coverage is technically windowed/partial (head + 7 keyword-targeted excerpts) rather than the complete document text.

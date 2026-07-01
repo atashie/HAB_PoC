@@ -1,0 +1,1755 @@
+United States Office of Water EPA- 820R15101
+Environmental Mail Code 4304T June 2015
+Protection Agency
+Drinking Water Health Advisory
+for the Cyanobacterial Toxin
+Cylindrospermopsin
+Drinking Water Health Advisory
+for the Cyanobacterial Toxin Cylindrospermopsin
+Prepared by:
+U.S. Environmental Protection Agency
+Office of Water (4304T)
+Health and Ecological Criteria Division
+Washington, DC 20460
+EPA Document Number: 820R15101
+Date: June 15, 2015
+ACKNOWLEDGMENTS
+This document was prepared by U.S. EPA Scientists Lesley V. D’Anglada, Dr.P.H. (lead) and
+Jamie Strong, Ph.D. Health and Ecological Criteria Division, Office of Science and Technology,
+Office of Water. EPA gratefully acknowledges the valuable contributions from Health Canada’s
+Water and Air Quality Bureau, in developing the Analytical Methods and Treatment
+Technologies information included in this document.
+This Health Advisory was provided for review and comments were received from staff in the
+following U.S. EPA Program Offices:
+U.S. EPA Office of Ground Water and Drinking Water
+U.S. EPA Office of Science and Technology
+U.S. EPA Office of Research and Development
+U.S. EPA Office of Children’s Health Protection
+U.S. EPA Office of General Counsel
+This Health Advisory was provided for review and comments were received from the following
+other federal and health agencies:
+Health Canada
+U.S. Department of Health and Human Services, Centers for Disease Control and
+Prevention
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 i
+TABLE OF CONTENTS
+ACKNOWLEDGMENTS.....................................................................................................................I
+TABLE OF CONTENTS .................................................................................................................... II
+LIST OF TABLES..............................................................................................................................IV
+LIST OF FIGURES ............................................................................................................................IV
+ABBREVIATIONS AND ACRONYMS .......................................................................................... V
+EXECUTIVE SUMMARY.................................................................................................................. 1
+1.0 INTRODUCTION AND BACKGROUND ........................................................................... 3
+1.1 Current Criteria, Guidance and Standards .......................................................................... 3
+2.0 PROBLEM FORMULATION ................................................................................................ 5
+2.1 Cyanobacteria and Production of Cylindrospermopsin ..................................................... 5
+2.2 Physical and Chemical Properties ....................................................................................... 5
+2.3 Sources and Occurrence ...................................................................................................... 7
+2.3.1 Occurrence in Surface Water ...................................................................................... 8
+2.3.2 Occurrence in Drinking Water .................................................................................... 8
+2.4 Environmental Fate .............................................................................................................. 9
+2.4.1 Persistence .................................................................................................................... 9
+2.4.2 Mobility ........................................................................................................................ 9
+2.5 Nature of the Cylindrospermopsin Toxin ........................................................................... 9
+2.5.1 Toxicokinetics .............................................................................................................. 9
+2.5.2 Noncancer Health Effects Data ................................................................................. 10
+2.5.3 Mode of Action for Noncancer Health Effects ........................................................ 11
+2.5.4 Carcinogenicity Data ................................................................................................. 12
+2.6 Conceptual Model .............................................................................................................. 12
+2.6.1 Conceptual Model Diagram ...................................................................................... 15
+2.6.2 Factors Considered in the Conceptual Model for Cylindrospermopsin ................. 15
+2.7 Analysis Plan ...................................................................................................................... 16
+3.0 HEALTH EFFECTS ASSESSMENT .................................................................................. 19
+3.1 Dose-Response ................................................................................................................... 19
+3.1.1 Critical Study Selected .............................................................................................. 19
+3.1.2 Endpoint Selection ..................................................................................................... 22
+3.2 Ten-Day Health Advisory ................................................................................................. 23
+3.2.1 Bottle-fed Infants and Young Children of Pre-school Age ..................................... 23
+3.2.2 School-age Children through Adults ........................................................................ 24
+3.2.3 Uncertainty Factor Application................................................................................. 24
+4.0 RISK CHARACTERIZATION ............................................................................................ 26
+4.1 Studies Supporting Determination of Critical Study ....................................................... 26
+4.2 Study Duration ................................................................................................................... 26
+4.3 Allometric Scaling Approach ............................................................................................ 27
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 ii
+4.4 Uncertainty and Variability ............................................................................................... 27
+4.5 Susceptibility ...................................................................................................................... 28
+4.6 Distribution of Body Weight and Drinking Water Intake by Age .................................. 28
+4.7 Distribution of Potential Health Advisory Values by Age .............................................. 29
+5.0 ANALYTICAL METHODS ................................................................................................. 31
+6.0 TREATMENT TECHNOLOGIES ....................................................................................... 32
+6.1 Management and Mitigation of Cyanobacterial Blooms in Source Water..................... 32
+6.2 Drinking Water Treatment................................................................................................. 33
+6.2.1 Conventional Treatment for Cylindrospermopsin ................................................... 33
+6.2.2 Chemical Oxidation ................................................................................................... 34
+6.2.3 Ultraviolet Irradiation ................................................................................................ 35
+6.3 Point-of-Use (POU) Drinking Water Treatment Units .................................................... 35
+7.0 REFERENCES ....................................................................................................................... 36
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 iii
+LIST OF TABLES
+Table 1-1. International Guideline Values for Cylindrospermopsin ................................................ 4
+Table 1-2. State Guideline Values for Cylindrospermopsin .............................................................. 4
+Table 2-1. Chemical and Physical Properties of Cylindrospermopsin .............................................. 7
+Table 3-1. Kidney Weight Data from Oral Toxicity Study of Cylindrospermopsin Administered
+Daily over Eleven Weeks (Humpage and Falconer, 2002, 2003) ........................................... 21
+Table 3-2. Selected Clinical Chemistry, Hematology and Urinalysis Findings (Humpage and
+Falconer, 2002, 2003) ................................................................................................................ 21
+LIST OF FIGURES
+Figure 2-1. Structure of Cylindrospermopsin (de la Cruz et al., 2013) ............................................. 6
+Figure 2-2. Structurally Related Cylindrospermopsins (de la Cruz et al., 2013) ............................. 6
+Figure 2-3. Conceptual Model of Exposure Pathways to Cylindrospermopsin in Drinking Water
+..................................................................................................................................................... 14
+Figure 4-1. 90th Percentile Drinking Water Ingestion Rates by Age Group ................................... 29
+Figure 4-2. Ten-day Health Advisories for Cylindrospermopsin by Age Group ........................... 30
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 iv
+ABBREVIATIONS AND ACRONYMS
+BMD Benchmark Dose
+BMDL Benchmark Dose Level
+BW Body Weight
+CAS Chemical Abstracts Service
+CCL Contaminant Candidate List
+CWA Clean Water Act
+CYP450 Cytochrome P450
+DAF Dissolved Air Flotation
+DBP Disinfection By-Products
+DMSO Dimethylsulfoxide
+DNA Deoxyribonucleic Acid
+DWI Drinking Water Intake
+ELISA Enzyme Linked Immunosorbent Assay
+EPA U.S. Environmental Protection Agency
+g Gram
+GAC Granular Activated Carbon
+GFR Glomerular Filtration Rate
+HA Health Advisory
+HAB Harmful Algal Bloom
+HESD Health Effects Support Document
+HPLC High Performance Liquid Chromatography
+ICR Institute for Cancer Research
+i.p. Intraperitoneal
+kg Kilogram
+K Organic Carbon:Water Partition Coefficient
+oc
+K Octanol:Water Partition Coefficient
+ow
+L Liter
+LC Liquid Chromatography
+LCAT Lecithin Cholesterol Acyl Transferase
+LC-ESI/MS Liquid Chromatography Tandem Electrospray Ionization Mass
+Spectrometry
+LCMRL Lowest Concentration Method Reporting Limit
+LC-MS/MS Liquid Chromatography Tandem Mass Spectrometry
+LOAEL Lowest-Observed-Adverse-Effect Level
+MCH Mean Corpuscular Hemoglobin
+µg Microgram
+µm Micromole
+MNBNC Micronucleated Binucleated Cells
+mg Milligram
+mL Milliliter
+mmol Millimole
+MOA Mode of Action
+MWCO Molecular Weight Cut-off
+N Nitrogen
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 v
+N/A Not Applicable
+NARS National Aquatic Resource Surveys
+ng Nanogram
+NHANES National Health and Nutrition Examination Survey
+NLA National Lake Assessment
+NOAEL No-Observed-Adverse-Effect Level
+NOM Natural Organic Material
+OECD Organization for Economic Cooperation and Development
+P Phosphorus
+PAC Powdered Activated Carbon
+PDA Photodiode Array
+pg Picogram
+POU Point-of-Use
+RBC Red Blood Cell
+RfD Reference Dose
+SDWA Safe Drinking Water Act
+SHE Syrian Hamster Embryo
+SPE Solid Phase Extraction
+TOC Total Organic Carbon
+TOXLINE Toxicology Literature Online
+UF Uncertainty Factor
+USACE U.S. Army Corps of Engineers
+USGS U.S. Geological Survey
+UV Ultraviolet
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 vi
+EXECUTIVE SUMMARY
+Cylindrospermopsin is a toxin produced by a variety of cyanobacteria including:
+Cylindrospermopsis raciborskii (C. raciborskii), Aphanizomenon flos-aquae, Aphanizomenon
+gracile, Aphanizomenon ovalisporum, Umezakia natans, Anabaena bergii, Anabaena lapponica,
+Anabaena planctonica, Lyngbya wollei, Rhaphidiopsis curvata, and Rhaphidiopsis mediterranea.
+Many environmental factors such as the ratio of nitrogen to phosphorus, temperature,
+organic matter availability, light attenuation and pH play an important role in the development of
+cylindrospermopsin blooms, both in fresh and marine water systems. These species do not tend
+to form visible surface scums and the highest concentrations of cells occurs below the water
+surface. Cylindrospermopsin may be retained within the cell, but most of the time it is found in
+the water (extracellular) or attached to particulates present in the water.
+This Health Advisory (HA) for the cyanobacterial toxin cylindrospermopsin is focused
+on drinking water as the primary source of exposure. Exposure to cyanobacteria and their toxins
+may also occur by ingestion of toxin-contaminated food, including consumption of fish, and by
+inhalation and dermal contact during bathing or showering and during recreational activities in
+waterbodies with the toxins. While these types of exposures cannot be quantified at this time,
+they are assumed to contribute less to the total cyanotoxin exposures than ingestion of drinking
+water. Due to the seasonality of cyanobacterial blooms, exposures are not expected to be chronic.
+Limited animal studies demonstrate absorption of cylindrospermopsin from the intestinal
+tract primarily in the liver, but also in the kidney and spleen. Limited data are available on the
+metabolism of cylindrospermopsin, but evidence indicates that metabolism and toxicity are
+mediated by the hepatic cytochrome P450 (CYP450) enzyme system. The periacinar region of
+the liver, an area where substantial CYP450-mediated xenobiotic metabolism occurs, appears to
+be the main target of cylindrospermopsin toxicity and where cylindrospermopsin and its
+metabolites bind to proteins. The few studies evaluating elimination suggest that
+cylindrospermopsin is rapidly eliminated primarily in the urine, but also in feces.
+The main source of information on the toxicity of cylindrospermopsin in humans is from
+qualitative reports of a hepatoenteritis-like illness attributed to acute or short-term consumption
+of drinking water containing C. raciborskii. Symptoms reported include fever, headache,
+vomiting, bloody diarrhea, hepatomegaly, and kidney damage with loss of water, electrolytes and
+protein. No reliable data are available on the exposure levels of cylindrospermopsin that induced
+these effects.
+Based on oral and intraperitoneal (i.p.) studies in mice treated with purified
+cylindrospermopsin or extracts of C. raciborskii cells, the liver and kidneys appear to be the
+primary target organs for cylindrospermopsin toxicity.
+The U.S. Environmental Protection Agency (EPA) identified a study by Humpage and
+Falconer (2002, 2003) conducted on mice as the critical study used in the derivation of the
+reference dose (RfD) for cylindrospermopsin. The critical effects identified in the study
+areincreased kidney weight and decreased urinary protein. The NOAEL (No Observed Adverse
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 1
+Effect Level) was determined to be 30 μg/kg/day based on kidney toxicity. The total uncertainty
+factor (UF) applied to the NOAEL was 300. This was based on a UF of 10 for intraspecies
+variability, a UF of 10 for interspecies variability, and a UF of 3 (10½) to account for deficiencies
+in the database.
+EPA is issuing a Ten-day HA for cylindrospermopsin based on the Humpage and
+Falconer (2002, 2003) 11-week study. Studies of a duration of 7 days up to 30 days are typically
+used to derive Ten-day HAs. In this case, a subchronic study was determined to be suitable for
+the derivation of the HA. Although the duration of the Humpage and Falconer (2002, 2003)
+study is longer (77 days) than the studies typically used for the derivation of a Ten-day HA, the
+short-term studies available for cylindrospermopsin (Shaw et al., 2001; Reisner et al., 2004) are
+not suitable for quantification; however, effects observed in these studies are the same or similar
+to the Humpage and Falconer study (2002, 2003) and occur at similar doses.
+The short-term HA is consistent with the available data and most appropriately matches
+human exposure scenarios for cyanobacterial blooms in drinking water. Cyanobacterial blooms
+are usually seasonal, typically occurring from May through October. In the presence of algal cell
+pigments, photochemical degradation of cylindrospermopsin can occur rapidly, with reported
+half-lives of 1.5 to 3 hours. In the absence of pigments, however, there is little degradation. The
+biodegradation of cylindrospermopsin in natural water bodies is a complex process that can be
+influenced by many environmental factors, including concentration, water temperature and the
+presence of bacteria. Half-lives of 11 to 15 days and up to 8 weeks have been reported for
+cylindrospermopsin in surface waters. In addition, concentrations in finished drinking water can
+be reduced by drinking water treatment and management measures.
+The Ten-day HA value for bottle-fed infants and young children of pre-school age is 0.7
+µg/L and for school-age children through adults is 3 µg/L for cylindrospermopsin. The two
+advisory values use the same toxicity data (RfD) and represent differences in drinking water
+intake and body weight for different human life stages. The first advisory value is based on the
+summation of the time-weighted drinking water intake/body weight ratios for birth to < 12
+months of age (U.S. EPA’s Exposure Factors Handbook, 2011a). The second advisory value is
+based on the mean body weight and the 90th percentile drinking water consumption rate for
+adults age 21 and over (U.S. EPA’s Exposure Factors Handbook, 2011a), which is similar to that
+of school-aged children. Populations such as pregnant women and nursing mothers, the elderly,
+and immune-compromised individuals or those receiving dialysis treatment may be more
+susceptible than the general adult population to the health effects of cylindrospermopsin. As a
+precautionary measure, individuals that fall into these susceptible groups may want to consider
+following the recommendations for children pre-school age and younger. This HA is not a
+regulation; it is not legally enforceable; and it does not confer legal rights or impose legal
+obligations on any party.
+No epidemiological studies of the association of cylindrospermopsin and cancer are
+available. Also, no chronic cancer bioassays of purified cylindrospermopsin in animals were
+identified. Therefore, under the U.S. EPA’s (2005) Guidelines for Carcinogen Risk Assessment,
+there is inadequate information to assess carcinogenic potential of cylindrospermopsin.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 2
+1.0 INTRODUCTION AND BACKGROUND
+EPA developed the non-regulatory Health Advisory (HA) Program in 1978 to provide
+information for public health officials or other interested groups on pollutants associated with
+short-term contamination incidents or spills for contaminants that can affect drinking water
+quality, but are not regulated under the Safe Drinking Water Act (SDWA). At present, EPA lists
+HAs for 213 contaminants (http://water.epa.gov/drink/standards/hascience.cfm).
+HAs identify the concentration of a contaminant in drinking water at which adverse
+health effects are not anticipated to occur over specific exposure durations (e.g., one-day, ten-
+days, and a lifetime). HAs serve as informal technical guidance to assist Federal, State and local
+officials, and managers of public or community water systems in protecting public health when
+emergency spills or contamination situations occur. An HA provides information on the
+environmental properties, health effects, analytical methodology, and treatment technologies for
+removal of drinking water contaminants.
+The Health Effects Support Document for Cylindrospermopsin (U.S. EPA, 2015a) is the
+peer-reviewed, effects assessment that supports this HA. This document is available at
+http://www2.epa.gov/nutrient-policy-data/health-and-ecological-effects. The HAs are not
+legally enforceable Federal standards and are subject to change as new information becomes
+available. The structure of this Health Advisory is consistent with EPA’s Framework for Human
+Health Risk Assessment to Inform Decision Making (U.S.EPA, 2014).
+EPA is releasing the Recommendations for Public Water Systems to Manage Cyanotoxins
+in Drinking Water (U.S. EPA, 2015b) as a companion to the HAs for microcystins and
+cylindrospermopsin. The document is intended to assist public drinking water systems (PWSs)
+that choose to develop system-specific plans for evaluating their source waters for vulnerability
+to contamination by microcystins and cylindrospermopsin. It is designed to provide information
+and a framework that PWSs and others as appropriate may consider to inform their decisions on
+managing the risks from cyanotoxins in drinking water.
+1.1 Current Criteria, Guidance and Standards
+Currently there are no U.S. federal water quality criteria, or regulations for cyanobacteria
+or cyanotoxins in drinking water under the SDWA or in ambient waters under the Clean Water
+Act (CWA). The Safe Drinking Water Act (SDWA), as amended in 1996, requires the EPA to
+publish a list of unregulated contaminants every five years that are not subject to any proposed or
+promulgated national primary drinking water regulations, which are known or anticipated to
+occur in public water systems, and which may require regulation. This list is known as the
+Contaminant Candidate List (CCL). The EPA’s Office of Water included cyanobacteria and
+cyanotoxins on the first and second CCL (CCL 1, 1998; CCL 2, 2005). EPA included
+cyanotoxins, including anatoxin-a, cylindrospermopsin, and microcystin-LR, on CCL 3 (2009)
+and the draft CCL 4 (April 2015 for consideration).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 3
+SDWA requires the Agency to make regulatory determinations on at least five CCL
+contaminants every five years. When making a positive regulatory determination, EPA
+determines whether a contaminant meets three criteria:
+• The contaminant may have an adverse effect on the health of persons,
+• The contaminant is known to occur or there is substantial likelihood the contaminant
+will occur in public water systems with a frequency and at levels of concern, and
+• In the sole judgment of the Administrator, regulating the contaminant presents a
+meaningful opportunity for health risk reductions.
+To make these determinations, the Agency uses data to analyze occurrence (prevalence
+and magnitude) and health effects. EPA continues gathering this information to inform future
+regulatory determinations for cyanotoxins under the SDWA. The SDWA also provides the
+authority for EPA to publish non-regulatory HAs or take other appropriate actions for
+contaminants not subject to any national primary drinking water regulation. EPA is providing
+this HA and the HA for microcystins to assist State and local officials in evaluating risks from
+these contaminants in drinking water.
+Internationally, three countries and two U.S. states have developed drinking water
+guidelines for cylindrospermopsin, as shown in Table 1-1 and Table 1-2, respectively.
+Table 1-1. International Guideline Values for Cylindrospermopsin
+Country Guideline Value Source
+Australian Drinking Water Guidelines 6
+Australia 1 μg/L
+(NHMRC, NRMMC, 2011)
+Drinking-water Standards for New Zealand 2005
+New Zealand 1 μg/L
+(Ministry of Health, 2008)
+15 μg/L Guidelines for Drinking Water Quality, Official LA
+Brazil
+(recommended) Report’s, Regulation MS N 518/2004 (Brasil, 2009)
+Table 1-2. State Guideline Values for Cylindrospermopsin
+State Guideline Value Source
+State of Ohio Public Water System Harmful Algal
+Ohio 1 μg/L
+Bloom Response Strategy (OHEPA, 2014)
+Public Health Advisory Guidelines, Harmful Algae
+Oregon 1 μg/L
+Blooms in Freshwater Bodies. (OHA, 2015)
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 4
+2.0 PROBLEM FORMULATION
+The development of the HA begins with problem formulation, which provides a strategic
+framework by focusing on the most relevant cyanotoxin properties and endpoints identified in
+the Health Effects Support Document for Cylindrospermopsin (U.S. EPA, 2015a).
+2.1 Cyanobacteria and Production of Cylindrospermopsin
+Cyanobacteria, formerly known as blue-green algae (Cyanophyceae), are a group of
+bacteria with chlorophyll-a capable of photosynthesis (light and dark phases) (Castenholz and
+Waterbury, 1989). Most cyanobacteria are aerobic photoautotrophs, requiring only water, carbon
+dioxide, inorganic nutrients and light for survival, while others have heterotrophic properties and
+can survive long periods in complete darkness (Fay, 1965). Some species are capable of nitrogen
+fixation (diazotrophs) (Duy et al., 2000), producing inorganic nitrogen compounds for the
+synthesis of nucleic acids and proteins. Cyanobacteria can form symbiotic associations with
+animals and plants, such as fungi, bryophytes, pteriodophytes, gymnosperms and angiosperms
+(Rai, 1990), supporting their growth and reproduction (Sarma, 2013; Hudnell, 2008; Hudnell,
+2010).
+Under the right conditions of pH, nutrient availability, light, and temperature,
+cyanobacteria can reproduce quickly, forming a bloom. Although studies of the impact of
+environmental factors on cyanotoxin production are ongoing, nutrient (nitrogen, phosphorus and
+trace metals) supply rates, light, temperature, oxidative stressors, interactions with other biota
+(viruses, bacteria and animal grazers) and, most likely, the combined effects of these factors are
+all involved (Paerl and Otten 2013a, 2013b). Fulvic and humic acids reportedly encourage
+cyanobacteria growth (Kosakowska et al., 2007).
+Cylindrospermopsin is a toxin produced by a variety of cyanobacteria including:
+Cylindrospermopsis raciborskii (C. raciborskii), Aphanizomenon flos-aquae, Aphanizomenon
+gracile, Aphanizomenon ovalisporum, Umezakia natans, Anabaena bergii, Anabaena lapponica,
+Anabaena planctonica, Lyngbya wollei, Rhaphidiopsis curvata, and Rhaphidiopsis mediterranea.
+2.2 Physical and Chemical Properties
+The cyanotoxin cylindrospermopsin is a tricyclic alkaloid with the following molecular
+formula C H N O S (Ohtani et al., 1992) and a molecular weight of 415.43 g/mole. It is
+15 21 5 7
+zwitterionic (i.e., a dipolar ion with localized positive and negative charges) (Ohtani et al., 1992)
+and is believed to be derived from a polyketide that uses an amino acid starter unit such as
+glycocyamine or 4-guanidino-3-oxybutyric acid (Duy et al., 2000). The chemical structure of
+cylindrospermopsin is presented in Figure 2-1. Two naturally occurring congeners of
+cylindrospermopsin have been identified (Figure 2-2): 7-epicylindro-spermopsin (the epimer of
+cylindrospremopsin) and 7-deoxycylindrospermopsin (Norris et al., 1999; de la Cruz et al.,
+2013). Recently, Wimmer et al. (2014) identified two new analogs, 7-deoxy-desulfo-
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 5
+Figure 2-1. Structure of Cylindrospermopsin (de la Cruz et al., 2013)
+H OH
+H H
+7
+O SO O
+3
+(R)
+(S) (S) (R)
+(R) N NH HN NH
+H C
+(S)
+3
+H
+NH O
+Figure 2-2. Structurally Related Cylindrospermopsins (de la Cruz et al., 2013)
+7-epi-cylindrospermopsin 7-deoxycylindrospermopsin
+HO H H H
+H H
+OSO O
+OSO 7 O 3
+3 (S) (S) (S) (R)
+(S) (S) (R)
+(R) N NH HN NH (R) N NH HN NH
+H 3 C (S) H 3 C
+(S)
+H H
+NH O NH O
+cylindrospermopsin and 7-deoxy-desulfo-12-acetylcylindrospermopsin, from the Thai strain of
+C. raciborskii. However, it is not clear if these are cylindrospermopsin congeners, precursors or
+degradation products. Chlorination of water containing cylindrospermopsin can produce 5-
+chlorocylindrospermopsin and cylindrospermic acid.
+The physical and chemical properties of cylindrospermopsin are presented in Table 2-1.
+Cylindrospermopsin generally exists in a zwitterionic state (with both positive and negative ions)
+and is highly soluble in water (Moore et al., 1998, Chiswell et al., 1999). Cylindrospermopsin is
+isolated for commercial use mostly from C. raciborskii. Other physicochemical properties of
+cylindrospermopsin in the environment such as vapor pressure, boiling and melting points, soil
+organic carbon-water partition coefficient (Koc), octanol-water partition coefficient (Kow), and
+vapor pressure and Henry’s Law constant are unknown. Available information on the chemical
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 6
+Table 2-1. Chemical and Physical Properties of Cylindrospermopsin
+Property Cylindrospermopsin
+Chemical Abstracts Service (CAS)
+143545-90-8
+Registry #
+Chemical Formula C H N O S
+15 21 5 7
+Molecular Weight 415.43 g/mole
+Color/Physical State white powder
+Boiling Point N/A
+Melting Point N/A
+Density 2.03g/cm3
+Vapor Pressure at 25°C N/A
+Henry’s Law Constant N/A
+K N/A
+ow
+K N/A
+oc
+Solubility in Water Highly
+Other Solvents Dimethylsulfoxide (DMSO) and methanol
+Sources: Chemical Book, 2012; TOXLINE, 2012
+breakdown, biodegradation and mobility of cylindrospermopsin in the environment is discussed
+in the Environmental Fate section.
+2.3 Sources and Occurrence
+Many environmental factors such as the ratio of nitrogen to phosphorus, temperature,
+organic matter availability, light attenuation and pH play an important role in the development of
+cylindrospermopsin blooms (Paerl and Huisman, 2008; Paerl and Otten, 2013). Although
+cylindrospermopsin-producing cyanobacteria (such as C. raciborskii) occur mostly in tropical or
+subtropical regions, they have also been found in warmer temperate regions, both in fresh and
+marine water systems. These species do not tend to form visible surface scums and the highest
+concentrations of cells occurs below the water surface (Falconer 2005). Cylindrospermopsin may
+be retained within the cell, but most of the time it is found in the water (extracellular) or attached
+to particulates present in the water (Chiswell et al., 2001).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 7
+2.3.1 Occurrence in Surface Water
+EPA’s National Aquatic Resource Surveys (NARS) generate national estimates of
+pollutant occurrence every 5 years. In 2007, the National Lakes Assessment (NLA) conducted
+the first-ever national probability-based survey of algal toxins, but did not include
+cylindrospermopsin. The United States Geological Survey (USGS) subsequently analyzed the
+stored samples collected during the NLA and reported that cylindrospermopsin was present in
+5% of the samples; however, concentrations of cylindrospermopsin were not reported (Loftin
+and Graham, 2014). Future NARS plan to include other algal toxins, including
+cylindrospermopsin.
+Cylindrospermopsin was also detected in 9% of the blooms sampled during a 2006 USGS
+survey of 23 lakes in the Midwestern U.S. (Graham et al., 2010). The low concentrations of
+cylindrospermopsin detected (0.12 to 0.14 µg/L) in the study occurred in bloom communities
+dominated by Aphanizomenon or Anabaena and Microcystis.
+Many states monitor for harmful algal blooms (HABs). State monitoring efforts are
+expanding with greater awareness of the toxic effects of HABs. These monitoring efforts tend to
+focus on priority waters used for recreation or drinking water. Sampling is seasonal or on
+occasions when blooms are observed.
+Cylindrospermopsin has been detected in lakes throughout multiple states. In a 1999
+study, cylindrospermopsin was detected in 40% of 167 water samples taken from 87 water
+bodies in Florida during the months of June and November (Burns, 2008). However, the actual
+cylindrospermopsin concentrations were not reported. In 2005, the U.S. Army Corps of
+Engineers (USACE) detected cylindrospermopsin at a maximum concentration of 1.6 µg/L in
+lake water samples from Oklahoma (Lynch and Clyde, 2009). In Grand Lake St. Marys, Ohio,
+cylindrospermopsin concentrations as high as 9 µg/L were reported in 2010 (OHEPA, 2012).
+2.3.2 Occurrence in Drinking Water
+The occurrence of cyanotoxins in finished drinking water depends on their levels in the
+raw source water and the effectiveness of the treatment methods used for removing
+cyanobacteria and cyanotoxins during the production of drinking water. Currently there is no
+federal or state program in place that requires monitoring for cyanotoxins at U.S. drinking water
+treatment plants. Therefore, data on the presence or absence of cyanotoxins in finished drinking
+water are limited.
+EPA used information from the published literature to evaluate the potential occurrence
+of cylindrospermopsin in public water systems. In the single publication identified, the results of
+a 2000 survey of toxins in drinking water treatment plants in Florida were reported (Burns,
+2008). In this survey, cylindrospermopsin was detected at concentrations ranging from 8 µg/L to
+97 µg/L in nine finished drinking water samples.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 8
+2.4 Environmental Fate
+Different physical and chemical processes are involved in the persistence, breakdown,
+and movement of cylindrospermopsin in aquatic systems.
+2.4.1 Persistence
+Cylindrospermopsin is relatively stable in the dark and at temperatures from 4°C to 50°C
+for up to five weeks (ILS, 2000). Cylindrospermopsin is also resistant to changes in pH and
+remains stable for up to eight weeks at pH 4, 7 and 10. In the absence of cell pigments,
+cylindrospermopsin tends to be relatively stable in sunlight, with a half-life of 11 to 15 days in
+surface waters (Funari and Testai, 2008). Cylindrospermopsin remains a potent toxin even after
+boiling for 15 minutes (Chiswell et al., 1999).
+Degradation of cylindrospermopsin increases in the presence of cell pigments such as
+chlorophyll-a and phycocyanin. When exposed to both sunlight and cell pigments,
+cylindrospermopsin breaks down rapidly, more than 90% within 2 to 3 days (Chiswell et al.,
+1999). Cylindrospermopsin has been shown to be decomposed by bacteria in laboratory studies;
+the biodegradation is influenced by the toxin concentration, temperature and pH. Mohamed and
+Alamri (2012) reported that cylindrospermopsin was degraded by Bacillus bacteria and
+degradation occurred in 6 days at the highest toxin concentration (300 μg/L) and in 7 or 8 days at
+lower concentrations (10 and 100 μg/L, respectively). The biodegradation rate was also reported
+to depend on temperature and pH, with the highest rates occurring in warm waters (25 and 30°C)
+and neutral to slightly alkaline conditions (pH 7 and 8). Klitzke and Fastner (2012) confirmed the
+observations of Mohamed and Alamri (2012), noting that a decrease in temperature from 20 to
+10°C slowed down degradation by a factor of 10. They also found that degradation slowed
+significantly under anaerobic conditions, with half-lives of 2.4 days under aerobic conditions and
+23.6 days under anaerobic conditions.
+2.4.2 Mobility
+In sediments, cylindrospermopsin exhibits some adsorption to organic carbon, with little
+adsorption observed on sandy and silt sediments (Klitzke et al., 2011). The low adsorption of
+cylindrospermopsin reduces its residence time in sediments, thus reducing the opportunity for
+microbial degradation.
+2.5 Nature of the Cylindrospermopsin Toxin
+2.5.1 Toxicokinetics
+Animal studies show that cylindrospermopsin is absorbed from the gastrointestinal tract
+(Humpage and Falconer, 2003; Shaw et al., 2000, 2001) and that the tissue distribution occurs
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 9
+primarily to the liver, but also to the kidneys and spleen after intraperitoneal (i.p.) exposure
+(Norris et al., 2001).
+The metabolism and toxicity of cylindrospermopsin is mediated by the hepatic
+cytochrome P450 (CYP450) enzyme system. The periacinar region of the liver, an area where
+substantial CYP450-mediated xenobiotic metabolism occurs, appears to be the main target of
+cylindrospermopsin toxicity and where cylindrospermopsin and its metabolites bind to proteins
+(Runnegar et al. 1995; Shaw et al. 2000, 2001; Norris et al., 2001).
+Animal studies evaluating the elimination of cylindrospermopsin in urine and feces after
+i.p. exposures found a continued urinary and fecal excretion over the monitoring period (24
+hours) and a mean total recovery from the urine and feces of 76.9% of the administered dose
+after 24 hours (Norris et al., 2001). Urinary excretion accounted for 68.4% of the 24-hour total
+and fecal excretion for 8.5%. There was considerable interanimal variability in this study.
+2.5.2 Noncancer Health Effects Data
+2.5.2.1 Human Studies
+Human data on oral toxicity of cylindrospermopsin are limited, but suggest that liver and
+kidney are potential target organs for toxicity. Reports of a hepatoenteritis-like outbreak (mostly
+in children) in Palm Island, Australia in 1979 were attributed to consumption of drinking water
+with a bloom of C. raciborskii, a cyanobacteria that can produce cylindrospermopsin. No data
+are available on exposure levels or potential co-exposures to other cyanobacterial toxins and
+microorganisms. The majority of the cases, mostly children, required hospitalization. The
+clinical picture included fever, headache, vomiting, bloody diarrhea, hepatomegaly and kidney
+damage with loss of water, electrolytes and protein (Byth, 1980; Griffiths and Saker, 2003).
+Dermal exposure to cylindrospermopsin was evaluated using skin-patch testing in
+humans (Pilotto et al., 2004; Stewart et al, 2006). Exposed individuals showed mild irritation, but
+no statistically significant dose-response relationship or reaction rates were found between skin
+reactions and increasing cell concentrations for either whole or lysed cells (Pilotto et al., 2004).
+No detectable skin reactions were observed in individuals exposed to lyophilized C. raciborskii
+(Stewart et al., 2006).
+2.5.2.2 Animal Studies
+Most of the information on the noncancer effects of cylindrospermopsin in animals is
+from oral and i.p. administration studies in mice exposed to purified compound or extracts of C.
+raciborskii cells. Studies conducted with purified toxin are preferred because extracts may
+contain other toxins or compounds with similar chemical physical properties that co-elute with
+the toxin. Effects on the liver and kidney, including changes in organ weights and
+histopathological lesions, along with increases in the hematocrit level in serum and deformation
+of red blood cell are observed following short-term and subchronic oral exposure to
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 10
+cylindrospermopsin (Humpage and Falconer, 2002, 2003; Reisner at al., 2004; Sukenik et al.,
+2006). Oral and i.p. acute toxicity studies in mice also report histopathological effects in both
+liver and kidney. No chronic toxicity studies evaluating cylindrospermopsin are available.
+No oral reproductive or developmental studies are available for cylindrospermopsin.
+Developmental toxicity studies following i.p. administration of cylindrospermopsin provide
+some evidence for maternal toxicity and decreased postnatal pup survival and body weight
+(Rogers et al., 2007; Chernoff et al., 2011). Sibaldo de Almeida et al. (2013) did not find any
+visceral or skeletal malformations in the offspring of pregnant rats receiving an oral dose of 3
+mg/kg/day purified cylindrospermopsin during gestation (GD 1-20).
+2.5.3 Mode of Action for Noncancer Health Effects
+2.5.3.1 Liver
+The occurrence of toxicity in the liver suggests a protein-synthesis inhibition mechanism
+of action for cylindrospermopsin. In vitro and in vivo studies have been conducted to
+demonstrate the ability of cylindrospermopsin to inhibit hepatic protein synthesis, which could
+impact mouse urinary protein production leading to decreased urinary excretion of these proteins
+(Froscio et al., 2008, 2009; Terao et al., 1994). Available evidence indicates that protein
+synthesis inhibition is not decreased by broad-spectrum CYP450 inhibitors, but they do reduce
+cytotoxicity (Froscio et al., 2003; Bazin et al., 2010). Hepatotoxicity appears to be CYP450-
+dependent, which indicates a possible involvement of oxidized and/or fragmented metabolites
+and mechanisms other than protein synthesis inhibition (Froscio et al., 2003; Humpage et al.,
+2005; Norris et al., 2001, 2002). Despite the number of studies that have been published, the
+mechanisms for liver and kidney toxicity by cylindrospermopsin are not completely
+characterized.
+2.5.3.2 Red Blood Cells
+There was evidence of effects on red blood cells (RBCs) in the Reisner et al. (2004) and
+Humpage and Falconer (2002) studies of purified cylindrospermopsin. In the Reisner et al.
+(2004) report, microscopic examination of blood samples showed the presence of RBCs with
+spiked surfaces rather than their normal biconcave-disc shape. The authors attributed the
+acanthocyte formation to an increase in the cholesterol to phospholipid ratio of the RBC
+membrane. Phospholipids constitute the matrix material of cell membranes. The authors
+hypothesized that this change was the consequence of decreased activity of plasma lecithin
+cholesterol acyl transferase (LCAT), an enzyme associated with high-density lipoproteins and
+the esterification of plasma cholesterol. Effects on the cholesterol content of the RBC membrane
+can occur with inhibition of the enzyme increasing membrane fluidity and mean corpuscular
+volume. Associated effects were observed in the Reisner et al. (2004) and Humpage and
+Falconer (2002) studies. Removal of the abnormal blood cells by the spleen increases both
+spleen weight and serum bilirubin as well as stimulates hematopoiesis. Additional research is
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 11
+needed to examine the LCAT enzyme inhibition hypothesis in order to confirm whether it
+accounts for the effects on the RBC as a result of cylindrospermopsin exposure.
+2.5.3.3 Kidney
+No mode of action information for kidney effects was observed in the available studies of
+cylindrospermopsin. Since all the studies were conducted in mice, a species that excretes low
+molecular weight proteins in urine, there is a need to conduct a study of cylindrospermopsin in a
+laboratory species that does not excrete protein in the urine in order to determine whether there
+are comparable effects on kidney weight, protein excretion and renal cellular damage. Kidney
+necrosis and a decreased renal failure index at the high cylindrospermopsin doses provide
+support for the effects on the kidney.
+2.5.4 Carcinogenicity Data
+No chronic cancer bioassays of cylindrospermopsin were located in the literature.
+Limited data from an in vivo study showed no indication that the cyanobacterial extract
+containing cylindrospermopsin initiated tumors in mice (Falconer and Humpage, 2001). Cell
+transformation in Syrian hamster embryo (SHE) cells was observed using purified
+cylindrospermopsin (Marie et al., 2010). Transformation frequency increased at the lowest
+concentrations (from 1 x 10-2 to 1x10-7 ng/mL) but not at the highest concentrations (1 or 1x10-1
+ng/mL).
+Mutagenicity studies (e.g., the Ames Assay) have not observed mutagenic activity of
+cylindrospermopsin (Sieroslawska, 2013). A few i.p. studies investigating the in vivo
+genotoxicity (DNA damage) from exposure to cylindrospermopsin showed DNA strand breakage
+in the liver of Balb/c mice (Shen et al., 2002) and covalent binding between DNA and
+cylindrospermopsin, or a metabolite, in Quackenbush mouse liver (Shaw et al., 2000). In vitro
+mutagenic and genotoxic cell assays have shown potential damage to DNA expressed as an
+increase in micronucleated binucleate cells (MNBNC) in the colon adenocarcinoma line and the
+human hepatoma line (Bazin et al., 2010), in the human lymphoblastoid cell line (Humpage et
+al., 2000), in HepG2 cells (Straser et al., 2011), and in isolated human peripheral lymphocytes
+(Zegura et al., 2011). DNA breaks also have been observed in primary hepatocytes by comet
+assay (Humpage et al., 2005).
+2.6 Conceptual Model
+The conceptual model is intended to explore potential links of exposure to a contaminant
+or stressor with the adverse effects and toxicological endpoints important for management goals,
+including the development of HA values. The conceptual model demonstrates the relationship
+between exposure to cylindrospermopsin in drinking water and adverse health effects in the
+populations at risk.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 12
+HAs describe non-regulatory concentrations of drinking water contaminants at which
+adverse health effects are not anticipated to occur over specific exposure durations (e.g., one-
+day, ten-days, and a lifetime). HAs also contain a margin of safety to protect sensitive members
+of the population. They serve as informal technical guidance to assist federal, state and local
+officials, as well as managers of public or community water systems, in protecting public health.
+They are not to be construed as legally enforceable federal standards.
+Assessment endpoints for HAs can be developed for both short-term (one-day and ten-
+day) and lifetime exposures periods using information on the non-carcinogenic and carcinogenic
+toxicological endpoints of concern. Where data are available, endpoints will reflect susceptible
+and/or more highly exposed populations.
+• A One-day HA is typically calculated for an infant (0-12 months or 10kg child),
+assuming a single acute exposure to the chemical and is generally derived from a study of
+less than seven days’ duration.
+• A Ten-day HA is typically calculated for an infant (0-12 months or 10kg child), assuming
+a limited period of exposure of one to two weeks, and is generally derived from a study
+of 7 to 30-days duration.
+• A Lifetime HA is derived for an adult (>21 years or 80kg adult), and assumes an
+exposure period over a lifetime (approximately 70 years). It is usually derived from a
+chronic study of two years duration, but subchronic studies may be used by adjusting the
+uncertainty factor employed in the calculation. For carcinogens, the HA documents
+typically provide the concentrations in drinking water associated with risks for one excess
+cancer case per ten thousand persons exposed up to one excess cancer case per million
+exposed for Group A and B carcinogens and those classified as known or likely
+carcinogens (U.S. EPA, 1986, 2005). Cancer risks are not provided for Group C
+carcinogens or those classified as “suggestive”, unless the cancer risk has been
+quantified.
+For each assessment endpoint EPA uses one or more measures of effect (also referred to
+as a point of departure), which describe the change in the attribute of the assessment endpoint in
+response to chemical exposure, to develop acute, short-term, longer term (subchronic) or chronic
+reference values when the data are available. The measures of effect selected represent impacts
+on survival, growth, system function, reproduction and development.
+This conceptual model provides useful information to characterize and communicate the
+potential health risks related to exposure to cyanotoxins in drinking water. The sources of
+cyanotoxins in drinking water, the route of exposure for biological receptors of concern (e.g., via
+various human activities such as drinking, food preparation and consumption) and the potential
+assessment endpoints (i.e., effects such as kidney and liver toxicity, and reproductive and
+developmental effects) due to exposure to cylindrospermopsin are depicted in the conceptual
+diagram below (Figure 2-3).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 13
+Figure 2-3. Conceptual Model of Exposure Pathways to Cylindrospermopsin in Drinking
+Water
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 14
+2.6.1 Conceptual Model Diagram
+Cyanobacteria are a common part of freshwater and marine ecosystems. An increase in
+water column stability, high water temperatures, elevated concentrations of nutrients and low
+light intensity have been associated with an increase and/or dominance of cylindrospermopsin-
+producing cyanobacteria in surface waters (or aquatic ecosystems). The presence of detectable
+concentrations of cyanotoxins in the environment is closely associated with these blooms. Winds
+and water currents can potentially transport cyanobacterial blooms to areas within the proximity
+of water intakes for drinking water treatment plants. If not managed in source waters, or removed
+during drinking water treatment, cyanobacteria and cyanotoxins may result in exposure that
+could potentially affect human health.
+2.6.2 Factors Considered in the Conceptual Model for Cylindrospermopsin
+Stressors: For this HA, the stressor is cylindrospermopsin concentrations in finished drinking
+water.
+Sources: Sources of cylindrospermopsin include potential sources of drinking water such as
+rivers, reservoirs and lakes in the U.S. where blooms producing cylindrospermopsin occur.
+Shallow private wells under the direct influence of surface water (in hydraulic connection to a
+surface water body) can also be impacted by cylindrospermopsin-producing blooms if the toxins
+are drawn into the well along with the water from the surface water. There is substantially less
+information on exposure from this source.
+Routes of exposure: Exposure to cyanotoxins from contaminated drinking water sources may
+occur via oral exposure (drinking water, cooking with water, and incidental ingesting from
+showering); dermal exposure (contact of exposed parts of the body with water containing toxins
+during bathing or showering, washing dishes or outside activities); inhalation exposure (during
+bathing or showering); or intravenous exposure (e.g., via dialysis). Toxicity data are available for
+the oral route of exposure from drinking water, but are not available to quantify dose response
+for other exposure routes (inhalation, dermal, dietary and intravenous exposures).
+Receptors: The general population (adults and children) could be exposed to cyanotoxins
+through dermal contact, inhalation and/or ingestion. Infants and pre-school age children can be at
+greater risk to cylindrospermopsin because they consume more water per unit body weight than
+adults. Other individuals of potential sensitivity include persons with kidney and/or liver disease
+due to the compromised detoxification mechanisms in the liver and impaired excretory
+mechanisms in the kidney. There are no human data to quantify risk to pregnant woman or to
+evaluate the transfer of cyanotoxins across the placenta. Data are also not available on the
+transfer of cyanotoxins through the milk from nursing mothers or on the risk to the elderly.
+Given this lack of information, pregnant women, nursing mothers, and the elderly may also be
+potentially sensitive populations. Data from the episode in a dialysis clinic in Caruaru, Brazil
+where microcystins, and possibly cylindrospermopsin, were not removed by treatment of dialysis
+water (Carmichael et al., 2011), identify dialysis patients as a population of potential concern in
+cases where the drinking water source for the clinic is contaminated with cyanotoxins. EPA has
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 15
+data to quantify risk to infants, children, and adults based on variability in potential exposure
+(body weight and drinking water intake rate). However, data are not available to quantify risk to
+pregnant woman, nursing mothers, persons with liver or kidney disease, or dialysis patients. Data
+are not available to derive a one-day HA for children because studies with single oral dosing do
+not provide dose-response information. A lifetime HA for cylindrospermopsin is not
+recommended as the types of exposures being considered are short-term and episodic in nature.
+Although the majority of the cyanobacterial blooms in the U.S. occur seasonally, usually during
+late summer, some toxin-producing strains can occur early in the season and can last for days or
+weeks.
+Endpoints: Human data on oral toxicity of cylindrospermopsin are limited, but have shown
+effects on the liver following potential exposure to cylindrospermopsin. Acute, short-term and
+subchronic studies in animals show effects on the liver, RBC and kidney. In addition, some
+studies suggest that cylindrospermopsin may lead to reproductive and developmental effects;
+however, these data are limited. In vitro mutagenic and genotoxic cell assays with
+cylindrospermopsin have shown varied results with some indications of potential damage to
+DNA. However, these data are limited, and there has been no long term bioassay of purified
+cylindrospermopsin. Thus, available data are inadequate to assess the carcinogenic potential of
+cylindrospermopsin at this time. Available toxicity data are described in the Health Effects
+Support Document (HESD) for Cylindrospermopsin (U.S. EPA, 2015a). Kidney effects were
+selected as the endpoint on which to base the measure of effect. Liver and hematological effects
+were not as sensitive as the reported kidney effects.
+2.7 Analysis Plan
+The Health Effects Support Document (HESD) for Cylindrospermopsin (U.S. EPA,
+2015a) provides the health effects basis for development of the HA, including the science-based
+decisions providing the basis for estimating the point of departure. To develop the HESD for
+cylindrospermopsin, a comprehensive literature search was conducted from January 2013 to May
+2014 using Toxicology Literature Online (TOXLINE), PubMed component and Google Scholar
+to ensure the most recent published information on cylindrospermopsin was included. The
+literature search included the following terms: cylindrospermopsin, human toxicity, animal
+toxicity, in vitro toxicity, in vivo toxicity, occurrence, environmental fate, mobility and
+persistence. EPA assembled available information on occurrence, environmental fate,
+mechanisms of toxicity, acute, short-term, subchronic and chronic toxicity and cancer in humans
+and animals, toxicokinetics, and exposure. Additionally, EPA considered information from the
+following risk assessments during the development of the cylindrospermopsin health risk
+assessment:
+• Health Canada (2012) Toxicity Profile for Cyanobacterial Toxins
+• Enzo Funari and Emanuela Testai (2008) Human Health Risk Assessment Related to
+Cyanotoxins Exposure
+• Tai Nguyen Duy, Paul Lam, Glen Shaw and Des Connell (2000) Toxicology and Risk
+Assessment of Freshwater Cyanobacterial (Blue-Green Algal) Toxins in Water
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 16
+• ILS (2000) Cylindrospermopsin [CASRN 143545-90-8] Review of Toxicological
+Literature
+The toxicity data available for an individual pollutant vary significantly. An evaluation of
+available data was performed by EPA to determine data acceptability. The following study
+quality considerations from U.S. EPA’s (2002) A Review of the Reference Dose and Reference
+Concentration Processes were used in selection of the studies for inclusion in the HESD and
+development of the HA.
+• Clearly defined and stated hypothesis.
+• Adequate description of the study protocol, methods and statistical analyses.
+• Evaluation of appropriate endpoints. Toxicity depends on the amount, duration, timing
+and pattern of exposure, and may range from frank effects (e.g., mortality) to more subtle
+biochemical, physiological, pathological or functional changes in multiple organs and
+tissues.
+• Application of the appropriate statistical procedures to determine an effect.
+• Establishment of dose-response relationship (i.e., no observed adverse effect level
+(NOAEL) and/or lowest observed adverse effect level (LOAEL) or data amenable to
+modeling of the dose-response in order to identify a point of departure for a change in the
+effect considered to be adverse (out of the range of normal biological viability). The
+NOAEL is the highest exposure level at which there are no biologically significant
+increases in the frequency or severity of adverse effect between the exposed population
+and its appropriate control. The LOAEL is the lowest exposure level at which there are
+biologically significant increases in frequency or severity of adverse effects between the
+exposed population and its appropriate control group.
+After the available studies were evaluated for inclusion in the HESD and HA, the critical
+study was selected based on consideration of factors including exposure duration (comparable to
+the duration of the HA being derived), route of exposure (oral exposure via drinking water,
+gavage, or diet is preferred), species sensitivity, comparison of the point of departure with other
+available studies demonstrating an effect, and confidence in the study (U.S. EPA, 1999). Once, a
+point of departure is chosen for quantification, uncertainty factors appropriate for the study
+selected are then applied to the point of departure to account for variability and uncertainty in the
+available data.
+For cylindrospermopsin, toxicity and exposure data are available to develop a Ten-day
+HA. EPA used measures of effect and estimates of exposure to derive the Ten-day HAs using the
+following equation:
+NOAEL or LOAEL or BMDL
+HA =
+UF × DWI/BW
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 17
+Where:
+NOAEL or = No- or Lowest-Observed-Adverse-Effect Level (mg/kg bw/day) from a study
+LOAEL of an appropriate duration (up to 7 days and 7-30 days for the One-day and
+Ten-day HAs, respectively).
+BMDL = When the data available are adequate, benchmark dose (BMD) modeling can
+be performed to determine the point of departure for the calculation of HAs.
+The benchmark dose (BMD) approach involves dose-response modeling to
+obtain dose levels corresponding to a specific response level near the low end
+of the observable range of the data (U.S.EPA, 2012). The lower 95%
+confidence limit is termed the benchmark dose level (BMDL).
+UF = Uncertainty factors (UF) account for: (1) intraspecies variability (variation in
+susceptibility across individuals); (2) interspecies variability (uncertainty in
+extrapolating animal data to humans; (3) uncertainty in extrapolating from a
+LOAEL to a NOAEL; and (4) uncertainty associated with extrapolation when
+the database is incomplete. These are described in U.S. EPA, 1999 and U.S.
+EPA, 2002.
+DWI/BW = For children, a normalized ratio of drinking water ingestion to body weight
+(DWI/BW) was calculated using data for infants (birth to <12 months). The
+estimated drinking water intake body weight ratio (L/kg/day) used for birth to
+< 12 months of age are the 90th percentile values of the consumers only
+estimates of direct and indirect water ingestion based on 1994-1996, 1998
+CSFII (Continuing Survey of Food Intakes by Individuals) (community water,
+mL/kg/day) in Table 3-19 in the U.S. EPA (2011a) Exposure Factors
+Handbook. The time weighted average of DWI/BW ratios values was derived
+from multiplication of age-specific DWI/BW ratios (birth to <1 month, 1 to <
+3 months, 3 to < 6 months, and 6 to <12 months) by the age-specific fraction
+of infant exposures for these time periods.
+For adults (>21 years of age), EPA updated the default BW assumption to 80
+kg based on National Health and Nutrition Examination Survey (NHANES)
+data from 1999 to 2006 as reported in Table 8.1 of EPA’s Exposure Factors
+Handbook (U.S. EPA, 2011a). The updated BW represents the mean weight
+for adults ages 21 and older.
+EPA updated the default DWI to 2.5 L/d, rounded from 2.546 L/d, based on
+NHANES data from 2003 to 2006 as reported in EPA’s Exposure Factors
+Handbook (U.S. EPA 2011a, Table 3-33). This rate represents the consumer’s
+only estimate of combined direct and indirect community water ingestion at
+the 90th percentile for adults ages 21 and older.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 18
+3.0 HEALTH EFFECTS ASSESSMENT
+The health effects assessment provides the characterization of adverse effects and
+includes the hazard identification and dose-response assessment. The hazard identification
+includes consideration of available information on toxicokinetics; identification, synthesis and
+evaluation of studies describing the health effects of cylindrospermopsin; and the potential Mode
+of Action (MOAs), or toxicity pathways related to the health effects identified.
+3.1 Dose-Response
+3.1.1 Critical Study Selected
+The critical study selected for the derivation of the reference dose (RfD) for
+cylindrospermopsin is Humpage and Falconer (2002, 2003). Humpage and Falconer (2002,
+2003) is a comprehensive toxicity study in which male mice were exposed by gavage to purified
+cylindrospermopsin from cell extract for 11 weeks. The study authors used four dose groups,
+adequate numbers of animals per dose group (10) and evaluated a variety of endpoints.
+Statistically significant, dose-related effects on the kidney, liver and serum chemistry were
+observed. The kidney was the most sensitive target of toxicity. The Humpage and Falconer
+(2002) data are supported by the short-term Reisner et al. (2004) results showing exposure-
+duration-related increased kidney weights, liver weights and testes weights, and hematological
+effects (acanthocytes or abnormal red blood cells (RBCs) and changes in hematocrit) following a
+21-day exposure.
+Purified cylindrospermopsin in water was administered by gavage in doses of 0, 30, 60,
+120 or 240 μg/kg/day to groups of male Swiss albino mice (6 to 10 mice per dose group) for 11
+weeks (Humpage and Falconer, 2002, 2003). The cylindrospermopsin was from an extract of
+freeze-dried C. raciborskii cells Woloszynska (AWT 205) purified using sephadex size-
+exclusion gel (G-10). The individual sephadex fractions were assayed using high-performance
+liquid chromatography (HPLC) and concentrated to a sample that was 47% cylindrospermopsin
+by dry weight and 53% phenylalanine. Food and water consumption, and body weight were
+examined throughout the study. After 9 weeks of exposure, the study authors report conducting a
+clinical examination to detect physiological and behavioral signs of toxicity but do not specify
+the parameters evaluated. Hematology evaluations (4 to 5 per dose group, except the high dose),
+serum chemistry (4 to 6 per dose group), and urinalysis (6 or 10 per dose group) were conducted.
+All the evaluations were conducted either near or at the end of the treatment period.
+Postmortem examinations were done on the following organs: liver, spleen, kidneys,
+adrenal glands, heart, testes, epididymis and brain, including measurement of organ weights.
+Comprehensive histological evaluations were conducted in accordance with the
+recommendations from the Organization for Economic Cooperation and Development (OECD).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 19
+No deaths or visual clinical signs of toxicity were reported in mice exposed to purified
+cylindrospermopsin under the study conditions. The mean final body weight was 7-15% higher
+in all dose groups compared to controls, but was not dose-related and was only statistically
+significant at 30 and 60 μg/kg/day (Humpage and Falconer, 2003). No significant changes were
+observed in food consumption. In all dose groups, the water intake was significantly reduced;
+water consumption was 53% of the control level at 30 µg/kg/day and the higher dose groups
+were 68-72% of the control levels.
+Relative kidney weight was significantly increased in a dose-related manner at ≥60
+μg/kg/day (12-23% greater than controls; see Table 3-1). Relative liver weight was significantly
+increased (13% greater than controls) only at the highest dose (240 μg/kg/day). Relative spleen,
+adrenal and testes weights were increased for doses ≥60 µg/kg/day, but the differences from
+control were not statistically significant (Humpage and Falconer, 2002).
+Selected serum chemistry (n= 4-6), hematology (n=4-5) and urinalysis (n=6-10) results
+are shown in Table 3-2. The hematology and serum chemistry evaluations showed no dose-
+related, statistically significant changes, although serum albumin, total bilirubin and cholesterol
+were increased compared to controls at all doses (Humpage and Falconer, 2002). The increases
+in cholesterol were significant for the 30 and 60 µg/kg/day groups, but not at the higher doses.
+The serum urea concentration was slightly decreased at the two highest doses. A nonsignificant
+increase in red cell polychromasia (high number of RBCs) was indicated for all doses, but
+quantitative data were not presented. Packed red cell volume was slightly increased and mean
+corpuscular hemoglobin was slightly decreased (Table 3-2) when compared to controls, although
+the changes were not dose related. When combined with the bilirubin results and the increased
+relative spleen weight, the hematological data suggest the possibility of minor RBC effects. One
+of the limitations in the serum chemistry and hematology data is the small number of samples
+evaluated, a factor that impacts the determination of statistical significance (Humpage and
+Falconer, 2002).
+There was a significant decrease in the urine protein-creatinine ratio (g/mmol creatinine)
+at 120 and 240 μg/kg/day compared to the controls (51% and 37% of controls, respectively; both
+p<0.001) (Humpage and Falconer, 2002). Also, a significant decrease in urine specific gravity
+normalized for creatinine was seen at 240 μg/kg/day compared to the control (p<0.001). The
+renal glomerular filtration rate (GFR) was decreased compared to controls at all doses, but the
+differences were not dose dependent or statistically significantly different from controls. The
+renal failure index1 was decreased slightly at ≥120 µg/kg/day; the differences from control were
+not statistically significant (Humpage and Falconer, 2002). Tubular retention of low molecular
+weight urinary proteins could account for the decreased urinary protein and possibly the
+increased kidney weight. Although effects on kidney weight and urine protein levels were
+observed in male mice, the biological relevance of the latter effect and whether it would also
+occur in female mice needs further investigation. Mice are known to excrete a group of
+functional, highly-polymorphic, low-molecular-weight urinary proteins that play important roles
+in social recognition and mate assessment (Cheetham et al., 2009). The relevance of the urinary
+protein findings in mice to humans is unknown.
+1 Renal failure index= (urinary sodium concentration × plasma creatinine concentration) / urinary creatinine
+concentration
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 20
+Table 3-1. Kidney Weight Data from Oral Toxicity Study of Cylindrospermopsin
+Administered Daily over Eleven Weeks (Humpage and Falconer, 2002, 2003)
+Relative Kidney
+Weight
+Dose
+Number % Difference Significance
+(µg/kg/day) Control Exposed
+g/100g BW g/100g BW
+0
+10 1.48 - - -
+(Control)
+30 10 1.48 1.57 +6 Not significant
+60 9 1.48 1.66 +12 p <0.001
+120 9 1.48 1.82 +23 p <0.001
+240 6 1.48 1.78 +20 P <0.001
+Table 3-2. Selected Clinical Chemistry, Hematology and Urinalysis Findings (Humpage
+and Falconer, 2002, 2003)
+Dose (µg/kg/day)
+Endpoint N
+0 30 60 120 240
+Clinical Chemistry
+Urea (mmol/L) 4-6 9.24 9.22 8.55 7.51 7.92
+Albumin (g/L) 4-6 23.8 26.6 26.0 26.0 25.8
+Cholesterol (mmol/L) 4-6 3.26 4.60** 4.65** 3.68 4.08
+Bilirubin (mmol/L) 4-6 2.62 2.72 2.88 3.06 3.07
+Hematology
+Packed Cell volume (L/L) 4-5 0.38 0.39 0.39 0.39 ND
+Mean Corpuscular
+4-5 16.8 15.7 16.4 16.4 ND
+Hemoglobin (MCH, pg/L)
+Urinalysis
+Volume (mL) 6-10 9.85 11.18 10.38 11.74 6.74
+Creatinine (mmol/L) 6-10 0.57 0.49 0.54 0.51 0.72**
+Specific gravity/creatinine 6-10 1.79 2.04 1.91 1.99 1.44*
+Protein/creatinine (g/mmol) 6-10 4.3 3.6 3.3 2.2** 1.6**
+Renal Failure Index
+4-6 4.3 4.3 4.5 3.6 3.6
+(mmol/L)
+ND = not determined
+Significantly different from control: *p<0.05; **p<0.01.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 21
+Serum albumin and total serum protein were not decreased in the Humpage and Falconer
+studies (2002, 2003). The most sensitive effects observed by Humpage and Falconer (2002,
+2003) were dose-related decreases in the urinary protein: creatinine ratio at ≥120 μg/kg/day and
+increased relative kidney weight at ≥60 μg/kg/day. The noted decrease in urinary protein
+excretion could reflect an impact on excretion of mouse urinary proteins given the fact that total
+serum protein was not significantly increased compared to controls for all dose groups. Mouse
+urinary proteins are synthesized in the liver (Clissold and Bishop, 1982) and transported to the
+kidney for excretion. If cylindrospermopsin did reduce liver protein synthesis, a decrease in total
+serum protein would be expected. However, this was not the case, suggesting a lack of an effect
+on synthesis of the urinary proteins in the liver.
+The Humpage and Falconer (2002, 2003) postmortem tissue examinations showed
+histopathological damage to the liver based on scores assigned for necrosis, inflammatory foci
+and bile duct changes at ≥120 μg/kg/day. The percent of animals with liver lesions in the 120 and
+240 µg/kg/day dose groups was 60% and 90%, respectively, when compared to 10%, 10% and
+20% for the 0, 30, and 60 µg/kg/day dose groups, respectively. Severity scores were not given,
+and the liver lesions were not further described. There was proximal renal tubular damage in
+kidney sections from two mice in the 240 μg/kg/day dose group (Humpage and Falconer, 2002,
+2003).
+The 11-week study by Humpage and Falconer (2002, 2003) provides a NOAEL (30
+µg/kg/day) and a LOAEL (60 µg/kg/day) for dose-related, statistically significant increases in
+kidney weights along with indicators of reduced renal function effects at higher doses. Because
+of the similarity in the type of effects observed and the LOAELs from the Humpage and
+Falconer (2002, 2003) and Reisner et al. (2004) studies, the selection of the NOAEL from
+Humpage and Falconer was determined to be the most appropriate point of departure for ten-day
+exposures in infants, children and adults despite its longer exposure duration.
+3.1.2 Endpoint Selection
+Upon considering all effects observed by Humpage and Falconer (2002, 2003), increased
+relative kidney weight was considered the most appropriate basis for quantitation. Adverse
+effects on the kidneys were manifested by decreases in urinary protein concentration and
+increased relative kidney weight. The study authors reported significantly increased relative
+kidney weight at ≥60 μg/kg/day, decreased urinary protein and liver lesions at ≥120 μg/kg/day
+and renal tubular lesions at 240 μg/kg/day (Humpage and Falconer, 2002, 2003). Relative kidney
+weight increased significantly in a dose-related manner beginning at 60 μg/kg/day (12-23%
+greater than controls), and relative liver weight was significantly increased at 120 μg/kg/day (12-
+23% greater than controls) and at the high dose of 240 μg/kg/day (13% greater than controls).
+Relative spleen, adrenal and testes weights were increased for doses ≥60 µg/kg/day, but the
+differences from control, although dose-related, were not statistically significant. Humpage and
+Falconer (2002, 2003) identified the LOAEL as 60 µg/kg/day and the NOAEL as 30 µg/kg/day
+based on the dose-related and statistically significant increase in relative kidney weight. These
+adverse effects are potential indicators of suppressed hepatic protein synthesis that was not
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 22
+reflected in the measurement of total serum protein and/or increased retention of low molecular
+weight mouse urinary proteins by the kidney because of damage to the renal tubules.
+In the single dose drinking water study by Reisner et al. (2004), hematological effects
+(acanthocytes, increased hematocrit) and increased organ weights (liver, testicular and kidney) in
+young (4 week) male Institute for Cancer Research (ICR) mice were observed following a three
+week exposure to purified cylindrospermopsin. The 66 µg/kg/day LOAEL is comparable to that
+from the Humpage and Falconer (2002, 2003) study (60µg/kg/day). Humpage and Falconer
+(2002, 2003) evaluated 5 different doses using 6 to 10 mice per dose group; Reisner et al. (2004)
+used one dose with 8 male mice. Reisner et al. (2004) demonstrated effects in comparable
+parameters to those impacted in Humpage and Falconer at a dose of 66 µg/kg/day with a three
+week exposure. They also demonstrated a trend for effects on kidney weight and hematocrit
+across the three-week duration of exposure. Because the renal effects reported in Humpage and
+Falconer (2002, 2003) did not occur at 11 weeks for the 30 µg/kg dose, the point of departure
+from the Humpage and Falconer study was determined to be the most appropriate for the
+quantitative assessment. Thus, the quantification from the Humpage and Falconer NOAEL based
+on kidney weight changes provides the best point of departure for ten-day exposures in children
+and adults despite its longer exposure duration.
+3.2 Ten-Day Health Advisory
+The Ten-day HA is considered protective of non-carcinogenic adverse health effects over a ten-
+day exposure to cylindrospermopsin in drinking water.
+3.2.1 Bottle-fed Infants and Young Children of Pre-school Age
+The Ten-day HA for bottle-fed infants and young children of pre-school age is calculated as
+follows:
+30 μg/kg/day
+Ten-day HA = = 0.7 μg/L
+300 × 0.15 L/kg/day
+Where:
+30 µg/kg/day = The NOAEL for kidney effects in mice exposed to
+cylindrospermopsin in water for 11 weeks (Humpage and
+Falconer, 2002, 2003).
+300 = The composite uncertainty factor (UF) including a 10 for
+intraspecies variability (UF ), a 10 for interspecies differences
+H
+(UF ), and a 3 for uncertainties in the database (UF ).
+A D
+0.15 L/kg/day = Normalized drinking water intakes per unit body weight over
+the first year of life based on the 90th percentile of drinking
+water consumption and the mean body weight (U.S. EPA,
+2011a).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 23
+The Ten-day HA of 0.7 µg/L is considered protective of non-carcinogenic adverse health effects
+for bottle-fed infants and young children of pre-school age over a ten-day exposure to
+cylindrospermopsin in drinking water.
+3.2.2 School-age Children through Adults
+The Ten-day HA for school-age children through adults is calculated as follows:
+30 μg/kg/day
+Ten-day HA = = 3 μg/L
+300 × 0.03 L/kg/day
+Where:
+30 µg/kg/day = The NOAEL for kidney effects in mice exposed to
+cylindrospermopsin in water for 11 weeks (Humpage and
+Falconer, 2002, 2003).
+300 = The composite UF including a 10 for intraspecies variability
+(UF ), a 10 for interspecies differences (UF ), and a 3 for
+H A
+uncertainties in the database (UF ).
+D
+0.03 L/kg/day = Drinking water intake per unit body weight based on adult default
+values of 2.5 L/day and 80 kg (U.S. EPA, 2011a).
+The Ten-day HA of 3 µg/L is considered protective of non-carcinogenic adverse health effects
+for children of school age through adults over a ten-day exposure to cylindrospermopsin in
+drinking water.
+3.2.3 Uncertainty Factor Application
+• UF - A Ten-fold value is applied to account for variability in the human population. No
+H
+information was available to characterize interindividual and age-related variability in the
+toxicokinetics or toxicodynamics among humans. Individuals with a low RBC count as a
+result of genetic or nutritional factors could be more sensitive to cylindrospermopsin
+exposures than the general population. Individuals with pre-existing kidney/liver
+problems may also be more sensitive. Pregnant woman, nursing mothers, and the elderly
+could also be sensitive to cylindrospermopsin exposures.
+• UF - A Ten-fold value is applied to account for uncertainty in extrapolating from
+A
+laboratory animals to humans (i.e., interspecies variability). Information to quantitatively
+assess toxicokinetic or toxicodynamic differences between animals and humans is
+unavailable for cylindrospermopsin. Allometric scaling is not applied in the development
+of the Ten-Day HA values for cylindrospermopsin. The allometric scaling approach is
+derived from the relationship between body surface area and basal metabolic rate in
+adults (U.S. EPA, 2011b). This approach is not appropriate for infants and children due to
+the comparatively slower clearance during these ages and the limited toxicokinetic data
+available to assess the appropriateness of body weight scaling in early life.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 24
+• UF - An uncertainty factor of 3 (100.5 = 3.16) is selected to account for deficiencies in
+D
+the database for cylindrospermopsin. The database for cylindrospermopsin includes
+limited human studies. The database for studies in laboratory animals includes oral
+exposure acute, short-term and subchronic studies, but many of them lacked a
+comprehensive evaluation of a wide spectrum of effects. The database lacks chronic
+toxicity and multi-generation reproductive and developmental toxicity studies using the
+oral route of exposure. There is a lack of data on neurological and immunological
+endpoints. The RBC parameters evaluated differed between the Humpage and Falconer
+(2002, 2003) and Reisner et al. (2004) studies.
+The default factors typically used cover a single order of magnitude (i.e., 101). By
+convention, in the Agency, a value of 3 is used in place of one-half power (i.e., 10½) when
+appropriate (U.S. EPA, 2002).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 25
+4.0 RISK CHARACTERIZATION
+The following topics describe important conclusions used in the derivation of the health
+advisory. This section characterizes each topic and its impact on the health advisory.
+4.1 Studies Supporting Determination of Critical Study
+Increases in kidney weight and hematological effects are detected in all three studies
+(Humpage and Falconer, 2002, 2003; Reisner et al., 2004; and Sukenik et al., 2006). However,
+the type of hematological effects varied among studies as did the statistical significance of the
+observed effects. Humpage and Falconer (2002, 2003) found signs indicative of hemolysis
+(increased bilirubin, spleen weight and polychromasia (high number of RBCs with low
+hemoglobin)), while Reisner et al. (2004) and Sukenik et al. (2006) found acanthocytes
+(abnormal RBCs). Increases in kidney weight were significant for Humpage and Falconer (2002,
+2003) and Sukenik et al. (2006), but not statistically significant for Reisner et al. (2004).
+Humpage and Falconer (2002, 2003) and Reisner et al. (2004) used purified cylindrospermopsin,
+while Sukenik et al. (2006) used an extract in spent medium. Of these three studies, Humpage
+and Falconer (2002, 2003) provides a NOAEL (30 µg/kg/day) and a LOAEL (60 µg/kg/day) for
+dose-related statistically significant increases in kidney weights and indications of renal function
+effects at higher doses. Although the percent change in kidney weight is the same for Reisner et
+al. (2004), only the change observed by Humpage and Falconer (2002, 2003) was statistically
+significant.
+4.2 Study Duration
+The short-term studies with appropriate durations (typically 7 days up to 30 days)
+available for cylindrospermopsin (Shaw et al., 2001; Reisner et al., 2004), are not suitable for
+quantification, as described below. However, the Reisner study does support the use of the
+Humpage and Falconer (2002, 2003) study for the derivation of the Ten-day HA, despite the
+longer duration of the study.
+The Shaw et al (2001) study reported the results from multiple experiments. These
+experiments each have limitations including use of extract, lack of adequate numbers of animals
+and monitored endpoints, and the limited number of doses tested that preclude their use in
+quantification. The oral data for purified extract from Shaw et al. (2001) identified fatty liver as
+an adverse effect in mice following a 14 day gavage exposure to 0.05 mg/kg/day. However, the
+only effects mentioned in the published paper are the liver effects and an absence of
+lymphophagocytosis in the spleen.
+Reisner et al. (2004) conducted a 21 day study in mice and showed significant increases
+in hematocrit, acanthocytes (abnormal RBCs), and liver and testes weights effects at a 66
+µg/kg/day dose and a duration-related nonsignificant increase in and kidney weight. This study
+was not selected for development of the Ten-day HA because this study used a single dose;
+however, the effects to that dose after 3-weeks were comparable to the effects seen in the
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 26
+Humpage and Falconer (2002, 2003) study at a slightly lower 60 mg/kg/day dose after 11 weeks.
+The Humpage and Falconer (2002, 2003) study was determined to be the most appropriate for
+the quantitative assessment because the LOAEL at 11 weeks would be protective for the effects
+seen at 3-weeks in the shorter duration study.
+4.3 Allometric Scaling Approach
+Allometric scaling was not applied in the development of the RfD for
+cylindrospermopsin. In the development of short-term advisory values (One-day and Ten-day),
+parameters are used that reflect exposures and effects for infants up to one year of age, rather
+than for adults. The body weight scaling approach is derived from the relationship between body
+surface area and basal metabolic rate in adults. Infants/children surface area and basal metabolic
+rates are very different than adults with a slower metabolic rate. In addition, limited toxicokinetic
+data are available to assess the appropriateness of body weight scaling in early life. The body
+weight scaling procedure has typically been applied in the derivation of chronic oral RfDs and
+cancer assessments, both of which are concerned with lifetime repeated exposure scenarios (U.S.
+EPA, 2012). Thus, given the development of a Ten-Day HA value, and the application of the
+Ten-Day HA to infants and pre-school age children, the application of the body weight scaling
+procedure is not appropriate for this scenario.
+In addition, for short-term advisories (one-day and ten-day duration), EPA assumes all
+exposure is derived from drinking water and, therefore, no Relative Source Contribution (RSC)
+term is applied. For lifetime health advisory values, EPA does include an RSC that reduces the
+advisory value to account for other potential sources.
+4.4 Uncertainty and Variability
+Uncertainty factors were applied in several areas to adjust for incomplete information.
+Human data on the toxic effects of cylindrospermopsin are limited. Quantification for the
+absorption, distribution and elimination of cylindrospermopsin in humans following oral,
+inhalation or dermal exposure is not well understood. The clinical significance in humans for
+biological changes observed in experimental animals such as increased kidney weight, decreased
+urinary protein levels, decrease in renal failure index and the formation of acanthocytes
+(abnormal RBCs) is not known. In animal studies with cylindrospermopsin, adverse effects
+(RBC effects) observed have not been fully characterized. No data are available to quantify the
+differences between humans and animals for the critical health endpoints. There is uncertainty
+regarding susceptibility and variability characterized in the human population following
+exposure to cylindrospermopsin. Additional information is needed on the potential health risks
+from mixtures of cylindrospermopsin with other cyanotoxins, bioactive molecules with an effect
+on living organisms and chemical stressors present in ambient water and/or drinking water
+supplies. The critical study was conducted only in male mice and therefore, any gender-specific
+effects of cylindrospermopsin are not understood.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 27
+4.5 Susceptibility
+Available animal data are not sufficient to determine if there is a definitive difference in
+the response of males versus females following oral exposure to cylindrospermopsin. Based on
+the results from animal studies, individuals with liver and/or kidney disease might be more
+susceptible than the general population because of compromised detoxification mechanisms in
+the liver and impaired excretory mechanisms in the kidney. Data from an episode in a dialysis
+clinic in Caruaru, Brazil, where microcystins (and possibly cylindrospermopsin) were not
+removed by treatment of dialysis water, identify dialysis patients as a population of potential
+concern in cases where the drinking water source used by a clinic for hemodialysis is
+contaminated with cyanotoxins.
+The data on RBC acanthocytes suggest that individuals that suffer from anemia (e.g.,
+hemolytic or iron-deficiency) might be a potentially sensitive population. Several rare genetic
+defects such as abetalipoproteinemia (rare autosomal recessive disorder that interferes with the
+normal absorption of fat and fat-soluble vitamins from food) and hypobetalipoproteinemia are
+associated with abnormal RBC acanthocytes, which appears to result from a defect in expression
+of hepatic apoprotein B-100, a component of serum low density lipoprotein complexes (Kane
+and Havel, 1989). Individuals with either condition might be sensitive to exposure to
+cylindrospermopsin.
+Based on the currently available science, evidence is lacking to assess differences in
+susceptibility between infants, children and adults. There are, however, significant differences in
+exposure between these life-stages that impact risk.
+4.6 Distribution of Body Weight and Drinking Water Intake by Age
+Both body weight and drinking water intake distributions vary with age. EPA has
+developed two health advisory values, a Ten-day HA of 0.7 µg/L based on exposure to infants
+over the first year of life, and a Ten-day HA of 3 µg/L based on exposure to adults, over 21 years
+of age. Section 4.7 discusses how EPA recommends application of these values to other age
+groups.
+The U.S. EPA (2011a) Exposure Factors Handbook provides values for drinking water
+ingestion rate and corresponding body weight. The estimated 90th percentile of community water
+ingestion for the general population (males and females of all ages) has been used as the default
+value for water ingestion. EPA plotted the 90th percentile of drinking water intake using Table 3-
+19 for ages ≤ 3 years, and Table 3-38 for ages >3 years due to sample size in the respective
+studies. Age groups < 3 months in Table 3-19 were combined due to insufficient sample sizes.
+Figure 4.1 represents the 90th percentile drinking water ingestion rates (L/kg/day) for each age
+group (located on top of the columns). Bottle-fed ages are shown in red (first three columns on
+the left).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 28
+Figure 4-1. 90th Percentile Drinking Water Ingestion Rates by Age Group
+0.25
+0.23
+0.2
+0.148
+0.15
+0.112
+0.1
+0.056 0.052
+0.043
+0.05 0.035 0.034
+0.026 0.023 0.026
+0
+Adapted from U.S. EPA 2011 Exposure Factors Handbook (U.S.EPA, 2011a).
+Based on the drinking water intake rates for children <12 months (0.15 L/kg-day), the
+exposure of children is over 4 times higher than that of adults >21 years old on a body weight
+basis (0.034 L/kg-day). Infants from birth to 3 months may be exclusively bottle-fed and
+therefore, have a higher ingestion rate. After 3 months of age, typically around 4 to 6 months of
+age, other food and liquids are introduced into the infant diet, lowering the ingestion rate of
+drinking water. Drinking water contributes the highest risk of the total cyanotoxins intake for
+infants to one-year-olds fed exclusively with powdered formula prepared with tap water
+containing cyanotoxins. At the age of 6, children’s intake of drinking water relative to their body
+weight is approximately the same as those of an adult (>21 years). Data evaluating the transfer of
+cylindrospermopsin through breast milk are not available for humans.
+4.7 Distribution of Potential Health Advisory Values by Age
+Using the ingestion rates for each age group (from Figure 4-1), EPA estimated Ten-day
+HA values for cylindrospermopsin for each age group (plotted in Figure 4-2) to demonstrate the
+variability due to body weight and drinking water intake by age.
+EPA decided to apply the Ten-day HA value calculated for infants over the first year of
+life (0.7 µg/L) to all bottle-fed infants and young children of pre-school age because these age
+groups have higher intake per body weight relative to adults. As Figure 4-2 demonstrates, when
+the Ten-day HA is estimated by age group, the calculated HA value for infants from birth to 3
+setaR
+noitsegnI
+retaW
+gniknirD
+elit%09
+)yad/gk/L(
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 29
+Figure 4-2. Ten-day Health Advisories for Cylindrospermopsin by Age Group
+months old is 0.4 µg/L, slightly below the infant health advisory value of 0.7 µg/L. EPA believes
+that infants from birth to 3 months old are not at a disproportionate risk at a 0.7 µg/L advisory
+value because a safety factor of 30 is built into this calculation to account for human variability
+and deficiencies in the database. The estimated Ten-Day HA values for infants from 3 months
+old through pre-school age groups (less than 6 years old), are at or above the advisory value of
+0.7 µg/L. Therefore, children within these age groups are adequately protected by the advisory
+value for bottle-fed infants and young children of pre-school age. EPA decided to apply the adult
+Ten-Day HA value of 3 µg/L to school age children (children older than or equal to 6 years)
+through adulthood because children’s intake of drinking water relative to body weight in this age
+group is almost the same as those of an adult (≥ 21 years).
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 30
+5.0 ANALYTICAL METHODS
+The primary methods used for the analysis of cylindrospermopsin are liquid
+chromatography (LC) and enzyme linked immunosorbent assay (ELISA). Several detection
+modes are generally coupled with LC including single channel ultraviolet (UV)/visible and
+multi-channel UV photodiode array (PDA), electrospray ionization mass spectrometry (LC-
+ESI/MS), and electrospray ionization tandem mass spectrometry (LC-ESI/MS/MS). Due to the
+limited selectivity of UV-based detectors, the use of mass spectrometric detection is becoming
+more commonplace. Commercial ELISA test kits are also available for cylindrospermopsin
+detection. These kits are available in both semiquantitative and quantitative formats and are
+easily adapted to field or “screening” measurements.
+EPA has recently released Method 545 (U.S. EPA, 2015c) which is a LC-ESI/MS/MS
+method for the determination of cylindrospermopsin and anatoxin-a in drinking water. This
+method requires the operation of the mass spectrometer in MS/MS mode to enhance
+selectivity. In this method, samples are preserved with ascorbic acid (dechlorinating agent) and
+sodium bisulfate (microbial inhibitor). In the laboratory, aliquots (1 mL) of sample are taken for
+analysis, and internal standards are added. An aliquot of the sample is injected into an LC
+equipped with an analytical column that is interfaced to the mass spectrometer. The analytes are
+separated and then identified by comparing the acquired mass spectra and retention times to
+reference spectra and retention times for calibration standards acquired under identical liquid
+chromatography tandem mass spectrometry (LC-MS/MS) conditions. The concentration of each
+analyte is determined using the integrated peak area and internal standard technique. A single
+laboratory lowest concentration method reporting limit (LCMRL) of 0.063 µg/L was determined
+for cylindrospermopsin along with an average value of 0.083 µg/L for all participants of a multi-
+lab evaluation (n=4) (Winslow et al., 2006). Method 545: Determination of Cylindrospermopsin
+and Anatoxin-a in Drinking Water by Liquid Chromatography Electrospray Ionization Tandem
+Mass Spectrometry (LC-ESI/MS/MS) is available at
+http://water.epa.gov/scitech/drinkingwater/labcert/analyticalmethods_ogwdw.cfm.
+Other LC methods have generally used UV spectroscopic detection for
+cylindrospermopsin analysis. These methods have often incorporated solid phase extraction
+(SPE) to preconcentrate the target analyte, reduce matrix interferences or both. Quantitation
+limits have ranged from 4 µg/L to < 0.1 µg/L based on the instrumental setup and the use of
+preconcentration steps (Papageorgiou et al., 2012).
+Commercial ELISA kits for the detection of cylindrospermopsin are available from
+several vendors. These kits claim a working concentration range of 0.05 and 2 µg/L.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 31
+6.0 TREATMENT TECHNOLOGIES
+The information below is adapted from the draft Health Canada Guidelines for
+Cyanobacteria Toxins in Drinking Water, available later in 2015.
+Detailed information on the operational considerations of a variety of treatment methods
+can be found in the International Guidance Manual for the Management of Toxic Cyanobacteria
+(GWRC, 2009) and Management Strategies for Cyanobacteria (Blue-Green Algae): A Guide for
+Water Utilities (Newcombe et al., 2010) available at: http://www.waterra.com.au/cyanobacteria-
+manual/PDF/GWRCGuidanceManualLevel1.pdf and
+http://www.researchgate.net/profile/Lionel_Ho/publication/242740698_Management_Strategies
+_for_Cyanobacteria_(Blue-
+Green_Algae)_A_Guide_for_Water_Utilities/links/02e7e52d62273e8f70000000.pdf.
+For additional information on treatment strategies commonly used or being considered by
+water systems vulnerable to cyanotoxins, please see Recommendations for Public Water Systems
+to Manage Cyanotoxins in Drinking Water (U.S. EPA, 2015b).
+6.1 Management and Mitigation of Cyanobacterial Blooms in Source Water
+Algaecides can be applied to lakes and reservoirs to mitigate algal blooms, including
+cyanobacteria. In most cases, depending on the cyanobacteria species present, the application of
+algaecides has the potential to compromise cell integrity releasing cyanotoxins into the source
+waters. Chemical treatment to control blooms in drinking water sources in the early stages of the
+bloom when cyanobacterial concentrations are still relatively low (usually from 5,000 to 15,000
+cells/mL) (WHO, 1999), are less likely to release significant cyanotoxin concentrations upon cell
+lysis and may mitigate or prevent a cyanobacterial bloom from proliferating as the season
+progresses. If a cyanobacteria bloom does occur, utilities may investigate alternative raw water
+sources, change intake locations or levels to withdraw raw water with minimal cyanotoxin
+concentrations, or investigate methods of destratification in the water source. Purchasing water
+from a neighboring interconnected water system that is unaffected by the bloom may also be an
+option for some systems.
+Clays and commercial products such as aluminum sulfate (alum) have been used for the
+management of blooms in source waters. Alum treatment efficiency depends on the alum dose
+and the type of flocculant. Aeration and destratification have also been used to treat
+cyanobacterial blooms, usually in smaller water bodies (from one acre to several tens of
+acres). Active mixing devices, diffuse air bubblers, and other means of reducing stratification
+have proven to be effective in controlling outbreaks and persistence of blooms in relatively small
+shallow impoundments (around < 20 feet). These strategies can be applied to the entire source
+water body or to just a portion of the lake depending on the need, size and depth of the water
+body relative to the source water intake(s).
+The use of ultrasonic sound waves, or sonication, to disrupt cyanobacterial cells has also
+been investigated as a potential source water treatment option (Rajasekhar et al., 2012).
+Drawbacks include that application frequencies are difficult to calculate and are system-specific;
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 32
+and that applications on large scale require more powerful, and therefore, more expensive
+equipment. Sonication shows potential for use in cyanobacterial bloom management, but further
+study to determine effective operating procedures is needed before it can be considered as a
+feasible approach (Rajasekhar et al., 2012).
+Excess nutrients are thought to be a primary driver of cyanobacterial blooms. Long-term
+prevention of cyanobacterial blooms likely requires reductions in nutrient pollution. Excess
+nitrogen and phosphorus in aquatic systems can stimulate blooms and create conditions under
+which harmful cyanobacteria thrive. Thus, managing nutrient pollution sources within a
+watershed in addition to waterbody-specific physical controls (in systems that are amenable to
+those controls) tends to be the most effective strategy. Nutrient pollution can be from urban,
+agricultural, and atmospheric sources, and therefore, reductions can be achieved through a
+variety of source control technologies and best management practices.
+6.2 Drinking Water Treatment
+Effective treatment of cyanotoxins in drinking water includes the evaluation and selection
+of appropriate treatment methods. The water treatment methods need to be tailored to the type(s)
+of cyanobacteria present, the site-specific water quality (e.g., pH, temperature, turbidity,
+presence of natural organic material (NOM)), the treatment processes already in place and
+multiple treatment goals (e.g., turbidity and total organic carbon (TOC) removal, disinfection
+requirements, control of disinfection by-products (DBP) formation). Utilities need to have an
+understanding of the type and concentration of cyanotoxins present in the source water and
+should conduct site-specific evaluations such as jar testings and piloting in order to determine the
+most effective treatment strategy. Potential target parameters include: chlorophyll-a, turbidity,
+cyanobacterial cells and extracellular and intracelluar toxins. Care should be taken to avoid cell
+lysis. A multi-barrier approach consists of conventional filtration for intracellular
+cylindrospermopsin removal and additional processes such as activated carbon, biodegradation,
+advanced oxidation, and small-pore membrane processes (e.g. nanofiltration and reverse
+osmosis), for the removal or oxidation of extracellular cylindrospermopsin. The most effective
+way to deal with cyanobacteria cells and their toxins, is to remove the cells intact, without
+damaging them, to prevent the release of additional extracellular toxins into the water.
+When released from the cell, cylindrospermopsin can be found dissolved or attached to
+other materials such as particulate or soluble substances. Powdered activated carbon (PAC) has
+proven to be effective for removal of extracellular cylindrospermopsin. Limited information is
+available on the adsorption of cylindrospermopsin onto granular activated carbon (GAC).
+6.2.1 Conventional Treatment for Cylindrospermopsin
+In the absence of cell damage, conventional treatment employing coagulation,
+flocculation, clarification (sedimentation or dissolved air flotation) and rapid granular filtration
+can be effective at removing intact cells and the majority of intracellular toxins (cell bound)
+(Chow et al., 1998; Newcombe et al., 2015). However, if toxins are released into solution, a
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 33
+combination of conventional treatment processes with oxidation, adsorption and/or advanced
+treatment needs to be considered to treat both intracellular and extracellular cyanotoxins. Rapid
+sand filtration without pre-treatment (i.e., direct filtration, without coagulation/clarification) is
+not effective for cyanobacterial cell removal.
+Conventional water treatment (coagulation, flocculation, sedimentation or dissolved air
+flotation (DAF), and filtration) is considered effective for removal of intracellular toxins but
+ineffective for dissolved cyanotoxins such as cylindrospermopsin, which is partially dissolved in
+water under normal growth conditions (Chow et al., 1999; Rapala et al., 2006; Carrière et al.,
+2010). Application of a multiple barrier approach has the potential to be effective (Newcombe et
+al., 2015). Ho et al. (2008, 2011) conducted bench-scale studies and modeling on the use of
+PAC for the adsorption of cylindrospermopsin. The results demonstrated that a PAC dose of 25
+mg/L and a contact time of 60 minutes would be required to reduce 5 µg/L of
+cylindrospermopsin to less than 1 µg/L. When concentrations of cylindrospermopsin are 1-2
+μg/L or 3-4 μg/L, the recommended doses of PAC are 10-20 mg/L and 20-30 mg/L, respectively
+(Newcombe et al., 2010).
+Dixon et al. (2011b) also conducted laboratory-scale testing of integrated membrane
+systems for cyanotoxin removal. The results showed that an ultrafiltration system with pre-
+treatment using 2.2 mg/L of alum and 20 mg/L of PAC resulted in 97% removal of intra- and
+extra-cellular cylindrospermopsin to achieve a treated water concentration of less than 0.1 µg/L
+(Dixon et al., 2011a). Nanofiltration and reverse osmosis would likely be effective in removing
+dissolved toxins, but only a few studies have been conducted. Dixon et al. (2011a) studied the
+removal of cyanobacterial toxins by nanofitration and found that average removals between 90-
+100% could be achieved for cylindrospermopsin using membranes with a low molecular weight
+cut-off (MWCO) (< 300 Daltons).
+In practice, full-scale treatment plants use a combination of treatment technologies (i.e.,
+conventional filtration and chemical oxidation) in order to remove both intracellular and
+extracellular cyanotoxins. Extracellular cylindrospermopsin may be removed by many treatment
+plants using existing treatments such as chlorination or by the addition of PAC (Carriere et al.,
+2010). Although it is possible to remove both intracellular and extracellular toxins effectively
+using a combination of treatment processes, the removal efficiency can vary considerably.
+Utilities need to ensure that they are using their existing treatment processes to their fullest
+capacity for removal of both cyanobacterial cells and extracellular toxins, and that the
+appropriate monitoring is being conducted to ensure that adequate removal is occurring at each
+step in the treatment process.
+6.2.2 Chemical Oxidation
+Chemical oxidation using chlorine or ozonation can be effective at oxidizing
+cylindrospermopsin, but can also cause the cells to lyse, resulting in an increase in concentrations
+of extracellular toxins in drinking water. By applying conventional filtration (or another filtration
+process) first to remove the majority of intact cells, the extracellular cylindrospermopsin is less
+likely to increase due to cell lysis when water is treated with oxidants. In cases where pre-
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 34
+oxidation (oxidant applied anywhere along the treatment process prior the filter influent) is
+practiced, it may need to be discontinued during an algal bloom or adjustments to the oxidant
+type and doses may be needed to minimize cell rupture prior to filtration (Newcombe et al.,
+2015).
+Different cyanotoxins react differently to oxidants depending on the individual
+characteristics of the source water such as TOC, temperature and pH (Westrick et al., 2010).
+While chlorination is an effective treatment for oxidizing cylindrospermopsin, its effectiveness is
+dependent on pH. Rodriguez et al. (2007) found that at a pH of 7 and an initial chlorine dose of 1
+mg/L, oxidation of cylindrospermopsin is fast, with almost complete reaction after 30 minutes.
+Other chlorinated oxidants such as chloramines and chlorine dioxide have little impact on
+cylindrospermopsin due to a slow reaction rates. For example, the reaction of chlorine dioxide
+with cylindrospermopsin is relatively slow with a second-order rate constant of 0.9 M-1s-1 at pH
+8. The rate constant is pH-dependent and decreases significantly under mildly acidic conditions.
+Chlorine dioxide may be used to inactivate C. raciborskii, however, in typical drinking water
+treatment applications, it does not appear to be practical for oxidizing cylindrospermopsin given
+its slow reaction rate (de la Cruz et al., 2013). Oxidation by potassium permanganate is
+temperature dependent and has not been shown to be effective in oxidizing cylindrospermopsin.
+Water treatment utilities that use chloramines or chlorine dioxide as disinfectants to reduce the
+formation of regulated disinfection by-products may want to reconsider oxidation efficacy for
+cyanotoxin inactivation during periods when algal toxins are present in source waters, while
+balancing these other treatment objectives. Ozone has been shown to effectively oxidize
+cylindrospermopsin in laboratory-scale studies (de la Cruz et al., 2013). At pH 8, approximately
+95% of cylindrospermopsin (initial concentration of 415 µg/L) was oxidized using 0.38 mg/L O .
+3
+6.2.3 Ultraviolet Irradiation
+Studies have indicated that ultraviolet (UV) irradiation may be effective for the oxidation
+of cylindrospermopsis cells (Westrick et al., 2010). However, exposure times and/or UV doses
+tested in the bench-scale experiments were greater than those typically applied in drinking water
+treatment.
+6.3 Point-of-Use (POU) Drinking Water Treatment Units
+Limited information is available on residential treatment units for the removal of
+cyanobacteria cells and cyanotoxins. At this time, no units have been evaluated for removal of
+cylindrospermopsin. Further studies need to be conducted to assess the efficacy of home
+filtration devices for various cyanotoxins, including cylindrospermopsin, and for other filtering
+conditions such as increased toxin load and the presence of other contaminants in drinking water.
+Third-party organizations are currently developing certification standards to test POU devices to
+evaluate how well they remove cyanotoxins from drinking water treatment units. Those
+standards are expected in the near future.
+More information about treatment units and the contaminants they can remove can be found at
+http://www.nsf.org/Certified/DWTU/.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 35
+7.0 REFERENCES
+Bazin, E., Mourot, A., Humpage, A. R., et al. (2010). Genotoxicity of a Freshwater Cyanotoxin,
+Cylindrospermopsin, in Two Human Cell Lines: Caco-2 and HepaRG. Environmental
+and Molecular Mutagenesis, 51(3): 251-259.
+Brasil. (2009). Ministério da Saúde. Secretaria de Vigilânica em Saúde. Coordenação-Geral de
+Vigilância em Saúde Ambiental. Portaria MS n.º 518/2004 / Ministério da Saúde,
+Secretaria de Vigilância em Saúde, Coordenação-Geral de Vigilância em Saúde
+Ambiental – Brasília: Editora do Ministério da Saúde, 32 p. – (Série E. Legislação de
+Saúde) ISBN 85-334-0935-4,
+http://bvsms.saude.gov.br/bvs/publicacoes/portaria_ms_n518_2004.pdf
+Byth, S. (1980). Palm Island mystery disease. Medical Journal of Australia, 2(1): 40-42.
+Burns, J. (2008). Toxic cyanobacteria in Florida waters. In: Hudnell, H.K. (Ed.), Cyanobacterial
+Harmful Algal Blooms: State of the Science and Research Needs (Vol. 619, pp. 127-137).
+Springer Press, New York, NY.
+Carmichael, W.W., S.M.F.O. Azevedo, J.S. An et al. (2001). Human fatalities from
+cyanobacteria: Chemical and biological evidence for cyanotoxins. Environmental Health
+Perspective 109(7):663-668.
+Carrière, A., Prévost, M., Zamyadi, A., et al. (2010). Vulnerability of Quebec drinking water
+treatment plants to cyanotoxins in a climate change context. Journal of Water and
+Health, 8(3): 455-465.
+Castenholz, R.W. and Waterbury, J.B. (1989). In: J.T. Staley, M.P. Bryant, N. Pfennig and J.G.
+Holt Eds. Bergey's Manual of Systematic Bacteriology. Vol. 3, Williams & Wilkins,
+Baltimore, 1710-1727. (Cited in WHO 1999)
+Cheetham, S.A., Smith, A.L. et al. (2009). Limited cariation in major urinary proteins of
+laboratory mice. Physiology and Behavior, 95(2): pp.253-361.
+Chemical Book. (2012). CAS Index. Retrieved September 25, 2012 from the World Wide Web:
+http://www.chemicalbook.com/Search_EN.aspx?keyword
+Chernoff, N., E. H. Rogers, et al. (2011). Toxicity and recovery in the pregnant mouse after
+gestational exposure to the cyanobacterial toxin, cylindrospermopsin. Journal of Applied
+Toxicology, 31(3): 242-254.
+Chiswell, R., Shaw, K., Eaglesham, G. R., et al. (1999). Stability of cylindrospermopsin, the
+toxin from the cyanobacterium Cylindrospermopsis raciborskii, effect of pH,
+temperature, and sunlight on decomposition. Environmental Toxicology, 14(1): 155-161.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 36
+Chow, C.W.K.., et al. (1998). The effect of ferric chloride flocculation on cyanobacterial cells.
+Water Research, 32(3):808-814.
+Chow, C.W. K., et al. (1999). The impact of conventional water treatment processes on cells of
+the cyanobacterium microcystis aeruginosa. Water Research, 33(15):3253-3262.
+de la Cruz, A. A., Hiskia, A., Kaloudis, T., et al. (2013). A review on cylindrospermopsin: the
+global occurrence, detection, toxicity and degradation of a potent cyanotoxin.
+Environmental Science: Processes and Impacts, 15(11): 1979-2003.
+Dixon, M., Falconet C, Ho L., et al. (2011a). Removal of cyanobacterial metabolites by
+nanofiltration from two treated waters. Journal Hazardous Materials, 188(1-3): 288-295.
+Dixon, M., Richard, Y., Ho, L., Chow, C., O’Neill, B. and Newcombe, G. (2011b). A
+coagulation-powdered activated carbon ultrafiltration, multiple barrier approach for
+removing toxins from two Australian cyanobacterial blooms. Journal of Hazardous
+Materials, 186(2-3): 1553-1559.
+Duy, T.N., Lam, P.K.S., Shaw, G.R., and Connell, D.W. (2000). Toxicology and risk assessment
+of freshwater cyanobacterial (blue-green algal) toxins in water. Reviews of Environmental
+Contaminants Toxicology. 163:113-186.
+Falconer, I.R. (2005) Cyanobacterial Toxins of Drinking Water Supplies: Cylindrospermopsins
+and Microcystins. CRC Press Boca Raton, Florida. 263p
+Falconer, I.R. and A.R. Humpage. (2001). Preliminary evidence for in vivo tumour initiation by
+oral administration of extracts of the blue-green alga Cylindrospermopsis raciborskii
+containing the toxin cylindrospermopsin. Environ. Toxicol. 16(2):192-195.
+Fay, P. (1965). Heterotrophy and nitrogen fixation in Chlorogloea fritschii. J. Gen. Microbiol.,
+39:11-20. (Cited in WHO 1999)
+Froscio, S. M., E. Cannon, et al. (2009). Limited uptake of the cyanobacterial toxin
+cylindrospermopsin by Vero cells. Toxicon 54(6): 862-868.
+Froscio, S. M., Humpage, A. R., Burcham, P. C., et al. (2003). Cylindrospermopsin-induced
+protein synthesis inhibition and its dissociation from acute toxicity in mouse hepatocytes.
+Environmental Toxicology, 18(4): 243-251.
+Froscio, S. M., Humpage, A. R., Wickramasinghe, W., et al. (2008). Interaction of the
+cyanobacterial toxin cylindrospermopsin with the eukaryotic protein synthesis system.
+Toxicon, 51(2): 191-198.
+Funari, E. and Testai, E. (2008). Human Health Risk Assessment Related to Cyanotoxins
+Exposure. Critical Reviews in Toxicology, 38(2): 97-125.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 37
+Global Water Research Coalition (GWRC) (2009). International Guidance Manual for the
+Management of Toxic Cyanobacteria. Ed, G. Newcombe. Global Water Research
+Coalition and Water Quality Research Australia. London, United Kingdom.
+Graham, J., Loftin, K., Meyer, M., and Ziegler, A. (2010). Cyanotoxin mixtures and taste-and-
+odor-compounds in cyanobacterial blooms from the midwestern United States.
+Environmental Science and Technology, 44(19): 7361-7368.
+Griffiths, D. J. and Saker, M. L. (2003). The Palm Island mystery disease 20 years on: A review
+of research on the cyanotoxin cylindrospermopsin. Environmental Toxicology, 18(2): 78-
+93.
+Health Canada. (2012). Toxicity Profile for Cyanobacterial Toxins. Prepared for Water Quality
+and Science Division of Health Canada by MTE GlobalTox. MTE File No.: 36348-100.
+January 27, 2012. 48 pages.
+Ho, L., Lambling, P., Bustamante, H., et al. (2008). Biological filtration processes for the
+removal of algal metabolites. The Cooperative Research Center for Water Quality and
+Treatment. Research Report 64. Salisbury, Australia.
+Ho, L., McDowall, B., Wijesundara, S., et al. (2011). Application of powdered activated carbon
+for the adsorption of cylindrospermopsin and microcystin toxins from drinking water
+supplies. Water Research, 45(9): 2954-2964.
+Hudnell, H.K. (ed.) (2008). Cyanobacterial Harmful Algae Blooms, State of the Science and
+Research Needs. Proceedings of the Interagency, International Symposium on
+Cyanobacterial Harmful Algal Blooms. RTP North Carolina, Sept. 2005. Advances in
+Experimental Medicine & Biology. Springer Science. Vol. 619, 948 pp.
+Hudnell, H.K. (2010).The state of U.S. freshwater harmful algal blooms assessments policy and
+legislation. Toxicon 55, pp1024-1034.
+Humpage, A. R. and Falconer, I. R. (2002). Oral Toxicity of Cylindrospermopsin: No Observed
+Adverse Effect Level Determination in Male Swiss Albino Mice. The Cooperative
+Research Centre for Water Quality and Treatment, Salisbury, South Australia. Research
+Report No. 13.(93 pages).
+Humpage, A. R. and Falconer, I. R. (2003). Oral toxicity of the cyanobacterial toxin
+cylindrospermopsin in male Swiss albino mice: Determination of no observed adverse
+effect level for deriving a drinking water guideline value. Environmental Toxicology,
+18(2): 94-103.
+Humpage, A. R., Fenech, M, Thomas, P. and Falconer, I. R. (2000). Micronucleus induction and
+chromosome loss in transformed human white cells indicate clastogenic and aneugenic
+action of the cyanobacterial toxin, cylindrospermopsin. Mutation Research/Genetic
+Toxicology and Environemntal Mutagenesis, 472(1-2): 155-161.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 38
+Humpage, A. R., Fontaine, F., Froscio, S., Burcham, P., and Falconer, I. R. (2005).
+Cylindrospermopsin genotoxicity and cytotoxicity: Role of cytochrome P-450 and
+oxidative stress. Journal of Toxicology and Environmental Health, Part A, 68(9): 739-
+753.
+ILS (Integrated Laboratory Systems) (2000). Cylindrospermopsin: Review of Toxicological
+Literature. Prepared by Integrated Laboratory Systems for National Toxicology Program,
+NIEHS, USEPA. December 2000. (37 pages.)
+Kane, J. P. and Havel, R. J. (1989). Disorders of the biogenesis and secretion of lipoproteins
+containing the B apolipoproteins. In Screiver, C.R., Beaudet, A. L., Sly, W. S., Valle, D.:
+The Metabolic Basis of Inherted Disease. New York, NY: McGraw-Hill (6th ed.) p.
+1154-1155.
+Klitzke, S, Beusch, C, and Fastner, J. (2011). Sorption of the cyanobacterial toxins
+cylindrospermopsin and anatoxin-a to sediments, Water Research, 45(3):1338-46
+Klitzke, S., and J. Fastner. (2012). Cylindrospermopsin degradation in sediments--the role of
+temperature, redox conditions, and dissolved organic carbon. Water
+Research,1;46(5):1549-55
+Kosakowska, A., Nedzi, M. and Pempkowiak, J. (2007). Responses of the toxic cyanobacterium
+Microcystis aeruginosa to iron and humic substances. Plant Physiology and
+Biochemistry, 45, pp. 365-370.
+Loftin, K. and Graham, J. (2014). Occurrence of Cyanobacteria and Associated Toxins in
+Surface Water, Relative Risk, and Potential Changes Due to Environmental Factors in
+the United States. USGS presentation, November 2014. Retrieved on May 30th, 2015
+from the World Wide Web:
+http://ky.water.usgs.gov/projects/HABS/Presentations/USGS%20HAB%20Occurrence%
+20and%20Environmental%20Factors%2011_3_2014.pdf
+Lynch, R. and Clyde, T. (2009). A Survey of Cyanobacterial Toxins in Oklahoma Reservoirs.
+Paper presented at the 18th Annual Oklahoma cela Lakes and Wartersheds Association
+Conference on April 1 -3, 2009. Retrieved on September 29, 2012 from the World Wide
+Web: http://www.oclwa.org/pdf/2006%20Presentation%20PDFs/040506_6_lynch.pdf
+Marie, M. A., Bazin E., Fessard, V., et al. (2010). Morphological cell transformation of Syrian
+hamster embryo (SHE) cells by the cyanotoxin cylindrospermopsin. Toxicon, 55(7):
+1317-1322.
+Matthijs, H.C.P. et al. (2012). Selective suppression of harmful cyanobacteria in an entire lake
+with hydrogen peroxide. Water Research. 46, 1460-1472.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 39
+Ministry of Health. (2008). Drinking-water Standards for New Zealand 2005 (Revised 2008).
+Wellington: Ministry of Health. Retreived from the World Wide Web:
+http://www.health.govt.nz/system/files/documents/publications/drinking-water-standards-
+2008-jun14.pdf
+Mohamed, Z. A. and Alamri, S. A. (2012). Biodegradation of cylindrospermopsin toxin by
+microcystin-degrading bacteria isolated from cyanobacterial blooms. Toxicon, 60(8):
+1390-1395.
+Moore, M. R., Seawright, A. A., Chiswell, R. R., et al. (1998). The cyanobacterial toxin
+cylindrospermopsin: Its chemical properties and toxicology. Proceedings of the British
+Toxicology Annual Congress, Guilford, England, UK, April 19-22, 1998. Human and
+Experimental Toxicology, 17(9): 469-534.
+NHMRC, NRMMC (2011). Australian Drinking Water Guidelines Paper 6 National Water
+Quality Management Strategy. National Health and Medical Research Council, National
+Resource Management Ministerial Council, Commonwealth of Australia, Canberra.
+http://www.nhmrc.gov.au/_files_nhmrc/publications/attachments/eh52_australian_drinki
+ng_water_guidelines_150413.pdf
+Newcombe, G., House, J., Ho, L., et al. (2010). Management Strategies for Cyanobacteria (blue-
+green algae): A Guide for Water Utilities. Water Quality Research Australia. Research
+Report 74. Adelaide, Australia. (112 pages).
+Newcombe, G., Dreyfus, J., Monrolin, Y., Pestana, C., et al. (2015). Optimizing Conventional
+Treatment for the Removal of Cyanobacteria and Toxins. Water Research Foundation,
+Denver, CO.
+Norris, R. L.G., Eaglesham, G. K., Pierens, G., et al. (1999). Deoxycylindrospermopsin, an
+analog of cylindrospermopsin from Cylindrospermopsis raciborskii. Environmental
+Toxicology, 14(1): 163–165
+Norris, R. L. G., Seawright, A. A., Shaw, G. R., et al. (2001). Distribution of 14C
+cylindrospermopsin in vivo in the mouse. Environmental Toxicology, 16(6): 498-505.
+Norris, R. L. G., Seawright, A. A. Shaw, G. R., et al. (2002). Hepatic xenobiotic metabolism of
+cylindrospermopsin in vivo in the mouse. Toxicon, 40(4): 471-476.
+OH EPA (Ohio Environmental Protection Agency) (2012). 2011 Grand Lake St. Marys Algal
+Toxin Sampling Data. Retrieved September 25, 2012 from the World Wide Web:
+http://www.epa.state.oh.us/dsw/HAB.aspx
+OH EPA (Ohio Environmental Protection Agency) (2014). Public Water System Harmful Algal
+Bloom Response Strategy. Retrieved April 25, 2014 from the World Wide Web:
+http://epa.ohio.gov/Portals/28/documents/HABs/PWS_HAB_Response_Strategy_2014.p
+df
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 40
+Ohtani, I., R.E. Moore and M.T.C. Runnegar. (1992). Cylindrospermopsin: A potent hepatotoxin
+from the blue-green algae Cylindrospermopsis raciborskii. Journal of American
+Chemical Society. 114(20):7941-7942.
+OHA (Oregon Health Authority) (2015). Public Health Advisory Guidelines, Harmful Algae
+Blooms in Freshwater Bodies. Harmful Algae Bloom Surveillance (HABS) Program,
+Public Health Division, Center for Health Protection, Retrieved April 25, 2014 from the
+World Wide Web:
+http://public.health.oregon.gov/HealthyEnvironments/Recreation/HarmfulAlgaeBlooms/
+Documents/HABPublicHealthAdvisoryGuidelines%2020150424x.pdf
+Paerl H. W. and Huisman, J. (2008). Blooms like it hot. Science, 320(5872): 57–58
+Paerl, H.W. and Otten, T.G. (2013a). Blooms Bite the Hand That Feeds Them. Science. 342, 25,
+433-434.
+Paerl, H.W. and Otten, T.G. (2013b). Harmful Cyanobacterial Blooms: Causes, Consequences,
+and Controls. Microbial Ecology. 65: 995-1010.
+Papageorgiou, J., Nicholson, B., Wickramasinghe, et al. (2012). Criteria for Quality Control
+Protocols for Various Algal Toxin Methods. Water Research Foundation. Web Report
+#2942.
+Pilotto, L., Hobson, P., Burch, M. D., et al. (2004). Acute skin irritant effects of cyanobacteria
+(blue-green algae) in healthy volunteers. Australian and New Zealand Journal of Public
+Health, 28(3): 220-224.
+Rai, A.N. (1990). CRC Handbook of Symbiotic Cyanobacteria. CRC Press, Boca Raton, 253 pp.
+(Cited in WHO 1999)
+Rajasekhar, P., et al. (2012). A review of the use of sonication to control cyanobacterial blooms.
+Water Research. 46, 4319-4329.
+Rapala, J., M. Niemela, K. Berg, L. Lepisto, and K. Lahti. (2006). Removal of cyanobacteria,
+cyanotoxins, heterotrophic bacteria and endotoxins at an operating surface water
+treatment plant. Water, Science and Technology. 54:3:23.
+Reisner, M., Carmeli, S., Werman, M., and Sukenik, A. (2004). The cyanobacterial toxin
+cylindrospermopsin inhibits pyrimidine nucleotide synthesis and alters cholesterol
+distribution in mice. Toxicological Sciences, 82(2): 620-627.
+Rodriguez, E., Onstad, G. D., Kull, T. P. J., et al. (2007). Oxidative elimination of cyanotoxins:
+comparison of ozone, chlorine, chlorine dioxide and permanganate. Water Research,
+41(15): 3381-3393.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 41
+Rogers, E. H., Zehr, R. D., Gage, M. I., et al. (2007). The cyanobacterial toxin,
+cylindrospermopsin, induces fetal toxicity in the mouse after exposure late in gestation.
+Toxicon, 49(6): 855-864.
+Runnegar, M. T., Kong, S. M., Zhong, Y. Z., and Lu, S. C. (1995). Inhibition of reduced
+glutathione synthesis by cyanobacterial alkaloid cylindrospermopsin in cultured rat
+hepatocytes. Biochemical Pharmacology, 49(2): 219-225.
+Sarma, T.A. (2013). Cyanobacterial Toxins in Handbook of Cyanobacteria. CRC Press. Taylor
+and Francis Group, pp. 487-606.
+Shaw, G. R., Seawright, A. A., Moore, M. R., and Lam, P. K. (2000). Cylindrospermopsin, a
+cyanobacterial alkaloid: Evaluation of its toxicologic activity. Therapeutic Drug
+Monitoring, 22(1): 89-92.
+Shaw, G. R., Seawright, A. A., and Moore, M. R. (2001). Toxicology and human health
+implications of the cyanobacterial toxin cylindrospermopsin. In: Dekoe, W. J., Samson,
+R. A., van Egmond, H. P., et al. (Eds), Mycotoxins and Phycotoxins in Perspective at the
+Turn of the Millennium. IUPAC & AOAC International, Brazil, pp. 435-443.
+Shen, X., Lam, P. K. S., Shaw G. R., and Wickramasinghe, W. (2002). Genotoxicity
+investigation of a cyanobacterial toxin, cylindrospermopsin. Toxicon, 40(10): 1499-1501.
+Sibaldo de Almeida, C., Costa de Arruda, A. C., Caldas de Queiroz, E., et al. 2013. Oral
+exposure to cylindrospermopsin in pregnant rats: reproduction and foetal toxicity studies.
+Toxicon, 74: pp. 127–129
+Sieroslawska, A. (2013). Assessment of the mutagenic potential of cyanobacterial extracts and
+pure cyanotoxins. Toxicon, 74(0): 76–82.
+Stewart, I., Robertson, I. M., Webb, P. M., et al. (2006). Cutaneous hypersensitivity reactions to
+freshwater cyanobacteria – human volunteer studies. BMC Dermatology, 6:6.
+Straser, A., Filipic, M., and Zegura, B. (2011). Genotoxic effects of the cyanobacterial
+hepatotoxin cylindrospermopsin in the HepG2 cell line. Archives of toxicology, 85(12):
+1617-1626.
+Sukenik, A., Reisner, M., Carmeli, S., and Werman, M. (2006). Oral Toxicity of the
+Cyanobacterial Toxin Cylindrospermopsin in Mice: Long-Term Exposure to Low Doses.
+Environmental Toxicology, 21(6): 575-582.
+Terao, K., S. Ohmori, K. Igarashi et al. (1994). Electron microscopic studies on experimental
+poisoning in mice induced by cylindrospermopsin isolated from blue-green alga
+Umezakia natans. Toxicon. 32(7): 833-843.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 42
+Toxicology Literature Online (TOXLINE) (2012). Toxicology Data Network, National Institute
+of Health. Retrieved on September 25, 2012 from the World Wide Web:
+http://toxnet.nlm.nih.gov/cgi-bin/sis/htmlgen?TOXLINE
+U.S. EPA (United States Environmental Protection Agency). (1986). Guidelines for
+Mutagenicity Risk Assessment. Fed. Reg. 51(185):34006-34012. Available from:
+http://cfpub.epa.gov/ncea/cfm/recordisplay.cfm?deid=23160
+U.S. EPA (United States Environmental Protection Agency) (1999). Drinking Water Health
+Advisories: Pesticides. Lewis Publishers. ISBN: 978-0-87371-235-4.
+U.S. EPA (United States Environmental Protection Agency) (2002). A Review of the Reference
+Dose and Reference Concentration Processes. Risk Assessment Forum, Washington, DC;
+EPA/630/P-02/0002F. Available from: http://www.epa.gov/iris/backgrd.html
+U.S. EPA (United States Environmental Protection Agency). (2005). Guidelines for Carcinogen
+Risk Assessment. Risk Assessment Forum, Washington, DC; EPA/630/P-03/001B.
+Available from: http://www.epa.gov/iris/backgrd.html
+U.S. EPA (United States Environmental Protection Agency) (2009). National Lakes Assessment:
+A Collaborative Survey of the Nation’s Lakes. EPA 841-R-09-001. Available from:
+http://www.epa.gov/owow/LAKES/lakessurvey/pdf/nla_report_low_res.pdf
+U.S. EPA (United States Environmental Protection Agency). (2011a). Exposure Factors
+Handbook: 2011 edition. Office of Research and Development, National Center for
+Environmental Assessment, Washington, DC. EPA/600/R-090/052F. 1436 pp.
+http://www.epa.gov/ncea/efh/pdfs/efh-complete.pdf
+U.S. EPA (United States Environmental Protection Agency). (2011b). Recommended Use of
+Body Weight 3/4 as the Default Method in Derivation of the Oral Reference Dose.
+EPA/100/R11/0001. http://www2.epa.gov/sites/production/files/2013-
+09/documents/recommended-use-of-bw34.pdf.
+U.S. EPA (United States Environmental Protection Agency). (2012). Benchmark dose technical
+guidance document [external review draft]. EPA/630/R-00/001. Available from:
+http://www.epa.gov/iris/backgrd.html
+U.S. EPA (United States Environmental Protection Agency). (2014). Framework for Human
+Health Risk Assessment to Inform Decision Making. Office of the Science Advisor, Risk
+Assessment Forum, Washington, DC; EPA/100/R-14/001. Available from:
+http://www2.epa.gov/programs-office-science-advisor-osa/framework-human-health-
+risk-assessment-inform-decision-making
+U.S. EPA (United States Environmental Protection Agency). (2015a). Health Effects Support
+Document for the Cyanobacterial Toxin Cylindrospermopsin. EPA 820R15101,
+Washington, DC; June, 2015. Available from:
+http://www2.epa.gov/nutrient-policy-data/health-and-ecological-effects
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 43
+U.S. EPA (United States Environmental Protection Agency). (2015b). Recommendations for
+Public Water Systems to Manage Cyanotoxins in Drinking Water. EPA-815R15010,
+Washington, DC; 2015. Available from: http://www2.epa.gov/nutrient-policy-data/
+guidelines-and-recommendations
+U.S. EPA (United States Environmental Protection Agency). (2015c) Method 545.
+Determination of Cylindrospermopsin and Anatoxin-a in Drinking Water by Liquid
+Chromatography Electrospray ionization Tandem Mass Spectrometry (LC/ESI-MS/MS).
+EPA-815-R-15-009, Cincinnati, OH. Available at:
+http://water.epa.gov/scitech/drinkingwater/labcert/upload/epa815r15009.pdf
+Wang, Z. et al. (2012). An integrated method for removal of harmful cyanobacterial blooms in
+eutrophic lakes. Environmental Pollution, 160, 34-41.
+Westrick J., Szlag, D., Southwell, B. and Sinclair, J. (2010). A review of cyanobacteria and
+cyanotoxins removal/inactivation in drinking water treatment. Analytical Bioanalytical
+Chemistry, 397(5): 1705-1714.
+Wimmer, K. M., Strangman, W. K., and Wright, J. L. C. (2014). 7-Deoxy-desulfo-
+cylindrospermopsin and 7-deoxy-desulfo-12-acetylcylindrospermopsin: Two new
+cylindrospermopsin analogs isolated from a Thai strain of Cylindrospermopsis
+raciborskii. Harmful Algae, 37(0): 203-206.
+Winslow, S. D., Pepich, B. V., Martin, J. J., et al. (2006). Statistical Procedures for
+Determination and Verification of Minimum Reporting Levels for Drinking Water
+Methods. Environmental Science & Technology, 40(1): 281-288.
+WHO (World Health Organization). 1999. Toxic Cyanobacteria in Water: A Guide to their
+Public Health Consequences, Monitoring, and Management, I. Chorus and J. Bartram,
+Eds. E&FN Spon, London, UK.
+Zegura, B., Gajski, G., Straser, A. and Garaj-Vrhovac, V. (2011). Cylindrospermopsin induced
+DNA damage and alteration in the expression of genes involved in the response to DNA
+damage, apoptosis and oxidative stress. Toxicon, 58(6-7): 471-479.
+Drinking Water Health Advisory for Cylindrospermopsin - June 2015 44

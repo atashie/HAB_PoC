@@ -1,0 +1,139 @@
+GUIDELINES FOR DRINKING-WATER QUALITY 12. CHEMICAL FACT SHEETS
+are mostly a consequence of the presence of cyanogen chloride, it is not considered
+necessary to develop a guideline value for long-term exposure to cyanide.
+Cyanobacterial toxins: Microcystin-LR
+Among the cyanobacterial toxins, microcystins are the best-researched group and
+probably occur most frequently in fresh waters. Many practical considerations for
+the abatement of microcystins apply similarly to the other cyanotoxins (i.e. cylindro-
+spermopsins, saxitoxins, anatoxin-a and anatoxin-a(s)), with one key difference that
+is relevant to the efficacy of their removal in drinking-water treatment: microcystins
+are usually cell-bound, and substantial amounts are released to the surrounding water
+only in situations of cell rupture (i.e. lysis), whereas the other cyanotoxins may occur
+to a larger extent dissolved in water.
+Although microcystins may occur in fish, molluscs and shellfish from water bodies
+with cyanobacterial proliferation, human exposure to microcystins is largely through
+drinking-water or recreational use of water bodies with cyanobacterial blooms.
+Among the more than 80 microcystins identified to date, only a few occur fre-
+quently and in high concentrations. Microcystin-LR is among the most frequently
+occurring and most toxic microcystin congeners. It is the only one for which enough
+toxicological data are available with which to derive a provisional guideline value. Fre-
+quently occurring cyanobacterial genera that may contain microcystins are Microcystis,
+Planktothrix and Anabaena (see also section 11.5).
+Provisional guideline value Total microcystin-LR (free plus cell-bound): 0.001 mg/l (1 µg/l)
+The guideline value is provisional, as it covers only microcystin‑LR, the
+database is limited and new data for the toxicity of cyanobacterial toxins
+are being generated.
+TDI 0.04 µg/kg body weight, based on liver pathology observed in a 13‑week
+study in mice and applying an uncertainty factor of 1000, taking into
+consideration limitations in the database, in particular lack of data on
+chronic toxicity and carcinogenicity
+Limit of detection 0.1–1 µg/l by HPLC following extraction of cells with 75% aqueous
+methanol or following concentration of microcystins from liquid
+samples on C‑18; will allow differentiation between variants where
+standards are available
+0.1–0.5 µg/l by commercially available immunoassay kits (enzyme‑linked
+immunosorbent assay) for microcystins dissolved in water or in aqueous
+extracts of cells; will detect most microcystins; these are less precise in
+quantification than HPLC, but useful for screening
+0.5–1.5 µg/l by protein phosphatase assay for microcystins dissolved in
+water or in aqueous extracts of cells; will detect all microcystins; this assay
+is less precise in quantification and identification than HPLC, but useful for
+screening
+Monitoring The preferred approach is visual monitoring (including microscopy for
+potentially microcystin‑containing genera) of source water for evidence
+of increasing cyanobacterial cell density (blooms) or bloom‑forming
+potential and increased vigilance where such events occur
+344
+GUIDELINES FOR DRINKING-WATER QUALITY 12. CHEMICAL FACT SHEETS
+Prevention and treatment Actions to decrease the probability of bloom occurrence include
+catchment and source water management, such as reducing nutrient
+loading or changing reservoir stratification and mixing. Treatment
+effective for the removal of cyanobacteria includes filtration to remove
+intact cells. Treatment effective against free microcystins in water (as
+well as most other free cyanotoxins) includes oxidation through ozone
+or chlorine at sufficient concentrations and contact times, as well as GAC
+and some PAC applications (see the supporting document Management
+of cyanobacteria in drinking-water supplies; Annex 1).
+Guideline value derivation
+•
+allocation to water 80% of TDI
+•
+weight 60 kg adult
+•
+consumption 2 litres/day
+Assessment date 2003
+Principal references Chorus & Bartram (1999) Toxic cyanobacteria in water
+WHO (2003) Cyanobacterial toxins: Microcystin-LR in drinking-water
+Microcystin-LR is a potent inhibitor of eukaryotic protein serine/threonine phos-
+phatases 1 and 2A. The primary target for microcystin toxicity is the liver, as micro-
+cystins cross cell membranes chiefly through the bile acid transporter. Guideline value
+derivation was based on an oral 13-week study with mice, supported by an oral 44-day
+study with pigs. A large number of poisonings of livestock and wildlife have been re-
+corded. Evidence of tumour promotion has been published. In 2006, IARC classified
+microcystin-LR as a possible carcinogen (Group 2B).
+Practical considerations
+Cyanobacteria occur widely in lakes, reservoirs, ponds and slow-flowing rivers. Where
+their excessive growth leads to high cell numbers, sometimes termed “bloom” events,
+their toxins can reach concentrations in raw water that are potentially hazardous to
+human health. Blooms occur if concentrations of nutrients (phosphorus and nitro-
+gen) are elevated, particularly in stagnant or very slowly flowing water bodies. Blooms
+tend to recur in the same water bodies. Cells of some cyanobacterial species may ac-
+cumulate at the surface as scums or at the thermocline of thermally stratified res-
+ervoirs. Such accumulations may develop rapidly, and they may be of very variable
+duration (hours to weeks). In many circumstances, blooms and accumulations are
+seasonal.
+A variety of resource protection and source management actions are available to
+decrease the probability of bloom occurrence. Among these, the most sustainable and
+effective measure is to reduce nutrient (particularly phosphorus) concentrations in
+the water body to levels sufficiently low to substantially limit the amount of cyano-
+bacterial biomass that can grow. This is achieved by controlling nutrient loads from
+sewage effluents and from land areas. The latter involves controlling erosion as well as
+the amount of manure and fertilizers spread in the catchment. Further, hydrological
+management actions such as water body mixing and flushing can render hydrophysic-
+al conditions less suitable for cyanobacteria and thus shift plankton species from
+cyanobacteria to others (i.e. planktonic algae such as diatoms) that are less relevant to
+human health.
+344 345
+GUIDELINES FOR DRINKING-WATER QUALITY 12. CHEMICAL FACT SHEETS
+As microcystins almost always occur largely cell-bound, any drinking-water treat-
+ment that removes particles—i.e. soil or riverbank filtration, flocculation and filtra-
+tion or dissolved air filtration—controls them effectively if the process is optimized to
+target their removal. This also applies to the cell-bound fraction of other cyanotoxins.
+Process operation should avoid cell rupture and toxin release. Hazardously high con-
+centrations of dissolved cyanotoxins appear to occur less frequently. They are well
+removed by most types of activated carbon. Chlorination and ozonation are effective
+for the removal of many cyanotoxins at sufficiently high doses and contact times, but
+not very effective for saxitoxins. Potassium permanganate is effective for microcystins,
+whereas limited or no data are available at present for other toxins. Chlorine dioxide
+and chloramine are ineffective for removing cyanotoxins.
+Cyanotoxin monitoring is most effectively based on surveillance of source water
+for evidence of cyanobacterial blooms or bloom-forming potential (i.e. nutrient levels
+and phytoplankton species composition), with vigilance increased where such events
+occur. In contrast, monitoring finished water against target cyanotoxin concentrations
+is unsatisfactory for determining whether or not it is safe, because of the large variety
+of toxins (particularly of microcystins), the lack of guideline values for all but one
+(i.e. microcystin-LR) against which to monitor and the lack of analytical standards
+for many. Analysis of cyanotoxins is particularly useful for validating and optimizing
+the efficacy of control measures such as riverbank filtration or treatment. A caveat in
+cyanotoxin analysis is the need for extraction of the cell-bound fraction from the cells;
+although this is easy to do, particularly for microcystins, neglecting extraction from
+cells will lead to dramatic underestimation of concentrations.
+Cyanogen chloride
+Cyanogen chloride may be formed as a by-product of chloramination or chlorination
+of water. It is also formed by the chlorination of cyanide ion present in raw water.
+Reason for not establishing Occurs in drinking‑water at concentrations well below those of health
+a guideline value concern
+Assessment date 2009
+Principal references IPCS (2004) Hydrogen cyanide and cyanides
+WHO (2009) Cyanogen chloride in drinking-water
+Cyanogen chloride is rapidly metabolized to cyanide in the body. There are few
+data available on the oral toxicity of cyanogen chloride.
+As cyanogen chloride is unlikely to be found in drinking-water at concentrations
+that are of health concern, it is considered unnecessary to develop a formal guideline
+value for cyanogen chloride. Instead, for guidance purposes, a health-based value is
+derived based on cyanide.
+Using a NOAEL for cyanide of 4.5 mg/kg body weight per day for minor changes
+in the testis in a subchronic study in which rats were exposed through their drink-
+ing-water and an uncertainty factor of 100, a TDI for cyanide of 0.045 mg/kg body
+weight (corresponding to a cyanogen chloride dose of 0.11 mg/kg body weight) can be
+346

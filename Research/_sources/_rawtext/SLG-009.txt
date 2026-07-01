@@ -1,0 +1,1262 @@
+HARMFUL ALGAL BLOOMS (HABS)
+PROGRAM GUIDE
+www.dec.ny.gov
+Contents
+List of Tables ....................................................................................................................ii
+List of Figures ...................................................................................................................ii
+Abbreviations and Acronyms ........................................................................................... iii
+1. Executive Summary ................................................................................................. 1
+2. Introduction .............................................................................................................. 2
+2.1. Purpose of this Document ............................................................................... 2
+2.2. Scope, Jurisdiction and Audience ................................................................... 2
+2.3. Background ..................................................................................................... 2
+2.4. Agency Responsibilities .................................................................................. 4
+3. DEC Bloom Status Designation in New York ........................................................... 8
+3.1. Bloom Status Criteria ...................................................................................... 8
+3.2. Threshold Development ................................................................................ 12
+3.3. Cyanotoxins and Other Harmful Compounds ............................................... 13
+4. Bloom Reporting: HABs Documentation by DEC ................................................... 15
+4.1. Surveillance & Sampling: Two approaches ................................................... 15
+4.2. HABs Monitoring and Reporting in New York ............................................... 17
+5. Outreach ................................................................................................................ 19
+5.1. Communication to Collaborators ................................................................... 19
+5.2. DEC HABs Webpages .................................................................................. 20
+5.3. Additional Outreach Efforts ........................................................................ 22
+5.4. DEC Monitoring Program Reporting ............................................................. 23
+6. Methods for Bloom Prevention and Control ........................................................... 24
+6.1. 2018 Governor’s HABs Initiative ................................................................... 24
+6.2. Bloom Prevention .......................................................................................... 25
+6.3. In-Lake Bloom Control Options ..................................................................... 26
+7. Appendices ............................................................................................................ 29
+7.1. Appendix A. Glossary ................................................................................... 29
+7.2. Appendix B. DEC Suspicious Algal Bloom Report Form ............................... 30
+7.3. Appendix C. Warning Sign ............................................................................ 33
+7.4. Appendix D. References and Resources ...................................................... 34
+i | DEC HABS PROGRAM GUIDE - Version 3
+List of Tables
+Table 2.1 Summary of state agency programmatic responsibilities ................................ 6
+Table 3.1 Summary of the types of information regarding HABs that are received by the
+DEC HABs Program and descriptions of how this information is used to determine
+bloom status; updated in 2020. ..................................................................................... 11
+Table 3.2 WHO guidance values for the relative probability of health effects resulting
+from exposure to cyanobacteria blooms and microcystin .............................................. 13
+Table 6.1 Summary of water management techniques used for algal blooms, their
+effectiveness, DEC permitting requirements and relative cost. ..................................... 27
+List of Figures
+Figure 2.1 Summary of organization roles, interest groups, and exposure groups that
+are served by the DEC HABs Program. .......................................................................... 7
+Figure 3.1 Decision tree that indicates the process by which DEC HABs Program staff
+determine the status of a potential bloom; updated in 2020. ......................................... 10
+Figure 5.1 Example of the statewide map of HABs locations that is displayed on the
+DEC HABs notifications page through NYHABS. .......................................................... 22
+ii | DEC HABS PROGRAM GUIDE - Version 3
+Abbreviations and Acronyms
+Acronym Definition
+µg/L Micrograms per liter (parts per billion)
+BG Blue green
+BWAM Bureau of Water Assessment and Management
+CALM Consolidated Assessment and Listing Methodology
+CSLAP Citizen Statewide Lake Assessment Program
+CWA Clean Water Act
+DEC Department of Environmental Conservation
+DESP Division of Environmental Stewardship and Planning
+DOW Division of Water
+ELAP Environmental Laboratory Approval Program
+HA Health Advisory
+HAB Harmful Algal Bloom
+LCBP Lake Champlain Basin Program
+LCC Lake Champlain Committee
+LCI Lake Classification and Inventory Program
+LHD Local Health Department
+LMAS Lake Management and Assessment Section
+NOAA National Oceanic and Atmospheric Administration
+NYC New York City
+NYCDEP New York City Department of Environmental Protection
+NYSDOH New York State Department of Health
+NYHABS New York HAB System
+OPRHP Office of Parks, Recreation and Historic Preservation
+PWS Public Water Supply
+RIBS Rotating Integrated Basin Sampling
+SDWA Safe Drinking Water Act
+SSC State Sanitary Code
+SUNY State University of New York
+TMDL Total Maximum Daily Load
+TOGS Technical & Operational Guidance Series
+USACE United States Army Core of Engineers
+USEPA United States Environmental Protection Agency
+VDH Vermont Department of Health
+WHO World Health Organization
+WI/PWL Waterbody Inventory/Priority Waterbodies List
+iii | DEC HABS PROGRAM GUIDE - Version 3
+1. Executive Summary
+Harmful Algal Blooms (HABs) in freshwater generally consist of cyanobacteria (also
+referred to as blue-green algae). Cyanobacteria are naturally present in low numbers in
+most marine and freshwater systems but under certain conditions, particularly high
+nutrients and warm temperatures, the organisms can begin to multiply rapidly and form
+blooms. Several types of cyanobacteria have the potential to produce toxins and other
+harmful compounds that can pose a health risk to people and animals through
+ingestion, skin contact, or inhalation. The New York State DEC suggests avoiding
+contact with any water that is discolored or has algal scums on the surface.
+The purpose of this guide is to describe how DEC identifies and documents
+cyanobacteria HABs, communicates health risks to the public, provides guidance on
+bloom management, and conducts research. The primary audience for this guide is
+New York state agency staff, but the guide may be useful to others, particularly the wide
+range of partners involved in addressing HABs in New York. The DEC HABs Program
+uses a combination of visual surveillance, chlorophyll concentration (specifically, the
+portion of total chlorophyll that can be fluoroscopically attributed to cyanobacteria, also
+known as blue-green chlorophyll) and total microcystins concentration (a toxin produced
+by cyanobacteria) to determine bloom status (No Bloom, Confirmed Bloom, or
+Confirmed with High Toxins Bloom). The bloom status system provides a uniform way
+to rapidly communicate interpreted information about HABs throughout the state.
+DEC receives HABs reports from state agency staff, the public, and several
+collaborating partners. DEC staff work to support structured monitoring on waterbodies
+prone to HABs through existing monitoring programs and site-specific partnerships.
+Rapid and effective outreach is a critical component of the DEC HABs Program.
+Communication of information about HABs serves to inform the public’s recreational
+choices. DEC maintains the New York HAB System (NYHABS) which features an
+interactive map of current and archived bloom locations and a shared inter-agency
+database for rapid communication of bloom occurrences and sampling results. The
+DEC HABs Program publishes annual and cumulative summaries of bloom reports.
+At Governor Cuomo’s direction, DEC is leading a multi-agency, statewide initiative to
+aggressively combat HABs, protect drinking water quality and the economy. In 2018,
+four summits brought together national, state, and local experts to discuss how to
+reduce the frequency of HABs. The summits drove the creation of Action Plans for 12
+priority lakes and advanced technology pilots. These efforts will lead to knowledge that
+can be applied to waterbodies across the state. This guide includes information
+regarding HAB prevention and control approaches; watershed-based nutrient input
+reduction, water treatment strategies, and in-lake control methods are summarized.
+1 | DEC HABS PROGRAM GUIDE - Version 3
+2. Introduction
+2.1. Purpose of this Document
+The purpose of the DEC HABs Program Guide is to describe how DEC identifies
+and documents freshwater cyanobacteria HABs throughout the state, communicates
+health risks to the public, provides guidance on bloom management, interacts with
+other agencies, and conducts research.
+2.2. Scope, Jurisdiction and Audience
+This guide follows the scope of the DEC HABs Program. The DEC HABs Program
+serves all surface waters in New York, although HABs are most likely to be observed
+and reported in lakes, reservoirs, or ponds. Because of an increased likelihood of
+public exposure, the program focuses on waterbodies that have public access, serve
+as drinking water supplies or have
+regulated bathing beaches. The What is the DEC HABs Program?
+jurisdictional framework in New York,
+The program consists of DEC staff within
+and therefore the DEC HABs
+Program, does not distinguish DOW BWAM who work to identify bloom
+between public and private waters status, oversee HAB monitoring and
+since all of the waters of the state may surveillance activities, communicate
+be used by the public (see the New public health risks, and conduct outreach,
+York State Clean Lakes Assessment). education, and research.
+This guide does not address marine
+blooms that occur in coastal and estuarine environments in New York. Many of the
+concepts discussed here could be used in the future to address blooms in these
+waters. Marine blooms are currently tracked and reported through the DEC Marine
+Biotoxin Monitoring Program.
+This guide outlines the DEC HABs Program elements that are under the explicit or
+assumed authority of DEC but includes references to those elements assumed by
+the NYSDOH and/or the New York OPRHP.
+The primary intended audience for this guide is state agency staff who are directly
+involved in implementing or work with the DEC HABs Program; the surveillance and
+monitoring partners described in this document; and those members of the public
+interested in background information about the development and implications of the
+HABs program.
+2.3. Background
+New York State has an abundance of water resources, both flowing and ponded.
+HABs are most commonly observed in ponded waters, although blooms have been
+documented in several streams and rivers. There is no formal legal definition of a
+lake, but by most common measures, there are between 7,500 and 16,000 ponded
+2 | DEC HABS PROGRAM GUIDE - Version 3
+waters in New York. Lakes are heavily used and enjoyed by New Yorkers for a wide
+variety of purposes including recreation and as surface drinking water supplies.
+DOW is tasked with protecting and
+What do HABs look like?
+conserving the water resources of
+Know it!
+New York. This mission is achieved
+Cyanobacteria HABs can have a variety of
+through a variety of programs and
+appearances such as scattered green dots
+activities. The primary function of
+in the water, long, linear green streaks, pea
+the DOW’s Bureau of Water
+soup or spilled paint appearance, or blue-
+Assessment and Management
+green or white coloration. For more info:
+http://www.dec.ny.gov/chemical/81962.html (BWAM) is to monitor and assess
+waterbodies of the state to
+determine whether they are supporting their best intended uses such as potable
+water, public bathing, and recreation. BWAM programs address the mission of the
+DOW and identify water quality issues of concern in New York waterbodies
+One such challenge that has become increasingly prevalent throughout New York
+are HABs. HABs in freshwater generally consist of cyanobacteria (also referred to as
+blue-green algae). Cyanobacteria are naturally present in low numbers in most
+marine and freshwater systems, but under certain conditions (particularly high
+nutrients and warm temperatures) these organisms can begin to multiply rapidly and
+form blooms. Cyanobacteria, which are like algae, possess chlorophyll and are
+capable of photosynthesis. Several taxa have the potential to produce toxins.
+Whether toxins are present or not, exposure to any cyanobacterial blooms can
+cause health effects in people and animals when water with blooms is touched,
+swallowed, or when airborne droplets are inhaled.
+Although HABs have been observed for
+What if you see a bloom?
+many decades, recent high-profile blooms
+Avoid it! Report it!
+throughout the world and in New York
+People, pets and livestock should
+have increased the need for enhanced
+avoid contact with water that is
+education, documentation, and reporting of
+discolored or has algal scums on the
+blooms. Since 2012, HABs have been
+surface. If a bloom is present, do not
+documented in several hundred use the water and report to DEC
+waterbodies in New York, and it is likely using the Suspicious Algal Bloom
+the true extent of bloom occurrence is Report Form: on.ny.gov/habform
+substantially greater. It is not yet known if
+recent increases in bloom frequency and duration reflect changing environmental
+conditions or are a result of improved reporting and monitoring of their occurrence.
+Many New York waterbodies are regularly monitored through formal monitoring
+programs. Over 200 lakes are sampled each year through two DEC ambient lake
+monitoring programs: The Citizens Statewide Lake Assessment Program (CSLAP)
+and the DEC Lake Classification and Inventory Program (LCI). In recent years, both
+programs expanded to include significant HABs monitoring components. Most other
+3 | DEC HABS PROGRAM GUIDE - Version 3
+HABs surveillance or sampling is done on individual waterbodies by agency staff,
+researchers, consultants, trained volunteers or as part of special studies. As
+described below, several partnerships have been established by DEC in recent
+years in response to increased public concern about HABs.
+HABs exposure in New York has resulted in several dog deaths, public swimming
+beach closures, and have at times compromised drinking and recreational water
+uses. In response, a HABs program within DOW was developed to address blooms
+in New York. Program staff facilitate bloom surveillance, sampling, and timely
+communication between state agencies and the public. Further objectives of the
+DEC HABs Program include education, documentation of blooms, and research that
+can reduce HABs or link algal blooms to nutrient concentrations or other causes
+2.4. Agency Responsibilities
+The DEC HABs Program consists of DEC staff within DOW, BWAM. The current
+structure of the DEC HABs Program relies on partnerships with state agencies and a
+wide range of external partners and seeks to provide a unified approach to HABs
+identification and communication in New York.
+Many of the responsibilities of the DEC HABs Program described in this guide fall
+within the authority of DEC under the Federal Clean Water Act (CWA). NYSDOH
+and OPRHP have separate statutory responsibility for protecting public health. For
+example, NYSDOH developed a HABs protocol for swimming beaches under the
+authority of the State Sanitary Code (SSC). This protocol is used by local entities to
+make decisions regarding HABs in regulated swimming areas. Oversite of drinking
+water supplies is the responsibility of the NYSDOH under the federal Safe Drinking
+Water Act (SDWA) and the SSC.
+DEC coordinates additional HABs surveillance, monitoring and outreach with several
+agencies and partners (Table 2.1, Figure 2.1). This guide can and should be used to
+support those agencies and their efforts. Several large waterbodies in New York
+(notably Lake Erie, Lake Ontario, Lake Champlain, New York City drinking water
+reservoirs, and Alleghany Reservoir) have HAB management plans in place that are
+overseen by a jurisdiction other than DEC. Below is a summary of the roles of the
+major government entities that manage inland waterbodies and HABs in New York.
+DEC
+DEC programmatic functions and activities support the agency mission in
+compliance with the CWA and state Environmental Conservation Law and are
+structured to provide environmental and health protection throughout the state.
+Several DEC roles that relate to HABs include:
+• DEC HABs Program:
+o Coordinate HABs surveillance and sampling statewide. Track and record
+bloom reports received from DEC regional and field staff, NYSDOH, OPRHP,
+federal agencies, the public, CSLAP, LCI and other HABs programs. The
+4 | DEC HABS PROGRAM GUIDE - Version 3
+program assigns bloom status, receives and interprets lab results and
+provides information about blooms through education and outreach materials.
+o Maintain contractual relationships with analytical labs for HAB sample
+analysis.
+o Prepare and issue updates on bloom status from May to October on the DEC
+HABs website. Maintain an online interactive map of bloom notifications from
+May-October (NYHABS).
+o Maintain an inter-agency database of report locations and preliminary
+laboratory results.
+o Maintain a drop box for HABs inquiries: HABsInfo@dec.ny.gov.
+o Publish results of findings in DEC reports, individual lake reports and other
+formats.
+• Conduct statewide lake monitoring programs (LCI and CSLAP) and managing
+most lake-related public outreach (BWAM staff).
+• Report blooms through NYHABS as they are encountered in the field (DEC field
+staff).
+A HABs coordinator is assigned in each DEC region. Some coordinators serve
+primarily as conduits to the central office by sharing bloom reports, press inquiries,
+and other programmatic requests. Other coordinators and regional staff take a more
+active role, such as sample collection and follow up evaluation of publicly reported
+blooms.
+NYSDOH
+NYSDOH programs and activities support their mission to comply with the SDWA
+and Public Health Law to oversee public health protection at regulated sites. Several
+NYSDOH roles that relate to the DEC HABs Program include:
+• Oversee monitoring at PWS through their statutory responsibility as part of the
+1974 SDWA and SSC within the source water protection program.
+• Responsible for the development and distribution of beach protocols at all
+regulated bathing beaches, including many children’s camps. Staff report HAB
+occurrences and regulated bathing beach closures via NYHABS.
+• Support the DEC HABs Program in the form of surveillance or sampling
+assistance, often conducted by staff at LHDs.
+• Support PWS sampling and regulated swimming area monitoring at the
+Wadsworth Laboratory in Albany. The lab possesses analytical capabilities to
+analyze toxins, perform microscopic analyses, and conduct quantitative
+polymerase chain reaction analysis.
+• Maintain an email for HABs inquiries: harmfulalgae@health.ny.gov
+• Produce public outreach materials, a blue-green algae website and brochures.
+• Investigate reports of human illnesses that may be related to HABs. Analyze
+human health data related to epidemiological issues and provide technical advice
+on public health aspects of HABs.
+• Coordinate interagency communication with LHDs, the NYC Department of
+Health and Mental Hygiene and NYSDOH Regional and District Offices.
+5 | DEC HABS PROGRAM GUIDE - Version 3
+County health departments perform environmental health functions in most New
+York counties; NYSDOH District Offices provide the environmental functions in those
+counties that do not. These offices, collectively known as LHDs, implement PWS
+and beach outreach and monitor programs, include the deployment of beach
+protocols and make final determinations about beach closures. Some county or
+District Office staff may post closure or advisory signs, issue press releases, and
+dedicate staff to investigate blooms reported by the public.
+OPRHP- Division of Environmental Stewardship and Planning
+• Manage regulated swimming areas and lake or river access points at state parks.
+• Provide training on HABs identification and response protocols to parks’ staff.
+• Conduct visual surveillance of beach conditions in support of beach closure
+decisions. Report HABs occurrences and bathing beach closures via NYHABS.
+• Provide outreach and education to park patrons through a HABs brochure.
+• Conduct periodic water quality monitoring and wastewater system surveys to
+evaluate causes of HABs in state parks’ lakes and ponds.
+Federal and Other Agencies
+• USEPA: conduct research, organizing educational webinars and meetings, and
+creating federal regulations and advisory guidelines regarding HABs.
+• NOAA: Oversee sampling and response to HABs in Lake Erie and Lake Ontario.
+• USACE: Monitor HABs and provide regular updates to the DEC HABs Program
+regarding Alleghany Reservoir.
+• Vermont DEC and VDH: Oversee a public-private monitoring partnership in Lake
+Champlain, including phytoplankton enumeration and toxin analysis; providing
+regular updates to the DEC HABs Program.
+• NYCDEP: Oversee water quality monitoring in NYC reservoirs; report HABs
+occurrences via NYHABS.
+Table 2.1 Summary of state agency programmatic responsibilities
+DEC
+NYSDOH
+OPRHP
+HABs Other & LHDs
+LCI CSLAP
+Program DEC Staff
+Surveillance & Monitoring
+Surveillance      
+Sampling      
+Analysis  * 
+Outreach
+Public health 
+Beach closures  
+Email drop box  
+Use NYHABS    
+HABs website  
+Respond to public inquiries    
+*microscopy only
+6 | DEC HABS PROGRAM GUIDE - Version 3
+Figure 2.1 Summary of organization roles, interest groups, and exposure groups that are served
+by the DEC HABs Program.
+7 | DEC HABS PROGRAM GUIDE - Version 3
+3. DEC Bloom Status Designation in New York
+3.1. Bloom Status Criteria
+Bloom reports and lab data from a wide variety of sources (Table 3.1) are received
+and interpreted by DEC HABs Program staff who then designate a bloom status for
+each report. The DEC HABs Program has adopted a combination of visual
+surveillance and a surrogate measure for cyanobacteria density (specifically, the
+portion of total chlorophyll that can be fluoroscopically attributed to cyanobacteria,
+known as blue-green chlorophyll or BG Chl.a), and toxin concentration to determine
+bloom status. A decision tree process can be followed to determine bloom status
+(Figure 3.1).
+There were several factors that led the DEC HABs Program to adopt the current
+bloom status criteria: (a) the need for rapid analysis and reporting turnaround time,
+(b) a suitable way to evaluate a high volume of reports and samples from a large
+number of waterbodies, (c) limited analytical capabilities associated with microscopic
+enumeration or taxonomic evaluations, (d) lags in completion of toxin analysis, and
+(e) a need to distinguish cyanobacteria HABs from other types of algal blooms less
+likely to produce toxins.
+The DEC HABs Program has working relationships with several analytical labs that
+can analyze HABs samples. DEC utilizes the following analytical parameters to
+determine bloom status and evaluate HABs over time: total microcystins, algal
+pigment concentrations, and algal community composition via microscopy.
+For total microcystins analysis, laboratories must be certified through the
+Environmental Laboratory Approval Program (ELAP). For more information go to:
+https://www.wadsworth.org/regulatory-programs/regulatory-
+programs/environmental-laboratory-approval-program/microcystin
+8 | DEC HABS PROGRAM GUIDE - Version 3
+The DEC HABs Program has established four levels of bloom status:
+No Bloom: Applied to a HAB report evaluated by DEC HABs Program or NYSDOH
+staff to have a low likelihood of a cyanobacteria bloom present. At least one of the
+following criteria must be met: (1) visual evidence is not consistent with a
+cyanobacteria bloom; (2) BG chlorophyll levels ≤ 25 µg/L; (3) microscopic indication
+that sample is not dominated by cyanobacteria or not present in bloom-like density;
+or (4) total microcystins ≤ 4 µg/L (only in absence of the previous criteria being met).
+Suspicious Bloom: Applied to any HAB report received that DEC or NYSDOH staff
+are unable to determine conclusively as a cyanobacteria bloom because photos
+were not provided, or the report was otherwise inconclusive.
+Confirmed Bloom: Applied to a HAB report received from the public or a trained
+participant in a HAB reporting program that DEC or NYSDOH staff determine, based
+on digital photographs or a descriptive field report, is a cyanobacteria bloom; OR
+HAB report received by DEC with associated laboratory analytical results from a
+sampled bloom, that meet the following criteria: (1) BG chlorophyll levels ≥ 25 µg/L;
+(2) microscopic confirmation that majority of sample is cyanobacteria and in absence
+of chlorophyll value, at a density indicative of bloom conditions; (3) only in absence
+of the previous criteria being met: total microcystins ≥ 4 µg/L but ˂ 20 µg/L and
+digital photographs or a descriptive field report.
+Confirmed with High Toxins Bloom: Applied to a HAB report received by DEC
+with associated laboratory analytical results from a sampled bloom, that meet the
+criteria of a Confirmed Bloom AND any of the following criteria: (1) total microcystins
+≥ 20 µg/L (shoreline samples only); (2) total microcystins ≥ 10 µg/L (open water
+samples only); (3) DEC and NYSDOH staff determine potential risk of exposure to
+anatoxin or another cyanotoxin.
+9 | DEC HABS PROGRAM GUIDE - Version 3
+Figure 3.1 Decision tree that indicates the process by which DEC HABs Program staff
+determine the status of a potential bloom; updated in 2020.
+10 | DEC HABS PROGRAM GUIDE - Version 3
+11
+|
+DEC
+HABS
+PROGRAM
+GUIDE
+-
+Version
+3
+Table 3.1 Summary of the types of information regarding HABs that are received by the DEC HABs Program and descriptions of how this
+information is used to determine bloom status; updated in 2020.
+Connection to
+Type of Information Explanation Format Sources Bloom Status
+Criteria
+Online Report Form, or Can be used to
+Visual/Field Report (Lay Description of a suspected
+email to DEC or NYSDOH Public designate a Suspicious
+person) algal bloom
+drop box, phone calls or Confirmed Bloom
+Visual/Field Report (Trained
+Description of an algal NY Agency staff, CSLAP Can be used to
+personnel: DEC or NYSDOH Received through NYHABS
+bloom, with location, extent, volunteers, HABs program designate a Confirmed
+staff or reporting program Report Forms
+etc. partners Bloom
+participant)
+Public, DEC or NYSDOH
+Digital photographs files Can be used to
+Photographs of an algal staff, CSLAP volunteers,
+Digital Photograph received through NYHABS designate a Confirmed
+bloom in an electronic format other HABs program
+Report Forms Bloom
+partners
+Only received for
+Numerical count of algal Numerical data sent from Alleghany Reservoir Can be used to
+Quantitative
+abundance present in external HABs programs to (USACE), Lake Champlain designate a Confirmed
+Phytoplankton Count
+samples DEC HABs Program (VT DEC), NYC reservoirs Bloom*
+(NYCDEP)
+Narrative describing the
+Narrative data sent from labs Can be used to
+phytoplankton community Partner labs or DEC HABs
+Qualitative Microscopy to DEC HABs Program or as designate a Confirmed
+composition present in water Program staff
+analyzed by DEC staff Bloom
+samples
+Extracted Chlorophyll a or
+Can be used to
+Pigment/chlorophyll Fluoroprobe chlorophyll Numerical data sent from
+Partner labs designate a Confirmed
+Concentration concentrations (µg/L) labs to DEC HABs Program
+Bloom
+present in water samples
+Concentrations of Can be used to
+Toxin Concentration Numerical data sent from ELAP certified labs for
+cyanotoxins (µg/L) present in designate a Confirmed
+labs to DEC HABs Program total microcystins
+water samples with High Toxins Bloom
+*Cell counts are interpolated using the WHO recreation guidelines (Table 3.2)
+If an algal bloom report does not include
+Recommended HAB Actions
+enough information to determine a bloom
+status (for example, a written description • Know it! Avoid it! Report it!
+from a member of the public and/or digital • Keep children and pets away
+photographs that are of insufficient quality from scums or discolored water
+to determine if a bloom is cyanobacteria- • Seek immediate medical
+dominated), a place-holding status (Needs assistance for symptoms
+Evaluation) was used internally in 2019. consistent with exposure
+Beginning in 2020, the term Suspicious • Report any symptoms to local or
+Bloom was used for the same function.
+state NYSDOH
+• Report blooms to DEC
+A report will remain categorized as a
+Suspicious Bloom until additional
+information are received. When photos or lab results are received, they are
+evaluated following the criteria described above. If the digital photos, field report or
+lab results indicate that a cyanobacteria HAB is not present, the report is designated
+as No Bloom. If the photos indicate cyanobacteria HAB conditions or sample results
+meet the BG Chl.a threshold, the report will be designated as a Confirmed Bloom. A
+report of a Confirmed Bloom can later be changed to a Confirmed with High Toxins
+Bloom if the toxin threshold is exceeded.
+A HAB sample only reflects the conditions at a single space and time and cannot be
+assumed with any certainty to reflect lasting conditions in an entire section of
+shoreline, or a whole waterbody. An individual sample may or may not reflect the
+highest densities of cyanobacteria or cyanotoxins present in a waterbody.
+3.2. Threshold Development
+The DEC HABs Program bloom status criteria rely on a combination of visual
+assessment, pigment concentration (BG Chl.a), toxin concentrations and
+professional judgment (Figure 3.1). In the absence of accepted federal guidelines on
+exposure to cyanotoxins in recreational waters, the DEC HABs Program has based
+bloom status criteria on an adaptation of the WHO guidance values for moderate risk
+of acute health effects from recreational exposure to harmful algal blooms (Table
+3.2). WHO recommends the use of cyanobacteria cell counts to trigger alert and
+advisory systems and cites chlorophyll a or toxins as suitable alternative alert or
+advisory triggers. The DEC HABs Program interprets the WHO chlorophyll a
+guidance values based on fluoroprobes to rapidly detect cyanobacteria-specific
+pigments (BG Chl.a). A benchtop FluoroProbe (bbe moldaenke©) can be used to
+rapidly quantify relative quantities of algal pigments using fluorescence
+spectroscopy.
+12 | DEC HABS PROGRAM GUIDE - Version 3
+Table 3.2 WHO guidance values for the relative probability of health effects resulting from
+exposure to cyanobacteria blooms and microcystin
+Relative
+Probability of Cyanobacteria Microcystin-LR Chlorophyll-a
+Acute Health (cells/mL) (µg/L) (µg/L)
+Effects
+Low <20,000 <10 <10
+Moderate 20,000-100,000 10-20 10-50
+100,000-
+High 20-2,000 50-5,000
+10,000,000
+Very High >10,000,000 >2,000 >5,000
+For the first few years of the DEC HABs Program, the WHO guideline (10-50 µg/L of
+chlorophyll-a and a description of cyanobacteria “dominance”) was interpreted by
+DEC to be ≥ 25 to 30 µg/L BG Chl.a and ≥ 50% of the algal community comprised of
+cyanobacteria. Beginning in 2018, DEC adopted a BG chlorophyll threshold of 25
+µg/L BG Chl.a and qualitative assessment of amount of cyanobacteria within a
+bloom under a microscope to verify “dominance.”
+In 2020, DEC broadened Confirmed Bloom status definition to be applied to visual
+reports (previously designated a Suspicious Bloom). The use of visual reports to
+confirm a HAB is consistent with DOH protocols for closing regulated swimming
+areas. As of 2020, the Suspicious Bloom status is applied to HAB reports that
+cannot be confirmed to be a HAB by DEC because photos were not provided, or the
+reports were inconclusive.
+The DEC HABs Program uses pigment analyses (Chl.a) and visual observations
+(photos) as the primary information to determine bloom status and advisory
+language. This information can be evaluated more quickly than toxin data; this
+ensures that bloom reports are communicated to the public rapidly. Suspicious or
+Confirmed bloom status does not ensure that toxins are not present, but simply that
+the analytical information available did not indicate toxins were above the High
+Toxins threshold. DEC recommends that all HABs should be avoided, regardless of
+toxin data, because cyanobacteria HABs can produce other harmful compounds
+such as dermal irritants and other uncharacterized or unmeasured toxins.
+Outreach messaging and avoidance language used by DEC and DOH are
+comparable for all waterbodies, regardless of bloom status.
+3.3. Cyanotoxins and Other Harmful Compounds
+There are three potential exposure routes for humans and animals to cyanotoxins
+and other cyanobacteria compounds: dermal, ingestion, or inhalation of aerosolized
+toxins.
+13 | DEC HABS PROGRAM GUIDE - Version 3
+Exposure may occur during:
+• recreation
+• fishing
+• household use of untreated or in-home treated surface waters when there is
+a bloom
+• consumption of water that contains cyanobacteria or cyanotoxins
+Exposure to high levels of HABs and cyanotoxins may cause:
+• diarrhea
+• nausea or vomiting
+• skin, eye or throat irritation
+• allergic reactions
+• breathing difficulties
+The mechanisms that produce cyanotoxin and conditions for toxin release are not
+well understood and the relationship between algal biomass and toxin concentration
+is not clear. Presently, the analytical methods available to detect cyanotoxins are
+expensive and require sophisticated laboratory equipment and trained analysts.
+There are several types of techniques to detect cyanotoxins or the potential for
+cyanotoxin production in samples including biological assays, chromatographic
+methods, or genetic methods.
+The most common cyanotoxin detected by the DEC HABs Program is microcystin;
+anatoxin-a is detected less frequently. These cyanotoxins are listed on the USEPA’s
+fourth Contaminant Candidate List. However, additional cyanotoxins and other
+bloom-related compounds may be of concern for public health risks.
+Microcystins
+Microcystin is the most commonly detected cyanotoxin. Microcystin is produced by
+several genera of cyanobacteria. There are more than 100 congeners (forms) of
+microcystin which are collectively referred to as total microcystins.
+The Confirmed with High Toxin Bloom criteria is based on a 10 µg/L (open water)
+and 20 µg/L (shoreline) threshold for total microcystins. These values were derived
+from the WHO criteria moderate risk thresholds (Table 3.2).
+For assessment purposes, EPA recommends that an exceedance during a 10-day,
+non-rolling assessment period is considered an excursion and that no more than 3
+excursions should occur during a recreation season and that if that pattern reoccurs
+in more than 1 year, it may indicate that the waterbody is not supporting recreational
+uses. New York continues to evaluate EPA’s values , in the context of the DEC
+bloom status criteria which is intended to be protective for recreational use of
+waterbodies.
+Anatoxin-a
+Anatoxin-a is one of several alkaloid neurotoxins produced by some types of
+cyanobacteria. Several incidents of pet and livestock poisonings have been reported
+14 | DEC HABS PROGRAM GUIDE - Version 3
+after exposure to cyanobacterial blooms. Symptoms of exposure from animal case
+reports include staggering, paralysis, muscle twitching, gasping, convulsions, and
+death. Dogs are at risk of exposure to cyanobacteria and cyanotoxins through
+grooming of their fur and dose response effect related to their relative body mass.
+Given the lack of federal guidance and wide variations in individual state advisory
+values, the DEC HABs Program has not adopted a specific Confirmed with High
+Toxin threshold for anatoxin-a. This toxin is not detected often in water samples in
+New York State, because the toxin degrades rapidly in sunlight making anatoxin-a
+detection a monitoring and analytical challenge.
+Cylindrospermopsin
+Cylindrospermopsin is produced by several kinds of cyanobacteria, commonly
+encountered in New York, however, this toxin is rarely detected in water samples
+analyzed by the DEC HABs Program. DEC does not have a Confirmed with High
+Toxins Bloom threshold for cylindrospermopsin.
+Other Cyanotoxins and Harmful Compounds
+Cyanobacteria have been shown to produce a wide range of additional compounds
+that have not been thoroughly identified or studied. The rapidly changing landscape
+of the research regarding cyanotoxins and cyanobacterial blooms supports an
+overall policy of caution and avoidance of blooms by the public. Due to lack of
+published data, absence federal guidelines, and low rates of occurrence of other
+cyanotoxins in New York the DEC HABs Program only has bloom status thresholds
+for total microcystins.
+Additional information regarding HABs and health can be found at: DOH Blue-green
+Algae and Health webpage.
+4. Bloom Reporting: HABs Documentation by DEC
+4.1. Surveillance & Sampling: Two approaches
+HABs are reported to the DEC HABs Program through two general mechanisms:
+Surveillance
+Bloom surveillance is a visual evaluation of lake conditions; a water sample may or
+may not be collected or analyzed. Reports may be a single observation reported by
+a member of the public to DEC by phone, an email to HABsinfo@dec.ny.gov, and/or
+the submission of a Suspicious Algal Bloom Report Form (see Section 7.2), or other
+communication which may or may not include digital photographs. DEC, NYSDOH,
+LHDs and OPRHP staff send in reports either generated by their own surveillance or
+after receiving reports from the public. Surveillance is conducted by external partner
+programs (e.g., local lake programs, lake communities, volunteer groups, and parks)
+that commit to routine surveillance at specific waterbodies. Participants in these
+15 | DEC HABS PROGRAM GUIDE - Version 3
+programs typically complete a trained user report form provided by the DEC HABs
+Program. The form collects information about field conditions. Surveillance reports
+may be used to designate a bloom as Suspicious.
+NYSDOH has established protocols to close regulated beaches based on visual
+surveillance (see Section 4.2). If a beach manager believes that conditions within the
+swimming beach fit the description of a HAB, the manager will prohibit swimming,
+wading and other water contact. If these conditions are not apparent on the beach
+but are observed or reported on the waterbody near the beach, the manager may
+post advisory signs. This protocol has been adopted by NYSDOH, NYSDEC and
+OPRHP for regulated swimming beaches. HABs-related beach closures were
+considered by DEC to be Suspicious Blooms prior to 2020. Beginning in 2020, they
+were designated as Confirmed Blooms.
+Sampling
+HAB samples are collected due a bloom report or based on pre-determined
+sampling program protocols. HABs samples, particularly when paired with water
+quality testing, can provide valuable data that may be used to better understand
+long-term patterns in geographic extent, toxicity, duration, and other characteristics
+of blooms in a waterbody. Analytical results from a sample can be used to designate
+a Confirmed Bloom or Confirmed with High Toxins Bloom.
+The DEC HABs Program works with several partners to conduct structured
+surveillance and/or sampling programs throughout the state; these programs are
+described in more detail below. Sampling supports and supplements overall
+statewide surveillance efforts and increases the likelihood of rapid observation and
+public notification of bloom occurrence. Although monitoring plan details (number,
+frequency, and types of samples analyzed) differ among partners, they generally
+consist of the following:
+• A trained member or affiliate of the partner organization (volunteer, employee, or
+agency worker) observes waterbody conditions. Surveys are usually conducted
+by a person familiar with the waterbody. Training helps improve the likelihood
+that algal blooms are correctly identified in the field and that reports of non-
+cyanobacteria blooms are minimized.
+• Trained users are provided a Trained User Report Form to submit bloom reports
+to the DEC HABs Program.
+• Samples are usually collected from the densest portion of the bloom (the “worst
+case scenario”) to be as protective as possible regarding exposure risk.
+• Samples are collected and sent to a contracted partner laboratory to be analyzed
+for phytoplankton community composition via microscopy, pigment concentration,
+and toxins (See Chapter 3 for more detail).
+• Some programs report and/or sample only when visible scums or blooms occur
+(episodic). Other programs perform these tasks on a regular basis, regardless of
+16 | DEC HABS PROGRAM GUIDE - Version 3
+the visual state of the waterbody (routine). Some programs follow a combination
+of these protocols.
+4.2. HABs Monitoring and Reporting in New York
+The Lake Classification and Inventory Program (LCI):
+The DEC DOW Lake Management and Assessment Section conducts lake water
+quality sampling through the LCI Program. Data collected by LCI are used to monitor
+long term trends in New York State’s ponded waters as well as to support water
+quality management functions within DOW including the development of Clean
+Water Plans, source water protection plans, nutrient criteria, and updates to the
+Waterbody Inventory /Priority Waterbodies List. Waterbodies that are selected for
+sampling are grouped by drainage basin and follow the five-year RIBS schedule.
+The waterbodies selected each year generally have limited historical data or a
+potential water quality problem. A full suite of field data and laboratory water quality
+parameters (profiles, water chemistry, Secchi depth, etc.) are collected during
+sampling events. This program was developed to characterize overall water quality
+conditions, not necessarily HAB occurrences. When a HAB is encountered during
+sampling events, digital photographs and water samples are collected and submitted
+to NYHABS.
+The Citizens Statewide Lake Assessment Program (CSLAP):
+CSLAP is a volunteer lake sampling and education program that is jointly managed
+by DEC and NYSFOLA. Over 250 lake associations and 2,000 volunteers have
+participated in CSLAP since its inception. The program has delivered high quality
+data to many DEC programs for over 30 years. Annually, about 120 lakes
+throughout the state participate in the program. CSLAP supports sampling by
+resident members of lake associations that apply to participate in CSLAP through
+their affiliation with NYSFOLA. A full suite of water quality parameters is measured
+throughout the summer months from each lake. Samples are collected from a single
+open water site (the deepest part of the lake); HABs surveys are conducted
+periodically at all lakes and on each sampling date for lakes prone to HABs.
+Shoreline HABs surveys can lead to episodic HABs reports and sampling if a
+shoreline scum is observed between scheduled sampling events.
+Lake-specific Professional and Semi-professional Reporting Programs:
+Several lake communities have developed structured HAB reporting programs in
+response to annually recurring HABs. These programs have been developed in
+cooperation with DEC and other partners. The programs vary in structure, but most
+involve leveraging existing analytical partnerships and local organizational
+frameworks. Most programs only report HABs while a few monitor further water
+quality parameters in addition.
+NYC and Long Island Enhanced HAB Reporting:
+17 | DEC HABS PROGRAM GUIDE - Version 3
+The NYC Department of Parks and Recreation and researchers at Stony Brook
+University oversee a hybrid sampling, reporting and research partnership for
+waterbodies within New York City parks and Long Island. Routine reporting and/or
+sampling is conducted on lakes with persistent blooms and episodic reporting is
+conducted on other lakes with HABs as they are observed.
+New York State OPRHP DESP:
+Division of Environmental Stewardship and Planning (DESP) staff work closely with
+DEC and NYSDOH to provide outreach to State Park managers and staff on how to
+recognize and respond to HABs. A formal reporting protocol has been defined by
+DESP through consultation with DEC and NYSDOH. Routine surveillance is
+conducted by individual beach or State Park managers at parks with waterbodies
+that are prone to HABs. That information is reported to central DESP staff, who then
+communicate information to DEC and NYSDOH. When the bloom is at a bathing
+beach, State Park managers, in consultation with DESP, can make the decision
+whether to close or reopen a beach, in compliance with NYSDOH beach closure
+protocols.
+Regulated Swimming Beaches:
+Bathing beaches are regulated by NYSDOH District Offices, County Health
+Departments, the New York City Department of Health and Mental Hygiene, or
+operated by OPRHP, and DEC in accordance with the SSC. The SSC contains
+qualitative water quality requirements for protection from HABs. NYSDOH developed
+an interactive intranet tool that provides guidance to County, City and State District
+NYSDOH staff to standardize the process for identifying blooms, closing beaches,
+sampling, reopening beaches and reporting activities. The protocol uses a visual
+assessment to initiate beach closures as it affords a more rapid response than
+sampling and analysis. Beaches are reopened when a bloom dissipates (visually)
+and samples collected the following day confirm the bloom has dissipated and show
+toxin levels are below 4 µg/L microcystin. Sample analyses are conducted at an
+ELAP certified laboratory.
+Lake Champlain:
+HABs surveillance and sampling in Lake Champlain is coordinated by joint efforts
+among the VT DEC, VDH, LCBP, and LCC. Over 50 trained citizen monitors conduct
+shoreline surveys at locations throughout the lake in both Vermont and New York.
+Additionally, VT DEC staff conduct sampling at 15 fixed sites (both shoreline and
+open water). Samples are evaluated following a tiered alert protocol. Results are
+posted online in the VDH Blue Green Algae Tracker interactive map; DEC provides
+a link on the HABs notification page.
+Great Lakes (Lake Erie and Lake Ontario):
+18 | DEC HABS PROGRAM GUIDE - Version 3
+There is no basin-wide defined HABs response or management plan for the Great
+Lakes that border New York. NOAA and DEC respond to concerns and issues
+related to HABs on Lake Erie or Lake Ontario on an episodic basis, including reports
+of blooms from embayments.
+Episodic HABs Surveillance and Sampling by DEC and LHD Staff:
+DEC and LHD staff occasionally conduct site visits in response to bloom reports
+from the public. While at the waterbody, they assess if a bloom is cyanobacteria
+based on visual appearance and determine whether sample collection is warranted.
+Site visits are often triggered by phone calls, emails or suspicious algal bloom
+Report Forms submitted by the public to DEC and/or NYSDOH. A shortage of staff
+to conduct this on-demand sampling has led to the development of the programs
+described above.
+Episodic HABs Reporting by the Public:
+The public often encounter algal blooms and report their findings to the DEC HABs
+Program. These reports include phone calls, emails, or completion of a Suspicious
+Algal Bloom Report Form (See Section 5.2). Occasionally, DEC HABs Program staff
+will request that members of the public conduct follow up surveillance as deemed
+appropriate; this facilitates tracking the duration and size of the bloom.
+5. Outreach
+A critical component of the DEC HABs program is outreach: communication of
+information about HABs and the results of surveillance and sampling programs to inform
+public decisions about recreational choices.
+5.1. Communication to Collaborators
+The communication process begins when a report of a potential bloom is submitted
+to NYHABS. This report includes digital photographs and a description of the bloom
+and/or a sample collection. These reports are primarily submitted through the
+Suspicious Algal Bloom Report Form or the Trained User Report Form. In addition,
+phone calls or emails may be received directly by DEC, NYSDOH or LHDs. Partner
+analytical laboratories send HAB sample results to DEC. If sample results indicate a
+HAB is present, a record will be included in the New York HABs System (NYHABS).
+NYHABS is the comprehensive data management system used to communicate with
+interagency staff, collaborators and the public regarding HABs.
+Because of the public health risks related to HABs exposure, staff work to transmit
+relevant information as quickly as possible. Rapid and broad-reaching responses
+rely on the use of NYHABS and DEC HABs website by state agency staff.
+NYHABS Data Elements
+19 | DEC HABS PROGRAM GUIDE - Version 3
+NYHABS facilitates the collection of field and lab reports into a single data storage
+location. Records from the two Survey123 Report Forms and data from analytical
+laboratories contribute to the interpreted status of a HAB report. A number of these
+elements are included on NYHABS, and include:
+• Waterbody
+• Date of Observation
+• HAB Status (see section 3.1)
+• Extent
+• Data Provider
+• County
+• Attachments (photos)
+The Extent of a Bloom Attachments
+Extent is a rough estimate of the size of Photos help agency staff determine if or
+the bloom within the waterbody. where to conduct any follow up
+investigations. If digital photographs
+Small Localized: Bloom affects a small
+received with a bloom report meet the
+area of the waterbody, limited from one
+criteria of a HAB, they will be included in
+to several neighboring properties.
+NYHABS. Raw data are available for
+Large Localized: Bloom affects many state agency staff and provide support for
+properties within an entire cove, along the bloom status designation and are
+a large segment of the shoreline, or in disseminated with the recognition that
+a specific region of the waterbody. state agency staff are able to properly
+interpret the information. These data are
+Widespread/Lakewide: Bloom affects
+not included on the DEC HABs website or
+the entire waterbody, a large portion of
+NYHABS.
+the lake, or most to all of the shoreline.
+5.2. DEC HABs Webpages
+Open Water: Sample was collected
+near the center of the lake and may DEC’s website has several informative
+indicate that the bloom is widespread, HABs webpages: a landing page, a
+and conditions may be worse along notifications page, an archive page, a
+shorelines or within recreational areas. photo gallery of HABs and non-HABs
+Special precautions should be taken in algal blooms, and additional information
+situations when a Confirmed with High about HABs. The content of these pages
+is updated periodically. The notifications
+Toxins Bloom is reported with an Open
+page includes a link to NYHABS.
+Water extent because toxins are likely
+NYHABS is updated throughout the
+to be even higher in shoreline areas.
+season (late May through October). On
+the archive page, there is information about HABs data from previous years.
+The DEC HABs Program established a public notification system in 2012, as part of
+an on-going agency effort to improve public reporting and outreach regarding
+environmental hazards. The HABs notification program is intended to improve public
+20 | DEC HABS PROGRAM GUIDE - Version 3
+awareness about this pressing environmental issue, improve transparency regarding
+information collected by DEC monitoring and reporting programs. NYHABS serves
+to assist the public in making informed decisions about recreation and other water
+uses. The structure of some features of the pages reflects DEC rules, requirements
+and limitations associated with current web page formats.
+Notifications Page
+The page includes a statewide map of waterbodies with current HABs reports. The
+map has locations of current reports of Suspicious, Confirmed, or Confirmed with
+High Toxin Blooms within the last two weeks (Figure 5.1).
+Bloom status designations are intended to
+Updates to Bloom Status
+be sufficiently protective for public health
+without requiring interpretation of analytical The DEC HABs Program and its
+data. partners consistently seek current
+information to provide the most up-
+Archive Page
+to-date bloom notifications. Attempts
+are made to update the status of
+The page includes links to downloadable
+blooms with more recent reports.
+PDFs of tables with bloom information from
+Information gathering is done by
+previous years. Each table includes all
+email requests for updates and/or site
+waterbodies for which a bloom was
+visits by DEC and NYSDOH staff.
+documented in a year. Waterbodies that
+CSLAP samplers and other DEC
+were cited as having a Suspicious Bloom partners usually conduct surveillance
+that was later determined not to be a bloom in 1-3-week intervals, allowing for
+are not included. For each cited waterbody, routine updates. However, the
+the first and last report dates and the frequency of bloom reporting can be
+cumulative duration of the blooms are sporadic and decreases after the
+routine sampling season ends, even if
+included. A cumulative archive showing all
+some blooms persist into the fall.
+waterbodies with reported blooms since
+2012 is available for download.
+21 | DEC HABS PROGRAM GUIDE - Version 3
+Figure 5.1 Example of the statewide map of HABs locations that is displayed on the DEC HABs
+notifications page through NYHABS.
+5.3. Additional Outreach Efforts
+Pamphlets, flyers, and other published informative documents play an important role
+in educating the public about HABs in New York. Outreach materials provide
+precautionary information that instructs readers to be aware of HABs and may
+include additional instructions about exposure risk, likely symptoms, how to report
+blooms and appropriate steps to take if exposed to HABs. In outreach materials, care
+is taken to provide precautionary advice without triggering public alarm about risks,
+particularly in large waterbodies with blooms found only at limited locations. The DEC
+supports several outreach strategies:
+Signs
+• A warning sign was developed by DEC and NYSDOH for use by lake associations
+or other parties at public access points (Available for download; see section 7.3).
+• Limitations in personnel, resources, and logistics prevent DEC from being able to
+post advisory notices at public access points on the large number of waterbodies
+in New York that have documented HABs. The DEC HABs Program and
+NYSDOH provide general guidance that instructs lake residents and visitors to be
+on the lookout for blooms at any time once they have been documented for a
+waterbody. This is based on the expectation that even vigilant surveillance might
+22 | DEC HABS PROGRAM GUIDE - Version 3
+not catch all blooms and that all lakes with previously confirmed blooms are highly
+susceptible to future blooms.
+Brochures and Pamphlets
+• DEC developed a brochure specially focused on HABs in 2017.
+• Some individual lake associations have developed HABs brochures for their
+communities. The DEC HABs program often supports these initiatives with
+feedback on content and by providing photographs that can be used.
+• NYSDOH released a HABs brochure in 2016, which supplements a public FAQ
+document that has been available since 2003.
+Online
+• During the summer notification period, a link to NYHABS is included in Making
+Waves, DEC’s weekly email newsletter regarding water issues.
+• During the summer notification period, weekly updates on the number of blooms
+with a link to the Notifications page and additional information about blooms are
+posted on DEC’s Facebook page and Twitter account.
+• Members of the public can directly access the NYHABS Suspicious Algal Bloom
+Report Form. Users are instructed to complete the form and submit it with digital
+photographs.
+• NYSDOH has maintained a HABs webpage since 2003. Several local health
+department websites have specific HABs pages, some of which include real-time
+information on local bloom status and beach closures.
+Other
+• Several state or regional agencies issue press releases to inform communities
+about the potential risks associated with HABs. Some releases are issued
+proactively in early summer in advance of the upcoming recreational season,
+usually before any blooms are observed. Other press releases are issued during
+bloom season or in response to a high-profile bloom. DEC HABs Program staff
+write or contribute to these press releases on an as needed basis, usually at the
+request of regional agency staff.
+• DEC HABs Program staff regularly give presentations regarding HABs issues to a
+variety of audiences including agency staff, individual lake associations, local
+government, the public, training workshops and lake-related conferences.
+• DEC HABs Program staff periodically provide articles or other educational
+materials for publication in lake association newsletters, DEC’s Conservationist
+magazine, peer reviewed literature, and other outreach methods.
+• DEC HABs Program staff participate in regional and national HABs working
+groups and share data and program development strategies with other states or
+agencies.
+5.4. DEC Monitoring Program Reporting
+CSLAP Reports
+23 | DEC HABS PROGRAM GUIDE - Version 3
+Annual reports are issued to participating lake associations for every CSLAP lake.
+All CSLAP lake reports completed since 1996 are posted on the NYSFOLA website
+and the most recent year’s reports are posted on a DEC website. The reports
+include annual and cumulative summaries of all CSLAP program information, with a
+focus on physical and chemical water quality indicators. The analysis and reporting
+of HABs-related information include the following:
+• For each year of HABs sampling, graphs show seasonal distribution of algae
+communities (as measured by total and component chlorophyll a) and
+microcystin in open water and shoreline bloom samples
+• Tabular summaries of total and component chlorophyll a and major toxins
+(microcystin and anatoxin-a), including minimum, long term average, present
+year average, and maximum values during the current year
+• Narrative summaries of sampling results and a summary of microscopic analyses
+• A comparison of fluoroprobe and toxin results to the DEC HABs thresholds for
+Confirmed and Confirmed with High Toxins Blooms
+LCI Reports
+Summary reports are issued for LCI monitoring locations. The reports include annual
+and cumulative summaries of all LCI program information, with a focus on physical
+and chemical limnological indicators.
+6. Methods for Bloom Prevention and Control
+6.1. 2018 Governor’s HABs Initiative
+At Governor Cuomo’s direction, DEC is leading a multi-agency, statewide $65-
+million initiative to aggressively combat HABs and protect drinking water quality and
+the economy. In 2018, four summits brought together national, state, and local
+experts to discuss how to reduce the frequency of these blooms. Recordings from
+the summits are available at: https://livestream.com/hvccstreaming/habssummits.
+The summits drove the creation of Action Plans for 12 priority lakes, which will
+undergo intensive evaluation and support mitigation efforts and advanced
+technology pilots that can be applied to waterbodies across the state.
+DEC initiated several mitigation pilot projects in 2018 on small waterbodies selected
+for their history of documented HABs, nutrient levels, relative size, and uses. DEC is
+assessing the data from these projects to determine the efficacy of future use of
+these mitigation strategies, and to provide recommendations for additional work or
+studies on the impact of innovative treatments for HABs.
+In addition, in 2018 DEC began collaborating with the USGS Troy Water Science
+Center, on an advanced HABs monitoring pilot on three Finger Lakes (Seneca,
+24 | DEC HABS PROGRAM GUIDE - Version 3
+Skaneateles, and Owasco Lakes) to comprehensively evaluate several of the
+environmental factors that cause HABs to occur.
+6.2. Bloom Prevention
+Most research indicates that the primary cause of HABs is excessive nutrients
+(phosphorus and nitrogen) so watershed management efforts should be targeted at
+measures to reduce the input of phosphorus and nitrogen to waterbodies. Nutrient
+reduction through watershed management strategies is the most effective method of
+preventing eutrophication and potentially preventing blooms from occurring.
+Numeric nutrient thresholds refer to an ambient phosphorus or nitrogen
+concentration above which designated use impairments are documented or likely
+occurring. The establishment of these nutrient thresholds continues to be an active
+subject of research and data evaluation, as required by USEPA as part of the
+numeric nutrient criteria development process.
+The process by which numeric thresholds are established and promulgated to
+protected designated uses in most waterbodies, including ponded and flowing
+waters, is discussed in the DEC Nutrient Plan. Currently, New York has a narrative
+standard for nutrients: none in amounts that will result in growths of algae, weeds
+and slimes that will impair the waters for their best usages (6 NYSCRR Part 703.2).
+An ambient water guidance value of 20 µg/L (0.020 mg/L) total phosphorus has
+been developed for ponded waters (TOGS 1.1.1), in order to be protect aesthetics.
+Additional research and data evaluation are on-going to identify appropriate
+thresholds to protect primary and secondary contact recreation best uses. Site-
+specific criteria may be needed for waterbodies with nutrient levels below the
+thresholds and that have recurrent HABs.
+Waterbodies exceeding these thresholds are identified by the DEC and USEPA as
+impaired and are cited on the federal 303(d) list. For these waterbodies, monitoring
+and/or modeling analysis are required to determine the primary source(s) of
+nutrients. Then, a Clean Water Plan (a TMDL or a Nine Element Watershed Plan)
+that identifies pollutant sources and strategies for reducing the nutrient loading from
+these sources is developed for the waterbody.
+In some waterbodies, the primary source of nutrients is discharge from a wastewater
+treatment plant, referred to as a point source. In New York, most point source
+discharges to lakes are associated with long-standing outfalls from small municipal
+treatment plants to big lakes. Discharges to rivers are more common and HABs
+have been documented on some large river systems.
+DEC has been delegated authority by USEPA to regulate point source pollutant
+discharges under the SPDES Permit Program. SPDES permits may authorize
+phosphorus or nitrogen permit limits through a process that establishes nutrient
+permit limits according to up-to-date wastewater treatment technologies and
+25 | DEC HABS PROGRAM GUIDE - Version 3
+practices (TOGS 1.3.6). This guidance considers both receiving and downstream
+waters. Discharge limits are established to meet the point source pollutant
+reductions necessary to bring ambient nutrient levels in the receiving waterbody
+below the numeric nutrient thresholds described above.
+In most impaired waterbodies in New York, nonpoint source pollution is the primary
+source of nutrient inputs. The fundamental goal of the DEC Nonpoint Source (NPS)
+Management Program is to encourage comprehensive management of nonpoint
+pollutant sources in order to protect and conserve all waters of New York State for
+beneficial uses. The NPS Program offers guidance and technical support through
+the process of writing watershed plans, identifying best management practices, and
+implementing planned actions that can control impacts from nonpoint sources.
+Common preventative measures include targeted management of septic systems,
+advanced wastewater treatment, reduced or eliminated use of lawn and agricultural
+fertilizers, and stormwater management.
+A detailed discussion of nutrient management activities is beyond the scope of this
+document, but given limited resources and agencies’ regulatory reach, nutrient
+management is largely conducted by a coalition of agencies, local officials, and lake
+communities. Watershed management techniques for lake communities and lake
+residents are discussed in Chapter 9 of the 2009 DEC publication Diet for a Small
+Lake: the expanded guide to New York State lake and watershed management,
+collaboratively written by DEC and NYSFOLA.
+6.3. In-Lake Bloom Control Options
+Efforts to minimize or eliminate the frequency of HABs should focus on prevention,
+specifically the reduction of ambient waterbody nutrient concentrations. However,
+the timeline for implementation and success of most preventative measures will
+exceed a single bloom season. For many lake residents or lake communities, bloom
+control must include managing the cause of blooms. Concurrent to the
+implementation of prevention and nutrient management measures, there are some
+steps to take to reduce the intensity or occurrence of blooms.
+Algal blooms can be controlled using a variety of physical, chemical, or biological
+strategies. A short summary of algae control measures that have been used or could
+be considered for use in New York is provided in Table 6.1. Readers are
+encouraged to learn more about in-lake control techniques on the USEPA control
+and treatment website. The control measures discussed below are covered in much
+greater detail in Chapter 7 of Diet for a Small Lake, Algae and Other Undesirables:
+Getting Rid of Yuck. Many algal control measures require permits from DEC
+Regional Environmental Permit Administrators, who should be consulted before any
+algal control measure is implemented.
+26 | DEC HABS PROGRAM GUIDE - Version 3
+27
+|
+DEC
+HABS
+PROGRAM
+GUIDE
+-
+Version
+1
+Table 6.1 Summary of water management techniques used for algal blooms, their effectiveness, DEC permitting requirements and relative cost.
+Method Principle Pros Cons Limitations DEC Permits Cost
+BIOLOGICAL CONTROL METHODS
+Risk of disrupting fish
+community or other
+Manipulate trophic Once stocked, fish are Need to evaluate
+unexpected
+interactions by inconspicuous, may fisheries data on
+consequences, highly Article 11 Highly variable;
+Biomanipulation stocking piscivorous improve sports fishery, existing food web &
+variable success rate, stocking permit $100-$2k/acre
+fish to eat method is regarded as probable changes
+assumes planktivorous
+planktivorous fish “natural,” inexpensive related to manipulation
+fish dominate lake food
+web
+Natural appearance, Limited history of use in
+some evidence of NYS, may be unsightly or
+Artificial wetlands success in small impact active recreation,
+outcompete algae for ponds, other potential limited to small ponds or
+Floating islands suspended nutrients; beneficial uses (such isolated portions of larger Not known Not known Not known
+islands act as as acting as a nursery waterbodies, need to
+nutrient sinks for terrestrial harvest islands to
+plantings), a long-term prevent nutrients from
+control strategy migrating back to water
+CHEMICAL CONTROL METHODS
+May have limited Article 15/Part
+duration, potential non- 327, Article
+Kill algal cells
+target impacts, 17/SPDES
+through cellular Immediate response, Highly variable,
+controversial in some Some water quality General Permit
+Algaecides toxicity (copper- long history of copper $5-25 per acre-
+settings, cell lysing can restrictions needed, Article
+based) or oxidation usage in NYS, scalable foot
+spill toxins into water, 24 wetlands
+(hydrogen peroxide)
+spot treatment may be permit may be
+difficult needed
+Permitting issues, fish
+Precipitate nutrients
+Can have immediate toxicity in low pH lakes,
+in water and/or seal
+response & long-term public perception of Presently not allowed
+nutrients in the
+duration, may address chemical use, floc/sludge in NYS, but a
+Nutrient sediment, primarily
+significant internal removal if nutrients permitting approval Not presently $100 -
+Precipitation with use of alum
+nutrient sources, non- intercepted, may have method may be allowed >$500/acre
+and Inactivation (aluminum sulfate),
+pesticidal, may limited effectiveness in developed in the
+PhosLock
+minimize spillage of waterbodies that are not future.
+(lanthanum-based),
+toxins from HABs strongly stratified, high
+or iron
+cost
+28
+| DEC
+HABS
+PROGRAM
+GUIDE
+-
+Version
+1
+Method Principle Pros Cons Limitations DEC Permits Cost
+PHYSICAL CONTROL METHODS
+Surface Inject oxygen or air to Breaks down thermal Variable; $150-
+Reduces taste & odor, Need access to power Article 15
+aeration, keep water moving, layer, may move $2500/acre,
+reduce nutrient release source, need expert to Protection of
+including prevent nutrient nutrients to surface, high DEC funds
+in deep lakes, reduces size & install except in Waters may be oxygenation & release from cost for might support surface scums, fast small ponds required
+circulation anaerobic sediments aerators/operation projects
+Break down of thermal
+Reduce taste & odor Needs access to >$2,500/acre,
+Inject oxygen or air to layer can be detrimental
+Hypolimnetic problems for potable power source/batteries Article 15 DEC funds
+prevent nutrient to coldwater fish, nutrient
+aeration or water, might enhance for compressors, large Protection of might support
+release from diffusion to the surface,
+oxygenation deepwater fisheries, hypolimnion, & an Waters may be projects in
+anaerobic sediments high cost for aerators and
+(not circulation) may improve quality of expert to size & install required some limited
+in deep lake areas their operation, takes
+downstream water except in small ponds cases
+time to be effective
+Impacts non-target
+Inexpensive & easy for
+plants, invertebrates or Article 15
+Reduce water level in some waterbodies, can
+fish, refill rates Protection of Essentially no
+autumn to expose be combined with dock A dam or control
+unpredictable, deep Waters and cost if a dam
+sediments to winter repair or macrophyte structure is needed,
+Drawdown drawdown is needed to Article 24 control
+freezing/desiccation control, potential deep drawdown
+expose anoxic sediments wetland permits structure is
+and to consolidate exposure impact to permitting is unlikely
+& cyanobacteria cysts, may be present
+sediments overwintering
+variable success at best, required
+cyanobacteria cysts
+takes time
+Potential impacts to Mostly valve
+Selectively remove Inexpensive if a
+aquatic life, potability, operational
+water from siphon/deep outfall Article 15
+aesthetics (odor & color), costs if a deep
+hypolimnion, slowly exists, removes Protection of
+Hypolimnetic significant withdrawal Need a deepwater outfall exists,
+replenish deepwater nutrient source, Waters permit
+Withdrawal rate needed for highly siphon or deep outfall up to $10,000
+oxygen, and reduce inconspicuous, may be anoxic hypolimnia, risk of annual
+nutrient release from downstream cold water required
+destratification, takes operating costs
+sediments refugia are created
+time for siphons
+Multiple units needed, Need local power
+Apply 20kHz- 1MHz Consult with
+potential effects on non- source (or batteries),
+sound waves to regional offices,
+Ultrasonic Inconspicuous, works target organisms, need to ultrasonic structure $5,000/unit +
+disrupt cyanobacteria may be
+waves immediately find correct frequency to may be considered a operating costs
+cell walls & gas considered to
+target cyanobacteria, regulated fill by permit
+vacuoles be pesticidal
+requires persistent use offices
+7. Appendices
+7.1. Appendix A. Glossary
+Algal toxin: A toxin produced by cyanobacteria, also called a cyanotoxin. Most are
+classified as hepatotoxins, neurotoxins, or other.
+Beach: A public swimming area regulated by trained NYSDOH or OPRHP staff and
+routinely monitored for public safety.
+Bloom: High concentrations of algal cells that may form surface scums, mats, or other
+dense accumulations of algal material.
+Blue-green algae: An outdated, but still commonly used term for the class of bacteria
+now known as cyanobacteria.
+Cyanobacteria: Also known as blue-green algae. Photosynthetic prokaryotic bacteria
+that can produce toxins and other harmful substances that pose a health risk to humans
+or animals exposed through dermal contact, ingestion or inhalation. Cyanobacteria may
+be unicellular, colonial, or filamentous. Some genera are capable of fixing nitrogen.
+Episodic surveillance/sampling: Conducted outside of programs, or between routine
+surveillance/sampling, on an as-observed basis, in reply to bloom reports.
+Extent: The geographic span of a bloom along the shoreline; during surveys, extent is
+recorded as Small Localized, Large Localized, Widespread/Lakewide, or open water.
+Report: Any information regarding a potential bloom including visual surveillance,
+submissions of online forms to NYHABS (on.ny.gov/habform or on.ny.gov/habproform),
+emails, digital photographs, or bloom samples.
+Sampling: Collecting representative water from suspected blooms as a means for
+detection and report generation regarding potential blooms.
+Scum: An algal bloom with dense surface accumulation of cells or filamentous material.
+Status: Bloom designation assigned according to DEC criteria as No Bloom,
+Suspicious, Confirmed, or Confirmed with High Toxins.
+Surveillance: A report on the visual evaluation of lake conditions as a means for
+detecting potential blooms.
+29 | DEC HABS PROGRAM GUIDE - Version 3
+7.2. Appendix B. DEC Suspicious Algal Bloom Report Form
+Below are the questions included in the public Suspicious Algal Bloom Report Form. A
+digital version of this form is accessible at: on.ny.gov/habform or by going to
+www.dec.ny.gov/chemical/77118.
+30 | DEC HABS PROGRAM GUIDE - Version 3
+31 | DEC HABS PROGRAM GUIDE - Version 3
+32 | DEC HABS PROGRAM GUIDE - Version 3
+7.3. Appendix C. Warning Sign
+This sign is available on the DEC HABs website at: www.dec.ny.gov/chemical/77118
+The sign is for lake communities to alert lake users of the potential presence of a HAB
+on a waterbody.
+33 | DEC HABS PROGRAM GUIDE - Version 3
+7.4. Appendix D. References and Resources
+• DEC Harmful Algal Blooms webpage
+www.dec.ny.gov/chemical/77118
+• DEC HABs Brochure
+http://www.dec.ny.gov/docs/water_pdf/habsbrochure.pdf
+• NYS Department of Health Blue-green Algae and Health webpage
+www.health.ny.gov/environmental/water/drinking/bluegreenalgae
+• U.S. Environmental Protection Agency: CyanoHABs Webpage
+www.epa.gov/cyanohabs
+• World Health Organization: Guidelines for Safe Recreational Waters, 2009
+www.who.int/water_sanitation_health/water-quality/recreational/guidelines-for-
+safe-recreational-environments/en/
+• New York Citizens Statewide Lake Assessment Program (CSLAP) Sampling
+Protocol
+www.dec.ny.gov/docs/water_pdf/cslapsampro.pdf
+• New York Federation of Lake Associations
+www.nysfola.org
+• New York State Soil and Water Conservation District Listing
+https://agriculture.ny.gov/soil-and-water/soil-water-conservation-district-offices
+• Cyanobacteria HAB Educational Videos:
+o NYSDEC: Harmful Algal Bloom (HAB) Identification: Tips and Tricks
+https://www.youtube.com/watch?v=8nL_s77FV-o
+o HealthVermont: How to identify cyanobacteria
+https://www.youtube.com/watch?v=ea0EHw5suDs
+34 | DEC HABS PROGRAM GUIDE - Version 3

@@ -1,0 +1,854 @@
+nature reviews earth & environment https://doi.org/10.1038/s43017-024-00578-2
+Review article Check for updates
+Harmful algal blooms
+in inland waters
+Lian Feng 1,2 , Ying Wang1, Xuejiao Hou3, Boqiang Qin4, Tiit Kuster5, Fan Qu6, Nengwang Chen6, Hans W. Paerl 7
+& Chunmiao Zheng 8
+Abstract Sections
+Harmful algal blooms can produce toxins that pose threats to aquatic Introduction
+ecosystems and human health. In this Review, we outline the global
+Temporal trends and
+trends in harmful algal bloom occurrence and explore the drivers, geographical distribution
+future trajectories and potential mitigation strategies. Globally, Drivers of HABs
+harmful algal bloom occurrence has risen since the 1980s, including
+Future trends in HABs
+a 44% increase from the 2000s to 2010s, especially in Asia and Africa.
+Management
+Enhanced nutrient pollution owing to urbanization, wastewater
+Summary and future
+discharge and agricultural expansion are key drivers of these increases.
+perspectives
+In contrast, changes have been less substantial in high-income
+regions such as North America, Europe and Oceania, where policies to
+mitigate nutrient pollution have stabilized bloom occurrences since
+the 1970s. However, since the 1990s, climate warming and legacy
+nutrient pollution have driven a resurgence in toxic algal blooms in
+some US and European lakes, highlighting the inherent challenges
+in mitigating harmful blooms in a warming climate. Indeed, advancing
+research on harmful algal bloom dynamics and projections largely
+depends on effectively using data from multiple sources to understand
+environmental interactions and enhance modelling techniques.
+Integrated monitoring networks across various spatiotemporal scales
+and data-sharing frameworks are essential for improving harmful algal
+bloom forecasting and mitigation.
+1School of Environmental Science and Engineering, Southern University of Science and Technology, Shenzhen,
+China. 2Guangdong Provincial Key Laboratory of Soil and Groundwater Pollution Control, School of Environmental
+Science and Engineering, Southern University of Science and Technology, Shenzhen, China. 3School of
+Geospatial Engineering and Science, Sun Yat-Sen University, Guangzhou, China. 4Taihu Laboratory for Lake
+Ecosystem Research, State Key Laboratory of Lake Science and Environment, Nanjing Institute of Geography
+and Limnology, Chinese Academy of Sciences, Nanjing, China. 5Estonian Marine Institute, University of Tartu,
+Tallinn, Estonia. 6Fujian Provincial Key Laboratory for Coastal Ecology and Environmental Studies, College of the
+Environment and Ecology, Xiamen University, Xiamen, China. 7Institute of Marine Sciences, Department of Earth,
+Marine and Environmental Sciences, UNC Chapel Hill, Morehead City, NC, USA. 8Eastern Institute for Advanced
+Study, Eastern Institute of Technology, Ningbo, China. e-mail: fengl@sustech.edu.cn
+Nature Reviews Earth & Environment
+Review article
+Introduction have enabled reanalysis of remote-sensing data obtained since the
+Harmful algal blooms (HABs) are increasingly prevalent in inland waters 1980s and further extended the spatiotemporal coverage of observa-
+and are a growing global environmental concern1. Algal blooms form in tions to provide greater insights into global patterns in HAB occur-
+aquatic systems where light and nutrient levels, among other factors, rences1,15,16. The following sections discuss trends in global HAB
+are sufficiently high to favour rapid phytoplankton growth2. However, if hotspots, with a focus on lakes and reservoirs in regions experiencing
+the bloom-forming phytoplankton species release toxins or if excessive severe HABs or widespread impacts.
+proliferation of algal biomass disrupts normal ecosystem functioning
+then blooms are considered to be harmful3 (Table 1). Death and decom- Global trends
+position of HAB biomass leads to depletion of dissolved oxygen and Satellite-derived observations between 1982 and 2019 indicate
+hypoxia, which can create dead zones where fish and other aquatic that HABs have occurred in 11.7% of the global lake area across all
+organisms can no longer survive4. Toxin-releasing HAB species, includ- continents (Fig. 2a), equivalent to 8.8% of the 248,243 lakes larger
+ing some cyanobacteria, can further exacerbate fish mortality (Fig. 1), than 0.1 km2 (refs. 1,2). Most global-scale observations indicate an
+while also posing a risk to human health. Thus, there is a pressing need overall increase in HAB frequency since the 1970s, but there is vari-
+to mitigate HABs and their negative impacts on aquatic ecosystems, ability in the strength and direction of trends over time and between
+human health and local economies5. regions1,15,17 (Fig. 2b,c). Globally, between the 1980s and 2000s, HAB
+Advances in satellite remote sensing6 have enabled global-scale occurrences remained relatively stable, but in the 2010s there was a
+observations of inland waters and have revealed widespread increases 44% increase in global bloom frequency, which was primarily driven
+in HAB occurrences since the 1970s. Nutrient availability, particularly by higher occurrences in Asia and Africa1. The majority of recorded
+of phosphorus and nitrogen, is a key factor controlling the occurrence bloom outbreaks have been in temperate lakes (35–65° N), includ-
+and proliferation of HABs7. Widespread nutrient enrichment of inland ing North America, Northern and Western Europe, and West and
+waters since the 1960s, owing to nutrient pollution from human activi- East Asia. Exposure to stressors such as human population growth,
+ties such as agricultural fertilizer use and urbanization, is considered intensified agricultural production, industrialization and species
+a key factor driving the observed trends in HAB occurrence. In the invasions has led to 63% of lakes larger than 25 km2 being classified
+1970s, some high-income regions put policies in place to limit nutrient as eutrophic18,19. Policies to reduce nutrient inputs to lakes have
+pollution yet have still experienced increasingly frequent HABs since been successful in some regions, but their success in long-term HAB
+the 1990s. Where nutrient discharge is restricted, blooms are instead mitigation has been mixed (Fig. 3). This variation in the efficacy
+driven by legacy effects of past nutrient pollution and the influence of HAB mitigation measures highlights the need to consider the
+of global warming8. Rising temperatures driven by climate change are heterogeneity of factors influencing HAB formation from local and
+promoting HAB formation through enhancing water stratification, regional scales.
+which helps surface algal scum to aggregate, and promote growth rates
+while also favouring toxin-producing cyanobacteria9 over non-toxic Asia
+species10. Indeed, harmful cyanobacterial blooms have now become There has been a substantial increase in HABs since the early 1980s
+a yearly phenomenon in numerous lakes worldwide in the warming in Asian lakes, particularly in China and India1. The increase in HABs
+climate1. is closely linked to rapid population growth and economic expan-
+Cyanobacterial blooms, often referred to as CyanoHABs, con- sion, which have led to greater discharges of industrial and domestic
+taminate water bodies and water supplies, potentially leading to wastewater, widespread use of agricultural fertilizers, and intensive
+water crises and substantial economic losses. For example, annually aquaculture activities20–22. Lakes on the Yangtze Plain in China, such
+in the United States, CyanoHABs render affected water bodies unsuit- as Taihu and Chaohu23, are particularly affected and experience fre-
+able for recreational activities, drinking water and agricultural use, quent algal blooms24,25. Economic and demographic expansion has
+resulting in annual losses of approximately 2 billion US dollars11. Simi- exacerbated nutrient loads21,26, despite efforts to mitigate nutri-
+larly, algal contamination of Lake Taihu, China, in 2007 and Lake Erie, ent pollution, including hydraulic projects diverting water from
+USA, in 2014 led to water crises where residents in nearby cities were the Yangtze River into Lake Taihu27. There has been a pronounced
+left without safe drinking water12,13. Thus, mitigating HABs and manag- increase in HAB occurrences in Chinese lakes between 2003 and
+ing their detrimental impacts are important aspects of achieving the 2020 (Fig. 2d). Among the 103 bloom-affected lakes, 95 experienced
+United Nations’ sustainable development goals (SDGs), in particular an increased harmful bloom occurrence, 79 saw an earlier seasonal
+human health (SDG 3), water security (SDG 6) and biodiversity conser- bloom onset, and 97 had prolonged bloom periods20. The Caspian
+vation (SDGs 14 and 15)14. However, achieving these goals requires an Sea has experienced an increase in chlorophyll-a concentrations
+understanding of the global-scale spatiotemporal patterns of HABs, and cyanobacterial blooms between 2003 and 2017 due to elevated
+their underlying drivers and their future trajectories. nutrient discharges from rivers28–30. Similarly, Lake Baikal in Russia
+In this Review, we explore the global trends in HAB occurrence in has experienced regular HABs in shallow nearshore zones since 2011,
+inland waters and focus on identifying HAB hotspots. We discuss the primarily due to inadequate wastewater treatment in nearby areas31.
+factors that drive these trends and hotspot, and consider the future These findings highlight the need to combat nutrient pollution in
+trajectory of HABs in a warming climate. Finally, we provide suggestions order to conserve and restore the ecological balance of Asian inland
+for integrated interdisciplinary monitoring of HABs and data sharing water systems.
+to help better inform HAB prediction and mitigation.
+North America
+Temporal trends and geographical distribution HABs are prevalent in North American lakes, with CyanoHABs doc-
+Since the 1970s, satellite remote sensing has aided long-term monitor- umented in inland waters across all 50 states in the United States32.
+ing of HABs over broad spatial scales6. Advances in cloud computing Nutrient pollution from many sources, such as municipal wastewater
+Nature Reviews Earth & Environment
+Review article
+Table 1 | Typical bloom-forming phytoplankton in inland waters
+Kingdom Genus Toxic Nutrient limitation Preferred environments
+P N Stratification Warm High
+light
+Cyanobacteria/blue-green algae Non-N-fixing Microcystis √ √ √ √ √ –
+2
+Oscillatoria √ √ √ √ √ –
+Planktothrix √ √ √ √ √ –
+Gomphosphaeria – √ √ √ √ –
+Woronichnia √ √ √ √ √ –
+N-fixing Raphidiopsis √ √ – √ √ –
+2
+Aphanizomenon √ √ – √ √ √
+Nodularia √ √ – √ √ √
+Gloeotrichia √ √ – √ √ √
+Dolichospermum √ √ – √ √ √
+Chrysophyta/golden algae – Chromulina √ √ √ √ – –
+Chrysochromulina √ √ √ √ – –
+Dinobryon √ √ √ √ – –
+Mallomonas √ √ √ √ – –
+Prymnesium √ √ √ √ – –
+Green algae – Botryococcus – √ √ √ √ √
+Chlorococcus – √ √ √ √ √
+Sphaerocystis – √ √ √ √ √
+Spirogyra – √ √ √ √ √
+Nitella – √ √ – – √
+Cryptophyta – Cryptomonas – √ √ √ – √
+Rhodomonas – √ √ √ – √
+Diatoms – Cyclotella – √ √ √ – –
+Coscinodiscus – √ √ √ – –
+Different bloom-forming algae species can exhibit variations in toxicity, growth rates, nutrient requirements and preferred environments164–166. Ticks indicate preference and dashes indicate a
+negative or neutral response.
+discharge and runoff from agricultural and urban areas, is considerd the However, the modest rise in bloom frequency indicated by satellite
+primary driver of HABs in North American lakes11,33–35. In 1972, binational observations1 contrasts with in situ observations from 323 US water
+restoration efforts between the United States and Canada led to about bodies that suggest that chlorophyll-a levels are decreasing in more
+50% reduction in the annual total phosphorus input to the western lakes than they are increasing44. This discrepancy highlights that obser-
+basin of Lake Erie from 1974 to the late 1980s36 (Fig. 3a). Reductions vational approaches could also influence the observed trends in HAB
+in nutrient loads have led to decreases in HAB occurrence in some dynamics and their variability.
+US inland waters since the late 1970s and early 1980s, especially in
+western Lake Erie37. However, these measures did not remain consist- Europe
+ently effective over time and varied by location. For example, despite HABs in Europe pose risks to water quality and safety, biodiversity
+a reduction in phosphorus inputs, Lake Erie has seen a resurgence in and recreational activities, although their frequency is compara-
+HABs since the 1990s with toxic algal blooms occurring most years38,39 tively lower than on other continents46–49. In Hungary, Lake Balaton,
+(Fig. 3c). Lake Winnipeg, whose watershed drains 90% of Canada’s agri- the largest lake in Central Europe, has experienced HABs since the
+cultural land, also continues to experience extensive and prolonged late 1960s, driven primarily by nutrient pollution from agricultural
+HABs40–42. The increase in HAB frequency in these lakes is attributed activities across its watershed and urbanization along its shores50,51.
+to diffuse agricultural nutrient sources increasing nutrient loading Despite improvements in water quality due to mitigation measures
+in the lakes, which is further exacerbated by rising temperatures and and agricultural collapse resulting from political changes in the late
+climate extremes enhancing stratification and favouring higher algal 1980s52, a very large algal bloom occurred in Lake Balaton in 201947
+growth rates39,43. Such temporal and spatial variations in the trends (Fig. 3b,d). This bloom was not explained by external nutrient load-
+in HAB occurrences across North America indicate an influence of ing but was instead primarily driven by increased stratification due
+the complex interplay of human activities and climate change1,44,45. to warming and enhanced internal phosphorus loading47 (Fig. 3b).
+Nature Reviews Earth & Environment
+Review article
+a Healthy inland water system Fig. 1 | Summary of the impacts of harmful algal
+blooms on inland waters. a, A healthy inland water
+ecosystem, with good water visibility, benthic
+macroalgae, an oxygenated water column and fish.
+b, An inland water ecosystem affected by harmful algal
+blooms (HABs), with excess nutrients, proliferation
+of algal biomass, degraded water quality and poor
+visibility, limited benthic macroalgae, depleted
+dissolved oxygen concentrations, and fish mortality.
+Mixing HABs in freshwater ecosystems can cause severe
+ecological, societal and economic consequences.
+b The impacts of a harmful algal bloom
+Greenhouse gas
+Death of
+marginal plants
+CO
+2
+Dam
+Nutrient levels
+Algae
+Algal biomass
+Stratification
+Oxygen/O
+2 Light penetration
+Fish mortality
+Dead zone
+Decaying algal biomass
+Overall, while the incidence of HABs in European lakes has remained in response to enhanced nutrient inputs from agriculture, deforesta-
+relatively stable since the 1970s owing to the implementation of tion and untreated sewage discharge, which has in turn led to mass fish
+actions to mitigate nutrient pollution53,54, the resurgence of blooms mortality and disease outbreaks60,61. Similarly, Lake Naivasha in Kenya
+in Lake Balaton and some lakes south of the Alps highlights that has experienced more HABs due to invasive species, excessive water
+there are ongoing challenges in mitigating HABs, particularly in a extraction and vegetation loss62. The sharp decline in water levels has
+warming climate47,55. greatly reduced the large plant communities, primarily composed
+of papyrus, which serves as a natural filter for sediment and erosion
+Africa materials in the watershed63. In South Africa, where drinking water
+High agricultural activity and untreated wastewater in Africa contrib- scarcity is an issue, cyanobacterial blooms have occurred in 23 of the
+ute to elevated nutrient levels and more frequent HAB occurrences 50 largest reservoirs between 2002 and 2012, exacerbating the issues
+in inland water systems56–58. Satellite data indicate a surge in bloom of poor water quality and drinking water availability64. Improved obser-
+frequency across 21 African countries between the 2000s and the vational coverage and monitoring of HAB occurrences would help to
+2010s1, which posed both ecological and public health risks58,59. HAB mitigate and address issues surrounding water scarcity and security
+occurrences in Lake Victoria, Africa’s largest Great Lake, are increasing across the continent.
+Nature Reviews Earth & Environment
+Review article
+South America Oceania
+South America experiences the highest occurrence of HABs globally, with Despite Australia reporting the world’s first documented toxic algal
+HABs affecting 14.3% of lakes with a surface area above 0.1 km2 (ref. 1). bloom, which occurred in Lake Alexandrina in 187873, Oceania experi-
+Large-scale damming and water diversion projects, particularly in Brazil ences fewer inland HABs than other continents, and HAB frequency in
+and Argentina, create favourable conditions for algal growth by reducing Oceania has decreased overall since the 1970s1. That said, in New Zea-
+water flow, accumulating nutrients and enhancing stratification, as key land, HABs have occurred in lakes such as Ōtūwharekai, Wakatipu and
+drivers65. Contamination of these reservoirs can pose health risks, as Taupo, owing to increasing nutrient inputs from intensive agriculture
+many of them are vital water sources for drinking and agriculture66–69. In and urban expansion74.
+2004, Brazil put legislation in place to regulate that microcystin levels in
+drinking water must not exceed 10 µg l−1 in samples taken over a period of Limitations in spatiotemporal coverage
+more than 3 months70. However, HABs in South American lakes contin- HAB hotspots have been reported across all the continents consid-
+ued to increase during the 2010s1,16, which was attributed to inadequate ered here (Supplementary Figs. 1 and 2). However, it is important to
+wastewater treatment and overuse of fertilizers71,72. recognize the spatiotemporal limitations of prior investigations.
+a Global patterns of lacustrine harmful algal blooms between 1982 and 2019 b Multidecadal algal bloom changes
+180° 90° W 0° 90° E 180°
+40
+45° N 45° N
+30
+20
+0° 0°
+10
+45° S 45° S 0
+0 10 20 30 Africa Asia Europe North Oceania South Global
+Bloom occurrence (%) America America
+180° 90° W 0° 90° E 180°
+c Decadal changes in harmful bloom occurrence d Box plot of annual bloom occurrence for Chinese lakes
+180° 90° W 0° 90° E 180°
+45° N 45° N
+0° 0°
+45° S 45° S 2004 2006 2008 2010 2012 2014 2016 2018 2020
+–15 –10 –5 0 5 10 15
+Bloom occurrence (%)
+180° 90° W 0° 90° E 180°
+Nature Reviews Earth & Environment
+)%(
+ecnerrucco
+moolb
+lufmraH
+4
+3
+2
+1
+0
+)%(
+ecnerrucco
+moolb
+lufmraH
+1980–90s
+2000s
+2010s
+Median fitting line (slope = +0.017% yr–1, P < 0.05)
+Mean
+Fig. 2 | Global patterns and trends in harmful bloom occurrences in lakes. expressed as the percentage change in annual bloom frequency in each location.
+a, Global occurrence patterns of harmful lacustrine algal blooms between 1982 d, Annual HAB occurrence for large, bloom-affected lakes in China, expressed
+and 2019 aggregated into 1° × 1° grid cells and expressed as a percentage of total as a percentage of the total number of bloom-containing pixels over the total
+observational bloom number over the time period. b, Box plots of harmful algal number of cloud-free MODIS pixels within a year. The data in panels a–c were
+bloom (HAB) occurrence (%) separated by continent and time period; the bottom extracted from Landsat images1, and the data in panel d are from the Moderate-
+and top of the boxes are the first and third quartiles, respectively, the bar in the resolution Imaging Spectroradiometer (MODIS)20. Although most global studies
+middle shows the median, and the whiskers show the minimum and maximum show a general increase in HABs in recent decades, the trends vary by region and
+values. c, Change in harmful bloom occurrence from the 1980–90s to the 2010s time period.
+Review article
+a Total phosphorus loads into Lake Erie during 1967–2011 b Annual load of total phosphorus into Lake Balaton
+10
+30,000
+25,000 8
+20,000
+6
+15,000
+4
+10,000
+2
+5,000
+0 0
+c Historical record of maximum bloom extents in Lake Erie d Mean 1 June–30 September biomass in Lake Balaton
+2,500 100
+Clouds potentially obscuring bloom (Landsat)
+Bloom (Landsat)
+Bloom (MODIS)
+2,000 Bloom (MERIS) 80
+Estimates used for modelling analysis
+1,500 60
+1,000 40
+500 20
+0 0
+There is an imbalance in geographical coverage of HAB studies. Short-term HAB dynamics need to be better characterized. Some
+Most studies have focused on lakes in high-income countries, with bloom-forming phytoplankton species can migrate vertically through
+approximately 65% of the relevant literature being focused on just the water column to locate optimal growth conditions, according to
+20 inland lakes (Supplementary Fig. 2). Remote-sensing data have temperature, light availability and nutrient availability76,77. Migratory
+provided insights into HAB events occurring in over 20,000 lakes glob- behaviour leads to the surface features of colonies being highly vari-
+ally1, indicating a clear need for in situ studies of HABs to be conducted able in space and time, rendering them difficult to characterize78. For
+widely. HAB occurrences are known to be prevalent in a number of example, high-frequency (10-minute) remote-sensing observations
+African nations, and in several countries in Asia (including Indonesia, have shown that the spatial extent of near-surface CyanoHABs in Lake
+Pakistan and the Philippines) and South America (such as Chile and Taihu, China, can vary by up to one order of magnitude within a single
+Colombia), despite there being limited research on HABs in these day79. Such rapid changes pose challenges for conventional field survey
+regions1 (Fig. 4). The insufficient attention given to these areas can methods, which offer limited spatiotemporal coverage80 while often
+be attributed to various factors6, such as economic constraints, the having substantial labour and resource requirements. Satellite-based
+relatively minor socioeconomic impact of HABs in remote locations, assessments of bloom extent are generally considered a more reli-
+and other contextual circumstances75. able approach6. However, satellite data also suffer from limitations in
+Nature Reviews Earth & Environment
+)snot
+cirtem(
+daol
+launnA
+)2mk(
+aera
+moolB
+)1–d
+2–m
+gm(
+daol
+PT
+)3–m
+gm(
+alhC
+Phosphorus reducing policy Eutrophication recovery
+1970 1980 1990 2000 2010 1980 1990 2000 2010 2020
+1985 1990 1995 2000 2005 2010 2015 1980 1990 2000 2010 2020
+Fig. 3 | Changes in nutrient loads and algal biomass in Lake Erie and Lake chlorophyll-a concentration (Chla, mg m−3) in Lake Balaton from the 1970s to the
+Balaton. a, Annual total phosphorus loads (annual load, metric tonnes) 2010s47. The horizontal lines in b and d indicate mean values during periods of
+delivered to Lake Erie from 1967 to 201195. b, Daily total phosphorus load (TP load, time representing different nutrient management regimes. Despite reductions
+mg m−2 d−1) delivered to Lake Balaton from the 1970s to the 2010s40. c, Maximum in total phosphorus loads in both lakes, Lake Erie has experienced an increase in
+summertime bloom extents in Lake Erie from 1984 to 2015 derived from various harmful algal bloom occurrence since the 1990s whereas Lake Balaton
+satellite products and model analysis estimates167. d, Mean summertime experienced an increase in 2019.
+Review article
+observation frequency and coverage. For example, Landsat images have distribution of algae is a function of the density of the cells, their gas
+a long revisiting period of 16 days and are often affected by cloud cover, vesicles, and the gas bubbles formed within colonies, and can be further
+which can limit the number of valid observations they can provide, parti- regulated by the ambient environment, including temperature, light,
+cularly before the 2000s when fewer satellites and ground data receiv- wind and hydrodynamics86–89. Exploring the complex vertical distribu-
+ing stations were available81,82. Even with higher-frequency satellite data, tion and dynamics of HABs in subsurface layers of lakes can provide
+such as Moderate-resolution Imaging Spectroradiometer and Geosta- valuable insights into the process of HAB formation and dissipation90.
+tionary Ocean Color Imager, coarse spatial resolutions and/or limited The study of HABs is geographically imbalanced and methodo-
+spatial coverage can hinder their effectiveness in globally characterizing logically challenged by various factors, including the need for more
+short-term HAB dynamics83 (Supplementary Fig. 3). in situ studies in underrepresented regions, the difficulties of charac-
+There is a limited understanding of the vertical distributions of terizing short-term dynamics, and the limited understanding of vertical
+HABs84. Although surface scums provide a visible sign of HABs, their distributions. Addressing these gaps is crucial for a comprehensive
+formation relies on calm waters and low wind speeds, and their absence understanding of HABs and their global impact.
+does not necessarily indicate that a HAB is not present78. Most field
+measurements and satellite observations focus on surface water qual- Drivers of HABs
+ity with limited monitoring of conditions beneath the surface, which The drivers that influence the growth, motility and collapse of HABs in
+can lead to the misconception that a lake is free of HABs85. The vertical lakes can broadly be categorized into three groups: nutrients, climate
+30 Africa Asia Europe North South Oceania
+America America
+25
+20
+15
+10
+5
+0
+Nature Reviews Earth & Environment
+)%(
+ecnerrucco
+moolB
+a
+b 4,000
+3,600
+1,200
+800
+400
+0
+c
+sekal
+fo
+rebmuN
+aireglA CRD tpygE ayneK ohtoseL racsagadaM iwalaM occoroM euqibmazoM naduS ainaznaT aisinuT adnagU aibmaZ ewbabmiZ aidobmaC anihC aidnI aisenodnI narI qarI napaJ natshkazaK aisyalaM ailognoM aeroK
+htroN
+natsikaP senippilihP airyS dnaliahT yekruT natsinemkruT manteiV ainablA airagluB ecnarF eceerG yragnuH ylatI sdnalrehteN lagutroP ainamoR aissuR niapS eniarkU samahaB adanaC abuC ocixeM augaraciN ASU anitnegrA aiviloB lizarB elihC aibmoloC yaugaraP ureP yaugurU aleuzeneV ailartsuA aeniuG
+weN
+aupaP
+1,600
+600
+400
+200
+0
+snoitacilbup
+fo
+rebmuN
+Fig. 4 | Limitations in the spatiotemporal data coverage of regional harmful detected between 1982 and 20191. c, Number of research articles on HABs from
+algal bloom occurrences. a, Mean occurrence of harmful algal blooms (HABs) each region published between 1907 and 2022 (see Supplementary Methods).
+in lakes between 1982 and 2019 separated by region, where harmful bloom Lakes in some low-income countries, which have received less attention in HABs
+occurrence is defined as the percentage of the total observations during which research, may face a higher risk of more severe HAB outbreaks.
+blooms were detected over the time period1. b, Number of bloom-affected lakes
+Review article
+change or climate extremes, and hydrodynamics (Fig. 5). In this section, For non-nitrogen-fixing species, the control of nitrogen availabil-
+we discuss the causes and feedback mechanisms associated with these ity remains crucial in reducing the incidence of HABs97. Indeed,
+drivers, and the implications for future trends in HABs. solely reducing phosphorus concentrations in waters has shown
+only temporary effects in many lakes, such as Lake Erie, USA, where
+Nutrient enrichment non-nitrogen-fixing cyanobacterial species such as Microcystis have
+A fundamental driver of HABs is enhanced nutrient availability. Phos- become dominant and persistent98. Hence, it is now widely acknowl-
+phorus and nitrogen are crucial nutrients for algal growth, having edged that inland water HABs are influenced by both nitrogen and
+a pivotal role in various biological processes such as cell division, phosphorus98. In general, the relationship between algal biomass
+chlorophyll synthesis, and biomass production and accumulation76. and nitrogen, phosphorus or their ratio is highly variable among
+Phosphorus constitutes an integral part of all nucleotide structures different algal species and ecosystems, and even between different
+found within algae cells, and the role of adenosine triphosphate is seasons99.
+intricately connected to energy conversion processes in organisms91.
+Nitrogen, a fundamental component of chlorophyll and proteins, Climate change and weather extremes
+is essential for photosynthesis92. Increases in global fertilizer use Climate change and weather extremes have strongly influenced
+since the 1960s has resulted in widespread nutrient pollution that the occurrence of HABs in inland lakes100, with increasing evidence
+has, in turn, led to HABs becoming a pervasive and worldwide envi- that global warming is contributing to the rise of HABs in inland
+ronmental concern93. Eutrophication and the proliferation of HABs waters worldwide101. Reductions in fertilizer use in some developed
+are further exacerbated by increases in nutrient inputs to inland nations102 have led to warming and extreme climatic events becom-
+waters from industrial pollution, aquaculture and animal husbandry ing the primary factor when predicting and assessing the risk of HAB
+activities94,95. formation103. Climate variability is particularly influential in highly
+The traditional view that phosphorus has a crucial role in pro- eutrophic systems, where nutrient levels are sufficiently high that
+moting cyanobacterial blooms is grounded in the results of a 37-year their availability is no longer the primary factor limiting HAB occur-
+fertilization experiment carried out in the Ontario Experimental rence104. For example, despite the efforts of government policies to
+Lake District in Canada96. However, the nitrogen-fixing algal species reduce point-source and non-point-source pollution across their
+used in the experiment, which included Anabaena and Anophyllum, watersheds, China’s Taihu and Chaohu lakes continue to receive
+are able to assimilate nitrogen from the atmosphere. Thus, phos- nutrient loads that make them prone to algal blooms due to high
+phorus rather than nitrogen was the nutrient primarily limiting levels of urbanization and intensive agriculture in the surrounding
+growth and production of algal biomass in the experiment96. areas25,105. As nutrient levels continue to be sufficient to support HAB
+Fig. 5 | Factors influencing the formation of
+harmful algal blooms. Climate-change-induced
+warming and precipitation changes, and human-
+activity-induced nutrient pollution and lake
+hydrodynamics, influence the formation of harmful
+algal blooms (HABs) and resulting ecosystem
+impacts. Black upward arrows next to factor names
+Urbanization and Greenhouse indicate factors that promote HAB formation,
+domestic gas emissions
+and black downward arrows indicate factors that
+wastewater
+inhibit HAB formation. The orange arrows indicate
+Industry
+the nutrient transport pathways. The effects of
+nutrients, hydrodynamics and climate change on
+Dam HABs are complex and interrelated.
+Livestock Treatment Drought Dam
+and agriculture Precipitation Sunlight
+Manure Temperature
+Arable
+Drought
+agriculture
+Fertilizer
+Wind
+Wind
+Algae
+Precipitation
+Mixing
+Buoyancy
+Stratification
+Groundwater Surface warming Algae growth
+(N, P) and stratification
+Nature Reviews Earth & Environment
+Review article
+formation, the continued increase in the severity of cyanobacterial as well as the extent of sediment–water interface, can also influence
+blooms in these lakes is thought to be driven by warming and extreme nutrient availability and the trophic status of lakes by affecting in-lake
+climate conditions103. nutrient cycling processes26,122. For example, Lake Taihu in China, a shal-
+Temperature directly affects metabolic, photosynthetic and low system, nutrient loss from the water column and sediment burial
+growth rates of algae106, such that algal growth and reproduction can are hindered by frequent wind-induced sediment resuspension26.
+be stimulated by warmer temperatures. The maximum growth rate of The global landscape is punctuated with a multitude of reservoirs,
+HAB-forming cyanobacteria typically occurs at temperatures above where human interventions in water management have emerged as the
+25 °C, exceeding the optimal growth temperatures of non-HAB-forming predominant driver of fluctuations in global surface water storage123.
+species such as diatoms and dinoflagellates107. Laboratory studies Riverine reservoirs formed by dam construction increase the poten-
+indicate that the growth rate of cyanobacteria increases more rapidly tial for HAB formation, owing to associated changes in water flow and
+than that of eukaryotic primary producers under the same rate of stratification patterns resulting from the manipulation of water levels
+warming108. Additionally, cyanobacteria are more adaptable to elevated through dam regulation124. For example, changes in hydrodynamic
+temperatures than other algae species, which contributes to their regime since the construction of the Three Gorges Dam in China have
+increased prevalence in HABs under global warming109. Stratification led to various types of HABs occurring annually since the first inci-
+can also favour buoyant cyanobacterial species as it allows them to dence of a toxic cyanobacterial bloom in a tributary of the reservoir in
+accumulate in the well-lit and warm surface waters to form blooms110. 2008125,126. Conversely, the operation of reservoirs can be optimized
+Warming also extends the growing season for algae in inland waters, to potentially mitigate against HABs in downstream water bodies by
+as the onset of seasonal stratification occurs earlier in the spring and increasing their flushing rates127.
+the breakdown of stratification occurs later in the autumn8. Overall, The formation and persistence of HABs in lakes are driven by a
+although the stimulative effects of warming on HABs have been identi- complex interplay of nutrient enrichment, climate change and hydro-
+fied globally, the synergistic interaction between warming and nutrient dynamic factors. Understanding these drivers and their interactions
+enrichment is complex111. Consequently, it remains unclear whether is crucial for predicting future trends in HABs and developing effec-
+climate warming or nutrient enrichment is the dominant factor driving tive management strategies to mitigate their impacts on freshwater
+the global increase in HABs in inland waters112. ecosystems and human health.
+Daily and weekly changes in meteorological conditions also affect
+the outbreak of HABs. High winds can induce vertical mixing and drive Future trends in HABs
+sediment resuspension and nutrient upwelling, potentially leading Most projections of future trends in HAB occurrences indicate overall
+to elevated nutrient concentrations and enhanced algal growth113. increases under various emission scenarios due to the intensification
+Precipitation influences water temperature, stratification and flow, of climate change and human activities128, but these projections carry
+in addition to influencing nutrient transport in the surrounding catch- considerable uncertainties. An integration of climate change projec-
+ment and nutrient loading to the water body, all of which can influence tions with hydrological and water quality network models predicted
+HAB dynamics114. Events such as tropical cyclones, thunderstorms that the mean number of HAB occurrences in US lakes would increase
+and droughts can also stimulate HABs by altering nutrient transport, from 7 days in 2024 to 18–39 days by 2090129. Statistical models based on
+transformation and accumulation100,115. For example, in Lake Taihu, historical observations predict an increase of 111% in phytoplankton
+the area of algal blooms expanded from less than 200 km² to around on average across 29 lakes in Europe and North America by the
+400 km² within 4–5 days after tropical cyclones passed over the lake, mid-twenty-first century130.
+owing to these events driving enhanced sediment resuspension and The projected widespread increase in HABs is based on the current
+nutrient release116. The optimal conditions for cyanobacterial growth understanding of natural and anthropogenic drivers of HAB formation.
+seem to occur when heavy rainfall is succeeded by drought76, owing Climate-change-related temperature increases are likely to lead to an
+to intense rainfall increasing nutrient runoff and drought extending increase in HAB occurrences due to the stimulating effects on bloom
+the residence time of nutrient-rich waters. This sequence of events is formation through raising algal growth rates, lengthening the grow-
+becoming more common globally in the context of global warming117. ing season and enhancing water stratification. Rising atmospheric
+levels of carbon dioxide will also provide favourable conditions for
+Hydrodynamics photosynthesis and CyanoHAB growth131. Cyanobacterial blooms
+Water residence time, lake morphology and artificial dams all affect can form buoyant surface colonies that develop into scums that block
+the hydrodynamics of inland waters and influence the growth of phyto- light from penetrating the water column and hinder photosynthesis
+plankton118,119. Lakes with long water residence times and limited hydro- and growth of more desirable eukaryotic algal populations132. This, in
+logical connectivity favour enhanced nutrient trapping and promotion turn, reinforces the dominance of CyanoHABs132.
+of algal growth and bloom formation120 (Table 1). Lake morphology, Future climate change is expected to bring more extreme events of
+including size, depth and shoreline complexity, also influences the both heavy rainfall and drought133. Extreme drought conditions prolong
+growth and spread of algae by governing the internal biogeochemi- the residence time of inland waters, which promotes the occurrence of
+cal cycling dynamics within the lake ecosystem118,121. For example, HABs76. However, changes in precipitation patterns could either exac-
+a global statistical analysis showed that shallower lakes (mixing depth > erbate or inhibit HABs depending on the location, the morphological
+maximum depth) tend to be more susceptible to eutrophication, exhib- characteristics of the water body, or the growth stage of the bloom
+iting nitrogen limitation in most cases (66.2%). In contrast, phosphorus itself114,134. In the short term, heavy rainfall can temporarily disrupt
+limitation primarily prevails (94.4%) in most lakes, particularly those the proliferation of cyanobacteria through enhanced vertical mixing
+characterized by greater depths, where phosphorus is less readily and flushing135. However, intense rainfall can enhance nutrient runoff,
+released into the water column from the suspension of buried bottom leading to an increase in nutrients downstream76. Future changes in land
+sediments121. The relationship between mixing depth and water depth, use and the associated changes in catchment nutrient flow will affect
+Nature Reviews Earth & Environment
+Review article
+nutrient loading of inland water and HAB risk. This nutrient loading have incorporated approaches such as sediment removal and, as in
+could be particularly pronounced in low-income countries with a heavy Lake Taihu, algal biomass harvesting26. However, such efforts require
+reliance on use of agricultural fertilizers to enhance food security1. substantial investment, and large-scale implementation is challenging.
+There is substantial uncertainty in current future predictions. Another challenge is that nutrient level thresholds for HAB for-
+Process-based mechanistic methods that apply rigorous mathematical mation vary greatly between different water bodies and between dif-
+equations to characterize how physiological and environmental fac- ferent seasons and times99. Therefore, determining target nutrient
+tors affect phytoplankton growth are highly sophisticated but still thresholds to control HAB occurrences often necessitates individual
+have shortcomings in several areas136,137. For instance, quantification of lake-specific research. For example, to effectively control phytoplank-
+how different phytoplankton species will respond to climate changes ton biomass within acceptable ranges in Lake Taihu, total nitrogen and
+remains limited138. Laboratory-based insights into the response of phyto- total phosphorus concentrations should not exceed 0.80 mg l–1
+plankton growth to various environmental conditions do not always and 0.05 mg l–1, respectively148. In contrast, the water quality target of total
+align with real field responses or conditions, including interlake varia- nitrogen concentration for the Lake Winnipeg north basin is 0.70 mg l–1
+tions in environmental factors such as geography and hydrology100,139. (ref. 149). Moving forward, nutrient thresholds such as these should
+Additionally, numerical simulations and future projections will need also be adjusted to take account of the direct and indirect effects of
+to accurately represent changes in climate and human activities, such climate change on algal growth and HAB occurrence.
+as land use and dam construction, to reduce uncertainties in predicted Additional management approaches, beyond nutrient control,
+internal and external lake nutrient loading and cycling dynamics100,140. can also be used to help to mitigate against HABs. Manipulating the
+Although projections generally indicate an increase in HAB occur- hydrological structure of water bodies can act as a preventive meas-
+rences due to climate change and human activities, substantial uncer- ure against excessive algal growth, as altering the flow rate and water
+tainties remain. Addressing these uncertainties through improved depth can disrupt the ecological niche of harmful algae120,150. However,
+understanding of environmental interactions and enhanced model- the high cost associated with these methods reduces the feasibility
+ling techniques is crucial for developing effective HAB management of their widespread implementation. Introducing or increasing the
+strategies in the future. abundance of natural predators, particularly herbivores, can be effec-
+tive in limiting algal growth76. For instance, experiments in small ponds
+Management in western Victoria, Australia, demonstrated that the introduction of
+Several government bodies have implemented a range of measures to zooplankton and carp predation effectively consumed algae, resulting
+mitigate the incidence of HABs and the ecological and socioeconomic in significantly lower algal numbers and biomass151.
+risks that they pose. The regulation of nutrient levels is often the cen- Nutrient control remains a primary strategy for HAB mitigation,
+tral focus in controlling and managing HABs. Initiatives to reduce but its effectiveness can be limited by legacy nutrients and varying
+nutrient pollution in inland waters were implemented in the United thresholds across water bodies. A comprehensive approach incor-
+States, Canada and other countries and regions during the 1970s and porating diverse management techniques, including hydrological
+1980s39. Lake Biwa in Japan provides an example of successful algal manipulation and biological control, is crucial for effective long-term
+bloom mitigation through effective conservation measures such as HAB management, despite implementation challenges.
+maintaining good water quality, improving soil recharge capacity,
+and preserving natural environments and scenic landscapes141. These Summary and future perspectives
+efforts have substantially reduced eutrophication rates, resulting in There is a heightened awareness of the widespread occurrence of HABs
+clearer lake waters that have transitioned to being dominated by mac- and the risks that they pose to human health and aquatic ecosystems152.
+rophytes since 1994142. Conversely, a 2012 National Lake Assessment Technological and methodological advances have had a pivotal role in
+by the US Environmental Protection Agency found that nitrogen and enhancing understanding the distribution, toxicological and physi-
+phosphorus concentrations were elevated in approximately 35% ological characteristics of a diverse range of HAB species153. Agricul-
+and 40% of lakes, respectively143, indicating the ongoing need to con- tural expansion and intensification, urbanization and climate change
+trol and reduce nutrient inputs. In 2011, the US government launched a are just some of the factors enhancing the prevalence and severity of
+25-year initiative called Project Clean Lake that is dedicated to mitigat- HABs. Increases in HABs have, in turn, exacerbated water quality and
+ing sewer overflow discharges into the Great Lakes144. The project aims water scarcity issues13. Controlling nutrient inputs to inland waters
+to reduce annual discharges of raw sewage into Lake Erie by 4.0 billion has contributed to HAB mitigation in some regions. However, in many
+gallons by 2036, which is expected to also alleviate HAB issues. This regions, legacy nutrient pollution and warming have fuelled a resur-
+extensive endeavour includes the construction of substantial stor- gence in HABs despite successful reductions in nutrient loading38. Given
+age tunnels, improvements and expansions to wastewater treatment that factors governing HAB formation and potential mitigation vary
+plants, and the integration of green infrastructure such as stormwater between individual water bodies, attaining a holistic understanding
+control measures145. of HAB dynamics to enhance HAB prediction accuracy and mitigation
+Despite successful control of nutrient levels, many lakes have efficacy is challenging154. As such, there remains a pressing need to
+experienced a resurgence of HABs since the 1990s that suggests that develop integrated monitoring networks, establish comprehensive
+it is not always possible to mitigate against HABs through nutrient data-sharing platforms and leverage multisource data to overcome
+control alone39. In these instances, nutrient loading can be sustained limitations in spatiotemporal coverage, enhance predictive capabilities
+by legacy sources, including nutrients held in catchment soils and and improve understanding of future trends in HABs.
+lake sediments146,147. Thus, effective strategies for nutrient reduction Constructing integrated monitoring networks that combine in situ,
+also need to consider upstream management of soil erosion and ways aerial and satellite monitoring can facilitate large-scale and short-to-
+to mitigate nutrient transfer between sediment and the overlying long-term observations of HAB occurrences and dynamics. A successful
+lake water column. Indeed, some nutrient management strategies example is in Lake Erie, where the US National Oceanic and Atmospheric
+Nature Reviews Earth & Environment
+Review article
+Administration and its partners use satellites, buoys and genetic analysis and climate science, insights into a wide range of physiological and
+of algal samples to comprehensively track HABs155. Advanced remote- ecological processes of algae could be achieved, including their growth
+sensing platforms with high-resolution hyperspectral sensors can fill and nutrient uptake dynamics, interactions with other organisms and
+gaps left by in situ HAB monitoring. These tools can identify specific algal responses to environmental changes. Projects should aim to better
+species within blooms, enhancing our understanding of HAB impacts understand genetic and molecular mechanisms, ecosystem interac-
+and toxicity. For example, in Montana’s Upper Clark Fork River, research- tions, climate impacts, nutrient dynamics and toxin production, and
+ers used a drone-mounted hyperspectral camera to capture detailed to develop predictive models that can address the complexities of algal
+images of algal blooms, revealing their composition and spatial distribu- blooms comprehensively. The subsequent advances should aim to
+tion with unprecedented clarity6,156. Integrating satellites, drones and enhance our understanding of HABs by focusing on detailed spatiotem-
+in situ monitoring stations enables a comprehensive analysis of HAB poral dynamics, multifactorial environmental drivers, species-specific
+dynamics by combining large-scale frequent observations from satel- behaviours, climate change impacts, early warning system develop-
+lites, high-resolution targeted monitoring from drones, and detailed ment and broader ecological consequences. By filling these knowledge
+water quality data from in situ stations157. This integrated approach gaps, researchers can refine predictive models to better forecast HAB
+improves understanding of bloom initiation, growth, spatial distribu- occurrences globally and implement effective management strategies.
+tion, and decline158. However, field surveys and laboratory analysis are
+essential for accurately determining algal biomass, composition and Published online: xx xx xxxx
+HAB toxicity. These observations provide ground-truth data to calibrate
+References
+and validate remote-sensing algorithms, ensuring accurate satellite and
+1. Hou, X. et al. Global mapping reveals increase in lacustrine algal blooms over the past
+drone data159. They also offer detailed insights into species composition decade. Nat. Geosci. 15, 130–134 (2022).
+and toxin levels, enhancing overall HAB monitoring precision. 2. Paerl, H. W., Fulton, R. S., Moisander, P. H. & Dyble, J. Harmful freshwater algal blooms,
+with an emphasis on cyanobacteria. Sci. World J. 1, 76–113 (2001).
+The frequency of HAB events in a given location is relatively1 low,
+3. Griffith, A. W. & Gobler, C. J. Harmful algal blooms: a climate change co-stressor in
+meaning that there are limited data to advance understanding of HAB marine and freshwater ecosystems. Harmful Algae 91, 101590 (2020).
+formation in that system. Establishing wider data-sharing mechanisms 4. Smith, I. R. A simple theory of algal deposition. Freshw. Biol. 12, 445–449 (1982).
+5. Brooks, B. et al. Are harmful algal blooms becoming the greatest inland water quality
+and promoting interdisciplinary research on HABs could help to shed
+threat to public health and aquatic ecosystems? Environ. Toxicol. Chem. 35, 6–13 (2016).
+light on the complex responses of HABs to environmental factors 6. Rolim, S. B. A., Veettil, B. K., Vieiro, A. P., Kessler, A. B. & Gonzatti, C. Remote sensing
+and nutrient dynamics. Achieving these goals requires standardizing for mapping algal blooms in freshwater lakes: a review. Environ. Sci. Pollut. Res. 30,
+19602–19616 (2023).
+monitoring protocols, creating centralized data repositories, and
+7. Wurtsbaugh, W. A., Paerl, H. W. & Dodds, W. K. Nutrients, eutrophication and harmful
+fostering collaboration among disciplines such as microbiology, phy- algal blooms along the freshwater to marine continuum. WIREs Water 6, e1373 (2019).
+cology, ecology, limnology, climatology and water management. By 8. Paerl, H. & Paul, V. Climate change: links to global expansion of harmful cyanobacteria.
+Water Res. 46, 1349–1363 (2012).
+integrating diverse expertise and data sources, researchers can achieve 9. Elliott, J. A. The seasonal sensitivity of Cyanobacteria and other phytoplankton to
+a more comprehensive understanding of HAB dynamics, leading to changes in flushing rate and water temperature. Glob. Change Biol. 16, 864–876 (2010).
+improved predictive models, effective management strategies and 10. Xu, H. et al. Environmental controls of harmful cyanobacterial blooms in Chinese inland
+waters. Harmful Algae 110, 102127 (2021).
+informed policy decisions160. Global and regional data-sharing systems 11. Dodds, W. K. et al. Eutrophication of US freshwaters: analysis of potential economic
+collating HAB data provided by researchers, monitoring agencies, damages. Environ. Sci. Technol. 43, 12–19 (2009).
+stakeholders, and the general public, through community reporting 12. Qin, B. Q. et al. A drinking water crisis in Lake Taihu, China: linkage to climatic variability
+and lake management. Environ. Manag. 45, 105–112 (2010).
+programmes161,162, could help to develop a HAB database covering a 13. Bullerjahn, G. S. et al. Global solutions to regional problems: collecting global expertise
+diverse range of geographical locations. Sharing multiple types of to address the problem of harmful cyanobacterial blooms. A Lake Erie case study.
+Harmful Algae 54, 223–238 (2016).
+datasets could also help promote collaboration among researchers
+14. Anderson, C. R. et al. Scaling up from regional case studies to a global harmful algal
+from various disciplines. Notable examples of such interdisciplinary bloom observing system. Front. Mar. Sci. https://doi.org/10.3389/fmars.2019.00250
+initiatives are the European Multi-Lake Survey (EMLS)108 and the Global (2019).
+15. Ho, J., Michalak, A. & Pahlevan, N. Widespread global increase in intense lake
+Lake Ecological Observatory Network (GLEON). The EMLS, involving
+phytoplankton blooms since the 1980s. Nature 574, 667–670 (2019).
+scientists from 26 countries, successfully analysed and standardized 16. Fang, C. et al. Global divergent trends of algal blooms detected by satellite during
+data from 369 lakes across Europe, yielding valuable insights into how 1982–2018. Glob. Change Biol. 28, 2327–2340 (2022).
+climate change affects the frequency of cyanobacterial blooms108. 17. Ma, J. et al. Unbalanced impacts of nature and nurture factors on the phenology, area
+and intensity of algal blooms in global large lakes: MODIS observations. Sci. Total.
+The future of research on HAB dynamics relies on integrating Environ. 880, 163376 (2023).
+diverse data sources and advanced analytical methodologies. Using 18. Wang, S. et al. Trophic state assessment of global inland waters using a MODIS-derived
+Forel–Ule index. Remote Sens. Environ. 217, 444–460 (2018).
+data resources from integrated monitoring networks, globally shared
+19. Jenny, J.-P. et al. Scientists’ warning to humanity: rapid degradation of the world’s large
+datasets and historical climate records holds great potential for lakes. J. Gt Lakes Res. 46, 686–702 (2020).
+elucidating the role of nutrient enrichment and climate variability 20. Wang, Y., Feng, L. & Hou, X. Algal blooms in lakes in China over the past two decades:
+patterns, trends, and drivers. Water Resour. Res. 59, e2022WR033340 (2023).
+in promoting bloom formation, understanding HAB formation pro-
+21. Stone, R. China aims to turn tide against toxic lake pollution. Science 333, 1210–1211
+cesses and analysing HAB dynamics. Exploring these large datasets in (2011).
+depth will provide more nuanced and holistic insights into the factors 22. Furuya, K., Glibert, P., Mingjiang, Z. & Raine, R. Global Ecology and Oceanography of
+Harmful Algal Blooms in Asia (IOC and SCOR, 2010).
+influencing algal behaviour across a diverse range of natural ecosys-
+23. Qin, B. et al. Lake eutrophication and its ecosystem response. Chin. Sci. Bull. 58, 961–970
+tems. The application of advanced methodologies, such as machine (2013).
+learning (for example time series data analysis, deep learning and 24. Wang, Y. et al. Combined impacts of algae-induced variations in water soluble organic
+matter and heavy metals on bacterial community structure in sediment from Chaohu
+ensemble learning), to these datasets could potentially reveal intricate
+Lake, a eutrophic shallow lake. Sci. Total. Environ. 874, 162481 (2023).
+and nonlinear relationships that govern responses of algal growth to 25. Qin, B. et al. Extreme climate anomalies enhancing cyanobacterial blooms in eutrophic
+environmental factors154,163. Through interdisciplinary collaboration Lake Taihu, China. Water Resour. Res. 57, e2020WR029371 (2021).
+26. Qin, B. et al. Why Lake Taihu continues to be plagued with cyanobacterial blooms
+among fields such as microbiology, ecology, environmental science
+through 10 years (2007–2017) efforts. Sci. Bull. 64, 354–356 (2019).
+Nature Reviews Earth & Environment
+Review article
+27. Chen, X., Jiang, L., Huang, X. & Cai, Z. Identifying nitrogen source and transport 59. Ndlela, L. L., Oberholster, P. J., Van Wyk, J. H. & Cheng, P. H. An overview of
+characteristics of the urban estuaries and gate-controlled rivers in northern Taihu Lake, cyanobacterial bloom occurrences and research in Africa over the last decade. Harmful
+China. Ecol. Indic. 130, 108035 (2021). Algae 60, 11–26 (2016).
+28. Naghdi, K., Moradi, M., Kabiri, K. & Rahimzadegan, M. The effects of cyanobacterial 60. Sitoki, L., Kurmayer, R. & Rott, E. Spatial variation of phytoplankton composition,
+blooms on MODIS-L2 data products in the southern Caspian Sea. Oceanologia 60, biovolume, and resulting microcystin concentrations in the Nyanza Gulf (Lake Victoria,
+367–377 (2018). Kenya). Hydrobiologia 691, 109–122 (2012).
+29. Kahru, M., Elmgren, R., Kaiser, J., Wasmund, N. & Savchuk, O. Cyanobacterial blooms in 61. Muyodi, F. J., Hecky, R. E., Kitamirike, J. M. & Odong, R. Trends in health risks from
+the Baltic Sea: correlations with environmental factors. Harmful Algae https://doi.org/ water-related diseases and cyanotoxins in Ugandan portion of Lake Victoria basin. Lakes
+10.1016/j.hal.2019.101739 (2020). Reserv. Sci. Policy Manag. Sustain. Use 14, 247–257 (2009).
+30. Modabberi, A. et al. Caspian Sea is eutrophying: the alarming message of satellite data. 62. David, M. H., Edward, H. J. M., Michael, M. M., Kenneth, M. M. & Caroline, U. Lake
+Environ. Res. Lett. 15, 124047 (2020). Naivasha, Kenya: ecology, society and future. Freshw. Rev. 4, 89–114 (2011).
+31. Brown, K. P., Gerber, A., Bedulina, D. & Timofeyev, M. A. Human impact and ecosystemic 63. Krienitz, L., Dadheech, P. K., Fastner, J. & Kotut, K. The rise of potentially toxin producing
+health at Lake Baikal. WIREs Water 8, e1528 (2021). cyanobacteria in Lake Naivasha, Great African Rift Valley, Kenya. Harmful Algae 27, 42–51
+32. Distribution of HABs in the U.S. https://hab.whoi.edu/maps/regions-us-distribution/ (2013).
+(US National Office for Harmful Algal Blooms, 2019). 64. Matthews, M. Eutrophication and cyanobacterial blooms in South African inland waters:
+33. Stoddard, J. L. et al. Continental-scale increase in lake and stream phosphorus: are 10 years of MERIS observations. Remote Sens. Environ. 155, 161–177 (2014).
+oligotrophic systems disappearing in the United States? Environ. Sci. Technol. 50, 65. Sá, A. K. D. dos S. et al. Algal blooms and trophic state in a tropical estuary blocked by a
+3409–3415 (2016). dam (northeastern Brazil). Ocean Coast. Res. 69, e21009 (2021).
+34. Gatz, L. Freshwater Harmful Algal Blooms: Causes, Challenges, and Policy Considerations 66. Cunha, D. G. F., Dodds, W. K. & Loiselle, S. A. Factors related to water quality and
+(Congressional Research Service, 2020). thresholds for microcystin concentrations in subtropical Brazilian reservoirs. Inland
+35. Carpenter, S. R. et al. Nonpoint pollution of surface waters with phosphorus and Waters 8, 368–380 (2018).
+nitrogen. Ecol. Appl. 8, 559–568 (1998). 67. Companhia Ambiental do Estado de São Paulo (2010). http://www.cetesb.sp.gov.br/agua/
+36. Nicholls, K. H. & Hopkins, G. J. Recent changes in Lake Erie (north shore) phytoplankton: aguas-superficiais/35-publicacoes-/-relatórios (CETESB, 2011).
+cumulative impacts of phosphorus loading reductions and the zebra mussel 68. Companhia Ambiental do Estado de São Paulo (2014). http://www.cetesb.sp.gov.br/agua/
+introduction. J. Gt Lakes Res. 19, 637–647 (1993). aguas-superficiais/35-publicacoes-/-relatórios (CETESB, 2015).
+37. Status of Nutrients in the Lake Erie Basin (Lake Erie Nutrient Science Task Group, 2009). 69. Scarafia, M. E., Agnese, A. M. & Cabrera, J. L. Microcystis aeruginosa: behaviour and toxic
+38. Ho, J. C. & Michalak, A. M. Challenges in tracking harmful algal blooms: a synthesis of features in San Roque Dam (Argentina). Nat. Toxins 3, 75–77 (1995).
+evidence from Lake Erie. J. Gt Lakes Res. 41, 317–325 (2015). 70. Brazil Health Minister. Guidelines for Drinking Water Quality Regulation no. 518/2004
+39. Kane, D. D., Conroy, J. D., Peter Richards, R., Baker, D. B. & Culver, D. A. Re-eutrophication (2004).
+of Lake Erie: correlations between tributary nutrient loads and phytoplankton biomass. 71. Watanabe, F. S. et al. Estimation of chlorophyll-a concentration and the trophic state of
+J. Gt Lakes Res. 40, 496–501 (2014). the Barra Bonita hydroelectric reservoir using OLI/Landsat-8 images. Int. J. Environ. Res.
+40. Khan, M. N. & Mohammad, F. in Eutrophication: Causes, Consequences and Control Vol. 2 Public Health 12, 10391–10417 (2015).
+(eds Ansari, A. A. & Gill, S. S.) 1–15 (Springer, 2014). 72. Rivas, E. J. G. et al. Eutrophication: a growing problem in the Americas and the
+41. Binding, C., Greenberg, T., McCullough, G., Watson, S. & Page, E. An analysis of satellite- Caribbean. Braz. J. Biol. 80, 688–689 (2020).
+derived chlorophyll and algal bloom indices on Lake Winnipeg. J. Gt Lakes Res. 44, 73. Francis, G. Poisonous Australian lake. Nature 18, 11–12 (1878).
+436–446 (2018). 74. New Zealand’s Environmental Reporting Series: Our Freshwater 2020 (New Zealand
+42. Baulch, H. Saving Lake Winnipeg. Can. Water Resour. J./Rev. Canadienne des. Ressour. Ministry for the Environment, 2020).
+Hydr. 40, 231–232 (2015). 75. Berdalet, E. et al. Marine harmful algal blooms, human health and wellbeing: challenges
+43. Michalak, A. et al. Record-setting algal bloom in Lake Erie caused by agricultural and and opportunities in the 21st century. J. Mar. Biol. Assoc. UK 96, 61–91 (2016).
+meteorological trends consistent with expected future conditions. Proc. Natl Acad. Sci. 76. Huisman, J. et al. Cyanobacterial blooms. Nat. Rev. Microbiol. 16, 471–483 (2018).
+USA 110, 6448–6452 (2013). 77. Hajdu, S., Höglander, H. & Larsson, U. Phytoplankton vertical distributions and
+44. Wilkinson, G. M., Walter, J. A., Buelo, C. D. & Pace, M. L. No evidence of widespread algal composition in Baltic Sea cyanobacterial blooms. Harmful Algae 6, 189–205 (2007).
+bloom intensification in hundreds of lakes. Front. Ecol. Environ. 20, 16–21 (2022). 78. Hunter, P. D., Tyler, A. N., Willby, N. J. & Gilvear, D. J. The spatial dynamics of vertical
+45. Rigosi, A., Carey, C. C., Ibelings, B. W. & Brookes, J. D. The interaction between climate migration by Microcystis aeruginosa in a eutrophic shallow lake: a case study using high
+warming and eutrophication to promote cyanobacteria is dependent on trophic state spatial resolution time-series airborne remote sensing. Limnol. Oceanogr. 53, 2391–2406
+and varies among taxa. Limnol. Oceanogr. 59, 99–114 (2014). (2008).
+46. Kangur, K., Kangur, A., Kangur, P. & Laugaste, R. Fish kill in Lake Peipsi in summer 2002 79. Chen, X. et al. High-frequency observation of floating algae from AHI on Himawari-8.
+as a synergistic effect of a cyanobacterial bloom, high temperature, and low water level. Remote Sens. Environ. 227, 151–161 (2019).
+Proc. Estonian Acad. Sci. Biol. Ecol. 54, 67–80 (2005). 80. Schutgens, N. et al. On the spatio-temporal representativeness of observations. Atmos.
+47. Istvánovics, V., Honti, M., Torma, P. & Kousal, J. Record-setting algal bloom in polymictic Chem. Phys. 17, 9761–9780 (2017).
+Lake Balaton (Hungary): a synergistic impact of climate change and (mis)management. 81. Zhu, Z., Woodcock, C. E., Holden, C. & Yang, Z. Generating synthetic Landsat images
+Freshw. Biol. 67, 1091–1106 (2022). based on all available Landsat data: predicting Landsat surface reflectance at any given
+48. Remias, D., Pichrtová, M., Pangratz, M., Lütz, C. & Holzinger, A. Ecophysiology, secondary time. Remote Sens. Environ. 162, 67–83 (2015).
+pigments and ultrastructure of Chlainomonas sp. (Chlorophyta) from the European Alps 82. Feng, L. & Wang, X. Quantifying cloud-free observations from Landsat missions:
+compared with Chlamydomonas nivalis forming red snow. FEMS Microbiol. Ecol. 92, implications for water environment analysis. J. Remote Sens. 4, 0110 (2024).
+fiw030 (2016). 83. Cao, H. & Han, L. Hourly remote sensing monitoring of harmful algal blooms (HABs) in
+49. Grizzetti, B., Lanzanova, D., Liquete, C., Reynaud, A. & Cardoso, A. C. Assessing water Taihu Lake based on GOCI images. Environ. Sci. Pollut. Res. 28, 35958–35970 (2021).
+ecosystem services for water resource management. Environ. Sci. Policy 61, 194–203 84. Kutser, T., Metsamaa, L. & Dekker, A. G. Influence of the vertical distribution of
+(2016). cyanobacteria in the water column on the remote sensing signal. Estuar. Coast. Shelf Sci.
+50. Herodek, S. & Istvánovics, V. Mobility of phosphorus fractions in the sediments of Lake 78, 649–654 (2008).
+Balaton. Hydrobiologia 135, 149–154 (1986). 85. Seegers, B. N. et al. Subsurface seeding of surface harmful algal blooms observed
+51. Kocsis, M. et al. Geospatial data on the sediments of Lake Balaton. Sci. Data 11, 91 (2024). through the integration of autonomous gliders, moored environmental sample
+52. Istvánovics, V. et al. Updating water quality targets for shallow Lake Balaton (Hungary), processors, and satellite remote sensing in southern California. Limnol. Oceanogr. 60,
+recovering from eutrophication. Hydrobiologia 581, 305–318 (2007). 754–764 (2015).
+53. Eutrophication Remains a Major Problem for Europe’s Seas Despite Some Progress https:// 86. Dervaux, J., Mejean, A. & Brunet, P. Irreversible collective migration of cyanobacteria in
+www.eea.europa.eu/highlights/eutrophication-remains-a-major-problem (European eutrophic conditions. PLoS ONE 10, e0120906 (2015).
+Environment Agency, 2019). 87. Medrano, E. A., van De Wiel, B., Uittenbogaard, R., Pires, L. D. & Clercx, H. Simulations of the
+54. Grizzetti, B. et al. How EU policies could reduce nutrient pollution in European inland and diurnal migration of Microcystis aeruginosa based on a scaling model for physical–biological
+coastal waters. Glob. Environ. Change 69, 102281 (2021). interactions. Ecol. Model. 337, 200–210 (2016).
+55. Salmaso, N., Buzzi, F., Garibaldi, L., Morabito, G. & Simona, M. Effects of nutrient 88. Qin, B. et al. Dynamics of variability and mechanism of harmful cyanobacteria bloom in
+availability and temperature on phytoplankton development: a case study from large Lake Taihu, China. Chin. Sci. Bull. 61, 759–770 (2016).
+lakes south of the Alps. Aquat. Sci. 74, 555–570 (2012). 89. Visser, P. M., Ibelings, B. W. & Mur, L. R. Autumnal sedimentation of Microcystis spp. as
+56. Hecky, R. E., Mugidde, R., Ramlal, P. S., Talbot, M. R. & Kling, G. W. Multiple stressors result of an increase in carbohydrate ballast at reduced temperature. J. Plankton Res. 17,
+cause rapid ecosystem change in Lake Victoria. Freshw. Biol. 55, 19–42 (2010). 919–933 (1995).
+57. Ayele, H. S. & Atlabachew, M. Review of characterization, factors, impacts, and solutions 90. Guan, W., Bao, M., Lou, X., Zhou, Z. & Yin, K. Monitoring, modeling and projection of
+of lake eutrophication: lesson for Lake Tana, Ethiopia. Environ. Sci. Pollut. Res. 28, harmful algal blooms in China. Harmful Algae 111, 102164 (2022).
+14233–14252 (2021). 91. Ren, L., Wang, P., Wang, C., Paerl, H. W. & Wang, H. Effects of phosphorus availability and
+58. Ndebele, M. R. & Magadza, C. H. D. The occurrence of microcystin-LR in Lake Chivero, phosphorus utilization behavior of Microcystis aeruginosa on its adaptation capability to
+Zimbabwe. Lakes Reserv. Sci. Policy Manag. Sustain. Use 11, 57–62 (2006). ultraviolet radiation. Environ. Pollut. 256, 113441 (2020).
+Nature Reviews Earth & Environment
+Review article
+92. Berman-Frank, I., Lundgren, P. & Falkowski, P. Nitrogen fixation and photosynthetic 122. Lijklema, L. Nutrient dynamics in shallow lakes: effects of changes in loading and role of
+oxygen evolution in cyanobacteria. Res. Microbiol. 154, 157–164 (2003). sediment–water interactions. Hydrobiologia 275, 335–348 (1994).
+93. Lassaletta, L., Billen, G., Grizzetti, B., Anglade, J. & Garnier, J. 50 year trends in nitrogen 123. Veldkamp, T. I. E. et al. Water scarcity hotspots travel downstream due to human
+use efficiency of world cropping systems: the relationship between yield and nitrogen interventions in the 20th and 21st century. Nat. Commun. 8, 15697 (2017).
+input to cropland. Environ. Res. Lett. 9, 105011 (2014). 124. Song, Y. Hydrodynamic impacts on algal blooms in reservoirs and bloom mitigation
+94. Glibert, P. M., Maranger, R., Sobota, D. J. & Bouwman, L. The Haber Bosch–harmful algal using reservoir operation strategies: a review. J. Hydrol. 620, 129375 (2023).
+bloom (HB–HAB) link. Environ. Res. Lett. 9, 105001 (2014). 125. Zhu, K., Bi, Y. & Hu, Z. Responses of phytoplankton functional groups to the hydrologic
+95. Scavia, D. et al. Assessing and addressing the re-eutrophication of Lake Erie: central regime in the Daning River, a tributary of Three Gorges Reservoir, China. Sci. Total.
+basin hypoxia. J. Gt Lakes Res. 40, 226–246 (2014). Environ. 450–451, 169–177 (2013).
+96. Schindler, D. W. et al. Eutrophication of lakes cannot be controlled by reducing nitrogen 126. Stone, R. Three Gorges Dam: into the unknown. Science 321, 628–632 (2008).
+input: results of a 37-year whole-ecosystem experiment. Proc. Natl Acad. Sci. USA 105, 127. Summers, E. J. & Ryder, J. L. A critical review of operational strategies for the
+11254–11258 (2008). management of harmful algal blooms (HABs) in inland reservoirs. J. Environ. Manag. 330,
+97. Paerl, H. W., Gardner, W. S., McCarthy, M. J., Peierls, B. L. & Wilhelm, S. W. Algal blooms: 117141 (2023).
+noteworthy nitrogen. Science 346, 175–175 (2014). 128. Beaulieu, M., Pick, F. & Gregory-Eaves, I. Nutrients and water temperature are significant
+98. Paerl, H. W. et al. It takes two to tango: when and where dual nutrient (N & P) reductions predictors of cyanobacterial biomass in a 1147 lakes data set. Limnol. Oceanogr. 58,
+are needed to protect lakes and downstream ecosystems. Environ. Sci. Technol. 50, 1736–1746 (2013).
+10805–10813 (2016). 129. Chapra, S. C. et al. Climate change impacts on harmful algal blooms in U.S. freshwaters:
+99. Ma, J. et al. Green algal over cyanobacterial dominance promoted with nitrogen and a screening-level assessment. Environ. Sci. Technol. 51, 8933–8943 (2017).
+phosphorus additions in a mesocosm study at Lake Taihu, China. Environ. Sci. Pollut. Res. 130. Kakouei, K. et al. Phytoplankton and cyanobacteria abundances in mid-21st century
+22, 5041–5049 (2015). lakes depend strongly on future land use and climate projections. Glob. Change Biol. 27,
+100. Paerl, H. W. et al. Mitigating cyanobacterial harmful algal blooms in aquatic ecosystems 6409–6422 (2021).
+impacted by climate change and anthropogenic nutrients. Harmful Algae 54, 213–222 131. Visser, P. M. et al. How rising CO 2 and global warming may stimulate harmful
+(2016). cyanobacterial blooms. Harmful Algae 54, 145–159 (2016).
+101. Park, S., Brett, M. T., Müller-Solger, A. & Goldman, C. R. Climatic forcing and primary 132. Huisman, J. et al. Changes in turbulent mixing shift competition for light between
+productivity in a subalpine lake: interannual variability as a natural experiment. Limnol. phytoplankton species. Ecology 85, 2960–2970 (2004).
+Oceanogr. 49, 614–619 (2004). 133. Trenberth, K. E. The impact of climate change and variability on heavy precipitation,
+102. Alston, J., Babcock, B. & Pardey, P. The Shifting Patterns of Agricultural Production and floods, and droughts. Encycl. Hydrol. Sci. https://doi.org/10.1002/0470848944.hsa211
+Productivity Worldwide (Iowa State Univ. Center for Agricultural and Rural Development, (2005).
+2010). 134. Phlips, E. J., Hendrickson, J., Quinlan, E. L. & Cichra, M. Meteorological influences on
+103. Trainer, V. L. et al. Pelagic harmful algal blooms and climate change: lessons from algal bloom potential in a nutrient-rich blackwater river. Freshw. Biol. 52, 2141–2155
+nature’s experiments with extremes. Harmful Algae 91, 101591 (2020). (2007).
+104. Watson, S. B., McCauley, E. & Downing, J. A. Patterns in phytoplankton taxonomic 135. Reichwaldt, E. S. & Ghadouani, A. Effects of rainfall patterns on toxic cyanobacterial
+composition across temperate lakes of differing nutrient status. Limnol. Oceanogr. 42, blooms in a changing climate: between simplistic scenarios and complex dynamics.
+487–495 (1997). Water Res. 46, 1372–1393 (2012).
+105. Fang, T. et al. An overview of heavy metal pollution in Chaohu Lake, China: enrichment, 136. Ralston, D. K. & Moore, S. K. Modeling harmful algal blooms in a changing climate.
+distribution, speciation, and associated risk under natural and anthropogenic changes. Harmful Algae 91, 101729 (2020).
+Environ. Sci. Pollut. Res. 26, 29585–29596 (2019). 137. Litchman, E. Understanding and predicting harmful algal blooms in a changing climate:
+106. Butterwick, C., Heaney, S. I. & Talling, J. F. Diversity in the influence of temperature on the a trait-based framework. Limnol. Oceanogr. Lett. 8, 229–246 (2023).
+growth rates of freshwater algae, and its ecological relevance. Freshw. Biol. 50, 291–300 138. Winder, M. & Sommer, U. Phytoplankton response to a changing climate. Hydrobiologia
+(2005). 698, 5–16 (2012).
+107. Paerl, H. W. Mitigating harmful cyanobacterial blooms in a human- and climatically-impacted 139. Santos, M. M. D., Moreno-Garrido, I., Gonçalves, F., Soares, A. M. V. M. & Ribeiro, R.
+world. Life 4, 988–1012 (2014). An in situ bioassay for estuarine environments using the microalga Phaeodactylum
+108. Burford, M. et al. Perspective: advancing the research agenda for improving tricornutum. Environ. Toxicol. Chem. 21, 567–574 (2002).
+understanding of cyanobacteria in a future of global change. Harmful Algae 91, 101601 140. Glibert, P. M. & Burford, M. A. Globally changing nutrient loads and harmful algal blooms:
+(2019). recent advances, new paradigms, and continuing challenges. Oceanography 30, 58–69
+109. Lürling, M., Eshetu, F., Faassen, E. J., Kosten, S. & Huszar, V. L. M. Comparison of (2017).
+cyanobacterial and green algal growth rates at different temperatures. Freshw. Biol. 58, 141. Petts, G. E. Water management: the case of Lake Biwa, Japan. Geograph. J. https://doi.org/
+552–559 (2013). 10.2307/634609 (1988).
+110. Leach, T. H. et al. Patterns and drivers of deep chlorophyll maxima structure in 100 lakes: 142. Yadav, S. et al. A satellite-based assessment of the distribution and biomass of
+the relative importance of light and thermal stratification. Limnol. Oceanogr. 63, submerged aquatic vegetation in the optically shallow basin of Lake Biwa. Remote
+628–646 (2018). Sensing 9, 966 (2017).
+111. Lürling, M., Mello, M. M. E., van Oosterhout, F., de Senerpont Domis, L. & Marinho, M. M. 143. National Lakes Assessment 2012: A Collaborative Survey of Lakes in the United States
+Response of natural cyanobacteria and algae assemblages to a nutrient pulse and (US Environmental Protection Agency, 2016).
+elevated temperature. Front. Microbiol. 9, 1851 (2018). 144. About Project Clean Lake. https://www.neorsd.org/community/about-the-project-clean-
+112. Verbeek, L., Gall, A., Hillebrand, H. & Striebel, M. Warming and oligotrophication cause lake-program/ (Northeast Ohio Regional Sewer District, 2024).
+shifts in freshwater phytoplankton communities. Glob. Change Biol. 24, 4532–4543 145. Riley, C. Cleveland’s $3B Project Clean Lake Features Large-Scale Storage Tunnels.
+(2018). https://www.constructionequipmentguide.com/clevelands-3b-project-clean-lake-
+113. Moreno-Ostos, E., Cruz-Pizarro, L., Basanta, A. & George, D. G. The influence of wind- features-large-scale-storage-tunnels/61932 (2023).
+induced mixing on the vertical distribution of buoyant and sinking phytoplankton 146. Ding, S. et al. Internal phosphorus loading from sediments causes seasonal nitrogen
+species. Aquat. Ecol. 43, 271–284 (2009). limitation for harmful algal blooms. Sci. Total. Environ. 625, 872–884 (2018).
+114. Ho, J. C. & Michalak, A. M. Exploring temperature and precipitation impacts on harmful 147. Watson, S. B. et al. The re-eutrophication of Lake Erie: harmful algal blooms and hypoxia.
+algal blooms across continental U.S. lakes. Limnol. Oceanogr. 65, 992–1009 (2020). Harmful Algae 56, 44–66 (2016).
+115. Sengupta, M., Anandurai, R., Nanda, S. & Datti, A. A. Geospatial identification of algal 148. Li, S., Liu, C., Sun, P. & Ni, T. Response of cyanobacterial bloom risk to nitrogen and
+blooms in inland waters: a post cyclone case study of Chilka Lake, Odisha, India. Rasayan phosphorus concentrations in large shallow lakes determined through geographical
+J. Chem. 10, 234–239 (2017). detector: a case study of Taihu Lake, China. Sci. Total. Environ. 816, 151617 (2022).
+116. Zhu, M. et al. The role of tropical cyclones in stimulating cyanobacterial (Microcystis 149. Branch, W. S. A. M. Manitoba Conservation and Water Stewardship Report (Water Science
+spp.) blooms in hypertrophic Lake Taihu, China. Harmful Algae 39, 310–321 (2014). and Management Branch, 2015).
+117. He, X. & Sheffield, J. Lagged compound occurrence of droughts and pluvials globally 150. Henderson, K. A., Murdock, J. N. & Lizotte, R. E. Jr Water depth influences algal
+over the past seven decades. Geophys. Res. Lett. 47, e2020GL087924 (2020). distribution and productivity in shallow agricultural lakes. Ecohydrology 14, e2319 (2021).
+118. Ozkan, K. et al. Contrasting roles of water chemistry, lake morphology, land-use, climate 151. Khan, T. A., Wilson, M. E. & Khan, M. T. Evidence for invasive carp mediated trophic
+and spatial processes in driving phytoplankton richness in the Danish landscape. cascade in shallow lakes of western Victoria, Australia. Hydrobiologia 506, 465–472
+Hydrobiologia 710, 173–187 (2013). (2003).
+119. Miller, M. P. The influence of reservoirs, climate, land use and hydrologic conditions on 152. Willis, C., Papathanasopoulou, E., Russel, D. & Artioli, Y. Harmful algal blooms: the
+loads and chemical quality of dissolved organic carbon in the Colorado River. Water impacts on cultural ecosystem services and human well-being in a case study setting,
+Resour. Res. https://doi.org/10.1029/2012WR012312 (2012). Cornwall, UK. Mar. Policy 97, 232–238 (2018).
+120. Romo, S., Soria, J., Fernandez, F., Ouahid, Y. & Baron-Sola, A. Water residence time and 153. Hennon, G. M. M. & Dyhrman, S. T. Progress and promise of omics for predicting the
+the dynamics of toxic cyanobacteria. Freshw. Biol. 58, 513–522 (2013). impacts of climate change on harmful algal blooms. Harmful Algae 91, 101587 (2020).
+121. Qin, B. et al. Water depth underpins the relative roles and fates of nitrogen and 154. Wells, M. et al. Harmful algal blooms and climate change: learning from the past and
+phosphorus in lakes. Environ. Sci. Technol. 54, 3191–3198 (2020). present to forecast the future. Harmful Algae 49, 68–93 (2015).
+Nature Reviews Earth & Environment
+Review article
+155. Lekki, J., Ruberg, S., Binding, C., Anderson, R. & Vander Woude, A. Airborne hyperspectral Laboratory of Soil and Groundwater Pollution Control (no. 2023B1212060002). H.W.P. was
+and satellite imaging of harmful algal blooms in the Great Lakes region: successes in supported by the US National Science Foundation (nos. 1831096, 1803697 and 2108917) and
+sensing algal blooms. J. Gt Lakes Res. 45, 405–412 (2019). the National Institutes of Health (1P01ES028939-01). C.Z. was supported by a grant from the
+156. Wang, W. et al. A ground-based remote sensing system for high-frequency and real-time Ningbo Municipal Government.
+monitoring of phytoplankton blooms. J. Hazard. Mater. 439, 129623 (2022).
+157. Reinart, A. & Kutser, T. Comparison of different satellite sensors in detecting Author contributions
+cyanobacterial bloom events in the Baltic Sea. Remote Sens. Environ. 102, 74–85 (2006). L.F. and Y.W. researched data and wrote the first draft for the article. X.H., B.Q., T. K., F.Q., N.C.,
+158. Hunter, P. D., Tyler, A. N., Carvalho, L., Codd, G. A. & Maberly, S. C. Hyperspectral remote H.W.P. and C.Z. reviewed and/or edited the manuscript before submission.
+sensing of cyanobacterial pigments as indicators for cell populations and toxins in
+eutrophic lakes. Remote Sens. Environ. 114, 2705–2718 (2010). Competing interests
+159. Hunter, P. D., Tyler, A. N., Gilvear, D. J. & Willby, N. J. Using remote sensing to aid the The authors declare no competing interests.
+assessment of human health risks from blooms of potentially toxic cyanobacteria.
+Environ. Sci. Technol. 43, 2627–2633 (2009). Additional information
+160. Hallegraeff, G. M. Ocean climate change, phytoplankton community responses, and Supplementary information The online version contains supplementary material available at
+harmful algal blooms: a formidable predictive challenge. J. Phycol. 46, 220–235 (2010). https://doi.org/10.1038/s43017-024-00578-2.
+161. Free, C. M., Moore, S. K. & Trainer, V. L. The value of monitoring in efficiently and
+adaptively managing biotoxin contamination in marine fisheries. Harmful Algae 114, Peer review information Nature Reviews Earth & Environment thanks Barry Rosen,
+102226 (2022). Sachidananda Mishra, Li-Rong Song and the other, anonymous, reviewer(s) for their
+162. Trice, A., Robbins, C., Philip, N. & Rumsey, M. Challenges and Opportunities for Ocean contribution to the peer review of this work.
+Data to Advance Conservation and Management (Ocean Conservancy, 2021).
+163. Brookfield, A. E. et al. Predicting algal blooms: are we overlooking groundwater? Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in
+Sci. Total Environ. 769, 144442 (2021). published maps and institutional affiliations.
+164. Singh, S. P. & Singh, P. Effect of temperature and light on the growth of algae species:
+a review. Renew. Sustain. Energy Rev. 50, 431–444 (2015). Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this
+165. Park, J. B. K., Craggs, R. J. & Shilton, A. N. Recycling algae to improve species control and article under a publishing agreement with the author(s) or other rightsholder(s); author self-
+harvest efficiency from a high rate algal pond. Water Res. 45, 6637–6649 (2011). archiving of the accepted manuscript version of this article is solely governed by the terms of
+166. Guiry, M. D. How many species of algae are there? J. Phycol. 48, 1057–1063 (2012). such publishing agreement and applicable law.
+167. Ho, J. C. & Michalak, A. M. Phytoplankton blooms in Lake Erie impacted by both long-term
+and springtime phosphorus loading. J. Gt Lakes Res. 43, 221–228 (2017).
+Related links
+Acknowledgements
+Global Lake Ecological Observatory Network (GLEON): http://www.gleon.org/
+L.F. was supported by the Ministry of Education of China (D20020), the National Natural
+Science Foundation of China (nos. 42271322 and 42321004), the Guangdong Basic and © Springer Nature Limited 2024
+Applied Basic Research Foundation (2023B1515120061), and Guangdong Provincial Key
+Nature Reviews Earth & Environment

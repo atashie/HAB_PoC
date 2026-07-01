@@ -1,0 +1,343 @@
+Improved algorithm for routine monitoring of cyanobacteria and eutrophication in
+inland and near-coastal waters
+Mark William Matthews , Daniel Odermatt
+a b,c
+Abstract
+This short communication introduces several previously undocumented processing steps,
+arithmetic conditions, pixel flagging procedures, and improvements made to the maximum
+peak height (MPH) algorithm for the Basic ENVISAT A(ATSR) and MERIS (BEAM)
+processing toolbox. The improvements reduce false-positive cyanobacteria detection over
+oligotrophic waters; enable pixels in clear waters affected by environmental radiances
+(stray light) to be identified; and improve detection of floating aquatic vegetation using an
+additional NDVI redness threshold. Several global case studies are used to illustrate these
+improvements, and demonstrate new pixel flagging procedures and algorithm operation.
+New results using a large in situ dataset validating the retrieval of chlorophyll-a (chl-a) for
+a wide range of inland water types are presented. The MPH chl-a estimates have similar
+correlation coefficients to fluorescence line height (FLH) and maximum chlorophyll index
+(MCI) values. However, the variability of the slope coefficients across different water
+types is significantly reduced. The results demonstrate the potential for using the MPH
+algorithm as a standard product for MERIS for estimating chl-a (and trophic status) in
+inland and near-coastal waters.
+Keywords: cyanobacteria; eutrophication; chlorophyll-a; surface scum; aquatic
+macrophytes; trophic status; water quality; remote sensing; MERIS; BEAM; maximum
+peak height;
+This paper has been published as:
+Matthews, M. W., & Odermatt, D. (2015). Improved algorithm for routine monitoring of
+cyanobacteria and eutrophication in inland and near-coastal waters. Remote Sensing of
+Environment, 156, 374-382.
+Department of Oceanography, University of Cape Town, Cape Town, South Africa
+a
+Brockmann Consult GmbH, Geesthacht, Germany
+b
+Odermatt & Brockmann GmbH, Zurich, Switzerland
+c
+1. Introduction
+The maximum peak height or MPH algorithm (for details see Matthews et al., 2012) was designed
+to give quantitative chlorophyll-a estimates in optically complex inland and near-coastal waters,
+as well as to detect cyanobacteria blooms and surface scum, and floating aquatic macrophytes.
+The algorithm uses the narrow red-edge MERIS bands positioned at 681, 709 and 753 nm and,
+using the 665 and 885 nm bands as a baseline, computes the position and height of the maximum
+peak at these wavelengths. The algorithm uses molecular scattering corrected bottom-of-Rayleigh
+reflectances (BRR) or ρ and therefore avoids an error-prone aerosol correction over optically
+BRR
+complex waters. BRR is the dimensionless reflectance above the aerosol and ground system
+corrected for gaseous absorption using climatological values for the gas content in the
+atmospheric column, and Rayleigh scattering which relies on barometric pressure (Santer et al,
+1999). This approach is used in favour of a full aerosol atmospheric correction because of the
+large uncertainties associated with water leaving reflectance products over turbid inland waters.
+The baseline subtraction technique effectively normalises for residual aerosol induced effects
+given the relative spectral proximity of the red and near infra-red (NIR) bands. Cyanobacteria
+detection is performed using distinctive spectral features in the 620 nm and 681 nm bands, and a
+separate chl-a algorithm is used for these cyanobacteria-dominant waters. Floating matter
+identification is performed by the detection of a maximum peak position at 753 nm, which is then
+either classified as floating cyanobacteria (surface scum) or vegetation (macrophytes), depending
+on whether the spectral features of cyanobacteria are present. Designed for operational use, the
+MPH algorithm is intended to be broadly applicable to a wide variety of water types and trophic
+status encountered in inland and near-coastal waters.
+The MPH has recently been extensively tested using the MERIS full resolution (FR) archived
+data from South African and global inland waters. This has highlighted the need for specific
+improvements, in particular surrounding the detection of cyanobacteria in clear, oligotrophic
+waters and the detection of dense floating aquatic macrophytes. The purpose of this paper is
+therefore firstly to provide details on these improvements since the first version of the MPH
+algorithm (Matthews et al., 2012). These improvements relate to the false-positive detection of
+cyanobacteria in oligotrophic-type waters, improved detection of dense aquatic macrophytes, as
+well as the introduction of a flagging procedure for pixels affected by the adjacency effect (stray
+light) or sun glint induced false classifications. Secondly, the detailed algorithm structure and
+processing scheme to be used for the MPH BEAM plugin is presented. And finally, the paper
+shows initial validation of the MPH chl-a estimates using a selection of in situ chl-a datasets from
+lakes around the world.
+2. The improved MPH algorithm
+Fig. 1 shows a schematic of the algorithm processing procedure. ρ is calculated from the top-
+BRR
+of-atmosphere (TOA) MERIS radiances using the Idepix plugin processor available in BEAM 5.
+The ρ are computed for the red bands at 620, 664, 681, 709, 753 and 885 nm, which
+BRR
+correspond to bands numbers 6 through 10 and 14. The first step involves the calculation of the
+various variables used in subsequent conditional steps. These include the identification of the
+reflectance peak magnitude and position for two different spectral ranges (R , R ; λ ,
+max,0 max,1 Rmax,0
+λ ) used for the MPH calculation. R is the maximum reflectance magnitude in bands 8 and
+Rmax,1 max,0
+9, and λ is the corresponding peak position at 681 or 709 nm. Similarly, R is the
+Rmax,0 max,1
+maximum reflectance magnitude in bands 8 through 10, and λ is the corresponding
+Rmax,1
+wavelength of the peak position. MPH and MPH are calculated from the corresponding R ,
+0 1 max,0
+and R . The rationale behind the two MPH variables is discussed in section 4.
+max,1
+Other variables computed are the sun induced chlorophyll fluorescence (SICF) and the sun-
+induced phycocyanin absorption and fluorescence (SIPAF) peaks, as described in Matthews et al.
+(2012), and the normalised difference vegetation index (NDVI). An additional variable, called
+the backscatter and absorption induced reflectance (BAIR) peak, is calculated as the height of the
+709 nm peak above a baseline between 665 and 885 nm. The rationale and use of the BAIR peak
+will be discussed further in section 3.
+In a second step, all instances where the peak position λ is not located at 753 nm are taken to
+Rmax,1
+represent cases where phytoplankton or cyanobacteria are immersed or submerged in the water.
+These cases are evaluated for the presence of cyanobacteria using a modified condition as follows:
+If SICFpeak < 0 and SIPFpeak > 0 and BAIRpeak > 0.002, cyano_flag = TRUE.
+For waters identified as cyanobacteria (cyano_flag = true) the chl-a concentration is calculated
+using the algorithm for cyanobacteria defined in Matthews et al., (2012). If the resulting chl-a
+concentration exceeds a certain user-defined threshold, typically 350 mg m , a flag for floating
+-3
+matter is raised, denoted float_flag. On the contrary, when cyano_flag (and float_flag) is false,
+the chl-a algorithm from Matthews et al. (2012) for eukaryotic algae is used. Only waters with
+immersed phytoplankton and λ not equal to 753 nm are considered in this second step, and
+Rmax,1
+therefore MPH and MPH are equivalent.
+0 1
+In the third step, pixels with λ = 753 nm are evaluated. The 753 nm peak is traditionally used
+Rmax,1
+to indicate the presence of floating vegetation or cyanobacterial scum (Matthews et al., 2012).
+However this spectral feature can also occasionally be observed in clear, oligotrophic waters, and
+is usually related to adjacency effects but may in rare events be caused by sun glint. A MPH
+1
+threshold of 0.02 is used as an indicator of legitimate floating vegetation. This effectively
+excludes the adjacency induced 753 nm peak observed in oligotrophic waters. The value of this
+threshold and the float_flag are discussed in more detail in section 4. In addition, a NDVI redness
+index threshold value is used to test for the presence of floating vegetation. The floating flag is
+therefore defined as follows:
+If λRmax,1 = 753 nm and MPH1 ≥ 0.02 and NDVI ≥ 0.2,
+float_flag = TRUE, adj_flag = FALSE
+The identification of adjacency affected pixels is similarly performed using the reverse
+expression:
+If λRmax,1 = 753 nm and MPH1<0.02 and NDVI < 0.2,
+adj_flag = TRUE, float_flag = FALSE
+For waters where an adj_flag is raised, valid chl-a retrievals are still feasible in most cases using
+the peak height at 681 or 709 nm, however outliers may occur.
+The fourth step enables the separation of floating vegetation and cyanobacteria scum for all cases
+where the float_flag is raised and corresponds largely to step 2 omitting evaluation of the
+BAIR . If cyanobacteria are detected in these floating matter cases, chl-a concentration is
+peak
+calculated using the same equation as in step 2 (Matthews et al., 2012). However if the cyano_flag
+is not raised, no calculation of chl-a is performed, as these are assumed to be floating aquatic
+macrophytes or vegetation. Thus the four cases identified by the algorithm are: normal immersed
+eukaryotic phytoplankton; submerged or mixed cyanobacterial blooms; floating cyanobacteria
+blooms or surface scum; and floating aquatic macrophytes or vegetation. Examples of each of
+these cases illustrating the BRR spectrum, the position and height of the peak in the red, and the
+magnitude of the MPH variable, are shown in fig. 2, and the corresponding chl-a products are
+shown in fig. 3.
+3. Improved cyanobacteria detection
+The rationale for the inclusion of the additional BAIR peak in the cyanobacteria flag is discussed
+here. When testing the MPH algorithm in some clear water lower biomass oligo/mesotrophic
+scenarios it became apparent that there were numerous cases of false-positive (erroneous)
+cyanobacteria detections using the flag as previously defined by Matthews et al. (2012).
+Cyanobacteria detection in low biomass oligo/mesotrophic scenarios using MERIS is likely to be
+either very challenging or infeasible. Studies show that cyanobacteria phycocyanin pigment
+related features only clearly become visible at high biomass chl-a concentrations greater than ±
+20 mg m (Kutser et al., 2006, Metsamaa et al., 2006). This is further complicated by atmospheric
+-3
+aerosols that affect the shape and magnitude of the BRR spectra, and the signal-to-noise ratio
+limits of the MERIS detectors, especially in full resolution mode, which is typically between 200
+and 500 for red bands (Hu et al., 2012). Given these limitations, detection of cyanobacteria related
+features from MERIS FR imagery (or any other currently available satellite imagery) at
+low/medium biomass is unlikely. Therefore cyanobacteria detection should be attempted in
+medium/high biomass eutrophic waters, i.e. chl-a > ± 20 mg m , where there is sufficient
+-3
+resolution of cyanobacteria-specific optical features.
+A simple way of detecting eutrophic waters suitable for detecting cyanobacteria is to test for the
+presence of a 709 nm peak position (MERIS band 9) using the BAIR variable. This peak typically
+overwhelms, or becomes larger than, the fluorescence-related 681 nm peak in eutrophic waters
+with chl-a values greater than approx. 20 mg m (e.g. Gitelson et al., 1992). The modified
+-3
+implementation of the cyano_flag requires that the BAIR variable be positive and larger than
+0.002 before evaluating the BRR spectrum for cyanobacteria-specific features. The additional use
+of the BAIR peak threshold effectively avoids the false-positive detection of cyanobacteria in
+oligo/mesotrophic waters thereby providing a more robust measure of the presence of
+cyanobacteria in eutrophic waters. Fig. 3 shows an example of false-positive cyanobacteria
+detection in clear waters using the original flag defined by Matthews et al., (2012), and the
+corrected results using the modified flag. The false-positive cyano flagging in this Lake Michigan
+scene was likely caused by residual aerosol-related features in the BRR due to anomalous
+atmospheric aerosols or cloud. Similar improvements were found in other oligotrophic lakes (not
+shown).
+4. Adjacency effect flag and thresholds for interpretation of the 753 nm peak
+This section discusses the rationale behind the usage of the MPH variable to identify adjacency
+1
+effect affected pixels. In spatially constrained inland and near-coastal waters, stray light from
+typically brighter land pixels surrounding, or adjacent to, a dark water target, causes a noticeable
+elevation of radiances in the NIR bands, which often contribute more than 50% of the at-sensor
+radiance (Odermatt et al., 2008). Among the bands used by the MPH algorithm, the NIR 753 nm
+band used to identify floating matter is particularly affected. In these cases, BRR for the 753 nm
+band may be slightly higher than for the other candidate MPH bands. If left unconstrained this
+would lead to erroneous classification of floating matter in these cases. In order to avoid this error,
+a minimum threshold for MPH is required in order to assign a valid floating flag.
+1
+In cases of adjacency affects from land and cloud, both MPH and MPH have small values (<
+0 1
+0.01). In the case of dense floating vegetation, MPH may be small due to the steep red spectral
+0
+slope typical of vegetation, however MPH values usually remain larger than 0.02. For cases in
+1
+which viable floating vegetation or cyanobacteria surface scum exists, MPH will certainly be
+1
+larger than 0.02, which is approximately the MPH value where cyanobacteria become discernible
+(see fig. 4 in Matthews et al., 2012). A typical NDVI value of 0.2 is used to separate water from
+submerged aquatic vegetation and floating aquatic macrophytes (Fusilli et al., 2011). By using a
+threshold value of MPH to constrain the 753 nm peak usage, in addition to the NDVI threshold
+1
+which identifies spectral redness associated with vegetation, the invalid inclusion of adjacency
+affected pixels as floating vegetation is effectively avoided in clear waters.
+This condition is at the same time used to flag pixels that are most likely contaminated by the
+adjacency effect using the adjacency flag (adj_flag). These are cases where there is a small 753
+nm peak that is not associated with valid floating vegetation or cyanobacteria scum, and is likely
+to result from stray light. The cyano_flag is forced to a false value for adj_flag pixels, as the
+adjacency effect is likely to occur in clear oligotrophic waters only, and unusual spectral shapes
+are also possible. Fig. 5 provides examples of the three possible cases associated with a 753 nm
+peak position. An example from Taihu shows how floating cyanobacteria scum is effectively
+separated from emergent macrophyte vegetation. The example from Lake Michigan shows how
+pixels adjacent to land are flagged for the adjacency effect, which is caused by scattering of light
+from adjacent brighter land pixels into the sensor field of view: these effects may be observed
+many kilometers offshore (Santer & Schmechtig, 2000). This effect is not the result of image
+blurring by application of any geo-rectification or image processing techniques. The adj_flag may
+also be raised for pixels adjacent to cloud, and for pixels affected by high sun glint.
+5. In situ validation of MPH chl-a estimates
+The MPH was implemented in the Calvalus processing system (Boettcher et al., 2012), which
+allows for fast and iterative processing of the MERIS FR 2002-2012 database. Two
+comprehensive processing modes were applied for algorithm assessment. The accuracy of the
+MPH chl-a estimates were evaluated by means of a large collection of several thousand in situ
+chl-a reference measurements from more than 40 lakes around the world (Odermatt and
+Brockmann, in prep.), and was found to provide more robust chl-a estimates than several other
+algorithms in eutrophic to hypertrophic waters. On the other hand, monthly and yearly averaged
+Level 3 aggregates were produced for the full MERIS FR archive. Quality checking of these Level
+3 products and backtracking of unexpected features allowed the identification of cases where the
+MPH failed so that the improved process conditions and thresholds for MPH discussed in this
+paper could be derived.
+Matchup analysis was performed for near-simultaneously acquired in situ and valid satellite chl-
+a estimates (same day and GPS position). The mean of 9 pixels surrounding the sampling point
+was used, with the standard deviation providing a rough error estimate for the satellite estimates.
+Fig. 6 shows the performance of linear regression analysis of MPH algorithm chl-a estimates
+versus in situ chl-a for 9 large, routinely collected monitoring datasets of different lakes, where
+maximum regression coefficients R > 0.6 were achieved using a choice of about 40 different
+processing schemes. For comparison, the index values for the BRR derived fluorescence line
+height (FLH) and maximum chlorophyll index (MCI) were also regressed with in situ chl-a
+(Gower & King, 2006; note these processors do not provide actual quantitative chl-a estimates,
+only index values). The performance in terms of regression coefficient is not significantly
+different, with the MPH variable giving the best correlation with chl-a in 4 cases, the MCI in 3,
+and the FLH in 2. However, the regression slopes vary much more widely for the MCI and FLH,
+confirming that MPH is more suitable for the derivation of absolute concentration values across
+different trophic ranges and water types.
+Fig. 7 shows some of the matchup scatter plots for the datasets in Figure 6. The data markers are
+coloured according to the optical water types classification for optically complex waters by Moore
+et al. (2014), after atmospheric correction (see reference for description of water types). In general
+the MPH tends to overestimate with respect to the in situ chl-a concentration. Nevertheless the
+ability of the algorithm to accurately identify the gross chl-a range (trophic status) and its stable
+performance across diverse water types is evident. However, the results also indicate the need for
+re-training of the MPH algorithm coefficients using a global dataset.
+6. Outlook
+The initial validation results have indicated both the promise of the MPH approach, as well as the
+need for improved parameterisation of the initial algorithm relationships derived from the smaller
+dataset in Matthews et al. (2012). There are already studies which demonstrate the usefulness of
+the MPH-type approach with various satellite sensors possessing a number of red and NIR band
+positions such as the hyperspectral imager for the coastal ocean (Ryan et al., 2014). The improved
+MPH algorithm is available as a plug-in tool in BEAM Version 5 (downloaded from
+http://www.brockmann-consult.de/cms/web/beam/welcome). It will be used to process MERIS
+L3 water quality products for 300 lakes around the world in the scope of ESA’s Diversity II
+project. Monthly, yearly and decadal products for these lakes will be made publicly available.
+The MPH module will also be adapted for use with the future Sentinel-3 ocean and land colour
+instrument, which is scheduled for launch in mid-2015. This study emphasises the potential of the
+MPH algorithm to be used as a standard product for obtaining global estimates of trophic status
+and cyanobacteria blooms for the world’s lakes.
+7. Acknowledgements
+The authors made equal contributions to the manuscript. The implementation of the MPH BEAM
+plugin was financed by ESA’s Diversity II project. D. Odermatt was funded by the EU-FP-7
+Marie Curie PEOPLE/IAPP project ‘WaterS’ and ESA’s Diversity II project. We thank Tom
+Block for implementing the MPH BEAM plugin, and Martin Boettcher for developing the
+Calvalus matchup instance. All people and organizations providing in situ chlorophyll data for
+validation are gratefully acknowledged. Erie and Ontario data were provided by Caren Binding
+of EC, after analysis by Canada's National Laboratory for Environmental Testing. Vanern data
+were provided by SwAM with support by Petra Philipson (Brockmann Geomatics). Paijanne data
+were provided by Kari Kallio and Sampsa Koponen of SYKE. Balaton data were provided by
+KdKVI with support by Stephanie Palmer (Balaton Limnological Research Institute).
+Haartbeesport and Bronkhorstspruit data were provided by DWA. Kasumigaura data were
+provided by CEBES/NIES, through the Lake Kasumigaura database at http://db.cger.nies.go.jp
+with support by Kumiko Totsu (CEBES/NIES). Zug data were provided by Peter Keller (Canton
+of Zug Env. Protection Agency). MERIS data was provided by the European Space Agency.
+Figure 1. Schematic diagram of the MPH algorithm processing procedure.
+Figure 2: Examples from various inland and near-coastal waters showing different cases of the
+MPH algorithm and the position and height of the maximum peak in the red and NIR bands. False
+colour RGBs were produced using using MERIS bands 6, 5 and 2.
+Figure 3: As for fig. 2 but showing the estimated concentration of chl-a computed by the MPH
+algorithm. Flags are as follows: dark green = floating cyanobacteria; magenta = floating
+vegetation; shaded pixels = cyanobacteria.
+Figure 4: MPH flags derived from a MERIS FR scene from 2003-06-05 over Lake Michigan
+contaminated by high aerosols and sun glint. Flag colours are as follows: cyanobacteria (white),
+floating cyanobacteria (dark green), floating vegetation (magenta), adjacency affected pixels (red)
+and other water (black). A) False-positive cyanobacteria detection in apparent in white speckling
+over much of the lake. B) The modified cyanobacteria flagging procedure removes the erroneous
+cyanobacteria detections.
+Figure 5: MPH flags for imagery corresponding to fig. 2 for A) Taihu and B) Lake Michigan.
+Floating vegetation (magenta) are noticeable in the southeast of Taihu, while cyanobacteria scum
+(dark green) is detected in the northwest. In Lake Michigan, adjacency effect affected pixels (red)
+are flagged around the shoreline, and the bloom in Green Bay is identified as cyanobacteria
+(white).
+Figure 6: Comparison of validation results for MPH chl-a (top), FLH (centre) and MCI (bottom),
+using BRR for 9 different in situ chl-a datasets. Bar height indicates correlation coefficient R,
+median and counts of in situ data are indicated above.
+Figure 7: Validation scatter plots for several lakes and datasets. (●) represent 3x3 MERIS pixels
+where no cyanobacteria presence is indicated, (■) include at least one cyanobacteria flagged pixel.
+Top to bottom, left to right; Erie (Environment Canada, EC), Zug (Canton of Zug Env. Protection
+Agency), Vanern (Swedish Agency for Marine and Water Management, SwAM), Paijanne
+(Finnish Environment Agency, SYKE), Ontario (Environment Canada), Balaton (Central
+Transdanubian Regional Inspectorate for Environmental Protection, Nature Conservation and
+Water Management, KdKVI), Lake Hartbeespoort (Republic of South Africa, Department of
+Water Affairs, DWA), Kasumigaura (Center for Environmental Biology and Ecosystem Studies
+CEBES, Japanese National Institute for Environmental Studies NIES), Bronkhorstspruit (DWA).
+The optical water types are also indicated.
+8. References
+Boettcher, M., Fomferra, N., Zuehlke, M., Brockmann, C., Fast processing and exploitation of full-mission
+datasets for ESA CCI, 3rd MERIS/AATSR and OLCI/SLSTR preparatory workshop, ESA ESRIN, Oct.
+2012
+Fusilli, L., Collins, M. O., Laneve, G., Palombo, a., Pignatti, S., & Santini, F. (2013). Assessment of the
+abnormal growth of floating macrophytes in Winam Gulf (Kenya) by using MODIS imagery time series.
+International Journal of Applied Earth Observation and Geoinformation, 20, 33–41.
+Gitelson, A. (1992). The peak near 700 nm on radiance spectra of algae and water: relationships of its
+magnitude and position with chlorophyll concentration. International Journal of Remote Sensing, 13(17),
+3367–3373.
+Gower, J. & King, S. (2006). FLH and MCI products from MERIS: Fluorescence, red tides, Sargassum and
+blooms in ice. In ESA/ESRIN (Ed.), Proceedings of the 2nd Working Meeting on MERIS and AATSR
+Calibration and Geophysical Validation. Frascati, Italy.
+Hu, C., Feng, L., Lee, Z., Davis, C. O., Mannino, A., McClain, C. R., & Franz, B. A. (2012). Dynamic
+range and sensitivity requirements of satellite ocean color sensors: learning from the past. Applied Optics,
+51(25), 6045–6062.
+Kutser, T., Metsamaa, L., Strömbeck, N., & Vahtmäe, E. (2006). Monitoring cyanobacterial blooms by
+satellite remote sensing. Estuarine, Coastal and Shelf Science, 67(1-2), 303–312.
+Matthews, M.W., Bernard, S. & Robertson, L. 2012. An algorithm for detecting trophic status (chlorophyll-
+a), cyanobacterial-dominance, surface scums and floating vegetation in inland and coastal waters. Remote
+Sensing of Environment 124, 637–652.
+Odermatt, D., & Brockmann, C. In prep. Title here.
+Metsamaa, L., Kutser, T., & Stroembeck, N. (2006). Recognising cyanobacterial blooms based on their
+optical signature: a modelling study. Boreal Environment Research, 11(6), 493–506.
+Moore, T. S., Dowell, M. D., Bradt, S. & Ruiz Verdu, A. (2014). An optical water type framework for
+selecting and blending retrievals from bio-optical algorithms in lakes and coastal waters. Remote Sensing
+of Environment, 143, 97-111.
+Odermatt, D., Kiselev, S., Heege, T., Kneubühler, M., & Itten, K. I. (2008). Adjacency effect considerations
+and air/water constituent retrieval for Lake Constance. In ESA/ESRIN (Ed.), Proceedings of the 2nd
+MERIS/(A)ATSR user workshop. Frascati, Italy.
+Ryan, J., Davis, C., Tufillaro, N., Kudela, R., & Gao, B.-C. (2014). Application of the Hyperspectral Imager
+for the Coastal Ocean to Phytoplankton Ecology Studies in Monterey Bay, CA, USA. Remote Sensing,
+6(2), 1007–1025.
+Santer, R., Carrere, V., Dubuisson, P., & Roger, J. C. (1999). Atmospheric correction over land for MERIS.
+International Journal of Remote Sensing, 20(9), 1819–1840.
+Santer, R., & Schmechtig, C. (2000). Adjacency effects on water surfaces: primary scattering
+approximation and sensitivity study. Applied Optics, 39(3), 361–375.

@@ -1,0 +1,1365 @@
+PUBLICATIONS
+Journal of Geophysical Research: Oceans
+RESEARCH ARTICLE Vertical distribution of buoyant Microcystis blooms in a
+10.1002/2016JC011720 Lagrangian particle tracking model for short-term forecasts
+in Lake Erie
+KeyPoints:
+(cid:2)Microcystisverticaldistributionisa
+dynamicbalancebetween M.D.Rowe1,E.J.Anderson2,T.T.Wynne3,R.P.Stumpf3,D.L.Fanslow2,K.Kijanka1,
+turbulenceandbuoyancy H.A.Vanderploeg2,J.R.Strickler4,andT.W.Davis2
+(cid:2)Appropriatetimestepandnumerical
+schemeavoidartifactsinrandom
+walkmodels 1UniversityofMichigan,CooperativeInstituteforLimnologyandEcosystemsResearch(CILER),NOAAGreatLakes
+(cid:2)Verticalmixingwithbuoyancy EnvironmentalResearchLaboratory,AnnArbor,Michigan,USA,2GreatLakesEnvironmentalResearchLaboratory,Oceanic
+improvedsimulationofbloomspatial andAtmosphericResearch,NationalOceanicandAtmosphericAdministration,AnnArbor,Michigan,USA,3National
+distribution
+CentersforCoastalOceanScience,NationalOceanService,NationalOceanicandAtmosphericAdministration,Silver
+Spring,Maryland,USA,4GreatLakesWATERInstitute,UniversityofWisconsin—Milwaukee,Milwaukee,Wisconsin,USA
+Correspondenceto:
+M.D.Rowe,
+mark.rowe@noaa.gov Abstract Cyanobacterialharmfulalgalblooms(CHABs)areaprobleminwesternLakeErie,andineutro-
+phicfreshwatersworldwide.WesternLakeErieisalarge(3000km2),shallow(8mmeandepth),freshwater
+Citation: system.CHABsoccurfromJulytoOctober,whenstratificationisintermittentinresponsetowindandsur-
+Rowe,M.D.,E.J.Anderson, faceheatingorcooling(polymictic).ExistingforecastmodelsgivethepresentlocationandextentofCHABs
+T.T.Wynne,R.P.Stumpf,D.L.Fanslow,
+fromsatelliteimagery,thenpredicttwo-dimensional(surface)CHABmovementinresponsetometeorology.
+K.Kijanka,H.A.Vanderploeg,
+J.R.Strickler,andT.W.Davis(2016), Inthisstudy,wesimulatedverticaldistributionofbuoyantMicrocystiscolonies,and3-Dadvection,usinga
+Verticaldistributionofbuoyant LagrangianparticlemodelforcedbycurrentsandturbulentdiffusivityfromtheFiniteVolumeCommunity
+MicrocystisbloomsinaLagrangian
+OceanModel(FVCOM).WeestimatedthefrequencydistributionofMicrocystiscolonybuoyantvelocityfrom
+particletrackingmodelforshort-term
+forecastsinLakeErie,J.Geophys.Res. measuredsizedistributionsandbuoyantvelocities.Weevaluatedseveralrandom-walknumericalschemes
+Oceans,121,doi:10.1002/ toefficientlyminimizeparticleaccumulationartifacts.WeselectedtheMilsteinscheme,withlinearinterpo-
+2016JC011720.
+lationofthediffusivityprofileinplaceofcubicsplines,andvariedthetimestepateachparticleandstep
+basedonthecurvatureofthelocaldiffusivityprofiletoensurethattheVissertimestepcriterionwassatis-
+Received12FEB2016
+fied.Inclusionofverticalmixingwithbuoyancysignificantlyimprovedmodelskillstatisticscomparedtoan
+Accepted23JUN2016
+advection-onlymodel,andshowedgreaterskillthanapersistenceforecastthroughsimulationday6,ina
+Acceptedarticleonline27JUN2016
+seriesof26hindcastsimulationsfrom2011.Thesimulationsandinsituobservationsshowtheimportance
+ofsubtlethermalstructure,typicalofapolymicticlake,alongwithbuoyancyindeterminingverticaland
+horizontaldistributionofMicrocystis.
+1.Introduction
+Harmfulalgalblooms(HABs)areaglobalproblemthatislinkedtoanthropogeniceutrophicationofinland
+and coastal waters, and may be exacerbated by climate change [O’Neil et al., 2012]. Lake Erie has experi-
+encedrecurringbloomsoftoxin-producingcyanobacteriasincethemid-1990s[Brittainetal.,2000;Michalak
+etal.,2013;WynneandStumpf,2015].LakeErieisthemostproductive,warm,andshallowoftheLaurentian
+GreatLakesofNorthAmerica.IntheopenwatersofLakeErie,cyanobacterialharmfulalgalblooms(CHABs)
+generallyoccurfromJulytoOctober,andaredominatedbythespeciesMicrocystisaeruginosa,whichpro-
+ducesthegroupofhepatotoxincompoundsknownasmicrocystins[Rinta-Kantoetal.,2009].CHABsoccur
+primarilyintheshallowwesternbasin,whichreceivesthemainhydraulicloadfromtheDetroitRiverinthe
+north and themain nutrientload from theMaumee River[Kane et al., 2014] in the southwest(Figure 1a).
+Occasionally, CHABs are transported through the islands into the deeper central basin, while the eastern
+basin is largelyfree of CHABs (Figure 1a)[Wynneand Stumpf, 2015]. Abloom of record-breaking intensity
+andextentoccurredin2011.AnalysisbyMichalaketal.[2013]indicatedthattheconditionsofmeteorology
+andagriculturallandusethatcausedthe2011recordbloomarelikelytorecur,andthe2015bloomsubse-
+quentlyexceededtheseverityofthe2011recordbloom[StumpfandWynne,2015].
+ForecastsofCHABabundanceandspatialdistributionareusefultowatertreatmentplantoperators,anglers,
+VC2016.AmericanGeophysicalUnion.
+AllRightsReserved. recreationalboaters,andbeachusers.LakeErieisasourceofdrinkingwaterto11millionpeople[LakeErie
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 1
+LaMP,2011].In2014,theCityofToledoissuedado-not-drinkorderthataffectedahalfmillionresidentsfor
+twodaysasaresultofcontaminationoftreatedwaterbymicrocystins[Henry,2014].Inadditiontospatial
+forecasts, forecasts of Microcystis vertical distribution are of interest to water treatment plant operators
+because intake structures are usually located subsurface, so the risk of toxins in their raw water may be
+greaterduringmixingeventsthanwhenMicrocystiscoloniesareconcentratedonthesurface.Inadditionto
+providingdrinkingwater,LakeEriesupportseconomicallyvaluablesportandcommercialfisheriesaswell
+asrecreationandtourism.
+Short-term and seasonal CHAB forecasts have been developed for Lake Erie. Seasonal forecasts predict the
+annualbloomseverityusingstatisticalmodelsbasedonthecumulativeMarchtoJulyphosphorusloadfrom
+theMaumeeRiver, whichareabletoexplain>90% oftheinterannualvarianceinbloomseverity [Obenour
+etal.,2014].Bloomseverityisdefinedasthelake-widecyanobacterialbiomassaveragedoverthe30dayscon-
+tainingthemaximumbiomass[Obenouretal.,2014;Stumpfetal.,2012],andhasbeenestimatedusingboth
+satellite[Stumpfetal.,2012]andplanktontowdata[Bridgemanetal.,2013].Theseasonalforecastisusedby
+watertreatmentplantmanagersforseasonalplanning,todeterminerecommendedphosphorusloadreduc-
+tionstomeetcommitmentsundertheGreatLakesWaterQualityAgreement[GLWQAAnnex4,2015],andis
+distributedtoover1600subscribers.Short-termforecastsaredistinctfromtheseasonalforecastinthegreater
+importanceofphysicaltransportprocessesoverbiologicalmechanismsinexplainingshort-termbloomvari-
+ability.Experimentalshort-termforecastshavebeendevelopedforLakeEriethatindicatethepresentlocation
+and extent of CHABs from satellite imagery, then predict future movement of the CHAB using forecast
+.ged
+,edutitaL
+0.34
+5.24
+0.24
+5.14
+m
+,yrtemyhtaB
+−83 −82 −81 −80 −79
+a 70
+Ontario F
+60
+E
+50
+Michigan
+New York 40
+C D
+30
+B
+A 20
+Pennsylvania
+10
+10 km
+Ohio 0
+−83.5 −83.0 −82.5 −82.0
+0.24
+8.14
+6.14
+4.14
+Longitude, deg.
+.ged
+,edutitaL
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+b
+DWE
+WE8
+WE13
+WE6 WE12
+NDBC45005
+10 km
+Figure1.(a)GeographiclocationandbathymetryofLakeErie,showingborderingUnitedStatesandtheCanadianprovinceofOntario.Fea-
+turesofinterestareidentified,including(A)MaumeeBay,(B)WesternBasin,(C)GibraltarontheDetroitRiver,(D)CentralBasin,(E)Eastern
+Basin,and(F)BuffaloontheNiagaraRiver.(b)AnenlargedviewofthewesternportionoftheFVCOMmodeldomain.FVCOMdomainbound-
+ariesareindicatedwithaheavyblackline,andnode-centeredtracercontrolelementswithgraylines.Surfacemixedlayerdepthwasestimat-
+edinhindcastsimulationsatthestationsidentifiedwithsymbols.Well-mixedconditionsimulationswereconductedatthenamedstations.
+Profilesoftemperatureandcyanobacterialchlorophyllconcentrationweremeasuredatthestationsindicatedbyredtriangles.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 2
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+meteorology,ahydrodynamicmodel,andaLagrangianparticletrackingmodeltosimulatehorizontaladvec-
+tionofneutrally-buoyantparticlesatthewatersurface[Wynneetal.,2013,2011].
+Skillassessmentofshort-termCHABforecastsisneededsothatforecastusersmayhaveanappropriatelevel
+ofconfidenceinforecastdata,andfordevelopmentofimprovedmodels.However,CHABforecastskillassess-
+mentcanbechallenging,andmethodsarenotwellestablished.Wynneetal.[2011]showedthataforecast
+modelmoreaccuratelypredictedhorizontalmovementofthebloomcentroid(centerofmass)thanapersis-
+tence forecast over a ten-day simulation for an August 2003 event. A persistence forecast is a benchmark
+usedformodelskillassessmentinwhichnochangeisassumedfromtheinitialobservedlocation.Thesame
+quantitativeskillassessmentmethodcouldnotbeappliedinthecaseofanAugust2008eventbecausecloud
+coverandverticalmixingobscuredpartsofthebloominsubsequentimagesandpreventedanaccurateesti-
+mate of the centroid location [Wynne et al., 2011]. In a detailed analysis of the August 2008 bloom in Lake
+Erie,Wynneetal.[2010]foundthatwindspeedwasasignificantpredictorofapparentbloomintensityinsat-
+ellite imagery, and presentedevidence to supportthe hypothesis that variationin the mixing depth of the
+buoyantcyanobacterialcolonieswastheunderlyingmechanismcausingchangesinsurfaceconcentration.In
+aqualitativeanalysisofthefirst3yearsoftheexperimentalLakeErieCHABforecast(2008–2010),Wynneetal.
+[2013]concludedthattheforecastprovidedusefulinformation,butcouldbeimprovedbyameanstofillin
+cloud-coveredareasinthesatelliteimages,andbysimulationofverticalmixingofthebuoyantcyanobacteria.
+Tosimulateconcentrationprofilesofbuoyantparticlesproducedbyverticalmixinginstratifiedturbulence,
+the partial differential equations governing advection and diffusion may be solved from an Eulerian or a
+Lagrangian perspective; each approach has strengths and weaknesses. Real phytoplankton communities
+haveproperties thatvaryamongindividualswithina population, suchassize,specificgravity, light expo-
+surehistory,andnutrientquotas.AstrengthofLagrangianparticlemodelsisthatnearlycontinuousdistri-
+butionsofpropertiescanberepresentedbyallowingpropertiestovarybyparticle[e.g.,RossandSharples,
+2008],whileinEulerianmodelspropertydistributionsareusuallyrepresentedbyalimitednumberofdis-
+cretepropertyclasses[e.g.,Medranoetal.,2013].
+AweaknessoftheLagrangianapproachisthatartificialaccumulationofparticlescanoccurinlowdiffusivity
+areasinrandom-walkturbulencesimulationsforthecaseofspatially(vertically)nonuniformdiffusivityifan
+inappropriatenumericalschemeortimestepisused[Visser,1997].Theseartifactscanbeeasytomisinterpret
+asfeaturesofinterest.SeveralstudieshaveappliedLagrangianparticlemodelstothe1-Dcolumncasewith
+steady,idealizeddiffusivityprofiles[Gra€weetal.,2012;RossandSharples,2008;Visser,1997].In3-Doceanand
+lakemodels,useofrandom-walkverticalmixingschemescanbechallengingbecausetherequiredtimestep
+variesspatiallyandtemporallyoverthemodeldomain.Afixedtimestepmaybeselectedthatisadequatein
+most places and times [Huret et al., 2007], or in some cases a well-mixed profile was imposed in shallow
+regionswhere a small time step would be required to avoid formationof artifacts [Gilbert et al., 2010]. Our
+applicationrequiredrealisticratherthanidealizeddiffusivityprofilesforapolymicticlakeinwhichconditions
+arealternatelyturbulentandstratified,andtosimulateconcentrationprofilesratherthanspecifyawell-mixed
+condition,eveninshallowareas,thereforesomedevelopmentoftherandom-walkapproachwasrequired.
+Wedescribeashort-termforecastsystemforCHABabundanceanddistributioninLakeEriethattakesasimi-
+larapproachtothatofWynneetal.[2011],butusesupdatedhydrodynamicandLagrangianparticletracking
+models,andincludes a meansoffillingin cloud-coveredareas ofsatelliteimages usingmodeldatafrom a
+previousrun.Inaddition,wedescribeamethodtosimulateverticaldistributionofbuoyantcyanobacteriain
+stratifiedturbulence.Weevaluatedtheperformanceofseveralrandom-walkturbulencenumericalschemesin
+termsofcomputationalefficiencyandtheirabilitytominimizeartifactsinsimulationswithverticallyvarying
+diffusivitytypicalofalargepolymicticlake.Wecomparedsimulatedverticaldistributionsofcyanobacteriato
+observedprofilesinLakeErie.Finally,weshowthatmodelskillstatisticswereimprovedbyincludingvertical
+mixingwithbuoyancyinhindcastsimulationsofthespatialdistributionofthe2011bloominLakeErie.
+2.Methods
+2.1.HydrodynamicModel
+The Finite Volume Community Ocean Model (FVCOM, v. 3.2) is an unstructured grid, finite-volume, free
+surface,three-dimensionalprimitiveequationoceanmodelthatsolvesthemomentum,continuity,temper-
+ature, salinity, and density equations [Chen et al., 2003]. Turbulence closure is implemented through the
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 3
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+MY-2.5schemeforverticalmixing[Galperinetal.,1988],andtheSmagorinskyschemeforhorizontalmixing
+[Smagorinsky,1963].FVCOMhasbeenadaptedandimplementedfortheGreatLakesinseveralrecentstud-
+ies[Andersonetal.,2015;AndersonandSchwab,2013;Andersonetal.,2010;Baietal.,2013],yieldingaccu-
+ratepredictionsoftemperature,waterlevels,andcurrents.Inparticular,FVCOMhasbeenappliedtoLake
+Erieforextremestormprediction[Anderson.etal.,2015]andservesastheoceanographicmodelunderlying
+NOAA’s next-generation Lake Erie Operational Forecast System (LEOFS), a real-time short-term hydrody-
+namicforecastmodel(http://tidesandcurrents.noaa.gov/ofs/leofs/leofs.html).
+The FVCOM-based LEOFS model was applied for this study with bathymetry interpolated from the NOAA
+NationalGeophysicalDataCenter.(www.ngdc.noaa.gov/mgg/greatlakes/greatlakes.html).Theunstructured
+grid consisted of 6106 nodes and 11,509 elements (Figure 1). Spatial resolution was 2 km in the central
+basin,1.5kminthewesternbasin,and0.5kminMaumeeBayandtheislands(Figure1b)toimproverepre-
+sentationofcurrentsinthesekeyareasforCHABtransport,with20uniformverticalsigmalayers.
+Dynamicwaterlevels(6min)wereprescribedatopenboundariesattheDetroitRiverandtheNiagaraRiver,
+takenfromadjustmentstotheNOAA/NOSgaugesatGibraltar(9044020)andBuffalo(9063020),todrivethe
+primaryinflowandoutflow,respectively(Figure1a).Atmosphericforcingconditionsweregeneratedusing
+station-basedinterpolationmethodsasintheNOAAGreatLakesCoastalForecastingSystem[Beletskyetal.,
+2003]. Hourly meteorological forcing variables of wind speed, wind direction, air temperature, dewpoint
+temperature,andcloudcoverwereinterpolatedoverLakeEriefromseveralland-basedmeteorologicalsta-
+tionsandoffshoreNOAA/NDBCbuoys(45004,45132,and45142),whenavailable.Windspeedswereadjust-
+edto10mheightandempiricalrelationshipswereusedtoadjustland-basedmeteorologicalvariablesfor
+over-lakemodification[Beletskyetal.,2003].
+Hydrodynamic model simulationswere basedon thereal-time LEOFS nowcast, whichwasinitialized on 1
+January 2004 with uniform temperature of 28C. For the 2011 scenario presented here, the hydrodynamic
+modelsimulationwasinitializedon1January2011withinitialconditionsprovidedbythesimulationfrom
+thepreviousyear,andproducedhourlyoutputofthree-dimensionalcurrents,watertemperature,turbulent
+diffusivity,and2-Dwaterlevelfluctuations.
+2.2.LagrangianParticleTrackingModel
+Lagrangian particle tracking was accomplished using a Fortran program developed previously to study
+transportoflarvalcodintheGulfofMaine[Churchilletal.,2011;Huretetal.,2007],whichisdistributedas
+partoftheFVCOMcodepackage(http://fvcom.smast.umassd.edu/),andhaspreviouslybeenappliedinthe
+GreatLakes[AndersonandPhanikumar,2011].Advectionofparticleswasdeterminedby
+d
+XðtÞ5VðXðtÞ;tÞ (1)
+dt
+whereX(t)isthethree-dimensionalparticlepositionattimet,andV(X(t),t)isthethree-dimensional,timevary-
+ing velocity field. Linear interpolation in space and time was used to obtain V(X(t),t) from hourly archived
+FVCOMoutput.Thecontributionofadvectiontotheparticlepositionwasupdatedbyintegratingequation(1)
+usinganexplicitfourth-orderRunge-Kuttaschemewithatimestep,Dt5600s.Verticalmixingduetoturbu-
+lenteddydiffusivitywas optionallysimulatedusingone ofseveralrandom-walk schemes,describedbelow.
+Weusedreflectedboundaryconditionsatverticalandhorizontalboundariesinallsimulations.
+2.3.Well-MixedConditionTest
+We compared the performance of several random walk vertical mixing numerical schemes using a well-
+mixed condition test case [Visser, 1997] that can be used to evaluate whether a given numerical scheme
+andtimestepwillproduceartifactsinsimulatedconcentrationprofiles.Inourcase,thewell-mixedcondi-
+tionsimulationwasperformedbyinitiating1000particles,uniformlydistributedthroughthewatercolumn,
+thensimulating1-DverticalmixingwithneutralbuoyancyusingtimeseriesofLakeEriediffusivityprofiles
+outputfromFVCOMforthemonthofAugust2011(Table1).Randomnoiseinthesimulatedconcentration
+profilesdecreaseswithincreasingnumberofparticles,and1000particleswerefoundtobeadequatein1-D
+simulations[Ross,andSharples,2004].Thesesimulationsareexpectedtogiveuniformconcentrationatall
+timeregardlessofthediffusivityprofile,consistentwiththeEuleriansolutiontothe1-Ddiffusionequation
+withinitialuniformconcentration[Visser,1997].
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 4
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+To evaluate performance in the
+Table1.DatesofMeasurementsandModelSimulations
+well-mixed condition test in a way
+Measurementorsimulation Date
+thatisdirectlyrelevanttoourappli-
+Well-mixedconditionsimulations Aug2011
+cation, we defined a signal-to-noise
+Satelliteimages,2-D,3-Dsimulations 26dates,JultoOct2011
+Colonysizedistribution(FlowCam) 4Aug2014 ratio, SN, based on simulated sur-
+Colonysizedistribution(microscopy) Weeklysampling faceconcentration,
+JultoSep2012and2013
+Buoyantvelocitymeasurements 15and21Jul2015 SNðtÞ5CðtÞ=j1:02C ðtÞj (2)
+wm
+Verticalprofiles(FluoroProbe) WeeklysamplingJultoSep2015
+whereC ðtÞisthetime-dependent
+wm
+concentration in the 1 m thick sur-
+facelayer,normalizedtothecolumn-meanconcentration,inawell-mixedconditionsimulationwithneutral
+buoyancy.Aconstantvalueof1.0isexpectedforC ðtÞ,thereforej1:02C ðtÞjrepresentsthemagnitude
+wm wm
+of ‘‘noise’’ due to artifacts and random fluctuations due to calculating concentration by counting discrete
+particlesinacontrolvolume.The‘‘signal’’isprovidedbytheanalogoussurfaceconcentration,CðtÞ,froman
+identical simulation with buoyancy. A large value of SN indicates that artifacts are small compared to the
+effectofinterest,whichisthefluctuationinsurfaceconcentrationduetobuoyancy.SNcanbemadearbi-
+trarilylargebyusingasmalltimestepandalargenumberofparticles,butattheexpenseofcomputational
+time.Weselectedavalueof5asagoalminimumvalueforSN,basedonthe‘‘Rosecriterion’’forthedetec-
+tionlimitofthehumaneyeforimagefeatures[Rose,1948].Accordingly,weusedthefrequencyofoccur-
+renceofSN<5overthehourlyrecordsinasimulationastheperformancecriterionbywhichtoevaluate
+thenumericalschemesandtimestepcriteria.
+2.4.RandomWalkVerticalMixingSchemes
+WeevaluatedtheVisser[1997]scheme,as-implementedbyHuretetal.[2007]
+rffiffiffiffiffiffiffiffiffiffiffiffiffiffiffiffi
+2Kð~zÞdt
+zðt1dtÞ5zðtÞ1w dt1K0ðzðtÞÞdt1R (3)
+b r2
+wherez(t)istheverticalpositionoftheparticleattimet,dt istheverticalrandomwalktimestep,w isa
+b
+floating/sinking/swimmingverticalvelocitycomponent,Kistheverticalturbulentdiffusivity,K’5dK=dz,Ris
+arandomvariablesampledfromauniformdistributionwithzeromeanandstandarddeviationr,and~z5z
+ðtÞ10:5K0ðzðtÞÞdt is a vertical position displaced from the particle position as a function of the diffusivity
+gradient.FollowingRossandSharples[2004],acubicsplineinterpolationwasusedtoobtainacontinuous,
+differentiablediffusivityprofile.
+InadditiontotheVisserscheme,describedabove,weevaluatedrandomwalkverticalmixingschemeswith
+higherorderaccuracyincludingtheMilstein,Strong1.5(S1.5),andPlatentwo-step(PC2)schemesthatwere
+implementedinFortranfortheGeneralOceanTurbulenceModelbyGra€we[2011].Afterevaluatingtheperfor-
+manceof10randomwalkschemes[Gra€we,2011],Gra€weetal.[2012]recommendedtheuseofeithertheMil-
+stein scheme or higher order schemes such as S1.5 or PC2. The order of accuracy (rate of convergence) of
+numericalapproximationstostochasticdifferentialequationsisseparatedintoweakandstrongcases,where
+theweakcaserelatestotheaccuracyoftheensembleparticledistribution,whilethestrongcaserelatesto
+theaccuracyofparticletrajectories[Gra€we,2011].Theweakorderofaccuracyoftheschemesthatweevaluat-
+edwas1forVisserandMilsteinand2forS1.5andPC2.Thestrongorderofaccuracywas1forMilstein,1.5for
+S1.5,andwasnotdefinedforVisserorPC2[Gra€we,2011].TheMilsteinschemeis
+zðt1dtÞ5zðtÞ1w dt10:5K0ðzðtÞÞ (cid:3) DW21dt (cid:4) 1DW pffi 2 ffiffi K ffiffiffi ð ffiffi z ffiffi ð ffiffi t ffi Þ ffiffi Þ ffiffi (4)
+b
+whereDW isarandomvariabledrawnfromaGaussiandistributionwithzeromeanandstandarddeviation
+p
+ffiffiffiffiffi
+dt.BecausetheMilsteinschemeisfirstorder,linearinterpolationofthediffusivityprofiletoobtainKðzðtÞÞ
+andK0ðzðtÞÞaresufficient,andtheaddedcomputationalexpensecomparedtotheVisserscheme(equation
+(3))isminimal.Thesecond-orderschemesS1.5andPC2retainadditionaltermsfromthestochasticTaylor
+expansion,includinghigherorderderivativesthatrequiretheapplicationofcubicsplinestothediffusivity
+profile,andS1.5requiresanadditionalrandomvariable,thereforethesecond-orderschemeshavegreater
+computationalexpense.WerefertoGra€we[2011]forafullexplanationoftheS1.5andPC2schemes.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 5
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+2.5.RandomWalkTimeStep
+Visser [1997] introduced a time step criterion, dt(cid:3)minð1=jK00jÞ, whereK00 is thesecond derivative of the
+diffusivity profile, so that the diffusivity profile is reasonably approximated by a first-order Taylor series
+expansionovertherangeofparticledisplacement.RossandSharples[2004]foundthat
+1
+dt5 (5)
+100jK00j
+isacceptableinmostapplications.Toensuretheuseofanappropriatetimestepthroughouta3-Dmodel
+domain,andtoavoidtheneedtospecifyanappropriatedtinadvance,wemodifiedthecodeofHuretetal.
+[2007]toallowanappropriatevalueofdttobecalculatedandappliedforeachparticleateachdt.Toevalu-
+ateequation(5)independentlyofsplineinterpolation,wecalculatedK00 directlyattheFVCOMsigmalevels
+usingacenteredfinitedifferenceapproximation,andextendedtheprofilebeyondthesurfaceandbottom
+byreflection.Wefurtherlimited0:01 s(cid:4) dt(cid:5) Dt.Wetrackedtheminimumdtduringsimulationstocon-
+firmthatthelowerlimitof0.01swasrarelyapplied.
+2.6.MeasurementofMicrocystisColonySizeDistribution
+Weassignedbuoyantvelocityinthemodelbasedonmeasuredsizedistributionsandregressionsofbuoy-
+antvelocityversuscolonydiameter.WemeasuredMicrocystiscolonydiameterofLugolpreservedsamples
+collectedfromwesternLakeErieinthesummersof2012,2013,and2014.In2012and2013,colonydiame-
+tersweremeasuredbymicroscopy(Table1).In2014,weusedtheFlowCam(FluidImagingTechnologies).
+TheFlowCamcapturesimagesofindividualcoloniesandestimatestheirequivalentsphericaldiameterby
+imageanalysis.Wangetal.[2015]showedthatcountsandcolonydiametersofMicrocystisgivenbyFlow-
+Camandmicroscopicimageanalysisdiameterswerenearlyidentical.ColoniesinLakeEriearetypically>50
+mm [Vanderploeg et al., 2001] and buoyant. Samples were preserved with 1% formalin upon collection,
+immediatelyrefrigerated,andanalyzedwithin24h.FlowCamanalyseswereperformedwitha23objective
+and133mmfieldofviewflowcellwithsamplesdilutedaspermanufacturerrecommendationstoavoid
+capturingmorethanoneimagepertriggerevent.Fluorescenttriggeringmodewasusedtoavoidimaging
+detritalmaterialthatmightbeconfusedwithMicrocystis.Samplesweredilutedin0.2mmfilteredalgalcul-
+turemedia[e.g.,Vanderploeg,etal.,2001]andinjectedintotheFlowCamwitha60mLsyringe,whichwas
+constantlyturnedoversoastopreventthebuoyantcoloniesfromaggregatinginthesyringe.Theimage
+analysisalgorithmwascalibratedtoidentifythecolonyoutlineincludingthemucilage.
+2.7.MeasurementofMicrocystisColonyBuoyantVelocity
+Microcystiscolonybuoyantvelocitywasmeasuredusingmicroscopicvideography[Bundyetal.,1998;Strick-
+ler,1985],amethodinprinciplesimilartothatofNakamuraetal.[1993].Surfacewatersampleswerecol-
+lectedon15and21July2015(Table1)atstationWE15(Figure1b,283.0,41.6)duringtheearlyafternoon.
+Waterwasplacedin1Lglassbottlesinanincubatoroutdoorswithaneutraldensityfiltertocutlightinten-
+sity to 50% of surface irradiance. Measurements of colony velocities were made throughout the morning
+andafternoonofthenextday.Digitalvideoclipswerecapturedofindividualcoloniesrisingthrougha2cm
+32cmcrosssection330cmtallglasscuvettefilledwithambientlakewaterinsideofawaterjacketina
+temperaturecontrolledenvironmentalroommaintainedatthelaketemperature.Imagecaptureandanaly-
+sissoftware(TemploMotus,ViconMotus,Contemplas,GmbH,Germany)wasusedtomeasurethevelocity
+of the rising colonies. Diameters of the colonies were determined from image analysis of video images
+usingImage-Prosoftware (MediaCybernetics, Rockville,MD).Watersamples werediluted asneededwith
+0.2mmfilteredlakewatertoavoidturbulenceinducedbymultiplerisingcolonies.
+2.8.MeasuredVerticalProfilesofTemperatureandCyanobacterialConcentration
+Vertical profiles of temperature and cyanobacterial concentration (reported in mg chlorophyll a L21) were
+measuredusingtheFluoroProbe(bbeMoldaenke,GmbH),whichusesspectralfluorometrytopartitiontotal
+chlorophyllintomultiple phytoplanktonclasses onthebasisof theircharacteristic pigments(greenalgae,
+cyanobacteria, diatoms/dinoflagellates, cryptophytes), with correction for possible interference by colored
+dissolvedorganicmatter[Catherineetal.,2012;Kringetal.,2014].Standardfactorycalibrationsettingsfor
+representative algal classes were used. Profiles were measured at 11 stations (Figure 1) weekly from June
+through September, 2015 (Table 1). Profiles were selected for model skill assessment in which the
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 6
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+cyanobacterialchlorophyllwasgreaterthanchlorophyllfromotheralgalclasses,whichoccurred13Julyto
+28September.
+2.9.SatelliteRemoteSensingData
+Toinitializemodelsimulations,andformodelskillassessment,weusedaseriesofimagesofcyanobacterial
+blooms in Lake Erie from July to October 2011 (Table 1) that were derived from the Medium Resolution
+ImagingSpectrometer(MERIS)[WynneandStumpf,2015].MERISstandardlevel2datasets(inunitsofsr21)
+wereusedwithaspectralshapealgorithmbasedaround680nm[Wynneetal.,2008]toobtainthecyano-
+bacterialindex(CI).CIvarieslinearlywithbiomass,withavalueof1023sr21correspondingtoapproximately
+105 cells mL21 [Stumpf et al., 2012], which is the World Health Organization’s threshold of significantly
+increasedriskforhumanhealtheffects[ChorusandBartram,1999].Forouranalysis,weconvertedCItochloro-
+phyllconcentrationusinganempiricalrelationshipderivedfromfieldradiometryandgrabsampleextracted
+chlorophyllfromeutrophiclakesinFlorida(R20.95,std.error7.7mgL21,range16to115mgL21).Therelation-
+shipwasalsoverifiedforsatellite-derivedCI,andgavea relativeroot-meansquareerrorof27% [Tomlinson
+etal.,2016].
+Chl512570 CI110 (6)
+AvalueofCI51023sr21isapproximatelyequivalentto23mgL21chlorophyll,whichweusedasathresh-
+oldtodefinethepresenceofaCHAB.
+2.10.HindcastSimulations
+DailysatelliteimagesfortheperiodJulytoOctober2011wereevaluated,and26imageswereselectedthat
+had >50% cloud-free views of western Lake Erie. A 10 day model simulation was initialized from each
+imagebyassigningsurfacechlorophyllconcentrationvaluestoFVCOMnodesbynearestneighborinterpo-
+lation. Concentration was converted to Lagrangian particles by specifying a chlorophyll mass per particle
+(1010mgChlparticle21)andplacingthespecifiednumberofparticleswithinacontrolvolume.TheFVCOM
+node-centeredtracercontrolelementswereusedascontrolvolumes(Figure1).Verticallayerswerespeci-
+fiedasconstant-thickness(1m)z-layers.
+Preliminary hindcast skill assessment indicated a need to censor satellite data within a buffer region of
+shorelinesduetofrequentfalsepositivesintheseareas,whichwaslikelycausedbycontaminationofthe
+watersignalfromrelativelybrightsurroundinglandorbybottomreflectance.Thebufferwidthwassetto
+1kmsouthofStonyPoint(41.948Lat.)andeastofCatawbaIsland(282.858Lon.)andto1.5kmelsewhere.
+ThebufferwasnotappliedinMaumeeBaybecauseCHABswereoftenpresent[WynneandStumpf,2015],
+reducing the likelihood of false positives. Buffered or missing data areas were assigned values by nearest
+neighborifpixelscontainingvaliddatawereavailablewithin2km.Ifnovalidpixelswereavailablewithin
+2kmofanodeoneoftwoapproacheswasused:(1)itwasassumedthatnoCHABwaspresent(Chl50)or
+(2)modeloutputwascarriedforwardtofillintheno-dataareaifapreviousmodelrunwasavailablecover-
+ingthetimeperiod.
+Twotypesofsimulationswererun,2-Dand3-D.In2-Dsimulations,thesurfacechlorophyllconcentration
+wasappliedtothesurface1m,withChl50below,andrandomwalkverticalmixingwasturnedoff.In3-D
+simulations, surface chlorophyll concentration was applied over the surface mixed layer (SML) depth (see
+below), and random walk vertical mixing was simulated. Both 2-D and 3-D simulations included 3-D
+advection.
+2.11.EstimationoftheSurfaceMixedLayerDepth
+It was necessary to estimate the surface mixed layer (SML) depth for buoyant Microcystis colonies for the
+purpose of initializing the vertical distribution of particles (chlorophyll concentration) in 3-D simulations
+fromsatellite-derivedsurfacechlorophyllconcentration.Theverticaldistributionofbuoyantparticlesinthe
+watercolumndependsonbuoyancyinadditiontoturbulentdiffusivity(e.g.,Figures2dand2e);therefore,
+we used the Lagrangian particle model to estimate the initial vertical distribution of Microcystis colonies
+ratherthanusingdiffusivityortemperatureprofilesfromFVCOMdirectly.Initialverticalprofilesweresimu-
+latedatasubsetofFVCOMnodes(stations)becausealargenumberofparticlesisneededtoobtainawell-
+resolved profile, which would be computationally intensive to simulate at all 6106 nodes. The SML depth
+wasestimatedbyrunning1-Dcolumnverticalrandomwalksimulationsat11stationlocations(Figure1b)
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 7
+0 that were selected to provide represen-
+tative coverage of the western basin
+−1 where CHABs are most common, with
+additionalstationsaddedatrepresenta- −2
+tive deeper locations. 1-D simulations
+−3 were initialized with 1000 particles uni-
+formlydistributedoverthecolumn36h
+−4 priortotheinitializationtimeofthe3-D
+model(satelliteimagetime)toallowthe
+particle distribution sufficient time to
+adapttothevaryingdiffusivity.Random
+walkverticalmixingwasforcedbyhour-
+ly diffusivity output from FVCOM. The
+SML depth for Microcystis colonies was
+estimatedasthedepthatwhichthe1-D
+concentration profile decreased to half
+the surface concentration, and the
+satellite-derived surface concentration
+was applied from the surface to this
+depth; this approach provides an unbi-
+ased estimate of the total column bio-
+mass for the case of a uniform
+concentration profile or a profile that
+can be approximated by a linear
+decrease. SML depth was interpolated
+spatially to the FVCOM nodes by the
+nearestneighbormethod.
+2.12.ModelSkillStatistics
+Comparison of model results to in situ
+profile data was conducted using
+column-integrated quantities to mini-
+mize the effect of noise in the profile
+dataonthestatistics.Turbulentdiffusivi-
+ty is strongly influenced by the static
+stabilityofthewatercolumn,whichcan
+bequantifiedusingthepotentialenergy
+anomaly,/,
+1ðh 1ðh
+/5 ðq^2qÞgzdz; q^5 qdz (7)
+h h
+0 0
+where q is the local density, h is the
+water column depth, and g is accelera-
+tionduetogravity[SimpsonandBowers,
+1981;Wilesetal.,2006].Verticaldistribu-
+tion of concentration was characterized
+bycalculatingthecenterofmassofthe
+normalizedconcentrationprofile,r m
+1X kb X kb
+r 5 c r ; C5 c (8)
+m C k k k
+k51 k51
+where r5z=h is the normalized vertical
+coordinate,cistheconcentrationatlay-
+er k normalized to the column-mean
+m
+,htpeD
+a
+28.0
+27.5
+27.0
+26.5
+26.0
+25.5
+25.0
+C°
+,erutarepmeT
+0
+−1
+−2
+−3
+−4
+m
+,htpeD
+b −1
+−2
+−3
+−4
+−5
+)1−
+s
+2m
+,
+K(
+goL
+m
+01
+0
+−1
+−2
+−3
+−4
+m
+,htpeD
+c 3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+.cnoc
+dezilamroN
+0
+−1
+−2
+−3
+−4
+m
+,htpeD
+d 3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+.cnoc
+dezilamroN
+0
+−1
+−2
+−3
+−4
+m
+,htpeD
+61−80−1102 71−80−1102 81−80−1102 91−80−1102 02−80−1102 12−80−1102 22−80−1102 32−80−1102 42−80−1102 52−80−1102 62−80−1102 72−80−1102 82−80−1102 92−80−1102 03−80−1102 13−80−1102
+e 3.0
+2.5
+2.0
+1.5
+1.0
+0.5
+0.0
+Time, EDT
+.cnoc
+dezilamroN
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+Figure2.Timeseriesof(a)temperatureand(b)diffusivityprofilesoutputfrom
+FVCOMfor16–31August2011atstationWE8.Timeseriesofnormalizedcon-
+centrationprofilesfrom1-Dverticalrandomwalksimulationswithoutbuoyancy
+(well-mixedconditiontest)using(c)theVisserschemewithfixed1stimestep,
+andVisserschemewithvariabletimestep(d)setaccordingtotheVissercriteri-
+on(equation(5)).(e)A1-Dsimulationwithbuoyancy(N933Aug)usingthe
+Visserschemeandvariabletimestep.Artificialaccumulationofparticlesina
+lowdiffusivityareawithassociateddepletionintheupperhalfofthewatercol-
+umncanbeseenon24August(c),withimprovedperformancefromthevari-
+abletimestep(d).
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 8
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+concentration,andk 520isthenumberofuniformly-spacedrlayersinthemodelgrid.Theobservedcon-
+b
+centrationprofilewasaveragedovertherlayersofthemodelgridforthepurposeofcomparisontothe
+modelprofiles.
+Skill assessment in hindcast simulations was conducted by comparing model results to remote sensing
+imagesthatwerewithinthemodelsimulationperiod.Eachhindcastsimulationwasinitializedfromasatel-
+liteimage,andtwotofoursubsequentimagesweretypicallyavailablewithinthesimulationperiodforskill
+assessment.Skillassessmentwasconductedusingabinarycategoricalvariable(CHAB,noCHAB),andpixel-
+by-pixelcomparisonsofmodeltoremotesensingobservationswereconducted.FVCOMtracercontrolele-
+ments(Figure1)wereusedasthespatialsegmentation(pixels).
+OurapproachtoskillassessmentstatisticsfollowedHoganandMason[2012].Twostatisticswerecalculated
+fromtheelementsofthecontingencytable,whicharethenumberofa,correctlypredictedevents(hits);b,
+falseevents(falsealarms);c,falsenegatives(misses);andd,correctnonevents.Thefrequencybias(B)gives
+theratioofthenumberofforecastsofoccurrencetothenumberofobservedoccurrences
+a1b
+B5 (9)
+a1c
+andthePierceskillscore(PSS)givesthehitrateminusthefalsealarmrate.
+ad2bc
+PSS5 (10)
+ðb1dÞða1cÞ
+AnunbiasedforecasthasafrequencybiasB51.0.PSSvaluesrangefrom21.0to1.0,withpositivevalues
+indicatingthatthehitratewasgreaterthanthefalsepositiverate,andthereforethemodelhadgreaterskill
+thanarandomforecastorconstantCHABorno-CHABprediction[HoganandMason,2012].
+Toprovideareferenceforecastforskillcomparison,wedefineda‘‘persistence’’forecastastheassumption
+ofnochangefromthesatelliteimagethatwasusedtoinitializethemodel,whichrepresentsthebestavail-
+ableinformationtoaforecastuserintheabsenceofausefulmodel.Wetookthefurtherstepsoffillingin
+missing data in the persistence forecast with the most recent satellite data for each spatial segment, and
+applyingthesameshorelinebufferingprocedurethatwasusedtoinitializethemodel.
+Totest whether themodel hadsignificantly greater skill thanthepersistence forecast, weusedtheboot-
+strapmethoddescribedbyHoganandMason[2012]toestimatetheconfidenceintervalaroundthediffer-
+enceinskillscoreofthemodelcomparedtothepersistenceforecast.Startingwithaseriesofntripletsof
+observations,modelpredictions,andpersistencepredictions,wecreated1000differentbootstrapsamples,
+eachoflengthn,bytakingrandomsampleswithreplacementfromtheseries.Wethencalculatedthedif-
+ference in PSS,DPSS, foreach bootstrap sample.Finally, weestimatedthe95% confidenceinterval as the
+0.025to0.975quantilesoftheensembleof1000valuesofDPSS.Whileanalyticalformulasareavailableto
+estimatetheuncertaintyinPSS,thebootstrapmethodaccountsforeffectsofspatialandtemporalautocor-
+relationinenvironmentaldata,whicheffectivelyreducethenumberofindependentobservationstobe<n
+[HoganandMason,2012].
+3.ResultsandDiscussion
+WesternLakeErieispolymictic,meaningthatitdoesnotcontinuouslystratifyduringthesummerowingto
+shallowbathymetryandexposuretowind.TemperatureprofilessimulatedbyFVCOMshowperiodsoftem-
+porarystratificationthatarestrongestduringcalmafternoonswhenthesurfaceiswarmedbythesunand
+warmsummerair(Figure2a,19–20August).Atnight,coolingofthesurfaceoftencausesdeepeningofthe
+surface mixed layer by convection. This diel cycle can be overpowered by shear-induced mixing during
+windyperiods(Figure2a,21–22August).Thetemperaturedifferenceoverthewatercolumnduringperiods
+ofstratificationissmall(Figure2a),butthestaticstabilityissufficienttocauseturbulentdiffusivitytovary
+byordersofmagnitudeoveradepthrangeofafewmeters(Figure2b).Randomwalkturbulenceschemes
+aresusceptibletoformationofartificialaccumulationsofparticlesinthepresenceofstronggradientsindif-
+fusivity[Visser,1997].
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 9
+3.1.VerticalRandomWalkSchemes
+We tested the random walk schemes using
+a 1-D well-mixed condition simulation (see
+section 2) that was run using hourly time
+series of diffusivity profiles output from
+FVCOMforthemonthofAugust2011atsta-
+tions representative of the range of condi-
+tions that occur during the summer CHAB
+season in western Lake Erie (Figure 1). The
+range of conditions represented by the dif-
+fusivity profiles can be characterized by
+defining a Peclet number that represents
+the ratio of mixing time scale to floating/
+sinking time scale of the water column,
+Pe5 w h=K(cid:2), where h is the water column
+b
+depth and K(cid:2) is the column-mean eddy dif-
+fusivity [Ross and Sharples, 2004]. Values of
+Pe (cid:6) 1 indicate that w has a strong influ-
+b
+ence on particle concentration profiles.
+Combiningthetimeseriesofdiffusivitypro-
+filesthatwasusedinthewell-mixedcondi-
+tion simulations with w 570 mm s21 (see
+b
+below), values ranged on the order of
+0.01<Pe<100. A small time stepis usually
+required for Pe (cid:3) 1 because small h and
+largeK(cid:2) willproducestronggradientsindif-
+fusivityforrealisticdiffusivityprofiles(i.e.,K
+(cid:7) 0 at the bottom or at the thermocline),
+and therefore, small values of the Visser
+timestepcriterion(equation(5)).Atthe3m
+deep station (WE6), the variable time step
+occasionally was limited by the specified
+minimumandmaximumvaluesof0.01 and
+600 s, with typical hourly means of 0.2–3 s. At the 13-m deep station (NDBC45005) in the central basin,
+thewatercolumnwascontinuouslystratified,andlongertimestepscouldbeused;hourlyminimumval-
+uesofthevariabletimestepweretypically0.2–2s,meanvalueswere3–30sandmaximumhourlyvalues
+wereconstrainedbytheupperlimitof600s.
+Exampletimeseriesofconcentrationprofilesoutputfromawell-mixedconditionsimulationareshowninFig-
+ure2.AtypicalparticleaccumulationartifactisvisibleinFigure2c,wherethenormalizedconcentrationdevi-
+atedfromtheexpectedconstantvalueofunity.Theartifactformedwhenhighdiffusivityinthesurfacemixed
+layeron24August(Figure2b)causedparticlestojumpacrossthesharpdiffusivitygradientintotheareaof
+lowdiffusivityinthelowerhalfofthewatercolumnwithouttheopportunityforthegradientterm(equations
+(3)and(4))topushtheparticlesbacktowardthehighdiffusivitySML.Improvedperformancecanbeseenin
+Figure2d,wherethevariabletimestepwasreducedduringthehighdiffusivityeventon24August,thereby
+limitingthemaximumparticledisplacementsandreducingthemagnitudeoftheartifact.
+TheGr€aweMilsteinscheme[Gra€we,2011]withthevariabletimestepprovidedthebestcombinationof
+computationalefficiencyandaccuracyoftherandom-walknumericalschemestested.Theshortestrun
+time was achieved by the Gr€awe Milstein scheme (Figure 3a), which was unique in the use of linear
+interpolation of diffusivity to the particle position, while the other schemes used cubic splines at a
+greater computational cost. The second-order schemes, PC2 and S1.5, required greater computational
+effort to calculate additional terms and had the longest run times. The run time of the variable time
+stepsimulationwassimilartothatofthefixed1stimestepfortheVisserandMilsteinschemesbecause
+theaverageofthevariabletimestepwassimilartothevalueofthefixed1stimestep(Figure3a).The
+rh
+,emitnuR
+5
+4
+3
+2
+1
+0
+a
+.tcp
+,etar
+eruliaF
+4
+3
+2
+1
+0
+Variable time step
+Time step = 1 s
+ressiV nietsliM
+ewarG
+nietsliM 2CP 5.1S
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+b
+Numerical scheme
+Figure3.Performancecomparisonofthefiveverticalrandomwalk
+numericalschemesandthevariabletimestepscheme.One-dimensional
+verticalmixingsimulationswith1000particleswereconductedforthe
+monthofAugust2011,atthesixstationsindicatedinFigure1.(a)Total
+runtimeforthesixsimulations.(b)Percentoccurrenceoffailuretomeet
+thequalitycriterionoutof4464hourlyrecords.Thequalitycriterionwasa
+signaltonoiseratio>5wherethesignalwassimulatednormalizedsur-
+faceconcentrationwithbuoyancy(N933Aug)andthenoisewasabsolute
+deviationofthenormalizedsurfaceconcentrationfrom1.0inawell-
+mixedconditiontest(withoutbuoyancy).Concentrationwasnormalized
+tothemeancolumnconcentration.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 10
+Milstein schemes showed improved
+accuracycomparedtotheVisserscheme
+with the fixed 1 s time step (Figure 3b),
+consistent with the finding of Gra€we
+[2011]. All schemes were more accurate
+withthevariabletimestepthanwiththe
+fixed 1 s time step (Figure 3b) because
+the Visser time step criterion (equation
+(5)) was always satisfied in the case of
+thevariabletimestep.Thesecond-order
+schemes did not offer sufficiently
+improved accuracy to compensate for
+their greater computational effort (Fig-
+ures3aand3b).
+In contrast to our result, Gra€we [2011]
+found that the second-order schemes
+did offer improved accuracy that justi-
+fiedtheadditionalcomputationaleffort,
+but for the case of idealized diffusivity
+profilesspecifiedathighverticalresolu-
+tion and for a realistic test case of a
+tidally-mixed bay with model diffusivity
+output at 200 levels. In our case of a
+shallow polymictic lake, diffusivity pro-
+files were highly irregular with sharp
+gradients(Figure2b),anddiffusivitywas
+output at only 20 levels. We found that
+spline fits often had spurious features
+between the levels at which diffusivity
+was specified by FVCOM that were not
+representative of physically realistic dif-
+fusivity profiles. Higher order random
+walk schemes depend on higher order
+derivative terms from the spline fits to
+the diffusivity profiles [Gra€we, 2011],
+which may not be accurate in the case
+of a nonrepresentative spline fit. The
+higher order schemes might produce
+betterresultsifweweretooutputdiffu-
+sivity at a large number of levels, but
+that would come at the expense of
+greater computational effort in the
+hydrodynamic model. For our applica-
+tion, the Gr€awe Milstein scheme pro-
+duced satisfactory results and did not
+requireasplinefit,soitwasselectedfor
+furtherwork.
+3.2.MicrocystisColonySize
+DistributionandBuoyantVelocity
+The parameterw represents theMicro-
+b
+cystis colony terminal velocity resulting
+from the balance of forces between
+buoyancy and fluid drag. Our approach
+003
+052
+002
+051
+001
+05
+0
+Mean colony diameter, μm
+ycneuqerF
+a 2014
+2013
+0 50 150 250 350 450 550 650 750
+10 20 50 100 200 500 1000 2000
+Mean colony diameter, μm
+1−
+s
+mμ
+,yticolev
+tnayoub
+ynoloc
+sitsycorciM
+0002
+005
+002
+05
+02
+01
+5
+2
+1
+b
+N93 3 Aug
+N93 18 Sep
+15 Jul
+21 Jul
+008
+006
+004
+002
+0
+0 200 400 600 800 1000 1200 1400 1600
+Microcystis colony buoyant velocity, μm s −1
+ycneuqerF
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+c N93 3 Aug
+N93 18 Sep
+Figure4.(a)HistogramofMicrocystiscolonysizedistributionforsamplescol-
+lectedinLakeEriein2013and2014.(b)Microcystiscolonybuoyantvelocityfor
+samplescollectedinLakeErieon15and21July2015,anddatadigitizedfrom
+Nakamuraetal.[1993,theirFigure3].(c)HistogramofMicrocystiscolonybuoy-
+antvelocityresultingfromapplicationoftheregressionlinesinFigure2btothe
+2015sizedistributioninFigure2a.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 11
+was to specify a Microcystis colony size distribution, then apply an empirical relationship between w
+b
+andcolonydiametertoobtainafrequencydistributionofw foruseinthemodel.AccordingtoStoke’s
+b
+lawfortheterminalvelocityofafloating/sinkingsphericalparticleinafluid,onemightexpecttherela-
+tionshipbetweenw andcolonydiametertogiveastraightlineonalog-logplotwithaslopeof2.How-
+b
+ever, Nakamura et al. [1993] showed that Microcystis colony specific gravity approaches that of the
+surrounding fluid as colony diameter increases owing to the fractal geometry of the colonies and the
+increasing volume of void spaces filled with the surrounding water; the result is that the slope of the
+log-logplotis<2.
+TheMicrocystiscolonydiameterfrequencydistributionmeasuredbyFlowCamwasunimodalwithamedian
+of117mmandamaximumof740mm(Figure4a,StationWE12,4August2014).Thesizefrequencydistribu-
+tionmeasuredbymicroscopyonsamplescollectedatstationsWE2,4,6,and8inJulytoOctober2013and
+JunetoJuly2014gaveasimilarsizedistributiontothatofthe4August2014sample(Figure4a).Itislikely
+thatthecolonysizedistributionvariestosomeextentspatiallyandtemporally[e.g.,Linetal.,2014],andour
+estimate could be refined through additional measurements. Even so, the consistency between our two
+estimatedsizedistributionsgivessomeindicationofrepresentativeness.
+OurmeasuredvaluesofLakeErieMicrocystiscolonybuoyantvelocity,w ,weresimilartothoseofNakamura
+b
+et al. [1993] for colonies larger than 200 lm in their sample collected from a lake in Japan on 3 August
+1990,andgenerallylessthantheir18Septembersample(Figure4b).Wewerenotabletoresolvecolonies
+smallerthan200mmbyourmethod;however,largecoloniesaccountforthemajorityofbiomassandtoxin
+concentration.Forexample,colonies>112mmaccountedfor93%ofMicrocystiscells(biomass)inLakeErie
+samples [Chaffin et al., 2011], and colonies >100 mm showed the highest proportion of microcystin-
+producinggenotypes,highestmicrocystincellquotas,andhighestmicrocystinproductionrate,compared
+tosmallercolonysizeclassesinLakeWannsee,Germany[Kurmayeretal.,2003].Inadditiontocolonysize,
+Microcystisbuoyancyis a functionofMicrocystis strain andlight exposurehistory,as itaffects gasvacuole
+andcarbohydratecontentofthecells[Ibelingsetal.,1991;Xiaoetal.,2012].Furtherresearchisnecessaryto
+definebuoyant velocitiesovera wide sizerangeof Lake ErieMicrocystis undera varietyof environmental
+conditions. Our results, while limited in size range, do show similarity between the>200 mm values of
+Nakamuraetal.[1993]andsamplesfromtwodifferentdatesinLakeErie,andsupportusingtheloweresti-
+mateofbuoyancy(Figure4b,N933Aug)fromNakamuraetal.[1993].
+m
+,htpeD
+0
+2−
+4−
+6−
+8−
+a 2015−07−20 13:00 EDT Station WE13 b
+2.5 3.5
+Observed
+N93 3 Aug Observed
+N93 18 Sep FVCOM
+0 1 2 3 4 5
+1
+0
+1−
+2−
+3−
+4−
+5−
+Normalized concentration
+m
+,htpeD
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+c 2015−09−08 14:00 EDT Station WE8 d
+1.1 1.3
+Observed
+N93 3 Aug Observed
+N93 18 Sep FVCOM
+22 23 24 25 26 27 28
+Water temperature, °C
+Figure5.Twoexamplesofobservedverticalprofilesofnormalizedconcentrationofcyanobacterialchlorophyllandtemperaturewithsimulatedvaluesplottedforcomparison.Horizon-
+tallinesindicatethecenterofmass,r ,ofthenormalizedconcentrationprofiles,andthepotentialenergyanomaly,/,Jm23,isgivenabovethetemperatureprofiles.
+m
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 12
+For the model simulations, we assigned
+buoyant velocities to Lagrangian particles
+by random sampling with replacement
+from the frequency distributions shown in
+Figure 4c, which were obtained by apply-
+ing the regression lines (Figure 4b) from
+the data of Nakamura et al. [1993] to the
+diameter frequency distribution from the
+8 August 2014 sample from Lake Erie (Fig-
+ure 4a). We tested the sensitivity of 1-D
+model simulations to the two buoyant
+velocity frequency distributions shown in
+Figure 2c, and refer to these hereafter as
+‘‘N93 3 Aug’’ and ‘‘N93 18 Sep’’. Example
+time series of concentration profiles simu-
+−0.7 −0.6 −0.5 −0.4 −0.3 −0.2 lated with the low estimate of buoyancy
+(N933Aug)areshowninFigure2e.
+3.3.VerticalProfilesofCyanobacterial
+ConcentrationandTemperature
+We tested the ability of the random-walk
+model with buoyancy to simulate realistic
+Microcystis concentration profiles by com-
+paring measured profiles of cyanobacterial
+chlorophyll concentration from Lake Erie
+(predominantly Microcystis) to correspond-
+ing1-Dsimulations.On20July,theconcen-
+tration profile showed strong accumulation
+within the surface two meters (Figure 5a),
+whichcorrespondedtoasurfacemixedlay-
+er defined by a thermocline at 2 m depth
+(Figure 5b).A secondprofilewas measured
+on 9 September, which showed concentra-
+tion enrichment within a 3 m thick surface
+mixed layer (Figure 5c), which was similarly
+defined by a thermocline at 3 m depth
+(Figure5d).
+Thetemperaturedifferenceacrossthether-
+mocline in both cases was only about 18C
+(Figures5band5d),buttheFVCOMsimula-
+tions indicated that such subtle stratifica-
+tion features can have a strong influence on diffusivity (e.g., Figures 2a and 2b). The accuracy of
+temperature simulations in hydrodynamic models is often only within a few degrees, which brings into
+question whether the subtle stratification features that are influencing the Microcystis vertical distribution
+can be reasonably simulated by a hydrodynamic model. Even though the simulated temperature profiles
+haveawarmbiasof1–28C,attheselocationsandtimes,theyshowthermoclinesatmultiplelevelsthatare
+similartotheobservedprofiles(Figures5band5d).Thedeeperthermoclinemayhaveformedduetocon-
+vective deepening of the SML overnight, followed by surface warming during the day that produced the
+shallowerthermocline;theprofileswerecapturedintheafternoon.Itisthestaticstabilityoftheprofilerath-
+erthantheabsolutetemperaturethatisimportantinsimulationofthediffusivity,andthestaticstabilityof
+thesimulatedandobservedprofilesisinreasonableagreement(Figures5band5d).Overthefullsetof69
+profiles, the frequency distribution of static stability simulated by FVCOM was in reasonable agreement
+withtheobservedfrequencydistribution,althoughthemodelwasbiasedslightlylessstablethantheobser-
+vations(Figure6bandTable2).
+0.1
+8.0
+6.0
+4.0
+2.0
+0.0
+Center of mass, σ
+ycneuqerf
+evitalumuC
+a
+Observed
+N93 3 Aug
+N93 18 Sep
+0 1 2 3 4 5
+0.1
+8.0
+6.0
+4.0
+2.0
+0.0
+Potential energy anomaly, J m −3
+ycneuqerf
+evitalumuC
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+b
+Observed
+FVCOM
+Figure6.Cumulativefrequencydistributionsofsimulatedandobserved(a)
+centerofmassofthenormalizedcyanobacteriaconcentrationprofile,and
+(b)potentialenergyanomalyofthetemperatureprofilefor69profilescol-
+lectedinJulytoSeptemberof2015atstationsindicatedinFigure1.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 13
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+Simulated normalized concentration profiles of buoy-
+Table2.StatisticsEvaluatingtheSkilloftheLagrangianPar-
+ant particles showed enrichment within the surface
+ticleModelinSimulatingtheVerticalDistributionofCyano-
+bacterialChlorophyllConcentration(CenterofMassofthe mixed layer, similar to the observed profiles (Figures
+NormalizedConcentrationProfile)andofFVCOMinSimulat- 5a and 5c). We calculated the center of mass, r , of
+ingTemperatureProfiles(PotentialEnergyAnomaly)a m
+theconcentrationprofileasacolumn-integratedindi-
+Bias RMSD r
+catoroftheverticaldistributionofconcentration(hori-
+Centerofmass,N9318Sep,r 0.04 0.09 0.56
+zontal lines in Figures 5a and 5c). Concentration was
+Centerofmass,N933Aug,r 20.01 0.08 0.53
+Potentialenergyanomaly,Jm23 20.20 0.72 0.83 weightedtowardthesurface(r m >20.5)in>80%of
+the observed profiles (Figure 6a), which is consistent
+aThestatisticsarethemeanbias,rootmeansquaredevia-
+tion(RMSD),andPearsoncorrelationcoefficient(r). with the assumption to treat Microcystis colonies as
+buoyantparticlesinthemodel.
+Weselectedthelowerestimateofbuoyancy(N933Aug)foruseinthehindcastsimulations.Thesimulated
+frequencydistributionofr wasinreasonableagreementwiththeobserveddistributionforboththelow
+m
+andhighestimatesofw ,althoughthelowestimatewasclosertotheobservations(Figure6aandTable2).
+b
+Similarly,thedirectmeasurementsofw alsoindicatedbetteragreementwiththelowerestimateofbuoy-
+b
+ancy(Figure4b).
+Figure7.Comparisonof2-Dand3-Dhindcastsimulationsinitializedfromsatellite-derivedcyanobacterialchlorophyllconcentration(a)on6August2011.(d,g)Subsequentsatellite
+imageswereusedformodelskillassessment.Graycolorindicatesmissingdata.Windspeed,averagedoverthepreceding12h,was<5ms21on6Augustandincreasedto5–10ms21
+on7and15August(windbarbsa,d,g).Inthe2-Dsimulation,particleswereinitiatedinthesurface1mandverticalmixingwasnotsimulated(advectiononly).Inthe3-Dsimulation,
+particleswereinitializedoverthesurfacemixedlayer,asdeterminedbypreliminarysimulationsof1-Dmixingwithbuoyancy,andthemodelwasrunwith3-Dadvectioninadditionto
+verticalmixingwithbuoyancy.Whileboth2-Dand3-DmodelssimulatedCHABadvectiontowardPortClintonobservedon15August,the3-Dmodelbettersimulatedreducedintensity
+andcoverageobservedon7and15Augustduetohigherwinds,andcontinuedCHABcoveragenearToledoandMonroeon15August.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 14
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+Figure8.Comparisonof2-Dand3-Dhindcastsimulationsinitializedfromsatellite-derivedcyanobacterialchlorophyllconcentration(a)on29August2011.Symbolsandmodelsetup
+areexplainedinFigure7.Whileboth2-Dand3-DmodelssimulatedCHABadvectioneastofLeamingtonintothecentralbasinobservedon3September,the3-Dmodelbettersimulated
+CHABintensityandextentinthewesternbasinobservedon3September.Windspeedwas<5ms21duringthesimulationperiod,butwasnorthat10ms21until12hpriortothe
+initialimage.
+3.4.HindcastSimulationsofCHABIntensityandDistribution
+Havingshown that1-D randomwalksimulationsreasonablyapproximatedthechangingverticaldistribu-
+tionsofbuoyantMicrocystiscoloniesinresponsetovaryingturbulence,wewentontotestwhetherinclu-
+sion of this mechanism in the forecast model improved model skill. Hindcast simulations were initiated
+fromeachofthe26qualitysatelliteimagesofCHABdistributionforthe2011CHABseason.
+Inoneexample,ahindcastsimulationwasinitializedon6August,whichwasacalmday(wind<5ms21)
+withanintenseCHABeventthroughoutthecentralwesternbasin(Figure7a).Onthefollowingday,wind
+increased(5–10ms21),andasecondsatelliteimageindicatedreducedsurfaceCHABintensityanddistribu-
+tion(Figure7d).The3-DsimulationcapturedthereducedsurfaceCHABintensityon7August,whilethe2-
+Dmodeldidnot,whichcanbeseenqualitativelybycomparingFigures7eand7f,andwasindicatedquanti-
+tativelybyreducedfrequencybias(B)ofthe3-Dsimulationcomparedtothe2-Dsimulation(3-DB51.10;
+2-DB51.34).Onday9(15August),thesimulatedCHABdistributionwasdistinctlydifferentbetweenthe2-
+Dand 3-D models (Figures 7h and 7i).In comparison to the 2-D model,the 3-D model CHAB distribution
+wasmoresimilartotheobserveddistribution(3-DPSS50.56;2-DPSS50.41),havinglessCHABcoverage
+inthecentralbasineastofSanduskyandmorecontinuouscoveragealongthecoastfromMonroetoTole-
+do.Both2-Dand3-DmodelssimulatedtheadvectionofCHABtoPortClinton(Figures7b,7cand7h,7i),
+whichwasminimallyaffectedbyCHABon6Augustandfullycoveredon15August(Figures7aand7g).
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 15
+Inasecondexample,ahindcastsimula-
+tionwasinitializedon29August,which
+wasadatewithonlypartialcoverageby
+thesatelliteimage,leavingnodataover much of the western basin (Figure 8a).
+Output from a previous model run was
+used to initialize the CHAB distribution
+inthewesternbasin(Figures8band8c).
+On simulationdayfour (2September)a
+second partial satellite image indicated
+extensiveCHABcoverageinthewestern
+basin (Figure 8d), consistent with both
+models. Both 2-D and 3-D models
+underestimated the CHAB coverage,
+althoughthe3-Dmodelbettermatched
+the observed coverage (2-D B50.81,
+PSS50.76;3-DB50.90,PSS50.84;Fig-
+ures 8d, 8e, and 8f). The partial image
+on2Septemberdidnotshowtheexten-
+sive CHAB outbreak into the central
+basin east of Leamington, Ontario,
+although it was simulated by both 2-D
+and3-Dmodels(Figures8eand8f),and
+wasrevealedthefollowingdayinthe3
+September satellite image (Figure 8g).
+The 3-D model better simulated the
+CHAB distribution on simulation day 5
+(3 September) than the 2-D model (2-D
+B50.79, PSS50.68; 3-D B50.99,
+PSS50.80;Figures8g,8h,and8i).
+The examples in Figures 7 and 8 show,
+that both 2-D and 3-D models capture
+some observed events that may be
+attributed to advection, but the 3-D
+model performed better in several
+cases.The3-Dmodelisinitializedwitha
+better estimate of total biomass than
+the 2-D model because an estimate of
+thesurfacemixedlayerdepthforbuoy-
+antMicrocystiscoloniesisusedtoassign
+the depth over which the satellite-
+derivedsurfaceconcentrationisapplied.
+Inaddition,the3-Dmodelisabletosim-
+ulate changing surface concentration in
+responsetochangingmixedlayerdepth.Finally,the3-DmodelproduceddifferentfinalCHABspatialdistri-
+butionthanthe2-Dmodel,whichlikelyresultsfromthemoreaccurateverticaldistributionwithinacom-
+plex3-Dflowfield.
+3.5.SummaryofHindcastSkillStatistics
+Skillstatisticsweresummarizedbysimulationdaytoevaluatehowlongthemodelcanberunfrominitiali-
+zationbeforeskillbeginstodecline.ThePierceskillscore(PSS)gavepositivevaluesforthe2-Dmodel,3-D
+model,andthepersistenceforecastonsimulationdays1–10(Figure9).PositivevaluesofPSSindicatethat
+thehitratewasgreaterthanthefalsepositiverate,andthereforethemodelhadgreaterskillthanarandom
+forecast or constant CHAB or no-CHAB prediction [Hogan and Mason, 2012]. The frequency bias was less
+erocS
+llikS
+ecreiP
+0.1
+5.0
+0.0
+5.0−
+0.1−
+a 2D model
+0
+1
+7 2
+4 6 8 53 9 x
+erocS
+llikS
+ecreiP
+0.1
+5.0
+0.0
+5.0−
+0.1−
+b 3D model 0
+7 8 1 5 2 x
+6 93
+4
+0.0 0.5 1.0 1.5 2.0
+0.1
+5.0
+0.0
+5.0−
+0.1−
+Frequency bias
+erocS
+llikS
+ecreiP
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+c 0 Persistence
+7 1 2
+8
+3 59 x
+6
+4
+Figure9.Skill-biasplotsforthe2-Dmodel(advectiononly),3-Dmodel(advec-
+tion,verticalmixing,andbuoyancy),andpersistenceforecastsforthe2011
+hindcastsimulations.Theplotsymbolindicatesthesimulationday(05initial,
+x5day10).Pierceskillscore(PSS)isthehitrateminusthefalsedetectionrate,
+andfrequencybias(B)istheratioofforecasthitstoobservedhits.PositivePSS
+indicatesgreaterskillthanarandomforecast.Frequencybiasof1.0indicates
+thesamenumberofCHABpixelswerepredictedasobserved.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 16
+than1.0on8of10forecastdays,indicating
+that both models had an overall bias
+toward under-prediction, although not
+consistently so (Figures 9a and 9b). The
+95%confidenceintervalsonthedifference
+in PSS indicated that the 3-D model dis-
+playedsignificantlygreaterskillinthehind-
+cast simulations than the persistence
+forecastthroughsimulationday6,andwas
+notsignificantlyworsethanthepersistence
+forecastthroughday10(Figure10).The3-
+Dmodelhadsignificantlygreaterskillthan
+the2-Dmodeloverthefullsimulationperi-
+od. The 2-D model had significantly less
+skill than the persistence forecast on all
+simulationdays(Figure10).
+It may be surprising that the persistence
+forecast displayed a reasonable level of
+skill.Thiscanbeexplainedinthatthespa-
+tialdistributionofCHABsinLakeEriehasa
+numberofpersistentfeatures.Forexample
+CHABs often persist in the southern and
+western portions of the western basin,
+whiletheyarerarelypresentintheDetroit
+Riverplumeandinthecentralbasineastof
+theislands,asindicatedby13yearsofLake
+ErieCHABspatialpatternscompiledbyWynneandStumpf[2015].Themodeldoesnotnecessarilypreserve
+thesepersistentfeatures.Forexample,CHABsmaybeerroneouslyflushedfromMaumeeBayinlongsimu-
+lations,althoughthishappenedtoalesserextentinthe3-Dmodelthaninthe2-Dmodel(Figures7g,7h,
+and 7i). The skill of the persistence forecast indicates that the most recent satellite image is a reasonable
+indicationoftheCHABdistributionforseveraldaysafter.
+Skillstatisticsbasedonpixel-by-pixelcomparisons,anduseofapersistenceforecastasabenchmark,pro-
+videausefulpointofcomparisonamongmodels,butdonotcaptureallaspectsofmodelperformance.For
+example,thelargesimulatedplumethatextendedintothecentralbasinon3September(Figures8g,8h,
+and8i)doesnotexactlymatchtheobservedplumeintermsofshapeandposition.Thispatternmismatch
+detractedfrompixel-by-pixelskillstatistics,butbothmodelsprovidedinformationregardingtheexistence
+ofthistransporteventbeforeitcouldbeseeninsatelliteimagery;informationthatwouldbeusefultofore-
+castuserseveniftheshapeoftheplumeisnotentirelyaccurate.Apersistenceforecastcanscorereason-
+ably well in skill statistics that compare spatial patterns, but cannot provide any information on likely
+transporttrajectories.Therefore,eventhoughthe2-Dmodelhadlessskillthanthepersistenceforecast(Fig-
+ure10),thisdoesnotindicatethatthe2-Dmodelhasnovaluebecauseitmayprovideusefulinformation
+onlikelytransporttrajectories.Itisachallengetoformulateskillstatisticsthattestforaccuracyinsimulation
+of transport events, largely because it is difficult to identify and quantify transport events by comparing
+among subsequent satellite images. Wynne et al. [2011] attempted to calculate skill statistics based on
+movement of thebloom centroid; however, this approachis likely to work only for special cases because
+accuratecalculation of thebloomcentroid issensitive to missingdata(cloud cover) andthebloom often
+consistsofmultiplepatchesthatmaymoveindifferentdirectionsratherthanonedistinctpatch.Formula-
+tionofappropriateskillstatisticsforCHABforecastsisanareaforfurtherwork.
+3.6.EcologicalSignificance
+AsidefromthespecificapplicationofCHABforecasting,theobservationsandsimulationsshownherepro-
+vide interesting insights on the physical processes that influence phytoplankton ecology in a polymictic
+lake. Previous studies of Lake Erie circulation and thermal structure considered the western basin to be
+largelyunstratified[e.g.,Beletskyetal.,2013],butourstudyhighlightedtheimportanceoffine-scalethermal
+3.0
+2.0
+1.0
+0.0
+1.0−
+2.0−
+3.0−
+Simulation day
+ecnetsisrep
+SSP
+−
+ledom
+SSP
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+2D model
+3D model
+1−2 3−4 5−6 7−8 9−10
+Figure10.Pierceskillscore(PSS)ofthemodelminusPSSofthepersistence
+forecast.Positivevaluesindicategreaterskillforthemodelthanfortheper-
+sistenceforecast.Errorbarsindicatethe95%bootstrapconfidenceinterval
+onthedifferenceinPSSforthe26hindcastsimulationsfromthe2011
+CHABseason,groupedintotwo-dayintervals.The3-Dmodel(includingver-
+ticalmixingwithbuoyancy)hadgreaterskillthanthe2-Dmodel(advection
+only)andgreaterskillthanthepersistenceforecastthroughday6andcom-
+parableskillouttoday10.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 17
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+structureinthewesternbasininabiologicalcontext.Surfacemixedlayerdepthvarieshourbyhourdueto
+subtlefeatures inthetemperature profilecausedbythedielcycle of surfaceheatingandcooling, further
+modifiedbyvaryingwindstress.ColonybuoyancyissufficienttokeepMicrocystisconcentratedwithinthe
+constantlychangingsurfacemixedlayerdepth.Thethermalstructureissubtleincomparisontothecontin-
+uousseasonalstratificationthatoccursindeeperlakes,andinthecentralandeasternbasinsofLakeErie,
+butimportantnonethelesstotheMicrocystisverticaldistribution.ThepositionofMicrocystiscoloniesinthe
+watercolumniscriticaltotheirlightexposure,nutrientacquisition,andultimatelytotheirabilitytodomi-
+natethephytoplanktoncommunity,andproducetoxicblooms.
+References
+Acknowledgments
+M.D.Rowereceivedfundingfromthe
+Anderson,E.J.,andM.S.Phanikumar(2011),Surfacestoragedynamicsinlargerivers:Comparingthree-dimensionalparticletransport,
+GreatLakesRestorationInitiative
+one-dimensionalfractionalderivative,andmultiratetransientstoragemodels,WaterResour.Res.,47,W09511,doi:10.1029/
+throughtheU.S.Environmental
+2010WR010228.
+ProtectionAgencyandNational
+Anderson,E.J.,andD.J.Schwab(2013),Predictingtheoscillatingbi-directionalexchangeflowintheStraitsofMackinac,J.GreatLakes
+OceanicandAtmospheric
+Res.,39(4),663–671.
+Administration.TheFVCOMmodeland
+Anderson,E.J.,D.J.Schwab,andG.A.Lang(2010),Real-timehydraulicandhydrodynamicmodeloftheSt.ClairRiver,LakeSt.Clair,Detroit
+Lagrangianparticletrackingmodel
+RiverSystem,J.Hydraul.Eng.,136,507.
+codeareavailablefromhttp://fvcom.
+Anderson,E.J.,A.J.Bechle,C.H.Wu,D.J.Schwab,G.E.Mann,andK.A.Lombardy(2015),ReconstructionofameteotsunamiinLakeErie
+smast.umassd.edu/.DavidSchwab,
+on27May2012:Rolesofatmosphericconditionsonhydrodynamicresponseinenclosedbasins,J.Geophys.Res.,120,8020–8038,doi:
+UniversityofMichigan,modifiedthe
+10.1002/2015JC010883.
+Lagrangiancodeforimproved
+Bai,X.,J.Wang,D.J.Schwab,Y.Yang,L.Luo,G.A.Leshkevich,andS.Liu(2013),Modeling1993–2008climatologyofseasonalgeneralcir-
+efficiency.DuaneGossiaux,NOAA
+culationandthermalstructureintheGreatLakesusingFVCOM,OceanModell.,65,40–63.
+GLERL,measuredcolonysize
+Beletsky,D.,D.Schwab,P.Roebber,M.McCormick,G.Miller,andJ.Saylor(2003),Modelingwind-drivencirculationduringtheMarch1998
+distributionsbymicroscopy.Danna
+sedimentresuspensioneventinLakeMichigan,J.Geophys.Res.Oceans,108(C2),3038,doi:3010.1029/2001JC001159.
+PalladinoandAshleyBurtner,CILER,
+Beletsky,D.,N.Hawley,andY.R.Rao(2013),ModelingsummercirculationandthermalstructureofLakeErie,J.Geophys.Res.Oceans,118,
+collectedfieldsamplesfromLakeErie
+6238–6252,doi:10.1002/2013JC008854.
+in2012,2013,and2014.Weare
+gratefultoUlfGr€awe,LeibnizInstitute Bridgeman,T.B.,J.D.Chaffin,andJ.E.Filbrun(2013),AnovelmethodfortrackingwesternLakeErieMicrocystisblooms,2002–2011,
+JGreatLakesRes.,39(1),83–89.
+forBalticSeaResearch,forproviding
+Brittain,S.M.,J.Wang,L.Babcock-Jackson,W.W.Carmichael,K.L.Rinehart,andD.A.Culver(2000),Isolationandcharacterizationofmicro-
+codeforalternativerandomwalk
+cystins,cyclicheptapeptidehepatotoxinsfromaLakeEriestrainofMicrocystisaeruginosa,J.GreatLakesRes.,26(3),241–249.
+numericalschemes.Dataandmodel
+Bundy,M.H.,T.F.Gross,H.A.Vanderploeg,andJ.R.Strickler(1998),Perceptionofinertparticlesbycalanoidcopepods:Behavioralobser-
+resultsareavailableuponrequestfrom
+vationsandanumericalmodel,J.PlanktonRes.,20(11),2129–2152.
+thecorrespondingauthor(mark.
+Catherine,A.,N.Escoffier,A.Belhocine,A.Nasri,S.Hamlaoui,C.Y(cid:3)epr(cid:3)emian,C.Bernard,andM.Troussellier(2012),OntheuseoftheFluo-
+rowe@noaa.gov).ThisisGLERL
+contribution1825. roProbeVR,aphytoplanktonquantificationmethodbasedonfluorescenceexcitationspectraforlarge-scalesurveysoflakesandreser-
+voirs,WaterRes.,46(6),1771–1784.
+Chaffin,J.D.,T.B.Bridgeman,S.A.Heckathorn,andS.Mishra(2011),AssessmentofMicrocystisgrowthratepotentialandnutrientstatus
+acrossatrophicgradientinwesternLakeErie,J.GreatLakesRes.,37(1),92–100.
+Chen,C.,H.Liu,andR.C.Beardsley(2003),Anunstructuredgrid,finite-volume,three-dimensional,primitiveequationsoceanmodel:Appli-
+cationtocoastaloceanandestuaries,J.Atmos.OceanicTechnol.,20(1),159–186.
+Chorus,I.,andJ.Bartram,Eds.(1999),ToxicCyanobacteriainWater-AGuidetoTheirPublicHealthConsequences,Monitoring,andMan-
+agement,E&FNSpon,publishedonbehalfoftheWorldHealthOrganization,U.K.
+Churchill,J.H.,J.Runge,andC.Chen(2011),Processescontrollingretentionofspring-spawnedAtlanticcod(Gadusmorhua)inthewest-
+ernGulfofMaineandtheirrelationshiptoanindexofrecruitmentsuccess,Fish.Oceanogr.,20(1),32–46.
+Galperin,B.,L.Kantha,S.Hassid,andA.Rosati(1988),Aquasi-equilibriumturbulentenergymodelforgeophysicalflows,J.Atmos.Sci.,
+45(1),55–62.
+Gilbert,C.,W.Gentleman,C.Johnson,C.DiBacco,J.Pringle,andC.Chen(2010),Modellingdispersalofseascallop(Placopectenmagellani-
+cus)larvaeonGeorgesBank:Theinfluenceofdepth-distribution,planktonicdurationandspawningseasonality,Prog.Oceanogr.,87(1),
+37–48.
+GLWQAAnnex4(2015),RecommendedphosphorusloadingtargetsforLakeErie,annex4objectivesandtargetstaskteamfinalreportto
+thenutrientsannexsubcommittee,70pp.[Availableathttp://www.epa.gov/glwqa.]
+Gr€awe,U.(2011),Implementationofhigh-orderparticle-trackingschemesinawatercolumnmodel,OceanModell.,36(1),80–89.
+Gr€awe,U.,E.Deleersnijder,S.H.A.M.Shah,andA.W.Heemink(2012),WhytheEulerschemeinparticletrackingisnotenough:The
+shallow-seapycnoclinetestcase,OceanDyn.,62(4),501–514.
+Henry,T.(2014),Toledoseeksreturntonormalcyafterdonotdrinkwateradvisorylifted,ToledoBlade,5August.[Availableathttp://www.
+toledoblade.com/local/2014/08/05/Toledo-seeks-return-to-normalcy-after-do-not-drink-water-advisory-lifted.html.]
+Hogan,R.J.,andI.B.Mason(2012),Deterministicforecastsofbinaryevents,inForecastVerification:APractitioner’sGuideinAtmosphericSci-
+ence,2nded.,pp.31–59,JohnWiley&Sons,Ltd.,WestSussex,U.K.
+Huret,M.,J.Runge,C.Chen,G.Cowles,Q.Xu,andJ.Pringle(2007),Dispersalmodelingoffishearlylifestages:Sensitivitywithapplication
+toAtlanticcodinthewesternGulfofMaine,Mar.Ecol.Prog.Ser.,347,261–274.
+Ibelings,B.W.,L.R.Mur,andA.E.Walsby(1991),DiurnalchangesinbuoyancyandverticaldistributioninpopulationsofMicrocystisintwo
+shallowlakes,J.PlanktonRes.,13(2),419–436.
+Kane,D.D.,J.D.Conroy,R.P.Richards,D.B.Baker,andD.A.Culver(2014),Re-eutrophicationofLakeErie:Correlationsbetweentributary
+nutrientloadsandphytoplanktonbiomass,J.GreatLakesRes.,40(3),496–501.
+Kring,S.A.,S.E.Figary,G.L.Boyer,S.B.Watson,andM.R.Twiss(2014),Rapidinsitumeasuresofphytoplanktoncommunitiesusingthe
+bbeFluoroProbe:Evaluationofspectralcalibration,instrumentintercompatibility,andperformancerange,Can.J.Fish.Aquat.Sci.,71(7),
+1087–1095.
+Kurmayer,R.,G.Christiansen,andI.Chorus(2003),Theabundanceofmicrocystin-producinggenotypescorrelatespositivelywithcolony
+sizeinMicrocystissp.anddeterminesitsmicrocystinnetproductioninLakeWannsee,Appl.Environ.Microbiol.,69(2),787–795.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 18
+Journal of Geophysical Research: Oceans
+10.1002/2016JC011720
+LakeErieLaMP.(2011),LakeErieBinationalNutrientManagementStrategy:ProtectingLakeEriebyManagingPhosphorus.Preparedby
+theLakeErieLaMPWorkGroupNutrientManagementTaskGroup.
+Lin,L.,G.Appiah-Sefah,andM.Li(2014),UsingalaserparticleanalyzertodemonstraterelationshipsbetweenwindstrengthandMicrocys-
+tiscolonysizedistributioninLakeTaihu,China,J.FreshwaterEcol.,30(3),425–433,doi:10.1080/02705060.2014.976666.
+Medrano,E.A.,R.Uittenbogaard,L.D.Pires,B.vandeWiel,andH.Clercx(2013),Couplinghydrodynamicsandbuoyancyregulationin
+Microcystisaeruginosaforitsverticaldistributioninlakes,Ecol.Modell.,248,41–56,doi:10.1016/j.ecolmodel.2012.08.029.
+Michalak,A.M.,E.J.Anderson,D.Beletsky,S.Boland,N.S.Bosch,T.B.Bridgeman,J.D.Chaffin,K.Cho,R.Confesor,andI.Dalog(cid:4)lu(2013),
+Record-settingalgalbloominLakeEriecausedbyagriculturalandmeteorologicaltrendsconsistentwithexpectedfutureconditions,
+Proc.Natl.Acad.Sci.U.S.A.,110(16),6448–6452.
+Nakamura,T.,Y.Adachi,andM.Suzuki(1993),FlotationandsedimentationofasingleMicrocystisfloccollectedfromsurfacebloom,Water
+Res.,27(6),979–983.
+Obenour,D.R.,A.D.Gronewold,C.A.Stow,andD.Scavia(2014),UsingaBayesianhierarchicalmodeltoimproveLakeEriecyanobacteria
+bloomforecasts,WaterResour.Res.,50,7847–7860,doi:10.1002/2014WR015616.
+O’Neil,J.,T.W.Davis,M.A.Burford,andC.Gobler(2012),Theriseofharmfulcyanobacteriablooms:Thepotentialrolesofeutrophication
+andclimatechange,HarmfulAlgae,14,313–334,doi:10.1016/j.hal.2011.10.027.
+Rinta-Kanto,J.M.,E.A.Konopko,J.M.DeBruyn,R.A.Bourbonniere,G.L.Boyer,andS.W.Wilhelm(2009),LakeErieMicrocystis:Relationship
+betweenmicrocystinproduction,dynamicsofgenotypesandenvironmentalparametersinalargelake,HarmfulAlgae,8(5),665–673.
+Rose,A.(1948),Thesensitivityperformanceofthehumaneyeonanabsolutescale,J.Opt.Soc.Am.,38(2),196–208,doi:10.1364/
+JOSA.38.000196.
+Ross,O.N.,andJ.Sharples(2004),Recipefor1-DLagrangianparticletrackingmodelsinspace-varyingdiffusivity,Limnol.Oceanogr.Meth-
+ods,2(9),289–302.
+Ross,O.N.,andJ.Sharples(2008),Swimmingforsurvival:Aroleofphytoplanktonmotilityinastratifiedturbulentenvironment,J.Mar.
+Syst.,70(3),248–262.
+Simpson,J.,andD.Bowers(1981),Modelsofstratificationandfrontalmovementinshelfseas,DeepSeaRes.,PartA,28(7),727–738.
+Smagorinsky,J.(1963),Generalcirculationexperimentswiththeprimitiveequations:I.Thebasicexperiment,Mon.WeatherRev.,91(3),
+99–164.
+Strickler,J.R.(1985),Feedingcurrentsincalanoidcopepods:Twonewhypotheses,inPhysiologicalAdaptationsofMarineAnimals,edited
+byM.S.Laverack,pp.459–485,Soc.forExp.Biol.,U.K.
+Stumpf,R.P.,andT.T.Wynne(2015),ExperimentalLakeErieharmfulalgalbloombulletin(Bulletin27).[Availableatwww2.nccos.noaa.
+gov/coast/lakeerie/bulletin.]
+Stumpf,R.P.,T.T.Wynne,D.B.Baker,andG.L.Fahnenstiel(2012),InterannualvariabilityofcyanobacterialbloomsinLakeErie,PLoSOne,
+7(8),e42444,doi:10.1371/journal.pone.0042444.
+Tomlinson,M.C.,R.P.Stumpf,T.T.Wynne,D.Dupuy,R.Burks,J.Hendrickson,andR.S.FultonIII(2016),Relatingchlorophyllfrom
+cyanobacteria-dominatedinlandwaterstoaMERISbloomindex,RemoteSens.Lett.,7(2),141–149.
+Vanderploeg,H.A.,J.R.Liebig,W.W.Carmichael,M.A.Agy,T.H.Johengen,G.L.Fahnenstiel,andT.F.Nalepa(2001),Zebramussel(Dreis-
+senapolymorpha)selectivefiltrationpromotedtoxicMicrocystisbloomsinSaginawBay(LakeHuron)andLakeErie,Can.J.Fish.Aquat.
+Sci.,58(6),1208–1221.
+Visser,A.(1997),Usingrandomwalkmodelstosimulatetheverticaldistributionofparticlesinaturbulentwatercolumn,Mar.Ecol.Prog.
+Ser.,158,275–281.
+Wang,C.,X.Wu,C.Tian,Q.Li,Y.Tian,B.Feng,andB.Xiao(2015),Aquantitativeprotocolforrapidanalysisofcelldensityandsizedistribu-
+tionofpelagicandbenthicMicrocystiscoloniesbyFlowCAM,J.Appl.Phycol.,27(2),711–720.
+Wiles,P.,L.vanDuren,C.H€ase,J.Larsen,andJ.Simpson(2006),StratificationandmixingintheLimfjordeninrelationtomusselculture,J.
+Mar.Syst.,60(1),129–143.
+Wynne,T.T.,andR.P.Stumpf(2015),SpatialandtemporalpatternsintheseasonaldistributionoftoxiccyanobacteriainWesternLakeErie
+from2002–2014,Toxins,7(5),1649–1663.
+Wynne,T.,R.Stumpf,M.Tomlinson,R.Warner,P.Tester,J.Dyble,andG.Fahnenstiel(2008),Relatingspectralshapetocyanobacterial
+bloomsintheLaurentianGreatLakes,Int.J.RemoteSens.,29(12),3665–3672.
+Wynne,T.T.,R.P.Stumpf,M.C.Tomlinson,andJ.Dyble(2010),CharacterizingacyanobacterialbloominwesternLakeErieusingsatellite
+imageryandmeteorologicaldata,Limnol.Oceangr.Methods,55(5),2025–2036.
+Wynne,T.T.,R.P.Stumpf,M.C.Tomlinson,D.J.Schwab,G.Y.Watabayashi,andJ.D.Christensen(2011),Estimatingcyanobacterialbloom
+transportbycouplingremotelysensedimageryandahydrodynamicmodel,Ecol.Appl.,21(7),2709–2721.
+Wynne,T.T.,R.P.Stumpf,M.C.Tomlinson,G.L.Fahnenstiel,J.Dyble,D.J.Schwab,andS.J.Joshi(2013),Evolutionofacyanobacterial
+bloomforecastsysteminwesternLakeErie:Developmentandinitialevaluation,J.GreatLakesRes.,39,90–99.
+Xiao,Y.,N.Gan,J.Liu,L.Zheng,andL.Song(2012),Heterogeneityofbuoyancyinresponsetolightbetweentwobuoyanttypesofcyano-
+bacteriumMicrocystis,Hydrobiologia,679(1),297–311.
+ROWEETAL. MICROCYSTISVERTICALDISTRIBUTION 19

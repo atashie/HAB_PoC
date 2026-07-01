@@ -1,0 +1,1234 @@
+Oregon DEQ
+Freshwater
+Cyanobacteria Harmful
+Algal Blooms Strategy
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 1
+This document was prepared by
+Oregon Department of Environmental Quality
+Watershed Management Section
+700 NE Multnomah Street, Portland Oregon, 97232
+Version 2.1
+October 2023
+Contact: Daniel Sobota
+Phone: 503-229-5138
+www.oregon.gov/deq
+Acknowledgements: Oregon DEQ HABs Coordination Team and the Oregon Health Authority
+Translation or other formats
+Español | 한국어 | 繁體中文 | Pусский | Tiếng Việt | ﺔﯾﺑرﻌﻟا
+800-452-4011 | TTY: 711 | deqinfo@deq.oregon.gov
+Non-discrimination statement
+DEQ does not discriminate on the basis of race, color, national origin, disability, age or sex in administration
+of its programs or activities. Visit DEQ’s Civil Rights and Environmental Justice page.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 2
+List of Acronyms
+Acronym Title
+BEACH Beach Environmental Assessment Communication and Health
+BMP Best Management Practices
+CWA Clean Water Act
+CyanoHAB Cyanobacteria harmful algal bloom
+DEQ Department of Environmental Quality
+DWP Drinking Water Protection
+DWS Drinking Water Services
+DMAs Designated Management Agencies
+EP Entry Point
+EPA U.S. Environmental Protection Agency
+EQC Environmental Quality Commission
+FIFRA Federal Insecticide Fungicide and Rodenticide Act
+FPA Forest Practices Act
+FTE Full Time Equivalence
+GIS Geographical Information Systems
+HCB Harmful Cyanobacterial Bloom
+IMD Internal Management Directive
+LA Load Allocation
+LEAD Laboratory Environmental Assessment Division
+NPDES National Pollutant Discharge Elimination System
+NPS Nonpoint Source
+OAR Oregon Administrative Rule
+ODA Oregon Department of Agriculture
+ODF Oregon Department of Forestry
+ODFW Oregon Department of Fish and Wildlife
+OHA Oregon Health Authority
+OWEB Oregon Watershed Enhancement Board
+PWS Public Water System
+QAPP Quality Assurance Project Plan
+RP Responsible Person
+RUV Recreational Use Value
+SAP Sampling Analysis Plan
+SRF State Revolving Fund
+SWA Source Water Assessment
+TMDL Total Maximum Daily Load
+USACE U.S. Army Corps of Engineers
+USFS U.S. Forest Service
+WLA Waste Load Allocation
+WMS Watershed Management Section
+WQA Water Quality Assessment
+WQP Water Quality Permits
+WQS Water Quality Standards
+WPCF Water Pollution Control Facilities
+WQMP Water Quality Management Plan
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 3
+Table of contents
+List of Tables ....................................................................................................... 6
+List of Figures ..................................................................................................... 6
+Overview and purpose ........................................................................................ 7
+Freshwater Cyanobacteria Harmful Algal Blooms ...................................................................... 7
+CyanoHABs in Oregon................................................................................................................ 7
+Goals and objectives................................................................................................................... 8
+Purpose ....................................................................................................................................... 8
+DEQ Freshwater CyanoHAB Strategy components ................................................................... 9
+Drinking Water CyanoHABs: Monitoring and Public Health Response ....... 10
+Starting point: Evaluate drinking water sources susceptible to cyanotoxins ............................ 11
+Decision point: Determine susceptibility ................................................................................... 11
+Raw water sampling at intake (biweekly).................................................................................. 12
+Decision point: Are cyanotoxins in raw water above action level? ........................................... 12
+Decision point: Are cyanotoxins in finished water above health advisory levels? .................... 13
+Technical assistance................................................................................................................. 14
+Recreational Freshwater CyanoHABs: Public Health Response .................. 18
+Starting point: Surveillance program for CyanoHABs ............................................................... 19
+Decision point: Pre-emptive advisory/recommend sampling .................................................... 20
+Issuing and lifting recreational use advisories .......................................................................... 20
+Additional technical support from DEQ ..................................................................................... 21
+Clean Water Act Freshwater CyanoHABs: Assessment and Actions .......... 25
+Starting point: Assessment for beneficial use support .............................................................. 27
+Data for Integrated Report cycle ............................................................................................... 27
+Comparison with assessment methodology ............................................................................. 27
+Decision point: Is the waterbody impaired by CyanoHABs? .................................................... 28
+Evaluation for TMDL development / Alternative Plan ............................................................... 29
+Decision point: Is a TMDL/Alternative plan needed? ................................................................ 29
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 4
+Total Maximum Daily Load (TMDL) .......................................................................................... 29
+Category 4B Alternative Plans .................................................................................................. 30
+Water Quality Management Plan .............................................................................................. 31
+Decision point: Do permits meet TMDL/Alternative Plan?........................................................ 31
+Permit development and issuance ............................................................................................ 31
+Permit meets wasteload allocations ......................................................................................... 32
+TMDL/Alternative Plan implementation .................................................................................... 32
+TMDL/Alternative Plan Effectiveness Monitoring ..................................................................... 32
+Decision Point: Are TMDL/Alternative Plan goals met? ........................................................... 33
+Synthesis and recommendations .................................................................... 36
+Climate Change ........................................................................................................................ 36
+Environmental Justice ............................................................................................................... 37
+Funding ..................................................................................................................................... 37
+Conclusions .............................................................................................................................. 39
+Appendix A: Marine HABs ................................................................................ 40
+References ......................................................................................................... 42
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 5
+List of Tables
+Table 1. Health advisory thresholds for cyanotoxins in finished drinking water established by
+OHA. ........................................................................................................................................................... 13
+Table 2. Specific actions and subprograms identified as currently part of or needed for
+addressing drinking water related issues related to CyanoHABs in Oregon freshwaters. ........... 15
+Table 3. RUV thresholds for triggering a health advisory in Oregon. ............................................... 20
+Table 4. Specific activities and subprograms identified as currently active or needed for
+addressing recreational use issues related to CyanoHABs in Oregon freshwaters. ..................... 23
+Table 5. Specific activities and subprograms identified as currently active or needed for
+addressing Clean Water Act issues related to CyanoHABs in Oregon waterbodies..................... 34
+List of Figures
+Figure 1. Workflow and accountability diagram for DEQ and partners describing monitoring of
+and response to CyanoHABs in Oregon’s drinking water sources. ................................................. 11
+Figure 2. Workflow and accountability diagram for DEQ and partners describing the roles and
+responsibilities for responding to CyanoHABs in Oregon's recreational waterbodies. ................. 19
+Figure 3. Workflow and accountability diagram for DEQ and partners describing the roles and
+responsibilities for assessing and managing CyanoHABs under the Clean Water Act. ............... 26
+Figure 4. Schematic of Oregon coastal shellfish advisories by year from 2007-2017. ................. 41
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 6
+Overview and purpose
+Freshwater Cyanobacteria Harmful Algal Blooms
+Microscopic freshwater organisms that perform photosynthesis, otherwise known as algae,
+provide important food resources for aquatic food webs in lakes, reservoirs, streams, and rivers.
+However, under certain conditions, algal populations can grow at an accelerated rate and result
+in a “bloom.” In some cases, these algal blooms can create harmful conditions by degrading
+water quality, producing toxins dangerous to humans and animals, or a combination of both.
+Harmful blooms of a particular type of aquatic bacteria that has been historically grouped with
+algae-cyanobacteria-pose specific threats to water quality and human health in freshwater
+ecosystems. Cyanobacteria Harmful Algal Blooms (CyanoHABs; also referred to as HCBs) can
+impair water quality by degrading pH and dissolved oxygen conditions and produce a class of
+compounds known as cyanotoxins. Cyanotoxins threaten humans, wildlife, livestock, and
+fisheries because these compounds can cause a variety of sicknesses, and possibly death,
+from exposure or ingestion. The frequency, extent, and magnitude of CyanoHABs in
+waterbodies can respond to a variety of individual and combinations of factors, including
+changes in water temperature, nutrient loading, and hydrologic conditions within watersheds.
+This document focuses on freshwater CyanoHABs and does not address harmful algal blooms
+that occur in estuarine and marine environments. However, concepts and actions identified in
+this document could eventually be used to address blooms in these waters. Appendix A: Marine
+HABs provides background on cyanobacteria and other types of harmful algal blooms in
+estuarine and marine ecosystems.
+CyanoHABs in Oregon
+Public concern over freshwater CyanoHABs has increased in Oregon since the early 2000s.
+From 2007 to 2023, 189 recreational advisories were issued by the Oregon Health Authority
+(OHA) for elevated cyanotoxins in waterbodies across the state (Oregon Health Authority,
+Cyanobacteria Advisory Archive, 2022). In 2018, a CyanoHAB in Detroit Reservoir caused the
+city of Salem to issue a “Do Not Drink” advisory for vulnerable populations (the young, elderly,
+and immunocompromised) due to elevated cyanotoxins in finished drinking water.
+In 2010, the Department of Environmental Quality (DEQ) started to include waters with
+documented CyanoHABs on its list of impaired waters, as required under Section 303(d) the
+Clean Water Act (US EPA, Clean Water Act Section 303(d): Impaired Waters and Total
+Maximum Daily Loads (TMDLs), 2021)). These waterbodies do not meet water quality
+standards and thus do not support designated beneficial uses (drinking water, recreation, or
+agricultural/livestock use). The listing of a waterbody as impaired by a CyanoHAB requires DEQ
+to determine the cause(s) and establish a plan known as a Total Maximum Daily Load, or
+TMDL, for meeting water quality standards. At the time of the development of this strategy, the
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 7
+current EPA-Approved 2022 Integrated Report lists 53 waterbodies as water quality impaired by
+CyanoHABs (Oregon Department of Environmental Quality, 2022 Final Integrated Report,
+2022). Seven of the 53 waterbodies have established TMDLs for addressing CyanoHABs
+(Category 4A) and one has a Category 4B Alternative Plan in place.
+The 2023 DEQ CyanoHAB strategy described here documents DEQ’s actions to support the
+statewide monitoring, response, assessment, and management of CyanoHABs in Oregon. This
+strategy provides significant updates to the DEQ HABs strategy presented in 2011 (Oregon
+Department of Environmental Quality, Oregon DEQ Harmful Algal Bloom (HAB) Strategy, 2011).
+Recommendations in the 2023 strategy support continued implementation of several of the
+actions proposed in 2011 and identifies additional needs to support and expand current
+operations. Recommendations described in the strategy may require additional funding from
+state, federal, or other applicable sources.
+Goals and objectives
+The goal of this strategy is to outline the approach DEQ takes to detect, monitor, assess, and
+manage CyanoHABs as an agency and in coordination with partner agencies and interested
+parties. In the process of working toward this goal, we have identified gaps and have developed
+recommendations to improve and expand the DEQ CyanoHABs strategy.
+Objectives of this strategy include:
+• Describe the specific ways in which DEQ works with OHA and other state, federal, and
+external partners to detect, monitor, and manage CyanoHABs in drinking water sources
+and recreational waterbodies
+• Describe the process by which DEQ identifies, lists, examines, monitors, and manages
+CyanoHABs within the framework of the Clean Water Act
+• Provide decision points, process steps, data needs, and flow diagrams for how different
+subprograms work on CyanoHABs within DEQ
+• Identify and quantify DEQ resources used on efforts to address CyanoHABs in Oregon
+Purpose
+The purpose of DEQ’s CyanoHAB Strategy is to protect public health and the environment. The
+primary audience for this 2023 strategy is the State of Oregon and DEQ management and staff
+and is intended to function as an operational manual. However, the strategy can also be used
+by other government agencies and the public to understand decision points, processes, and
+responsible programs in the various components of the strategy. The overall effort to address
+CyanoHABs involves a broad partnership of federal, state, and local partners. Implementation of
+statewide actions to address CyanoHABs requires strong collaborations among all partners.
+This strategy document does not contain in-depth background information, current areas of
+research, or policy positions on CyanoHABs. Background and policy information can be
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 8
+accessed from the 2011 DEQ HABs strategy (Oregon Department of Environmental Quality,
+Oregon DEQ Harmful Algal Bloom (HAB) Strategy, 2011), from the US EPA’s CyanoHABs
+website (US EPA, Cyanobacterial Harmful Algal Blooms (CyanoHABs) in Water Bodies, 2023),
+and the Interstate Technology Regulatory Council’s Harmful Cyanobacteria Bloom website
+(Interstate Technology Regulatory Council, 2022).
+DEQ Freshwater CyanoHAB Strategy components
+DEQ’s strategy for addressing Freshwater CyanoHABs includes three main components:
+• Drinking Water CyanoHABs: Monitoring and Public Health Response
+• Recreational Freshwater CyanoHABs: Public Health Response
+• Clean Water Act Freshwater CyanoHABs: Assessment and Actions
+Detailed schematics and explanations of the collaborative process among DEQ, OHA, and other
+local, state, and federal partners can be accessed through the links above. For two of these
+components - drinking water and recreational use advisories - DEQ coordinates with OHA to
+monitor, sample, and analyze water quality samples for cyanotoxins. OHA issues and lifts public
+drinking water and recreational use advisories for freshwater CyanoHABs. OHA maintains a
+drinking water and recreational website that shows these advisories and links to other general
+information regarding CyanoHABs (Oregon Health Authority, Oregon Drinking Water Services,
+2022; Oregon Health Authority, Cyanobacteria Blooms, 2022). DEQ maintains a list of
+waterbodies impaired by CyanoHABs that can be accessed from the Water Quality Assessment
+Integrated Report website (Oregon Department of Environmental Quality, 2022 Final Integrated
+Report, 2022).
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 9
+Drinking Water CyanoHABs:
+Monitoring and Public Health
+Response
+This section describes the ways in which DEQ works with the OHA Drinking Water Services
+(DWS) and other partners to address CyanoHABs in Public Drinking Water Systems (PWSs).
+Under an interagency agreement, the TMDL and Drinking Water Protection (DWP) programs
+and LEAD provide technical assistance and laboratory analysis to OHA DWS and as part of
+voluntary actions by PWSs. These administrative rules comprise Oregon’s directives for
+cyanotoxin monitoring that apply to select PWSs and establish minimum requirements for
+monitoring and public notification. The Drinking Water CyanoHABs figure below highlights the
+roles and responsibilities each agency and partners have for monitoring and public health
+response. Details for each of the schematic components are described subsequently. Table 2
+describes specific activities and subprograms currently active or needed for addressing drinking
+water issues related to CyanoHABs in Oregon freshwaters.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 10
+Drinking Water CyanoHABs: Monitoring and public health response
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 11
+SWD
+AHO
+SWP
+DAEL QED
+PWD/LDMT
+QED
+Workflow and accountability diagram
+Either resume biweekly
+No: after two raw water sampling or
+E s v u w a s l a u ce t a e p t r e t i s b d o i r l u i i n t r y c k e i t n o g No further action N R o et : u c r o n n t t i o n b ue iw b e i e w k e ly e k s l a y m sa p m lin p g l in af g t e o r r Recrea I t n i p f o o r n o r a m g l r C a O y m H an A o HABs consecutive non-detects c f o in n i t s in h u ed e w w e at e e k r ly s a ra m w p a le n s d cyanotoxins two consecutive weeks < action levels
+Confirmation
+su D s e c t e e p r t m ib in ili e t y No c R y a r a w e n s o w u t l a o ts t x e in r le C v y e l a l e s n v ≥ o e t l a s o c ? x t i i n o n Yes E cy n r a t e r n y s o u p t l o o ts x in in t e C d n y e a t t r n e y o c p t t e o o d x in i a n t t ? s Yes h s e a 2 a m 4 lt p h h l e o a u d w r v i s i t s h > o i r n y
+Confirmation levels
+sample within
+24 hours ≤
+Yes health advisory
+Yes levels
+m d o V e n o t i l e t u o r n m r t i a n in r g y e t o Yes dr s R i a n a m k i w n i p n t w a g lin k a w e g t a e a t r t e r wee A k s d l a y d m r it a p i w o lin n w g al a ter d s o a a E y n m n e a t p n r b l y e d u p s w w i o n i e i t e n e h s t k i s n l y e s C n a 2 o t m 4 r n y p f h i p l r o e m o u w in r a s i t t t i a h a o t n i n n d P N w u o b it t l h i D c in r n i 2 n o 4 k ti c h O e o r / d u D e rs r o Pu D b o lic N O n o r o d t t e D ic r r e i / n k L ift
+susceptibility (biweekly) thereafter daily thereafer
+dr s s C i a n u o s m s k o o c i r p u n e d g l r p i i c n n t w e i g a b s a t o l e t e f e r C a y t a a D n c ( c o o E r r Q t e o e d x l x a i i t t n b e e o d r a r n n l a a a a t l b o l y ) r s y is C a y t a a D n c ( c o o E r r Q t e o e d x l x a i i t t n b e e o d r a r n n l a a a a t l b o l y ) r s y is
+s a u s d T s s e e i c s t c e t e h p a r n n m ti i c b c i e n i a l e i l t t o y T fo e c r c o h in m n f i o m c r a u m l n a a s i t c s i a o is t n t io a a n n n c d e
+Key: Start/End Decision Data Process Subprocess Document
+Figure 1. Workflow and accountability diagram for DEQ and partners describing monitoring of
+and response to CyanoHABs in Oregon’s drinking water sources.
+Starting point: Evaluate drinking water sources
+susceptible to cyanotoxins
+Decision point: Determine susceptibility
+OHA DWS decides if a drinking water source is susceptible to contamination by cyanotoxins
+with technical assistance from the TMDL and DWP programs. A drinking water source is
+considered susceptible to cyanotoxins if it uses a surface water source that:
+• has had a documented CyanoHAB or cyanotoxin detection in the past
+• is downstream from a waterbody with past CyanoHAB or cyanotoxin detections
+• is determined to be susceptible to cyanotoxins as determined by WSA in the Integrated
+Report (algae and aquatic weeds)
+Susceptible drinking water sources can also be identified based on the characteristics of the
+source (e.g., slow-moving or stagnant water, temperature, excess nutrient loading, water quality
+data, satellite imagery, presence of microcystin- or cylindrospermopsin-producing genes, or
+other relevant information).
+Additionally, a PWS is considered susceptible and subject to OARs 333-061-0510 to 333-061-
+0580 if a PWS purchases and supplies water from a source deemed susceptible according to
+the criteria described above.
+OHA DWS can approve voluntary cyanotoxin monitoring upon request by PWS if factors in the
+watershed indicate potential susceptibility (i.e., a potential bloom in an upstream waterbody). If
+cyanotoxins are detected, the drinking water source meets the definition of susceptible and the
+public water system them becomes are subject to the cyanotoxin rules (OARs 333-061-0510 to
+333-061-0580).
+The DWP and OHA DWS have created Source Water Assessments for most PWSs in Oregon
+(Oregon Department of Environmental Quality, About Drinking Water Protection, 2023). Using
+these and other resources, DEQ provides technical support to OHA for the identification and
+confirmation of susceptible drinking water sources.
+If a drinking water source is deemed susceptible, OHA DWS coordinates with the DEQ
+Laboratory and Environmental Assessment Division (LEAD) on communicating and scheduling
+seasonal (May – October) biweekly sampling of cyanotoxin levels in raw water from the source
+by the PWS. If deemed not susceptible, no further actions or sampling are required. However,
+the PWS may sample raw water voluntarily. The flowchart OHA DWS uses for sampling and
+decision points for susceptible water sources is consistent with the flow diagram presented in
+this section (Oregon Health Authority, Cyanotoxin Monitoring Requirements For Sources
+Determined to be Susceptible, 2023).
+Raw water sampling at intake (biweekly)
+PWSs deemed as susceptible to CyanoHAB by OHA DWS must sample raw water every two
+weeks from May 1 to October 31 each year or until the system is no longer considered
+susceptible. Cyanotoxin samples must be analyzed at a laboratory accredited by the Oregon
+Environmental Laboratory Accreditation Program or by LEAD (which most PWS currently use).
+The DEQ Harmful Algal Blooms: Drinking Water Cyanotoxin Monitoring page has guidance for
+water systems needing to sample (Oregon Department of Environmental Quality, Harmful Algal
+Blooms: Drinking Water Cyanotoxin Monitoring, 2023).
+Decision point: Are cyanotoxins in raw water above
+action level?
+Biweekly sampling of cyanotoxins in raw water continue from May 1 to October 31 for
+susceptible PWS unless concentrations of total microcystins ≥ 0.20 µg/L or cylindrospermopsin
+≥ 0.30 µg/L. Upon detection of total microcystins ≥ 0.20 µg/L or cylindrospermopsin ≥ 0.30 µg/L
+in raw water:
+• The PWS must immediately increase raw water monitoring to weekly and sample
+finished water within one business day and weekly thereafter. If cyanotoxins are
+detected in finished water, finished water must be sampled daily.
+• Exceeding a health advisory level in a sample collected from an entry point or a
+distribution sampling point requires additional monitoring and public notification (OAR
+333-061-0540 and OAR 333-061-0570).
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 12
+• The OHA Recreational HABs program must be notified to determine if a recreational
+advisory is needed.
+If total microcystins are < 0.20 µg/L or non-detect and cylindrospermopsin are < 0.30 µg/L or
+non-detect in two consecutive weeks of raw water sampling and there is no upstream
+recreational CyanoHABs advisory, sampling of raw water returns to biweekly intervals at the
+PWS.
+Decision point: Are cyanotoxins in finished water
+above health advisory levels?
+Following the first detection of total microcystins ≥ 0.20 µg/L or cylindrospermopsin ≥ 0.30 µg/L
+in raw water, a sample from the entry point of the finished drinking water entering the
+distribution system must be taken within one business day. If two consecutive samples of
+finished water from the entry point and two consecutive raw water samples have total
+microcystins < 0.20 µg/L or non-detect and cylindrospermopsin < 0.30 µg/L or non-detect, then
+the sampling schedule returns to biweekly sampling of raw water at the PWS intake (OAR 333-
+061-0510).
+OHA DWS has implemented health advisory levels for cyanotoxins in finished drinking water
+established by the EPA (Table 1).
+Table 1. Health advisory thresholds for cyanotoxins in finished drinking water established by
+OHA.
+Cyanotoxin Vulnerable People For Everyone
+(µg/L or ppb) (µg/L or ppb)
+Total Microcystins 0.3 1.6
+Cylindrospermopsin 0.7 3
+If a sample from finished drinking water at the entry has detectable levels of cyanotoxins,
+regardless of concentration level, a sample must be taken within 24 hours and sampling at the
+entry point must be conducted daily. If a cyanotoxin concentration is confirmed to exceed the
+levels listed in Table 1, the PWS and any purchasing distributor must issue a “Do-Not-Drink”
+order for that source within 24 hours (for the water system and any purchaser) and sampling of
+finished water at the entry point of the distribution system continues daily thereafter. In order to
+lift the order, two consecutive water samples from finished water and the distribution system
+must be at or below the health advisory levels for vulnerable people, defined as children
+younger than six, pregnant women, the elderly, and those with pre-existing conditions (Table 1).
+Once an order is lifted, the PWS must monitoring for the rest of the year according to rule
+requirements.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 13
+Technical assistance
+The TMDL and DWP programs can provide both OHA DWS and PWSs technical assistance in
+determining system susceptibility to CyanoHABs, interpretation of cyanotoxin monitoring results,
+and communication of cyanotoxin results to the general public. The DWP program for SWA
+maintains information on CyanoHABs on its program website (Oregon Department of
+Environmental Quality, About Drinking Water Protection, 2023).
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 14
+Table 2. Specific actions and subprograms identified as currently part of or needed for addressing drinking water related issues
+related to CyanoHABs in Oregon freshwaters.
+DEQ Program(s) Action/subprogram Currently Recommendation(s)
+active?
+LEAD/DWP/TMDL Develop and implement a joint DEQ/OHA strategy to Yes Continue with updates
+identify PWSs susceptible to CyanoHABs and provide as needed
+technical assistance for testing, treatment alternatives,
+and protection
+DWP Partnership between OHA and DEQ to ensure Yes Continue
+consistent evaluation of cyanotoxin contamination risks
+for PWS
+DWP Conduct source assessments of PWSs for potential Yes Continue with updates
+contaminants, including cyanotoxins, using water as needed
+quality data, remote sensing, and landscape models
+DWP/TMDL Provide protection assistance and grant support to Yes Continue
+PWSs identified as susceptible to CyanoHABs
+TMDL Develop a nutrient strategy to assess sources of and Yes Continue and expand as
+reduction strategies for nutrient loading to watersheds resources allow
+and surface waters
+DWP Assess susceptibility of unregulated domestic drinking No Implement as resources
+water sources to CyanoHABs allow
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 15
+DEQ Program(s) Action/subprogram Currently Recommendation(s)
+active?
+DWP/TMDL Provide technical assistance and grant support to areas No Implement as resources
+with domestic drinking water sources susceptible to allow
+CyanoHABs
+TMDL Enact pollution reduction strategies in areas susceptible Yes Continue and expand as
+to CyanoHABs for both public and private domestic resources allow
+water sources
+DWP Recommend to local authorities and OHA potential No Implement as resources
+restrictions on public and domestic drinking water and priorities allow
+sources affected by frequent CyanoHABs
+DWP Leverage resources, share water quality and GIS data Yes Continue with updates
+analyses, and assist other programs related to as needed
+CyanoHAB-susceptible drinking water sources
+TMDL/DWP Conduct source assessments of potential factors Yes Continue and expand as
+contributing to CyanoHABs in PWSs to develop resources and
+statewide policy and drinking water protection competing TMDL
+strategies priorities allow
+LEAD/TMDL Collect monitoring data to assess the susceptibility of Yes Continue and expand as
+PWSs to CyanoHABs resources allow
+TMDL Issue TMDLs for PWS contaminated by CyanoHABs No As competing TMDL
+priorities allow
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 16
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 17
+Recreational Freshwater
+CyanoHABs: Public Health Response
+This section describes how DEQ works with OHA and other partners to address CyanoHABs in
+recreational waterbodies. The OHA Recreational HABs program is responsible for issuing,
+lifting, and communicating about public health advisories for cyanotoxins in recreational
+waterbodies. DEQ is an active partner tasked with cyanotoxin monitoring and water sampling
+and, independently, can investigate CyanoHABs in recreational waterbodies for Clean Water
+Act purposes. DEQ provides satellite imagery, coordinates monitoring internally and with OHA
+and external partners, and conducts laboratory analyses for cyanotoxins according to accredited
+methods. If there is not a clearly identified partner for water quality monitoring, DEQ may
+provide monitoring staff to collect, preserve, and transport samples. An interagency agreement
+between OHA and DEQ has been developed to define and partially fund joint OHA-DEQ
+activity. The Recreational Freshwater CyanoHABs figure highlights the roles each agency and
+external partners occupy for monitoring and public health responses. Details for each of the
+schematic components are described subsequently. Table 4 describes specific activities and
+subprograms currently active or needed for addressing recreational use issues related to
+CyanoHABs in Oregon freshwaters.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 18
+Recreational Freshwater CyanoHABs: Public Health Response
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 19
+sBAH lanoitaerceR
+AHO
+DAEL
+QED
+snoigeR
+QED
+srentrap
+lanretxE
+LDMT
+QED
+Workflow and accountability diagram
+No further Do not issue/
+Surveil C la y n a c n e o p H r A o B g s ram for ac N ti o on Pr a e d -e v m iso p r t y ive lift a N dv o isory Dr C in y I a k n i n n f o o g H r W m A B at s e r
+Program
+Re a c b e o C i u v y t e a a i n n p o f o o H t r A m e B n a t t ia io l n P re s r a e a c d o m - v e m i p m s m l o i p n r e t y g i n / v ? d e Yes Yes: sample weekly C ab ya o n v o e t R o U xi V n ? s Yes U Re se cr A e d at v i i o so n r a y l
+RUV cyanotoxin RUV
+sampling and cyanotoxin
+analysis results
+Local RUV cyanotoxin
+observations Yes sampling
+Laboratory
+obse L r o v c a a t l i ons Yes RUV s a c m ya p n li o n t g oxin a a m c n s c e t a r a e l e n y t d s s d i i s t a s a t r t t d a h i t s o a e n t
+Weekly Recommend pre-
+satellite emptive advisory/
+imagery sampling?
+No
+No further
+action
+Key: Start/End Decision Data Process Subprocess Document
+Figure 2. Workflow and accountability diagram for DEQ and partners describing the roles and
+responsibilities for responding to CyanoHABs in Oregon's recreational waterbodies.
+Starting point: Surveillance program for CyanoHABs
+To support decisions for public health advisories in recreational waterbodies, OHA operates a
+recreational HABs program. The program provides resources for partner agencies, waterbody
+managers, and the public to evaluate and monitor for CyanoHABs. Based on guidance provided
+by these documents, EPA, the Interstate Technological Regulatory Council, external partners
+such as federal agencies, lake managers, the general public, regional DEQ staff, and staff from
+the TMDL program provide OHA with information and recommendations about potential
+CyanoHABs in waterbodies across the state. OHA consults with DEQ staff and regional
+partners about issuing a pre-emptive advisory based on visual observations and recreational
+use level. OHA also consults with LEAD about the need for sampling to determine cyanotoxin
+levels.
+Decision point: Pre-emptive advisory/recommend
+sampling
+OHA may issue a pre-emptive recreational use health advisory when:
+1. Visible scum with supporting photographs and cyanotoxin analysis will be performed
+within one business day. Scum is defined as a visible mass of cyanobacteria identified in
+the water body; or
+2. Submitted samples by external partners or DEQ are above OHA’s Recreational Use
+Values (RUVs) (Table 3).
+Table 3. RUV thresholds for triggering a health advisory in Oregon.
+Cyanotoxin Microcystin Anatoxin-a Saxitoxin Cylindrospermopsin
+RUV (µg/L) 8 15 8 15
+The DEQ Watershed Management Section may recommend a pre-emptive advisory and
+additional sampling to OHA based on analysis of information provided by DEQ regions and/or
+external partners, including, but not limited to, satellite imagery, visual observations of “scum”,
+water quality samples for cyanotoxins, or other information describing cyanobacteria
+communities. If a pre-emptive advisory is not issued by OHA, the TMDL program may still
+request additional samples be taken by LEAD or external partners funded through the TMDL or
+NPS programs.
+Issuing and lifting recreational use advisories
+An interagency agreement between OHA and DEQ has been developed to define and partially
+fund joint OHA-DEQ activity. If requested by OHA, the DEQ laboratory may conduct laboratory
+analysis for cyanotoxins of water quality samples submitted by external partners or may
+conducted water quality sampling and laboratory analysis for cyanotoxins when external
+partners have not been identified. LEAD may provide monitoring staff to collect, preserve, and
+transport samples.
+External partners, including OHA defined partners, federal agencies, other state agencies, local
+governments, and the public, may conduct independent observations and sampling for potential
+CyanoHABs. These partners may consult, but are not required to, with DEQ and OHA on
+designing and implementing a monitoring study to assess cyanotoxins in relation to RUVs and
+may report potential CyanoHABs to DEQ and OHA.
+LEAD conducts analyses for cyanotoxins using accredited methods according to OAR Chapter
+333 Division 64. External partners are required to sample and analyze samples using the same
+accredited methods. External Partners contract with laboratories accredited according to the
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 20
+OHA approved list of laboratories for recreational and drinking water sampling or LEAD to
+perform the required analyses (Oregon Health Authority, Cyanobacteria Blooms, 2022).
+If the subsequent cyanotoxin sample collected within one business day is below all RUVs, OHA
+will lift the pre-emptive advisory. However, if cyanotoxins levels are above one or more
+cyanotoxins RUVs (Table 3), LEAD or an external partner informs OHA immediately and a
+recreational use advisory is issued. Weekly sampling of cyanotoxins then commences. OHA lifts
+the advisory when two consecutive samples fall below the RUVs.
+Additional technical support from DEQ
+The TMDL program provides routine seasonal technical support to OHA and other federal,
+regional, and local partners for the identification and analysis of potential CyanoHABs in
+recreational waterbodies. General support includes expert consultation, analysis of water quality
+data, modeling, and interpretation of field and remotely sensed data.
+The TMDL program has worked with the EPA and NASA to compile weekly imagery of
+cyanobacteria abundance in large (>1 km2) Oregon waterbodies. Images are compiled weekly
+from May to October and compiled on an interactive website (Oregon Department of
+Environmental Quality, Satellite Estimates of Cyanobacteria in Oregon Lakes and Reservoirs,
+2023). Weekly emails are distributed to DEQ regional staff, OHA, and external partners.
+Additional satellite imagery and images from other sources may be included on the website in
+the future.
+When specific waterbodies show potential CyanoHABs formation based on satellite imagery or
+other information, the TMDL program follows up with DEQ regional contacts and OHA
+recommended actions, including the issuance of a pre-emptive advisory and cyanotoxin
+sampling.
+DEQ regional staff may be available to support CyanoHAB monitoring in recreational
+waterbodies through on-site observations, feedback from the public, and examination of satellite
+imagery. Historically, LEAD has supplied regional staff with CyanoHABs sampling kits in
+advance of CyanoHABs season.
+Regional staff must be notified by OHA or LEAD in a timely manner if a potential CyanoHAB is
+reported within their basin of responsibility from external partners or internal agency sampling.
+If LEAD will conduct cyanotoxin sampling at the request of OHA, it must notify the appropriate
+staff from the region and TMDL program prior to sampling and report field conditions at time of
+sampling and sample results.
+When a local partner cannot be identified for addressing a potential CyanoHABs, DEQ regional
+staff may assume the local partner role upon request. Upon identification of a potential
+CyanoHABs through observations of visible scum or other evidence, regional staff may
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 21
+coordinate with OHA, LEAD, or the TMDL program to conduct additional investigations or
+sampling. They are also available to aid in cyanotoxin sampling and field observations as
+requested by LEAD or OHA.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 22
+Table 4. Specific activities and subprograms identified as currently active or needed for addressing recreational use issues related to
+CyanoHABs in Oregon freshwaters.
+DEQ Programs Activity/subprogram Currently Active? Recommendation(s)
+LEAD Participation in CyanoHAB monitoring program with OHA Continue and expand as
+Yes
+and other local partners resources allow
+LEAD Work with OHA to review and refine monitoring methods Continue and update as
+Yes
+for cyanotoxins needed
+LEAD/TMDL Partner with OHA, Oregon State University, and other
+groups to host an annual stakeholder meeting to review Yes Continue
+and discuss CyanoHABs
+LEAD/TMDL/Regions Maintain a DEQ CyanoHAB response team for responding Continue and expand as
+Yes
+to CyanoHAB events reported by agencies or the public resources allow
+LEAD/TMDL Conduct annual review following CyanoHABs monitoring
+Yes Continue
+season for process improvements and data maintenance
+TMDL Develop a DEQ CyanoHABs website to provide access to
+the CyanoHAB strategy, Satellite analysis, other DEQ
+Yes Continue and update
+CyanoHAB related info, links, and other available
+information
+LEAD/TMDL Develop Memorandum of Agreements among state agency
+partners to better define roles and responsibilities for Partially Yes Expand beyond OHA
+addressing CyanoHABs
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 23
+DEQ Programs Activity/subprogram Currently Active? Recommendation(s)
+LEAD/TMDL Incorporate genetic sampling, satellite analyses, and water
+Continue and expand as
+quality modeling for proactive issuance of recreational Yes
+resources allow
+advisories
+LEAD/DWP/TMDL/ Form Oregon CyanoHABs Task Group (state, federal, local
+Regions agencies, academics) to discuss, plan, develop and
+Continue, update, and
+coordinate actions in Oregon to improve multi-agency Partially Yes
+expand as resources allow
+response to CyanoHABs and ultimately prevent and control
+CyanoHABs
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 24
+Clean Water Act Freshwater
+CyanoHABs: Assessment and
+Actions
+This section describes how DEQ identifies, assesses, and determines appropriate actions for
+protecting and restoring Oregon waterbodies impaired by CyanoHABs. DEQ is responsible for
+implementing and managing the Clean Water Act in Oregon. Figure 3 highlights the roles each
+DEQ water quality subprogram and external partners have for identifying, developing, and
+implementing the actions. The process starts with the assessment for beneficial use supported
+and ultimately ends with the implementation of actions to restore beneficial uses through a
+TMDL or an alternative plan. As of the 2022 Integrated Report cycle, seven waterbodies have
+approved TMDLs for CyanoHABs (Category 4A) and one has an approved Alternative Plan
+(category 4B) (Oregon Department of Environmental Quality, 2022 Final Integrated Report,
+2022). Table 5 describes specific activities and subprograms currently active or needed for
+addressing Clean Water Act issues related to CyanoHABs in Oregon waterbodies.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 25
+Clean Water Act Freshwater CyanoHABs: Assessment and Management Actions
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 26
+/seitilicaf/sAMD
+AQW
+QED
+LDMT
+QED
+DAEL
+QED
+snoigeR
+QED
+PQW
+QED
+snosrep
+elbisnopser
+Workflow and accountability diagram
+Do not include
+No on Category 5
+303(d) list
+Data for
+Assessment for integrated Comparison Waterbody Category 4A or
+beneficial use report with assessment impaired for 4B on 303(d) list
+support methodology CyanoHABs?
+cycle
+No Category 5 list
+Yes on 303(d) report
+Yes
+No
+Evaluation for
+TMDL or TMDL/ TMDL/ Are TMDL/
+TMDL/ Alternative Plan yes Alternative Plan Data and Alternative Plan Alternative Plan Alternative Plan needed? development models goals met?
+development
+Data
+Monitoring
+projects Alternative Plan
+effectiveness
+monitoring
+Water Quality
+Local Management
+information Plan /
+Alternative Plan
+Permit Do permits meet
+development No TMDL/Alternative
+and issuance Plan?
+Yes
+TMDL/
+TMDL / Alternative Alternative Plan Data
+Plan Implementation effectiveness
+monitoring
+Key: Start/End Decision Data Process Subprocess Document
+Figure 3. Workflow and accountability diagram for DEQ and partners describing the roles and
+responsibilities for assessing and managing CyanoHABs under the Clean Water Act.
+Starting point: Assessment for beneficial use support
+DEQ must assess water quality for beneficial use support and report to EPA on the condition of
+Oregon's waters. Every two years, the Water Quality Assessment Program (WQA) prepares an
+Integrated Report to meet the requirements of Federal Clean Water Act Sections 305(b) and
+303(d). The report cycle begins with a public call for data.
+Data for Integrated Report cycle
+CyanoHABs monitoring data and CyanoHABs advisory information are evaluated every two
+years to assemble the Integrated Report. Data may come from:
+• DEQ’s Ambient Water Quality Monitoring System
+• EPA's Water Quality Portal
+• DEQ’s Volunteer Monitoring Program
+• OHA public health drinking water advisories list.
+• OHA public health recreational advisories issued and lifted throughout the season for
+monitored and sampled water bodies.
+Comparison with assessment methodology
+CyanoHABs monitoring data and advisory information compiled during the Integrated Report
+cycle call for data are assessed using DEQ’s most current Integrated Report assessment
+methodology. Based on the current data window defined in the methodology, a waterbody may
+be classified into the following assessment categories for CyanoHABs:
+• Category 2: Available data and information indicate that some designated uses are
+supported and the water quality standard is attained.
+• Category 3: Insufficient data to determine whether a designated use is supported.
+Oregon further subclassifies Category 3 as:
+3B: Insufficient to determine use support but some data indicate non-attainment
+o
+of a criterion
+3C: Potential concern when data are insufficient to determine full use support
+o
+3D: Insufficient data to determine use support because numeric criteria are less
+o
+than quantitation limits.
+• Category 4: Data indicate that at least one designated use is not supported but a TMDL
+is not needed to address the pollutant cause. This includes:
+4A: TMDLs that will result in attainment of water quality standards and beneficial
+o
+use support have been approved.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 27
+4B: Other pollution control requirements are expected to address pollutants and
+o
+will result in attainment of water quality standards.
+4C: Impairment caused by pollution, not by a pollutant (e.g., flow or lack of flow
+o
+are not considered pollutants).
+• Category 5: Data indicate a designated use is not supported or a water quality standard
+is not attained and a TMDL or Alternative Plan is needed. This category constitutes the
+Section 303(d) list that EPA will approve or disapprove under the Clean Water Act.
+Decision point: Is the waterbody impaired by
+CyanoHABs?
+To be placed on the Category 5 list as impaired by CyanoHABs, a waterbody must have had a
+public health advisory issued by OHA, in conjunction with other federal, state, county, city or
+local agencies, within the data window which:
+• is a permanent advisory
+• has reoccurred for two or more HABs seasons
+• only occurred once but had cyanotoxin values above OHA guidelines for water contact
+recreation (Table 3)
+• finished water exceeds the advisory for vulnerable people AND where the waterbody is
+the source of water for a public water system (Table 1)
+• where there is a livestock watering use, only occurred once but had a microcystin value
+above livestock watering levels of 2.3 µg/L
+• Recreational advisories shall be associated with impairments of the water contact
+recreation use. Drinking water advisories shall be associated with impairments of the
+domestic water supply use. Exceedance of the reference concentration for livestock
+shall be associated with impairment of the livestock watering use.
+A waterbody is classified as Category 3B based on the data window if it has had a single
+season public health advisory issued by the OHA, in conjunction with other federal, state,
+county, city or local agencies, with no associated toxin data; or if it had raw source water
+exceeding drinking water values for vulnerable people only for water bodies with known drinking
+water intakes. Categories 3C and 3D do not apply to CyanoHABs.
+A waterbody is placed on the Category 4 list when data indicate that at least one designated
+use is not supported as a result of a CyanoHAB and a TMDL is not needed because:
+• 4A: a TMDL has been developed and approved
+• 4B: Other pollution controls are in place (alternative plan), or
+• 4C: Impairment caused by pollution not by a pollutant, such as low water flow
+To be delisted from the 303(d) list, a waterbody must be free of an OHA health advisory for
+more than three consecutive seasons and have supplemental data consistent with OHA’s
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 28
+advisory lifting procedures (photos, cell counts and toxin data below OHA guidelines) for at least
+two of those seasons.
+These criteria for listing and delisting are current for the 2022 Integrated Report (Oregon
+Department of Environmental Quality, 2022 Final Integrated Report, 2022). Criteria are subject
+to change and may be updated in future Integrated Report cycles.
+Evaluation for TMDL development / Alternative Plan
+The federal Clean Water Act requires Oregon or the EPA to develop a TMDL or execute an
+enforceable Category 4B Alternative Plan for every pollutant/waterbody combination on the
+Integrated Report Category 5 303(d) list impaired by CyanoHABs to ensure that state water
+quality standards are met and beneficial uses are protected. The required elements for
+developing a TMDL are identified in the Federal Code of Regulations at 40 CFR § 130.7 and in
+OAR 340-042-0040.
+TMDL development projects are prioritized based on a variety of factors including risk to
+beneficial use, court ordered schedules, and permit issuance priorities. TMDL development
+priorities are documented in the Integrated Report and in the Performance Partnership
+Agreement between DEQ and EPA.
+After a waterbody is listed as impaired by CyanoHABs, the TMDL program evaluates existing
+and additional data to better understand the condition of the waterbody, if the impairment is
+caused by pollutants or other conditions, and if a TMDL or Alternative Plan needs to be
+developed in light of the data analysis.
+Decision point: Is a TMDL/Alternative plan needed?
+If the initial data review and analysis indicate that a TMDL or Alternative Plan for CyanoHABs in
+a waterbody is not needed, the TMDL program recommends that the DEQ Water Quality
+Assessment Program re-evaluate the 303(d) category listing. This may include listing the
+waterbody as Category 4C (impairment not caused by a pollutant) or delisting the waterbody.
+If the initial data review and analysis determines that a TMDL or an Alternative Plan is needed,
+the TMDL program works with regional basin coordinators and the laboratory, to develop,
+implement, and monitor a TMDL or an Alternative Plan for pollutants contributing to the
+CyanoHAB impairment.
+Total Maximum Daily Load (TMDL)
+A TMDL is the maximum amount of pollutant that can be present in a waterbody while still
+meeting water quality standards. A TMDL is set to the loading capacity for any identified
+pollutants and consists of:
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 29
+• Waste Load Allocations allocated to permits for point sources regulated under the
+federal Water Pollution Control Act 402 33 USC Section 1342.
+• Load Allocations allocated to existing nonpoint sources including runoff, deposition, soil
+contamination and groundwater discharges, or to background sources.
+• Reserve Capacity to allocate for increases in pollutant loads from future growth and new
+or expanded sources. The TMDL may allocate no reserve capacity and explain that
+decision.
+• Margin of Safety to account for uncertainty related to the TMDL and, where feasible,
+quantifies uncertainties associated with estimating pollutant loads, modeling water
+quality and monitoring water quality. The TMDL will explain how the margin of safety
+was derived and incorporated into the TMDL.
+To develop a TMDL for CyanoHABs, the TMDL program, in consultation with the Regional
+Basin Coordinator and LEAD, conducts analyses and/or modeling to determine:
+• Pollutant identification: the pollutant(s) causing the impairment addressed in the TMDL
+• Water quality standards and beneficial uses: For the waterbody/basin, relevant water
+quality standards and beneficial uses will be identified and those most sensitive to
+impairment by the pollutant(s) will be specified. For CyanoHABs, the standards assess
+are based on the criteria for a Category 5 listing and the beneficial uses include:
+Domestic water supply
+o
+Irrigation
+o
+Livestock watering
+o
+Water contact recreation
+o
+• Loading capacity: the amount of a pollutant or pollutants that a waterbody can receive
+and still meet water quality standards.
+• Excess load: the difference between the actual pollutant load and loading capacity
+• Sources or source categories: actual pollutant loading from identified sources.
+• Seasonal variation: the seasonal variation and critical conditions in stream flow, sensitive
+beneficial uses, pollutant loading so that water quality standards will be attained and
+maintained during all seasons of the year
+• The Water Quality Management Plan (WQMP): the framework of management
+strategies to attain and maintain water quality standards.
+Category 4B Alternative Plans
+A Category 4B Alternative Plan is intended to meet water quality standards in a reasonable
+period of time using other pollution control requirements not necessarily included in a TMDL
+(Monschein & Reems, 2009).If an Alternative Plan is determined to be appropriate, the TMDL
+program works with the Regional Basin Coordinator and LEAD to develop, implement, and
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 30
+monitor the plan. According to EPA guidance, an Alternative Plan must include these six
+elements (Monschein & Reems, 2009):
+• Identification of segment and statement of problem causing the impairment
+• Description of the pollution controls and how they will achieve WQS, including a
+description of the pollutant loads needed to meet WQS and a description of the
+requirements under which the controls will be implemented
+• An estimate or projection of the time when WQS will be met
+• Schedule for implementing pollution controls
+• Monitoring plan to track effectiveness of pollution controls
+• Commitment to revise pollution controls, as necessary
+Water Quality Management Plan
+A WQMP, or framework, to guide how to reduce pollution to those waters impaired by
+CyanoHABs, is issued with every DEQ-developed TMDL. The WQMP along with the
+Assessment and Monitoring Strategy connects the planning and development for
+implementation and monitoring. OAR 340-042-0040 (Establishing TMDLs) identifies the
+elements of a WQMP.
+LEAD, in consultation with the TMDL program and DEQ regional staff, designs additional
+monitoring for informing the analysis and development of a TMDL or alternative plan for a
+waterbody impaired by CyanoHABs. This process develops a Quality Assurance Project Plan
+(QAPP) and Sampling Analysis Plan (SAP) for TMDL/Alternative Plan development monitoring
+projects. Laboratory staff coordinate and execute field sampling and water quality analysis for
+the projects.
+Decision point: Do permits meet TMDL/Alternative
+Plan?
+A required component of a TMDL is identifying and quantifying pollutant contributions from point
+sources. Wasteload allocations (WLAs) are allocated to permits for point sources regulated
+under the federal Clean Water Act section 402. For the purposes of CyanoHABs, the most
+relevant permits are National Pollutant Discharge Elimination System (NPDES) permits. Water
+Pollution Control Facilities (WPCF) permittees do not discharge to surface waters; however,
+WPCF permits allow land-based discharge of pollutants that may eventually enter surface
+waters through runoff and groundwater discharge. The TMDL WQMP plan identifies the point
+sources evaluated for the TMDL and how WLAs in a TMDL will be implemented for those
+sources subject to permit requirements in ORS 468B.050 (water quality permit).
+Permit development and issuance
+If one or more existing permits does not meet the TMDL WLA or Alternative Plan requirements
+or a facility/entity applies for a new permit, DEQ develops and issues a new permit as outlined
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 31
+OAR 340-045-005. Waste Load Allocations and other Alternative Plan management strategies
+are incorporated into the permit by the WQP Program during permit development for new
+issuance or renewal.
+Nutrients are a primary focus of NPDES Permits addressing water quality impairments by
+CyanoHABs. Several categories of permits support the control of nutrients or surrogate
+pollutants, most notably:
+• NPDES permits for discharges of wastewater (sewage treatment plants, industries such
+as pulp and paper mills, stormwater runoff, pesticide application, and Confined Animal
+Feeding Operations); and
+• WPCF permits for the prevention of discharges (onsite sewage disposal systems (septic)
+and land irrigation as part of Confined Animal Feeding Operations).
+Effluent limits in permits must be consistent with the assumptions used to develop TMDL WLAs.
+In the absence of a TMDL, such as Category 4B Alternative Plans, DEQ must assess the need
+for effluent limits based on water quality standards and where necessary, develop effluent limits.
+Permit meets wasteload allocations
+Water quality-based discharge limits in NPDES permits must be consistent with the
+assumptions and requirements of WLAs in approved TMDLs or Alternative Plans. If the existing
+permit meets the requirements for the effluent-based discharge of pollutants identified in the
+TMDL, the permittee continues to follow the requirements for discharge, treatment, best
+management practices, and monitoring described in the active permit.
+TMDL/Alternative Plan implementation
+DEQ Regional staff work with TMDL staff, LEAD, DMAs, facilities, or RPs to implement the
+requirements of the TMDL or Alternative Plan. The TMDL/Alternative Plan implementation
+process starts with the development and issuance of a WQMP or an Alternative Plan for
+CyanoHABs and the identified surrogate measures. A WQMP identifies the WLAs (point
+sources) and LAs (nonpoint sources) evaluated for the TMDL and how the allocations in a
+TMDL will be implemented by DMAs, facilities, or RPs for those sources. A Category 4B
+Alternative Plan is designed to attain water quality standards on a faster schedule than a TMDL,
+defers or bypasses the development of a TMDL, and is implemented upon DEQ approval.
+TMDL/Alternative Plan Effectiveness Monitoring
+DEQ Regional staff work with TMDL program staff, LEAD staff, Designated Management
+Agencies (DMAs), facilities, or responsible persons (RPs) to design effectiveness monitoring for
+a waterbody impaired by CyanoHABs where TMDL or Alternative Plans are implemented. This
+includes development of a QAPP and SAP. DMAs, facilities, RPs, or the DEQ laboratory
+(Alternative Plans only) conduct field sampling and water quality analyses for pollutants and
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 32
+surrogate measures identified that influence the frequency, magnitude, and extent of
+CyanoHABs. Water quality data collected from the projects are evaluated according to quality
+assurance/quality control criteria described in the developed QAPPs and SAPs and are posted
+to the DEQ Ambient Water Quality Monitoring System.
+Decision Point: Are TMDL/Alternative Plan goals met?
+Water quality data and surrogate measures collected as part of effectiveness monitoring are
+used to evaluate progress toward meeting water quality standards and management targets
+described in the approved WQMP or Alternative Plan. When a TMDL is issued for a CyanoHAB,
+the waterbody is placed on the 303(d) list Category 4A (TMDL developed and approved). DEQ,
+DMAs, RPs, and others continue periodic monitoring to evaluate progress towards meeting
+TMDL allocations and surrogates. These data contribute to a DEQ publication on water quality
+status and trends analysis each year. The analysis informs DEQ, other state and federal
+agencies, and the public on the condition of waters and if TMDL targets are being achieved, if
+water quality is improving or degrading, the pace of improvement or degradation, what actions,
+if any, are being taken to improve water quality, and where water quality data are and are not
+being collected.
+Based on the expected timeline in the WQMP or Alternative Plan, DEQ will update the
+Integrated Report (305(b) and 303(d) lists) in the subsequent cycle when monitoring data show
+the water body attains water quality standards. The assessment status is changed from
+Category 4A to Category 2; however, the TMDL or Alternative Plan remains in effect.
+If monitoring data do not indicate acceptable progress towards water quality targets, TMDL
+allocations, or surrogate measures, the DEQ WMS reevaluates the approved TMDL or
+Alternative Plan, including allocations and surrogate measures. The DEQ Watershed
+Management Section, DEQ regional staff, the DEQ laboratory, DMAs, RPs, and others re-
+engage to update the targets in the WQMP or Alternative Plan and the effectiveness monitoring
+strategy. This cycle of development, monitoring, and evaluation fits within the broader adaptive
+management process, which allows DEQ and implementing entities to course-correct towards
+achieving water quality standards.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 33
+Table 5. Specific activities and subprograms identified as currently active or needed for addressing Clean Water Act issues related to
+CyanoHABs in Oregon waterbodies.
+Currently
+DEQ Program Activity/subprogram Recommendation(s)
+Active?
+WQA List waterbodies as impaired (Category 5) by CyanoHABs Yes Continue and update as
+based on current Integrated Report Methodology needed
+WQA List other waters based on data showing cyanotoxin No As resources allow
+thresholds were exceeded but a recreational advisory was
+not issued
+WQA/TMDL IMD for Antidegradation Policy Implementation for nonpoint Yes Continue
+sources
+WQA/TMDL Evaluate the potential for numeric nutrient criteria No As resources allow
+development during the next triennial review
+WQS Develop water quality criteria for cyanotoxins No As resources and
+priorities allow
+TMDL/Regions Improve regional coordination among DEQ and partners for Yes Continue and expand
+addressing CyanoHABs related water quality impairments
+TMDL/Regions Develop TMDLs or Alternative Plans for CyanoHAB listed No As resources and
+waters priorities allow
+TMDL Dedicate a TMDL analyst to specialize in CyanoHABs No As resources and
+analysis and management priorities allow
+TMDL/Regions Develop regional or basin-specific approaches to managing No As resources and
+CyanoHABs priorities allow
+TMDL/Regions Consider alternatives to TMDLs, such as Watershed Based No As resources and
+Plans, as appropriate priorities allow
+TMDL/WQP Develop loading capacities for pollutants that are identified to No As resources and
+cause CyanoHABs in waterbodies priorities allow
+TMDL/Regions Address nutrient, sediment, and other CyanoHAB related LAs Yes Continue and expand as
+through DMA implementation plans, Agriculture Water resources allow
+Quality Rules and Plans, and FPA
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 34
+Currently
+DEQ Program Activity/subprogram Recommendation(s)
+Active?
+TMDL/Regions Evaluate effectiveness of DMA management plans, Yes Continue and expand as
+Agriculture Water Quality Rules and Plans, and FPA in resources allow
+meeting LAs
+TMDL/Regions Add CyanoHABs-related work in Interagency Agreements to No As resources and
+facilitate other agencies to develop CyanoHAB collaborative priorities allow
+approaches
+TMDL/Regions Work with ODFW, USFWS, USFS, USBOR, USACE, EPA No As resources and
+and others to address the role of fisheries in lake priorities allow
+eutrophication and CyanoHABs
+Regions/Onsite Continue and promote use of local authorities to require on- Yes Continue with updates as
+site system evaluations where needed needed
+Regions/Onsite Explore ways to provide Clean Water SRF or other funding to Yes Continue and expand as
+assist with repair or replacement of on-site systems resources and priorities
+allow
+Regions/Onsite Work with local government to implement on-site system No As resources and
+evaluations near waterbodies with CyanoHABs priorities allow
+Regions/Onsite Consider requiring periodic inspections of on-site systems No As resources and
+priorities allow
+WQP Continue no discharge of wastewater to lakes/reservoir rule Yes Continue
+Regions/WQP Clarify ability to use herbicides and other chemicals for Yes As resources and
+CyanoHAB treatment – either through conformance with priorities allow
+FIFRA labeling or through permit
+WQP Continue to address CyanoHABs through the 401 process Yes Continue and update as
+including certification conditions needed
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 35
+Synthesis and recommendations
+DEQ’s CyanoHABs strategy provides information on the multifaceted ways in which the agency
+addresses CyanoHABs in freshwater ecosystems of Oregon. The strategy also describes how
+DEQ works with other government agencies and stakeholders, particularly OHA and drinking
+water providers, to respond to CyanoHABs affecting water supplies and recreational activities.
+Throughout the development of the strategy, we have documented additional needs to improve
+DEQ’s approach to detecting, monitoring, assessing, and managing CyanoHABs. In this
+section, we discuss the importance of incorporating concepts and approaches related to climate
+change and environmental justice into the strategy. We also outline current resource limitations
+and funding needed to sustain and improve the agency’s strategy. We conclude with the near-
+and long-term outlook for CyanoHABs management and prevention in Oregon.
+Climate Change
+The degree to which climate change has contributed to increased frequency, extent, and
+magnitude of CyanoHABs remains intensely debated. Recent work has claimed both that
+CyanoHABs in freshwater ecosystems have grown more frequent, extensive, and severe
+around the world due to climate change (Ho, Michalak, & Pahlevan, 2019) and while other
+research suggests the incidence of algal blooms has remained stable over the past several
+decades (Oliver, et al., 2017). The lack of long-term data does not allow an assessment of how
+characteristics of CyanoHABs have changed over time in Oregon.
+Despite the lack of specific data characterizing long-term trends, DEQ has reason to believe
+that environmental conditions favorable for increased frequency, extent, and severity of
+CyanoHABs will become more prevalent across the state in the foreseeable future (Oregon
+Department of Environmental Quality, Oregon DEQ Harmful Algal Bloom (HAB) Strategy, 2011).
+A report issued by the Oregon Climate Change Research Institute provides evidence that
+human activities have been primarily responsible for the 1.5 increase in average annual
+temperatures over the past century (Dello & Mote, 2010). For the remainder of the 21st century,
+℉
+average annual temperatures are expected to increase at a rate of 0.2-1.0 per decade,
+summer precipitation will decrease 14% by the 2080s, and increases in extreme precipitation
+℉
+events are likely. These types of climatic shifts have led to conditions favorable for
+cyanobacterial growth in other regions (Paerl & Huisman, 2008).
+In 2020, DEQ established a new Climate Protection Program focused on reducing greenhouse
+gas emissions. However, the program currently does not describe how DEQ will address and
+mitigate environmental effects of climate change such as CyanoHABs. Based on the updated
+CyanoHAB strategy, we recommend the DEQ programs work together to take the following
+actions to address climate change effects on CyanoHABs in Oregon waterbodies:
+• Identify waterbodies at risk for developing CyanoHABs due to effects of climate change
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 36
+• Develop strategies to mitigate effects of climate change in waterbodies currently
+experiencing CyanoHABs
+• Expand forecasting and monitoring modalities for CyanoHABs
+• Educate the public on how different aspects of climate change can increase the
+frequency, severity, and extent of CyanoHABs in Oregon waters
+• Work with other state agencies and partners to provide resources to lake managers and
+residents to mitigate effects of climate change on CyanoHABs
+As this strategy undergoes updates in the future, other actions may be identified and prioritized.
+Environmental Justice
+DEQ is committed to the principles of Environmental Justice. In the original staff report to the
+EQC on Environmental Justice in Oregon, exposure to water pollution is singled out as a topic
+requiring improved coordination, sampling, and communication with affected communities
+(Oregon Department of Environmental Quality, Environmental Justice, 2022).
+To inform the exposure risk and to develop an equitable approach for CyanoHAB management
+and prevention in waterbodies used by marginalized communities for dietary, cultural, and
+recreational practices in Oregon, DEQ proposes the following measurable actions:
+• Enhance public participation in DEQ’s actions and monitoring decisions to ensure the
+meaningful involvement of people who may be affected by CyanoHABs
+• Identify racial, ethnic, and socioeconomic groups that may bear a disproportionate share
+of negative health, cultural, and environmental consequences resulting from CyanoHABs
+and include these in prioritization for actions.
+• Build stronger relationships with Oregon tribes to understand the impact of CyanoHABs
+on Indigenous peoples
+• Work with OHA DWS to identify underserved or marginalized populations served by
+PWSs that have had or currently have disproportionate risk to contamination from
+pollutants
+• Develop an agency plan to address language access disparities related to CyanoHAB
+notifications and advisories, including ways the agency can provide important
+environmental and public health information to people with limited English proficiency
+Funding
+Funding for current DEQ CyanoHAB monitoring, analysis, and mitigation measures
+comes from several sources. Several of these sources are targeted for specific activities
+and projects while others provide overall funding to agency positions and resources. The
+main sources include:
+• State General Fund and Lottery Fund appropriations (e.g., agency budget and policy
+bills)
+• Legislative, for monitoring activities, technical assistance, analytical support, and data
+management services for recreational and drinking water programs
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 37
+• National Lakes Assessment Federal Monitoring Initiative Grants under Section 106 of
+the Clean Water Act
+• Federal CWA Section 319 Funds
+The degree to which different funding sources support monitoring, laboratory analysis, and data
+analysis varies over time. Funding allocations within DEQ can be broken down into staff time for
+field sampling, monitoring equipment, laboratory analysis equipment, laboratory staff time, data
+analytical resources, and data analysis staff time. LEAD, and the TMDL and DWP subprograms
+are primarily involved with CyanoHABs related efforts, although WQP can be involved
+sporadically through NPDES permits, 401 Certification, and general permits for
+pesticide/herbicide applications.
+Overall, LEAD currently receives the most dedicated resources at DEQ to address CyanoHABs
+through several funding mechanisms and collaborations with state and federal agencies.
+Resources for LEAD staff, both in terms of FTE and laboratory equipment for analysis of
+cyanotoxins and nutrients, have increased since the implementation of OAR 333-061-0510 in
+2019. LEAD also received additional staffing and equipment resources following the 2021
+Oregon legislative session to improve monitoring of recreational waterbodies and other areas
+upstream of drinking water sources that may be contributing to CyanoHAB blooms. In terms of
+collaborations, LEAD has an interagency agreement with OHA work on special projects related
+to cyanotoxin monitoring. Most recently (2020), OHA provided DEQ funding to investigate the
+utility of quantitative polymerase chain reaction (qPCR) to protect public water supplies. In 2017
+DEQ received supplemental EPA funding to monitor lakes across Oregon as part of the National
+Lakes Assessment (US EPA, National Lakes Assessment, 2021). These funds supported the
+collection of chemical, biological, and habitat indicators at 29 lakes including cyanotoxins. This
+program was funded again in 2022 and DEQ monitored 23 lakes as part of the study.
+In general, the TMDL, DWP, and WQP programs in the Water Quality Division receive little
+dedicated funding and resources to address CyanoHABs. However, individual projects or
+responses to emergencies have received dedicated resources as needed under specific
+circumstances. Support for staff time spent on CyanoHABs in the Water Quality Division
+programs comes from State and General and Lottery Fund appropriations, EPA 319 funding for
+nonpoint source issues, and interagency agreements (i.e., OHA DWS support of DWP
+activities). Funding from the 319 Program has been used to address to address the restoration
+and protection needs of priority lakes, ponds, and reservoirs with approved TMDLs for
+CyanoHABs in Oregon (Oregon Department of Environmental Quality, 2022 Final Integrated
+Report, 2022). Funding and resources for CyanoHABs related efforts also are embedded in
+standard business expenses and general CWA activities, including Integrated Report
+development, issuance of NPDES permits, 401 certifications, and nonpoint source
+implementation activities, among others.
+Current and projected funding for sustaining and enhancing the strategy remain insufficient to
+meet objectives outlined in each component of the DEQ CyanoHAB Strategy (Tables 2Table 2.
+Specific actions and subprograms identified as currently part of or needed for addressing
+drinking water related issues related to CyanoHABs in Oregon freshwaters., 4, and 5). Other
+states, including Table 1Washington, California, Minnesota, Wisconsin, Nebraska, and New
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 38
+Hampshire have used funding mechanisms such as registration fees, grants, or loans.
+Regardless of the approaches or mechanisms utilized, additional funding and resources will be
+required for DEQ to fully implement the agency’s strategy.
+Conclusions
+The updates provided to the DEQ CyanoHABs strategy here reflect the ways in which the
+agency works internally and with partners to detect, monitor, assess, and manage CyanoHABs
+across Oregon. DEQ has made significant progress towards achieving goals on objectives
+outlined in the original DEQ HABs Strategy, with 65% of activities listed originally currently
+implemented or under development (Oregon Department of Environmental Quality, Oregon
+DEQ Harmful Algal Bloom (HAB) Strategy, 2011). However, as detailed in this document,
+expanded work and funding are still needed to fully realize and implement the strategy.
+We intend the strategy to be updated regularly to assess progress towards meeting
+recommended actions detailed in Tables 2Table 2. Specific actions and subprograms identified
+as currently part of or needed for addressing drinking water related issues related to
+CyanoHABs in Oregon freshwaters., 4, and 5 to identify emerging issues surrounding
+CyanoHABs in Oregon. DEQ expects that CyanoHABs will continue to impact water quality in
+Oregon freshwater ecosystems for the foreseeable future. While most past and current DEQ
+activities have focused on lakes and reservoirs, a growing body of evidence suggests
+CyanoHABs in rivers and streams could also significantly affect human health and downstream
+ecosystems (Interstate Technology Regulatory Council, 2022). Implementing the current
+strategy and working towards the recommendations outlined in this document will allow DEQ to
+meet the capacity to monitor, manage, and prevent CyanoHABs in freshwater ecosystems
+throughout Oregon.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 39
+Appendix A: Marine HABs
+The 2011 DEQ HABs strategy only focused on HABs that occurred in the freshwater
+environment and did not address blooms that occur in estuarine and marine environments
+(Oregon Department of Environmental Quality, Oregon DEQ Harmful Algal Bloom (HAB)
+Strategy, 2011). Harmful Algal Blooms have been responsible for closures of shellfish and crab
+fisheries off the Oregon coast in recent years, resulting in negative social and economic impacts
+for coastal communities and across the state. Although these blooms largely occur in the open
+water habitats off the Oregon coast, the effects of HABs are often most felt along the shorelines.
+In response, the state of Oregon and the National Oceanic and Atmospheric Association have
+been engaged in efforts to research and monitor the potential causes and extent of HABs to
+better understand the risks ( (Oregon Ocean Information, 2023).
+Marine HABs are typically caused by types of phytoplanktonic algae which produce biotoxins
+that accumulate throughout the marine food web. The two most common biotoxin producing
+phytoplankton genus that occur off the Oregon coast are: (1) dinoflagellate blooms from the
+genus Alexandrium which produce saxitoxin, a neurotoxin that causes paralytic shellfish
+poisoning in humans and (2) diatom blooms from the genus Pseudo-nitzchia which produce
+domoic acid that causes amnesic shellfish poisoning in humans (Oregon Department of Fish
+and Wildlife, 2023).
+In 2006, ODFW in collaboration with Oregon State university, University of Oregon and the
+NOAA Northwest Fisheries Science Center were awarded a 5 year nearly $2.3 million
+competitive grant from the NOAA CSCOR Monitoring and Event Response for a Harmful Algal
+Bloom (MERHAB) research program to develop an integrated HAB monitoring and event
+response program. This program, MOCHA, begun collecting data in 2007. ODFW staff, in
+conjunction with ODA monitored 10 sites along the coast of Oregon for any potential signs of
+the phytoplankton that cause Domoic Acid (Pseudo-nitzschia sp.) and Paralytic Shellfish
+Poisoning (Alexandrium sp.) (Oregon Conservation Strategy, 2023).
+While HABs are often localized events, research suggests that the frequency and spatial extent
+of HABs off the west coast has increased over the last several decades. A geographically
+extensive and long lasting bloom of Pseudo-nitzchia that affected marine wildlife and fisheries
+along the west coast began in the spring of 2015. The bloom stretched from Alaska to California
+and persisted for longer than what is considered normal (Oregon Conservation Strategy, 2023).
+Monitoring for these HABs and sampling shellfish for food safety have resulted in closures or
+opening delays for both recreational and commercial shellfish fisheries in Oregon. In its 2018
+Integrated Report assessment (Anthony, 2020), DEQ concluded that since the entire Oregon
+Coast had a shellfish advisory for a minimum of one shellfish type (i.e. mussels, scallops, clams,
+razor clams, crabs and bay clams) in every year of the 10-year data window (January 1, 2008
+through December 31, 2017), the entire Oregon coast would be listed as Category 5:Impaired
+for impairment of the Fishing: Shellfish consumption beneficial use.
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 40
+Figure 4. Schematic of Oregon coastal shellfish advisories by year from 2007-2017.
+Monitoring for marine HABs is often conducted at two levels: sampling marine waters to monitor
+the phytoplankton for HABs and sampling organisms that consume phytoplankton to monitor for
+the accumulation of the disease-causing toxins. Oregon has not directly sampled its coastal
+waters for HABs since 2012 due to a lack of ongoing funding, however, Oregon Department of
+Agriculture continues to monitor selected bivalve shellfish species for biotoxins (Oregon
+Department of Fish and Wildlife, 2023).
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 41
+References
+Anthony, B. (2020). Methodology for Oregon’s 2018 Water Quality Report and List of Water
+Quality Limited Waters. Portland, OR: Oregon Department of Environmental Quality.
+Retrieved from
+https://www.oregon.gov/deq/wq/Documents/wqa2018AssessMethodR.pdf
+Dello, K. D., & Mote, P. W. (2010). Oregon climate assessment report. Corvallis, OR: Oregon
+State University.
+Ho, J. C., Michalak, A. M., & Pahlevan, N. (2019, February 17). Widespread global increase in
+intense lake phytoplankton blooms since the 1980s. Nature, 667-670.
+doi:10.1038/s41586-019-1648-7
+Interstate Technology Regulatory Council. (2022). Strategies for Preventing and Managing
+Harmful Cyanobacterial Blooms (Benthic). Retrieved January 29, 2022, from
+https://itrcweb.org/teams/active/hcb
+Monschein, E., & Reems, S. (2009). Category 4b - Current National Status and Trends.
+Washington, DC: US EPA.
+Oliver, S. K., Collins, S. M., Soranno, P. A., Wagner, T., Stanley, E. H., Jones, J. R., . . . Lottig,
+N. R. (2017). Unexpected stasis in a changing world: Lake nutrient and chlorophyll
+trends since 1990. Global Change Biology, 23, 5455-5467. doi:
+https://doi.org/10.1111/gcb.13810
+Oregon Conservation Strategy. (2023). Retrieved from Strategy spotlight: harmful algal blooms
+in marine waters: https://www.oregonconservationstrategy.org/success-story/strategy-
+spotlight-harmful-algal-blooms-in-marine-waters/
+Oregon Department of Environmental Quality. (2011, June). Oregon DEQ Harmful Algal Bloom
+(HAB) Strategy. Retrieved January 27, 2022, from
+https://www.oregon.gov/deq/FilterDocs/HABstrategy.pdf
+Oregon Department of Environmental Quality. (2022, September 1). 2022 Final Integrated
+Report. Retrieved January 25, 2023, from
+https://rstudioconnect.deq.state.or.us/2022_IR_Database/
+Oregon Department of Environmental Quality. (2022). Environmental Justice. Retrieved January
+28, 2022, from https://www.oregon.gov/deq/about-us/Pages/Environmental-Justice.aspx
+Oregon Department of Environmental Quality. (2023). Retrieved from About Drinking Water
+Protection: https://www.oregon.gov/deq/wq/programs/Pages/dwp.aspx
+Oregon Department of Environmental Quality. (2023). Harmful Algal Blooms: Drinking Water
+Cyanotoxin Monitoring. Retrieved from https://www.oregon.gov/deq/wq/Pages/Drinking-
+Water-Cyanotoxin-Monitoring.aspx
+Oregon Department of Environmental Quality. (2023). Satellite Estimates of Cyanobacteria in
+Oregon Lakes and Reservoirs. Retrieved from
+https://rstudioconnect.deq.state.or.us/Oregon-cyanobacteria-satellite-report/
+Oregon Department of Fish and Wildlife. (2023). Marine Resources: Commercial and
+recreational marine fisheries. Retrieved from
+https://www.dfw.state.or.us/mrp/shellfish/razorclams/harmful_algae.asp
+Oregon Health Authority. (2022). Retrieved January 27, 2022, from Oregon Drinking Water
+Services:
+https://www.oregon.gov/oha/PH/HEALTHYENVIRONMENTS/DRINKINGWATER/Pages/
+index.aspx
+Oregon Health Authority. (2022). Retrieved January 27 2022, from Cyanobacteria Blooms:
+https://www.oregon.gov/oha/PH/HEALTHYENVIRONMENTS/RECREATION/HARMFUL
+ALGAEBLOOMS/Pages/index.aspx
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 42
+Oregon Health Authority. (2022). Cyanobacteria Advisory Archive. Retrieved January 26, 2022,
+from
+https://www.oregon.gov/oha/PH/HEALTHYENVIRONMENTS/RECREATION/HARMFUL
+ALGAEBLOOMS/Pages/archive.aspx
+Oregon Health Authority. (2023). Cyanotoxin Monitoring Requirements For Sources Determined
+to be Susceptible. Retrieved from
+https://www.oregon.gov/oha/PH/HEALTHYENVIRONMENTS/DRINKINGWATER/RULE
+S/Documents/cyanotoxins/cyanotoxin-monitoring-flowchart.pdf
+Oregon Ocean Information. (2023). Retrieved from Harmful Algal Blooms:
+https://www.oregonocean.info/index.php/ocean-issues/63-harmful-algal-blooms
+Paerl, H. W., & Huisman, J. (2008). Blooms like it hot. Science, 320, 57-58.
+US EPA. (2021). 319 Grant Program for States and Territories. Retrieved January 28, 2022,
+from https://www.epa.gov/nps/319-grant-program-states-and-territories
+US EPA. (2021, July 15). Clean Water Act Section 303(d): Impaired Waters and Total Maximum
+Daily Loads (TMDLs). Retrieved January 26, 2022, from https://www.epa.gov/tmdl
+US EPA. (2021). National Lakes Assessment. Retrieved January 28, 2022, from
+https://www.epa.gov/national-aquatic-resource-surveys/nla
+US EPA. (2023). Cyanobacterial Harmful Algal Blooms (CyanoHABs) in Water Bodies.
+Retrieved from https://www.epa.gov/cyanohabs
+Wisconsin Department of Natural Resources. (2021). DNR Surface Water Grant Application
+Guide. Retrieved 28 2022, January, from https://dnr.wi.gov/files/pdf/pubs/cf/cf0002.pdf
+Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy 43

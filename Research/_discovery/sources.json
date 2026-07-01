@@ -1,0 +1,4195 @@
+[
+  {
+    "key": "ACAD-001",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0301479721004771",
+    "title": "A machine learning approach for early warning of cyanobacterial bloom outbreaks in a freshwater reservoir",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-002",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8048137/",
+    "title": "A REVIEW OF WATER QUALITY RESPONSES TO AIR TEMPERATURE AND PRECIPITATION CHANGES 2: NUTRIENTS, ALGAL BLOOMS, SEDIMENT, PATHOGENS",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Whitehead, P.G. et al. (via PMC)",
+    "year": "2021",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-003",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0044848624008123",
+    "title": "A review on monitoring, forecasting, and early warning of harmful algal bloom",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": "2024",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-004",
+    "url": "https://www.biorxiv.org/content/10.1101/2025.09.29.679270v1.full",
+    "title": "A systematic literature review of forecasting and predictive models of harmful algal blooms in flowing waters",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "bioRxiv preprint",
+    "year": "2025",
+    "source_type": "systematic review (preprint)",
+    "alt_urls": [
+      "https://www.biorxiv.org/content/10.1101/2025.09.29.679270.full.pdf"
+    ],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-005",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0013935122019971",
+    "title": "A systematic review and quantitative meta-analysis of the relationships between driving forces and cyanobacterial blooms at global scale",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "(ScienceDirect / Environment International — authors not confirmed from search snippet)",
+    "year": null,
+    "source_type": "Peer-reviewed meta-analysis",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-006",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9677179/",
+    "title": "A validation of satellite derived cyanobacteria detections with state reported events and recreation advisories across U.S. lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (Science Inventory) / PMC",
+    "year": "2022",
+    "source_type": "Peer-reviewed journal article (PMC)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-007",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0034425721000845",
+    "title": "ACIX-Aqua: A global assessment of atmospheric correction methods for Landsat-8 and Sentinel-2 over lakes, rivers, and coastal waters",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Remote Sensing of Environment (ScienceDirect)",
+    "year": "2021",
+    "source_type": "peer-reviewed journal article / global intercomparison",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-008",
+    "url": "https://arxiv.org/abs/2505.03808",
+    "title": "AI-driven multi-source data fusion for algal bloom severity classification in small inland water bodies: Leveraging Sentinel-2, DEM, and NOAA climate data",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "arXiv preprint (also ScienceDirect)",
+    "year": null,
+    "source_type": "Preprint / journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-009",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/10402381.2017.1308449",
+    "title": "Aluminum treatments to control internal phosphorus loading in lakes on Cape Cod, Massachusetts",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Lake and Reservoir Management (Tandfonline)",
+    "year": "2017",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-010",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.est.3c03906",
+    "title": "An Intelligent Early Warning System for Harmful Algal Blooms: Harnessing the Power of Big Data and Deep Learning",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Environmental Science & Technology (ACS)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-011",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10007031/",
+    "title": "Anomaly Detection in Biological Early Warning Systems Using Unsupervised Machine Learning",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (NCBI)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article (open access)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-012",
+    "url": "https://www.nature.com/articles/s43247-026-03446-7",
+    "title": "Anthropogenic and climatic factors regulate algal bloom intensity and timing in global lakes under climate change",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Communications Earth & Environment",
+    "year": "2026",
+    "source_type": "Peer-reviewed journal article (Nature Communications Earth & Environment)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-013",
+    "url": "https://www.mdpi.com/2072-4292/17/8/1381",
+    "title": "Application of Optical Remote Sensing in Harmful Algal Blooms in Lakes: A Review",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "MDPI, Remote Sensing journal",
+    "year": "2025",
+    "source_type": "Peer-reviewed open-access review",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-014",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0034425719305826",
+    "title": "Application of Sentinel 3 OLCI for chl-a retrieval over small inland water targets: Successes and challenges",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect (Remote Sensing of Environment)",
+    "year": "2020",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-015",
+    "url": "https://link.springer.com/article/10.1007/s42452-021-04419-5",
+    "title": "Bench-scale assessment of three copper-based algaecide products for cyanobacteria management in source water",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Springer Nature — Discover Applied Sciences",
+    "year": "2021",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-016",
+    "url": "https://link.springer.com/article/10.1007/s10452-015-9548-x",
+    "title": "Biomanipulation as a nature-based solution to reduce cyanobacterial blooms",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Springer Nature - Aquatic Ecology",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3798876/",
+    "title": "Canine Cyanotoxin Poisonings in the United States (1920s–2012): Review of Suspected and Confirmed Cases from Three Data Sources",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Backer et al., Toxins (MDPI)",
+    "year": "2013",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-018",
+    "url": "https://www.nature.com/articles/s41597-024-03453-3",
+    "title": "Chlorophyll a in lakes and streams of the United States (2005-2022)",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Scientific Data (Nature)",
+    "year": "2024",
+    "source_type": "peer-reviewed data descriptor",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-019",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10103762/",
+    "title": "Climate change and the aquatic continuum: A cyanobacterial comeback story",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ho, J.C. et al.",
+    "year": "2023",
+    "source_type": "Peer-reviewed journal article (PMC)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-020",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.est.7b01498",
+    "title": "Climate Change Impacts on Harmful Algal Blooms in U.S. Freshwaters: A Screening-Level Assessment",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (Chapra, S.C. et al.)",
+    "year": "2017",
+    "source_type": "Peer-reviewed journal article (Environmental Science & Technology)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-021",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/23765717/",
+    "title": "Climate change: a catalyst for global expansion of harmful cyanobacterial blooms",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Paerl HW, Huisman J",
+    "year": "2009",
+    "source_type": "Peer-reviewed article (Environmental Microbiology Reports)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-022",
+    "url": "https://www.nature.com/articles/s41467-026-69529-3",
+    "title": "Climate extremes intensify global lake eutrophication by increasing the stress resistance of harmful bloom-forming algae",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Nature Communications",
+    "year": "2026",
+    "source_type": "Peer-reviewed journal article (Nature Communications)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-023",
+    "url": "https://www.researchgate.net/publication/260972802_Comparing_MODIS_and_MERIS_spectral_shapes_for_cyanobacterial_bloom_detection",
+    "title": "Comparing MODIS and MERIS spectral shapes for cyanobacterial bloom detection",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Wynne, T.T. et al.",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-024",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1364815223000270",
+    "title": "Comparison of Eulerian and Lagrangian transport models for harmful algal bloom forecasts in Lake Erie",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA GLERL / CIGLR researchers",
+    "year": null,
+    "source_type": "peer-reviewed journal article (Environmental Modelling & Software)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-025",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9639424/",
+    "title": "Comparison of iCOR and Rayleigh atmospheric correction methods on Sentinel-3 OLCI images for a shallow eutrophic reservoir",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": "2022",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-026",
+    "url": "https://www.nature.com/articles/s41586-021-03254-3",
+    "title": "Concerns about phytoplankton bloom trends in global lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Hallegraeff, G.M. et al. (Matters Arising)",
+    "year": "2021",
+    "source_type": "Peer-reviewed journal article (Nature, Matters Arising / critique)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-027",
+    "url": "https://www.science.org/doi/10.1126/science.1167755",
+    "title": "Controlling Eutrophication: Nitrogen and Phosphorus",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Conley, D.J., Paerl, H.W., Howarth, R.W., Boesch, D.F., Seitzinger, S.P., Havens, K.E., Lancelot, C., Likens, G.E.",
+    "year": "2009",
+    "source_type": "Peer-reviewed journal article (Science, Perspective)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-028",
+    "url": "https://academic.oup.com/plankt/article/39/5/763/4079732",
+    "title": "Controlling harmful cyanobacterial blooms in a climatically more extreme world: management options and research needs",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Paerl HW, Barnard MA",
+    "year": "2020",
+    "source_type": "Peer-reviewed review article (Journal of Plankton Research)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-029",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21345482/",
+    "title": "Controlling harmful cyanobacterial blooms in a world experiencing anthropogenic and climatic-induced change",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Paerl, H.W., Huisman, J. (or Paerl & Paul, per Paerl Lab)",
+    "year": "2011",
+    "source_type": "Peer-reviewed journal article (Water Research)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-030",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4587991/",
+    "title": "Current approaches to cyanotoxin risk assessment and risk management around the globe",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ibelings, B.W. et al. (Harmful Algae)",
+    "year": "2014",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-031",
+    "url": "https://link.springer.com/article/10.1007/s11270-023-06782-y",
+    "title": "Cyanobacteria Harmful Algae Blooms: Causes, Impacts, and Risk Management",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Water, Air, & Soil Pollution (Springer)",
+    "year": "2023",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-032",
+    "url": "https://www.nature.com/articles/s41579-018-0040-1",
+    "title": "Cyanobacterial blooms",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Huisman J, Codd GA, Paerl HW, Ibelings BW, Verspagen JMH, Visser PM",
+    "year": "2018",
+    "source_type": "Peer-reviewed review article (Nature Reviews Microbiology)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-033",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8306311/",
+    "title": "Cyanobacterial Harmful Algal Blooms in Aquatic Ecosystems: A Comprehensive Outlook on Current and Emerging Mitigation and Control Approaches",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "MDPI Microorganisms / PMC",
+    "year": "2021",
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-034",
+    "url": "https://pubs.usgs.gov/publication/70171361",
+    "title": "Cyanotoxins in inland lakes of the United States: Occurrence and potential recreational health risks in the EPA National Lakes Assessment 2007",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Loftin et al. (published in Harmful Algae; USGS co-authored)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-035",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11670250/",
+    "title": "Dual nitrogen and phosphorus reductions are needed for long-term mitigation of eutrophication and harmful cyanobacterial blooms in the hydrologically-variable San Francisco Bay Delta, CA",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Authors per ScienceDirect/PMC",
+    "year": "2024",
+    "source_type": "Peer-reviewed journal article (Science of the Total Environment)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-036",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11922332/",
+    "title": "Dual phosphorus and nitrogen nutrient reduction will be more effective than a phosphorus-only reduction in mitigating diatom and cyanobacterial blooms in Lake Erie, USA-Canada",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Authors per PMC",
+    "year": "2024",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-037",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0043135425014186",
+    "title": "Early warning of harmful cyanobacteria blooms based on high frequency in situ monitoring and intelligible machine learning modelling: The case study of Lake Müggelsee (Germany)",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-038",
+    "url": "https://www.tandfonline.com/doi/abs/10.1080/07438149909353948",
+    "title": "Effectiveness and Longevity of Phosphorus Inactivation with Alum",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Welch, E.B. & Cooke, G.D. (Lake and Reservoir Management)",
+    "year": "1999",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-039",
+    "url": "https://cdnsciencepub.com/doi/10.1139/er-2024-0069",
+    "title": "Effectiveness of agricultural BMPs on phosphorus load reduction for the Canadian Lake Erie Basin: a literature review",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Canadian Science Publishing (Environmental Reviews)",
+    "year": "2024",
+    "source_type": "peer-reviewed literature review",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-040",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6210285/",
+    "title": "Effectiveness of Best Management Practices to Reduce Phosphorus Loading to a Highly Eutrophic Lake",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-041",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11238602/",
+    "title": "Effectiveness of Nutrient Management for Reducing Phosphorus Losses from Agricultural Areas",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-042",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4280534/",
+    "title": "Effects of Hydrogen Peroxide and Ultrasound on Biomass Reduction and Toxin Release in the Cyanobacterium, Microcystis aeruginosa",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC / NCBI (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-043",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10611362/",
+    "title": "Ensemble Machine Learning of Gradient Boosting (XGBoost, LightGBM, CatBoost) and Attention-Based CNN-LSTM for Harmful Algal Blooms Forecasting",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (NIH)",
+    "year": "2023",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-044",
+    "url": "https://www.pnas.org/doi/10.1073/pnas.0805108105",
+    "title": "Eutrophication of Lakes Cannot Be Controlled by Reducing Nitrogen Input: Results of a 37-Year Whole-Ecosystem Experiment",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Schindler, D.W., Hecky, R.E., Findlay, D.L., et al.",
+    "year": "2008",
+    "source_type": "Peer-reviewed journal article (PNAS) — whole-lake manipulation experiment",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-045",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9677180/",
+    "title": "Evaluation of a satellite-based cyanobacteria bloom detection algorithm using field-measured microcystin data",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "(ScienceDirect / PMC, NOAA-affiliated authors)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-046",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11235139/",
+    "title": "Expanding the Application of Sentinel-2 Chlorophyll Monitoring across United States Lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": "2023",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-047",
+    "url": "https://www.frontiersin.org/journals/freshwater-science/articles/10.3389/ffwsc.2024.1452344/full",
+    "title": "Expert insights on managing harmful algal blooms",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Frontiers in Freshwater Science",
+    "year": "2024",
+    "source_type": "Peer-reviewed expert-elicitation study",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-048",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11786749/",
+    "title": "Explainable deep learning identifies patterns and drivers of freshwater harmful algal blooms",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect / PMC",
+    "year": "2024",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-049",
+    "url": "https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lno.11365",
+    "title": "Exploring temperature and precipitation impacts on harmful algal blooms across continental U.S. lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ho, J.C. et al.",
+    "year": "2020",
+    "source_type": "Peer-reviewed journal article (Limnology and Oceanography)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-050",
+    "url": "https://www.sciencedirect.com/science/article/pii/S030147972302306X",
+    "title": "Forecasting freshwater cyanobacterial harmful algal blooms for Sentinel-3 satellite resolved U.S. lakes and reservoirs",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect (EPA-affiliated authors)",
+    "year": "2024",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-051",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0380133023001363",
+    "title": "Forecasting microcystin concentrations in Lake Erie using an Eulerian tracer model",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA GLERL researchers",
+    "year": null,
+    "source_type": "peer-reviewed journal article (Journal of Great Lakes Research)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-052",
+    "url": "https://www.researchgate.net/publication/261331548_Forecasting_short-term_cyanobacterial_blooms_in_Lake_Taihu_China_using_a_coupled_hydrodynamic-algal_biomass_model",
+    "title": "Forecasting short-term cyanobacterial blooms in Lake Taihu, China, using a coupled hydrodynamic–algal biomass model",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Hu, W. et al.",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-053",
+    "url": "https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020WR027185",
+    "title": "Future Projections of Water Temperature and Thermal Stratification in Connecticut Reservoirs and Possible Implications for Cyanobacteria",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Mullin, C.A. et al.",
+    "year": "2020",
+    "source_type": "Peer-reviewed journal article (Water Resources Research, AGU)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-054",
+    "url": "https://www.climatologylab.org/gridmet.html",
+    "title": "Gridded Surface Meteorological (gridMET) Dataset",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Climatology Lab (University of California, Merced) / USGS Water Mission Area catalog",
+    "year": null,
+    "source_type": "University research group data product",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-055",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37352675/",
+    "title": "Ground-based remote sensing provides alternative to satellites for monitoring cyanobacteria in small lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PubMed / peer-reviewed",
+    "year": "2023",
+    "source_type": "Peer-reviewed research article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-056",
+    "url": "https://www.nature.com/articles/s43017-024-00578-2",
+    "title": "Harmful algal blooms in inland waters",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Feng, Z., Paerl, H.W., et al. (Paerl Lab, UNC)",
+    "year": "2024",
+    "source_type": "Peer-reviewed review article (Nature Reviews Earth & Environment)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-057",
+    "url": "https://paerllab.web.unc.edu/wp-content/uploads/sites/17493/2024/10/Feng-et-al.-2024.-Nature-Review-Earth-Environment1.pdf",
+    "title": "Harmful algal blooms in inland waters (author PDF copy)",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Feng, Z., Paerl, H.W., et al.",
+    "year": "2024",
+    "source_type": "Author-hosted PDF of peer-reviewed review",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-058",
+    "url": "https://www.annualreviews.org/content/journals/10.1146/annurev-environ-112320-081653?crawler=true",
+    "title": "Harmful Cyanobacterial Blooms: Biological Traits, Mechanisms, Risks, and Control Strategies",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Annual Reviews (Annual Review of Environment and Resources)",
+    "year": "2024",
+    "source_type": "Peer-reviewed annual review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-059",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048969717321472",
+    "title": "Hot and toxic: Temperature regulates microcystin release from cyanobacteria",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Peer-reviewed authors, Science of the Total Environment",
+    "year": "2018",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-060",
+    "url": "https://www.sciencedirect.com/science/article/pii/S001393512500742X",
+    "title": "Identification of key feature variables and prediction of harmful algal blooms in a water diversion lake based on interpretable machine learning",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-061",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4113735/",
+    "title": "Impact of Environmental Factors on the Regulation of Cyanotoxin Production",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Peer-reviewed authors (PMC)",
+    "year": null,
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-062",
+    "url": "https://www.cyanolakes.com/publications/Matthews&Odermatt_2015.pdf",
+    "title": "Improved algorithm for routine monitoring of cyanobacteria and eutrophication in inland and near-coastal waters",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Matthews & Odermatt (ScienceDirect / cyanolakes.com)",
+    "year": "2015",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-063",
+    "url": "https://cdnsciencepub.com/doi/10.1139/cjfas-2016-0500",
+    "title": "Internal phosphorus loading in Canadian fresh waters: a critical review and data analysis",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Canadian Journal of Fisheries and Aquatic Sciences",
+    "year": null,
+    "source_type": "peer-reviewed critical review",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-064",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7824293/",
+    "title": "Interplay of Nutrients, Temperature, and Competition of Native and Alien Cyanobacteria Species Growth and Cyanotoxin Production in Temperate Lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Multiple authors (MDPI Toxins)",
+    "year": "2021",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-065",
+    "url": "https://www.sciencedirect.com/science/article/pii/S014765132031071X",
+    "title": "Laboratory-scale evaluation of algaecide effectiveness for control of microcystin-producing cyanobacteria from Lake Okeechobee, Florida (USA)",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-066",
+    "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0314582",
+    "title": "Limnological data derived from high frequency monitoring buoys are asynchronous in a large lake",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PLOS One",
+    "year": "2016",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-067",
+    "url": "https://www.researchgate.net/publication/289518985_Lysis_to_kill_the_removal_of_cyanobacteria_and_cyanotoxins_by_hydrogen_peroxide_addition",
+    "title": "Lysis to kill: the removal of cyanobacteria and cyanotoxins by hydrogen peroxide addition",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ResearchGate (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-068",
+    "url": "https://ascelibrary.org/doi/10.1061/JOEEDU.EEENG-8732",
+    "title": "Machine Learning Approaches for Harmful Algal Bloom Prediction: Advances, Challenges, and Future Directions",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Journal of Environmental Engineering (ASCE)",
+    "year": "2026",
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-069",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747537/",
+    "title": "Machine Learning-Based Early Warning Level Prediction for Cyanobacterial Blooms Using Environmental Variable Selection and Data Resampling",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (NIH)",
+    "year": "2023",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10747537/"
+    ],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-070",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568988315301049",
+    "title": "Mitigating cyanobacterial harmful algal blooms in aquatic ecosystems impacted by climate change and anthropogenic nutrients",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Paerl, H.W., Paul, V.J. (Harmful Algae journal)",
+    "year": "2012",
+    "source_type": "Peer-reviewed review (Harmful Algae journal)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-071",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7027680/",
+    "title": "Modeling harmful algal blooms in a changing climate",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Multiple authors (PMC/NIH)",
+    "year": null,
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-072",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0147651322006571",
+    "title": "New is not always better: Toxicity of novel copper based algaecides to Daphnia magna",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-073",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9738033/",
+    "title": "Non-Nitrogen-Fixers or Nitrogen-Fixers? Factors Distinguishing the Dominance of Chroococcal and Diazotrophic Cyanobacterial Species",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed journal article)",
+    "year": null,
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-074",
+    "url": "https://www.mdpi.com/1660-3397/8/5/1650",
+    "title": "On the Chemistry, Toxicology and Genetics of the Cyanobacterial Toxins, Microcystin, Nodularin, Saxitoxin and Cylindrospermopsin",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Peer-reviewed authors, Marine Drugs (MDPI)",
+    "year": "2010",
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-075",
+    "url": "https://www.nature.com/articles/s43247-021-00178-8",
+    "title": "Perceived global increase in algal blooms is attributable to intensified monitoring and emerging bloom impacts",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Hallegraeff, G.M., Anderson, D.M., Belin, C., et al.",
+    "year": "2021",
+    "source_type": "Peer-reviewed journal article (Nature Communications Earth & Environment)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-076",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4329148/",
+    "title": "Phosphorus losses from monitored fields with conservation practices in the Lake Erie Basin, USA",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USDA / PMC (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article with field monitoring data",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-077",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0380133018300765",
+    "title": "Phycocyanin concentration retrieval in inland waters: A comparative review of the remote sensing techniques and algorithms",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "(ScienceDirect, J. Great Lakes Research)",
+    "year": null,
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-078",
+    "url": "https://cdnsciencepub.com/doi/10.1139/f01-143",
+    "title": "Predicting Cyanobacteria dominance in lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Downing, J.A., Watson, S.B., McCauley, E.",
+    "year": "2001",
+    "source_type": "Peer-reviewed journal article (Canadian Journal of Fisheries and Aquatic Sciences)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-079",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/17724567/",
+    "title": "Quantifying sample biases of inland lake sampling programs in relation to lake surface area and land use/cover",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Peer-reviewed (PubMed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-080",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11022887/",
+    "title": "Rapid flotation of Microcystis wesenbergii mediated by high light exposure: implications for surface scum formation and cyanobacterial species succession",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed journal)",
+    "year": "2024",
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-081",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9915880/",
+    "title": "Recent Advances in the Ecology of Bloom-Forming Raphidiopsis (Cylindrospermopsis) raciborskii: Expansion in China, Intraspecific Heterogeneity and Critical Factors for Invasion",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "International Journal of Environmental Research and Public Health (MDPI) / PMC",
+    "year": "2023",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-082",
+    "url": "https://academic.oup.com/etc/article/44/10/2957/8185540",
+    "title": "Reevaluating copper algaecide dosing to manage water quality: a multiple linear regression approach",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Environmental Toxicology and Chemistry (Oxford Academic)",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-083",
+    "url": "https://www.researchgate.net/publication/248977952_Relating_spectral_shape_to_cyanobacterial_bloom_in_the_Laurentian_Great_Lakes",
+    "title": "Relating spectral shape to cyanobacterial blooms in the Laurentian Great Lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Wynne, T.T. et al.",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-084",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2589914725000684",
+    "title": "Remote sensing identification and model-based prediction of harmful algal blooms in inland waters: Current insights and future perspectives",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods",
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": "2025",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-085",
+    "url": "https://journals.sagepub.com/doi/abs/10.1177/27539687251320671",
+    "title": "Remote sensing of cyanobacterial harmful algal blooms: Current trends and future directions",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Kumar, A., Maniyar, C.B., Fiorentino, I.R., Mishra, D.R.",
+    "year": null,
+    "source_type": "Peer-reviewed review article (2025)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-086",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5240694/",
+    "title": "Reversal of a Cyanobacterial Bloom in Response to Early Warnings",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Carey, C.C. et al. (Cary Institute / GLEON-affiliated)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-087",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7828104/",
+    "title": "Roles of Nutrient Limitation on Western Lake Erie CyanoHAB Toxin Production",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Authors per PMC (NCBI)",
+    "year": "2020",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-088",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10807294/",
+    "title": "Satellite and in situ cyanobacteria monitoring: Understanding the impact of monitoring frequency on management decisions",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": "2024",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-089",
+    "url": "https://academic.oup.com/femsre/article/46/6/fuac029/6617595",
+    "title": "Schindler's legacy: from eutrophic lakes to the phosphorus utilization strategies of cyanobacteria",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Authors per FEMS Microbiology Reviews (Oxford Academic)",
+    "year": "2022",
+    "source_type": "Peer-reviewed review article (FEMS Microbiology Reviews)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-090",
+    "url": "https://academic.oup.com/ismej/article/18/1/wrae021/7597770",
+    "title": "Selection of photosynthetic traits by turbulent mixing governs formation of cyanobacterial blooms in shallow eutrophic lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "The ISME Journal (Oxford Academic)",
+    "year": null,
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-091",
+    "url": "https://www.mdpi.com/2072-4292/13/21/4479",
+    "title": "Sentinel-2 and Landsat-8 Observations for Harmful Algae Blooms in a Small Eutrophic Lake",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Remote Sensing (MDPI)",
+    "year": "2021",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-092",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7751622/",
+    "title": "Spatio-Temporal Modeling for Forecasting High-Risk Freshwater Cyanobacterial Harmful Algal Blooms in Florida",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "PMC (NIH)",
+    "year": "2020",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-093",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1470160X25001736",
+    "title": "The need for advancing algal bloom forecasting using remote sensing and modeling: Progress and future directions",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect",
+    "year": null,
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-094",
+    "url": "https://www.researchgate.net/publication/243710329_The_PEG-model_of_seasonal_succession_of_planktonic_events_in_fresh_waters",
+    "title": "The PEG-model of seasonal succession of planktonic events in fresh waters",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Sommer U, Gliwicz ZM, Lampert W, Duncan A (foundational); reviewed/updated by Sommer et al.",
+    "year": null,
+    "source_type": "Peer-reviewed foundational model/review paper",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-095",
+    "url": "https://journals.ametsoc.org/view/journals/eint/28/1/EI-D-23-0008.1.xml",
+    "title": "The Role of Climate Change in the Proliferation of Freshwater Harmful Algal Blooms in Inland Water Bodies of the United States",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Earth Interactions (AMS journal)",
+    "year": "2023",
+    "source_type": "Peer-reviewed journal article (American Meteorological Society)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-096",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568988316301792",
+    "title": "The role of heterocytes in the physiology and ecology of bloom-forming harmful cyanobacteria",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "ScienceDirect (Harmful Algae journal)",
+    "year": null,
+    "source_type": "Peer-reviewed review article (Harmful Algae)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-097",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/10402381.2015.1014582",
+    "title": "TMDL reevaluation: reconciling internal phosphorus load reductions in a eutrophic lake",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "James, W.F. et al. (Lake and Reservoir Management)",
+    "year": "2015",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-098",
+    "url": "https://iopscience.iop.org/article/10.1088/2752-664X/ae4631",
+    "title": "Two decades of cyanobacterial bloom dynamics in the Great Lakes: insights from multi-mission ocean color sensors",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "(IOPscience)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-099",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7038399/",
+    "title": "Validation and Comparison of Water Quality Products in Baltic Lakes Using Sentinel-2 MSI and Sentinel-3 OLCI Data",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Remote Sensing (MDPI), via NCBI PMC",
+    "year": "2020",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-100",
+    "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016JC011720",
+    "title": "Vertical distribution of buoyant Microcystis blooms in a Lagrangian particle tracking model for short-term forecasts in Lake Erie",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Rowe, M.D. et al. (NOAA GLERL)",
+    "year": "2016",
+    "source_type": "peer-reviewed journal article (Journal of Geophysical Research: Oceans)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-101",
+    "url": "https://www.nature.com/articles/s41586-019-1648-7",
+    "title": "Widespread global increase in intense lake phytoplankton blooms since the 1980s",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ho, J.C., Michalak, A.M., Pahlevan, N.",
+    "year": "2019",
+    "source_type": "Peer-reviewed journal article (Nature)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-102",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32148269/",
+    "title": "A comparison of aluminum dosing methods for reducing sediment phosphorus release in lakes",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PubMed (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-103",
+    "url": "https://www.researchgate.net/publication/269573527_A_Global_Lake_Ecological_Observatory_Network_GLEON_for_synthesising_high-frequency_sensor_data_for_validation_of_deterministic_ecological_models",
+    "title": "A Global Lake Ecological Observatory Network (GLEON) for Synthesising High-Frequency Sensor Data for Validation of Deterministic Ecological Models",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Weathers, K.C. et al.",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": true
+  },
+  {
+    "key": "ACAD-104",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135425009674",
+    "title": "A modular deep learning surrogate model for simulating harmful algal blooms in complex process-based systems",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Multiple authors",
+    "year": null,
+    "source_type": "peer-reviewed journal article (Water Research)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-105",
+    "url": "https://www.mdpi.com/2073-4441/17/13/1980",
+    "title": "A Review of Harmful Algal Blooms: Causes, Effects, Monitoring, and Prevention Methods",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "MDPI, Water journal",
+    "year": "2025",
+    "source_type": "Peer-reviewed open-access review",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-106",
+    "url": "https://www.sciencedirect.com/science/article/pii/S156984322500679X",
+    "title": "Advancing CyanoHAB monitoring with hyperspectral data from NASA PACE: First results and validation",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-107",
+    "url": "https://journals.ametsoc.org/view/journals/atot/29/7/jtech-d-11-00103_1.xml",
+    "title": "An Overview of the Global Historical Climatology Network-Daily Database",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Menne, M.J., Durre, I., Vose, R.S., Gleason, B.E., Houston, T.G.",
+    "year": "2012",
+    "source_type": "Peer-reviewed journal article (Journal of Atmospheric and Oceanic Technology)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-108",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0380133011000050",
+    "title": "Application of a eutrophication model for assessing water quality in Lake Winnipeg",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Multiple authors",
+    "year": null,
+    "source_type": "peer-reviewed journal article (Journal of Great Lakes Research)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-109",
+    "url": "https://doi.org/10.3390/rs17173055",
+    "title": "Assessment of Atmospheric Correction Algorithms for Landsat-8/9 Operational Land Imager over Inland and Coastal Waters",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Remote Sensing (MDPI)",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-110",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135426000886",
+    "title": "Comment on \"Early warning of harmful cyanobacteria blooms...Lake Müggelsee (Germany)\" by Recknagel et al.",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect (Water Research, 2026)",
+    "year": null,
+    "source_type": "Peer-reviewed comment/critique",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-111",
+    "url": "https://link.springer.com/article/10.1007/s10452-016-9595-y",
+    "title": "Cyanobacterial blooms. Ecology, prevention, mitigation and control: Editorial to a CYANOCOST Special Issue",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Aquatic Ecology (CYANOCOST COST Action)",
+    "year": "2016",
+    "source_type": "Peer-reviewed editorial/synthesis of a special issue",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-112",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0043135413009330",
+    "title": "Cylindrospermopsis raciborskii dominates under very low and high nitrogen-to-phosphorus ratios",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Authors per ScienceDirect (Water Research)",
+    "year": "2014",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-113",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7291037/",
+    "title": "Delayed Release of Intracellular Microcystin Following Partial Oxidation of Cultured and Naturally Occurring Cyanobacteria",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PMC / NCBI (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-114",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1574954123004764",
+    "title": "Development of an algal bloom satellite and in situ metadata hub with case studies in Canada",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-115",
+    "url": "https://www.biorxiv.org/content/10.1101/2022.12.20.521158.full.pdf",
+    "title": "Early Seasonal Increases and Persistence in Relative Abundance of Potentially Toxic Cyanobacteria: Concerning Impacts of Extended Ice-Free Periods in Northern Temperate Lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "bioRxiv preprint authors",
+    "year": "2022",
+    "source_type": "Preprint (bioRxiv)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-116",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7048868/",
+    "title": "Elimination of cyanobacteria and microcystins in irrigation water — effects of hydrogen peroxide treatment",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PMC / NCBI (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-117",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214714425007573",
+    "title": "Evaluating the applicability of machine learning and deep learning models for predicting cyanobacterial alert levels in a drinking water reservoir",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-118",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6684568/",
+    "title": "Evaluating the treatment effectiveness of copper-based algaecides on toxic algae Microcystis aeruginosa using single cell-inductively coupled plasma-mass spectrometry",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PMC / NCBI (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-119",
+    "url": "https://www.nature.com/articles/s41598-018-37398-6",
+    "title": "Extracellular polysaccharide synthesis in a bloom-forming strain of Microcystis aeruginosa: implications for colonization and buoyancy",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Scientific Reports (Nature Portfolio)",
+    "year": "2018",
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-120",
+    "url": "https://www.biorxiv.org/content/10.1101/570275.full.pdf",
+    "title": "Extreme rainfall drives early onset cyanobacterial bloom",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "bioRxiv preprint authors",
+    "year": "2019",
+    "source_type": "Preprint (bioRxiv)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-121",
+    "url": "https://www.mdpi.com/2073-4441/16/24/3556",
+    "title": "Global Applications of the CE-QUAL-W2 Model in Reservoir Eutrophication: A Systematic Review and Perspectives for Brazil",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Multiple authors (MDPI Water)",
+    "year": "2024",
+    "source_type": "peer-reviewed systematic review (open access journal)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-122",
+    "url": "https://tos.org/oceanography/article/globalhab-a-new-program-to-promote-international-research-observations-and",
+    "title": "GlobalHAB: A New Program to Promote International Research, Observations, and Modeling of Harmful Algal Blooms in Aquatic Systems",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Berdalet, E. et al. / Oceanography (TOS)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-123",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5689215/",
+    "title": "Harmful Algal Bloom–Associated Illnesses in Humans and Dogs Identified Through a Pilot Surveillance System — New York, 2015",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "CDC / NY State Dept. of Health authors",
+    "year": null,
+    "source_type": "peer-reviewed surveillance pilot study",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-124",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4344635/",
+    "title": "Health-Based Cyanotoxin Guideline Values Allow for Cyanotoxin-Based Monitoring and Efficient Public Health Response to Cyanobacterial Blooms",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Chorus, I. & Testai, E. (Toxins, via PMC)",
+    "year": "2015",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-125",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8168688/",
+    "title": "Increasingly severe cyanobacterial blooms and deep water hypoxia coincide with warming water temperatures in reservoirs",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Authors per PMC (NCBI)",
+    "year": "2021",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-126",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0040162522005674",
+    "title": "Integrated explainable deep learning prediction of harmful algal blooms",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect",
+    "year": "2023",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-127",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11539047/",
+    "title": "Integrative monitoring strategy for marine and freshwater harmful algal blooms and toxins across the freshwater-to-marine continuum",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Peer-reviewed (PMC)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-128",
+    "url": "https://iwaponline.com/wqrj/article/57/4/304/91529/Machine-learning-based-prediction-of-harmful-algal",
+    "title": "Machine learning-based prediction of harmful algal blooms in water supply reservoirs",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Water Quality Research Journal (IWA Publishing)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-129",
+    "url": "https://www.nature.com/articles/s41598-020-65600-1",
+    "title": "New capabilities of Sentinel-2A/B satellites combined with in situ data for monitoring small harmful algal blooms in complex coastal waters",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Scientific Reports (Nature)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-130",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9612084/",
+    "title": "Nitrogen Limitation of Intense and Toxic Cyanobacteria Blooms in Lakes within Two of the Most Visited Parks in the USA: The Lake in Central Park and Prospect Park Lake",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Authors per PMC (NCBI)",
+    "year": "2022",
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-131",
+    "url": "https://febs.onlinelibrary.wiley.com/doi/10.1002/1873-3468.12370",
+    "title": "pH-dependent gas vesicle formation in Microcystis",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Gao et al., FEBS Letters",
+    "year": "2016",
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-132",
+    "url": "https://climatedataguide.ucar.edu/climate-data/prism-high-resolution-spatial-climate-data-united-states-maxmin-temp-dewpoint",
+    "title": "PRISM High-Resolution Spatial Climate Data for the United States (max/min temp, dewpoint, precipitation)",
+    "tier": "ACAD",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PRISM Climate Group, Oregon State University (via Climate Data Guide, UCAR)",
+    "year": null,
+    "source_type": "University research group gridded climate product",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-133",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7446750/",
+    "title": "Quantifying the Human Health Benefits of Using Satellite Information to Detect Cyanobacterial Harmful Algal Blooms and Manage Recreational Advisories in U.S. Lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PMC (peer-reviewed, EPA-affiliated authors)",
+    "year": "2020",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-134",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0301479722027505",
+    "title": "Reducing the water residence time is inadequate to limit the algal proliferation in eutrophic lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Authors per ScienceDirect",
+    "year": "2022",
+    "source_type": "Peer-reviewed journal article (Journal of Environmental Management)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-135",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S0048969722051956",
+    "title": "Remote sensing to detect harmful algal blooms in inland waterbodies",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect (Science of the Total Environment or similar)",
+    "year": "2022",
+    "source_type": "Peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-136",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0301479725034784",
+    "title": "Repeated low-dose copper algaecide treatments promote beneficial phytoplankton and zooplankton communities",
+    "tier": "ACAD",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect (peer-reviewed)",
+    "year": "2025",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-137",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6852574/",
+    "title": "Response of cyanobacteria and phytoplankton abundance to warming, extreme rainfall events and nutrient enrichment",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "(PMC — authors not confirmed from search snippet)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-138",
+    "url": "https://www.nature.com/articles/s41598-025-22633-8",
+    "title": "Response of cyanobacterial blooms to climate warming: evidence from satellite observations and long-term trends in Lake Taihu in China",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Scientific Reports",
+    "year": "2025",
+    "source_type": "Peer-reviewed journal article (Scientific Reports)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-139",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6084181/",
+    "title": "Retention and Internal Loading of Phosphorus in Shallow, Eutrophic Lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "PMC (peer-reviewed)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-140",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1574954113000861",
+    "title": "Retrieval of phycocyanin concentration from remote-sensing reflectance using a semi-analytic model in eutrophic lakes",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "(ScienceDirect)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-141",
+    "url": "https://doi.org/10.3390/rs17101734",
+    "title": "Retrieving Inland Water Quality Parameters via Satellite Remote Sensing: Sensor Evaluation, Atmospheric Correction, and Machine Learning Approaches",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Remote Sensing (MDPI)",
+    "year": "2025",
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-142",
+    "url": "https://pubs.acs.org/doi/10.1021/acs.est.5c17601",
+    "title": "Sediment Resuspension as a System-Wide Driver of Legacy and Bioavailable Phosphorus Release in Lake Erie",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Environmental Science & Technology (ACS)",
+    "year": null,
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-143",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/09670262.2010.492916",
+    "title": "The ecology of the invasive cyanobacterium Cylindrospermopsis raciborskii (Nostocales, Cyanophyta) in two hypereutrophic lakes dominated by Planktothrix agardhii (Oscillatoriales, Cyanophyta)",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "European Journal of Phycology (Taylor & Francis)",
+    "year": "2010",
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-144",
+    "url": "https://aslopubs.onlinelibrary.wiley.com/doi/10.1002/lol2.70044",
+    "title": "The role of surface water waves on cyanobacterial blooms in lakes",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Gushulak et al., Limnology and Oceanography Letters",
+    "year": "2025",
+    "source_type": "Peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-145",
+    "url": "https://www.mdpi.com/2076-3298/6/6/60",
+    "title": "The Use of Sentinel-3 Imagery to Monitor Cyanobacterial Blooms",
+    "tier": "ACAD",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "(MDPI, Journal of Marine Science and Engineering)",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-146",
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9784168/",
+    "title": "Toxic Effects Produced by Anatoxin-a under Laboratory Conditions: A Review",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Peer-reviewed authors, Toxins (MDPI)",
+    "year": "2022",
+    "source_type": "peer-reviewed review article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-147",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S1568988323000355",
+    "title": "Transcriptionally active nitrogen fixation and biosynthesis of diverse secondary metabolites by Dolichospermum and Aphanizomenon-like Cyanobacteria in western Lake Erie Microcystis blooms",
+    "tier": "ACAD",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect (Harmful Algae journal)",
+    "year": null,
+    "source_type": "Peer-reviewed article (Harmful Algae)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "ACAD-148",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S004313542030885X",
+    "title": "Using convolutional neural network for predicting cyanobacteria concentrations in river water",
+    "tier": "ACAD",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "ScienceDirect",
+    "year": null,
+    "source_type": "Peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-001",
+    "url": "https://data.usgs.gov/datacatalog/data/USGS:638f5472d34ed907bf7c8f23",
+    "title": "A national harmonized dataset of discrete chlorophyll from lakes and streams (2005-2022)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS Science Data Catalog",
+    "year": "2024",
+    "source_type": "federal dataset",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-002",
+    "url": "https://www.usgs.gov/data/a-national-harmonized-dataset-discrete-chlorophyll-lakes-and-streams-2005-2022",
+    "title": "A national harmonized dataset of discrete chlorophyll from lakes and streams (2005-2022) / AquaMatch Chlorophyll a Data from Water Quality Portal",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS",
+    "year": "2024",
+    "source_type": "federal harmonized dataset",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-003",
+    "url": "https://www.epa.gov/glwqa/about-nutrients-annex-annex-4",
+    "title": "About the Nutrients Annex (Annex 4)",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (Great Lakes Water Quality Agreement)",
+    "year": null,
+    "source_type": "federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-004",
+    "url": "https://www.cdc.gov/ohhabs/about/index.html",
+    "title": "About the One Health Harmful Algal Bloom System (OHHABS)",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. CDC",
+    "year": "2016 (system launch); ongoing",
+    "source_type": "federal surveillance system webpage",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-005",
+    "url": "https://www.usgs.gov/data/aquamatch-chlorophyll-a-data-water-quality-portal-1970-2024",
+    "title": "AquaMatch Chlorophyll a Data from Water Quality Portal: ~1970-2024",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. Geological Survey",
+    "year": null,
+    "source_type": "federal dataset",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-006",
+    "url": "https://www3.epa.gov/pesticides/chem_search/ppls/067690-00009-20220323.pdf",
+    "title": "CAPTAIN LIQUID Pesticide Product Label",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA / SePRO Corporation",
+    "year": "2022",
+    "source_type": "federal regulatory document (EPA pesticide label registration)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-007",
+    "url": "https://www.epa.gov/habs/climate-change-and-freshwater-harmful-algal-blooms",
+    "title": "Climate Change and Freshwater Harmful Algal Blooms",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": "",
+    "source_type": "Federal agency web resource",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-008",
+    "url": "https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan",
+    "title": "Cyanobacteria Assessment Network (CyAN)",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (multi-agency with NASA, NOAA, USGS)",
+    "year": "ongoing",
+    "source_type": "Federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-009",
+    "url": "https://oceancolor.gsfc.nasa.gov/projects/cyan/",
+    "title": "Cyanobacteria Assessment Network (CyAN)",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NASA Ocean Biology Processing Group / Ocean Color",
+    "year": null,
+    "source_type": "Federal agency (NASA) project/algorithm page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-010",
+    "url": "https://www.epa.gov/water-research/cyanobacteria-assessment-network-application-cyan-app",
+    "title": "Cyanobacteria Assessment Network Application (CyAN app)",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "Federal agency application/methodology page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-011",
+    "url": "https://coastalscience.noaa.gov/data_reports/cyanobacterial-hab-monitoring-using-satellite-imagery-for-the-united-states-great-lakes-region-created-by-the-noaa-harmful-algal-bloom-forecasting-branch-hab-f-from-2000-to-2024-ncei-accession-0312/",
+    "title": "Cyanobacterial HAB Monitoring using Satellite Imagery for the United States Great Lakes region (NOAA HAB-F, 2000-2024) — NCEI Accession 0312614",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA NCCOS / Harmful Algal Bloom Forecasting Branch",
+    "year": null,
+    "source_type": "Federal agency dataset/data report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-012",
+    "url": "https://www.epa.gov/water-research/cyanobacterial-harmful-algal-blooms-forecasting-research",
+    "title": "Cyanobacterial Harmful Algal Blooms Forecasting Research",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal agency research program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-013",
+    "url": "https://www.epa.gov/sites/default/files/2017-06/documents/microcystins-report-2015.pdf",
+    "title": "Drinking Water Health Advisory for the Cyanobacterial Microcystin Toxins (EPA 820R15100)",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. EPA Office of Water",
+    "year": "2015",
+    "source_type": "federal health advisory document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-014",
+    "url": "https://www.epa.gov/sites/default/files/2017-06/documents/cylindrospermopsin-report-2015.pdf",
+    "title": "Drinking Water Health Advisory for the Cyanobacterial Toxin Cylindrospermopsin",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA, Office of Water (EPA 820R15101)",
+    "year": "2015",
+    "source_type": "federal agency health advisory document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-015",
+    "url": "https://www.epa.gov/habs/epa-drinking-water-health-advisories-cyanotoxins",
+    "title": "EPA Drinking Water Health Advisories for Cyanotoxins",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. EPA",
+    "year": "2015",
+    "source_type": "federal agency webpage",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-016",
+    "url": "https://www.epa.gov/sciencematters/epa-researchers-develop-forecasting-approach-predict-harmful-cyanobacterial-blooms",
+    "title": "EPA Researchers Develop Forecasting Approach to Predict Harmful Cyanobacterial Blooms for U.S. Lakes",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": "2024",
+    "source_type": "federal agency science communication",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-017",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10842250/",
+    "title": "Forecasting freshwater cyanobacterial harmful algal blooms for Sentinel-3 satellite resolved U.S. lakes and reservoirs",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA researchers (published via PMC)",
+    "year": "2024",
+    "source_type": "peer-reviewed journal article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-018",
+    "url": "https://github.com/DOI-USGS/dataretrieval-python",
+    "title": "GitHub - DOI-USGS/dataretrieval-python: Python package for retrieving water data from USGS or the multi-agency Water Quality Portal",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS DOI-USGS (Water Mission Area)",
+    "year": null,
+    "source_type": "federal open-source software / data-access tool",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-019",
+    "url": "https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily",
+    "title": "Global Historical Climatology Network daily (GHCNd)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA National Centers for Environmental Information (NCEI)",
+    "year": null,
+    "source_type": "Federal agency data product page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-020",
+    "url": "https://coastalscience.noaa.gov/project/harmful-algal-bloom-hab-forecasting/",
+    "title": "Harmful Algal Bloom (HAB) Forecasting",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing",
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA NCCOS",
+    "year": null,
+    "source_type": "Federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-021",
+    "url": "https://www.epa.gov/sites/default/files/documents/climatehabs.pdf",
+    "title": "Impacts of Climate Change on the Occurrence of Harmful Algal Blooms",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. Environmental Protection Agency",
+    "year": "2013",
+    "source_type": "Federal agency report/fact sheet (EPA)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-022",
+    "url": "https://www.epa.gov/tmdl/impaired-waters-and-nutrients",
+    "title": "Impaired Waters and Nutrients (TMDL Program)",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-023",
+    "url": "https://doi-usgs.github.io/dataRetrieval/articles/dataRetrieval.html",
+    "title": "Introduction to the dataRetrieval package (USGS)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS (doi-usgs.github.io)",
+    "year": null,
+    "source_type": "software/technical documentation",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-024",
+    "url": "https://coastalscience.noaa.gov/science-areas/habs/hab-forecasts/lake-erie/",
+    "title": "Lake Erie Harmful Algal Bloom Forecast",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods",
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA National Centers for Coastal Ocean Science (NCCOS)",
+    "year": null,
+    "source_type": "federal agency operational forecast program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-025",
+    "url": "https://www.glerl.noaa.gov/res/HABs_and_Hypoxia/habTracker.html",
+    "title": "Lake Erie Harmful Algal Bloom Forecast (NOAA experimental/operational bulletin and HAB Tracker Archive)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data",
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA Great Lakes Environmental Research Laboratory (GLERL) / NCCOS",
+    "year": null,
+    "source_type": "Federal agency operational forecast program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-026",
+    "url": "https://oceanservice.noaa.gov/hazards/hab/lake-erie-3d-forecast.html",
+    "title": "Lake Erie Harmful Algal Bloom Forecast: 2020 Improvements",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA Office of Oceanic & Atmospheric Research / National Ocean Service",
+    "year": "2020",
+    "source_type": "federal agency technical explainer",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-027",
+    "url": "https://www.epa.gov/national-aquatic-resource-surveys/national-lakes-assessment-2022-key-findings",
+    "title": "National Lakes Assessment 2022 Key Findings",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data",
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": "2024",
+    "source_type": "federal survey report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-028",
+    "url": "https://nationallakesassessment.epa.gov/webreport/",
+    "title": "National Lakes Assessment Report (interactive webreport)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal survey report/data explorer",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-029",
+    "url": "https://www.ncei.noaa.gov/products/nccos-harmful-algal-blooms-operational-forecasting-system",
+    "title": "NCCOS Harmful Algal Bloom (HAB) Operational Forecasting System",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA National Centers for Environmental Information (NCEI) / NCCOS",
+    "year": null,
+    "source_type": "Federal agency operational forecast system / long-term archive",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-030",
+    "url": "https://registry.opendata.aws/noaa-ghcn/",
+    "title": "NOAA Global Historical Climatology Network Daily (GHCN-D) — Registry of Open Data on AWS",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "NOAA NCEI",
+    "year": null,
+    "source_type": "Federal open dataset registry",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-031",
+    "url": "https://www.usgs.gov/mission-areas/water-resources/science/nwqp-research-harmful-algal-blooms-habs",
+    "title": "NWQP Research on Harmful Algal Blooms (HABs) | U.S. Geological Survey",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS National Water Quality Program",
+    "year": null,
+    "source_type": "federal research program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-032",
+    "url": "https://www.epa.gov/sites/default/files/2019-09/documents/recommend-cyano-rec-water-2019-update.pdf",
+    "title": "Recommendations for Cyanobacteria and Cyanotoxins in Recreational Waters (EPA 823-R-19-001)",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "in-situ-and-weather-data",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "U.S. EPA Office of Water",
+    "year": "2019",
+    "source_type": "federal guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-033",
+    "url": "https://www.epa.gov/sites/default/files/2019-05/documents/hh-rec-criteria-habs-document-2019.pdf",
+    "title": "Recommended Human Health Recreational Ambient Water Quality Criteria or Swimming Advisories for Microcystins and Cylindrospermopsin",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA, Office of Water",
+    "year": "2019",
+    "source_type": "federal agency criteria document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-034",
+    "url": "https://www.federalregister.gov/documents/2019/06/06/2019-11814/recommended-human-health-recreational-ambient-water-quality-criteria-or-swimming-advisories-for",
+    "title": "Recommended Human Health Recreational Ambient Water Quality Criteria or Swimming Advisories for Microcystins and Cylindrospermopsin (Federal Register)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": "2019",
+    "source_type": "federal regulatory notice",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-035",
+    "url": "https://www.epa.gov/wqc/recreational-water-quality-criteria-and-methods",
+    "title": "Recreational Water Quality Criteria and Methods",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": "2019",
+    "source_type": "federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-036",
+    "url": "https://www3.epa.gov/pesticides/chem_search/reg_actions/reregistration/red_G-26_26-May-09.pdf",
+    "title": "Reregistration Eligibility Decision (RED) for Coppers (EPA 738-R-09-304)",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US Environmental Protection Agency",
+    "year": "2009",
+    "source_type": "federal regulatory risk assessment",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-037",
+    "url": "https://www.epa.gov/glwqa/status-and-progress",
+    "title": "Status and Progress (GLWQA)",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal agency status report page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-038",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7745959/",
+    "title": "Surveillance for Harmful Algal Bloom Events and Associated Human and Animal Illnesses — One Health Harmful Algal Bloom System, United States, 2016–2018",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "CDC MMWR / CDC authors",
+    "year": "2020",
+    "source_type": "federal surveillance report (peer-reviewed MMWR supplement)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-039",
+    "url": "https://www.epa.gov/sites/default/files/2018-03/documents/us_dap_final_march_1.pdf",
+    "title": "U.S. Action Plan for Lake Erie 2018-2023",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (Great Lakes National Program Office), in coordination with Ohio, Michigan, Indiana, Pennsylvania, New York",
+    "year": "2018",
+    "source_type": "federal/multi-state binational domestic action plan",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-040",
+    "url": "https://www.nrcs.usda.gov/ceap/usda-legacy-phosphorus-assessment-project",
+    "title": "USDA Legacy Phosphorus Assessment Project",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USDA Natural Resources Conservation Service (NRCS)",
+    "year": null,
+    "source_type": "federal agency research program",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-041",
+    "url": "https://assessments.epa.gov/risk/document/&deid=357233",
+    "title": "Using satellite imagery and national surveys to identify lakes at-risk for toxic cyanobacteria blooms in the U.S.",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA (Risk Assessment Portal / Science Inventory)",
+    "year": null,
+    "source_type": "federal research report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-042",
+    "url": "https://www.glerl.noaa.gov/pubs/fulltext/2016/20160026.pdf",
+    "title": "Vertical distribution of buoyant Microcystis blooms in a Lagrangian particle tracking model for short-term forecasts in Lake Erie (GLERL full text)",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Rowe, M.D. et al. / NOAA GLERL",
+    "year": "2016",
+    "source_type": "federal agency-hosted peer-reviewed full text",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-043",
+    "url": "https://www.epa.gov/waterdata/water-quality-data-download",
+    "title": "Water Quality Data Download",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal data portal",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-044",
+    "url": "https://www.waterqualitydata.us/",
+    "title": "Water Quality Portal (WQP)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS / EPA / National Water Quality Monitoring Council",
+    "year": null,
+    "source_type": "federal data portal",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-045",
+    "url": "https://www.waterqualitydata.us/portal_userguide/",
+    "title": "WQP User Guide",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "USGS / EPA / National Water Quality Monitoring Council",
+    "year": null,
+    "source_type": "technical documentation",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-046",
+    "url": "https://ntrs.nasa.gov/citations/20190025308",
+    "title": "Chlorophyll Algorithms for Ocean Color Sensors — OC4, OC5 and OC6",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA (NTRS) / ScienceDirect",
+    "year": null,
+    "source_type": "Federal technical report / peer-reviewed article",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-047",
+    "url": "https://www.earthdata.nasa.gov/data/tools/cyan-file-search",
+    "title": "CyAN File Search / Cyanobacteria Assessment Network",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA Earthdata",
+    "year": null,
+    "source_type": "Federal agency data access tool documentation",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-048",
+    "url": "https://www.earthdata.nasa.gov/data/projects/cyan",
+    "title": "Cyanobacteria Assessment Network | NASA Earthdata",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA Earthdata",
+    "year": null,
+    "source_type": "federal data portal page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-049",
+    "url": "https://doi-usgs.github.io/dataretrieval-python/reference/nwis.html",
+    "title": "dataretrieval.nwis reference (Python)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USGS (doi-usgs.github.io)",
+    "year": null,
+    "source_type": "software documentation",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-050",
+    "url": "https://climatedataguide.ucar.edu/climate-data/daymet-daily-surface-weather-and-climatological-summaries",
+    "title": "Daymet: Daily Surface Weather and Climatological Summaries",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA / ORNL DAAC (via Climate Data Guide, UCAR)",
+    "year": null,
+    "source_type": "Federal/research-institute gridded climate product description",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-051",
+    "url": "https://www.nrcs.usda.gov/sites/default/files/2022-10/FY23_CEMA%20201_Edge%20of%20Field%20Water%20Quality%20Monitoring%20Data%20Collection%20and%20Evaluation.pdf",
+    "title": "Edge-of-Field Water Quality Monitoring - Data Collection and Evaluation",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USDA NRCS",
+    "year": null,
+    "source_type": "federal agency technical guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-052",
+    "url": "https://www.epa.gov/ground-water-and-drinking-water/drinking-water-health-advisory-documents-cyanobacterial-toxins",
+    "title": "EPA Drinking Water Health Advisory Documents for Cyanobacterial Toxins",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": "2015",
+    "source_type": "federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-053",
+    "url": "https://pubs.usgs.gov/publication/sir20255046/full",
+    "title": "Evaluation of passive samplers for cyanotoxin detection by immunoassay and chromatographic-mass spectrometry",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "U.S. Geological Survey",
+    "year": null,
+    "source_type": "federal scientific investigations report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-054",
+    "url": "https://pubs.usgs.gov/publication/sir20245010/full",
+    "title": "Evaluation of sensors for continuous monitoring of harmful algal blooms in the Finger Lakes region, New York, 2019 and 2020",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USGS (Scientific Investigations Report SIR 2024-5010)",
+    "year": "2024",
+    "source_type": "federal scientific investigations report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-055",
+    "url": "https://pubs.usgs.gov/of/2015/1164/ofr20151164.pdf",
+    "title": "Field and laboratory guide to freshwater cyanobacteria harmful algal blooms for Native American and Alaska Native communities (USGS Open-File Report 2015-1164)",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Rosen BH, St. Amand A; U.S. Geological Survey",
+    "year": "2015",
+    "source_type": "Federal agency field guide (USGS Open-File Report)",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-056",
+    "url": "https://repository.library.noaa.gov/view/noaa/67732/noaa_67732_DS1.pdf",
+    "title": "Forecasting microcystin concentrations in Lake Erie using an Eulerian tracer model (NOAA repository full text/data)",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA GLERL",
+    "year": null,
+    "source_type": "federal repository full text/dataset",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-057",
+    "url": "https://www.congress.gov/crs-product/R44871",
+    "title": "Freshwater Harmful Algal Blooms: Causes, Challenges, and Policy Considerations",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Congressional Research Service (Library of Congress)",
+    "year": null,
+    "source_type": "federal government policy report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-058",
+    "url": "https://github.com/DOI-USGS/dataRetrieval",
+    "title": "GitHub - DOI-USGS/dataRetrieval (R package for USGS/EPA water quality and streamflow data)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USGS DOI-USGS",
+    "year": null,
+    "source_type": "federal open-source software / data-access tool",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-059",
+    "url": "https://water.usgs.gov/catalog/datasets/ef98187e-8703-4ec6-afc1-4dbc72c9d6d8/",
+    "title": "gridMET dataset catalog entry",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USGS Water Mission Area",
+    "year": null,
+    "source_type": "Federal agency data catalog entry",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-060",
+    "url": "https://www.epa.gov/habs/hab-forecasts",
+    "title": "HAB Forecasts | US EPA",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal portal/index page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-061",
+    "url": "https://coastalscience.noaa.gov/science-areas/habs/hab-monitoring-system/",
+    "title": "Harmful Algal Bloom Monitoring System",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA NCCOS",
+    "year": null,
+    "source_type": "Federal operational program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-062",
+    "url": "https://www.earthdata.nasa.gov/learn/trainings/introduction-remote-sensing-harmful-algal-blooms",
+    "title": "Introduction to Remote Sensing of Harmful Algal Blooms | NASA Earthdata / ARSET",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA Applied Remote Sensing Training (ARSET) / Earthdata",
+    "year": null,
+    "source_type": "federal training material",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-063",
+    "url": "https://www.weather.gov/cle/LakeErieHAB",
+    "title": "Lake Erie Harmful Algal Bloom",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA National Weather Service (Cleveland office)",
+    "year": null,
+    "source_type": "federal agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-064",
+    "url": "https://coastalscience.noaa.gov/science-areas/habs/hab-forecasts/lake-erie/faqs/",
+    "title": "Lake Erie Harmful Algal Bloom FAQs",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA NCCOS",
+    "year": null,
+    "source_type": "federal agency FAQ",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-065",
+    "url": "https://www.epa.gov/habs/learn-about-harmful-algae-cyanobacteria-and-cyanotoxins",
+    "title": "Learn about Harmful Algae, Cyanobacteria and Cyanotoxins",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "Federal agency reference page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-066",
+    "url": "https://catalog.data.gov/dataset/envisat-meris-global-binned-cyanobacteria-index-ci-data-version-5-0-a7b6f",
+    "title": "National Aeronautics and Space Administration - ENVISAT MERIS Global Binned Cyanobacteria Index (CI) Data, version 5.0",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA (data.gov catalog)",
+    "year": null,
+    "source_type": "federal dataset catalog record",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-067",
+    "url": "https://climatedataguide.ucar.edu/climate-data/nldas-north-american-land-data-assimilation-system",
+    "title": "NLDAS: North American Land Data Assimilation System",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NASA / NOAA (via Climate Data Guide, UCAR)",
+    "year": null,
+    "source_type": "Federal gridded reanalysis/forcing dataset description",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-068",
+    "url": "https://www.glerl.noaa.gov/res/HABs_and_Hypoxia/bulletin.html",
+    "title": "NOAA Lake Erie Harmful Algal Bloom Forecast Products",
+    "tier": "FED",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA GLERL (Great Lakes Environmental Research Laboratory)",
+    "year": null,
+    "source_type": "Federal agency bulletin page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-069",
+    "url": "https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=360661&Lab=CEMM&sitype=PR",
+    "title": "Overview of the Cyanobacteria Assessment Network (CyAN) satellite monitoring and the future of expanding to >270,000 lakes",
+    "tier": "FED",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA (Science Inventory / CEMM)",
+    "year": null,
+    "source_type": "federal science inventory report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-070",
+    "url": "https://www.epa.gov/sites/default/files/2018-11/documents/water_treatment_optimization_for_cyanotoxins.pdf",
+    "title": "Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking Water / Water Treatment Optimization for Cyanotoxins",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US Environmental Protection Agency, Office of Water",
+    "year": "2016",
+    "source_type": "federal guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-071",
+    "url": "https://www.noaa.gov/news-release/smaller-than-average-harmful-algal-bloom-predicted-for-western-lake-erie",
+    "title": "Smaller-than-average harmful algal bloom predicted for western Lake Erie (seasonal forecast news release)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "NOAA",
+    "year": null,
+    "source_type": "Federal agency press release / seasonal outlook",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-072",
+    "url": "https://www.epa.gov/habs/state-tribal-toxin-thresholds-and-hab-advisory-decision-methods",
+    "title": "State & Tribal Toxin Thresholds and HAB Advisory Decision Methods | US EPA",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal compiled reference",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-073",
+    "url": "https://www.usgs.gov/programs/environmental-health-program/science/toxins-and-harmful-algal-blooms-science-team",
+    "title": "Toxins and Harmful Algal Blooms Science Team | U.S. Geological Survey",
+    "tier": "FED",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "USGS Environmental Health Program",
+    "year": null,
+    "source_type": "federal science team page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-074",
+    "url": "https://www.epa.gov/sites/default/files/2017-08/documents/us_dap_preliminary_draft_for_public_engagement_8-10-17.pdf",
+    "title": "U.S. Action Plan for Lake Erie 2017 (Draft)",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal agency planning document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-075",
+    "url": "https://www.usgs.gov/mission-areas/water-resources/science/usgs-national-water-quality-network",
+    "title": "USGS National Water Quality Network (NWQN)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "U.S. Geological Survey",
+    "year": null,
+    "source_type": "federal monitoring network",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-076",
+    "url": "https://www.usgs.gov/tools/water-quality-portal",
+    "title": "Water Quality Portal | U.S. Geological Survey (overview page)",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "U.S. Geological Survey",
+    "year": null,
+    "source_type": "federal agency page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-077",
+    "url": "https://19january2017snapshot.epa.gov/lakes/watershed-protection-clean-lakes-case-study-phosphorus-inactivation-and-wetland-manipulation_.html",
+    "title": "Watershed Protection: Clean Lakes Case Study - Phosphorus Inactivation and Wetland Manipulation Improve Kezar Lake, NH",
+    "tier": "FED",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA",
+    "year": null,
+    "source_type": "federal agency case study",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "FED-078",
+    "url": "https://www.epa.gov/national-aquatic-resource-surveys/what-are-probability-surveys",
+    "title": "What Are Probability Surveys?",
+    "tier": "FED",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "US EPA (National Aquatic Resource Surveys)",
+    "year": null,
+    "source_type": "federal methodology page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-001",
+    "url": "https://floridadep.gov/AlgalBloom",
+    "title": "Algal Bloom Dashboard",
+    "tier": "SLG",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Florida Department of Environmental Protection",
+    "year": "n.d. (current/ongoing)",
+    "source_type": "state agency operational dashboard",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-002",
+    "url": "https://deq.utah.gov/water-quality/recreational-health-advisory-guidance-for-harmful-algal-blooms",
+    "title": "Harmful Algal Bloom Recreational Health Advisory Guidance",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Utah Department of Environmental Quality (Division of Water Quality) / Utah DHHS",
+    "year": "2023 (updated)",
+    "source_type": "state guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-003",
+    "url": "https://dec.ny.gov/environmental-protection/water/water-quality/harmful-algal-blooms/notifications",
+    "title": "NYHABS: New York Harmful Algal Bloom System — Notifications",
+    "tier": "SLG",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "New York State Department of Environmental Conservation (NYSDEC)",
+    "year": "2019 (system launch); ongoing",
+    "source_type": "state agency operational reporting system",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-004",
+    "url": "https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/habs/PWS-HAB-Strategy.pdf",
+    "title": "Public Water System Harmful Algal Bloom Response Strategy",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ohio EPA",
+    "year": "2016 (rules effective June 2016)",
+    "source_type": "state agency strategy/rule document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-005",
+    "url": "https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/35/hab/HABResponseStrategy.pdf",
+    "title": "State of Ohio Harmful Algal Bloom Response Strategy for Recreational Waters",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Ohio EPA / Ohio Department of Health",
+    "year": "2018 (updated)",
+    "source_type": "state agency strategy document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-006",
+    "url": "https://mywaterquality.ca.gov/habs/resources/response-guidance.html",
+    "title": "Voluntary Guidance for Agencies When Making Bloom and Water Contact Recreation Public Health Decisions (HABs Response Guidance)",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "California Cyanobacteria and Harmful Algal Bloom (CCHAB) Network / State Water Resources Control Board",
+    "year": "2016 (updated)",
+    "source_type": "state guidance document/decision framework",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-007",
+    "url": "https://protectingfloridatogether.gov/resources/harmful-algal-blooms-habs",
+    "title": "Blue-Green Algae / Harmful Algal Blooms (HABs) — Water Quality Dashboard",
+    "tier": "SLG",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Protecting Florida Together (State of Florida, multi-agency)",
+    "year": "n.d. (current/ongoing)",
+    "source_type": "state government data portal",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-008",
+    "url": "https://www.oregon.gov/oha/ph/healthyenvironments/recreation/harmfulalgaeblooms/pages/blue-greenalgaeadvisories.aspx",
+    "title": "Current Cyanobacteria Advisories",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Oregon Health Authority",
+    "year": "n.d. (current/ongoing)",
+    "source_type": "state agency advisory page/map",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-009",
+    "url": "https://extapps.dec.ny.gov/docs/water_pdf/habsprogramguide.pdf",
+    "title": "Harmful Algal Bloom (HAB) Program Guide",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "New York State Department of Environmental Conservation (NYSDEC)",
+    "year": "n.d.",
+    "source_type": "state agency program guide",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-010",
+    "url": "https://www.oregon.gov/deq/wq/Documents/habFwCyanobacHABstrat.pdf",
+    "title": "Oregon DEQ Freshwater Cyanobacteria Harmful Algal Blooms (CyanoHABs) Strategy",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Oregon Department of Environmental Quality",
+    "year": "n.d.",
+    "source_type": "state agency strategy document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-011",
+    "url": "https://www.waterboards.ca.gov/centralcoast/water_issues/programs/tmdl/docs/pinto_lake/",
+    "title": "Pinto Lake catchment TMDL addressing cyanobacterial blooms",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Central Coast Regional Water Quality Control Board (California)",
+    "year": null,
+    "source_type": "state regulatory program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-012",
+    "url": "https://www.waterboards.ca.gov/water_issues/programs/swamp/freshwater_cyanobacteria.html",
+    "title": "SWAMP Freshwater CyanoHABs Program (Blue-Green Algae)",
+    "tier": "SLG",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "California State Water Resources Control Board",
+    "year": "n.d. (program est. 2014)",
+    "source_type": "state agency program page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "SLG-013",
+    "url": "https://extapps.dec.ny.gov/docs/water_pdf/tmdlchautlk12.pdf",
+    "title": "Total Maximum Daily Load (TMDL) for Phosphorus in Chautauqua Lake",
+    "tier": "SLG",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "New York State DEC",
+    "year": null,
+    "source_type": "state regulatory TMDL document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-001",
+    "url": "https://hcb-1.itrcweb.org/copper-algaecides/",
+    "title": "Copper Algaecides — Harmful Cyanobacterial Blooms Guidance Document (HCB-1)",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "Interstate Technology and Regulatory Council (ITRC)",
+    "year": "2024",
+    "source_type": "technical guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-002",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/wash-chemicals/microcystins-background-201223.pdf?sfvrsn=6d60aa6d_3",
+    "title": "Cyanobacterial toxins: microcystins — Background document for development of WHO Guidelines for drinking-water quality and Guidelines for safe recreational water environments (WHO/HEP/ECH/WSH/2020.6)",
+    "tier": "NGO",
+    "category": "basic-science",
+    "categories": [
+      "basic-science",
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization",
+    "year": "2020",
+    "source_type": "intergovernmental technical background report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-003",
+    "url": "https://www.who.int/docs/default-source/wash-documents/wash-chemicals/cyanobacterial-toxins-chemical-fact-sheet.pdf?sfvrsn=ac637576_4",
+    "title": "Cyanobacterial toxins: Microcystins — chemical fact sheet supporting WHO Guidelines for drinking-water quality and safe recreational water environments",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization",
+    "year": "2020",
+    "source_type": "guideline background/fact sheet",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-004",
+    "url": "https://gleon.org/team-science/working-groups/",
+    "title": "Global Lake Ecological Observatory Network (GLEON) — Working Groups",
+    "tier": "NGO",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "High",
+    "org_or_authors": "GLEON (Global Lake Ecological Observatory Network)",
+    "year": null,
+    "source_type": "research network / consortium",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-005",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria-2/toxic-cyanobacteria-ch4.pdf?sfvrsn=d15fa5dd_7",
+    "title": "Toxic Cyanobacteria in Water, 2nd Edition — Chapter 4: Understanding the occurrence of cyanobacteria and cyanotoxins",
+    "tier": "NGO",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization (WHO)",
+    "year": null,
+    "source_type": "Intergovernmental technical monograph chapter",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-006",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria---1st-ed.pdf?sfvrsn=338a8c22_1",
+    "title": "Toxic Cyanobacteria in Water: A Guide to Their Public Health Consequences, Monitoring and Management (2nd edition)",
+    "tier": "NGO",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization",
+    "year": "2021",
+    "source_type": "intergovernmental technical guide",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-007",
+    "url": "https://www.who.int/publications/m/item/toxic-cyanobacteria-in-water---second-edition",
+    "title": "Toxic cyanobacteria in water: a guide to their public health consequences, monitoring and management — Second edition",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization (Chorus, I. & Welker, M., eds.)",
+    "year": "2021",
+    "source_type": "intergovernmental technical guidance document",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-008",
+    "url": "https://hab.ioc-unesco.org/",
+    "title": "Welcome to the IOC Harmful Algal Bloom Website (GlobalHAB Programme)",
+    "tier": "NGO",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "High",
+    "org_or_authors": "IOC-UNESCO / IOC-SCOR GlobalHAB",
+    "year": null,
+    "source_type": "intergovernmental program portal",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-009",
+    "url": "https://www.epa.gov/habs/world-health-organization-who-1999-guideline-values-cyanobacteria-freshwater",
+    "title": "WHO Guidebook: Toxic Cyanobacteria in Water — 1999 Guideline Values (via EPA summary)",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "World Health Organization",
+    "year": null,
+    "source_type": "intergovernmental guideline/standard",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-010",
+    "url": "https://www.caryinstitute.org/topics/cyanobacteria-algal-blooms",
+    "title": "Cyanobacteria & Algal Blooms (Topic Page)",
+    "tier": "NGO",
+    "category": "basic-science",
+    "categories": [
+      "basic-science"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Cary Institute of Ecosystem Studies",
+    "year": null,
+    "source_type": "nonprofit research institute topic hub",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-011",
+    "url": "https://www.caryinstitute.org/science/research-projects/global-lake-ecological-observatory-network",
+    "title": "Global Lake Ecological Observatory Network (Cary Institute project page)",
+    "tier": "NGO",
+    "category": "in-situ-and-weather-data",
+    "categories": [
+      "in-situ-and-weather-data"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "Cary Institute of Ecosystem Studies",
+    "year": null,
+    "source_type": "nonprofit research institute project page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-012",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000233419",
+    "title": "Harmful Algal Blooms: A Scientific Summary for Policy Makers",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "IOC-UNESCO",
+    "year": null,
+    "source_type": "intergovernmental policy report",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "NGO-013",
+    "url": "https://www.acs.org/pressroom/presspacs/2026/march/stopping-algae-blooms-with-bacteria-busting-buoys.html",
+    "title": "Stopping Algae Blooms With Bacteria-Busting Buoys",
+    "tier": "NGO",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "American Chemical Society (ACS) / SePRO (algaecide provider)",
+    "year": null,
+    "source_type": "scientific society press release",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-001",
+    "url": "https://www.prnewswire.com/news-releases/bluegreen-water-technologies-introduces-bgi-water-health-intelligence-platform-to-power-proactive-scalable-water-management-302603700.html",
+    "title": "BlueGreen Water Technologies — BGi Water Health Intelligence Platform",
+    "tier": "PVT",
+    "category": "models-and-methods",
+    "categories": [
+      "models-and-methods"
+    ],
+    "relevance": "High",
+    "org_or_authors": "BlueGreen Water Technologies, Ltd.",
+    "year": null,
+    "source_type": "commercial vendor product announcement",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-002",
+    "url": "https://www.sepro.com/documents/Captain_Label.pdf",
+    "title": "Captain — EPA-Registered Product Label (EPA Reg. No. 67690-9)",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "SePRO Corporation",
+    "year": null,
+    "source_type": "EPA-registered pesticide product label",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-003",
+    "url": "https://www.cyanolakes.com/",
+    "title": "CyanoLakes — Manage Cyanobacterial Blooms Using Satellite Imagery",
+    "tier": "PVT",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "High",
+    "org_or_authors": "CyanoLakes (Pty) Ltd",
+    "year": null,
+    "source_type": "commercial satellite monitoring vendor",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-004",
+    "url": "https://www.sepro.com/aquatics/pak-27",
+    "title": "PAK 27 — SePRO Corporation Product Page / SDS",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "SePRO Corporation",
+    "year": null,
+    "source_type": "vendor product page / safety data sheet",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-005",
+    "url": "https://www.sepro.com/Documents/SeClear-Algaecide-and-Water-Quality-Enhancer_Label.pdf",
+    "title": "SeClear Algaecide and Water Quality Enhancer — Product Label",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "SePRO Corporation",
+    "year": null,
+    "source_type": "EPA-registered pesticide product label",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-006",
+    "url": "https://sepro.com/aquatics/seclear",
+    "title": "SePRO Corporation — Aquatics Products / SeClear",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "SePRO Corporation",
+    "year": null,
+    "source_type": "corporate product/science page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-007",
+    "url": "https://sepro.com/aquatics/algae-corner/algae-corner-sepro-solutions-for-algae-control",
+    "title": "Solutions for Algae Control (Algae Corner)",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "High",
+    "org_or_authors": "SePRO Corporation",
+    "year": null,
+    "source_type": "corporate technical/educational page",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-008",
+    "url": "https://eomap.com/start-download/water-quality-deep-dive",
+    "title": "EOMAP Water Quality Deep Dive (Remote Sensing Methodology)",
+    "tier": "PVT",
+    "category": "remote-sensing",
+    "categories": [
+      "remote-sensing"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "EOMAP GmbH & Co. KG",
+    "year": null,
+    "source_type": "commercial vendor technical white paper",
+    "alt_urls": [],
+    "aggregator": false
+  },
+  {
+    "key": "PVT-009",
+    "url": "https://www.businesswire.com/news/home/20260401609078/en/SePRO-Corporation-Acquires-Earth-Science-Laboratories-Strengthening-Its-Water-Treatment-Portfolio-Across-Drinking-Water-Conveyance-and-Invasive-Species-Management",
+    "title": "SePRO Corporation Acquires Earth Science Laboratories, Strengthening Its Water Treatment Portfolio",
+    "tier": "PVT",
+    "category": "treatment-and-management",
+    "categories": [
+      "treatment-and-management"
+    ],
+    "relevance": "Medium",
+    "org_or_authors": "SePRO Corporation (BusinessWire)",
+    "year": null,
+    "source_type": "corporate press release",
+    "alt_urls": [],
+    "aggregator": false
+  }
+]

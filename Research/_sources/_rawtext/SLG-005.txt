@@ -1,0 +1,1361 @@
+State of Ohio
+Harmful Algal Bloom Response
+Strategy for Recreational Waters
+August 2020
+Mike DeWine, Governor
+Jon Husted, Lt. Governor
+Laurie A. Stevenson, Director — Ohio Environmental Protection Agency
+Mary Mertz, Director — Ohio Department of Natural Resources
+Lance Himes, Interim Director — Ohio Department of Health
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Ohio Harmful Algal Bloom Response Strategy
+for Recreational Waters
+2020
+By signature, the undersigned certify that they have provided comments on, or reviewed the 2020 Ohio
+Harmful Algal Bloom Response Strategy for Recreational Waters:
+Laurie A. Stevenson, Director, Ohio Environmental Agency
+Mary Mertz, Director, Ohio Department of Natural Resources
+Lance Himes, Interim Director, Ohio Department of Health
+II
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Acknowledgements
+We acknowledge the close working relationship between the Ohio Environmental Protection Agency,
+the Ohio Department of Natural Resources, and the Ohio Department of Health in addressing Harmful
+Algal Bloom (HAB) issues in Ohio and in developing this unified state response strategy for recreational
+waters.
+III
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Table of Contents
+Acknowledgements ......................................................................................................................................................................................................... iii
+1.Introduction .................................................................................................................................................................................................................... 1
+1.1 Purpose ............................................................................................................................................................................................................ 1
+1.2 Agency Roles and Responsibilities ...................................................................................................................................................... 1
+Ohio Department of Natural Resources (ODNR) ...................................................................................................................................... 1
+Ohio Department of Health (ODH) ................................................................................................................................................................. 2
+Ohio Environmental Protection Agency (Ohio EPA) .............................................................................................................................. 2
+1.3. Cyanobacteria ............................................................................................................................................................................................... 3
+1.4 Cyanobacterial Blooms ............................................................................................................................................................................. 3
+1.5 Cyanotoxins .................................................................................................................................................................................................... 4
+2.Cyanotoxin Toxicity Thresholds ............................................................................................................................................................................ 4
+2.1 Introduction ................................................................................................................................................................................................... 4
+2.2 Health Impacts from Exposure to Cyanotoxins .............................................................................................................................. 5
+2.3 Cyanotoxin Thresholds for Recreational Waters .......................................................................................................................... 5
+3.HAB Identification and Reporting ......................................................................................................................................................................... 6
+3.1 Observation .................................................................................................................................................................................................... 6
+3.2 Reporting ........................................................................................................................................................................................................ 7
+3.3 Screening and Cyanotoxin Analysis..................................................................................................................................................... 7
+3.4 Information Sharing and Data Management ................................................................................................................................... 8
+4.Harmful Algal Bloom Advisories ........................................................................................................................................................................... 8
+4.1 Advisory Postings ........................................................................................................................................................................................ 8
+4.2 General Signage ............................................................................................................................................................................................ 9
+4.3 Recreational Caution .................................................................................................................................................................................. 9
+4.4 Recreational Public Health Advisory .................................................................................................................................................. 9
+4.5 Boat Ramp Caution .................................................................................................................................................................................. 10
+5.Harmful Algal Bloom Public Awareness and Education .......................................................................................................................... 10
+6.Glossary and Acronyms .......................................................................................................................................................................................... 11
+Appendix A – Local HAB Response Guide .......................................................................................................................................................... 13
+Appendix B – Sampling and Safety Materials ................................................................................................................................................... 17
+Appendix C – Events Shaping Ohio’s HAB Strategy ....................................................................................................................................... 22
+Appendix D – Toxicity Review, Exposure Assumptions, and Threshold Calculations Toxicity Review .................................. 25
+Appendix E – Laboratories Used by the State of Ohio ................................................................................................................................... 28
+Appendix F – Forms* .................................................................................................................................................................................................... 29
+Appendix G – Ohio State Park Beaches ................................................................................................................................................................. 31
+Appendix H – 2020 HAB Contacts .......................................................................................................................................................................... 34
+Appendix I – Ohio/U.S. Army Corps of Engineers Agreement and Points of Contact ...................................................................... 36
+References ......................................................................................................................................................................................................................... 40
+IV
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+1. Introduction
+1.1 Purpose
+Ohio Harmful Algal Bloom Response Strategy for Recreational Waters
+The purpose of the is to provide a
+unified statewide approach to addressing harmful algal blooms (HABs) in Ohio recreational waters and to
+protect people from cyanotoxins produced by cyanobacteria. The Strategy identifies numeric thresholds to
+be used in making advisory decisions. Sampling will target those cyanotoxins that may be present at or
+above the threshold criteria established by the State of Ohio.
+The focus of the Ohio Harmful Algal Bloom Response Strategy for Recreational Waters is on publicly
+owned, recreational lakes with public beaches and boat ramps, although these practices can apply to any
+recreational water body. The State of Ohio will post advisories at state park lake beaches and signage at
+boat ramps. On state park lakes jointly managed by the Ohio Department of Natural Resources (ODNR) and
+the U.S. Army Corps of Engineers (USACE), sampling and public notification will be coordinated according
+to the interagency agreement (see Appendix I). Local agencies and entities responsible for other
+recreational waters are encouraged to follow the State Strategy for posting advisories for consistency in
+communicating risk to the public. To assist local beach managers and public health departments, a Local
+HAB Response Guide was developed this year and is included with this state response strategy as Appendix
+A.
+The State will conduct sampling at state park beaches in response to the presence of cyanobacterial
+blooms. Harmful algal blooms can also impact recreational activities that occur in the open waters of lakes
+and rivers (such as boating and jet skiing). However, the potential exposure to cyanotoxins at much greater
+at beaches (e.g., full emersion swimming, larger number of children), therefore the State is focusing on
+monitoring and advisories on those higher risk waters. Increased education and outreach will be conducted
+to address and minimize the public’s exposure to harmful algal blooms in the open waters. This includes
+posting of caution signage at boat ramps in conjunction with posting advisories at beaches.
+Public Water System Harmful Algal Bloom Response
+A separate procedure for responding to harmful algal blooms on sources of drinking water, the Ohio
+Strategy epa.ohio.gov/ddagw/HAB
+Environmental Protection Agency’s (Ohio EPA)
+, is available online at: . Guidance on the health effects of exposure to
+cyanotoxins and testing private drinking water sources for the presence of cyanotoxins and treatment
+https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/private-water-systems-
+options is available from the Ohio Department of Health (ODH) at
+program/Resources-and-Education/
+1.2 Agency Roles and Respons.i bilities
+Ohio Department of Natural Resources (ODNR):
+The following are the responsibilities of each of the three state agencies that developed this Strategy:
+•
+•
+Monitor state park lakes for HAB development.
+•
+Visually inspect state park beaches in response to bloom reports.
+•
+Sample state park beaches for cyanotoxins if a bloom is visually evident at or near the beach.
+•
+Post advisories and caution signs when necessary at state park beaches and boat ramps.
+•
+Provide outreach to the public about HABs.
+•
+Coordinate with the U.S. Army Corps of Engineers on jointly managed lakes.
+Create advisory signage templates in PDF format.
+1
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Ohio Department of Health (ODH):
+•
+Evaluate illness reports, support local health district investigations, classify reports according to
+existing case definitions and report case results to the One Health Harmful Algal Bloom System
+•
+(OHHABS).
+•
+Determine advisory thresholds in consultation with ODNR and Ohio EPA.
+•
+Advise the public about private lake HAB issues.
+•
+Provide information to the public about HAB safety and health effects.
+Provide one website for posting recreational HAB advisories to the public through the BeachGuard
+•
+application.
+•
+Forward information on bloom reports and NOAA satellite imagery to local health districts.
+Coordinate with local health districts when responding to a potential HAB and post advisories when
+•
+necessary, including sampling on public beaches not located at state parks.
+Communicate with Ohio EPA and ODNR as described in the communication protocol when
+•
+advisories will be posted by local health districts.
+Review National Oceanic and Atmospheric Administration (NOAA) satellite imagery to evaluate
+Ohio Environmental Protection Agency (Ohio EPA):
+HAB risks in open waters.
+•
+Monitor NOAA satellite imagery and other information to identify bloom formation and share with
+•
+ODH and ODNR.
+Use various screening tools to assist in determining the presence of a cyanobacteria and
+•
+cyanotoxins.
+Collect and review Algal Bloom Reports, maintain in a database, and forward as appropriate for
+•
+response.
+• ohioalgaeinfo.com
+Maintain a database of state-reported HAB data.
+•
+Maintain the website.
+Provide HAB sample collection guidance for private lakes and other private water bodies and refer
+them to the Ohio State University (OSU) Extension, local health districts or ODH for additional
+•
+assistance.
+•
+Assist with sampling at public lakes as needed.
+Assist in determining the presence of a cyanobacteria bloom by microscopic review to determine
+•
+genera.
+•
+Sample for cyanotoxins and phytoplankton as part of the Inland Lakes Monitoring Program.
+•
+Provide HAB sampling protocols and train others in sample collection.
+Provide outreach to the public about HABs.
+2
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+The following table outlines the roles and responsibilities for sampling and posting advisories at various
+rTeacbrleea 1t i—on Satla wtea taenrd b Loodciaels A. gency Roles and Responsibilities.
+Sampling or
+Type of Waterbody Observations of Blooms Post Advisories
+Beaches and State Park ODNR, Local Health Districts ODNR
+Primary
+Other Public Beaches and Local Beach Manager or Local Beach Manager or
+Contact
+Recreation Areas Local Health District* Local Health Districts
+Recreation
+Private Beaches and Property Owner Property Owner
+Areas
+Recreation Areas
+US Army Corps of USACE coordinates with ODNR, USACE coordinates with
+Engineers (USACE) lake Local Beach Manager* ODNR, Local Beach Manager
+Rivers with Rivers- Private access Property Owner Property Owner
+Primary
+Ohio River ORSANCO* Local govt./Ohio EPA
+Contact
+Rivers – public access Local Health Districts/ Local Health Districts
+Recreation
+Ohio EPA
+Activities
+*Ohio EPA may be able to provide sampling assistance if the local health district or Ohio River Valley Sanitation Commission
+(ORSANCO) is unable to respond.
+HABs reported in non-public (private) waters may be referred to the Ohio State University Extension Office
+or local health departments for assistance. Owners and managers of private beaches, lakes, and ponds can
+use the sampling guidance provided in Appendix A to collect samples. Samples can be sent to labs listed in
+1Ap.3p.e nCdyiax nEo fobra ccytaenroitao xin analysis.
+Cyanobacteria are organisms that are found in all bodies of water. Under favorable conditions (nutrient
+availability, light, and heat) cyanobacteria can multiply and create an algal bloom becoming visible to the
+naked eye. These algal blooms generally occur in eutrophic or hypereutrophic water bodies. Eutrophication
+is most often the result of an elevated supply of nutrients, particularly nitrogen and phosphorus, to surface
+waters that results in enhanced production of primary producers, particularly phytoplankton and aquatic
+plants (Prepas and Charette 2003).
+Cyanobacteria can cause problems in recreational waters. Large algal blooms can cause decreased
+dissolved oxygen concentrations resulting in fish kills. Many cyanobacteria also produce taste and odor
+compounds that affect the taste of fish. The foul smell produced by some cyanobacteria is a nuisance to
+t1h.o4s e lCivyiangn aorboauncdte orri arelc Breloatoinmg so n the water.
+Cyanobacterial blooms vary in species composition and cyanotoxin production over time and within a
+water body. The distributions of cyanobacteria populations are affected by weather and lake conditions,
+hydrology, lake morphology, and the type of cyanobacteria. The cyanobacteria can be distributed evenly
+throughout a lake, or irregularly distributed because of currents and/or prevailing winds. Hydrologic
+changes because of heavy rains, or the discharge from a stream resulting in currents, can significantly affect
+cyanobacteria population distributions. Areas like shallow bays, coves, sites directly affected by nutrient-
+rich inflows, or structures that affect flow (e.g. dikes, piers, or intake towers) can significantly affect
+population growth rates and cyanobacteria distribution.
+3
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Planktothrix rubescens
+Planktothrix spp Cylindospermopsis spp
+Cyanobacteria can be found at the water surface (scums), at a particular depth (e.g. ),
+or can occur throughout the water column (e.g. ., .). Strong winds,
+rainfall, currents, and lake turnover can all mix a surface algal bloom throughout the water column. Winds
+can also concentrate a surface algal bloom in calm leeward (downwind) areas such as a bay, cove, beach, or
+inlet. Some cyanobacteria are also capable of buoyancy regulation, and during calm non-mixed conditions
+can move vertically throughout the water column based on light and nutrient availability. These various
+factors, that can move a visible surface algal bloom below the surface or to a different portion of the lake,
+are important to understand because the absence of a surface algal bloom does not necessarily indicate an
+algal bloom is not present. If it is noticed that a surface algal bloom has dissipated, the bloom may not have
+senesced (died), but could have just moved to another area of the lake or mixed below the lake surface
+within the water column. In addition, some cyanobacteria cannot form surface scums, so surface
+accumulations should not be relied on as the only indicator that an algal bloom is present.
+Cylindrospermopsis spp
+Color is not necessarily a good way to distinguish cyanobacteria from green algae or suspended sediment.
+Cyanobacteria can appear in many colors that include brown and green. . blooms are
+generally brown and appear like suspended sediment. Other blooms are green and are mistaken for green
+algae. It is important for lake managers to be familiar with their lake so they can notice changes in the
+normal appearance outside bloom season. The best way to know for sure if cyanobacteria are present is
+through processed satellite imagery, microscopic examination, or use of other cyanobacteria screening
+1to.o5l s (Ce.yga. mnoolteocuxlianrs m ethods, cyanotoxin field test kits).
+Cyanobacteria can produce a variety of cyanotoxins which can cause illness and death in humans and
+animals. These cyanotoxins include liver toxins, nerve toxins, and skin toxins. Some of the more common
+cyanotoxins detected in Ohio waters include microcystins and saxitoxin. Cylindrospermopsin and anatoxin-
+a have also been detected, but much less frequently. Cyanotoxins can be found within cyanobacteria cells or
+released from the dying cells into the water. Sudden die-off of an algal bloom can release cyanotoxins to the
+water all at once in great concentration (when using an algaecide) or gradually when some cells die while
+others grow during the lifecycle of a bloom. Cyanotoxin production is strain-specific, and many of these
+organisms can produce one or several different types of cyanotoxins. These cyanotoxins are colorless,
+odorless, and tasteless, and persist in the water after an algal bloom is gone. Cyanotoxins may be degraded
+2by. bCayctaerniaol taoctxioinn a nTdo sxuincliigthyt Tovherr etismheo. lds
+2.1 Introduction
+This section provides guidelines for public recreational water managers responding to HABs and their
+potential to adversely impact human health. Included in this strategy are cyanotoxin thresholds protective
+of human health by incidental ingestion in recreational waters; a framework to be used in issuing HAB
+advisories; and language for signage to use when posting affected water bodies.
+These guidelines were recommended by a committee that included representatives from Ohio EPA, ODH
+and ODNR and were adopted by the Directors of those state departments. These guidelines are reviewed
+and updated annually. This strategy supersedes previous versions of this document. The science of HABs
+and their related cyanotoxins is evolving, and this strategy may require updating with the issuance of new
+toxicity information or national HAB guidance or policy.
+4
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+2.2 Health Impacts from Exposure to Cyanotoxins
+Many of the health symptoms associated with exposure to cyanotoxins can mimic other illnesses and
+diseases and therefore may not be readily recognized by the medical community or the public. Some of
+these symptoms include nausea, skin rashes, gastrointestinal distress, disorientation, numbness and
+fatigue. These symptoms can occur more quickly and severely in dogs and other animals. Increasing the
+level of awareness through education within the medical and veterinary community, general public and
+government agencies is strongly recommended in order to determine the public health impact of these
+cyanotoxins. ODH has developed information for physicians, known as “Screen for Green” that provides a
+diagnostic flowchart to assess probable patient exposure to cyanotoxins and treatment options. Similar
+information is available for veterinarians including diagnosis and treatment actions when an animal illness
+odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-blooms/welcome/
+is suspected. Information for physicians, veterinarians and health effects of exposure to cyanotoxins can be
+found at .
+Cyanotoxins can affect liver and brain function. Many of the cyanobacteria produce toxins that can cause
+skin irritation. Due to the potency of these toxins and no known antidote, the State of Ohio is taking a
+conservative approach with human exposure to these toxins when setting recreational water thresholds.
+Reports of suspected human or animal illnesses should be reported to the local health district of residence.
+Local health districts will collect illness report information and work with ODH on reviewing these reports
+and next steps. Should ODH determine that an outbreak has occurred, then a Recreational Public Health
+2Ad.3v isoCryy,a ans odteoscxriinbe Tdh inre Ssehctoioldn s4 .f4o, rm Raye cbree paotsitoedn aevl eWn wahteenrs t oxin levels are below advisory thresholds.
+Numerous risk assessment frameworks, exposure assumptions, and toxicity values from state, national,
+and primary literature sources were considered prior to developing the cyanotoxin thresholds. The
+following thresholds were established based on the best scientific information, guidance, and public policy
+available at the time, and are based on incidental ingestion only (Table 2).
+While protective of human exposures based on current information, the thresholds given here may or may
+not be protective of animals such as dogs or livestock. The United States Environmental Protection Agency
+(U.S. EPA) issued final recommended recreational swimming advisories for two cyanotoxins, microcystins
+and cylindrospermopsin in June 2019 which were subsequently adopted by the State of Ohio in this
+document.
+For a toxicity review of various cyanotoxins, exposure assumptions and threshold calculations, see
+ATapbpleen 2d —ix DN.u meric Thresholds for Cyanotoxins in Recreational Water.
+Threshold (μg/L) Microcystins* Anatoxin-a Cylindrospermopsin Saxitoxins*
+Recreational 8 8 15 0.8
+Public Health Advisory
+*Microcystins and saxitoxin thresholds are intended to be applied to total concentrations of all reported congeners,
+variants, or analogs of those cyanotoxins.
+5
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+3. HAB Identification and Reporting
+This section describes how to recognize a potential HAB, how to report a HAB, what to sample for, and how
+i3n.f1o rmOatbiosne risv sahtairoend .
+The initial observation of a possible HAB involves identifying the presence of color and/or scum in surface
+water. Frequent, close monitoring of the algal bloom’s location(s) is recommended, especially in
+ohioalgaeinfo.com
+recreational waters. The color can vary from brown (looks like suspended sediment), green, blue-green,
+white, black, purple or red. (See Photo Gallery of Ohio HABs at ).
+The State will use remotely sensed imagery collected and processed by the National Oceanic and
+Atmospheric Administration (NOAA) or the National Aeronautical and Space Administration (NASA) to
+assist in identifying the location of HABs in Lake Erie, inland state park lakes, and portions of the Ohio
+River. For state recreation managers, the imagery is used as a tool to assist in visual confirmation of algal
+bloom presence. These remote sensing tools can provide information on lakes or rivers that are at least 300
+meters wide. A processed image can detect HABs approximately 1-2 feet below the surface when the
+human eye cannot. It can also detect algal blooms in turbid waters when the blooms can be difficult to
+visually identify. Hyperspectral imaging by airplane may also be used during times of increased cloud cover
+to supplement the satellite images. NOAA prepares a bi-weekly bulletin depicting satellite images of HABs,
+predicted algal bloom densities and wind directions for Lake Erie. More information on the NOAA HAB
+glerl.noaa.gov
+detection and monitoring program for Lake Erie can be found at the Great Lakes Environmental Research
+Lab website at . Beginning in May 2017, a similar satellite product became available for
+inland lakes in Ohio. Ohio EPA reviews the near daily images for any cyanobacteria detections, generates
+maps of cyanobacteria detections for individual lakes, and shares a summary of current cyanobacteria
+detections and lake maps with ODNR and ODH. A multi-agency project, Cyanobacteria Assessment Network
+(CyAN), is responsible for using satellites to identify cyanobacteria blooms across the contiguous United
+epa.gov/water-
+States and will publicly share satellite data through an Android mobile application (in development) and
+research/cyanobacteria-assessment-network-cyan
+EnviroAtlas. More information on the CyAN project can be found at the U.S. EPA website at
+.
+Ohio EPA conducts ambient HAB sampling at inland lakes and Lake Erie as part of their inland lakes and
+nearshore Lake Erie monitoring programs. Public water systems routinely monitor for HABs on their
+source waters and provide that data to Ohio EPA. When HABs are detected on inland lakes or nearshore
+Lake Erie areas near public beaches, that data will be provided to ODNR and ODH for follow-up. USACE,
+Ohio Lake Management Society (OLMS), and other organizations also conduct HAB sampling and provide
+that information to Ohio EPA. When these data indicate a HAB may be present on a lake, the information
+will be forwarded to ODNR and ODH for potential follow-up.
+6
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+3.2 Reporting
+ohioalgaeinfo.com
+Individuals that observe HABs are encouraged to complete an Algal Bloom Report Form on the
+website that is accessible as a webform to directly locate the bloom location and
+include digital photos. Alternatively, a paper form is available (included in Appendix F) and may be
+HABMailbox@epa.ohio.gov
+submitted through e-mail along with digital photos to Ohio EPA’s HAB mailbox
+( ). All Algal Bloom Reports and HAB data (cyanotoxin and phytoplankton data,
+ohioalgaeinfo.com
+and photographs) will be entered into a repository maintained by Ohio EPA. Cyanotoxin data will be posted
+on .
+Algal bloom observers are encouraged to submit digital photographs with the Algal Bloom Report for algal
+bloom evaluation. Close-up (within 24 inches) and landscape photographs showing the extent and location
+of the algal bloom are helpful. Bloom reports at state park beaches will be forwarded to the state park
+beach manager for response. In response to reports of potential HABs on non-state park beaches, Ohio EPA
+will evaluate the report and share with local water managers and ODH, who will notify local health
+districts. Ohio EPA will provide sampling guidance to managers of private water bodies.
+Coordination of response to blooms reported in non-state park beaches may be referred to the OSU
+Extension Office or local health districts for assistance. Owners of private beaches or ponds can use the
+sampling guidance provided in Appendix B to collect samples. Samples can be sent to labs listed in
+A3p.3p enSdcixr eEe fonri ncyga naontdox Ciny aannaolytsoisx. in Analysis
+Ohio EPA has developed a standard sampling protocol that can be used when sampling HABs (Appendix B).
+The protocol is used to collect samples at state park beaches during the primary recreational season from
+Memorial Day to Labor Day and as deemed necessary outside of the primary recreational season when
+conditions warrant the need for continued testing. At Ohio State Park beaches, if the park managers
+observe a potential HAB at the beach, the standard protocol is to collect a composite cyanotoxin sample and
+HABs - A Guide to Collecting Grab and Composite Cyanotoxin Samples
+submit for microcystin analysis. The Ohio EPA protocol can be found in Appendix B. An instructional video
+https://youtu.be/B2yLi1Bp0CY
+( ) is available on online at
+.
+Cyanobacterial screening may include: phytoplankton identification (qualitative identification of genera
+and/or species present); cell quantification (cell counts or biovolume); phytopigment quantification (e.g.
+chlorophyll a or phycocyanin from sensors or analytical methods, reported in relative fluorescence units or
+cell density); molecular (qPCR) assessment of cyanobacteria genes or cyanotoxin-production genes; and
+rapid assessment field tests for cyanotoxins.
+If screening is not conducted prior to cyanotoxin analysis, water managers are recommended to at least
+sample for microcystins, since they are the most commonly occurring cyanotoxin in Ohio. If phytoplankton
+identification or molecular screening shows an abundance of cyanobacteria capable of producing other
+cyanotoxins, additional analysis for those cyanotoxins (such as cylindrospermopsin, anatoxin-a, and
+saxitoxins) is recommended.
+7
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+3.4 Information Sharing and Data Management
+odh.ohio.gov/healthybeaches
+All recreational advisories occurring at state park beaches will be posted by ODNR on the BeachGuard
+website at . If a water manager posts an advisory on a non-state park public
+ohioalgaeinfo.com
+beach or boat ramp, they are encouraged to share that information with their local health district, who
+should then post the advisory on the BeachGuard website. The website has been
+developed as the State’s primary site for HAB information. The website includes access for advisory
+notifications, reported recreational water quality data and information, links to the NOAA bulletin and
+r4e.l aHtead rsmateflulitle Aimlgagaelr yB, tlhoeo ambil itAy dtov riespoorrti ealsg al blooms, factsheets and general HAB information.
+4.1 Advisory Postings
+Public advisories are necessary to inform the public of the health risks associated with exposure to water
+that contains cyanotoxins. The State of Ohio will issue a recreational caution and a recreational public
+health an advisory for recreational waters based upon the available evidence as described below. The State
+will only be responsible for posting advisories at state park beaches and caution signage at boat ramps. For
+state park beaches, advisory posting removal will be based upon two consecutive samples taken at least
+one week apart with cyanotoxin levels below threshold levels. Caution signage removal will depend on
+where the sign is posted, as detailed below. It is recommended that other public and private recreational
+water managers post (and remove) advisories at beaches and access points according to this strategy to
+ohioalgaeinfo.com
+ensure consistency in messaging (see Table 1). PDF versions of the sign templates are available at
+for use by local health districts, other managing agencies responsible for public
+beaches, and private beach managers to help ensure consistent messaging across the state. A flow-diagram
+outlining the posting strategy is provided below:
+8
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+4.2 General Signage
+The general informational sign has been posted for recreational waters at public state park beaches and
+boat ramps. For non-state park beaches with a history of HAB occurrence or upon visual confirmation of a
+Have fun on the water, but know that blue-green algae are in many
+HAB at a beach, posting of the informational sign is recommended:
+Ohio lakes. Their toxins may be, too.
+Be alert! Avoid water that:
+• looks like spilled paint
+• has surface scums, mats, or films
+• is discolored or has colored streaks
+• has green globs floating below the surface
+Avoid swallowing lake water.
+For more information go to ohioalgaeinfo.com
+or call 1-866-644-6224
+4.3 Recreational Caution
+A Recreational Caution will be issued at a public state park beach when
+an algal bloom is visually confirmed. A Recreational Caution will be
+issued with an BLUE sign (with black lettering) posted with the
+CAUTION
+following language:
+A possible algal bloom may be at the beach.
+<FACILITY NAME> has tested the water.
+Lab results pending.
+For more information go to ohioalgaeinfo.com
+or call 1-866-644-6224
+Once a Caution sign is posted, sampling for cyanotoxins occurs
+according to standard procedures (Appendix B). If cyanotoxins are detected above the recreational
+threshold; the Caution sign will be replaced with a Recreational Public Health Advisory. The Caution sign
+m4.a4y beR reecmreoavetdio anftaerl aPlugabl lbiclo Homea isl tgho nAed. visory
+A Recreational Public Health Advisory will be issued at a public state
+park beach when cyanotoxin levels are equal to or exceed a
+recreational threshold. A Recreational Public Health Advisory will be
+issued with a RED sign (with white lettering) posted with the following
+DANGER
+language:
+Avoid all contact with the water.
+Algal toxins have been found at unsafe levels.
+Swimming and wading are not recommended.
+Keep pets away.
+For more information go to ohioalgaeinfo.com
+or call 1-866-644-6224
+9
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+A Recreational Public Health Advisory will remain until cyanotoxin levels have decreased to below
+recreational thresholds. The Advisory (and Boat Ramp Caution) may be removed after two consecutive
+samples taken at least one week apart indicate cyanotoxin concentrations are below recreational
+t4h.r5e shBolodas.t I fR tahem bplo Comau ist isotinll visually present, the Recreational Caution sign shall be reposted.
+A Boat Ramp Caution sign will be issued and removed at a public state
+park boat ramps in conjunction with a Recreational Public Health
+Advisory (4.4 above). A Boat Ramp Caution will be issued with a
+SAFETY GREEN sign (with black lettering) posted with the following
+CAUTION
+language:
+Harmful algae toxins have been found along the beach
+and may be present in other areas of the lake.
+Avoid water that looks like spilled paint, is discolored,
+or has surface scums.
+Avoid swallowing water and keep pets away
+from algae.
+For more information go to ohioalgaeinfo.com or call 1-866-644-6224
+5. Harmful Algal Bloom Public Awareness and Education
+Ohio EPA, ODNR and ODH work together to educate the general public about harmful algal blooms in
+publicly owned recreational waters with public beaches and/or boat ramps. This education includes where
+harmful algal blooms have been detected, their type and water sample testing levels; potential health risks
+of coming into contact with them; and any public health advisories that have been issued for contaminated
+recreational waters (see Section 4 “Harmful Algal Bloom Advisories”).
+•
+Here are the primary ways the agencies educate the general public about harmful algal blooms:
+All three agencies offer extensive harmful algal blooms information and resources on their
+ohioalgaeinfo.com
+o
+websites, which can be accessed at
+https://odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-
+o
+blooms/welcome-to-habs
+ohiodnr.gov/wps/portal/gov/odnr-core/divisions/parks-wc/div-parks/div-parks-wc
+o
+•
+Posting of signage on state park beaches and boat ramps (see Section 4 - Harmful Algal Bloom
+•
+Advisories).
+odh.ohio.gov/healthybeaches
+When ODNR issues a “Recreational Public Health Advisory” or a “Recreational Caution” for state
+park beaches signage is posted and the information is listed on the
+•
+website’s HAB Advisory Map.
+odh.ohio.gov/healthybeaches
+For state park beaches under a “Recreational Public Health Advisory” updated water sample test
+results are posted periodically on the website’s HAB Advisory Map.
+10
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+6. Glossary and Acronyms
+Algal toxin (cyanotoxin)
+Anatoxin-a
+: A toxin produced by cyanobacteria.
+Beach
+: A nerve toxin produced by a number of cyanobacteria.
+BeachGuard odh.ohio.gov/healthybeaches
+: Area along the shore that is a designated swimming area and is managed for public use.
+: Website ( ) on which water quality data and recreational
+advisories for public beaches are listed and mapped. Bacterial advisories for recreational waters (E. coli
+Biovolume
+and HAB) are listed and mapped on this site.
+: Measured and derived by associating the phytoplankton with similar geometric forms and
+determining the volume of these by measuring the linear dimensions required for its calculation under the
+Blue-green algae (cyanobacteria)
+microscope (Vadrucci et al. 2007).
+Cyanobacteria (blue-green algae)
+: Photosynthesizing bacteria, (see definition below).
+: Photosynthesizing bacteria which may produce cyanotoxins that can
+cause sickness and possibly death in exposed populations of humans and animals. Cyanobacteria can be
+present as unicellular, colonial, or filamentous organisms. Some have the ability to fix nitrogen and/or
+Cyanotoxin (algal toxin)
+regulate their buoyancy.
+: Toxin produced by cyanobacteria. These cyanotoxins include liver toxins, nerve
+Cylindrospermopsin
+toxins and skin toxins.
+ELISA (Enzyme Linked Immunoassay)
+: A liver toxin produced by a number of cyanobacteria.
+: A rapid assessment method commonly used to detect
+Eutrophic
+microcystins, cylindrospermopsin, and saxitoxin.
+: A body of water rich in mineral and organic nutrients that promote a proliferation of algae and
+HAB (Harmful Algal Bloom)
+aquatic plants, resulting in a reduction of dissolved oxygen.
+: A visually identified concentration of cyanobacteria that discolors the water,
+or a cell count greater than 4,000 cells/ml of cyanobacteria genera capable of cyanotoxin production
+(Shambaugh and Brines, 2003) Accumulations of cyanobacteria cells may be present at the water surface,
+Hypereutrophic
+at a defined depth, or throughout the water column.
+Microcystins
+: A body of water extremely rich in nutrients and minerals.
+: A common type of cyanotoxin that is toxic to the liver. There are more than 80 congeners
+(Pfhoromtics) z oofn tehis cyanotoxin. Microcystin-LR is one of the most toxic congener.
+: The uppermost layer in a body of water into which light penetrates in sufficient amounts to
+influence living organisms, especially those organisms like cyanobacteria that require light for
+Primary recreational contact
+photosynthesis.
+: Waters that, during the recreation season, are suitable for one or more full-
+body contact recreation activities such as, but not limited to, wading, swimming, boating, water skiing,
+Public lake
+canoeing, kayaking, and scuba diving.
+Recreational area
+: A lake managed by a political subdivision of the State of Ohio.
+: Water area where swimming, wading, diving, jet skiing, water skiing, tubing,
+wakeboarding, windsurfing, kite boarding or any other in-water activity may occur that is likely to result in
+immersion or ingestion of water.
+11
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Saxitoxin
+Scum
+: A nerve toxin produced by a number of cyanobacteria.
+Water column
+: A cyanobacteria algal bloom that has a dense surface accumulation of cyanobacteria cells.
+Acronyms : A vertical expanse of water from the surface of a river or lake to the bottom sediments.
+DES:
+NASAD: ivision of Environmental Services, Ohio EPA Laboratory
+NOAA:
+National Aeronautics and Space Administration
+ODH:
+National Oceanic and Atmospheric Administration
+ODNR:
+Ohio Department of Health
+Ohio EPA:
+Ohio Department of Natural Resources
+ORSANCO:
+Ohio Environmental Protection Agency
+USACE:
+Ohio River Valley Water Sanitation Commission
+U.S. EPA:
+United States Army Corps of Engineers
+United States Environmental Protection Agency
+12
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix A –
+Local HAB Response Guide
+13
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Since 2011, the State of Ohio has maintained the Harmful Algal Blooms Response Strategy for Recreational
+Waters. As Ohio’s HAB response continues to evolve, the role and responsibility of local beach managers
+and local health districts has increased due to greater awareness of HABs, increased monitoring by public
+water systems. Additionally, the role and responsibility of local heath districts was clarified in a recent
+opinion by Ohio Attorney Mike DeWine, Opinion 2017-009. Pursuant to R.C. 3709.11, the health
+commissioner of a general health district shall inform the public of the presence of a harmful algal bloom in
+a river when the HAB constitutes a public health matter and has implied authority to test, or obtain testing,
+for HABs within or abutting the boundaries of the general health district that is accessible by the public and
+may inform the public of the results when it is necessary to protect the public health from a public
+nuisance.
+The state of Ohio recommends that local health districts and beach managers follow the HAB identification
+and posting steps described in Section 3 and the posting of HAB advisories as described in Section 4 to help
+ensure consistency with messaging posting and advisory language to the public statewide. This response
+guide summarizes key pieces of the State’s Response Strategy relevant for local HAB response and provides
+aH qouwic kt ore ifdereenntcief yto oal .h armful algal bloom?
+Potential HABs may be reported directly to local health districts or beach managers by the public or park
+staff, submitted as a bloom report to Ohio EPA, observed on satellite imagery and reported by Ohio EPA,
+ODH or another entity. Upon notification of a bloom it is important to get a visual observation to confirm
+the report and determine if additional monitoring steps are needed. Some types of algae are often mistaken
+as cyanobacteria and not all cyanobacteria produce toxins. During the site visit, it is helpful to take photos,
+collect an initial water sample for algae identification, and potentially grab a water sample for toxin
+aHnoawlys tiso i fd tehete brlomomin eap ipf eaa rbs ltooo bme a i Hs AtoB.x ic and post advisories?
+If a bloom is suspected to be cyanobacteria, it is recommended to collect a water sample at the beach or
+recreational water and either conduct a phytoplankton identification to determine the type of
+cyanobacterial present, or analyze for the water sample for the most common toxins, including microcystin,
+cylindrospermsopsin, anatoxin-a and saxitoxin. See the Sampling and Safety Materials in Appendix B. If the
+phytoplankton identification determines that cyanobacteria are present that produce certain toxins (see
+Table 1), then ask the laboratory to test for those specific toxins. Post the blue sign while sampling results
+are pending. Consider posting recreational health advisories and caution signs on the state beach advisory
+How many samples should be collected and what is the process?
+webpage, BeachGuard.
+It depends on the size or type of recreational area, sampler access or resources. If it is a large beach and the
+bloom is only impacting a small portion, it may be helpful to sample multiple areas. Multiple grab samples
+from several locations can be collected and mixed together for a single composite sample. The transect
+procedure described in the Strategy, Appendix B provides a way to representatively sample the beach
+recreation zone and is preferred. However, if only a single grab sample can be collected from the bloom
+that is also acceptable. Regardless, it is important to document when, where and how the sample was
+collected. Photos of current conditions during sample collection are also very helpful.
+14
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+How to interpret the results?
+Cyanotoxin results should be compared to Numeric Thresholds for Cyanotoxins in the 2020 Harmful Algal
+Blooms Response Strategy for Recreational Waters (Section 2.3, Table 2). If the results exceed the
+Recreational Health Advisory level, it is recommended to post the recreational advisory (red) sign
+immediately and plan to conduct weekly samples until the levels drop below the threshold for two
+consecutive weeks and the bloom is gone. If cyanotoxins are detected but below the threshold, you should
+continue to conduct visual inspections of the water and if conditions worsen collect additional samples. If a
+bloom is visually observed it is recommended that the caution (blue) sign be posted and remain until the
+Wblohoemn i sc gaonn et,h aes lRonegc raes atotxioinnsa alr eH neoat ldteht eActdevdi asto orry a bbeov ree am reocvreeadti?o nal threshold.
+Once you have posted a Recreational Health Advisory, weekly monitoring is recommended until the levels
+drop below the Recreational Health Advisory level for two consecutive weeks and the bloom is gone. If
+cyanotoxin concentrations drop below the Recreational Health Advisory level for two weeks and the bloom
+is gone, you can remove the recreational advisory (red) sign. If a bloom reappears, repost the blue Caution
+sign and resample for cyanotoxins. If at anytime during the weekly testing of a visually confirmed bloom
+shows cyanotoxin results above the Recreational Health Advisory level, the recreational advisory (red) sign
+Reports of Illness
+should be reposted.
+Individuals who are concerned that they may be experiencing HABs illness symptoms after exposure to
+contaminated water should contact their healthcare provider and their local health district. Healthcare
+odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-blooms/Information-for-
+providers may follow the “screen for green” tool and obtain more information on diagnosing a HAB illness
+Physicians/
+at
+. Healthcare providers who rule out other potential causes of the symptoms and suspect or
+confirm a HABs illness are advised to contact their local health district. Local health districts should
+complete forms for reports of human illnesses associated with either recreational or public water supply
+exposure to HABs toxins, and then fax completed forms to the ODH Bureau of Environmental Health and
+Radiation Protection secure fax: (614) 466-4556.
+Pet and livestock owners who are concerned that their animal may be experiencing HABs illness symptoms
+after exposure to contaminated water should contact their veterinarian and the local health district.
+odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-blooms/Information-for-
+Veterinarians can use the diagnostic and treatment tools provided at
+Veterinarians/
+. Veterinarians who rule out other potential causes of the symptoms and suspect or confirm
+a HABs illness, should complete an animal illness report form and fax it to the ODH Bureau of
+Environmental Health and Radiation Protection secure fax: (614) 466-4556.
+odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-blooms/welcome-to-habs
+Links to forms and other public health information is available online at
+Media and Outreach Materials .
+Communicating to the public during a HAB event can be challenging and it is important to provide
+consistent advice and messaging. ODH and Ohio EPA can provide technical and outreach assistance and
+ohioalgaeinfo.com.
+encourage development of draft materials prior to an event. Informational brochures and other materials
+are available at Information on health effects of exposure to cyanotoxins, and
+odh.ohio.gov/wps/portal/gov/odh/know-our-programs/harmful-algal-blooms/welcome/
+information for healthcare providers and veterinarians can be found at
+15
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Pre-season Recommendations
+•
+•
+Determine staff responsible for responding to HABs.
+Review the State Response Strategy and contact Ohio EPA’s Emerging Contaminants Section if you
+•
+have any questions or would like to set up a HAB response training event.
+Contact a laboratory that provides phytoplankton identification and/or algal toxin analysis and
+verify prices, hours of operation, sample containers, sample preservation procedures. Be sure to
+inquire about weekend availability. Prepare a “grab and go” sampling kit (cooler, gloves, containers,
+lab paperwork and contact information) and make sure responding staff are aware of safety and
+•
+sampling procedures.
+If there are waters with previous HAB problems or recreational advisories, consider posting white
+•
+information signs at the start of the recreational season.
+Who do I contact for assistance?
+Contact the ODH Recreation Program to set up an account to post HAB advisories on BeachGuard.
+For information on health effects of HABs and reporting HAB human and animal illnesses, please contact
+ODH at (614) 728-9452. For information on posting advisories on BeachGuard, please contact ODH at
+(614) 644-7464 or toll free at 1-866-OHIO BCH (1-866-644-6224). For guidance on monitoring and general
+HAB questions, please contact Ohio EPA Emerging Contaminants Section at (614) 644-2752. A detailed list
+of contacts is provided in Appendix H of the Strategy.
+16
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix B –
+Sampling and Safety Materials
+17
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+This sampling protocol is designed to be responsive to Algal Bloom Reports in recreational waters so that
+public health may be protected. It is applicable to collections by anyone who wishes to characterize
+pShayfteoptlya nPktroenc aanud tciyoannosto xins in Ohio waters.
+Safety must come first when sampling for cyanotoxins. Gloves should be worn when sampling HABs
+(shoulder length if collecting samples at depth). Chest waders should also be worn if collecting a
+cyanotoxin sample when wading off the shore to protect skin from contact with cyanotoxins. A personal
+floatation device should be worn if entering the water to collect a sample or sampling from a boat. Avoid
+inhaling spray or getting spray in eyes from boats, wind, or irrigation water from areas with harmful algal
+blooms. Consider wearing an N95 mask to prevent inhalation of spray if conditions promote formation of
+water droplets (high wind, fast moving boat).
+Do not ingest or allow the water to come in contact with the skin. Always wash hands with clean, fresh
+water after sampling and do not touch hands to mouth, eyes, open cuts or other exposed areas of the body
+before washing. All equipment, gloves, and waders should be rinsed with clean (tap or bottled) water (not
+lSaakem wpatleer )C aoftellre ac staimopnli nagt e vBeenta. ches
+The following materials are needed for collecting samples at beaches: Clean PETG (polyethylene
+terephthalate) plastic or glass sample container(s), clean bucket, long handled spoon or stir rod, waders,
+floatation device, and shoulder length waterproof gloves.
+The goal of beach sampling is to determine the average, representative, total microcystins concentration at
+the beach and determine if an advisory is necessary to help protect public health. To determine the average
+total microcystins concentration, samples will be collected along three beach transects, equally spaced
+along the beach, at ankle, knee, and hip depths (adapted from USGS, 2008). A composite sample should be
+collec ted using the following approach:
+1. Label a clean sample container with the official beach name (includes lake name), current date and
+time.
+2. Divide beach into three equally spaced transects. Try to use the same transect locations each time
+you sample that beach.
+3. Go to first transect location and slowly wade into the water, perpendicular to the shoreline, to ankle
+depth. Samplers should walk slowly as not to stir bottom sediments and avoid collecting suspended
+sediment that may be kicked up. At ankle depth, lower the clean sample container to wrist depth
+(approximately 15 cm below water surface), fill the container with water, and then dump the
+container into a clean sampling bucket. Next, slowly wade to knee depth water, lower the same
+sample container to elbow depth (approximately 30 centimeters below water surface), fill the
+container with water, and dump the water in the bucket (combine with the previously collected
+sample). Slowly walk to hip depth, lower the same sample container to elbow depth and fill with
+water, and dump that sample into the bucket (combine with previously collected sample). Wade
+back to shore.
+4. Repeat step 3 at the second and third transects, using the same sample container and bucket, taking
+care not to slosh the water collected along previously transects out of the sample bucket.
+18
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+5. Mix the water in the bucket using a clean spoon or rod, fill the sample container with the mixed
+sample (3/4 full), and tightly cap the sample container. This is the composite sample you will
+submit to the laboratory for total microcystins analysis (see Appendix E for list of labs certified in
+Ohio EPA Method 701.0). This sample represents average conditions at the beach. If the ODNR HAB
+coordinator instructs you to also collect a sample for saxitoxins analysis, fill a pre-preserved 40 ml
+glass vial to the top of the vial (do not overfill or underfill). If the ODNR HAB coordinator also
+instructs you to collect a sample for phytoplankton identification, fill a third sample container and
+follow the preservation instructions provided by the HAB coordinator.
+6. Immediately transfer the sample(s) to a dark cooler on wet ice or ice packs after sample collection.
+The sample(s) must be kept in the dark and on ice to preserve any cyanotoxin that may be present.
+If a microcystins sample will not arrive for processing at the laboratory within 5 days, the sample
+must be frozen in a standard freezer until it is analyzed by the lab. Ensure enough head space in the
+container to allow for expansion of the water when frozen to avoid breaking the bottle (3/4 full is
+typically fine). If a saxitoxins vial must be frozen, invert the vial three times, uncap and discard 1/3
+of the sample volume, recap, and freeze the vial laying down to avoid container breakage during
+freezing. If a phytoplankton identification sample is collected, it should not be frozen.
+7. If samples are being shipped to a lab, they must be shipped overnight (next day morning delivery)
+on ice to ensure the sample arrives chilled at the lab. If samples arrive to the lab warm, the lab must
+qualify the sample results as estimated, and may refuse to analyze the sample.
+To clean sampling equipment between sampling sites (if sampling multiple beaches in one day), rinse
+equipment (waders, bucket, stir spoon) at least three times in water from the beach you are currently
+The procedure for collecting both discrete grab and composite beach samples is demonstrated in an
+sampling, at a location away from any of your sampling transects.
+Ohio EPA training video, available on Ohio EPA’s HAB website: https://youtu.be/B2yLi1Bp0CY.
+Local beach managers may not have the supplies available to conduct composite sampling. In that case, a
+single grab sample from the densest part of the bloom will typically provide a worst case cyanotoxin
+concentration. If a scum is present, a scum sample can be collected from the scum-water surface interface.
+If the cause of the bloom is not known, the beach manager may collect a phytoplankton identification or
+molecular sample first or may sample for cyanotoxins directly. General sample collection and preservation
+instructions for each type of sample collection are provided below. The state recommends contacting the
+Phytoplankton Sample Collection.
+lab that will be analyzing the samples for further instructions.
+Phytoplankton samples can be collected to determine the cause of the
+bloom. If cyanobacteria are present, the manager should use Table A1 at the end of this Appendix to
+determine if the bloom is capable of producing cyanotoxins, and which cyanotoxins should be analyzed.
+The sampler should contact the lab that will be analyzing the samples for further instructions on
+containers, sample volume, and preservation guidance. Ideally, samples should be preserved at the time of
+collection with Lugol’s iodine solution at a ratio of 1:100. To achieve a 1:100 ratio add approximately 1 ml
+of Lugol’s solution per 100 ml of sample. Final preserved sample color should be similar to that of weak tea.
+Samples should be kept on wet ice and in the dark during transport. Ship for overnight delivery to the
+laboratory. If samples are shipped immediately after collection on wet ice, sample preservation with
+Lugol’s iodine may not be necessary (consult lab conducting analysis). Do not freeze the phytoplankton
+sample - doing so will make identification difficult.
+19
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+If the location of the bloom is evident (i.e. at the surface or just below the surface), collect a grab sample
+from the densest part of a bloom. If collecting a scum, collect a grab sample from the scum-water surface
+interface. Do not collect the portion of the scum that is above the water surface, as these are often dead
+cells that may no longer be readily identified. If the bloom is not at a distinct location, but diffuse
+throughout the water column, consider using a composite sampler that includes a collection for a range of
+Molecular (qPCR) HAB Testing.
+depths. If you suspect the presence of benthic cyanobacteria, you can collect a sample near the lake bottom.
+Molecular testing methods are emerging as a new screening tool for HAB
+identification. Molecular testing can identify the presence of cyanobacteria in a water sample (16S gene)
+and the presence of toxin-production genes (microcystins- mcyE gene, cylindrospermopsin- cyrA gene, and
+saxitoxin- sxtA gene). These methods continue to evolve, with additional analysis options becoming
+available. These methods are unique in that they can distinguish between strains of cyanobacteria that are
+capable of toxin-production from those that are not (this is not possible with microscopic phytoplankton
+identification). However, this method cannot distinguish between live and dead cells, nor does the presence
+of a cyanotoxin gene equate to cyanotoxin being present in the water. The manager should contact the lab
+for sample collection guidance, but generally only 50 ml of water is needed and a preservative is not
+necessary. Samples must be shipped overnight on ice. The lab conducting the analysis will be able to
+provide further sampling instructions. A list of Ohio EPA certified cyanotoxin screening (qPCR) labs is
+Cyanotoxin Sample Collection.
+included in Appendix E.
+The sampler should contact the lab conducting the analysis prior to
+sample collection, for guidance on proper sampling container, sample volume, and any required sample
+preservation. If a microcystins sample will be analyzed using the Ohio EPA Microcystins-ADDA ELISA
+method, collect at least 100 ml of sample in a glass or PETG plastic container. No sample preservative is
+required with this method. If the laboratory is using an alternate analysis method, the required sample
+volume, container type, and preservation may be different. Saxitoxins sampling may require the use of a
+pre-preserved sample vial.
+Immediately after sample collection, transfer the sample to a dark cooler on wet ice or ice packs. The
+sample must be kept in the dark and cool to preserve any cyanotoxins that may be present. If a sample will
+not arrive for processing at the laboratory within 5 days, the sample must be frozen in a standard freezer
+until it is processed. Ensure enough head space in the container to allow for expansion of the water when
+frozen to avoid breaking the bottle.
+Total cyanotoxins should be determined for recreational water sample analysis. Total cyanotoxins include
+both extracellular cyanotoxins, which are located outside the cyanobacteria cell wall, and intracellular
+cyanotoxins, which are located inside the cell wall.
+If there are multiple beaches on a single lake with cyanobacteria blooms, consider sampling all beaches in
+the same manner as stated above, differentiating each sample location by an alternate location name. When
+you move to a new beach location to set up new transects, rinse the collection bucket and stirring rod three
+times with lake water at each location. Rinse away from the transect sampling points so as not to cross
+contaminate or mix the water where samples will be collected. Use a new, glass, PETG plastic, or other
+laboratory approved container for each different beach sampled. Make sure each sample location is
+identified by latitude/longitude or at least marked on a map and provided to the laboratory and kept for
+your records.
+20
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Table B1. Cyanobacteria and Their Associated Cyanotoxins
+Hepatotoxins Neurotoxins
+Cyanobacterial Genera CYLINDROSPERMOPSIN MICROCYSTINS ANATOXIN SAXITOXINS
+Anabaena (Dolichospermum) x x x x
+Anabaenopsis x
+Aphanizomenon (Cuspidothrix) x x x x
+Aphanocapsa x
+Arthrospira x x
+Chrysosporum x
+Cylindrospermum x x x
+Fischerella x
+Gloeotrichia x
+Leptolyngbya (Plectonema) x
+Limnothirix x
+Lyngbya (Microseira) x x x
+Merismopedia x
+Microcystis x
+Nostoc x x
+Oscillatoria (Planktothrix) x x x x
+Phormidium (Anagnostidinema, x x x
+Geitlerinema, Microcoleus)
+Pseudanabaena x
+Raphidiopsis (Cylindrospermopsis) x x x
+Scytonema x
+Snowella x
+Synechococcus x
+Synechocystis x
+Umezakia x
+Woronichinia x x
+Information adapted from Jennifer Graham (USGS) with cyanotoxin production documented by Bernard et al., 2017;
+Chapman and Foss, 2019; Huang and Zimba, 2019.
+21
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix C –
+Events Shaping Ohio’s HAB Strategy
+22
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Formal lake monitoring in Ohio ceased in the mid-1990s when federal funding for the Clean Lakes Program
+ended. In 2007, Ohio EPA participated in the National Lakes Survey which included sampling for the
+cyanotoxin, microcystins. This initiated the new Ohio EPA Inland Lakes Sampling Program which formally
+commenced in 2008.
+In 2008, because of developing awareness of cyanotoxins reported in other states, Ohio EPA Division of
+Surface Water formed a Harmful Algal Bloom Focus Group consisting of representatives from state and
+federal agencies and universities. The purpose of this group was to develop a network to benchmark on
+HAB issues and to develop an initiative to address HABs in Ohio.
+In April 2009, the results of the 2007 National Lake Survey were released, showing that more than 36% of
+the randomly selected 19 Ohio lakes sampled had detectable levels of microcystins. This percentage was
+higher than the national average. The highest concentration of microcystins detected in Ohio was at Grand
+Lake St. Marys. Ohio EPA sampled the water at Grand Lake St. Marys during May 2009 and determined that
+the microcystins level was four times higher than the World Health Organization’s criterion established for
+recreational exposure. A water quality advisory was posted. That advisory remained in place for the entire
+2009 recreational season due to persistent, high concentrations of microcystins.
+In 2010, Ohio EPA, ODNR and ODH developed a three-tiered advisory system. The highest level of advisory
+was posted at Grand Lake St. Marys and at Cutler Lake in Blue Rock State Park where swimming, boating
+and fishing were discouraged. The City of Celina has continued to test their finished water. There has not
+been a single detection of microcystins in their finished waters since testing began in May 2009.
+Also, in 2010, Ohio EPA conducted limited testing of finished water supplies along the Lake Erie Western
+Basin and in several inland lakes. Akron had low levels of microcystins detected in their finished water.
+Ohio EPA followed up with additional testing to ensure that the water supply was safe. Western Basin Lake
+Erie beaches were also tested; the Maumee Bay State Park Beach had microcystins levels over 25 times
+higher than the World Health Organization’s benchmark criterion for recreational waters.
+Multiple meetings were held in 2010 between Ohio EPA, ODNR and ODH and with numerous groups
+around Grand Lake St. Marys. A consultant hired by U.S. EPA developed recommendations for addressing
+nutrient cycling in the lake and nutrient input from the watershed, which was recognized as causing the
+HABs. Two in-lake pilot projects were conducted in the fall of 2010 to collect data and address HAB issues.
+The State initiated in-lake treatment in the summer of 2011 to immediately address HAB growth. In
+addition, ODNR designated the watershed as “distressed,” and adopted rules to mitigate nutrient loading in
+that watershed.
+•
+Based on the State’s experiences in 2009-2010, a formal Strategy was developed in June 2011 that:
+•
+Established commonly accepted terminology;
+•
+Developed consistent sampling methodology;
+•
+Reviewed cyanotoxin thresholds; and
+Revised the advisory protocol.
+23
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+•
+The 2012 revisions to the Strategy include:
+Addition of a beach managers guide which is intended to be a pull-out quick reference that outlines
+•
+the sample collection and advisory posting process;
+Removal of the public water supply guidance so this document can focus only on recreational
+•
+waters;
+•
+Discussion of the use of satellite imagery for tracking HABs;
+•
+Clarification of agency roles; and
+Streamlining of the Strategy document by placing some of the details in the appendices.
+•
+The 2014 revisions to the Strategy include:
+•
+Updates to agency administrators and contacts;
+•
+Clarification of the protocol for posting the white general information sign;
+•
+Removal of the Fish Consumption and Cyanotoxins Section;
+•
+Revisions to the satellite discussion;
+•
+Removal of guidance for in-lake sampling;
+•
+Updates to the Ohio State Parks beach list;
+•
+Updates to contact information; and
+Addition of an agreement between Ohio and the U.S. Army Corps of Engineers for HAB coordination
+and response on jointly managed lakes.
+•
+The 2015 revisions to the Strategy include:
+•
+Updates to the contact names and phone numbers-ODH, DDAGW;
+•
+Changes to collection containers;
+•
+Changes to cyanotoxin processing; and
+Changes to cyanotoxin holding times.
+•
+The 2016 revisions to the Strategy include:
+•
+Revisions to the state agency roles and responsibilities;
+•
+Modification of the advisory terminology and signage;
+•
+Movement of the sampling protocol and safety precautions to an appendix;
+Movement of the Beach Manager’s Guide, the outreach protocols, illness report protocols and case
+•
+definitions to standard operating procedures; and
+General updates to the technical content of the document.
+The Strategy was not revised in 2017, 2018, and 2019.
+•
+The 2020 revisions to the Strategy include:
+•
+Revised cyanotoxin thresholds based on new U.S. EPA guidance;
+•
+Updated Section 4 to reflect new signage and posting strategy;
+•
+Added new Appendix A that summarizes local response;
+•
+Updated Appendix B to simplify sampling procedures; and
+General updates to the technical content of the document.
+24
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix D –
+Toxicity Review, Exposure Assumptions,
+and Threshold Calculations
+25
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Toxicity Review
+Toxicity values for microcystins, anatoxin-a, cylindrospermopsin, and saxitoxins were selected by an
+interagency committee for the establishment of cyanotoxin thresholds in recreational waters. The toxicity
+values for the specific cyanotoxins are referred to as reference doses (RfDs), which are intended to
+represent a “safe” dose for humans, below which no toxic effect is to be expected. The values are expressed
+in milligrams per kilogram body weight per day (mg/kg-day). Safety factors are included between 3 and
+1000, depending on the number, variety, and quality of the available studies. The values are derived to
+account for varying lengths of exposure to the cyanotoxins, including an acute exposure, which can be as
+short as one day, a short-term exposure, a subchronic exposure, and a chronic (or lifetime) exposure. Not
+all cyanotoxins have all four exposure lengths assessed, depending on the cyanotoxin-specific data
+available specific to the cyanotoxin.
+Recommended Human Health Recreational Ambient Water
+The other exposure factors used in the calculations of the threshold concentrations in recreational waters
+Quality Criteria or Swimming Advisories for Microcystins and Cylindrospermospsin
+has been updated according to the U.S. EPA’s
+(2019). The updated
+incidental ingestion rate (IR) used to establish the threshold values was calculated using a combined
+distribution analysis of available data on liters of ingestion per hour and number of hours spent in the
+water per day. The 90th percentile for children six to 10 years old is 0.21 L/day incidental ingestion while
+recreating in fresh water (U.S. EPA, 2019) and is a conservative estimate of incidental ingestion for the
+most sensitive population. The updated mean body weight (BW) for a child ages 6 – 10 was also used for
+the BW exposure facture and is 31.8 kg. The calculation used in developing all thresholds is:
+RfD x BW
+Recrational Water Threshold (μg/L) = x CF
+IR
+Where:
+RfD = cyanotoxin-specific Reference Dose (mg/kg-day)
+BW = Body Weight = 31.8 kg
+IR = Incidental Ingestion Rate = 0.21 L/day
+Anatoxin-a
+CF = Conversion Factor = 1000 μg/mg
+Health Effects Support Document for the Cyanobacteria Toxin Anatoxin-A
+U.S. EPA’s from 2015 was used as
+the basis for the anatoxin-a thresholds presented here. In summary, 7-week drinking water study in rats
+reported the no observed adverse effect level (NOAEL) in the study was 0.05 mg/kg-day and the lowest
+observed adverse effect level (LOAEL) was 0.5 mg/kg-day based on an increase in white blood cell counts
+over the first 5 weeks of the study. However, U.S. EPA noted that the toxicological significance of this effect
+is not clear. A second short term oral toxicity study reported mortality end points at two dose levels, 0.5
+and 2.5 mg/kg-day, that were unexplained by the authors. Therefore; the uncertainty in the biological
+significance of these effects and the deficiencies in the database for anatoxin-a, U.S. EPA concluded it was
+not appropriate to establish a toxicity value based on these studies.
+Because of the need to take regulatory action, Ohio is setting a subchronic RfD based on the 7-week
+drinking water rat study discussed in the U.S. EPA Health Effects Support Document because it represents
+the best available toxicity information for anatoxin-a. The RfD is 0.00005 mg/kg-day, based on the NOAEL
+of 0.05 and an uncertainty factor of 1000. The uncertainty factor includes a factor of 10 for rat to human
+variability, 10 for variability among humans, and 10 for database deficiencies, including limitations within
+the study used as the basis for the RfD, lack of reproductive studies, and lack of toxicity testing in a second
+species. The resulting anatoxin-a threshold in recreational waters is 8 μg/L.
+26
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Cylindrospermopsin
+Recommended Human Health Recreational Ambient Water Quality Criteria or Swimming
+Advisories for Microcystins and Cylindrospermospsin
+U.S. EPA’s
+(2019) was used as the basis for the
+cylindrospermospsin threshold presented here. The RfD is 0.0001 mg/kg-day based on a NOAEL of 0.03
+mg/kg-day on increased kidney weight identified at the LOAEL of 0.06 mg/kg-day from an 11-week mouse
+study. The RfD incorporates an uncertainty factor of 300, including a factor of 10 for mouse to human
+variability, 10 for variability among humans, and 3 for database deficiencies. The resulting
+cMyliincdrroocspyesrtminopss in threshold in recreational waters is 15 μg/L.
+Recommended Human Health Recreational Ambient Water Quality Criteria or Swimming
+Advisories for Microcystins and Cylindrospermospsin
+U.S. EPA’s
+(2019) was used as the basis for the subchronic
+microcystins RfD of 0.00005 mg/kg-day. It was derived from a 13-week mouse study that identified a
+lowest-observed-adverse-effect-level (LOAEL) of 50 μg/kg/day based on liver pathology, and includes an
+uncertainty factor of 1000, which includes a factor of 10 for mouse to human variability, 10 for variability
+among humans, and 3 for LOAEL to no-observed-adverse-effect-level (NOAEL) extrapolation, and 3 for
+Sunacxerittaoinxtiiens in the database. The resulting microcystins threshold in recreational waters is 8 μg/L.
+Report of the
+Joint FAO/IOC/WHO ad hoc Expert Consultation on Biotoxins in Bivalve Mollusks
+To develop a saxitoxin guideline, the committee reviewed various sources. Information in the
+(2004) was identified as a
+critical report for saxitoxin exposure. The expert consultant reviewed several case series for about 60
+individuals, ages 3 to 72, and covering some 20 incidents of poisoning between 1970 and 1990. Based on
+these data, 2.0 μg STXeq/kg was established as a provisional LOAEL. By applying an uncertainty factor of 3
+for the conversion of the LOAEL to an acute reference dose (ARfD) for saxitoxins of 0.0007 mg/kg-day was
+European Food Safety Authority (EFSA) Marine Biotoxins in Shellfish – Saxitoxin Group: Scientific Opinion
+presented.
+of the Panel on Contaminants in the Food Chain
+The
+(2009) was also reviewed as a critical report for saxitoxin.
+This EFSA scientific panel calculated a LOAEL from 500 documented reports on exposure in humans to be
+in the region of 1.5 μg STXs/kg. They also incorporated an uncertainty factor of 3 to convert the LOAEL to a
+NOAEL of 0.5 ug STXs/kg. No additional uncertainty factor was included, and the resulting ARfD for
+saxitoxin was 0.0005 mg/kg-day. Both sources made the same conclusion that no additional uncertainty
+factor for variation among humans was necessary, because the data set covered a wide variety of affected
+consumers, including sensitive individuals (FAP/IOC/WHO, 2004; EFSA, 2009).
+When discussing a saxitoxin threshold for recreational waters in Ohio, the committee decided to use 0.5 μg
+STXs/kg as an estimated NOAEL (EFSA, 2009) and further apply uncertainty factors to calculate an ARfD.
+The committee agreed to apply an uncertainty factor of 100 which includes 10 for a lack of chronic,
+developmental, and reproductive studies and 10 for variability among humans. The resulting ARfD for use
+in calculating a saxitoxin threshold is 0.000005 mg/kg-day. The resulting threshold for saxitoxin in
+recreational waters is 0.8 μg/L.
+27
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix E –
+Laboratories Used by the State of Ohio
+epa.ohio.gov/Portals/28/documents/labcert/Combined-Lab-List.pdf
+The most up to date list of laboratories than are certified/accepted to perform analyses can be found at:
+There are other laboratories that may perform cyanotoxin and phytoplankton analysis. Any laboratory
+selected must use the protocol outlined in the Strategy or other method approved by Ohio EPA.
+28
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix F – Forms*
+Use the Algal Bloom Report Form to submit reports of an algal bloom and/or when submitting
+HABMailbox@epa.ohio.gov.
+phytoplankton and/or cyanotoxin samples to a laboratory for analysis by e-mail to
+https://survey123.arcgis.com/share/ac459f1f0b344bfa93c0486b028fbba6
+The Algal Bloom Report Form and webform version are accessible at:
+*Cyanotoxin sample submission should be coordinated with the laboratory
+where the samples will be submitted.
+29
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Algal Bloom Report Form
+Please provide information about the potential blue-green algae bloom observed. Information can be entered
+into this electronic form and saved on your computer using Word or Adobe Reader (version 9+).
+Please save and email a completed copy of this form to HABmailbox@epa.ohio.gov.
+You are encouraged to include digital photographs as additional email attachments
+(close-up, and landscape showing extent and location of algal bloom).
+If possible, consider including an image from an online mapping application such as Google, Bing or Yahoo Maps,
+with a marker at the bloom location. For more information go to the ohioalgaeinfo.com website.
+Algal bloom Location:
+Water body: Date bloom observed: / /
+County (optional): Drinking water source? Yes No Unknown
+Attached map with algal bloom location noted (e.g. Google Map image)? Yes
+Publicly Owned Lake? Yes No Unknown No Digital photos attached? Yes No
+Report Completed By:
+Name: Organization:
+Title: Phone: ( ) - ext. Email:
+Algal Bloom Description and Sampling Information:
+Please describe the location of the algal bloom in the water body (e.g. center of lake, at the boat dock, at the beach):
+Do you notice any colors in the water
+Yes No
+Please check any colors you see, or describe
+the color(s) below: Green Blue Red Rust Brown Milky White Purple Black
+Please estimate the size (sq. feet) or the extent of algal bloom:
+Can you see a surface scum (an accumulation at the surface) or algae floating near the water surface?
+Algae floating at the surface can look like grass clippings, green cottage cheese curds, or spilled paint. Yes No Uncertain
+Is the algal bloom near a public beach? If yes, please specify the beach name or location below. Yes No Unknown
+Is the algal bloom near a drinking water intake? (Specify water system name if known) Yes No Unknown
+Were samples taken? Yes No
+If yes, what type of samples; when and where were they collected; and where were they sent for analysis?
+Do you know if other water quality information is available? (Specify what data is available and where) Yes No
+Ohio EPA Algal Bloom Report Form 8/12/2020
+30
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix G – Ohio State Park Beaches
+31
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+OHIO STATE PARK BEACHES
+LAKE ERIE BEACHES
+Acres of
+County State Park Beach Latitude Longitude Water
+Ashtabula Geneva State Park 41°51'25.58"N 80°58'39.85"W
+Lake Headlands State Pk. 41°45'24.38"N 81°17'24.35"W
+(East)
+Headlands State Pk.
+(West)
+Erie Kelleys Island St. Pk. 41°36'55.32"N 82°42'17.15"W
+Ottawa Catawba Island St. Pk. 41°34'25.45"N 82°51'27.09"W
+East Harbor State Park 41°33'32.35"N 82°48'15.52"W
+South Bass Island St. Pk. 41°38'31.97"N 82°50'14.05"W
+Toledo/Lucas Maumee Bay St. Pk. Erie 41°41'8.73"N 83°22'37.05"W
+Inland 41°41'0.40"N 83°22'38.03"W
+INLAND BEACHES
+Acres of
+County State Park Beach Latitude Longitude Water
+Delaware Alum Creek Main 40°11'25.21"N 82°58'14.43"W 3,387
+Camp 40°14'8.59"N 82°58'39.94"W
+Belmont Barkcamp 40° 2'14.78"N 81° 0'37.98"W 117
+Muskingum Blue Rock 82°58'39.94"W 81°50'56.87"W 15
+Clark Buck Creek Main 39°56'57.79"N 83°44'7.61"W 2,120
+Camp 39°58'1.20"N 83°43'47.55"W
+Fairfield Buckeye Lake Crystal Beach 39°55'56.71"N 82°28'37.68"W 3,173
+Fairfield 39°55'19.34"N 82°28'14.67"W
+Lake Brooks 39°54'5.31"N 82°30'59.82"W
+Morgan Burr Oak Main 39°32'7.30"N 82° 2'11.11"W 664
+Lodge 39°31'49.79"N 82° 2'10.59"W
+Warren Caesar Creek North 39°32'13.27"N 83°59'8.52"W 2,830
+South 39°29'16.67"N 84° 3'25.91"W
+Clinton Cowan Lake Main (S) 39°22'54.20"N 83°53'58.69"W 700
+Camp (N) 39°23'23.90"N 83°53'59.40"W
+Fayette Deer Creek 39°37'9.62"N 83°13'42.78"W 1,277
+Delaware Delaware 40°22'17.88"N 83° 3'29.47"W 1,330
+Muskingum Dillon Boaters 40° 0'54.60"N 82° 7'8.84"W 1,560
+Swimmers 40° 0'59.25"N 82° 7'9.91"W
+Clermont East Fork Main 39° 1'10.38"N 84° 8'3.23"W 2,610
+Camp 39° 1'20.58"N 84° 5'39.47"W
+Lorraine Findlay 41° 8'6.45"N 82°12'51.82"W 93
+Meigs Forked Run 39° 5'39.05"N 81°46'29.84"W 102
+32
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+INLAND BEACHES
+Acres of
+County State Park Beach Latitude Longitude Water
+Auglaize Grn Lk St. Marys Main East 40°32'30.02"N 84°25'19.02"W 13,500
+Main West 40°32'33.62"N 84°25'34.44"W
+Camp 40°32'42.00"N 84°26'25.53"W
+Columbiana Guilford Lake Main 40°48'10.70"N 80°52'58.49"W 396
+Camp 40°48'20.45"N 80°52'37.65"W
+Fulton Harrison Lake 41°38'23.31"N 84°21'41.83"W 105
+Preble Hueston Woods 39°34'30.51"N 84°45'20.13"W 625
+Logan Indian Lake Fox Island 40°28'34.79"N 83°52'54.61"W 5,800
+Camp 40°30'34.95"N 83°53'46.68"W
+Oldfield 40°30'0.97"N 83°54'41.77"W
+Jackson Jackson Lake 38°54'6.59"N 82°35'39.13"W 242
+Jefferson Jefferson Lake 40°27'48.54"N 80°48'0.31"W 17
+Champaign Kiser Lake 40°11'4.78"N 83°57'5.05"W 396
+Vinton Lake Alma #1-West 39° 8'54.01"N 82°30'52.50"W 60
+#2-East 39° 8'54.46"N 82°30'45.62"W
+Vinton Lake Hope 39°19'13.88"N 82°21'21.99"W 120
+Athens Lake Logan 39°32'30.25"N 82°28'15.66"W 400
+Shelby Lake Loramie 40°21'39.87"N 84°21'25.85"W 1,655
+Trumbull Lake Milton 41° 7'20.62"N 80°58'45.10"W 1,685
+Pike Lake White 39° 5'58.49"N 83° 1'9.89"W 337
+Madison Madison Lake (Deer Creek) 39°52'10.39"N 83°22'27.45"W 106
+Trumbull Mosquito 41°18'10.67"N 80°45'44.16"W 7,850
+Ross Paint Creek 39°14'20.80"N 83°22'15.98"W 1,190
+Pike Pike Lake 39° 9'42.15"N 83°13'11.36"W 13
+Summit Portage Lakes Main 40°58'9.32"N 81°32'45.53"W 2,034
+Camp 40°56'19.89"N 81°31'17.44"W
+Geauga Punderson 41°27'18.14"N 81°12'33.80"W 150
+Ashtabula Pymatuning Main 41°36'19.16"N 80°32'10.09"W 14,000
+Camp 41°32'50.72"N 80°31'35.98"W
+Cabins 41°34'41.98"N 80°31'57.07"W
+Highland Rocky Fork North 39°11'32.19"N 83°28'35.12"W 2,080
+South 39°10'57.47"N 83°28'33.99"W
+Guernsey Salt Fork Main 40° 5'9.25"N 81°29'36.65"W 2,952
+Camp 40° 4'27.22"N 81°29'55.52"W
+Cabins 40° 6'30.32"N 81°32'12.79"W
+Ross Scioto Trail 39°13'48.59"N 82°57'13.29"W 30
+Scioto Shawnee Turkey Crk-Lodge 38°44'17.62"N 83°11'52.24"W 68
+Roosevelt-Camp 38°43'37.62"N 83°10'39.45"W
+Clermont Stonelick 39°13'16.51"N 84° 4'39.47"W 200
+Athens Strouds Run 39°20'58.37"N 82° 2'15.31"W 161
+Vinton Tar Hollow Main 39°23'4.35"N 82°45'5.23"W 15
+Camp 39°23'18.34"N 82°45'0.88"W
+Portage West Branch 41° 8'16.57"N 81° 6'13.70"W 2,650
+Noble Wolf Run 39°48'2.22"N 81°31'18.16"W 220
+33
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix H – 2020 HAB Contacts
+34
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Report HABs – Ohio EPA
+OHhAiBom EaPiAlb -o Dxi@viesipoan. oohf iDor.ginokvi ng and Ground Waters
+Emerging Contaminants Section
+ruth.briland@epa.ohio.gov
+emilie.eskridge@epa.ohio.gov
+Ruth Briland, Ohio EPA HAB Specialist marissa.ganzfried@epa.ohio.gov
+Emilie Eskridge Ohio EPA Sectcioonli nS.uwpheirtvei@soerp a.ohio.gov
+Marissa Ganzfried, Ohio EPA HAB Compliance
+Colin White, Section Manager
+50 W. Town St., Suite 700
+P.O. Box 1049
+Columbus, OH 43215
+Office (614) 644-2752
+Fax (614) 644-2909
+Ohio EPA DES
+Kristen Sowards, DES Sample Coordinator
+8955 East Main Street
+Reynoldsburg, OH 43068
+Report HABs - State Park Lakes Report HABs – Ohio River
+Office (614) 644-4243
+natalie.pirvu@dnr.state.oh.us Gregy@orsanco.org
+Natalie Pirvu Greg Youngstrom
+DNR HAB Coordinator ORSANCO
+2045 Morse Road C-4 5735 Kellogg Ave.
+Columbus OH 43229 Cincinnati, OH 45228
+Office (614) 265-6466 Office (513) 231-7719
+Report HABs - Private Lakes
+Fax (513) 231-7761
+Loohcioaal Hlgeaaeltihn fDoi.csotrmic ts
+See Managing Harmful Algal Blooms in Private Ponds Fact Sheet
+Advisory Notifications on BeachGuard
+Also see sampling methodology and laboratory information in this document.
+ODH
+Bureau of Environmental Health and Radiation Protection, Recreation Program
+MMaarryy .SShhaaffffeerr @odh.ohio.gov
+Office (614) 466-1390 or (614) 466-6736
+Gene Phillips
+CGheineef,. PBhuirleliapus @ofo Ednhv.iorhoinom.geonvt al Health and Radiation Protection
+Office (614) 466-1390
+Health Effects of HAB Exposures and Reporting of Human and Animal
+Illness Reports
+Bryce Kerr (614) 728-4160
+DODanHi,e Blluer eKaouh oafn E (n6v1ir4o)n 3m8e7n-t5a7l 0H3e alth and Radiation Protection
+https://odh.ohio.gov/wps/portal/gov/odh/find-
+local-health-districts
+A listing of local health departments can be found at:
+35
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+Appendix I – Ohio/U.S. Army Corps of Engineers Agreement
+and Points of Contact
+36
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+37
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+38
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+39
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+References
+Bernard. Catherine. Peter Baker, Bret Robinson and Paul Monis. 2007. Application of an Image Analysis
+System to Enumerate and Measure Cyanobacteria. Australian Water Quality Center. Research Report No 31.
+March 2007. pp. 68.
+Carson. Bonnie. 2000. Cylindrospermopsin Review of Toxicological Literature. Final Report. December
+2000. pp.37. Prepared for the National Institute of Environmental Health Sciences.
+Donohue. Joyce. Jennifer Orme-Zavaleta, Michael Burch, Daniel Dietrich, Balinda Hawkins, Tony Lloyd,
+Wayne Munns, Jeffery Steevens, Dennis Steffensen, Dave Stone and Peter Tango. Cyanobacterial Harmful
+Algal Blooms: Chapter 35: Assessment Workshop Report. 2008. U.S. EPA Agency Papers. University of
+Nebraska – Lincoln. 2008. pp. 53.
+Oreochromis niloticus
+Galvão, J.A., Oetterer, M., Bittencourt-Oliveira, M.D.C., Gouvêa-Barros, S., Hiller, S., Erler, K., Luckas, B., Pinto,
+E., and Kujbida, P. 2009. Saxitoxins Accumulation by Freshwater Tilapia ( ) for Human
+Consumption. Toxicon, Volume 54, pp. 891-894. 2009.
+Graham. Jennifer L. Keith A. Loftin, Andrew C. Ziegler and Michael T. Meyer. Cyanobacteria in Lakes and
+Reservoirs: Toxin and Tasate Odor Sampling Guidelines. Biological Indicators. Chapter A7. Cyanobacteria,
+Version 1.0 September, 2008.
+st
+Kennedy. John O. S. 1997. The Economics of Algal Bloom Control. 41 Annual Conference. Australian
+Agricultural and Resource Economics Society. January 1997. pp.6.
+Ludmilla. Santana Soares e Barros. Fagner Correia de Souza, Lucia Helena Sipauba Tavares and Luiz
+Augusto do Amaral. 2009. Cyanobacteria and Absence of Cyanotoxins in a Public Water Supply Source.
+Journal of Public Health and Epidemiology. Vol. 1. (1). October 2009. pp. 007-013.
+North Carolina Department of Environmental and Natural Resources. January 2003. Standard Operating
+Procedures for Algae and Aquatic Plant Sampling Analysis. JAN-03 Version. pp. 76.
+http://adsabs.harvard.edu/abs/2003TrGeo...9..311P
+Prepas, E.E., Charette, T., 2003, Worldwide Eutrophication of Water Bodies: Causes, Concerns, Controls
+, retrieved April 2, 2011.
+Shambaugh, M. A., Brines, E., 2003. Monitoring and Evaluation of Cyanobacteria in Lake Champlain
+(Summer 2002). Ecosystem Science Laboratory and G. Boyer, SUNY Syracuse Department of Chemistry. For
+Lake Champlain Basin Program.
+Tango. P. Butler, W. and Michael, B. Cyanotoxins in the Tidewaters of Maryland’s Chesapeake Bay: The
+Maryland Experience. pp. 5.
+UNESCO. 2005. Report of the Joint FAO/IOC/WHO ad hoc Expert Consultation on Biotoxins in Bivalve
+Molluscs. IOC/INF-1215. 2005.
+University of Maryland Center for Environmental Science. 2010. Chesapeake Ecocheck. Indicator Details:
+Microcystis Blooms (HAB). NOAA. pp. 5.
+U.S. EPA. 1997. Exposure Factors Handbook. NCEA. August 1997.
+U.S. EPA. 2006. Toxicological Reviews of Cyanobacterial Toxins: Anatoxin-A. Draft. NCEA-C-1743.
+November 2006.
+U.S. EPA. 2006. Toxicological Reviews of Cyanobacterial Toxins: Cylindrospermopsins. Draft. NCEA-C-1763.
+November 2006.
+40
+State of Ohio 2020 Harmful Algal Bloom Response Strategy for Recreational Waters Rev.8.4.2020
+U.S. EPA. 2006. Toxicological Reviews of Cyanobacterial Toxins: Microcystins LR, RR, YR and LA. Draft.
+NCEA-C-1765. November 2006.
+U.S. EPA, 2009. 2009 Edition of the Drinking Water Standards and Health Advisories. EPA 822-R-09-001.
+October 2009.
+USGS. Guidelines for Design and Sampling for Cyanobacterial Toxin and Taste-and-Odor Studies in Lakes
+and Reservoirs. Scientific Investigations Report 2008-5038.
+Vadrucci 1 M.R., Cabrini 2 M., Basset 1 A. Biovolume determination of phytoplankton guilds
+in transitional water ecosystems of Mediterranean Ecoregion Dipartimento di Scienze e Tecnologie
+Biologiche e Ambientali, DiSTeBA, Università del Salento via Provinciale Lecce-Monteroni, 73100 LECCE
+Viviane Moschini-Carlos et. al., 2009, Cyanobacteria and Cyanotoxin in the Billings Reservoir (Sao
+2 Dipartimento di Oceanografia Biologica – INOGS, Trieste 2007.
+Paulo, SP, Brazil), Limnetica, 28 (2): 273-282 (2009)
+Watzin. M. A. Shambaugh and G. Boyer. December 2003. Monitoring and Evaluation of Cyanobacteria in
+Lake Champlain Summer 2002.Technical Report No 41. Lake Champlain Basin Program. December 2003.
+pp. 36.
+World Health Organization. 1998. Cyanobacterial Toxins: Microcystin LR in Drinking Water.
+WHO/SDE/WSH/03.04/57. 1998.
+et al. et al.
+Note: Some published literature that identifies cyanobacteria bloom threshold definitions include: Carson,
+et al et al et al
+Bonnie; Anonymous 2010; Bernard. Catherine ; Donohue. Joyce 2008; Kennedy. John O.S. 1997;
+Tango. P. .; Watzin. M. . December 2003; Ludmilla. Santana Soares e Barros. .; and North
+Carolina Department of Environmental and Natural Resources. January 2003.
+41

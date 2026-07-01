@@ -1,0 +1,2009 @@
+Public Water System
+Harmful Algal Bloom
+Response Strategy
+Division of Drinking and Ground Waters
+October 2025
+Mike DeWine, Governor, State of Ohio
+John Logue, Director, Ohio Environmental Protection Agency
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Table of Contents
+Executive Summary ......................................................................................................................................................................................................... 1
+Numerical Cyanotoxin Thresholds for Drinking Water .............................................................................................................................. 1
+HAB Monitoring and Analytical Methods .......................................................................................................................................................... 1
+Response to Finished Water Threshold Exceedance and Issuing Drinking Water Use Advisories ........................................ 1
+Proactive Measures ..................................................................................................................................................................................................... 2
+1 — Introduction ............................................................................................................................................................................................................... 3
+1.1 Purpose of the PWS HAB Response Strategy ........................................................................................................................................ 3
+1.2 Cyanobacteria Causes of Concern .............................................................................................................................................................. 3
+1.3 Cyanobacterial Blooms ................................................................................................................................................................................... 3
+1.4 Cyanotoxin History and Occurrence in Ohio ......................................................................................................................................... 4
+1.4.1 History ............................................................................................................................................................................................................. 4
+1.4.2 Cyanotoxin Frequency and Occurrence ............................................................................................................................................ 5
+2 — Cyanotoxin Toxicity Thresholds ....................................................................................................................................................................... 5
+2.1 Introduction ......................................................................................................................................................................................................... 5
+2.2 Determining Numerical Cyanotoxin Thresholds for Drinking Waters ...................................................................................... 6
+2.3 Additional Information ...................................................................................................................................................................................... 6
+3 — Monitoring Strategy ............................................................................................................................................................................................... 6
+3.1 Microcystins Monitoring and Cyanobacteria Screening................................................................................................................... 6
+3.1.1 Analytical Methods for Microcystins and Cyanobacteria Screening .................................................................................... 9
+3.2 Cylindrospermopsin and Saxitoxins Sampling ..................................................................................................................................... 9
+3.2.2 Saxitoxins Sampling ................................................................................................................................................................................ 11
+3.2.3 Analytical Methods for Cylindrospermopsin and Saxitoxins ............................................................................................... 12
+3.3 Anatoxin-a Sampling and Analytical Method ..................................................................................................................................... 13
+3.4 Ohio EPA Coordination with PWSs ......................................................................................................................................................... 13
+4 — Response to Finished Water Threshold Exceedances ......................................................................................................................... 13
+4.1 Microcystins ........................................................................................................................................................................................................ 13
+4.2 Cylindrospermopsin, Saxitoxins, and Anatoxin-a ............................................................................................................................ 13
+4.2.1 Sampling ...................................................................................................................................................................................................... 13
+4.3 Drinking Water Use Advisories and Public Notification ............................................................................................................... 14
+4.3.1 Public Notice Procedure ............................................................................................................................................................. 15
+4.3.2 Public Notice Templates ............................................................................................................................................................. 15
+4.3.3 Lifting the Advisory ...................................................................................................................................................................... 16
+4.3.4 Consumer Confidence Report (CCR) ..................................................................................................................................... 16
+5 — Source Water Surveillance and Reservoir Management .................................................................................................................... 16
+5.1 PWS Surveillance ............................................................................................................................................................................................ 16
+5.2 Bloom Reporting via Ohio EPA Website ............................................................................................................................................... 16
+5.3 Remote Sensing Surveillance .................................................................................................................................................................... 17
+5.4 Ohio EPA Water Quality Surveys and Integrated Report.............................................................................................................. 17
+5.5 Assessing Bloom Severity ........................................................................................................................................................................... 17
+5.6 Reservoir Management ................................................................................................................................................................................ 18
+6 — HAB Sampling Protocol ..................................................................................................................................................................................... 21
+6.1 Safety Precautions .......................................................................................................................................................................................... 21
+6.2 Sample Collection ........................................................................................................................................................................................... 22
+6.2.1 Label Information .......................................................................................................................................................................... 22
+6.2.2 Cyanotoxin Samples ..................................................................................................................................................................... 22
+I
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+6.2.3 Cyanobacteria Screening Samples ......................................................................................................................................... 23
+6.2.4 Phytoplankton Samples .............................................................................................................................................................. 23
+6.2.5 QA/QC ................................................................................................................................................................................................. 23
+6.4 Sample Documentation ................................................................................................................................................................................ 24
+6.4.1 Samples Submitted to Ohio EPA for Analysis .................................................................................................................... 24
+6.4.2 Samples Submitted to Alternate Labs................................................................................................................................... 24
+6.5 Shipping .............................................................................................................................................................................................................. 24
+6.5.1 Response Sampling Kits .............................................................................................................................................................. 24
+6.5.2 Samples Collected by Ohio EPA ............................................................................................................................................... 24
+6.5.3 Shipping to Alternate Labs ........................................................................................................................................................ 25
+7 — Treatment Optimization Protocols and General Plan Requirements ........................................................................................... 25
+APPENDIX A: CYANOBACTERIA AND THEIR ASSOCIATED ........................................................................................................................ 26
+APPENDIX B: BASIS FOR CYANOTOXIN THRESHOLDS ................................................................................................................................ 28
+APPENDIX C: EARLY MESSAGING AND PUBLIC NOTICE TEMPLATES ................................................................................................. 33
+APPENDIX D: 2025 HAB CONTACTS ..................................................................................................................................................................... 42
+References ......................................................................................................................................................................................................................... 45
+II
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+List of Definitions
+Action level
+—Concentration of cyanotoxin which, if exceeded, will require additional monitoring, and
+pAontaetnotxiainlly-a other actions as described in OAC Chapter 3745-90.
+Biovolume — A nerve toxin produced by a number of cyanobacteria.
+— The volume of cells in a unit volume of water. Biovolume is calculated to determine the
+Brelluaeti-vger eaebnu nadlgaanece of co-occurring phytoplankton of varying shapes and sizes.
+Consecutive samp —le sCommon name for cyanobacteria, see definition below.
+Cyanobacteria — Successive samples that are collected on separate calendar days.
+— Photosynthesizing bacteria, also called blue-green algae, which naturally occur in
+marine and freshwater ecosystems and may produce cyanotoxins which at sufficiently high concentrations
+cCayna npoosbea act reirsika t soc pruebelnicin hgealth.
+— Quantitative polymerase chain reaction (qPCR) for the detection of genes
+unique to cyanobacteria and genes associated with the production of cyanotoxins, a method for
+phytoplankton identification, or a semiquantitative method of cyanotoxin analysis acceptable to the
+Cdiyraenctootro. xin
+— Toxin (such as microcystins) produced by cyanobacteria, which include liver toxins, nerve
+tCoyxliinnsd, raonsdp sekrimn toopxsinins.
+cyrA-
+— A liver toxin produced by a number of cyanobacteria.
+Detecctiyolinndrodsepteercmteodpsin production gene.
+or — An analytical result that is equal to or greater than the reporting limit for the
+aDnisatlyritbicuatl imone tshaomd pbleiinngg puoseindt. s
+ELISA (Enzyme-Linked Immu n—o sRoerpbreenset nAtsastiavye) points in the distribution system.
+— A rapid assessment method commonly used to detect
+mFiincirsohceydst dinrsi,n ckyilningd wroastpeerr mopsin, anatoxin-a, and saxitoxin.
+Finished water sampling— po Tinretated water ready for human consumption.
+— Each entry point to the distribution system which is representative of
+the water intended for the distribution and consumption without further treatment, except as necessary to
+maintain water quality in the distribution system (e.g., booster disinfection, addition of corrosion control
+cEhxetrmaiccealllsu).l ar
+HAB (harmfu l— al Lgaolc abtleodo omr) o ccurring outside of a cell or cells.
+— A concentration of cyanobacteria that discolors the water, or a cell count
+greater than 4,000 cells/mL of cyanobacteria genera capable of cyanotoxin production (Shambaugh and
+Brines, 2003). Accumulations of cyanobacteria cells may be present at the water surface, at a defined depth,
+oHra trhmrofuulg haolguatl t bhleo womat esre caoslounmn.
+— Period beginning the first full week of June until the beginning of off-
+Hseaarsmonf u(fli arslgt aful lbl lwoeoemk ooff fD-seecaesmobne r) of the same calendar year.
+— Period beginning the first full week of December until the beginning of
+harmful algal bloom season (first full week of June) of the following calendar year.
+III
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Intracellular
+mycE - — Located or occurring within a cell or cells.
+MicrocyMsitcirnosc ystins production gene.
+—Total microcystins: the combination of all the variants of the cyanotoxin microcystin,
+Pwahiircehd i ss apmropdluecse –d Aby s aa mnupmleb seert o of fc yanobacteria.
+one raw water sample (LT001) and one finished water sample (EP001)
+tPahkoetni ca tz othnee same time.
+— The uppermost layer in a body of water into which light penetrates in sufficient amounts to
+iPnhflyuteonpclea nlivkitnogn organisms, especially by permitting photosynthesis.
+— Free-floating photosynthesizing microscopic organisms that inhabit almost all bodies of
+wRaawte rw, aantedr i nsaclmudpel icnyga npoobinatc teria, diatoms, green algae, and dinoflagellates.
+— Each plant intake in use prior to any treatment, or another raw water
+sRaemsapmlinpgl ep oint acceptable to the director.
+— The first sample required after a microcystins action level exceedance in a sample collected
+Rate tpheea fti nsiasmhepdl ewater sampling point.
+— The second sample required after a microcystins action level exceedance in a sample
+cSoalxleitcotexdin at the finished water sampling point.
+Scum — Nerve toxin produced by a number of cyanobacteria.
+Sourc e— w Aa tceyranobacterial bloom that has a dense surface accumulation of cyanobacteria cells.
+sxtA — Water used as a source for public drinking water.
+Trea-t Smaexintot xOinp tpimroidzuacttiioonn Pgreonteo. c ol (TOP)—
+Document that is required in accordance with Ohio
+Administrative Code (OAC) Rule 3745-90-05 for all public water systems (PWS) receiving water from a
+surface water source. It must provide details on how a PWS will optimize existing treatment for
+mWiecerokcystins removal.
+Week l—y Period of seven days beginning with Sunday and ending with Saturday.
+16S — Once during the period of seven days beginning with Sunday and ending with Saturday.
+- rRNA gene of Cyanobacte ria.
+IV
+Executive Summary
+The public water system (PWS) harmful algal bloom (HAB) response strategy provides guidelines on HAB
+monitoring and sampling protocols, identifies acceptable analytical methods, and identifies cyanotoxin
+levels that will be used to make advisory decisions. PWS’ with a surface water source(s) must comply with
+the updated HAB monitoring and reporting rule requirements, OAC 3745-90. The most updated version of
+DDAGW Effective Rules | Ohio Environmental Protection Agency
+this rule can be found on the Ohio EPA Division of Drinking and Groundwater’s regulations webpage,
+. The strategy is regularly reviewed and
+Ninuclmudeesr iucpadl aCteysa bnaosetdo xoinn t hTeh argeesnhcoy’lsd esx pfoerri eDnrcien aknidn gkn Wowaletdegre with HABs.
+The thresholds will be used to determine when a public health advisory will be issued for a detection of
+cyanotoxins in finished drinking water as detailed in section 4.3.1. The child and adult drinking water
+thresholds for all cyanotoxins remain unchanged from the 2022 PWS HAB Response Strategy and are as
+fToallbolwe s1: . Ohio Numerical Cyanotoxin Thresholds for Drinking Water
+Drinking Water Microcystins Anatoxin-a Cylindrospermopsin Saxitoxins
+Thresholds* (μg/L) (μg/L) (μg/L) (μg/L)
+Do Not Drink – children under 6, including 0.3 0.3 0.7 0.3
+bottle-fed infants and sensitive populations
+Do Not Drink – children 6 and older and adults 1.6 1.6 3.0 1.6
+*The microcystins and saxitoxins thresholds are intended to be applied to total concentrations of all reported congeners/variants. Ohio EPA will
+also consider established saxitoxin toxicity equivalency factors when determining if a threshold has been exceeded (see Appendix B).
+For sensitive populations, Ohio includes pregnant women, nursing mothers, and those receiving dialysis
+treatment in the do not drink category with children under six years old for all cyanotoxins. Ohio has also
+added those with pre-existing liver conditions to the do not drink category for sensitive populations for the
+microcystins and cylindrospermopsin advisories only because they are hepatotoxins. Ohio concurs with the
+U.S. EPA recommendation that elderly and immunocompromised individuals may want to consider
+following the recommendations for children under six years old. Ohio HAB
+Response Strategy for Recreational Waters
+The numerical cyanotoxin thresholds for recreational waters are identified in the current
+HAB Monitoring and Analytical Meth. ods
+All surface water PWSs must conduct routine microcystins monitoring and cyanobacteria screening in
+accordance with OAC Rule 3745-90-03. The 2025 PWS HAB Response Strategy details monitoring
+requirements for microcystins, as well as saxitoxins, cylindrospermopsin, and anatoxin-a. Detections in the
+Public Water System HAB Data and
+cyanobacteria screening sample will trigger follow-up cyanotoxin testing and additional sampling by Ohio
+Map
+EPA. Cyanotoxin data collected from this monitoring can be found at:
+. The analytical methods and reporting requirements for cyanobacteria screening and microcystins
+were refined in 2022 and are consistent with OAC Rule 3745-90-04. See Section 3.1.1 for more details on
+Rspeescpifiocn mseet htood Fs.i nished Water Threshold Exceedance and Issuing Drinking Water Use
+Advisories
+Ohio EPA should be notified of any finished water cyanotoxin detections as soon as possible, but no later
+than 24 hours. Please call the spill hotline at 1-866-372-1800 if the finished water exceedance comes
+Page 1 of 46
+through after hours. The PWS should also follow response procedures detailed in their contingency plan as
+applicable (OAC Rule 3745-85-01). The response to microcystins threshold exceedances is detailed in OAC
+Rules 3745-90-03, 3745-90-05, and 3745-90-06. The response to saxitoxin, cylindrospermopsin and
+anatoxin-a is detailed in Section 4.2.
+A drinking water use advisory will be issued based on finished water detections of a cyanotoxin above the
+applicable threshold. Public notification for total microcystins threshold exceedances will be conducted in
+accordance with OAC Rule 3745-90-06.
+If thresholds for saxitoxins, cylindrospermopsin, or anatoxin-a are exceeded in resample and repeat sample
+results, Ohio EPA recommends PWSs issue a public notification as soon as possible, but no later than 24
+hours. The public notice should include health effects language and use restrictions. Ohio EPA will evaluate
+the sample results and work with the PWS to determine if a public notice should be issued.
+If the PWS does not issue public notification as recommended, Ohio EPA may issue a drinking water use
+advisory in accordance with Ohio Revised Code (ORC) section 6109.06 or may require the PWS to issue
+Ppurbolaicc ntoivtiefi cMateioans uunrdeesr the authority of OAC Rule 3745-81-32.
+Ohio EPA encourages PWSs to be proactive by developing and implementing source water protection
+strategies that are best for their water system and source water concerns. These could include additional
+source water HAB monitoring, reservoir management practices, contingency planning, and general source
+water protection strategies. Section 5 covers these in more detail.
+Additionally, Ohio EPA’s Source Water Assessment & Protection Program (SWAP) works with PWSs to help
+protect their source water by providing source water assessment reports and assistance with protection
+planning. This includes delineation of areas in the watershed that supply a PWS’s source water as well as
+identifying potential contaminant sources within these areas. The PWS can use this information to develop
+a source water protection plan which details the actionable protective strategies that will be implemented.
+Page 2 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+1 — Introduction
+1.1 Purpose of the PWS HAB Response Strategy
+The purpose of the public water system (PWS) harmful algal bloom (HAB) response strategy is to protect
+the public from cyanotoxins produced by cyanobacteria that may be present in sources of drinking water at
+concentrations that can affect human health.
+Ohio’s PWS HAB Response Strategy identifies cyanotoxin levels that will be used to make water use
+advisory decisions. It also provides monitoring guidelines and sampling protocols, identifies acceptable
+analytical methods, and recommends treatment optimization protocols. The PWS HAB response strategy
+complements the HAB rules included in OAC Chapter 3745-90 and in OAC Chapter 3745-89 (laboratory
+certification).
+The State of Ohio continues to refine its PWS HAB response strategy to provide a consistent and timely
+response to HABs in PWS source waters and ensure treatment technologies are effective at cyanotoxin
+removal. The state of the science of HABs and their related cyanotoxins is evolving, and Ohio EPA will
+Ohio HAB Response Strategy for Recreational Waters
+continue to update these guidelines as appropriate. A separate procedure for responding to HABs at
+ohioalgaeinfo.com
+beaches and recreational waters, , is available
+1on.2li neC ayt anobacteria Cau. ses of Concern
+Cyanobacteria can produce a variety of harmful toxins called cyanotoxins that can cause illness and death
+in humans and animals. These cyanotoxins can affect the liver, nerves, and skin. Some of the more common
+cyanotoxins detected in Ohio waters include microcystins and saxitoxins. Cylindrospermopsin and
+anatoxin-a have also been detected, but much less frequently. Symptoms of cyanotoxin exposure include
+nausea, rashes, gastrointestinal distress, disorientation, numbness, and fatigue, and can easily be mistaken
+for other illnesses.
+Since there is no known antidote for these cyanotoxins, health agencies are cautious, limiting human
+exposure. The Ohio Department of Health and Ohio Department of Agriculture have received reports of
+probable human illness and dog deaths associated with exposure to cyanotoxins in Ohio. The Center for
+cdc.gov/habs/ohhabs
+Disease Control and Prevention launched a reporting system, One Health Harmful Algal Bloom System
+(OHHABS, ) to track cases nationwide.
+In addition to cyanotoxin production, cyanobacteria can cause other problems for PWSs by increasing
+organic material in the source water, leading to the production of disinfection byproducts (DBPs), including
+total trihalomethanes (TTHMs) and haloacetic acids (HAAs), which are carcinogens. Many cyanobacteria
+also produce the taste and odor compounds Geosmin and 2-Methylisoborneol (MIB) that affect drinking
+water palatability. Appendix A summarizes common cyanobacteria genera and associated cyanotoxins and
+1ta.s3te aCnyda ondoorb caocmtpeoriuanld Bs.l ooms
+Cyanobacteria are naturally occurring microorganisms found in most bodies of water. Under favorable
+conditions, including nutrient availability, sufficient light, and sometimes warmer temperatures,
+cyanobacteria can multiply and form a bloom that may or may not be visible to the naked eye.
+Cyanobacterial blooms generally occur in eutrophic or hypereutrophic water bodies which are water
+bodies that receive excess nutrients, particularly nitrogen and phosphorus, causing excessive plant growth.
+Page 3 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Cyanobacterial blooms may vary in species composition and cyanotoxin production over time as well as
+throughout a water body. The distributions of cyanobacteria populations are affected by weather,
+hydrology, and morphology. They may be distributed evenly throughout a water body or may be
+irregularly distributed because of currents and/or prevailing winds. Hydrologic changes resulting from
+heavy rains or the discharge from a stream resulting in localized currents can significantly affect
+cyanobacteria population distributions. Areas like shallow bays, coves, sites directly affected by nutrient-
+rich inflows, or structures that affect flow (for example, dikes, piers, or intake towers) can affect population
+growth rates and cyanobacteria distribution.
+Planktothrix rubescens Planktothrix Raphidiopsis
+Cyanobacteria can be found at various depths of water, like the surface (scums), at a particular depth (i.e.,
+), or spread throughout the water column (i.e., , ). Wind,
+rain, currents, and lake turnover can mix surface blooms into the water or push them to calmer areas like
+bays or inlets. Some cyanobacteria can control their buoyancy, and during calm conditions they can move
+vertically through the water column depending on light and nutrient availability. These factors are
+important to understand because even if an algal bloom isn’t visually present on the surface, it doesn’t
+mean it’s not there. The visual absence of an algal bloom does not necessarily indicate presence/absence. If
+a surface algal bloom has dissipated, it may not have senesced (died) but could have moved to another area
+of the lake or mixed below the lake surface within the water column. In addition, some cyanobacteria do
+not form surface scums, so surface accumulations should not be relied on as the only indicator that an algal
+bloom is present.
+It is important for PWSs to be familiar with their source waters and recognize changes that may be
+associated with a cyanobacterial bloom. Color is not necessarily a good way to distinguish cyanobacteria
+Raphidiopsis Cylindrospermopsis
+from green algae or suspended sediment. Cyanobacteria can appear in many colors including brown, green,
+blue, and red. (formerly )blooms are generally brown and appear like
+suspended sediment. Other blooms are green and are mistaken for green algae. The best way to confirm
+whether cyanobacteria are present is through sampling.
+Many cyanobacteria can produce one or several different types of cyanotoxins (see Appendix A for a list of
+cyanobacteria genera and their associated cyanotoxins). Cyanotoxin production is cyanobacteria strain-
+specific, and not all cyanobacteria may be genetically capable of or actively producing cyanotoxins. Some
+cyanotoxins are comprised of multiple structural variants or congeners. The potential health effects are not
+known for all variants or cyanotoxins. Cyanotoxins can be found within cyanobacteria cells (intracellular)
+or free or dissolved (extracellular) in the water. Cyanotoxins are colorless and may persist in the water
+after a cyanobacterial bloom is gone. Cyanotoxins may degrade over time in the environment due to
+1ba.4ct erCiayl aacntoiotno axnidn sHunislitgohrty. and Occurrence in Ohio
+1.4.1 History
+Ohio became aware of HAB development in Ohio’s lakes when the Ohio EPA participated in the U.S. EPA
+National Lakes Assessment which included sampling for the cyanotoxin microcystins. In April 2009, the
+results of the 2007 National Lakes Assessment were released, showing that more than 36% of the 19
+randomly selected Ohio lakes sampled had detectable levels of microcystins. The following cycle, the 2012
+National Lakes Assessment found that 43% of lakes in U.S. EPA Region 5 had detectable levels of
+microcystins.
+Since Ohio EPA began more frequent sampling in 2010, microcystins are regularly detected in many of the
+water bodies used as sources of drinking water. Microcystins concentrations typically peak in August and
+Page 4 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+September, although maximum microcystins concentrations at some PWSs have occurred as early as May
+and as late as December. In addition, some source waters experience microcystins year-round. The six-
+month period with the highest frequency of microcystin detections at PWSs is June through November.
+These data are what led to the timeframes for Ohio’s HAB season and off-season periods as defined in OAC
+3745-90.
+In 2015, the Ohio legislature passed Senate Bill 1, which directed Ohio EPA to protect against cyanobacteria
+in the western basin of Lake Erie and in public water supplies. This prompted the development of HAB
+monitoring, reporting, and treatment technique rules which became effective on June 1, 2016. A five-year
+1ru.4le.2 r eCvyiaenwo wtoaxsi nc oFnredquucteendc yin a 2n0d2 O2,c acnudrr reenvciese d rules were effective November 1, 2022.
+During strategy and rule development, Ohio EPA reviewed the historical occurrence data for
+cylindrospermopsin and saxitoxins at PWSs to inform response sampling. Cylindrospermopsin production
+genes were rarely detected in raw water at PWS. Similarly to cylindrospermopsin, anatoxin-a is rarely
+detected in PWS source water. While saxitoxin production genes are more commonly detected in raw
+water at Ohio PWSs, follow-up response sampling for saxitoxins resulted in detections at half the sites and
+typically only at low concentrations (below drinking water thresholds). The concentration of saxitoxins
+detected in finished water were all less than 0.15 µg/L, which is 50% of the drinking water threshold for
+children under six (0.3 µg/L), and approximately 88% of saxitoxin detections in raw water had
+concentrations less than 0.15 µg/L from 2020-2024. Based on this information, Ohio EPA revised the
+response sampling guidelines for saxitoxin production gene in 2025 (see Section 3.2)
+Since the rules went into effect, microcystins have been detected in the raw water at approximately 74% of
+the PWS’ monitoring for HABs. Saxitoxins have been detected in the raw water at approximately 30% of
+PWS HAB Data and Map Dashboard
+those PWS and cylindrospermopsin has only been detected at one PWS. In 2025, Ohio EPA updated the
+for statewide HAB PWS compliance data. The dashboard includes a
+map showing the most recent microcystins data and has historic microcystins and saxitoxin results
+2av a—ila bCley faorn dootwonxloiand .T oxicity Thresholds
+2.1 Introduction
+In 2011, representatives from Ohio EPA, Ohio Department of Health (ODH), and Ohio Department of
+Natural Resources (ODNR) cooperatively developed cyanotoxin thresholds for microcystins,
+cylindrospermopsin, saxitoxins, and anatoxin-a that were adopted by the respective state agency directors
+(Table 1). In May 2015, U.S. EPA released tiered health advisory levels for microcystins and
+cylindrospermopsin. These new levels were established after review of available toxicological information
+and were subjected to independent peer review. Ohio adopted the recommended U.S. EPA health advisory
+concentrations for microcystins and cylindrospermopsin and revised the saxitoxins threshold to be
+consistent with U.S. EPA’s tiered approach. In June 2016, the microcystins drinking water thresholds were
+formally adopted into OAC 3745-90-02 as action levels.
+Thresholds were revised in the 2020 PWS HAB Response Strategy specifically for anatoxin-a and to remove
+the ‘Do Not Use’ tier. The drinking water thresholds for anatoxin-a were lowered based on a review of
+toxicity reference information and using the same tier structure and exposure assumptions consistent with
+a ll other cyanotoxins (see Section 2.3 and Appendix B).
+Page 5 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+2.2 Determining Numerical Cyanotoxin Thresholds for Drinking Waters
+Ohio EPA adopted the thresholds for microcystins as action levels due to the high occurrence of
+microcystins in Ohio’s sources of drinking water, microcystins ability to “break through” during the
+drinking water treatment process, and the establishment of national health advisories for microcystins.
+Action levels for cylindrospermopsin were not established in rule due to the low historic occurrence of
+cylindrospermopsin in Ohio. Action levels for saxitoxins or anatoxin-a were not established in rule due in
+part to a lack of an established national health advisory for those two cyanotoxins.
+However, Ohio EPA established drinking water thresholds for anatoxin-a and saxitoxins based on a review
+of available toxicological studies and guidance documents, and in consultations with other states. The
+toxicity value for saxitoxins was based on documented acute intoxications in humans following ingestion of
+seafood containing saxitoxins (EFSA 2009). The toxicity value for anatoxin-a was based on a subchronic
+exposure study, and threshold values were updated in the 2020 PWS HAB Response Strategy to reflect
+current information.
+To be consistent with the tiered health advisories established by U.S. EPA for microcystins and
+cylindrospermopsin, tiered thresholds were established for both child and adult exposure for anatoxin-a
+and saxitoxins. The thresholds were calculated based on the same exposure assumptions used to calculate
+the microcystins and cylindrospermopsin health advisory concentrations.
+More details on reference values, exposure assumptions, and calculations for cyanotoxin thresholds are
+2pr.o3v Aiddedd iitni oAnppaeln Idnifxo Br.m ation
+In 2020, World Health Organization (WHO) published guideline or health-based reference values for all
+four groups of cyanotoxins: microcystins, cylindrospermopsin, saxitoxins, and anatoxins. Specific guideline
+values for microcystins and cylindrospermopsin were issued based on chronic (lifetime) and short-term
+(approximately two weeks) exposure through drinking water, whereas values for saxitoxins and anatoxin-a
+are for acute exposure. Full details on the derivation and supporting documentation are provided in
+background documents for each cyanotoxin group (WHO 2020) and summarized in Chorus and Welker
+(2021).
+U.S. EPA’s national health advisories for microcystins and cylindrospermopsin were established in June
+2015 for a short-term (10-day) exposure. While based on a 10-day exposure, U.S. EPA guidance
+recommends that PWSs act as soon as possible if a threshold is exceeded. This means, based on specific
+circumstances, a PWS may have some limited time to adjust treatment or take other actions to prevent
+https://www.epa.gov/habs/epa-drinking-water-health-advisories-cyanotoxins
+exposures prior to issuing an advisory. More information on the basis for the health advisories is available
+3at — Monitoring Strategy .
+3.1 Microcystins Monitoring and Cyanobacteria Screening
+All surface water PWSs must conduct routine microcystins monitoring and cyanobacteria screening in
+accordance with OAC Rule 3745-90-03. https://epa.ohio.gov/divisions-and-
+offices/drinking-and-ground-waters/public-water-systems/seasonal-hab-monitoring-schedule
+The monitoring schedules for each PWS will be posted here:
+.
+Page 6 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+HAB Season
+Duri
+•
+n g the HAB season, the HAB rule specifies that for routine monitoring:
+Raw water cyanobacteria screening (qPCR) monitoring is required once every two weeks (biweekly
+•
+monitoring).
+Raw water total microcystins monitoring is also required every two weeks but on the alternate
+week of the cyanobacteria screening samples.
+Consecutive water systems receiving water from an out-of-state surface water source must monitor for
+finished water microcystins weekly. PWSs with sources considered ground water under the direct
+sxtA mcyE 16S monthly
+influence of surface water (ground water sources; GWUDI) with no historic microcystins or saxitoxins
+detections, no or detections, and low results are eligible for (raw water)
+cyanobacteria screening monitoring.
+both
+If microcystins are detected in the raw water, the PWS will trigger into increased weekly monitoring at
+raw and finished water sampling points beginning no later than 24 hours following the notification of
+the detection. Increased monitoring includes weekly paired water total microcystins sampling with the
+alternating biweekly raw water cyanobacteria screening sampling. The PWS can return to routine
+microcystins monitoring once every two weeks (raw water sampling point) when microcystins are not
+mcyE
+detected in at least two consecutive weekly samples (raw and finished water sampling points).
+When cyanobacteria screening results for the exceed five gene copies per microliter without
+mcyE
+microcystin data, it triggers follow-up microcystins monitoring (raw and finished water sampling points)
+within 24 hours. If microcystins are not detected in the raw or finished water samples after detection
+fOoflfl-oSwe-auspo,n th e PWS can resume the routine biweekly monitoring schedule.
+finished water
+Surface water PWSs, including consecutive water systems receiving water from an out-of-state surface
+water system, shall sample once every two weeks for microcystins analysis during off-
+Note: If a PWS is on increased monitoring during the transition from HAB season to off-season monitoring the
+season. GWDUI shall sample finished water microcystins monthly during the off-season.
+PWS should remain on weekly paired microcystins monitoring until two weeks non-detect.
+Seasonal Systems
+prior to or on the start date
+Seasonal surface water systems shall notify their district office coordinators of their start up and
+closing/offline dates. PWS should collect the required samples that water is
+being produced for use and must sample in accordance with the applicable schedule based on the date
+water is produced for use. If the start-up date occurs during the defined HAB off-season (first full week of
+December until first full week of June), the PWS must monitor for finished microcystins samples regardless
+of the monitoring schedule week and follow the schedule thereafter. If the start-up date occurs during the
+HAdAdBi stieoansoanl ,I nthfoe rPmWaSt imonu st follow the weekly sampling schedule.
+Sampling triggers and HAB monitoring implementation notes for all systems during the HAB and off-season
+are included on Table 2.
+Page 7 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Table 2. Monitoring requirements based on revised HAB Rule
+Microcystins and Cyanobacteria Screening Monitoring Requirements
+HAB Season (begins first full week of June) -- Off-season (begins first full week of December)
+Monitoring Additional Sampling Triggers
+Requirements
+Routine HAB If microcystins are detected in the raw water:
+Monitoring • PWS must collect raw and finished water samples within 24 hours of receiving the
+for all PWS with a result and complete analysis within five days. If PWS voluntarily collected a paired
+raw and finished water sample with their initial raw water sample, an additional set
+surface water source
+of raw and finished samples is not required until the following week unless a
+finished water detection triggers more immediate sampling (see “All PWS” below).
+HAB SEASON
+• PWS will continue with weekly paired raw and finished water microcystins
+Biweekly raw water
+monitoring and the biweekly raw water cyanobacteria screening until non-detect
+cyanobacteria screening for at least two consecutive weeks.
+AND
+Biweekly raw water If mcyE are detected in raw water greater than 5 gene copies/µL:
+microcystins (alternate • PWS must collect raw and finished water microcystins sample within 24 hours of
+week of cyanobacteria receiving the result and complete analysis within five days.
+screening) • If microcystins are not detected, the PWS will resume biweekly monitoring.
+• If microcystins are detected in either the raw or finished water, the PWS continues
+with weekly raw and finished microcystins monitoring and biweekly cyanobacteria
+OFF-SEASON
+screening until microcystins are non-detect for at least two consecutive weeks.
+Biweekly FINISHED
+water microcystins
+Reduced Monitoring If sampling detects the presence of microcystins or mcyE, the PWS will transition to routine
+for all PWS with a HAB monitoring (detailed above) and must collect paired microcystin samples within 24
+hours of receiving the result and complete analysis within five days.
+groundwater under the
+influence (GWUI) source
+HAB SEASON:
+Monthly cyanobacteria
+screening
+OFF-SEASON:
+Monthly FINISHED
+water microcystins
+Ohio PWS with an out- Increased monitoring would be triggered by finished water microcystins detections (see “All
+of-state surface water PWS” below).
+source*
+HAB SEASON:
+Weekly finished water
+microcystins
+OFF-SEASON
+Biweekly finished water
+microcystins
+Page 8 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Microcystins and Cyanobacteria Screening Monitoring Requirements
+HAB Season (begins first full week of June) -- Off-season (begins first full week of December)
+Monitoring Additional Sampling Triggers
+Requirements
+All PWSs If cyanobacteria screening indicates the presence of saxitoxins, cylindrospermopsin or
+genes (sxtA or cyrA):
+• PWS must notify Ohio EPA no later than the end of the next business day per OAC
+Rule 3745-89-08. Ohio EPA also recommends written or verbal results be
+communicated as soon as possible to ensure a timely response by Ohio EPA.
+If microcystins are detected in finished water greater than 0.3 μg/L (reported value ≥0.35
+μg/L):
+• PWS must collect one resample of raw and finished water within 24 hours of action
+level exceedance and collect an additional repeat sample of raw and finished water
+within 24 hours of resample. Analysis must be completed within 24 hours in each
+case.
+• If microcystins are greater than 0.3 μg/L in either resample or repeat, PWS must
+notify all consecutive systems within three hours of receiving results.
+• PWS and consecutive systems may collect samples from representative distribution
+points established in the contingency plan.
+• PWS will sample raw water once per week and increase sampling to three times per
+week at the finished water sampling point.
+• PWS can resume routine monitoring when microcystins are non-detect in finished
+water for two consecutive samples.
+Ohio PWS with an out-of-state surface water source will monitor in accordance with OAC 3745-90 due to varying drinking water HAB compliance rule
+requirements between states.
+*
+3.1.1 Analytical Methods for Microcystins and Cyanobacteria Screening
+The analytical methods and reporting requirements for total microcystins and cyanobacteria screening are
+described in OAC Rule 3745-90-04. The HAB rule references version 2.4 of Ohio EPA Method 701.0 – Total
+(Extracellular and Intracellular) Microcystins – ADDA by ELISA that has a lower reporting limit of 0.24
+µg/L. All results at or above the reporting limit are considered a detection of total microcystins (OAC Rule
+3745-90-04).
+The analytical method for cyanobacteria screening in OAC Rule 3745-90-04 was updated to reference
+version 1.0 of Ohio EPA method 705.0 – Ohio EPA quantitative Polymerase Chain Reaction (qPCR) Multi-
+16S
+Plex Molecular Assay for Determination of Cyanobacteria and Cyanotoxin-Producing Genes Analytical
+mcyE cyrA sxtA
+Method. Molecular screening methods can distinguish between strains of cyanobacteria ( ) that are
+capable of toxin production ( , , ) from those that are not. However, the molecular screening
+method used by Ohio EPA cannot distinguish between live and dead cells. Additionally, the presence of a
+cyanotoxin gene does not mean the cyanotoxin is present in water.
+Laboratory Certification | Ohio Environmental Protection Agency
+A list of on-demand labs certified by Ohio EPA to conduct microcystins analysis and/or cyanobacteria
+s3c.r2e enCinygl iins davraoislapbeler mat opsin and Saxitoxins Sampling .
+Ohio EPA reviews all cyanobacteria screening data and conducts follow-up sampling for
+cylindrospermopsin or saxitoxins as described in this section. Ohio EPA can provide additional sampling
+and technical assistance at the request of a PWS in response to cyanotoxin gene and cyanotoxin detections.
+Page 9 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+The response sampling for detections in raw or finished water at concentrations below drinking water
+Ttharbelesh 3o. lSdesl eacrte Cboansceedn otrna ctioonncse fnotrr aCtyiloinnd arnodsp peermrcoepnstaing ea nodf tShaex idtorixninksin Rge wspaotnerse t hSraemshpolilndg (Table 3)
+Cylindrospermopsin
+Column1 (µg/L) Saxitoxins*(µg/L)
+Method Reporting Limit 0.05 0.02
+15% of Threshold 0.11 0.05
+50% of Threshold 0.35 0.15
+Do Not Drink Threshold, Children under 6 and sensitive
+population 0.7 0.3
+*Saxitoxins thresholds are intended to be applied to total concentrations of all reported congeners/variants. Ohio EPA will also
+consider established saxitoxin toxicity equivalency factors when determining if a threshold has been exceeded (see Appendix B)
+3.2.1 Cylindrospermopsin Sampling
+cyrA
+For cyanobacteria screening results, the response is as follows:
+If cyanobacteria screening samples detect , Ohio EPA will conduct follow-up paired
+cylindrospermopsin monitoring within five business days following notification as described below. Details
+on sample handling, including safety considerations, containers, preservatives, labeling, and paperwork are
+included in Section 6.
+Paired cylindrospermopsin follow-up monitoring will be conducted after the first initial gene detection of
+the HAB season. However, the decision to continue follow-up monitoring is at the discretion of Ohio EPA.
+This decision will be made after the initial cylindrospermopsin sampling follow-up and based upon future
+cyanobacteria screening and cylindrospermopsin results. The general guidelines are outlined below.
+If cylindrospermopsin is not detected in the initial follow-up sample, Ohio EPA will review the
+cyrA
+cyanobacteria screening results from the next sampling event and use that information to decide if ongoing
+cyrA
+sampling is necessary. As a preliminary guide, if concentrationsremain less than 0.5 gene copies/µL
+since the prior sampling event, additional response sampling may not be necessary. If the number of
+copies in the next routine cyanobacteria screening sample is greater than or equal to 0.5 gene copies/µL or
+shows a substantial increase, Ohio EPA will continue to collect paired samples for cylindrospermopsin
+analysis.
+For cylindrospermopsin detected in raw water only, the response is as follows:
+If cylindrospermopsin is detected at concentrations greater than or equal to 15% of the threshold, paired
+cylindrospermopsin sampling water will continue weekly until cylindrospermopsin is less than 50% of the
+cylindrospermopsin threshold in two consecutive weekly sampling events in raw water. If treatment has
+been proven to be consistently effective at cyanotoxin removal, Ohio EPA may consider decreasing
+sampling and/or analysis frequency.
+For cylindrospermopsin detected in finished water, the response is as follows:
+If cylindrospermopsin is detected in the finished water at concentrations between 15% and 50% of the
+threshold, a paired samples will be collected for cylindrospermopsin analysis within 24 hours of receiving
+the results. If the follow-up sample remains less than 50% of the threshold in finished water, paired
+cylindrospermopsin sampling will continue weekly until cylindrospermopsin is less than 50% of the
+threshold in raw water in two consecutive weekly sampling events and are below 15% in the finished
+water. Ohio EPA may conduct additional cylindrospermopsin sampling including weekly sampling when
+finished water concentrations are between 15% and 50% of threshold based on additional information.
+Page 10 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+If cylindrospermopsin is detected in the finished water at greater than 50% of the threshold (but less than
+the Do Not Drink threshold of 0.7 ug/L), paired samples will be collected for cylindrospermopsin analysis
+within 24 hours of receiving the results and paired cylindrospermopsin sampling will increase to three
+days per week. In addition, an extra set of paired samples will be collected and submitted to an
+independent lab for LC-MS/MS analysis (See 4.2.1). Increased monitoring (three days per week) will
+continue until finished water concentrations decrease to less than 50% of the threshold in two consecutive
+sampling events. At that point, sampling can decrease according to the tiered response outlined above.
+The response protocol for responding to finished water detections at concentrations above the thresholds
+3.2.2 Saxitoxins Sampling
+is presented in Section 4.
+Ohio EPA utilizes the ELISA method for the detection of saxitoxins. Saxitoxin is comprised of multiple
+variants, but unlike microcystins, the ELISA method used to detect it is not capable of detecting total
+saxitoxins. This ELISA method is not based on the detection of a structure common to all saxitoxin variants
+and may underreport total saxitoxins. Therefore, Ohio EPA will conduct additional analysis using an
+alternate LC-MS/MS method for detection of saxitoxin variants following an initial ELISA finished water
+saxitoxins detection that is greater than 50% of the saxitoxins threshold.
+sxtA
+For cyanobacteria screening results, the response is as follows:
+If cyanobacteria screening samples detect , Ohio EPA will conduct follow-up paired saxitoxin
+monitoring within five business days following notification as described below. Details on sample handling,
+including safety considerations, containers, preservatives, labeling, and paperwork are included in Section
+6.
+Paired saxitoxin follow-up monitoring will be conducted after the first initial gene detection of the HAB
+season. However, the decision to continue follow-up monitoring is at the discretion of Ohio EPA. This
+decision will be made after the initial saxitoxin sampling follow-up and based upon future cyanobacteria
+screening and saxitoxin results. The general guidineiltiniaels are outlined below.
+For any
+•
+s axitoxin gene detections following the saxitoxin gene detection:
+Saxitoxin gene detections below 1.0 gene copies/microliter (gc/µL) after the initial detection
+•
+will not require additional follow-up.
+Any saxitoxin genes increasing above or equal to the 1.0 gc/µL threshold will result in
+•
+additional saxitoxin follow-up.
+If saxitoxin genes are decreasing, but remain above or equal to 4.0 gc/µL, saxitoxin sampling
+•
+will continue.
+If saxitoxin genes are decreasing and fall below 4.0 gc/µL, additional saxitoxin sampling may
+not be required.
+Ohio EPA reserves the right to conduct additional sampling as needed at the Director’s discretion.
+For saxitoxin detected in raw water only, the response is as follows:
+If saxitoxin is detected at concentrations greater than or equal to 15% (0.05 µg/L) of the threshold,
+saxitoxin sampling in the raw and finished water will continue weekly until saxitoxin is less than 50% of
+the saxitoxins threshold in two consecutive weekly sampling events in raw water. If treatment has been
+proven to be consistently effective at cyanotoxin removal, Ohio EPA may consider decreasing sampling
+and/or analysis frequency.
+Page 11 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+•
+For saxitoxin detected in finished water, the response is as follows:
+If saxitoxin is detected in the finished water at concentrations less than 15% of the threshold,
+paired saxitoxin sampling will continue weekly until saxitoxin are less than 50% of the saxitoxins
+threshold in raw water and less than 15% of the saxitoxins threshold in the finished water in two
+consecutive weekly sampling events.
+•
+If saxitoxin is detected in the finished water at concentrations between 15-50% of the threshold
+(0.05-0.15 µg/L), paired samples will be collected for saxitoxin analysis within 24 hours of
+receiving the results. If the follow-up sample remains less than 50% of the threshold in finished
+water, paired sampling and analysis will continue in the raw and finished water weekly until
+saxitoxin is less than 50% of the threshold in raw water in two consecutive weekly sampling events
+and are below 15% in the finished water. Ohio EPA may conduct additional saxitoxin sampling
+including weekly sampling when finished water concentrations are between 15% and 50% of
+threshold based on additional information.
+•
+If saxitoxin is detected in the finished water greater than 50% of the threshold (but less than the
+threshold of 0.3 ug/L), sampling frequency will increase to three days per week. In addition, an
+extra set of paired saxitoxins samples may be collected and submitted to an independent lab for LC-
+o
+MS/MS analysis (See 4.2.1).
+Increased monitoring (three days per week) will continue until finished concentrations
+decrease to less than 50% of the threshold in two consecutive sampling events. At that
+point, sampling can decrease according to the tiered response outlined above.
+The response protocol for responding to finished water detections at concentrations above thresholds is
+3p.r2e.s3e nAtneadl yinti cSaecl tMioent h4o. ds for Cylindrospermopsin and Saxitoxins
+This section describes the analytical methods Ohio EPA utilizes for cylindrospermopsin and saxitoxin. Ohio
+EPA will continue to evaluate new analytical methods and refine this strategy based on the best
+information available. In any instance that LC-MS/MS analysis is required, Ohio EPA will work the PWS is
+selecting the appropriate analysis methodology.
+As stated above, Ohio EPA uses the results of the cyanobacteria screening data to help target response
+sampling for cylindrospermopsin and saxitoxin with the methods listed below. In addition, Ohio EPA’s
+Division of Environmental Services (DES) developed semiquantitative (presence/absence) methods for
+saxitoxin and cylindrospermopsin using ELISA (Ohio EPA Method 702.0 Version 2.3 and 703.0 Version 2.1,
+respectively) which will provide direct detection of cyanotoxins in finished water. Any PWS using a semi-
+quantitative method that has a detection in the finished water shall follow the tiered responses found
+eCayrlilniedrr oinsp seercmtioopns 3in.2 .
+Ohio EPA utilizes the ELISA method for the detection of cylindrospermopsin. Ohio EPA’s DES developed an
+SOP that outlines sample collection and handling procedures and quality assurance measures for the ELISA
+cylindrospermopsin method (DES Method 703.0, Version 2.1 March 2024). Ohio EPA will conduct
+additional analysis using a LC- MS/MS method following any ELISA finished water cylindrospermopsin
+detections that are greater than 50% of the cylindrospermopsin threshold.
+Page 12 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Saxitoxins
+Ohio EPA utilizes the ELISA method for the detection of saxitoxin. Ohio EPA’s DES also developed an SOP
+that outlines sample collection and handling procedures and quality assurance measures for the ELISA
+3sa.x3i toxAinnsa mtoetxhiond-a (D SEaSm Mpetlhinogd 7a0n2d.0 A, Vnearsliyotni c2a.3l AMpreitl h20o2d4 ).
+Ohio EPA will limit anatoxin-a sampling to the following circumstances:
+1) At the request of a PWS in response to a HAB on a source water that is capable of
+producing anatoxin-a.
+1) At the request of the Ohio Department of Health or a local health district in response to a
+potential animal death or human illness that could be linked to anatoxin-a.
+2) As needed, based on sampling information from the Division of Surface Water (DSW).
+Ohio EPA is utilizing LC-MS/MS method for detection of anatoxin-a. U.S. EPA Method 545 has been
+developed for the quantitation of anatoxin-a in finished water. Additional LC-MS/MS methods can detect
+a3n.4at oxOinh-aio a nEdP aAt lCeaosot rsdixi nofa tthieo ann watoitxhin P-aW vaSrsia nts in both finished and source water samples.
+Ohio EPA staff in the Central Office provide oversight of the compliance program, coordinate follow-up
+response sampling, and provide technical assistance, as needed. District Office HAB coordinators and
+other DDAGW staff are primary points of contact for communication with PWSs to provide technical
+assistance, obtain status updates, review screening or sampling results, and collect samples as needed.
+Central Office, District Offices, and DES staff work collaboratively to provide results of Ohio EPA sampling
+4t o— th eR PeWspS. onse to Finished Water Threshold Exceedances
+4.1 Microcystins
+The responses to microcystins threshold exceedances are detailed in OAC Rules 3745-90-03, 3745-90-05,
+and 3745-90-06. In some circumstances Ohio EPA may conduct additional sampling as needed. Including,
+b4u.2t noCt ylimlinitdedro tos,p ife trhmeroep iss ian f,in Sisahxeidt owxaitnesr ,d aetnedct iAonn aabtoovxei nth-ea r eporting limit but below the threshold.
+This section outlines the steps that will be taken in response to a finished water saxitoxins,
+cylindrospermopsin or anatoxin-a detection above an Ohio threshold. It is written assuming Ohio EPA DES
+will conduct all cyanotoxin analyses for these toxins. Ohio EPA should still be notified of any finished water
+detections as soon as possible, but must be reported by the end of the next business after analysis is
+4co.2m.1p lSeatemdp. ling
+If cylindrospermopsin, saxitoxins, or anatoxin-a are detected in the finished water above the thresholds
+(Se ctioRne 2sa.2m), pthlee. following steps will be taken:
+1) Two sets of paired samples will be collected by Ohio EPA within 24 hours of being
+informed of the initial sample results. One set will be transported to Ohio EPA DES (or an Ohio EPA
+designated laboratory) for ELISA analysis and the other set will be shipped to a commercial lab for
+LC-MS/MS analysis. If the result of the resample is above the threshold in finished water, the PWS
+Page 13 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+should notify all consecutive water systems as soon as practical but at least within three hours of
+•
+receiving the resample sample result.
+Treatment Train Sampling - Treatment train samples may also be collected to provide additional
+information on how to best optimize for cyanotoxin destruction/removal. Specific locations for
+treatment train samples are unique to each system and will be determined by the PWS and Ohio
+•
+EPA district staff based on the design of the plant.
+Raw Water Analysis - The raw water resample will be analyzed for both intracellular and
+Repeat.
+extracellular cyanotoxins, to help guide treatment optimization.
+2) Two additional sets of paired samples will be collected within 24 hours of collecting the
+resample. One set will be delivered to Ohio EPA DES (or an Ohio EPA designated laboratory) for
+ELISA analysis and the second set will be shipped to a commercial lab for LC-MS/MS analysis (the
+second set will be collected and shipped to a commercial lab for LC-MS/MS analysis only if the
+Distribution Sampling.
+finished water detection in the resample was greater than 50% of the threshold).
+3) If cyanotoxins are detected above the threshold in either the resample or
+repeat finished water sample, the PWS should immediately coordinate with Ohio EPA concerning
+collection and analysis of samples within the distribution system and at any consecutive systems. If
+cyanotoxins do not exceed Ohio EPA thresholds within all the portions of the distribution system or
+at consecutive system locations, the water system may be able to isolate impacted areas of the
+distribution system and limit the extent of a drinking water advisory. Distribution mapping and
+sampling locations should be addressed in a PWS’s contingency plan.
+•
+Ongoing sampling by Ohio EPA depends on the results of the finished water samples, as follows:
+If cylindrospermopsin or saxitoxins are detected in the finished water at concentrations less than
+•
+50% of the thresholds, sampling frequency will decrease to weekly.
+If cylindrospermopsin or saxitoxins are detected in the finished water at greater than 50% of the
+thresholds, sampling will continue three times per week until concentrations decrease to less than
+50% of the threshold in two consecutive sampling events. At that point, sampling can decrease to
+•
+weekly.
+If cyanotoxins are detected in the finished water samples at concentrations above Ohio EPA
+thresholds, sampling and analysis will continue three times per week until cyanotoxins are no
+longer detected at concentrations greater than 50% of the threshold in the finished water in two
+consecutive sampling events. Distribution sampling may also be conducted as outlined under Step
+2. Sampling frequency may decrease, depending on results of distribution samples, cyanotoxin
+4.3 Drinking Water Use Advisories and Public Notification
+concentrations in the raw water, status of treatment, and other factors.
+The decision to issue a drinking water use advisory will be based on detections of a cyanotoxin above
+thresholds in finished water (Table 1). PWSs need to take actions to protect the public from exposures as
+soon as practicable. The PWS should also follow response procedures detailed in their contingency plan as
+applicable (OAC Rule 3745-85-01). The PWS should issue a public notification, including health effects
+language and use restrictions, if thresholds continue to be exceeded in the repeat sample results. Public
+notice templates are included in Appendix C.
+Ohio EPA will evaluate a variety of site-specific factors to determine if a public notice should be issued
+earlier, after the resample results indicate a threshold exceedance, or if conditions are such that the
+issuance can be delayed until additional actions can be taken and additional repeat sample results are
+Page 14 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+available. The following factors will be considered by Ohio EPA when deciding the timing of public
+•
+notification:
+•
+What type of cyanotoxin is present?
+•
+When was the last finished water sample collected that was non-detect for cyanotoxins?
+•
+How high are the cyanotoxin concentrations detected?
+•
+Does the PWS have enhanced cyanotoxin treatment capability or an alternative source of water?
+What are the current raw water cyanotoxin concentrations? Are there indications raw water
+conditions are improving?
+In limited circumstances, based on the factors described above, the recommendation to issue an advisory
+may be delayed until additional daily sampling results are available. The delay would provide additional
+time for the water system to optimize treatment yet still be protective of public health given the 10-day
+health advisory for cylindrospermopsin and subchronic exposure assumptions for anatoxin-a. Informing
+the public of current conditions and efforts underway would still be conducted.
+In the event of an exceedance of a drinking water threshold, community PWS shall implement their
+contingency plan and follow protocol outlined in the PWS’ Treatment Optimization Protocol (TOP) as
+applicable. If a PWS needs to use alternative water sources, they should discuss this plan with Ohio EPA.
+For more information regarding contingency plan requirements and public notification please refer to OAC
+R4.u3l.e1s 3P7u4b5li-c8 N5o-0t1ic ea nPdr o3c7e4d5u-r8e1 -32, respectively.
+Public notification for total microcystins will be conducted in accordance with the provisions contained in
+OAC Rule 3745-90-06. Public notification for all other cyanotoxins should be conducted in accordance with
+the provisions contained in OAC Rule 3745-81-32. Any public notification that needs to be modified from
+the guidelines and templates presented in Appendix C will be coordinated with ODH.
+If public notification is to be issued, Ohio EPA will call the PWS to discuss issuing an immediate Tier 1
+public notice informing all customers of the situation. A public notice template will be provided containing
+the appropriate health effects language and use restrictions.
+If the PWS does not issue public notification as recommended, Ohio EPA may issue a drinking water use
+advisory in accordance with ORC section 6109.06, or may require the PWS to issue public notification
+under the authority of OAC Rule 3745-81-32.
+The use of drinking water restrictions may be modified, based on sampling results and other factors, after
+consultation with the director. For example, a decrease in finished water cyanotoxin concentrations could
+warrant transitioning from an advisory for the entire population to a more limited advisory for children
+pre-school age and younger. This change will require additional public notification.
+4.3.2 Limiting Extent of Public Notice
+The geographic area under public notification may be limited based on distribution sample results and
+provisions described in the system’s written contingency plan, after consultation with the director.
+Distribution sampling results may also be a consideration when modifying use restrictions or lifting the
+4.3.2 Public Notice Templates
+advisory.
+• Drinking water advisories
+Eight public notice templates are included in Appendix C:
+for exceeding the microcystins, saxitoxins and cylindrospermopsin
+preschool age children and younger exposure thresholds.
+Page 15 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+• Do not drink
+advisories for exceeding the microcystins, saxitoxins, and cylindrospermopsin school
+4.3.3 Liaftgien gc htihlder Aend vainsodr ayd ult thresholds.
+The PWS may end issuance of public notification when the finished water cyanotoxin levels are below the
+drinking water threshold(s) in two consecutive sampling events collected a minimum of 24 hours apart and
+after consultation with the director on distribution monitoring, raw water quality, treatment optimization,
+a4n.3d. 4o tChoern seuxmteneru aCtoinngfi dfaecntocers R. eport (CCR)
+If microcystins are detected in a sample collected at finished water or distribution sampling point(s), the
+range of levels detected and highest single microcystins concentration measured must be included in the
+community’s consumer confidence report (CCR). The CCR must also include the microcystins action level,
+information regarding the major source of the contaminant, and standard health effects language (when
+exceedance of action level). Community water systems are also encouraged to include finished water
+saxitoxins, cylindrospermopsin, and anatoxin-a threshold detections and exceedances in their CCR.
+5Dr —ink iSngo wuartcere u Wse aadtveisro rSyu larnvgeuialglea (nAcpepe andnixd C R) ceasne brev uoseidr fMor aCCnRa hgeealmth eadnvtis ory language.
+As a part of source water management and protection, waters used as a source of public drinking water can
+be monitored in different ways. This can include increased observation for HABs through direct
+surveillance by PWS personnel, HAB bloom reports submitted via Ohio EPA’s website, National Oceanic and
+Atmospheric Administration (NOAA) satellite imagery and analysis, and water quality surveys conducted
+by Ohio EPA and other state or local organizations. Water systems are encouraged to conduct routine
+phytoplankton identification on their source waters and collect other raw water screening information to
+help manage their source water for HABs, provide an early warning for HAB impacts, and know when to
+optimize treatment for cyanotoxin removal. Ohio EPA is available to provide guidance on reservoir
+5m.a1n agPeWmeSn tS aunrdv terielalatmnecnet optimization in response to a new or expanding HAB.
+PWSs should be aware that some raw water quality and operational changes can indicate a potential HAB
+impact. Potential indicators include pH increases, phycocyanin or chlorophyll a increases, elevated
+turbidity not associated with a rain event, shortened filter run times, increased chlorine demand, taste and
+odor (Geosmin or MIB) events, a shift in phytoplankton community (increase in cyanobacteria or
+cyanobacteria dominance), presence of cyanotoxin production genes, or cyanotoxin detections.
+USGS Lake
+It is beyond the scope of this document to provide guidance on the collection of screening data or
+Monitoring Field Manual
+establishing a source water monitoring program. More information is available in the
+pubs.er.usgs.gov/publication/tm9A10
+, Lakes and Reservoirs: Guidelines for Study Design and Sampling at:
+5.2 Bloom Reporting via Ohio E.P A Website
+PWSs are requested to notify the district office HAB coordinator or central office HAB staff of a bloom
+Ohio EPA Harmful Algal Bloom Reporter
+occurring on a drinking water source. Individuals that observe HABs are encouraged to complete an algal
+bloom web form that can be found at . All algal bloom reports
+and HAB data (cyanotoxin and phytoplankton data, and photographs) will be entered into a repository
+maintained by Ohio EPA. Algal bloom observers are encouraged to submit pictures with the algal bloom
+report for bloom evaluation.
+Page 16 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Bloom reports at state park beaches will be forwarded to the state park beach manager for response. In
+response to reports of potential HABs on non-state park beaches, Ohio EPA will evaluate the report and
+share with local water managers and ODH, who will notify local health districts. Ohio EPA will provide
+sampling guidance to managers of private water bodies and share all third-party reports of blooms on
+public water supply source waters with the affected PWS.
+Ohio HAB Response Strategy for Recreational Waters ohioalgaeinfo.com
+More information on bloom reports, recreational guidance, and contact information can be found in the
+5.3 Remote Sensing Surveillance and at .
+Ohio EPA will review NOAA HAB reports, MODIS/OCLI satellite, and NASA hyperspectral overflight data.
+Ohio EPA will share reports of moderate to severe blooms with the affected public water supply.
+The Cyanobacteria Assessment Network (CyAN) is a multi-agency project to detect algal blooms in inland
+lakes throughout the U.S. A web application (CyANWeb) provides direct access to cyanobacterial bloom
+epa.gov/water-research/cyanobacteria-assessment-network-application-cyan-
+satellite data for over 2000 of the nation’s largest lakes and reservoirs. Find more information and access
+app
+these data and tools at
+5.4 . Ohio EPA Water Quality Surveys and Integrated Report
+Ohio EPA collects water quality data as part of its inland lakes program and other monitoring programs.
+These data may be useful to water systems interested in starting a reservoir monitoring program or
+developing reservoir management strategies. On a biannual basis, Ohio EPA completes an integrated water
+quality monitoring and assessment report, also referred to as the integrated report. The integrated report
+indicates the general condition of Ohio’s waters and identifies waters that are not meeting water quality
+goals. The report satisfies the Clean Water Act requirements for both Section 305(b) for biennial reports on
+the condition of the State’s waters and Section 303(d) for a prioritized list of impaired waters. For each
+epa.ohio.gov/divisions-and-offices/surface-water/dsw-
+impaired water, Ohio EPA typically prepares a total maximum daily load (TMDL) analysis. More details on
+programs/water-quality-programs
+water quality programs are available at
+5.5 Assessing Bloom Severity .
+Ohio EPA recommends that PWSs conduct routine phytoplankton/algae analysis (community composition
+and dominance) of their source waters. This information can help water systems to better assess the
+potential threat of cyanotoxins and provide the information needed to help optimize their treatment to
+address cyanotoxins and other potential algae-related issues (taste and odor concerns, disinfection
+byproduct formation, filter clogging, etc.). The information can also be used to guide source water
+management practices, including algaecide application. Phycocyanin and other sensors positioned in the
+source water (intake structure, wet well, etc.) can also provide extremely valuable real-time information
+that can be used to trigger treatment optimization for HABs.
+PWSs can use the available screening data to help characterize a bloom as severe, moderate, or minor. It
+may be necessary to make an initial assessment based on visual evidence, which can then be refined as
+epa.ohio.gov/divisions-and-
+additional information is collected. Guidance on the visual appearance of cyanobacterial blooms versus
+offices/drinking-and-ground-waters/public-water-systems/harmful-algal-blooms
+other green algae blooms, including a picture gallery of blooms, is available:
+. Since a severe
+cyanobacterial bloom may not form a surface scum, in the absence of any additional data, a visible bloom
+Page 17 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+should be regarded as severe until additional data is collected. Please note, cyanobacteria cells can vary
+substantially in size and bloom size does not necessarily correlate with toxicity.
+The
+•
+f ollowing guidelines will help water systems characterize the severity of a bloom:
+o
+Severe bloom (meets any of the following):
+16S
+o
+cyanobacteria cell count (or phycocyanin equivalents*) > 100,000 cells/mL
+o
+qPCR results > 100,000 gene copies/mL
+3
+o
+biovolume > 10 mm /L
+o
+chlorophyll a** > 50 µg/L
+scum or surface accumulation is present and/or significant concentration of cells are visible
+o
+throughout the water column
+o
+presence of cyanotoxins, as indicated by test kit or laboratory analyses
+•
+presence of cyanotoxin production genes
+o
+Moderate bloom (meets any of the following):
+16S
+o
+cyanobacteria cell count (or phycocyanin equivalents*) 10,000-100,000 cells/mL
+o
+qPCR results 10,000-100,000 gene copies/mL
+3
+o
+biovolume 1-10 mm /L
+o
+chlorophyll a** 5-50 µg/L
+•
+bloom is visible throughout the water column
+o
+Minor bloom (meets any of the following):
+o
+cyanobacteria cell count (or phycocyanin equivalents*) 4,000-10,000 cells/mL
+3
+o
+biovolume 0.4-1 mm /L
+o
+chlorophyll a** 2-5 µg/L
+some visual evidence of a bloom (note: blooms may not be visually apparent at the lake
+*Phycocyanin is a pigment unique to cyanobacteria. Sensors are available which measure the presence of this pigment and report in either relative
+surface)
+fluorescence units (RFUs) or cyanobacteria concentrations in cells/mL. The cell concentration data, however, should be used with caution because
+sensors are typically calibrated to a pure Microcystis culture, and Microcystis may not be the dominant cyanobacteria in the water source. Also,
+other factors such as turbidity and overall light availability can impact the amount of phycocyanin that is produced per cyanobacterial cell. It is
+often best for a water system to review the general changes in RFUs over time as an indication of an increase in bloom severity instead of a
+particular cell/mL reading.
+**Chlorophyll a values are based on quantitative in vitro analysis. Semi-quantitative in vivo chlorophyll a readings can be used if they have been
+corrected for turbidity effects. Real-time in vivo chlorophyll a analysis is also helpful if a water system is primarily interested in relative changes in
+chlorophyll concentrations over time, but not as concerned with the precise chlorophyll a concentration.
+In some situations, a severe bloom may be present but not visually evident.
+Planktothrix rubescens
+This can be the case with
+Raphidiopsis
+cyanotoxin-producing blooms that can occur at significant depth in the water
+column and not be visible at the water surface and with blooms that can resemble turbid
+brownish-green water. These blooms do not appear like the more typical blue or green colored scum-
+5fo.r6m inRge csyeanrvoobairc tMeriaaln balogoemms eanndt can pose a monitoring challenge.
+Source water monitoring is an essential component of reservoir management. It helps assess the source
+water conditions for problems such as excessive nutrient loading and HABs. Monitoring data is needed to
+establish baseline conditions and triggers for source water control strategies, as well as to determine the
+effectiveness of control strategies (for example, algaecide treatment). Control and treatment strategies to
+minimize HABs focus on controlling nutrients (primarily phosphorus) and algae. An example of direct
+Page 18 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+control on algae is use of algaecides. Some actions, such as phosphorus precipitation, aim to control both
+nutrients and algal populations.
+epa.gov/cyanohabs/control-measures-
+U.S. EPA developed a list of control and treatment strategies and provided benefits and limitations
+cyanobacterial-habs-surface-water
+associated with each strategy. The guidance is available at
+.
+The Interstate Technology Regulatory Council reviewed studies on strategies to manage cyanobacterial
+blooms and compiled factsheets for each strategy/technology (ITRC 2020). The factsheets summarize the
+technology, supporting field data and case studies, provide an estimated cost per season, and applicability
+to water bodies. The project includes an interactive management selection tool along with other guidance
+hcb-1.itrcweb.org
+documents (e.g., monitoring, communication, nutrient reduction, and visual guide to identify
+cyanobacteria). All information and training resources are available at .
+The reservoir management techniques commonly used in Ohio inland reservoirs to control HABs are
+summarized in Table 4 with inf ormation on recommendations from Osgood and Gibbons (2017).
+Page 19 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Table 4. Common HAB reservoir management techniques.
+Technique Control Type Recommendation Benefits Limitations
+Algaecides Algae Recommended, but does High applicability and Short duration; Frequent or
+not address ongoing reliability repeat applications needed
+nutrient loading throughout year
+Artificial Circulation Algae; Internal Recommended only with Critically implemented Typically requires
+phosphorus critical implementation* examples have shown continuous operation with
+success ongoing operation and
+maintenance expenses;
+Uncritical examples show
+poor reliability and even
+unintended negative effects
+Phosphorus Algae; Phosphorus Recommended, but does High applicability and Limited duration; may
+stripping (primarily in water column not address ongoing reliability require repeat (yearly)
+alum, lower doses) nutrient loading applications
+Phosphorus Algae; Phosphorus Recommended, addresses High applicability and May require repeat (yearly)
+inactivation in water column internal -but not external- reliability (especially if applications if external
+(primarily alum, and internal nutrient loads internal phosphorus phosphorus loads are not
+higher doses) phosphorus in loads are driver for HABs) addressed
+sediments
+*Critical implementation means reservoir management strategy is only employed after careful source water evaluation, including collecting
+site specific data to help ensure strategy is adequately designed and implemented.
+It is beyond the scope of this guidance to discuss all relevant reservoir management strategies, but
+algaecides are so commonly used they warrant additional discussion. Algaecides (including copper sulfate
+and peroxide formulations), when applied to a drinking water source under controlled conditions, may
+control the growth of algae and cyanobacteria. Water systems are required to submit a notice of intent
+(NOI) to Ohio EPA’s Division of Surface Water and obtain coverage under the pesticide general permit prior
+epa.ohio.gov/divisions-and-offices/surface-
+to applying algaecide to a source of drinking water. Information and forms associated with the pesticide
+water/permitting/pesticide-application-discharges--general-permit.
+application discharge general permit are available at
+Before applying an algaecide, it is important to closely read the pesticide label and be fully aware of both
+the environmental impact and practical problems with its use. Water systems must also follow the
+conditions outlined in the pesticide general permit. Treatment should be applied at the early stages of a
+bloom prior to raw water cyanotoxin detections when cyanobacteria abundance is low (<10,000 cells/mL,
+or cyanot oxin production genes are not detected) because:
+4) the potential for cyanotoxin release is not probable or low;
+5) if the treatment is applied at the early stages of a bloom, then low concentrations of
+cyanotoxins released into the water can be removed effectively during the treatment
+processes; and
+6) it helps eliminate or reduce the future severity of the bloom. To keep the algae under control
+for extended periods of time, the algaecide applications should be performed at specific
+intervals based upon the pesticide label.
+The pesticide general permit prohibits algaecide application to drinking water source waters if cyanotoxin
+concentrations at the water supply intake exceed Ohio EPA drinking water thresholds or if there is a severe
+bloom (>100,000 cells/mL) or any scums that are within 500 yards of the intake or cover greater than 20%
+of the reservoir. In some instances, algaecide application is permissible if information is provided to Ohio
+EPA prior to application. This should confirm that the bloom is not currently producing cyanotoxins, or the
+surface water will not be used as a source of drinking water until monitoring can confirm cyanotoxins are
+Page 20 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+below levels of concern, or the water system has demonstrated that treatment is capable of removing high
+concentrations of cyanotoxins. Please contact your district or central office HAB coordinator prior to
+applying algaecide to a source water currently in use that has a severe bloom or a visible bloom of
+unknown severity or if raw water cyanotoxins concentrations exceed Ohio EPA thresholds. More
+dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/habs/Algaecide-
+information is available in the Ohio EPA algaecide application fact sheet:
+Application-FS.pdf
+6 — HAB Sam.p ling Protocol
+This sampling protocol outlines how to collect HAB samples at PWS source waters, finished waters, and
+treatment train sampling locations.
+Generally, cyanobacteria screening, phytoplankton, and cyanotoxin samples will be collected by PWSs or
+Ohio EPA. It is requested that other sample collectors, such as lake managers, ODNR, ODH, local health
+districts, Army Corps of Engineers, universities, and volunteers also use this guidance to ensure consistent
+6co.l1le ctSioanf emteyt hPordesc.autions
+Safety must come first when sampling for cyanotoxins. Gloves should be worn when sampling HABs
+(shoulder length if collecting source water samples at depth). Chest waders should also be worn if
+collecting a cyanotoxin sample when wading off the shore. A personal floatation device (PFD) should be
+worn if sampling from a boat or wading into swift water. Avoid inhaling spray or getting spray in eyes from
+boats, wind, or irrigation water from areas with harmful algal blooms. Consider wearing eye protection and
+a mask if conditions exist that promote aerosolization of cyanotoxins.
+Do not ingest or allow the water to come in contact with the skin. Always wash hands with clean, fresh
+water after sampling. Do not touch hands to mouth, eyes, open cuts, or other exposed areas of the body
+before washing. All equipment, gloves, and waders should be washed with Alconox and rinsed with clean
+(tap or bottled) water (not lake water) after a sampling event.
+Ohio EPA staff should follow all applicable guidelines outlined in agency standard operating procedures.
+For molecular screening, phytoplankton sampling and cyanotoxin sampling at PWSs, the recommended
+supp
+•
+lies include:
+•
+Plastic disposable gloves
+•
+For microcystins or cylindrospermopsin sampling: 125 mL PETG or 100 mL glass containers
+•
+For qPCR: 250 mL PETG (Polyethylene Terephthalate Glycol) container
+For phytoplankton sampling: lab-approved containers and Lugol’s iodine or preservative specified
+•
+by the laboratory processing samples
+For saxitoxins sampling: 60 mL glass vials from Ohio EPA DES, pre-dosed with preservative for
+• amber
+saxitoxins collection
+For anatoxin-a sampling: 60 mL glass vials from Ohio EPA DES, pre-dosed with preservative
+•
+for anatoxin-a collection
+•
+Cooler with wet ice
+Waterproof permanent marker (for writing on sample containers, pre-printed labels are also
+•
+acceptable)
+•
+Large trash bags and twist ties (to contain ice in cooler)
+Chain of Custody Report and Sample Submission Forms
+Page 21 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+•
+•
+Shipping labels (if shipping)
+•
+Digital camera to record appearance of bloom, if available
+If collecting raw water or scum samples directly from a water source these additional supplies may
+o
+be necessary:
+Elbow- or shoulder-length gloves (to protect skin from dermal toxin irritation if sampling at
+o
+depth)
+o
+Goggles (if wind is aerosolizing water droplets)
+o
+Respirator (if wind is aerosolizing water droplets)
+Plastic knee boots, hip waders, or chest waders (if collecting samples requires wading
+•
+offshore)
+Personal flotation device (PFD) (if collecting samples requires wading offshore). If appropriate
+protective sampling gear is not available, the sampler should avoid contact with the source water
+6.2 Saanmd polnely C coolllleecctt siaomnp les from the raw and finished water plant taps.
+6.2.1 Label Information
+Label the collection containers with a waterproof marker or attach a label to the outside of the container
+• • •
+and mark with a waterproof marker. Include the following information:
+• •
+Sampling Site Location Date Preservative (if applicable)
+PWS Name and/or PWSID Time (military time)
+If using Ohio EPA pre-printed labels, you must still write the date and time sample was collected on the
+label using a waterproof marker. If using glass containers with paper labels, fill out the label and then cover
+i6t. 2w.i2t hC cylaeanro ptolaxsinti cS atampep.l eTsh is will prevent the label from coming off once the container is placed on ice.
+For microcystins compliance sampling, collect one sample from the raw water tap or designated raw water
+sampling point and one sample from finished water at the entry point to the distribution system. Collect
+finished water, or “clean” samples first. Raw water samples must be collected prior to chemical addition or
+samples treated with chlorine or any other oxidizer (e.g. KMnO4) must be quenched immediately after
+collection. 10.0 mg sodium thiosulfate added per 100 mL of sample is sufficient. PWSs should work with
+their Ohio EPA HAB coordinator if they would like to request an alternate sampling location that is after
+chemical addition. Additional special purposes samples may be collected at alternate raw water sampling
+points (individual reservoir intake structures, etc.), within the treatment train, and within the distribution
+system.
+Microcystins and cylindrospermopsin samples must be collected in clean 125 mL PETG or 100 mL glass
+containers. Saxitoxins samples must be collected in 60 mL pre-preserved glass vials provided by Ohio EPA.
+Finished water samples and any treatment train samples that have already been subjected to an oxidant
+MUST be quenched with sodium thiosulfate immediately upon collection (sodium thiosulfate tablets may
+also be placed in vial prior to collecting samples). The 60 mL, 100 mL, and 125 mL containers should be
+preserved with one 10 mg sodium thiosulfate tablet. Immediately put all cyanotoxin samples in a dark
+cooler on wet ice or ice packs. It recommended to double bag any loose ice and to bag sample bottles
+separately from the ice to avoid breakage.
+Drinking water samples must be analyzed as soon as practical but no later than 5 days from the time of
+collection. If a sample will not arrive for processing at the laboratory within five days, the sample must be
+frozen in a standard freezer until it is processed. If freezing saxitoxins samples, the sample should first be
+Page 22 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+mixed by repeatedly inverting the sample vial and then half the sample volume should be decanted and
+disposed of prior to freezing to avoid breaking the glass vial. Saxitoxins vials should be placed horizontally
+in the freezer, not vertically.
+If collecting samples for LC-MS/MS analysis, verify with the receiving lab the sample volume necessary and
+required container type. Triple rinse both containers using the water you are sampling, prior to collecting
+sample that will be submitted to lab (fill and discard water, fill and discard water, fill and discard water, fill
+6.2.3 Cyanobacteria Screening Samples
+and cap container). Include a chain of custody with all samples shipped to the laboratory.
+Use the sample container specified in the method (Ohio EPA DES 705.0, section 4.0) for qPCR or
+semiquantitative cyanotoxin analysis. For qPCR, use a clean 250 mL PETG container to collect one sample
+from the raw water tap. Raw water samples should be collected prior to chemical addition. Water systems
+should work with their Ohio EPA district office HAB coordinator if they would like to request an alternate
+6sa.2m.4p liPnhgy ltoocpaltaionnk,t opnos Sta cmhepmleisc al addition.
+PWSs are encouraged to collect routine phytoplankton samples within their source waters. If a bloom is
+observed, the water system should consider collecting samples from the scum or biomass in the areas
+where the bloom is concentrated using a clean lab-approved container. The densest bloom may be near the
+surface or at a different depth. If the bloom is not at a distinct location, but diffused throughout the water
+column, consider using a composite sampler that includes collection from a range of depths. If collecting a
+scum, collect a sample from the scum-water surface interface, which is typically just below the surface of
+the water. The goal is to collect live cells that have not been lysed (the top of scum –often colored blue or
+white- is usually dead cells that may be difficult to identify).
+Phytoplankton samples should be collected in a clean glass, plastic, or other laboratory-approved
+container. The sampler should contact the lab that will be analyzing the samples for further instruction on
+containers, sample volume, and preservation guidance. Ideally, samples should be preserved at the time of
+collection with Lugol’s iodine solution at a ratio of 1:100. To achieve a 1:100 ratio, add approximately 1 mL
+of Lugol’s solution per 100 mL of sample. Final preserved sample color should be similar to that of weak
+tea. Samples should be kept on wet ice and in the dark during transport. Ship for overnight delivery to the
+laboratory. If samples are shipped immediately after collection on wet ice, sample preservation with
+Lugol’s iodine may not be necessary (consult lab conducting analysis). Do not freeze the phytoplankton
+6.2.5 QA/QC
+sample - doing so will make identification difficult.
+Ohio EPA will use quality assurance/quality control procedures that meet quality objectives for HAB
+sampling. As part of these procedures, Ohio EPA recommends collecting and analyzing one field duplicate
+s6a.3m pleC yfoarn eovtoerxyin 2 P0r soacmespsliensg c (oLlylescintegd) .I nstructions
+At the laboratory, total cyanotoxins (free extracellular cyanotoxins and intracellular cyanotoxins stored
+within cyanobacteria cells) shall be determined for PWS sample analysis. Samples should be processed to
+ensure all algal cells are lysed. The Ohio EPA DES total cyanotoxin analysis methods (Method 701, 702, and
+703) all require samples be sub jected to at least three freeze/thaw cycles prior to analysis.
+Page 23 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+6.4 Sample Documentation
+6.4.1 Samples Submitted to Ohio EPA for Analysis
+Entities submitting samples to Ohio EPA must first contact the DES Sample Coordinator to arrange delivery.
+Samples submitted to Ohio EPA must include a chain of custody report and one sample submission form.
+Place the paperwork in zip top bags and seal each bag. Place the paperwork on top of the samples and ice in
+t6h.4e .c2o oSlaemr. ples Submitted to Alternate Labs
+Please follow the instructions provided by the lab conducting the analysis. At a minimum, Ohio EPA
+recommends that a chain of custody be included with all samples shipped to a lab for analysis. A list of
+https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/labcert/Combined-
+laboratories currently accepted for Total Microcystin Testing by the Ohio EPA is available at
+Lab-List.pdf
+6.5 Shipp. i ng
+Wet ice sealed in plastic bags (recommended to double bag) should be used to ensure samples arrive at the
+lab at the proper temperature (<10.0º C). Ice packs are often not sufficient to maintain temperature,
+especially during warmer months. The sample container should be sealed with three continuous circles of
+tape to help avoid melting ice leaking out of the container during shipment. It is also recommended to place
+6sa.5m.1p leR evsiaplos ninse b Suabmblpe lwinrga Kp iatsn d place them in individual Ziplock bags.
+When practical and in agreement with PWS staff, HAB sampling kits may be shipped directly to a PWS for
+collection and samples shipped to Ohio EPA’s DES lab. Sample kit preparation and shipping will be
+coordinated by Ohio EPA staff and communication will include district office, central office, and DES staff.
+Kits are typically shipped via FedEx overnight ground. The sampling kit will include sample containers for
+raw and finished water sampling points (and extra glass vial, if breakage occurs), sodium thiosulfate tablets
+(to quench samples), cooler, and pre-paid return label to lab. Sample submission forms and sampling
+instructions may be included as printed copies or provided electronically. Please follow collection
+procedures in Section 6.
+Samples should be packed in a cooler with adequate ice and shipped overnight to Ohio EPA’s DES lab.
+Samples must be received by noon on the day following sample collection and when should only be shipped
+Monday through Thursday (unless otherwise directed by Ohio EPA staff) to ensure that samples are
+6.5.2 Samples Collected by Ohio EPA
+received at temperature and can be analyzed within holding time.
+Ohio EPA staff should plan sampling early in the week and ship overnight for next day delivery by 14:00
+hrs. so samples can be properly processed, and results will be ready by the weekend. Samples can be
+received by DES Monday through Thursday. If Friday delivery is required, DES may not be able to analyze
+the sample until the following week. Contact the DES sample coordinator at 614.644.4243 and indicate how
+many samples will be collected and when they will be delivered to DES prior to sampling.
+If samples will not arrive at DES within that timeframe, samples may need to be frozen to preserve the
+cyanotoxin until they are shipped to DES the following week (depending on holding time). The exception is
+for resample or repeat sampling following cyanotoxin detections in finished water or source water
+conditions that warrant rush sampling. The central office staff will coordinate with DES following any
+Page 24 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+finished water cyanotoxin detections to ensure the laboratory has capacity to analyze samples over the
+w6.e5e.3k eSnhdi popr ihnogl itdoa Ay,l tief rnneactees sLaarbys.
+Contact the appropriate laboratory prior to shipping samples. Include any paperwork required by the
+receiving laboratory. Make sure that all compliance sampling data is submitted to Ohio EPA via eDWR.
+V7o —lun tTarrye PaWtmSs esanmtp lOinpg tdiamta iczaan tailoson b eP rreopotrotecdo tlos e aDnWdR uGseinng ethrea slp ePcliaaln p uRrpeoqseu ciordeem. ents
+All public water systems (PWS) receiving water from a surface water source (excluding consecutive
+systems) are required to submit a harmful algal bloom (HAB) treatment optimization protocol (TOP). The
+protocols must be in an acceptable form and include detailed information on the PWS, water sources,
+existing treatment processes with schematic, and describe treatment adjustments that will be made under
+various raw and finished water quality conditions. While HABs can produce many different cyanotoxins,
+the TOP must focus on optimization of existing treatment for microcystins removal. However, if the PWSs
+has detected other toxins, it is recommended the TOP address optimization strategies to address these as
+well.
+In addition to TOPs, 3745-90 also requires the PWS to submit an approvable cyanotoxin general plan under
+specific conditions. A general plan is required when microcystins concentrations exceed 1.6 micrograms
+per liter in a sample collected at the raw water sampling point more than once within a consecutive twelve-
+month period, or when microcystins are detected in a sample collected at a finished water sampling point
+or a distribution sampling point. The cyanotoxin general plan shall include both short-term and long-term
+strategies to prevent exceedances of the microcystins action levels.
+Ohio EPA developed guidance documents on how to develop treatment optimization protocols (TOPs) for
+HABs and cyanotoxin general plans. All PWS with surface water source are required to review these
+epa.ohio.gov/divisions-and-offices/drinking-and-ground-waters/public-water-systems/harmful-
+documents annually. Guidance resources, including a template form for HAB TOPs, are available at
+algal-blooms.
+There are a variety of resources available to help PWSs understand which treatment processes are effective
+at cyanotoxin destruction or removal and how to optimize a treatment plant to deal with cyanotoxins. Ohio
+EPA partnered with the Ohio Section of AWWA to develop a white paper on cyanotoxin treatment. The
+dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/hab/Algal%20Toxin%20Tr
+white paper covers microcystins, saxitoxins, cylindrospermopsin, and anatoxin-a treatment and found at:
+eatment%20White%20Paper%20FINAL%20November%202016.pdf
+Page 25 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+APPENDIX A: CYANOBACTERIA AND THEIR ASSOCIATED
+CYANOTOXINS AND TASTE AND ODOR COMPOUNDS
+Page 26 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Hepatotoxins Neurotoxins Tastes and Odors
+C yanobacterial Genera CYLINDRO-
+SPERMOPSIN MICROCYSTINS ANATOXIN SAXITOXINS GEOSMIN MIB
+Anabaena (Dolichospermum) x x x x x
+Anabaenopsis x
+Aphanizomenon (Cuspidothrix) x x x x x
+Aphanocapsa x
+Arthrospira x x
+Chrysosporum x
+Cylindrospermum x x x
+Fischerella x x
+Gloeotrichia x
+Hapalosiphon x
+Hyella x x
+Leptolyngbya (Plectonema) x x x
+Limnothirix x
+Lyngbya (Microseira) x x x x x
+Merismopedia x
+Microcystis x
+Nostoc x x x x
+Oscillatoria (Planktothrix) x x x x x x
+Phormidium (Anagnostidinema, x x x x x
+Geitlerinema, Microcoleus)
+Pseudanabaena x x
+Raphidiopsis (Cylindrospermop- x x x x
+sis)
+Scytonema x
+Snowella x
+Synechococcus x x x
+Synechocystis x
+Umezakia x x
+Woronichinia x x
+Information adapted from Jennifer Graham (USGS) with cyanotoxin production documented by Bernard et al., 2017; Chapman and
+Foss, 2019; Huang and Zimba, 2019.
+Page 27 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+APPENDIX B: BASIS FOR CYANOTOXIN THRESHOLDS
+Page 28 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+To xicity Review and Calculations
+Toxicity values for microcystins and cylindrospermopsin are consistent with U.S. EPA national health
+advisories for these cyanotoxins. Toxicity values for anatoxin-a and saxitoxins are detailed below. The
+toxicity values for the specific cyanotoxins are referred to as reference doses (RfDs), which are intended to
+represent a “safe” dose for humans, below which no toxic effect is to be expected. The values are expressed
+in micrograms per kilogram body weight per day (µg/kg-day). Uncertainty factors are included between 10
+and 1000, depending on the number, variety, and quality of the available studies. The child and adult
+advisory values use the same toxicity data (RfD) and represent differences in drinking water intake and
+body weight for different human life stages. The child advisory value is based on the summation of the
+time-weighted drinking water intake/body weight ratios for birth to less than 12 months of age (U.S. EPA
+2011). Th e adult advisory value is based on the mean body weight and the 90th percentile drinking water
+consumption rate for adults aged 21 and over (U.S. EPA 2011), which is similar to that of school-aged
+children.
+The basic calculation and other expo sure factors used to calculate cyanotoxin thresholds in drinking water
+are consistent with U.E. EPA’s national health advisories for micr ocystins and cylindrospermopsin:
+Threshold = NOAEL or LOAEL
+UF × DWI/BW
+NOAEL LOAEL
+Where:
+or = No- or Lowest-Observed-Adverse-Effect Level (µg/kg BW-day) from a study of an
+aUpFpropriate duration.
+= Uncertainty factors account for: intraspecies variability (variation in susceptibility across
+individuals); interspecies variability (uncertainty in extrapolating animal data to humans); uncertainty
+in extrapolating from a LOAEL to a NOAEL; and uncertainty associated with extrapolation when the
+dDaWtaIb/aBsWe iIs incomplete.
+= Normalized ratio of drinking water ingestions to body weight (L/kg-day). For children
+th
+under the age of six, this value is 0.15 L/kg-day and based on the 90 percentile of drinking water
+consumption and mean body weight. For adults and children aged six and older, the value is 0.03 L/kg-
+day based on adult default values of 2.5 L/day and 80 kg.
+Threshold unit is μg/L.
+The toxicity review with supporting references is described for each cyanotoxin, and the values used in the
+Table B1. Toxicity values used to calculate cyanotoxin thresholds in drinking water.
+threshold calculation are provided in the table below.
+Microcystins Cylindrospermopsin Anatoxin-a Saxitoxins
+RfD (µg/kg-day) 0.05 0.1 0.05 0.05
+NOAEL (µg/kg-day) NA 30 50 0.5
+LOAEL (µg/kg-day) 50 NA NA NA
+UF 1000 300 1000 10
+DWI/BW, children 0.15 0.15 0.15 0.15
+under 6 (L/kg-day)
+DWI/BW, children 6 0.03 0.03 0.03 0.03
+and older and
+adults (L/kg-day)
+Page 29 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Microcystins
+U.S. EPA identified a study by Heinze (1999) conducted on rats as the critical study used in the derivation of
+the RfD for microcystins. The critical effects identified in the study are increased liver weight, slight to
+moderate liver lesions with hemorrhages, and increased enzyme levels as a result of exposure to
+microcystin-LR. The LOAEL was determined to be 50 μg/kg-day, based on these effects. The drinking water
+route of exposure matches potential drinking water exposure scenarios in humans. The total UF applied to
+the LOAEL was 1000. This was based on a UF of 10 for intraspecies variability, a UF of 10 for interspecies
+0.5 0.5
+variability, a UF of 3 (10 ) for extrapolation from a LOAEL to NOAEL, and a UF of 3 (10 ) to account for
+deficiencies in the database. U.S. EPA is using microcystin-LR as a surrogate for other microcystin
+congeners. Therefore, the threshold value applies to total microcystins. U.S. EPA issued a ten-day health
+advisory for microcystins based on the duration of the supporting health effects study and human exposure
+Cylindrospermopsin
+scenario for microcystins in drinking water.
+U.S. EPA identified a study by Humpage and Falconer (2002, 2003) conducted on mice as the critical study
+used in the derivation of the RfD for cylindrospermopsin. The critical effects identified in the study are
+increased kidney weight and decreased urinary protein. The NOAEL was determined to be 30 μg/kg-day,
+based on kidney toxicity. The total UF applied to the NOAEL was 300. This was based on a UF of 10 for
+0.5
+intraspecies variability, a UF of 10 for interspecies variability, and a UF of 3 (10 ) to account for
+deficiencies in the database. U.S. EPA issued a ten-day health advisory for cylindrospermopsin based on the
+duration of the supporting health effects study and human exposure scenario for cylindrospermopsin in
+Anatoxin-a
+drinking water.
+Health Effects Support Document for the Cyanobacteria Toxin Anatoxin-A
+U.S. EPA’s from 2015 was used as
+the basis for the anatoxin-a thresholds presented here. U.S. EPA determined that data were inadequate to
+develop acute, short term, or chronic RfDs for anatoxin-a. Additionally, this document noted a change from
+U.S. EPA’s 2006 draft toxicological review of anatoxin-a in the interpretation of the NOAEL and LOAEL
+values from a seven-week drinking water study in rats that supports the subchronic oral toxicity of
+anatoxin-a (Astrachan and Archer 1981, Astrachan et al. 1980). The same study served as the basis for the
+-
+subchronic RfD and threshold calculations for anatoxin-a in the 2019 PWS HAB Response Strategy. The
+threshold values for anatoxin-a are recalculated herein with the NOAEL of 50 μg/kg day to determine
+subchronic RfD and to incorporate the exposure assumptions (i.e., body weight and ingestion rates) used
+for other cyanotoxins. The total UF applied to the NOAEL was 1000. The UF includes a factor of 10 for rat to
+human variability, 10 for variability among humans, and 10 for database deficiencies, including limitations
+within the study used as the basis for the RfD, lack of reproductive studies, and lack of toxicity testing in a
+second species. To be consistent with the tiered health advisories established by U.S. EPA for microcystins
+and cylindrospermopsin, tiered thresholds were established for both child and adult exposure. The
+thresholds were calculated based on the same assumptions used to calculate the microcystins and
+Scyalixnidtoroxsipnesr mopsin health advisory concentrations.
+Cyanobacterial Toxins: Saxitoxins. Background Document for Development of WHO
+Neither U.S. EPA nor World Health Organization (WHO) have issued an RfD for saxitoxins; though WHO
+Guidelines for Drinking-Water Quality and Guidelines for Safe Recreational Water Environments
+recently published
+(2020). To develop a saxitoxins guideline, the committee reviewed information in the Report of the Joint
+FAO/IOC/WHO ad hoc Expert Consultation on Biotoxins in Bivalve Molluscs from 2004, as well as a peer-
+Page 30 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+reviewed paper by Galváo et al. (2009). The joint FAO/IOC/WHO report recommends an acute reference
+dose for saxitoxins (STX)of 0.7 µg/kg-day but does not establish an RfD. The report does not describe the
+toxicological basis for the recommended value.
+Galváo (2009) states:
+From available reports on exposure in humans, a lowest-observed-adverse-effect-level (LOAEL) in the
+region of 1.5 µg STXs/kg body weight (b.w.) could be set, and an estimated no-observed-adverse-effect-
+level (NOAEL) of 0.5 µg STXs/kg b.w. was established. Thus, the CONTAM panel has defined an acute
+reference dose (ARfD) of 0.5 µg STXs/kg b.w.
+The Galváo paper refers to a report in the European Food Safety Authority (EFSA), 2009, Marine Biotoxins
+in Shellfish – Saxitoxin Group Scientific Opinion of the Panel on Contaminants in the Food Chain.
+Using the WHO and U.S. EPA method of applying an uncertainty factor to the NOAEL to derive an RfD, a
+total UF of 100 was applied to the NOAEL-based ARfD. The UF includes a factor of 10 for human variability
+and 10 for a lack of chronic, developmental, and reproductive studies. In 2016 Ohio EPA consulted with the
+State of Oregon and reviewed the EFSA data and determined that the application of an uncertainty factor of
+10 for human variability was not appropriate. This is because “No additional factor for variation among
+humans was deemed necessary because the data covered a large number of affected consumers, including
+sensitive individuals” (EFSA 2009). The factor of 10 for human variability was removed, and the total UF of
+10 is used in the current threshold calculations. To be consistent with the tiered health advisories
+established by U.S. EPA for microcystins and cylindrospermopsin and the saxitoxin thresholds established
+by the State of Oregon, tiered thresholds were established for both child and adult exposure. The
+thresholds were calculated based on the same assumptions used to calculate the microcystins and
+Toxicity Equivalency Factors (TEFs) for Saxitoxins
+cylindrospermopsin health advisory concentrations.
+The Food and Drug Administration (FDA), U.S. EPA, and the European Food Safety Authority utilize TEFs
+when calculating saxitoxins exposure in seafood. The TEFs are based on research on the acute toxicity of
+saxitoxin analogues following intraperitoneal administration in mice. The established TEFs are in the Table
+BTa2b. le B2. List of saxitoxin analogues and corresponding TEF.
+Saxitoxin Analogue Toxic ity Equivalency
+Factor
+STX 1
+NeoSTX 1
+GTX1 1
+GTX2 0.4
+GTX3 0.6
+GTX4 0.7
+GTX5 0.1
+GTX6 0.1
+C2 0.1
+C4 0.1
+dc-STX 1
+dc-NeoSTX 0.4
+dc-GTX2 0.2
+dc-GTX3 0.4
+11-hydroxy-STX 0.3
+Page 31 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Ohio EPA may utilize the established TEFs to help determine if a saxitoxins threshold has been exceeded. If
+a saxitoxin v ariant is detected that does not have an established TEF, it will be assigned a TEF of 1. ELISA
+analysis for total saxitoxins may be utilized for ongoing sampling after an initial finished water threshold
+exceedance.
+Page 32 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+APPENDIX C: EARLY MESSAGING AND PUBLIC NOTICE TEMPLATES
+Page 33 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Microcystins are present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+Microcystins, compounds produced by blue-green algae, have been detected in the finished drinking water from
+[name] water system. A sample[s] collected on [date] shows microcystins at [level] micrograms/liter (μg/L). U.S. EPA
+has established a national health advisory level for bottle-fed infants and children younger than school age based on
+drinking water for 10 days. The Ohio Environmental Protection Agency recommends that bottle-fed infants and
+children younger than school age do not drink the water at microcystins levels above 0.3 μg/L.
+Consuming water containing concentrations of microcystins over the action level may result in abnormal liver
+function, diarrhea, vomiting, nausea, numbness or dizziness. Children younger than school age, pregnant women,
+nursing mothers, the elderly, immune-compromised individuals, those with pre-existing liver conditions and those
+receiving dialysis treatment may be more susceptible than the general population to the health effects of microcystins.
+WSeehka mt sehdiocuall dat tI ednoti?o n if your child is experiencing any of these symptoms.
+• THE FOLLOWING INDIVIDUALS SHOULD NOT DRINK THE WATER: Bottle-fed infants and children
+younger than school age, pregnant women, nursing mothers, those with pre-existing liver conditions
+and those receiving dialysis treatment. These individuals may be more susceptible than the general
+population to the health effects of microcystins. Alternative water should be used for drinking, making
+infant formula, making ice, brushing teeth, and preparing food.
+• As a precautionary measure, the elderly and immune-compromised individuals may want to consider
+using an alternate water source for drinking, making ice, brushing teeth and preparing food.
+• School-age children and adults not in the categories listed above may drink the water.
+Healthy school age
+children and adults may use the water for all uses including bathing, washing hands, washing dishes and doing
+•
+laundry. The water may be used for flushing toilets.
+Infants and children younger than school age must be supervised while bathing to prevent accidental ingestion
+of water. Providing a final rinse of skin with uncontaminated water is recommended for people with open
+wounds or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children under the age of six years (i.e., teething rings, nipples, bottles, toys,
+• DO NOT BOIL THE WATER.
+silverware).
+Boiling the water will not destroy microcystins and it may become more
+•
+concentrated as a result of boiling.
+WhatC honatpapcte an veedt?er Winahraiatn i sim bmeiendgia dteolyn ief ?p ets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need to be
+modified based on water system capability) to help reduce microcystins levels. We are working closely with local and
+state public health and emergency response agencies to address and resolve the situation. We will keep you informed
+as the situation is resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 34 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Microcystins are present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+DO NOT DRINK THE WATER NO BEBA EL AQUA
+Microcystins, compounds produced by blue-green algae, have been detected in the finished drinking water from
+[name] water system. A sample[s] collected on [date] shows microcystins at [level] micrograms/liter (μg/L). U.S. EPA
+has established a national health advisory level based on drinking water for 10 days. The Ohio Environmental
+Protection Agency recommends that you do not drink the water at microcystins levels above 1.6 μg/L.
+Consuming water containing concentrations of microcystins over the action level may result in abnormal liver
+function, diarrhea, vomiting, nausea, numbness or dizziness. Children younger than school age, pregnant women,
+nursing mothers, the elderly, immune-compromised individuals, those with pre-existing liver conditions and those
+receiving dialysis treatment may be more susceptible than the general population to the health effects of microcystins.
+WSeehka mt sehdiocuall dat tI ednoti?o n if your child is experiencing any of these symptoms.
+• DO NOT DRINK THE WATER. Alternative water should be used for drinking, making infant formula,
+making ice, brushing teeth, and preparing food.
+•
+Healthy adults may use the water for bathing, washing hands, washing dishes and doing laundry. The water may
+•
+be used for flushing toilets.
+Infants and children must be supervised while bathing to prevent accidental ingestion of water. Providing a final
+rinse of skin with uncontaminated water is recommended for people with open wounds or skin conditions such
+as eczema. Recommend rinsing with uncontaminated water items that go into the mouths of infants and
+• DO NOT BOIL THE WATER.
+children (i.e., teething rings, nipples, bottles, toys, silverware).
+Boiling the water will not destroy microcystins and it may become more
+•
+concentrated as a result of boiling.
+WhatP hetasp spheounledd n?o tW drhinakt itsh eb weiantegr d. Coonneta?c t a veterinarian immediately if pets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB).
+XXX water system is making adjustments to its treatment processes (this may need to be modified based on water
+system capability) to help reduce microcystins levels. We are working closely with local and state public health and
+emergency response agencies to address and resolve the situation. We will keep you informed as the situation is
+resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 35 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Saxitoxins are present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+Saxitoxins, compounds produced by blue-green algae, have been detected in the finished drinking water from [name]
+water system. A sample[s] collected on [date] shows saxitoxins at [level] micrograms/liter (μg/L). The Ohio
+Environmental Protection Agency recommends that children under six, including bottle fed infants, and sensitive
+populations do not drink the water at saxitoxins levels above 0.3 μg/L.
+Consuming water containing saxitoxins may result in numbness or tingling around the mouth, numbness spreading to
+arms and hands, headache, dizziness, a floating sensation, muscle soreness, muscle weakness, difficulty breathing,
+Wparhaalyts sish, onuauldse Ia d oor ?v omiting. Seek medical attention if your child is experiencing any of these symptoms.
+• THE FOLLOWING INDIVIDUALS SHOULD NOT DRINK THE WATER: Bottle-fed infants and children
+younger than school age, pregnant women, nursing mothers and those receiving dialysis treatments.
+These individuals may be more susceptible than the general population to the health effects of
+saxitoxins. Alternative water should be used for drinking, making infant formula, making ice, brushing
+teeth, and preparing food.
+• As a precautionary measure, the elderly and immune-compromised individuals may want to consider
+using an alternate water source for drinking, making ice, brushing teeth and preparing food.
+• School-age children and adults not in the categories listed above may drink the water.
+Healthy school age
+children and adults may use the water for all uses including bathing, washing hands, washing dishes and doing
+•
+laundry. The water may be used for flushing toilets.
+Infants and children younger than school age must be supervised while bathing to prevent accidental ingestion
+of water. Providing a final rinse of skin with uncontaminated water is recommended for people with open
+wounds or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children under the age of six years (i.e., teething rings, nipples, bottles, toys,
+• DO NOT BOIL THE WATER.
+silverware).
+Boiling the water will not destroy saxitoxins and it may become more concentrated
+•
+as a result of boiling.
+WhatC honatpapcte an veedt?er Winahraiatn i sim bmeiendgia dteolyn ief ?p ets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need to be
+modified based on water system capability) to help reduce saxitoxin levels. We are working closely with local and
+state public health and emergency response agencies to address and resolve the situation. We will keep you informed
+as the situation is resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 36 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Saxitoxins are present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+DO NOT DRINK THE WATER NO BEBA EL AGUA
+Saxitoxins, compounds produced by blue-green algae, has been detected in the finished drinking water from
+[name] water system. A sample[s] collected on [date] shows saxitoxins at [level] micrograms/liter (μg/L). The
+Ohio Environmental Protection Agency recommends that you do not drink the water at saxitoxins levels above
+1.6 μg/L.
+Consuming water containing saxitoxins may result in numbness or tingling around the mouth, numbness
+spreading to arms and hands, headache, dizziness, a floating sensation, muscle soreness, muscle weakness,
+difficulty breathing, paralysis, nausea or vomiting. Seek medical attention if you are experiencing any of these
+symptoms.
+What should I do?
+• DO NOT DRINK THE WATER. Alternative water should be used for drinking, making infant formula,
+making ice, brushing teeth, and preparing food.
+• Healthy adults may use the water for bathing, washing hands, washing dishes and doing laundry. The
+water may be used for flushing toilets.
+• Infants and children must be supervised while bathing to prevent accidental ingestion of water.
+Providing a final rinse of skin with uncontaminated water is recommended for people with open wounds
+or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children (i.e., teething rings, nipples, bottles, toys, silverware).
+• DO NOT BOIL THE WATER. Boiling the water will not destroy saxitoxins and it may become more
+concentrated as a result of boiling.
+• Pets should not drink the water. Contact a veterinarian immediately if pets or livestock show signs of
+illness.
+What happened? What is being done?
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing
+a harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need
+to be modified based on water system capability) to help reduce saxitoxin levels. We are working closely with
+local and state public health and emergency response agencies to address and resolve the situation. We will
+keep you informed as the situation is resolved.
+For more information, please contact _____________________________at__________________. More
+information about harmful algal blooms can be found at ohioalgaeinfo.com.
+Please share this information anyone who drinks this water, especially those who may not have received this
+notice directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by
+posting this notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 37 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Cylindrospermopsin is present in [name] water system
+HAGA
+QUE ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE.
+Cylindrospermopsin, a compound produced by blue-green algae, has been detected in the finished drinking water
+from [name] water system. A sample[s] collected on [date] shows cylindrospermopsin at [level] micrograms/liter
+(μg/L). U.S. EPA has established a national health advisory level for bottle-fed infants and children younger than
+school age based on drinking water for 10 days. The Ohio Environmental Protection Agency recommends that bottle-
+fed infants and children younger than school age do not drink the water at cylindrospermopsin levels above 0.7 μg/L.
+Consuming water containing cylindrospermopsin at the detected level may result in abdominal pain, fever, vomiting,
+diarrhea or impaired liver or kidney function in this population. Seek medical attention if your child is experiencing
+Wanyh aoft tshheoseu sldym I pdtoo?m s.
+• THE FOLLOWING INDIVIDUALS SHOULD NOT DRINK THE WATER: Bottle-fed infants and children
+younger than school age, pregnant women, nursing mothers, those with pre-existing liver or kidney
+conditions and those receiving dialysis treatment. These individuals may be more susceptible than the
+general population to the health effects of cylindrospermopsin. Alternative water should be used for
+drinking, making infant formula, making ice, brushing teeth, and preparing food.
+• As a precautionary measure, the elderly and immune-compromised individuals may want to consider
+using an alternate water source for drinking, making ice, brushing teeth and preparing food.
+• School-age children and adults not in the categories listed above may drink the water.
+Healthy school age
+children and adults may use the water for all uses including bathing, washing hands, washing dishes and doing
+•
+laundry. The water may be used for flushing toilets.
+Infants and children younger than school age must be supervised while bathing to prevent accidental ingestion
+of water. Providing a final rinse of skin with uncontaminated water is recommended for people with open
+wounds or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children under the age of six years (i.e., teething rings, nipples, bottles, toys,
+• DO NOT BOIL THE WATER.
+silverware).
+Boiling the water will not remove cylindrospermopsin and it may become more
+•
+concentrated as a result of boiling.
+WhatC honatpapcte an veedt?er Winahraiatn i sim bmeiendgia dteolyn ief ?p ets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need to be
+modified based on water system capability) to help reduce cylindrospermopsin levels. We are working closely with
+local and state public health and emergency response agencies to address and resolve the situation. We will keep you
+informed as the situation is resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 38 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Cylindrospermopsin is present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LOTRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+DO NOT DRINK THE WATER NO BEBA EL AGUA
+Cylindrospermopsin, a compound produced by blue-green algae, has been detected in the finished drinking
+water from [name] water system. A sample[s] collected on [date] shows cylindrospermopsin at [level]
+micrograms/liter (μg/L). U.S. EPA has established a national health advisory level based on drinking water for 10
+days. The Ohio Environmental Protection Agency recommends that you do not drink the water at
+cylindrospermopsin levels above 3.0 μg/L.
+Consuming water containing cylindrospermopsin at the detected level may result in abdominal pain, fever,
+vomiting, diarrhea, or impaired liver or kidney function. Seek medical attention if your child is experiencing any
+of these symptoms.
+What should I do?
+• DO NOT DRINK THE WATER. Alternative water should be used for drinking, making infant formula,
+making ice, brushing teeth, and preparing food.
+• Healthy adults may use the water for bathing, washing hands, washing dishes and doing laundry. The
+water may be used for flushing toilets.
+• Infants and children must be supervised while bathing to prevent accidental ingestion of water.
+Providing a final rinse of skin with uncontaminated water is recommended for people with open wounds
+or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children (i.e., teething rings, nipples, bottles, toys, silverware).
+• DO NOT BOIL THE WATER. Boiling the water will not remove cylindrospermopsin and it may become
+more concentrated as a result of boiling.
+• Pets should not drink the water. Contact a veterinarian immediately if pets or livestock show signs of
+illness.
+What happened? What is being done?
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing
+a harmful algal bloom (HAB).
+XXX water system is making adjustments to its treatment processes (this may need to be modified based on
+water system capability) to help reduce cylindrospermopsin levels. We are working closely with local and state
+public health and emergency response agencies to address and resolve the situation. We will keep you informed
+as the situation is resolved.
+For more information, please contact _____________________________at__________________. More
+information about harmful algal blooms can be found at ohioalgaeinfo.com.
+Please share this information anyone who drinks this water, especially those who may not have received this
+notice directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by
+posting this notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 39 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Anatoxin-a is present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+Anatoxin-a, a compound produced by blue-green algae, has been detected in the finished drinking water from [name]
+water system. A sample[s] collected on [date] shows anatoxin-a at [level] micrograms/liter (μg/L). The Ohio
+Environmental Protection Agency recommends that children under six, including bottle fed infants, and sensitive
+populations do not drink the water at anatoxin-a levels above 0.3 μg/L.
+Consuming water containing anatoxin-a may result in loss of coordination, muscular twitching, convulsions, difficulty
+breathing, and potentially other neurotoxicity symptoms: headache, dizziness, a floating sensation, muscle soreness,
+muscle weakness, nausea or vomiting, and paralysis. Seek medical attention if you are experiencing any of these
+Wsymhaptto smhso. uld I do?
+• THE FOLLOWING INDIVIDUALS SHOULD NOT DRINK THE WATER: Bottle-fed infants and children
+younger than school age, pregnant women, nursing mothers and those receiving dialysis treatments.
+These individuals may be more susceptible than the general population to the health effects of anatoxin-
+a. Alternative water should be used for drinking, making infant formula, making ice, brushing teeth, and
+preparing food.
+• As a precautionary measure, the elderly and immune-compromised individuals may want to consider
+using an alternate water source for drinking, making ice, brushing teeth and preparing food.
+• School-age children and adults not in the categories listed above may drink the water.
+Healthy school age
+children and adults may use the water for all uses including bathing, washing hands, washing dishes and doing
+•
+laundry. The water may be used for flushing toilets.
+Infants and children younger than school age must be supervised while bathing to prevent accidental ingestion
+of water. Providing a final rinse of skin with uncontaminated water is recommended for people with open
+wounds or skin conditions such as eczema. Recommend rinsing with uncontaminated water items that go into
+the mouths of infants and children under the age of six years (i.e., teething rings, nipples, bottles, toys,
+• DO NOT BOIL THE WATER.
+silverware).
+Boiling the water will not destroy anatoxin-a and it may become more
+•
+concentrated as a result of boiling.
+WhatC honatpapcte an veedt?er Winahraiatn i sim bmeiendgia dteolyn ief ?p ets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need to be
+modified based on water system capability) to help reduce anatoxin-a levels. We are working closely with local and
+state public health and emergency response agencies to address and resolve the situation. We will keep you informed
+as the situation is resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 40 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+DRINKING WATER ADVISORY
+Anatoxin-a is present in [name] water system
+ESTE INFORME CONTIENE INFORMACION IMPORTANTE ACERCA DE SU AGUA POTABLE. HAGA QUE
+ALGUIEN LO TRADUZCA PARA USTED, O HABLE CON ALQUIEN QUE LO ENTIENDA.
+DO NOT DRINK THE WATER NO BEBA EL AGUA
+Anatoxin-a, a compound produced by blue-green algae, has been detected in the finished drinking water from [name]
+water system. A sample[s] collected on [date] shows anatoxin-a at [level] micrograms/liter (μg/L). The Ohio
+Environmental Protection Agency recommends that you do not drink the water at anatoxin-a levels above 1.6 μg/L.
+Consuming water containing anatoxin-a may result in loss of coordination, muscular twitching, convulsions, difficulty
+breathing, and potentially other neurotoxicity symptoms: headache, dizziness, a floating sensation, muscle soreness,
+muscle weakness, nausea or vomiting, and paralysis. Seek medical attention if you are experiencing any of these
+sWymhaptto smhso. uld I do?
+• DO NOT DRINK THE WATER. Alternative water should be used for drinking, making infant formula,
+making ice, brushing teeth, and preparing food.
+•
+Healthy adults may use the water for bathing, washing hands, washing dishes and doing laundry. The water may
+•
+be used for flushing toilets.
+Infants and children must be supervised while bathing to prevent accidental ingestion of water. Providing a final
+rinse of skin with uncontaminated water is recommended for people with open wounds or skin conditions such
+as eczema. Recommend rinsing with uncontaminated water items that go into the mouths of infants and
+• DO NOT BOIL THE WATER.
+children (i.e., teething rings, nipples, bottles, toys, silverware).
+Boiling the water will not destroy anatoxin-a and it may become more
+•
+concentrated as a result of boiling.
+WhatP hetasp spheounledd n?o tW drhinakt itsh eb weiantegr d. Coonneta?c t a veterinarian immediately if pets or livestock show signs of illness.
+[Lake/name of water source], which is a source of drinking water for the [drinking water system] is experiencing a
+harmful algal bloom (HAB). XXX water system is making adjustments to its treatment processes (this may need to be
+modified based on water system capability) to help reduce anatoxin-a levels. We are working closely with local and
+state public health and emergency response agencies to address and resolve the situation. We will keep you informed
+as the situation is resolved.
+ohioalgaeinfo.com
+For more information, please contact _____________________________at__________________. More information about harmful
+algal blooms can be found at .
+Please share this information anyone who drinks this water, especially those who may not have received this notice
+directly (for example, people in apartments, nursing homes, schools and businesses). You can do this by posting this
+notice in a public place or distributing copies by hand or mail.
+PWSID#: STUID#: Date distributed:
+Page 41 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+APPENDIX D: 2025 HAB CONTACTS
+Page 42 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Ohio EPA Division of Drinking and Ground Waters
+1.800.282.9378
+If it is after normal business hours and an Ohio EPA staff person
+PWS HAB Webpage cannot be reached (*primary contact), call:
+epa.ohio.gov/divisions-and-offices/drinking-and-ground-waters/public-water-systems/harmful-
+algal-blooms
+Central Office
+614.644.2752
+Ohio EPA - Division of Drinking and Ground Waters
+50 W. Town St., Suite 700
+P.O. Box 1049
+Columbus, OH 43215
+Allison Reed, Section Manager Haley McLean, HAB Compliance
+allison.reed@epa.ohio.gov haley.mclean@epa.ohio.gov
+937.285.6447 614.387.1939
+Callie Nauman, Statewide Coordinator Rebecca Werner, Engineering and
+Treatment
+callie.nauman@epa.ohio.gov
+614.644.2756
+rebecca.werner@epa.ohio.gov
+330.963.1106
+Central District Office
+Andy Amornyard, District HAB Coordinator Madelyn Votypka, Backup Coordinator
+andy.amornyard@epa.ohio.gov madelyn.votypka@ohio.epa.gov
+614.728.3778 614.728.3778
+Northwest District Office
+419.352.8461
+347 North Dunbridge Road
+Ben Sloan, District HAB Coordinator Blake Hubbard, Backup Coordinator
+Bowling Green, OH 43402
+benjamin.sloan@epa.ohio.gov blake.hubbard@epa.ohio.gov
+419.373.3160 419.352.8461
+Northeast District Office
+330.963.1200
+2110 East Aurora Road
+Twinsburg, OH 44087
+Page 43 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Nicholas Sams, District HAB Coordinator Allen Tyler, Supervisor
+nicholas.sams@epa.ohio.gov allen.tyler@epa.ohio.gov
+330.963.1143 330.963.1138
+Southwest District Office
+937.285.6357
+401 East Fifth Street
+Brian Chitti, District HAB Coordinator Samanatha Spence, Backup Coordinator
+Dayton, OH 45402
+brian.chitti@epa.ohio.gov samantha.spence@epa.ohio.gov
+937.204.1199 937.285.6117
+Southeast District Office
+740.385.8501
+2195 Front Street
+Alex Del Valle (District HAB Coordinator) Dustin Tschudy, Backup Coordinator
+Logan, OH 43138
+alex.delvalle@epa.ohio.gov dustin.tschudy@epa.ohio.gov
+740.380.5227 740.380.5251
+Additional Ohio EPA Contacts:
+Ohio EPA DES (Lab)
+8955 East Main Street
+Reynoldsburg, OH 43068
+Caitlin Joyce Nik Dzamov, Chief
+Phone: 614.644.4247; Fax: 614.644.4272
+caitlin.joyce@epa.ohio.gov nikola.dzamov@epa.ohio.gov
+614.644.4240 614.644.4068
+Communications & Outreach (Me dia Calls)
+6Le1g4i.s6l4a4ti.v2e1 6Li0a isons (Legislative Inquiries)
+614.644.303
+Page 44 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+References
+Astrachan, N. B., B. G. Archer, and D. R. Hilbelink. 1980. Evaluation of the subacute toxicity and
+teratogenicity of anatoxin-a. Toxicon, 18(5-6): 684-688.
+Astrachan, N. B., and B. G. Archer. 1981. Simplified monitoring of anatoxin-a by reverse-phase high
+performance liquid chromatography and the sub-acute effects of anatoxin-a in rats. In: W. W. Carmichael,
+Application of an Image Analysis System to Enumerate
+(Ed). The Water Environment: Algal Toxins and Health. Plenum Press, New York, NY: 437-446.
+and Measure Cyanobacteria.
+Bernard, C., P. Baker, B. Robinson, and P. Monis. 2007.
+Australian Water Quality Center. Research Report No 31. pp. 68.
+Bernard, C., A. Ballot, S. Thomazeau, S. Maloufi, A. Furey, J. Mankiewicz-Boczek, B. Pawlik-Skowronsa, C.
+Handbook of Cyanobacterial Monitoring and Cyanotoxin Analysis
+Capelli, and N. Salmaso. 2017. Appendix 2: Cyanobacteria Associated with Production of Cyanotoxins In J.
+Meriluoto, L. Spoof, and G. A. Codd (Eds.), .
+Cylindrospermopsin Review of Toxicological Literature.
+West Sussex, U.K.: John Wiley & Sons, Ltd. pp 502-513.
+Carson, B. 2000. Final Report. Prepared for the
+National Institute of Environmental Health Sciences. p 37.
+Chapman, A., and A. Foss. 2019. GreenWater Laboratories Potentially Toxigenic (PTOX) Cyanobacteria List.
+10.13140/RG.2.2.32214.50243.
+Cyanobacterial Harmful Algal Blooms: Chapter 35: Assessment
+Donohue, J., J. Orme-Zavaleta, M. Burch, D. Dietrich, B. Hawkins, T. Lloyd, W. Munns, J. Stevens, D.
+Workshop Report.
+Steffensen, D. Stone and P. Tango. 2008.
+Marine Biotoxins in Shellfish – Saxitoxin Group Scientific
+U.S. EPA Agency Papers. University of Nebraska – Lincoln. pp. 53.
+Opinion of the Panel on Contaminants in the Food Chain.
+European Food Safety Authority (EFSA). 2009.
+The EFSA Journal (2009) 1019, 1-76
+Saxitoxins Accumulation by Freshwater Tilapia (Oreochromis niloticus) for Human
+Galvão, J.A., Oetterer, M., Bittencourt-Oliveira, M.D.C., Gouvêa-Barros, S., Hiller, S., Erler, K., Luckas, B., Pinto,
+Consumption.
+E., and Kujbida, P. 2009.
+Cyanobacteria in Lakes and Reservoirs: Toxin
+Toxicon, Volume 54, pp. 891-894.
+and Taste Odor Sampling Guidelines.
+Graham, J. L., K. A. Loftin, A. C. Ziegler, and M. T. Meyer. 2008.
+Toxicity of the cyanobacterial toxin microcystin-LR to rats after 28 days intake with the
+Biological Indicators. Chapter A7. Cyanobacteria, Version 1.0.
+drinking water
+Heinze, R. 1999.
+Cyanobacterial bioactive metabolites — A review of their chemistry
+. Environmental Toxicology, 14(1): 57-60.
+and biology
+Huang, I-Shuo, and P. V. Zimba. 2019.
+. Harmful Algae. 86:139-209.
+ITRC (Interstate Technology & Regulatory Council). 2020. Strategies for Preventing and Managing Harmful
+Cyanobacterial Blooms (HCB-1). Washington, D.C.: Interstate Technology & Regulatory Council, HCB
+The Economics of Algal Bloom Control.
+Team. www.itrcweb.org.
+Kennedy, J. O. S. 1997. 41st Annual Conference. Australian
+Cyanobacteria and Absence of
+Agricultural and Resource Economics Society. January 1997. pp.6.
+Cyanotoxins in a Public Water Supply Source.
+Barros, L. S. S., F. C. de Souza, L. H. S. Tavares, and L. A. do Amaral. 2009.
+Journal of Public Health and Epidemiology. Vol. 1. (1). pp. 007-
+013.
+Page 45 of 46
+Public Water System Harmful Algal Bloom Response Strategy October 2025
+Standard Operating
+Procedures for Algae and Aquatic Plant Sampling Analysis.
+North Carolina Department of Environmental and Natural Resources. January 2003.
+Worldwide Eutrophication of Water Bodies: Causes, Concerns, Controls.
+JAN-03 Version. pp. 76.
+http://adsabs.harvard.edu/abs/2003TrGeo...9..311P
+Prepas, E.E., and T. Charette. 2003.
+Monitoring and Evaluation of Cyanobacteria in Lake Champlain
+, retrieved April 2, 2011.
+(Summer 2002).
+Shambaugh, M. A., and E. Brines. 2003.
+Ecosystem Science Laboratory and G. Boyer, SUNY Syracuse Department of Chemistry. For
+Cyanotoxins in the Tidewaters of Maryland’s Chesapeake Bay: The
+Lake Champlain Basin Program.
+Maryland Experience.
+Tango, P., W. Butler, and B. Michael. 2008.
+Report of the Joint FAO/IOC/WHO ad hoc Expert Consultation on Biotoxins in Bivalve
+pp. 5.
+Molluscs.
+UNESCO. 2005.
+Recommended Human Health Recreational Ambient Water Quality Criteria or Swimming
+IOC/INF-1215. 2005.
+Advisories for Microcystins and Cylindrospermopsin
+U.S. EPA. 2019.
+Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking Water.
+. EPA-822R19001.
+U.S. EPA. 2015. EPA-
+Drinking Water Health Advisory for the Cyanobacterial Microcystin Toxins.
+815R15010.
+Drinking Water Health Advisory for the Cyanobacterial Toxin Anatoxin-a.
+U.S. EPA. 2015. EPA-820R15100.
+Drinking Water Health Advisory for the Cyanobacterial Toxin Cylindrospermopsin.
+U.S. EPA. 2015. EPA-820R15104.
+U.S. EPA. 2015. EPA-
+Exposure Factors Handbook 2011 Edition
+820R15101.
+2009 Edition of the Drinking Water Standards and Health Advisories.
+U.S. EPA. 2011. , EPA-600R09052F.
+Toxicological Reviews of Cyanobacterial Toxins: Anatoxin-A. Draft.
+U.S. EPA, 2009. EPA 822-R-09-001.
+Toxicological Reviews of Cyanobacterial Toxins: Cylindrospermopsins. Draft.
+U.S. EPA. 2006. NCEA-C-1743.
+Toxicological Reviews of Cyanobacterial Toxins: Microcystins LR, RR, YR and LA. Draft.
+U.S. EPA. 2006. NCEA-C- 1763.
+U.S. EPA. 2006. NCEA-
+Exposure Factors Handbook (1997, Final Report).
+C-1765. November 2006.
+Guidelines for Design and Sampling for Cyanobacterial Toxin and Taste-and-Odor Studies in
+U.S. EPA. 1997. NCEA.
+Lakes and Reservoirs.
+USGS. 2008.
+Monitoring and Evaluation of Cyanobacteria in Lake
+Scientific Investigations Report 2008-5038.
+Champlain Summer 2002.
+Watzin, M., A. Shambaugh, and G. Boyer. 2003.
+Cyanobacterial Toxins: Microcystin LR in Drinking Water
+Technical Report No 41. Lake Champlain Basin Program. pp. 36.
+World Health Organization. 1998. .
+WNoHtOe:/SDE/WSH/03.04/57.
+Some published literature that identifies cyanobacterial bloom threshold definitions include: Carson,
+Bonnie; Anonymous 2010; Bernard. Catherine et al.; Donohue. Joyce et al. 2008; Kennedy. John O.S. 1997;
+Tango. P. et al.; Watzin. M. et al. 2003; Ludmilla. Santana Soares e Barros. et al.; and North Carolina
+Department of Environmental and Natural Resources. January 2003.
+Page 46 of 46

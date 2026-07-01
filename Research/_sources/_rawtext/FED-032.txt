@@ -1,0 +1,543 @@
+Office of Water
+Office of Water
+EPA 823-R-19-001
+September 2019
+Recommendations for Cyanobacteria and Cyanotoxin
+Monitoring in Recreational Waters
+Revision 1
+Foreword
+The purpose of this document is to provide EPA’s recommendations, information and process
+steps that a recreational water manager or public health official may choose to follow, or adapt,
+to aid in determining if there is a harmful bloom or cyanotoxins posing a risk to humans, pets,
+wildlife and livestock in a water body.
+This document provides EPA’s monitoring recommendations; nonetheless, EPA has provided
+general information on these issues on its webpage Monitoring and Responding to Cyanobacteria
+and Cyanotoxins in Recreational Waters. For a stepwise conceptual cyanotoxin monitoring
+program framework:
+• Step 1: Assess vulnerability of the water body to HABs and prioritize recreational waters
+for monitoring;
+• Step 2: Observe recreational water body for blooms at the beginning and throughout the
+recreational season;
+• Step 3: Monitor for cyanotoxins; and,
+• Step 4: Follow up cyanotoxin monitoring.
+Disclaimer
+This document provides the EPA’s recommendations for cyanobacteria and cyanotoxin
+monitoring in recreational waters. These monitoring recommendations do not impose legally
+binding requirements on the U.S. Environmental Protection Agency (EPA), states, tribes, or the
+public. These recommendations also do not confer legal rights. These recommendations do not
+constitute a regulation, nor do they change or substitute for any Clean Water Act (CWA)
+provision or the EPA regulations.
+These recommendations may not apply to a particular situation based upon the circumstances.
+Interested parties are free to raise questions about the substance of these recommendations and
+the appropriateness of their application to a particular situation. The EPA retains the discretion to
+recommend approaches on a case-by-case basis that differ from those described in this document
+where appropriate. The EPA may revise this document periodically without public notice. The
+EPA welcomes public input on these recommendations at any time.
+Revision 1 updates
+Revision 1 has been updated in September 2019 to include the EPA’s final recommended values
+for recreational criteria and swimming advisories for microcystins and cylindrospermopsin.
+Some of the hyperlinks throughout the document have also been updated to reflect modifications
+made to the EPA’s website.
+2
+How to Monitor Cyanobacteria/Toxins in Recreational Waters*
+*Adapted from “Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking Water” June 2015, EPA 815-R-15-010
+** This can either be an advisory/warning or a closure.
+***If yes, consider modifying notification to indicate dangerous toxin level or cell count. If toxins are present but less than appropriate trigger value,
+continue to monitor toxins.
+****If the state does not have a HAB program with a value for cyanotoxins or cell counts upon which to base a notification, recreational water managers
+may want to consider using the values that EPA recommends.
+3
+Recommendations for Cyanobacteria and Cyanotoxin Monitoring in Recreational Waters
+Step 1: Assess vulnerability of the water body to cyanobacterial blooms and prioritize
+recreational waters for monitoring
+Protecting public health is the primary objective for a monitoring program. To meet this
+objective, recreational water program managers and public health officials should make every
+effort to sufficiently characterize the water body to better understand the potential for harmful
+blooms, and thus the adverse public health risk that might occur in these waters. Sometimes
+phytoplankton (which includes cyanobacteria, microalgae, dinoflagellates and other
+microorganisms) can grow to high cell densities and form blooms. These blooms may or may not
+be toxic.
+This document focuses on cyanobacterial blooms with the potential for harmful cyanotoxins
+(also known as harmful algal blooms or HABs). A bloom can have extremely high cell densities
+of cyanobacteria (extremely high densities are typically defined as greater than 20,000 to
+100,000 cells per mL) (Loftin et al., 2008). Cyanotoxins are produced by some toxic-producing
+species and are not always released into the water. Harmful algal blooms could adversely affect
+people and animals, regardless of the presence of toxins. Exposure to elevated cyanobacterial
+cells densities has been associated to dermal effects such as skin rashes, ear and eye infections
+and gastrointestinal distress. Harmful blooms are those that pose a health risk to people, either
+due to the presence of toxins or due to elevated densities.
+1.1 Assess vulnerability of the water body to cyanobacterial blooms
+Some recreational waters are more vulnerable than others based on the water body and water
+shed characteristics. Fast flowing, nutrient-poor rivers are less vulnerable than nutrient-rich lakes
+and reservoirs. Existing water quality data can help to determine if the water body has had a
+history of blooms or bloom indicators such as high cyanobacterial cell counts or chlorophyll-a
+levels. Elevated nitrogen and phosphorus levels will be important to consider in a waterbody
+evaluation. Waterbody assessments should consider the predominant land use in the watershed
+and potential nutrient sources that may lead to cyanobacterial growth for a system-specific
+evaluation. Similarly, climate and weather information such as water temperature and intensity
+of precipitation events will help to determine if conditions are conducive to increased levels of
+site-specific cyanobacterial growth currently and in the future.
+A variety of information can be considered to assess the vulnerability of the recreational water to
+cyanobacterial blooms including: the type of water body; historical cyanotoxin occurrence;
+weather data (increases in temperature, precipitation and light); seasonal patterns of
+cyanobacterial blooms; land use patterns; physical and hydrologic factors (e.g., turbidity, pH and
+nutrients, and residence time); chlorophyll-a and phycocyanin levels; point and nonpoint sources
+of contamination upstream; water quality impairments; and, any other information gathered as
+part of source water assessments or sanitary surveys.
+EPA recommends that managers, public health officials, tribes and states evaluate available data
+on their recreational waters to assess waterbody vulnerability to cyanobacterial blooms.
+Specifically, available data can be evaluated against EPA’s recommended values or their own
+state/s values to determine whether harmful blooms have occurred in the past. As a benchmark
+for evaluating the risk to public health in recreational waterbodies, EPA has recommended
+4
+national recreational water quality criteria for cyanotoxins (Recreational AWQC/Swimming
+Advisory for Cyanotoxins). See Table 1.
+Table 1. EPA Recommended Values for Recreational Criteria and Swimming Advisories for Cyanotoxins
+Total
+Cylindrospermopsin
+Microcystins
+Magnitude Duration Frequency
+Magnitude
+(µg/L)
+(µg/L)
+1 in 10-day assessment Not more than 3 excursions in a
+8 15 period across a recreational recreational season in more than
+season one year b
+a States and authorized tribes can choose to adopt one or both criteria recommendations.
+b An excursion is defined as a ten-day assessment period with an observed toxin concentration higher than the criteria
+magnitude. When more than three excursions occur within a recreational season and that pattern reoccurs in more than one
+recreational season (i.e., in more than one year for most areas, although some recreational seasons may straddle two calendar
+years), it is an indication the water quality is not supporting its recreational use. States and authorized tribes may choose to
+apply either or both toxin recommendations when evaluating excursions within and across recreational seasons. As a risk
+management decision, states and authorized tribes which adopt these criteria should include in their WQS an upper-bound
+frequency, or recurrence frequency, stating the number of years that pattern can reoccur and still support its recreational use.
+Although EPA has recommendations for specific toxins, cell counts and/or biomass, together
+with microscopic identification can be informative and an interim step to make public health
+decisions and/or prompt toxin analysis. The Global Water Research Coalition, a non-profit
+organization for water research, published voluntary guidelines in 2009. The International
+Guidance Manual for the Management of Toxic Cyanobacteria provides information on many
+topics including cell enumeration, and calculation of biovolume/biomass. The World Health
+Organization (WHO) established guidelines for cyanobacterial cells (see Table 1) and several
+states (e.g., Connecticut, Indiana, Kentucky, Oklahoma, Utah, Wisconsin) use them for their
+swimming advisory level.
+Table 2. WHO (2003) Recreational Guidance/Action Levels for Cyanobacteria, Chlorophyll a, and Microcystin
+Relative Probability of Cyanobacteria (cells/mL) Chlorophyll a (µg/L) Estimated Microcystin
+Acute Health Effects Levels (µg/L)a
+Low < 20,000 < 10 < 10
+Moderate 20,000–100,000 10–50 10–20
+High >100,000–10,000,000 50–5,000 20–2,000
+Very High > 10,000,000 > 5,000 > 2,000
+aWHO (2003) derived the microcystin concentrations from the cyanobacterial cell density levels.
+1.2 Prioritize recreational waters for monitoring
+Recreational water managers, public health officials or state water quality staff should develop a
+risk-based monitoring plan for recreational waters that are potentially vulnerable to blooms in
+order to prioritize their monitoring resources by considering the following information:
+• Existing and historical recreational water quality,
+• Sampling considerations,
+• Analytical methods,
+• Sampling/testing logistical considerations,
+• Use of predictive tools and satellite data (see Section 2.2), and
+• Frequency and number of people using the recreational water.
+5
+The prioritization or tiering of monitoring locations and sampling frequency should include an
+evaluation of the recreational waters including an assessment of site-specific information and the
+potential risk that a bloom at the site would present to human health and the health of animals,
+including pets, wildlife and livestock. This step-by-step process may be informed by how the
+water body is used by people, whether pets or livestock may enter it, and other relevant factors.
+This process will also allow reduction of efforts in locations where blooms are not likely to
+occur. For example, the Utah Department of Environmental Quality identified 16 sensitive water
+bodies to monitor closely throughout the swim season, based on the designated uses, the
+proximity to populated areas, the number of recreational users, and whether cyanobacterial
+blooms have occurred in the past.
+Two EPA documents National Beach Guidance and Required Performance Criteria for Grants,
+2014 Edition (EPA 2014a) and Recommendations for Public Water Systems to Manage
+Cyanotoxins in Drinking Water (EPA 2015c) provide valuable information on identifying
+sources of risk and prioritizing resources. The National Beach Guidance and Required
+Performance Criteria for Grants (EPA 2014a) describes steps to take in prioritizing beach
+monitoring sites based on risk to microbial pathogens and use at beaches. Recommendations for
+Public Water Systems to Manage Cyanotoxins in Drinking Water (EPA 2015c) describes the
+information needed to evaluate drinking water systems’ source water vulnerability to HABs.
+Step 2: Observe recreational water body for blooms
+There are multiple indicators of the potential presence of HABs including visible discoloration of
+a water body due to suspended cell filaments or scums (e.g., a red, green, or brown tint); thick,
+mat-like accumulations on the shoreline and surface; foul odors and soupy-consistency of the
+water; and fish kills. However, toxins can be present at unsafe levels without a visual bloom, and
+the presence of cyanotoxins can only be confirmed through testing of the water. Cyanotoxin
+production by cyanobacteria is highly variable and strongly influenced by the environmental
+conditions as well as the specific cyanobacteria causing the bloom. Microscopic phytoplankton
+identification can provide information when blooms are not visually apparent and can determine
+the type of bloom.
+Public health officials should encourage the general public to notify their state or local
+government as soon as they see a bloom. EPA’s States HABs Resources site contains an
+interactive map with cyanobacteria/cyanotoxins resources for each state. For example, Ohio EPA
+encourages individuals reporting potential blooms to fill out a Bloom Report Form on their
+website and email the form, with attached digital photographs (if available), to a designated
+mailbox (Ohio 2014). Individuals are encouraged to report the bloom location, color, size,
+appearance, and location of nearby public beach or drinking water plant intake(s) (if any), as
+well as any other available water quality information. The State of New York has a Suspicious
+Algae Bloom Report Form and a program for citizens to send in photos of the suspected blooms
+(New York, 2015). For examples of state forms for reporting blooms, see Table 3. For a
+comprehensive list of HABs programs, please visit the States HABs Monitoring Programs and
+Resources website. Managers, public health departments and states may want to consider
+creating outreach tools for their community to educate the public on blooms and what to do if
+6
+they see a bloom. In addition, the Cyanobacteria Monitoring Collaborative has an application
+(app) to find and study cyanobacteria in waterbodies.
+Table 3: Selection of State Forms for the Public to Report Cyanobacterial Blooms
+State Organization Link to Reporting Form for Potential Cyanobacterial
+Bloom
+California State Water Resources Control Board Freshwater & Estuarine Harmful Algal Bloom Report
+Form
+Florida Department of Environmental Protection Algal Bloom Reporting Form
+Illinois Department of Public Health HAB Human Illness Report Form
+HAB Animal Illness Report Form
+Indiana State Department of Health Bloom Report Form
+HAB Human Illness Report Form
+HAB Animal Illness Report Form
+Kansas Department of Health and Environment Bloom Report Form
+HAB Human Illness Report Form
+HAB Animal Illness Report Form
+New York Department of Environmental Conservation Suspicious Algal Bloom Report Form
+Ohio Environmental Protection Agency Bloom Report Form
+Washington State Department of Health Bloom Report Website
+2.1 Field and Visual Identification
+A bloom may be observed or reported by environmental or public health staff or the general
+public. Visual inspection can rule out a bloom as cyanobacterial based on the characteristics of
+the bloom and by performing the “jar” or “float” test. However, toxins can be present without a
+visual bloom on the water surface, and the presence of cyanotoxins can only be confirmed by
+testing the water.
+The State of Vermont developed a guidance document to help communities within the state
+address issues associated with cyanobacteria. The guidance document has helpful tips on
+identifying cyanobacterial blooms and conducting jar (or float) or stick tests (Cyanobacteria
+Guidance for Vermont Communities) (Vermont 2015).
+Microscopic phytoplankton identification can provide information when blooms are not visually
+apparent and can determine if species present are toxic- or non-toxic species and the type of
+bloom. For more information on identifying blooms and specific cyanobacteria, go to: USGS
+Field and laboratory guide, Guidance Document for Harmful Algal Blooms in Colorado, and
+Guidelines for safe recreational water environments (WHO 2003). Other States such as Oregon,
+California, and New York have also developed guidance materials, including videos on how to
+conduct shoreline sampling. In addition, there are academic programs, websites and apps to help
+with identification of cyanobacteria and blooms, for example, the New England-based
+Cyanobacteria Monitoring Collaborative. BloomWatch is an app which uses crowdsource data to
+find and report potential cyanobacterial blooms. Individual citizens who download the
+BloomWatch app and use it to submit their photos of the potential bloom to the BloomWatch
+project. Users may also send that information to the relevant state or local agency.
+In addition to visual inspection for blooms, recreational water managers may want to consider
+routine sampling and testing for cyanobacterial cells and/or biomass and cyanotoxins. Testing for
+7
+cyanobacterial cells is less expensive than testing for cyanotoxins using some analytic
+methodologies (e.g., mass spectrometric) if taxonomists are already available. Testing can:
+• Help distinguish green algae and diatom blooms from potentially harmful cyanobacterial
+blooms;
+• Provide information on cyanobacteria that may be present below the surface, and not
+visually apparent at the water surface; and,
+• Detect lower concentrations of cyanobacteria that may not be visually apparent.
+Utah DWQ involves citizens in the monitoring and identification process in addition to reporting
+blooms. Volunteers are taught how to identify cyanobacteria and in many cases provided with
+microscopes for family-level taxonomic identification which can be reported to the National
+Oceanic and Atmospheric Association (NOAA) Phytoplankton Monitoring Network. Monitoring
+activities are also conducted by local health departments which are often responsible for issuing
+the advisories. In addition, many of the monitoring groups use toxin test strips (stick tests) to
+detect immediate threats. Broadly, this information acts as an initial screen to notify the Utah
+DWQ when to collect phytoplankton/toxin samples for analysis by professional labs.
+2.2 Predictive and Remote Monitoring Tools
+New technologies are changing the way we monitor pollution in the environment. EPA and other
+agencies are studying innovative technologies to support monitoring efforts in assessing water
+quality, including cyanobacterial blooms and nutrient pollution using:
+• Satellites;
+• Portable and ground remote sensors; and
+• Measurement and model data which can be used in predictive modeling applications.
+NOAA satellite imagery data are being used to predict blooms in western Lake Erie and the Gulf
+of Mexico (Florida and Texas). NOAA, EPA, United States Geological Survey (USGS), and
+NASA are partnering on the Cyanobacteria Assessment Network (CyAN) project. Once new
+satellite sensor data are available, this collaborative will make available nationwide satellite data
+which has been processed for cyanobacteria abundance for all large inland lakes. The goal of the
+CyAN project is to develop an early warning indicator system using historical and current
+satellite data to detect cyanobacteria blooms in U.S. freshwater systems. This project supports
+federal, state, and local partners in their monitoring efforts to assess water quality to protect
+aquatic life and human health. Satellite imagery may not be appropriate for all waterbodies
+because most satellites support resolutions (e.g., 30 m – 1 km) that are adequate only for
+moderate- to larger-sized lakes and usually at a frequency of no more than once a week.
+Environmental monitoring of physical, chemical and biological indicators of bloom formation
+potential is important but can be resource intensive if data are not already available from other
+sources. Key indicators include cyanobacterial cell counts, biovolumes (the volume of cells in a
+unit amount of water, mm3/L), chlorophyll a and phycocyanin concentrations, presence of
+cyanotoxin production genes in the water body, nutrient concentrations (nitrogen and
+phosphorus), changes in hydrophysical conditions and new weather patterns (such as increased
+temperature and rain) (Izydorczyk et al., 2005; Ohio 2014). EPA encourages recreational water
+managers to use all available data, as discussed in Step 1, as part of a weight of evidence
+8
+approach to determine if recent changes have occurred, possibly indicating bloom occurrence.
+Bloom indicators can be used to inform a decision whether toxin analysis should proceed.
+As previously noted, although EPA has national recommendations for specific cyanotoxins (see
+Table 1), cyanobacterial cell counts can be informative and serve as an interim step before toxin
+analysis. WHO established guidelines (see Table 2) and several states (such as Connecticut,
+Indiana, Kentucky, Oklahoma, Utah, and Wisconsin) use cyanobacterial cell levels for their
+respective swimming advisory levels.
+2.3 Continued assessment of waterbodies for potential blooms
+Properly trained staff might conduct field inspections of those recreational waters that are likely
+to be vulnerable to blooms (as determined in Step 1) focusing on specific seasons the water was
+previously determined to be vulnerable. For those recreational waters that the state or locality has
+determined not to be vulnerable to cyanotoxins or blooms, the manager may still want to
+consider periodically reassessing as watershed characteristics may change over time.
+For vulnerable waters, even if there is no indication that a bloom has occurred, EPA encourages
+the program to continue observing for possible blooms throughout the vulnerable season
+(determined previously as part of this Step). If any of the observations indicates a bloom is
+occurring, the manager may want to notify the public by posting cautionary warning signage and
+begin monitoring for toxins.
+2.4 Notification of risk from bloom and potential cyanotoxins
+When a bloom and/or the presence of cyanotoxins are confirmed, the manager usually issues a
+notification (which could either be an advisory or a closure) to raise awareness of the potential
+risks associated with swimming and other water contact activities. Water body or beach
+advisories are recommendations to limit swimming or other recreational activities, due to an
+increased health risk due to contact with or ingestion of the cyanobacteria and/or cyanotoxins.
+An advisory notification does not, however, officially close the recreational area to the public.
+Advisories can be based on the simple presence of a bloom even though the predominant species
+of phytoplankton or presence of cyanotoxins has not yet been confirmed. Alternatively, the
+advisory may also be posted only after confirmation of the presence of cyanotoxins. Permanent
+advisories may be used to notify the public of a continuing potential human health risk
+associated with use of the water. In contrast, a closure notification or posting typically means
+that the water body is officially closed to the public. Closing a water body or a beach is a local
+decision. Templates for communication materials are available at Communicating about
+Cyanobacterial Blooms and Toxins in Recreational Waters.
+Several States have risk communication tools to assist during a cyanobacterial bloom event. For
+example, California has a voluntary guidance system of thresholds, decision tree, and signage
+used to notify the public regarding freshwater HABs. These materials are posted on the
+California HABS Portal. California has proposed a 3-tiered approach to notifying the public. If a
+bloom is suspected based on visual elements (e.g., water appears soupy) or if there is an increase
+or change in pH or nutrient loading, or other characteristics that historically have predicted
+blooms, then a “warning” sign is posted. If human or animal illness is suspected, then a
+“caution” sign is posted. “Danger” is posted once a human illness, or animal illness or death has
+been confirmed due to cyanotoxin exposure.
+9
+Oregon Department of Environmental Quality has developed a harmful bloom strategy (Oregon
+HAB Strategy) with the goal of preventing and controlling HABs. The voluntary strategy focuses
+on identifying waters that experience HABs, issuing health advisories and educating the public
+about their risks. If a bloom is present, the strategy recommends collecting samples for algal
+identification and cell counts and/or analysis of toxins.
+If there is no indication of a bloom, EPA encourages the continued observation of vulnerable
+waters for possible blooms throughout the season as determined previously as part of this Step
+(see discussion under section 2.3). If a bloom occurs near where people, pets, or livestock could
+be exposed, the recreational water manager may want to begin monitoring that water for toxins
+(Step 3).
+Step 3: Monitor for cyanotoxins
+3.1 Methods
+There is a diverse range of rapid screen tests and laboratory methods used to detect and identify
+cyanobacteria cells and cyanotoxins in water. Types of methods include:
+• Enzyme–linked immunosorbent assays (ELISA);
+• Reversed-phase high performance liquid chromatographic methods (HPLC) combined
+with mass spectrometric (MS, MS/MS) or ultraviolet/photodiode array detectors
+(UV/PDA);
+• Protein phosphatase inhibition assay (PPIA);
+• Liquid chromatography/mass spectrometry (LC/MS);
+• Quantitative Polymerase Chain Reaction (qPCR) and microarrays/DNA chips; and
+• Cyanobacteria cell counts through microscopy.
+For more information about these methods, see this EPA website A Summary of the Methods
+Available for Cyanotoxin Detection and USGS Analytical Methods for Cyanotoxin Detection
+and Impacts on Data Interpretation (USGS 2010). In addition, see a list of specific methods in
+Table 4, below.
+The decision to use a monitoring method should be made based on the needs and resources of the
+waterbodies to be monitored. Methods vary widely in sensitivity, rapidity, cost and level of
+expertise required to perform the method. The potential risk from cyanotoxins can be estimated
+by directly measuring the toxin (bioassays- HPLC, MS, LC/MS), by measuring antibodies raised
+against the toxin (bioassays by chromatography - ELISA, PSI, PPIA) or by estimating the
+potential for toxin production by measuring a gene that can produce the toxin in cyanobacteria
+(PCR). As demonstrated in studies comparing these methods (Gaget 2017; Loftin 2008) there is
+no single, best method. Each method has its strengths and weaknesses. For example, some
+chromatographic methods are very accurate but are limited to one or a few cyanotoxin congeners
+of a toxin; such methods may underestimate the total risk. PCR methods can be rapid and
+reliable measures of potential risk; however, if the cyanobacteria are not producing or releasing
+the toxin, the risk may be overestimated. Managers may also combine methods by adding a
+confirmation test. Commercially available Enzyme-Linked Immunosorbent Assay (ELISA) test
+kits are one of the more commonly utilized cyanotoxin testing methods, since they do not require
+10
+expensive equipment or extensive training to run. Semi-quantitative field screening ELISA kits
+are available for the presence or absence of cyanotoxins. If cyanotoxins are detected by a field
+screening kit, repeat analysis is recommended using either a quantitative ELISA test or one of
+the other analytical methods identified above.
+More precise, more quantitative ELISA test kits are available for microcystin-LR,
+microcystins/nodularins (ADDA), saxitoxin, and cylindrospermopsin. In addition, a rapid
+receptor-binding assay kit is available for the detection of anatoxin-a. Although they provide
+rapid results, ELISA kits generally have limitations in specificity and are not congener specific.
+In addition, some cross-reactivity may occur. The microcystins/nodularins (ADDA) kit is based
+on the ADDA structure within the microcystin molecule and is designed to detect over 100
+microcystin congeners identified to date; however, it cannot distinguish between congeners).
+Methods that utilize liquid chromatography combined with mass spectrometry (LC/MS) can
+precisely and accurately identify specific microcystin congeners for which standards are
+available; LC/MS methods have also been designed to minimize matrix interference. At this time
+there are only standards for a limited number of the known microcystin congeners. If congener-
+specific information is needed, an LC/MS method should be considered. HPLC-PDA methods
+are less specific than LC/MS methods, and the quantitation is more problematic due to less
+specificity and sample matrix interference. However, when analytical toxin standards are
+available for confirmation, they provide a measure of resolution of the congeners present.
+For detection of cyanotoxins in drinking water, EPA developed Method 544, a liquid
+chromatography/tandem mass spectrometry (LC/MS/MS) method for microcystins and nodularin
+(combined intracellular and extracellular), and Method 545, a liquid chromatography
+electrospray ionization tandem mass spectrometry (LC-ESI/MS/MS) method for the
+determination of cylindrospermopsin and anatoxin-a. EPA also developed Method 546, an
+ELISA Method for ambient and drinking water. Standard operating procedures for this method
+developed by Ohio EPA provide additional advice for quality-control and sample-handling
+measures for ambient waters (Inland Lakes Sampling Procedure Manual) (Ohio 2012). For
+additional information on analytical methods for microcystins and cylindrospermopsin, please
+also see the analytical methods discussion under Section 5 of the EPA drinking water health
+advisories (EPA 2015a,b).
+EPA’s National Aquatic Resource Surveys (NARS) are statistical surveys designed to assess the
+status of and changes in quality of the nation’s coastal waters, lakes and reservoirs, rivers and
+streams, and wetlands. NARS 2012 and 2016 surveys included testing related to blooms (littoral
+chlorophyll-a, algal toxin, and phytoplankton). The NARS field operation and lab manuals are a
+good source of information (NARS technical manuals) (EPA 2012a,b)
+11
+Table 4: Analytical methods of Microcystin and Cylindrospermopsin detection and non-toxins in ambient water1
+TEST/ METHOD Analytical Target APPROX. LIMIT OF LOCATION OF TIME TO SCREENING
+QUANTIFICATION TEST RESULT ONLY TOOL
+EPA Method Intracellular and
+0.10–5.0 µg/L
+546 Extracellular Lab ~ 1 day No
+Adda-ELISA Microcystins
+ELISA-DM 3 hours or
+Total Microcystins 0.010 µg/L Lab No
+Laboratory Test less
+ELISA Total Microcystin in
+3 hours or
+Laboratory Test marine/brackish 0.016 µg/L Lab No
+less
+SAES (Abraxis) water
+ELISA
+Total 3 hours or
+Laboratory Test 0.05 – 2.0 µg/L Lab No
+Cylindrospermopsin less
+(Abraxis)
+ELISA Total 0.1-2.0 µg/L Lab ~2 hours No
+Laboratory Test Cylindrospermopsin
+(Beacon)
+HPLC-UV (PDA) Total Microcystins- ~0.3 µg/L Lab ~ 1 day No
+limited specificity
+Protein
+Phosphatase Total Microcystins 0.02 µg/L Lab N/A No
+Inhibition Assay
+Microcystin
+Tube Kit Total Microcystins 0.1-5.0 µg/L Lab ~45 minutes No
+(Abraxis)
+Microcystin
+Tube Kit Total Microcystins 0.3-5.0 µg/L Lab ~1 hour No
+(Beacon)
+Total Microcystins 1–10 µg/L Field ~45 minutes Yes
+Abraxis Test Total
+0.5–10 µg/L Field ~45 minutes Yes
+Strip Cylindrospermopsin
+Non-Toxins Methods
+Phycocyanin
+Continuous Cells/ Biomass 0.04 µg/L Field N/A Yes
+Monitoring
+qPCR Cells/Biomass Lab ~30 minutes Yes
+DNA Chip Cells/Biomass Presence/Absence Lab ~4 hours Yes
+Microscopic
+Cells/Biomass N/A Lab N/A Yes
+Techniques
+In the case of public waterways and drinking water sources, many state environmental agencies
+operate monitoring, sampling, and testing programs. Several of these states perform the analysis
+on samples taken from potential blooms in state-run laboratories; however, other states with
+HAB programs, in addition to municipalities, private utilities, and other stakeholders of
+freshwater systems send their samples to commercial and public laboratories. States should
+1 EPA does not endorse any particular brand or method in this table, and there may be other similar
+services that have been inadvertently left out of the table or have been developed after the release of this
+document. Other than EPA Method 546, EPA has not approved or verified these methods.
+12
+consider providing training to lab personnel to ensure consistent results. For a non-
+comprehensive list of laboratories that accept samples for cyanobacteria and cyanotoxin analysis,
+please visit the State Resources page on this website (States Resources).
+If cyanotoxins are confirmed, EPA encourages contacting appropriate partners that use the same
+water body and alert them to the potential threat as well as contacting managers of downstream
+recreational areas. EPA recommends that state water recreation managers or appropriate state
+partners report suspected and confirmed harmful blooms and/or human and animal illnesses
+associated with HABs to the One Health Harmful Algal Bloom System (OHHABS). The Centers
+for Disease Control and Prevention (CDC) developed OHHABS as a voluntary reporting system
+available to state and territorial public health departments and their designated environmental
+health or animal health partners. For guidance about defining a bloom and how to report health
+and environmental data, see OHHABS.
+3.2 Sampling Logistics
+Select monitoring sites to ensure that the main public access locations are included, as well as
+those areas prone to scum build up due to prevailing winds (e.g., shorelines). Samples should be
+handled properly to ensure reliable results, whether analyzing the samples using a field kit or
+‐
+shipping them to a laboratory. EPA recommends that a manager follow sample collection and
+handling procedures required by the method or laboratory performing the analysis. For
+laboratory analysis, EPA encourages the use of laboratory-provided sample containers to collect
+water samples. Laboratories may not accept containers from other sources, or they may
+invalidate results. Amber glass containers are typically used to avoid potential cyanotoxin
+adsorption associated with some plastic containers and to minimize exposure to sunlight (U.S.
+EPA, 2014a). Samples should be cooled immediately after collection, during shipping, and
+pending analysis at the laboratory. Ideally, samples should be shipped on the same day they are
+collected. Samples generally should be analyzed within five days from the time of collection.
+EPA encourages systems to contact the laboratory prior to shipping samples for additional
+sample handling instructions. More information is available from (USGS 2008) Guidelines for
+Design and Sampling for Cyanobacterial Toxin and Taste-and-Odor Studies in Lakes and
+Reservoirs.
+3.3 Safety and handling
+Because the water body may contain toxins, samplers should take the following safety
+precautions. Wear appropriate safety equipment, for example gloves, eye protection (such as
+goggles), and waders/boots during sampling. Do not ingest water or allow the water to come into
+contact with exposed skin. Avoid inhaling spray caused by boats, wind or other water surface
+disturbances. If these conditions are present, wear a mask to avoid inhalation of water spray.
+Hands should be washed thoroughly after sampling before eating or drinking. Waders/boots
+should be rinsed before storage. It is important that sampling crews also watch for and report any
+symptoms of exposure to cyanotoxins, which can occur immediately to several days following
+exposure. In addition to personal protection, rinsing equipment between uses will help avoid any
+potential cross-contamination of waterbodies if multiple waterbodies are sampled using the same
+equipment. See Recommended Standard Procedures for Phytoplankton Collection to Detect
+Harmful Algal Blooms (Utah 2016), Chapter 9 of the USGS 2014 National Field Manual for the
+13
+Collection of Water-Quality Data, and EPA’s Sampling Guidance for Unknown Contaminants in
+Drinking Water (EPA 2017) for further information.
+Step 4: Follow up cyanotoxin monitoring
+In cases where monitoring (Step 3) is triggered by visual confirmation of blooms, EPA
+encourages the recreational water manager to continue monitoring and to take notification
+action(s) until the toxin level is no longer measurable or consistently below the trigger value.
+EPA recommends, at a minimum, continuing notification actions until at least two consecutive
+tests show that the toxin level is below the trigger value as was described on page 25 of
+Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking Water (EPA
+2015).
+14
+References
+EPA. 2012a National Lakes Assessment Field Operations Manual Version 1.0, May 15, 2012,
+EPA 841-B-11-003. Available online.
+EPA. 2012b. National Lakes Assessment Laboratory Operations Manual Version 1.1 October 9,
+2012. EPA 841-B-11-004. Available online.
+EPA. 2014a. National Beach Guidance and Required Performance Criteria for Grants, EPA-823-
+B-14-001.
+EPA. 2014b. Drinking Water Science and Regulatory Support. Available online
+EPA. 2015a. Drinking Water Health Advisory for the Cyanobacterial Toxin Microcystin. EPA
+820R15100.
+EPA. 2015b. Drinking Water Health Advisory for the Cyanobacterial Toxin
+Cylindrospermopsin. EPA 820R15101.
+EPA. 2015c. Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking
+Water, EPA 815-R-15-010.
+EPA. 2017. Sampling Guidance for Unknown Contaminants in Drinking Water, EPA-817-R-08-
+003. Available online.
+Gaget, V., M. Lau, B. Sendall, S. Froscio, A. Humpage, 2017. Cyanotoxins: Which detection
+technique for an optimum risk assessment? Water Research 118(2017) 227-238.
+International Guidance Manual for the Management of Toxic Cyanobacteria. 2009. Available
+online.
+Izydorczyk, K. Tarczynska, M., Jurczak, T., Mrowczynski, J., Zalewski, M. 2005. Measurement
+of Phycocyanin Fluorescence as an Online Early Warning System for Cyanobacteria in Reservoir
+Intake Water. Environmental Toxicology 20(4): 425-430.
+Loftin, K. A., Ziegler, A. C., and Meyer, M. T. 2008. Guidelines for design and sampling for
+cyanobacterial toxin and taste-and-odor studies in lakes and reservoirs. U.S. Department of the
+Interior, U.S. Geological Survey.
+New York. 2015. Algae Bloom Report Form. Available online.
+Ohio 2012. Inland Lakes Sampling Procedure Manual. Available online.
+Ohio. 2014. Public Water System Harmful Algal Bloom Response Strategy. Available online.
+USGS. 2008. Guidelines for Design and Sampling for Cyanobacterial Toxin and Taste-and-Odor
+Studies in Lakes and Reservoirs. Technical Report 2008-5083. Available online
+15
+USGS. 2010. Analytical Methods for Cyanotoxin Detection and Impacts on Data Interpretation.
+Powerpoint presentation from April 26, 2010. Available online.
+USGS. 2014. National Field Manual for the Collection of Water-Quality Data, Book 9. Available
+online.
+Utah. 2016 Recommended Standard procedures for phytoplankton collection to detect harmful
+algal blooms. Available online.
+Vermont. 2015. Cyanobacteria (Blue-green Algae): Guidance for Vermont Communities.
+Available online. Vermont Department of Health.
+WHO. 2003. Guidelines for Safe Recreational Water Environments: Volume 1: Coastal and
+Fresh Waters. World Health Organization.
+16

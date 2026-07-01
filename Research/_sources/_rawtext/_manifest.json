@@ -1,0 +1,226 @@
+{
+  "ACAD-057": {
+    "key": "ACAD-057",
+    "url": "https://paerllab.web.unc.edu/wp-content/uploads/sites/17493/2024/10/Feng-et-al.-2024.-Nature-Review-Earth-Environment1.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 14,
+    "chars": 82930
+  },
+  "ACAD-062": {
+    "key": "ACAD-062",
+    "url": "https://www.cyanolakes.com/publications/Matthews&Odermatt_2015.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 16,
+    "chars": 26398
+  },
+  "ACAD-115": {
+    "key": "ACAD-115",
+    "url": "https://www.biorxiv.org/content/10.1101/2022.12.20.521158.full.pdf",
+    "status": "error",
+    "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "ACAD-120": {
+    "key": "ACAD-120",
+    "url": "https://www.biorxiv.org/content/10.1101/570275.full.pdf",
+    "status": "error",
+    "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "FED-006": {
+    "key": "FED-006",
+    "url": "https://www3.epa.gov/pesticides/chem_search/ppls/067690-00009-20220323.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 22,
+    "chars": 56979
+  },
+  "FED-013": {
+    "key": "FED-013",
+    "url": "https://www.epa.gov/sites/default/files/2017-06/documents/microcystins-report-2015.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 75,
+    "chars": 197327
+  },
+  "FED-014": {
+    "key": "FED-014",
+    "url": "https://www.epa.gov/sites/default/files/2017-06/documents/cylindrospermopsin-report-2015.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 52,
+    "chars": 128171
+  },
+  "FED-021": {
+    "key": "FED-021",
+    "url": "https://www.epa.gov/sites/default/files/documents/climatehabs.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 3,
+    "chars": 10312
+  },
+  "FED-032": {
+    "key": "FED-032",
+    "url": "https://www.epa.gov/sites/default/files/2019-09/documents/recommend-cyano-rec-water-2019-update.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 16,
+    "chars": 38917
+  },
+  "FED-033": {
+    "key": "FED-033",
+    "url": "https://www.epa.gov/sites/default/files/2019-05/documents/hh-rec-criteria-habs-document-2019.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 249,
+    "chars": 704783
+  },
+  "FED-036": {
+    "key": "FED-036",
+    "url": "https://www3.epa.gov/pesticides/chem_search/reg_actions/reregistration/red_G-26_26-May-09.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 176,
+    "chars": 381018
+  },
+  "FED-039": {
+    "key": "FED-039",
+    "url": "https://www.epa.gov/sites/default/files/2018-03/documents/us_dap_final_march_1.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 119,
+    "chars": 296093
+  },
+  "FED-042": {
+    "key": "FED-042",
+    "url": "https://www.glerl.noaa.gov/pubs/fulltext/2016/20160026.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 19,
+    "chars": 73403
+  },
+  "FED-051": {
+    "key": "FED-051",
+    "url": "https://www.nrcs.usda.gov/sites/default/files/2022-10/FY23_CEMA%20201_Edge%20of%20Field%20Water%20Quality%20Monitoring%20Data%20Collection%20and%20Evaluation.pdf",
+    "status": "error",
+    "note": "TimeoutError: The read operation timed out"
+  },
+  "FED-055": {
+    "key": "FED-055",
+    "url": "https://pubs.usgs.gov/of/2015/1164/ofr20151164.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 54,
+    "chars": 68409
+  },
+  "FED-056": {
+    "key": "FED-056",
+    "url": "https://repository.library.noaa.gov/view/noaa/67732/noaa_67732_DS1.pdf",
+    "status": "error",
+    "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  "FED-070": {
+    "key": "FED-070",
+    "url": "https://www.epa.gov/sites/default/files/2018-11/documents/water_treatment_optimization_for_cyanotoxins.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 60,
+    "chars": 131862
+  },
+  "FED-074": {
+    "key": "FED-074",
+    "url": "https://www.epa.gov/sites/default/files/2017-08/documents/us_dap_preliminary_draft_for_public_engagement_8-10-17.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 93,
+    "chars": 236699
+  },
+  "SLG-004": {
+    "key": "SLG-004",
+    "url": "https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/habs/PWS-HAB-Strategy.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 51,
+    "chars": 148121
+  },
+  "SLG-005": {
+    "key": "SLG-005",
+    "url": "https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/35/hab/HABResponseStrategy.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 45,
+    "chars": 92311
+  },
+  "SLG-009": {
+    "key": "SLG-009",
+    "url": "https://extapps.dec.ny.gov/docs/water_pdf/habsprogramguide.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 38,
+    "chars": 75673
+  },
+  "SLG-010": {
+    "key": "SLG-010",
+    "url": "https://www.oregon.gov/deq/wq/Documents/habFwCyanobacHABstrat.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 43,
+    "chars": 85129
+  },
+  "SLG-013": {
+    "key": "SLG-013",
+    "url": "https://extapps.dec.ny.gov/docs/water_pdf/tmdlchautlk12.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 87,
+    "chars": 164631
+  },
+  "NGO-002": {
+    "key": "NGO-002",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/wash-chemicals/microcystins-background-201223.pdf?sfvrsn=6d60aa6d_3",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 63,
+    "chars": 199536
+  },
+  "NGO-003": {
+    "key": "NGO-003",
+    "url": "https://www.who.int/docs/default-source/wash-documents/wash-chemicals/cyanobacterial-toxins-chemical-fact-sheet.pdf?sfvrsn=ac637576_4",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 3,
+    "chars": 9530
+  },
+  "NGO-005": {
+    "key": "NGO-005",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria-2/toxic-cyanobacteria-ch4.pdf?sfvrsn=d15fa5dd_7",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 82,
+    "chars": 223960
+  },
+  "NGO-006": {
+    "key": "NGO-006",
+    "url": "https://cdn.who.int/media/docs/default-source/wash-documents/water-safety-and-quality/toxic-cyanobacteria---1st-ed.pdf?sfvrsn=338a8c22_1",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 399,
+    "chars": 1006443
+  },
+  "PVT-002": {
+    "key": "PVT-002",
+    "url": "https://www.sepro.com/documents/Captain_Label.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 16,
+    "chars": 46045
+  },
+  "PVT-005": {
+    "key": "PVT-005",
+    "url": "https://www.sepro.com/Documents/SeClear-Algaecide-and-Water-Quality-Enhancer_Label.pdf",
+    "status": "ok",
+    "engine": "pdfplumber",
+    "pages": 17,
+    "chars": 37471
+  }
+}

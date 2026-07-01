@@ -1,0 +1,189 @@
+Office of Water EPA 820-S-13-001
+MC 4304T May 2013
+Impacts of Climate Change on the Occurrence of
+Harmful Algal Blooms
+SSuummmmaarryy
+BBaacckkggrroouunndd
+Climate change is predicted to change many
+Algae occur naturally in marine and fresh waters.
+environmental conditions that could affect the
+Under favorable conditions that include adequate
+natural properties of fresh and marine waters both in
+light availability, warm waters, and high nutrient
+the US and worldwide. Changes in these factors
+levels, algae can rapidly grow and multiply causing
+could favor the growth of harmful algal blooms and
+“blooms.” Blooms of algae can cause damage to
+habitat changes such that marine HABs can invade
+aquatic environments by blocking sunlight and
+and occur in freshwater. An increase in the
+depleting oxygen required by other aquatic
+occurrence and intensity of harmful algal blooms
+organisms, restricting their growth and survival.
+may negatively impact the environment, human
+Some species of algae, including golden and red
+health, and the economy for communities across the
+algae and certain types of cyanobacteria, can produce
+US and around the world. The purpose of this fact
+potent toxins that can cause adverse health effects to
+sheet is to provide climate change researchers and
+wildlife and humans, such as damage to the liver and
+decision–makers a summary of the potential impacts
+nervous system. When algal blooms impair aquatic
+of climate change on harmful algal blooms in
+ecosystems or have the potential to affect human
+freshwater and marine ecosystems. Although much
+health, they are known as harmful algal blooms
+of the evidence presented in this fact sheet suggests
+(HABs).
+that the problem of harmful algal blooms may
+worsen under future climate scenarios, further
+In recent decades, scientists have observed an
+research is needed to better understand the
+increase in the frequency, severity and geographic
+association between climate change and harmful
+distribution of HABs worldwide. Recent research
+algae.
+suggests that the impacts of climate change may
+promote the growth and dominance of harmful algal
+blooms through a variety of mechanisms including:
+• Warmer water temperatures
+• Changes in salinity
+• Increases in atmospheric carbon dioxide
+concentrations
+• Changes in rainfall patterns
+• Intensifying of coastal upwelling
+• Sea level rise
+TTeemmppeerraattuurree
+Harmful algae typically bloom during the warm
+summer season or when water temperatures are
+warmer than usual. As temperatures become warmer
+due to climate change, the growth of harmful algae
+may be favored over other non-harmful algae
+through a combination of mechanisms:
+Warmer temperatures create a competitive
+Microcystis bloom in Lake Neatahwanta, NY,
+advantage for certain types of harmful algae.
+August, 2010. Courtesy of James Hyde, NYS DOH.
+As seen with the toxin-producing cyanobacteria
+Microcystis, certain harmful algae grow faster
+than other non-harmful algae at relatively high Harmful algal blooms themselves increase water
+temperatures, some of them at temperatures above temperature, further favoring their growth.
+77°F. This competitive advantage increases the Harmful algal blooms absorb light from the sun
+likelihood of HAB events. which increases the temperature of surface water.
+This positive feedback mechanism further favors
+Warmer temperatures increase thermal the growth of harmful algal blooms and promotes
+stratification, favoring the growth of some harmful their competitive advantage in aquatic
+algae. ecosystems.
+The density of water is strongly influenced by
+temperature and varies with depth in the water
+column. Surface waters are usually warmer and less SSaalliinniittyy
+dense compared to bottom waters that are usually
+Climate change may cause summer droughts to
+colder and denser. During summer months, warming
+increase in intensity and duration worldwide. During
+of surface waters can create a physical force strong
+a drought, the amount of water flowing into lakes
+enough to resist the wind’s ability to mix the water.
+and reservoirs decreases. Combined with warmer
+These layers can restrict the vertical movement of
+temperatures that cause more evaporation, water
+oxygen and nutrients in water. This process is known
+levels of fresh water bodies decrease. This causes the
+as thermal stratification.
+salinity, or concentration of salt in the water body, to
+increase. Although certain toxin-producing
+The warming of surface waters increases the
+cyanobacteria are quite salt tolerant, temporary
+frequency, strength, and duration of stratification,
+increases in salinity can also cause salt stress leading
+which favors the growth of harmful algal blooms.
+to leakage of cells and the release of toxins. Increases
+Cyanobacteria and dinoflagellates have the ability to
+in salinity during drought conditions can also create
+control their depth in water. In stratified waters, these
+favorable conditions for the invasion of marine algae
+algae can float or swim upwards to form dense surface
+into what are usually freshwater ecosystems. This is
+blooms that block the sunlight for other algae and
+currently occurring in our southwestern and south
+aquatic organisms that live in deeper layers and are
+central US lakes where marine alga, Prymnesium
+unable to migrate to the surface. Under stratified
+parvum, or golden algae, has been increasing since
+conditions, these algae may also encounter less
+2000, causing significant fish kills in inland waters.
+competition for nutrients in surface water, increasing
+their competitive advantage. Most bloom-forming
+cyanobacteria can form gas vesicles, regulating their
+CCaarrbboonn DDiiooxxiiddee
+vertical position and migrating up and down to obtain
+nutrients from deeper waters while returning to the All algae, including harmful species, require carbon
+surface as blooms. dioxide (CO 2 ) for photosynthesis. Increases in
+atmospheric carbon dioxide will increase the levels
+Warmer temperatures decrease the viscosity of water, of dissolved carbon dioxide in marine and freshwater
+favoring the growth of harmful algal blooms. ecosystems, favoring those algae that can grow
+Viscosity is a description of the thickness of fluids. faster in elevated dissolved carbon dioxide
+Fluids that have a higher viscosity like honey, are conditions. In addition, cyanobacteria that can float
+thicker, and therefore do not flow as easily as liquids to the surface have a distinct advantage over other
+with a lower viscosity, such as water. competing algae because they can directly utilize
+carbon dioxide from the atmosphere. As atmospheric
+Warmer temperatures reduce the viscosity of water, carbon dioxide concentrations increase due to human
+which increases the speed at which small aquatic activities such as the burning of fossil fuels and
+organisms can vertically migrate. This makes it easier deforestation, cyanobacteria that can float to the
+for small cyanobacteria to float to the surface to form surface will have greater access to carbon dioxide for
+harmful algal blooms. On the other hand, a decrease growth, increasing the occurrence of harmful algal
+in viscosity promotes the sinking of larger algae and blooms.
+organisms that are not capable of migrating towards This also could lead to changes in the chemistry of
+the surface. This may increase the competitive ambient waters. Higher photosynthesis converts
+advantage of cyanobacteria over other algae. carbon dioxide into living algal biomass, some of
+which dies and settles to the bottom. The eventual
+decomposition of this surplus organic material is
+analogous to our own breathing activity because it US, upwelling may intensify and deliver more
+consumes oxygen and increases carbon dioxide in nutrients to coastal waters, favoring the growth of
+areas with poor circulation. This can contribute to both harmful algal blooms and benign species.
+increases in acidity (i.e., lower pH). This ecological
+source of acidification is added to the direct
+acidifying effects of atmospheric carbon dioxide,
+FFoorr MMoorree IInnffoorrmmaattiioonn
+commonly known as ocean acidification. Like
+temperature, these changes in water chemistry can For more information on water and climate change,
+change the competitive relationships between HABs visit http://water.epa.gov/scitech/climatechange/.
+and other algae, and can also change the ability of To learn more about harmful algal blooms, go to:
+zooplankton to control HABs through their grazing http://go.usa.gov/gYTH
+activity.
+AAcckknnoowwlleeddggeemmeennttss
+RRaaiinnffaallll
+EPA gratefully acknowledges the valuable
+Future climate projections suggest an increase in contributions from Christopher Sibrizzi, George
+extreme weather events. For example, the incidence Washington University, and Dr. Stephanie Moore,
+of intense storms causing rainfall to occur in more Northwest Fisheries Science Center, West Coast
+concentrated bursts followed by long dry periods of Center for Oceans and Human Health, NOAA, in
+drought may increase. Extreme rainfall could developing this work.
+increase the transport of nutrients from land into
+water bodies via runoff. If followed by drought
+conditions as is projected, water bodies may retain
+those nutrients for longer periods of time, which
+increases the potential for HAB development.
+SSeeaa LLeevveell RRiissee
+Scientific models predict that sea level could rise
+from 18 cm up to one meter by the year 2100. This
+would increase the extent of continental shelf areas,
+providing shallow, stable coastal waters that may
+favor the growth of harmful algae and/or expand
+their habitat inland.
+CCooaassttaall UUppwweelllliinngg
+Coastal upwelling is a naturally occurring process, in
+which alongshore winds move coastal surface water
+offshore which is replaced by deep water that moves
+along the ocean floor towards the coast. This
+“upwelled” water brings nutrients from the ocean
+floor to the surface leading to high productivity.
+Harmful algal blooms’ growth in upwelling systems
+vary due to atmospheric oscillations (upwelling or
+downwelling by interannual fluctuations), and is
+subject to water-column stratification, nutrient
+availability, and the intensity and persistence of
+upwelling conditions. Global climate change may
+alter the timing and intensity of coastal upwelling.
+Along ocean boundaries, such as the west coast of the

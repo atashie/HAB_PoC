@@ -1,0 +1,78 @@
+---
+key: ACAD-005
+title: A systematic review and quantitative meta-analysis of the relationships between driving forces and cyanobacterial blooms at global scale
+authors_or_org: Siqi Wang, Xiang Zhang, Nengcheng Chen, Liqiao Tian, Yan Zhang, Won-Ho Nam
+year: 2023 (print issue; Epub 2022-10-28)
+url: https://pubmed.ncbi.nlm.nih.gov/36341794/
+access_date: 2026-07-01
+tier: ACAD
+source_type: Peer-reviewed journal article — systematic review and quantitative meta-analysis (Environmental Research, Elsevier)
+categories: [basic-science]
+relevance: High
+full_text_access: abstract
+fetch_status: partial
+review_severity: notes
+review_overall: pass
+---
+
+# A systematic review and quantitative meta-analysis of the relationships between driving forces and cyanobacterial blooms at global scale
+
+> Note: provisional URL was resolved to a primary source. Original: https://www.sciencedirect.com/science/article/abs/pii/S0013935122019971
+
+**What it is.** A two-stage literature synthesis: (1) a systematic review of 41 peer-reviewed studies (published before May 2021) cataloging which categories of environmental "driving forces" are studied as explanatory factors for cyanobacterial blooms worldwide, and (2) a quantitative meta-analysis on a subset of 27 of those studies, pooling reported correlation coefficients to estimate the direction of each driving-force category's relationship with bloom occurrence/intensity at global scale.
+
+## Key claims
+*(each tagged with its blind-review verdict)*
+
+- **[✓ verified]** The systematic review synthesized 41 peer-reviewed studies published before May 2021, and the quantitative meta-analysis (based on correlation coefficients) drew on a subset of 27 of those studies.
+  - *evidence:* Stated directly in the abstract as the scope/sample size of the two-stage review; corroborated identically across two independent WebFetch passes of the PubMed abstract page and across three independent WebSearch queries. (Abstract (PubMed record, PMID 36341794 / Environmental Research 216(Pt 3):114670))
+  - *quote:* "41 peer-reviewed studies published before May 2021"
+- **[✓ verified]** Four categories of factors — water quality, hydraulic conditions, meteorological conditions, and nutrient levels — were identified as the driving forces most often examined for cyanobacterial blooms in global freshwater systems.
+  - *evidence:* Presented as the headline result of the systematic-review stage, listing the recurring factor categories found across the 41 reviewed studies. (Abstract, results/findings framing)
+  - *quote:* "water quality, hydraulic conditions, meteorological conditions and nutrient levels were often considered the driving forces of cyanobacterial blooms"
+- **[✓ verified]** Among the four factor categories, meteorological conditions and nutrient levels were the ones most frequently selected/studied as driving forces across the reviewed literature.
+  - *evidence:* A relative-frequency finding distinguishing which of the four categories appeared most often in the underlying 41 studies; phrasing is consistent across three separate WebSearch retrievals of the abstract, though it was not independently reproduced by direct WebFetch quotation, so confidence is slightly lower than for WebFetch-quoted claims. (Abstract, results/findings framing (WebSearch-retrieved snippet))
+  - *quote:* "meteorological conditions and nutrient level had the highest probability of being chosen as the driving force"
+- **[✓ verified]** In the pooled quantitative meta-analysis, meteorological conditions were negatively correlated with cyanobacterial blooms at global scale, while water quality, hydraulic conditions, and nutrient levels were positively correlated with blooms.
+  - *evidence:* This is the headline quantitative (correlational) result of the meta-analysis stage, giving the sign of the pooled relationship for each factor category; the phrase appeared in quotation marks in the first WebFetch pass and is corroborated by WebSearch snippets — treated here strictly as a correlational finding, not a causal one. (Abstract, results/findings (quantitative meta-analysis))
+  - *quote:* "meteorological conditions were negatively related to cyanobacterial blooms, and other driving forces...were positively related to cyanobacterial blooms"
+- **[✓ verified]** The specific metrics/indicators used to represent each driving-force category varied widely across the underlying studies, which the authors addressed by running subgroup analyses to improve the reliability of the pooled estimates.
+  - *evidence:* Stated as a methodological caveat/adaptation in the abstract — the closest thing to a stated limitation retrievable from the accessible text. (Abstract, methods/caveat statement)
+  - *quote:* "measurement indicators of these driving forces had diverse forms"
+- **[✓ verified]** The paper frames its contribution as answering two previously unresolved global-scale questions: which factors are most often identified as driving forces of cyanobacterial blooms, and what the quantitative strength/direction of those relationships is, in order to inform water management.
+  - *evidence:* This is the stated research gap/motivation given in the abstract's opening framing, distinguishing this global synthesis from prior single-waterbody or regional-scale studies. (Abstract, opening/introduction framing)
+  - *quote:* "One is to specify which factors were often selected as the driving forces of cyanobacterial blooms, and the other is to estimate their quantitative relationships."
+- **[✓ verified]** The authors frame cyanobacterial blooms as an expanding global phenomenon that threatens freshwater resource safety, with most prior mechanistic work conducted at a regional or single/few-waterbody scale rather than synthesized globally.
+  - *evidence:* Background/motivating statement opening the abstract, establishing the problem context and the gap the review aims to fill. (Abstract, opening sentence)
+  - *quote:* "The global expansion of cyanobacterial blooms poses a major risk to the safety of freshwater resources."
+- **[⚠ partial]** The quantitative meta-analysis pooled correlation coefficients as reported in the primary literature — specifically Pearson's and/or Spearman's correlation coefficients from the 27-study subset — rather than re-deriving relationships from raw underlying data.
+  - *evidence:* A methodological detail describing what was pooled in the meta-analysis; this specific detail (naming Pearson's/Spearman's coefficients) recurred with near-identical wording across two independent WebSearch queries but was not directly reproduced in either WebFetch pass of the PubMed page verbatim-quote sections, so it carries somewhat lower confidence than the other claims and should be treated as provisional pending full-text confirmation. (Abstract/methods framing (WebSearch-retrieved snippet, not independently confirmed via direct WebFetch quotation))
+  - *quote:* "a statistical meta-analysis based on Pearson's or Spearman's correlation coefficients from 27 studies"
+  - *reviewer:* The source confirms use of Pearson's/Spearman's correlation coefficients from 27 studies, but does not explicitly state whether these were pooled as-reported from the literature or re-derived from raw data. The claim adds this methodological distinction, which while reasonable given standard meta-analytic practice, is not stated in the accessible abstract.
+
+## Data / numbers
+- 41 peer-reviewed studies — size of the systematic-review literature corpus, all published before May 2021
+- 27 studies — subset of the 41 used for the quantitative (correlation-coefficient-based) meta-analysis
+- Environmental Research, Volume 216, Part 3, Article No. 114670 (journal/volume/article-number locator; Epub 2022-10-28, issue dated Jan 1 2023)
+- DOI 10.1016/j.envres.2022.114670; PMID 36341794 (bibliographic identifiers, not study results)
+- No effect-size magnitude, p-value, confidence interval, or heterogeneity statistic (e.g., I2) for any individual driving-force–bloom relationship was retrievable from the accessible abstract — only the direction of the pooled correlation (negative for meteorological conditions; positive for water quality, hydraulic conditions, and nutrient levels) is stated, with no numeric r-value or uncertainty bound given in the text that could be fetched
+
+## Methods
+Two-stage design described only at abstract-level (full Methods section not accessible): (1) A systematic literature review scanning 41 peer-reviewed studies (published before May 2021) to catalog which categories of "driving forces" — water quality, hydraulic conditions, meteorological conditions, and nutrient levels — were examined as explanatory variables for cyanobacterial bloom occurrence/intensity across global freshwater systems, and how often each category was selected/studied. (2) A quantitative meta-analysis restricted to a subset of 27 of those 41 studies, pooling correlation coefficients reported in the primary literature (per WebSearch-derived snippets, described as Pearson's and/or Spearman's coefficients — this specific detail was not independently confirmed via direct WebFetch quotation, see key_claims caveat) to estimate the sign of the relationship between each driving-force category and bloom metrics at global scale. The abstract also states that because "measurement indicators of these driving forces had diverse forms" across the underlying studies (i.e., different studies used different specific proxies for the same nominal category), the authors performed subgroup analysis to improve the accuracy of the pooled estimates. No description of search strategy/databases used, inclusion/exclusion criteria, statistical pooling model (fixed- vs random-effects), weighting scheme, or effect-size magnitudes could be retrieved — the full-text Methods, Results tables, and Discussion sections were paywalled and inaccessible via the tools available.
+
+## Stated limitations
+Only the abstract was accessible (ScienceDirect full text returned HTTP 403 Forbidden on two separate URL forms, and the DOI redirect to Elsevier's linkinghub returned no substantive content), so the source's own detailed Discussion/Limitations section could not be retrieved and is not represented here. The one caveat present in the accessible abstract text is that "measurement indicators of these driving forces had diverse forms" across the pooled studies — i.e., the same nominal driving-force category (e.g., "water quality" or "meteorological conditions") was operationalized with different specific metrics in different underlying studies, which the authors say they addressed via subgroup analysis rather than by treating the four categories as internally homogeneous. No statement on publication bias, heterogeneity (I2), causal-inference caveats, geographic/waterbody-type coverage gaps, or effect-size confidence intervals was found in the retrievable text; these may well be discussed in the full paper but this dossier cannot claim they are, since that text was not obtained.
+
+## Tensions with other findings
+The abstract reports that, pooled at global scale, "meteorological conditions" are negatively correlated with cyanobacterial blooms, while water quality, hydraulic conditions, and nutrient levels are positively correlated. This aggregate negative sign for a "meteorological" category warrants caution when read against other commonly cited HAB literature, where warming/higher water temperature (itself typically classified as a meteorological or climatic variable) is frequently associated with increased cyanobacterial dominance and bloom likelihood. The accessible abstract does not specify which individual meteorological indicators (e.g., temperature vs. wind speed vs. precipitation/rainfall, the latter of which can dilute nutrients or flush/mix the water column and suppress blooms) drove the pooled negative sign, so it is not possible from the abstract alone to determine whether this reflects a genuine aggregate pattern, a category-definition artifact (i.e., "meteorological conditions" bundling variables with opposing effects on blooms), or one dominant sub-indicator. This is flagged here as an open reconciliation question for this literature review, not a claim the source itself resolves in the text available. As with all correlational findings summarized here, direction of correlation should not be read as established causal direction or mechanism — the source's own "driving forces" terminology notwithstanding.
+
+## Blind adversarial review
+- **Overall:** pass
+- **Unsupported claims:** 0
+- **Reviewer notes:** Seven of eight claims are directly and unambiguously supported by the source text. Claim 8 is partial because the source confirms the methodology (meta-analysis using Pearson's/Spearman's coefficients) but does not explicitly address the distinction between pooled coefficients and those re-derived from raw data. This is an interpretive addition that, while plausible, goes beyond what the accessible abstract states. No hallucinated numbers, no unsupported claims, and no dropped caveats. The single caveat present in the source (diverse measurement indicators necessitating subgroup analysis) is captured in Claim 5."
+
+## Provenance
+- Canonical URL: https://pubmed.ncbi.nlm.nih.gov/36341794/
+- Access date: 2026-07-01
+- Full-text access: abstract | Fetch status: partial
+- Fetch notes: Primary URL (ScienceDirect) returned HTTP 403 Forbidden on two attempts (both the "/abs/" abstract-landing path and the non-"abs" path); this is a paywall/bot block, not a content or routing error. Following the DOI (https://doi.org/10.1016/j.envres.2022.114670) produced a 302 redirect to Elsevier's linkinghub.elsevier.com retrieve endpoint, which returned only a generic "Redirecting" placeholder with no article text — confirming the full text is genuinely inaccessible via WebFetch, not merely mis-rendered. Per the High-relevance instruction, the accessible substitute (the PubMed abstract page, PMID 36341794) was WebFetched twice with different prompts (one asking for a general comprehensive extraction, one demanding a verbatim word-for-word abstract reproduction plus affiliations/MeSH/copyright); the two outputs were reconciled and their union is reflected in key_claims and source_extract. Additional WebSearch queries attempted to locate an open-access full-text mirror (ResearchGate, Semantic Scholar, x-mol, general PDF/fulltext searches) and to surface any specific numeric correlation coefficients, p-values, or highlights beyond the abstract; none succeeded — no full text or supplementary numeric results could be located anywhere accessible. Consequently this dossier is built entirely from abstract-level content plus PubMed bibliographic metadata; it does not and cannot represent the paper's Methods, Results tables, Discussion, or explicit Limitations sections, none of which were reachable. One methodological detail (that the meta-analysis specifically pooled "Pearson's or Spearman's" correlation coefficients) is sourced only from WebSearch snippet synthesis, not from a directly quoted WebFetch span, and is flagged with reduced confidence in key_claims/methods accordingly. Category was reassessed and confirmed as basic-science (a driver/mechanism-characterization synthesis, not remote-sensing, in-situ/weather data collection, a predictive model, or a treatment/management study); relevance retained as High given the direct bearing of global driver-category directionality on the HAB PoC's driver-analysis framing, with the caveat that only abstract-level support is available for that judgment.

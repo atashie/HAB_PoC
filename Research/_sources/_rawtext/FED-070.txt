@@ -1,0 +1,1977 @@
+Water Treatment Optimization for
+Cyanotoxins
+Version 1.0
+Office of Water (MS-140) EPA 810-B-16-007 October 2016
+Disclaimer
+The Standards and Risk Management Division of the Office of Ground Water and Drinking Water of the
+U.S. EPA has reviewed and approved this document for publication. This document does not impose
+legally binding requirements on any party. The information in this document is intended solely to
+recommend or suggest and does not imply any requirements. Neither the United States Government
+nor any of its employees, contractors or their employees make any warranty, expressed or implied, or
+assumes any legal liability or responsibility for any third party’s use of any information, product or
+process discussed in this document, or represents that its use by such party would not infringe on
+privately owned rights. Mention of trade names or commercial products does not constitute
+endorsement or recommendation for use.
+The intent of this document is to provide treatment considerations for water treatment plant managers,
+supervisors, and operators faced with harmful algal blooms in their source water. The approaches
+presented in this document are not intended to be mandates or directive to any entities.
+The science on water treatment optimization for cyanotoxins is still evolving. The U.S. Environmental
+Protection Agency (U.S. EPA) will update this document as more research and information become
+available. EPA certainly welcomes comments and feedback on the content of this document.
+The focus of this document is on water treatment optimization for cyanotoxins. Future versions of this
+document may include additional information or resources on source water protection as a strategy for
+preventing cyanotoxins in drinking water sources.
+For purposes of this document, the term “Harmful Algal Blooms” (HABs) refers to cyanobacteria
+(sometimes called “blue-green algae”) blooms with the potential of producing cyanotoxins. U.S. EPA
+recognizes that alternative descriptors (e.g., Harmful Cyanobacteria Blooms [HCBs], cyanoHABs,
+cyanobacteria HABs [CHABs]) have been used elsewhere but considers “HABs” a widely used and
+recognized term. U.S. EPA may substitute an alternative term in future updates to this document if
+consensus builds around such an alternative.
+Questions concerning this document should be addressed to the following contacts:
+Thomas Waters, P.E.
+U.S. EPA OGWDW, SRMD, Technical Support Center
+26 West Martin Luther King Drive, Mail Code 140, Cincinnati, OH 45268
+(513) 569-7611, Waters.Tom@epa.gov
+or
+Alison Dugan, P.E.
+U.S. EPA OGWDW, SRMD, Technical Support Center
+26 West Martin Luther King Drive, Mail Code 140, Cincinnati, OH 45268
+(513) 569-7122, Dugan.Alison@epa.gov
+i
+Acknowledgements
+The document was developed by the U.S. EPA Standards and Risk Management Division, Technical
+Support Center (SRMD, TSC), with additional support from the U.S. EPA Office of Research and
+Development (ORD).
+• Thomas Waters, U.S. EPA, SRMD, TSC
+• Alison Dugan, U.S. EPA, SRMD, TSC
+• Richard Lieberman, U.S. EPA, SRMD, TSC
+• Thomas Speth, U.S. EPA ORD
+• Gregory Carroll, U.S. EPA, SRMD, TSC
+Review and comment of this document was provided by the following individuals:
+• Matthew Alexander, U.S. EPA, SRMD, TSC
+• Steven Wendelken, U.S. EPA, SRMD, TSC
+• Glynda Smith, U.S. EPA, SRMD, TSC
+• William Adams, U.S. EPA, SRMD, TSC
+• Sandhya Parshionikar, U.S. EPA, SRMD, TSC
+• Carrie Miller, U.S. EPA, SRMD, TSC
+• James Sinclair, U.S. EPA, SRMD, TSC
+• Nicholas Dugan, U.S. EPA, ORD
+• Ryan Albert, U.S. EPA, SRMD, Standards and Risk Reduction Branch (SRRB)
+• Hannah Holsinger, U.S. EPA, SRMD, SRRB
+• Katherine Foreman, U.S. EPA, SRMD, SRRB
+• Kenneth Rotert, U.S. EPA, SRMD, SRRB
+• Lesley D’Anglada, U.S. EPA, Office of Science and Technology (OST)
+• Phil Oshida, U.S. EPA, SRMD
+• Larry DeMers, Process Applications, Inc.
+• Bill Davis, Process Applications, Inc.
+• James Taft, Association of State Drinking Water Administrators
+• Darrell Osterhoudt, Association of State Drinking Water Administrators
+• Casey Lyon, Oregon Health Authority
+• Amy Little, California State Water Resources Control Board
+• Lloyd Wilson, New York State Department of Health
+• James Hyde, New York State Department of Health
+• Kristin Divris, Massachusetts Department of Environmental Protection
+• Heather Raymond, Ohio Environmental Protection Agency
+• Maria Lucente, Ohio Environmental Protection Agency
+• Adam Carpenter, American Water Works Association (AWWA)
+• G. Tracey Mehan, AWWA
+• Steve Via, AWWA
+• Kevin Linder, City of Aurora, Colorado
+• Michael Barsotti, Champlain Water District, Vermont
+• Djanette Khiari, Water Research Foundation
+ii
+Table of Contents
+Abbreviations ............................................................................................................................................... v
+Section 1: Background and Introduction ..................................................................................................... 1
+Figure 1-1. Multiple barrier concept for water treatment optimization .................................................. 2
+Section 2: Understanding source water to anticipate treatment needs .................................................... 3
+2.1 Ambient source water conditions that favor cyanobacteria proliferation ......................................... 3
+Table 2-1. Water quality conditions favorable for cyanobacteria proliferation ................................... 4
+2.2 Bloom identification, confirmation, and quantification in source water ........................................... 4
+2.2.1 Indirect cyanobacteria screening methods .................................................................................. 4
+Table 2-2. Source water quality indicators ........................................................................................... 5
+2.2.2 Direct cyanobacteria measurement methods ............................................................................. 6
+2.3 Cyanotoxin measurement ................................................................................................................... 7
+2.3.1 Enzyme-linked immunosorbent assay (ELISA) ............................................................................. 7
+Table 2-3. Advantages and disadvantages of ELISA for cyanotoxin monitoring ................................... 8
+2.3.2 Liquid chromatography with tandem mass spectrometry (LC/MS/MS) ...................................... 9
+Table 2-4. Advantages and Disadvantages of LC/MS/MS for cyanotoxin monitoring .......................... 9
+2.3.3 Cyanotoxin toxicity measurement ............................................................................................. 10
+2.4 Source water considerations and associated short-term management strategies .......................... 10
+2.5 Long-term strategies to prevent or mitigate cyanobacteria blooms in source water ...................... 11
+Section 3: Treatment options based on source water quality .................................................................. 13
+Figure 3-1. Water treatment decision-tree for cyanotoxins detected in source water. ........................ 14
+3.1 Treatment considerations for intracellular cyanotoxins .................................................................. 15
+Figure 3-2. Intracellular cyanotoxin treatment considerations .............................................................. 16
+3.2 Treatment considerations for extracellular cyanotoxins .................................................................. 18
+Figure 3-3. Extracellular cyanotoxin treatment considerations ............................................................. 19
+3.2.1 Carbon adsorption ..................................................................................................................... 20
+3.2.2 Membranes ................................................................................................................................ 22
+3.2.3 Biofiltration ................................................................................................................................ 22
+3.2.4 Oxidation .................................................................................................................................... 23
+Table 3-1. General effectiveness of cyanotoxin oxidation with common water treatment oxidants 24
+Table 3-2. Microcystin-LR CT table...................................................................................................... 25
+Table 3-3. Cylindrospermopsin CT table ............................................................................................. 26
+Section 4: Implementing an optimization approach ................................................................................. 27
+iii
+Section 5: Conclusions ................................................................................................................................ 28
+References .................................................................................................................................................. 29
+Glossary ...................................................................................................................................................... 34
+Appendix A: Process evaluation for treatment of intracellular toxins ................................................... A-1
+Table A-1. Conventional treatment facility ........................................................................................... A-1
+Table A-2. Membrane treatment process ............................................................................................ A-7
+Appendix B: Process evaluation for treatment of extracellular toxins ................................................... B-1
+Table B-1. Powdered activated carbon (PAC) ........................................................................................ B-1
+Table B-2: Granular activated carbon (GAC) .......................................................................................... B-5
+Table B-3: High-pressure membranes (reverse osmosis [RO] and nanofiltration [NF]) ........................ B-7
+Table B-4: Oxidation: Can my facility use oxidation to treat extracellular cyanotoxins? ...................... B-9
+iv
+Abbreviations
+ADDA 3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic acid. An amino acid that
+is part of the microcystin molecule and is common to a majority of microcystin
+congeners.
+AMWA Association of Metropolitan Water Agencies
+ASDWA Association of State Drinking Water Agencies
+AWOP Area-Wide Optimization Program
+AWWA American Water Works Association
+CCP Composite Correction Program
+CO2 Carbon dioxide
+DBP Disinfection by-product
+DNA Deoxyribonucleic acid
+EBCT Empty-bed contact time
+ELISA Enzyme-linked immunosorbent assay
+GAC Granular activated carbon
+HAA5 Haloacetic acids (5 regulated compounds)
+HAB Harmful algal bloom
+HESD Health effects support document
+IFE Individual filter effluent
+LC/MS/MS Liquid chromatography / tandem mass spectrometry
+MF Microfiltration
+MRDL Maximum residual disinfectant level
+NAWC National Association of Water Companies
+NF Nanofiltration
+NOM Natural organic matter
+NTU Nephelometric turbidity unit. A measure of turbidity.
+PAC Powdered activated carbon
+PWS Public water system
+RO Reverse osmosis
+RSSCT Rapid small-scale column test
+TOC Total organic carbon
+TTHM Total trihalomethane
+T&O Taste and odor
+UF Ultrafiltration
+USEPA United States Environmental Protection Agency
+UV Ultraviolet (light), typically used in water treatment as an oxidant
+WRF Water Research Foundation
+v
+Section 1: Background and Introduction
+Increasing occurrence and detection of harmful algal blooms (HABs), sometimes referred to as blue-
+green algae or cyanobacteria blooms, in drinking water sources pose a variety of challenges to water
+treatment plant managers and operators. In addition to taste and odor issues that may be associated
+with algal blooms, HABs sometimes produce cyanotoxins, to which human exposure can result in a host
+of adverse health effects, including gastroenteritis, and damage to the liver, kidneys, or nervous system
+(U.S. Environmental Protection Agency, 2015a-f).
+In June 2015, the U.S. Environmental Protection Agency released Health Advisories for two specific
+cyanotoxins – total microcystins and cylindrospermopsin – and Health Effects Support Documents
+(HESDs) for three specific cyanotoxins – total microcystins, cylindrospermopsin, and anatoxin-a. At the
+time of release, there was not sufficient information to develop a Health Advisory for anatoxin-a (U.S.
+EPA, 2015a,b,d-f). The Health Advisories include information on health effects, analytical methods and
+water treatment. The HESDs provide a comprehensive review of published literature on physical and
+chemical properties, environmental fate, known occurrence information, and health effects.
+Additionally, EPA released a supporting document titled “Recommendations for Public Water Systems to
+Prepare for and Respond to Cyanotoxins in Drinking Water” (U.S. EPA, 2015c). That “Recommendations”
+document is intended to assist public drinking water systems (PWSs) in managing the risks from
+cyanotoxins in drinking water. It includes information for evaluating source waters for vulnerability to
+contamination by cyanotoxins and describes a framework for managing risks to cyanotoxins that PWSs
+can consider in determining their risk management efforts. Appendix E of the “Recommendations”
+document also contains information on long-term mitigation strategies and treatment options (U.S. EPA,
+2015c).
+The American Water Works Association (AWWA) and the Water Research Foundation (WRF) have also
+released “A Water Utility Manager’s Guide to Cyanotoxins.” That guide provides a brief overview of
+current knowledge surrounding common questions utility managers may have, to help them better
+prepare for cyanotoxins and to respond when cyanotoxins cause water quality problems (AWWA, 2015).
+WRF, in conjunction with Water Research Australia, released a report titled “Optimizing Conventional
+Treatment for the Removal of Cyanobacteria and Toxins” that provides detailed guidance to water
+utilities on the optimization of conventional treatment practices (including coagulation, clarification, and
+filtration) for the removal of cyanobacteria and their toxins while meeting all other water quality goals
+associated with drinking water production (Newcombe, et al., 2015).
+The purpose of this document is to assist PWS managers and operators (as well as technical assistance
+providers working with PWS personnel) with preparing for, and responding to, the treatment challenges
+that often arise during HAB events and introduce principles that can be used to achieve optimization
+goals using a compilation of published approaches and strategies. This document complements the
+USEPA Health Advisories for total microcystins and cylindrospermopsin and the “Recommendations”
+document.
+For the purposes of this document, treatment optimization is defined as achieving the best performance
+possible from each unit process in a water treatment plant by applying process control techniques and
+1
+problem-solving skills (e.g., priority setting, tailored studies, and data trending), while continuously
+assessing unit process performance relative to pre-established goals. In support of this, water plant
+operators should consider routinely monitoring water quality from each unit process, as well as raw and
+finished water quality. Operators can analyze trends from the monitoring data to assess system
+performance and the impact of process controls relative to optimization goals. As presented in EPA’s
+Composite Correction Program (CCP) (U.S. EPA, 2004), the primary approach to optimization for
+protection from waterborne disease and removal of contaminants is the “multiple-barrier” concept,
+which currently includes treatment and distribution system barriers. This is shown below in Figure 1-1. A
+commonly used performance indicator for waterborne pathogens is particulate removal as measured by
+turbidity. The CCP has established turbidity goals for sedimentation and filtration.
+Figure 1-1. Multiple barrier concept for water treatment optimization
+EPA’s CCP handbook presents the concept of a “capable plant” with respect to microbial (turbidity-
+based) water treatment optimization (U.S. EPA, 2004). A water treatment plant capable of optimization
+not only relies on good design, but also has supportive administration/management and is well
+operated and maintained. In this vein, the CCP outlines a series of performance-limiting factors in each
+of these categories (administration, design, operation, and maintenance), which can impact a system’s
+ability to remove pathogens1.
+Specific, generally accepted in-plant cyanobacteria and cyanotoxin targets (i.e. goals) have yet to be
+established to formally define optimization for these parameters. This document represents a step
+toward that objective. Jar testing, for example, is commonly used to optimize particulate removal (which
+could include cyanobacteria cells) in water treatment plants. However, current research suggests that
+under certain conditions, turbidity, which is a common optimization parameter for jar testing, may not
+be a good indicator of cyanobacteria cell or toxin removal (Newcombe, et al., 2015), and that alternative
+water quality parameters, such as pigments chlorophyll-a and phycocyanin (fluorescence), UV254
+1 The USEPA’s Area-Wide Optimization Program (AWOP) and the Partnership for Safe Water are two programs that promote
+drinking water optimization. The Partnership for Safe Water is an alliance of the American Water Works Association (AWWA),
+Association of Metropolitan Water Agencies (AMWA), Association of State Drinking Water Administrators (ASDWA), National
+Association of Water Companies (NAWC), USEPA, and the Water Research Foundation (WRF).
+Additional information about the AWOP can be found at https://www.epa.gov/dwstandardsregulations/optimization-program-
+drinking-water-systems
+2
+(organics), and surface charge, should be investigated for optimizing each water treatment unit process
+for cyanobacteria cell removal (e.g., through jar testing).
+Cyanotoxins present some unique challenges for water treatment plants, which may include:
+• Chemical and biological parameters can vary widely in source water, both over time and by
+location.
+• The presence of cells does not necessarily mean that toxins are present at any given time. Toxins
+can also be present even when cell concentrations are low. High toxin concentrations can also
+persist after blooms/cells are no longer in the source water.
+• Cyanotoxins can be located within the intact cyanobacteria cell (termed “intracellular” or “cell-
+bound”) or outside the cell within the water matrix (termed “extracellular” or “dissolved”).
+Some water treatment approaches, including the application of particular
+oxidants/disinfectants, can release the toxins from the cyanobacteria cells, thereby increasing
+the extracellular toxin concentration. Therefore, the choice and location of oxidant application
+can be challenging.
+Responding to these challenges requires balancing multiple, and sometimes competing, treatment
+objectives. The following sections discuss monitoring and treatment optimization for removing
+cyanotoxins while attempting to address potentially competing treatment objectives.
+Section 2: Understanding source water to anticipate treatment needs
+2.1 Ambient source water conditions that favor cyanobacteria proliferation
+Cyanobacteria are often part of a healthy aquatic ecosystem and exist in balance with other aquatic
+organisms. HABs occur when certain water quality, hydrologic, environmental, climatic, and atmospheric
+conditions favor cyanobacteria proliferation. Availability of nutrients, particularly nitrogen and
+phosphorous, tends to impact cyanobacteria growth in most water bodies. Therefore, when nutrient
+levels increase, the mass of cyanobacteria usually increases. Temperature and light intensity affect
+cyanobacteria proliferation as well. Warmer water temperatures, typically 25°C (77°F) or greater, favor
+growth of some cyanobacteria. Microcystis growth is usually limited below 15°C (59°F) (Robarts and
+Zohary, 1987), but other cyanobacteria, such as Planktothrix and Cylindrospermopsis, can survive in
+colder temperatures, even under ice, either as akinetes or in a vegetative state (Dokulil, 2016; Holland &
+Walsby, 2008). Because cyanobacteria are photosynthetic, they favor long periods of sunlight. Wind
+patterns can also influence the location of the bloom and concentration of cyanobacteria cells (and
+therefore potential cyanotoxin concentration) on a specific water body. Warmer, calmer, shallow bays
+are conducive for cyanobacteria bloom formation, as are shallow inlets that receive high nutrient loads.
+Wind patterns have the potential to concentrate blooms into scums, which can represent a thousand-
+fold to million-fold concentration of cyanobacteria cell populations (Chorus & Bartram, 1999). This is
+especially concerning if the wind direction and scum formation occur in the vicinity of a PWS intake.
+Table 2-1 summarizes water quality conditions favorable for cyanobacteria proliferation:
+3
+Table 2-1. Water quality conditions favorable for cyanobacteria proliferation
+Source Water Condition: When to take notice:
+Excessive nutrients Nitrogen and/or phosphorous are the primary
+nutrients of concern for cyanobacteria. Elevated
+nitrogen and/or phosphorous levels can lead to
+cyanobacteria proliferation. Different water
+bodies will have different levels of nutrients that
+can favor cyanobacteria proliferation.
+Quiescence Calm, stagnant waters (i.e., low flow or slope in
+rivers; low turnover or wind conditions in
+lakes/reservoirs; etc.).
+Weather Conditions When to take notice:
+Water temperature Water temperatures above 25°C (or lower for
+some cyanobacteria species)
+Light intensity and rainfall Rainfall followed by prolonged periods of sunlight
+and dry conditions. Rain washes nutrients into
+the water body and subsequent sunny and dry
+conditions can lead to cyanobacteria
+proliferation.
+Wind patterns Wind conditions that concentrate surface blooms
+in warm, shallow parts of a water body in the
+vicinity of nutrient sources. Strong winds can also
+mix surface blooms downward toward intake
+depths.
+Competition between algal species also occurs as conditions change. Each algal species has its optimal
+conditions, such as light, water temperature, pH, nutrients, etc. that control their proliferation in a given
+water body (AWWA, 2010). As noted above, not all algal blooms consist predominantly of
+cyanobacteria, and not all cyanobacteria blooms produce cyanotoxins; therefore, water quality
+monitoring is important because it can provide baseline information that will assist PWSs in
+understanding critical factors in source water that contribute to cyanobacteria blooms.
+2.2 Bloom identification, confirmation, and quantification in source water
+A good understanding of the vulnerability and historical cyanobacteria and cyanotoxin levels in a water
+treatment plant’s source water allows utilities to take proactive and preventative approaches to water
+treatment in the plant. In support of this, adequate time for sampling and analysis should be built into a
+proactive monitoring approach, with the understanding that different cyanotoxin methods require
+different amounts of time to generate results.
+2.2.1 Indirect cyanobacteria screening methods
+Often, the most obvious sign of a HAB is simply visual. Operators are encouraged to visually inspect their
+source water regularly, especially in the vicinity of intakes. There are several inexpensive indicators that
+treatment plant operators can proactively monitor in their source water that may suggest action to
+identify elevated cyanobacteria biomass levels and potential cyanobacteria problems. This entails
+4
+routine monitoring and trending of the data to establish baseline levels for their source water and
+identify changes in these levels that may merit a monitoring/treatment response. Detecting significant
+deviations from normal, or baseline levels, of these indicators would alert the operator to begin direct
+screening for cyanobacteria and analyses for cyanotoxins; however, these indicators do not take the
+place of quantitative, confirmatory measurements. Table 2-2 summarizes some source water
+measurements that could be utilized as indicators of potential cyanobacteria problems. Measuring a
+combination of these indicator parameters as part of the HAB screening process best allows one to
+assess source water.
+Table 2-2. Source water quality indicators
+Parameter Description
+Pigments: Chlorophyll-a and/or Phycocyanin Extractive pigment measurements (as
+differentiated from probes or flow-through
+instruments) include EPA Method 445.0 for
+chlorophyll-a (U.S. EPA, 1997), which can be run
+at a water plant.
+Another site-specific parameter is phycocyanin.
+Phycocyanin is a pigment unique to
+cyanobacteria, and elevated levels can indicate
+cyanobacteria proliferation (Brient, et al., 2008;
+AWWA, 2010; Kasinak et al., 2015) and
+differentiate from other types of algae. At this
+time there is not a published EPA method for
+phycocyanin. There are, however, numerous
+commercial in-vivo2 methods for measuring
+phycocyanin and chlorophyll-a with probes or
+flow-through instruments. These can be placed
+on a buoy, inline at a raw water intake, in a pump
+wet well, etc.
+Turbidity There are limitations on using turbidity as an
+indicator for cyanobacteria cell concentration,
+especially if raw water is less than 10 NTU
+(Newcombe, et al., 2015); however, unexplained
+increases (e.g., with no recent rainfall) may be
+related to increases in cyanobacteria biomass.
+Secchi depth This is a simple, inexpensive test for source
+water. Decreases in Secchi depth may indicate
+increased cyanobacteria concentration, although
+it has limitations similar to those with turbidity.
+Diurnal pH changes or increases in pH associated Diurnal changes in source water pH (increasing
+with a bloom during the day, decreases at night) or prolonged
+increases in pH could indicate the presence, or
+proliferation, of cyanobacteria. This is due to the
+cyanobacteria’s photosynthesis (light availability
+2 In-vivo fluorescence methods that are typically used with probes or flow-through instruments are based on illuminating the
+sample with light at phycocyanin’s excitation wavelength and then reading the response at the emission wavelength.
+5
+Parameter Description
+and CO absorption) during the day and cell
+2
+respiration at night. (Usui and Kasubuchi, 2011;
+Usui, et al., 2003).
+Taste & odor (T&O) compounds (MIB, geosmin, T&O compounds may coexist with some
+β-cyclocitral) cyanobacteria blooms, and depending on the
+species and type of T&O compound, could be
+indicators of cyanobacteria presence3. However,
+it is possible to have T&O without cyanotoxins
+and vice versa.
+Temperature, nutrients Elevated temperatures and nutrient (nitrogen
+and phosphorus) concentrations are more
+conducive to producing cyanobacteria blooms.
+Natural organic matter (NOM) Increases in NOM in source water, with no recent
+rainfall, could be indicative of a cyanobacteria
+issue.
+Operators may also notice changes within the treatment plant that could be indicative of cyanobacteria
+in the source water. These could include:
+• An increase in color (most likely green) observed visually in the raw water or elsewhere within
+the treatment plant (e.g., in clarifiers or dissolved air flotation (DAF) and filter surface scums).
+• An increase in treatment difficulties, for example, decreased filter run times, increased chemical
+needs/usage, difficulty in maintaining a finished water residual or meeting turbidity goals.
+• Observation of seasonal shifts in treatment. Consideration of these seasonal changes could help
+shape HAB monitoring programs or HAB treatment planning.
+2.2.2 Direct cyanobacteria measurement methods
+Direct measurements of cyanobacteria proliferation in source water is ideal, but there are limited
+options available. Species identification is an important factor in understanding the type of cyanotoxins
+potentially present, which is helpful information in determining the appropriate cyanotoxin analysis.
+Cyanobacteria cell counting and identification can be accomplished by analysts trained in microscopy
+and algal identification. Assistance and confirmation may be necessary from a trained phycologist, or
+other appropriately-trained individual. DNA technology for identifying cyanobacteria and cyanotoxin
+production capacity in source water is an emerging tool. Research suggests that the microcystins-
+producing gene cluster is rarely present without the toxin being synthesized by the cell. Therefore, gene
+sequencing, such as that accomplished through polymerase chain reaction (PCR), could be an option for
+monitoring. Commercial molecular assays that utilize certified reference materials are available to help
+standardize this method. Because molecular techniques require specialized equipment and training to
+run the method and interpret the results, their use is probably limited to utilities with access to more
+3 Note that Microcystis does not produce the most common T&O compounds, methylisoborneol (MIB) or geosmin. This genus
+usually produces β-cyclocitral, dimethyl trisulfide (DMT), diisopropyl disulfide (DID), and/or diisopropyl trisulfide (DIT). β-
+cyclocitral is a T&O compound produced during cell damage or death (AWWA, 2010), which could be indicative of Microcystis
+cell lysis (and thus, potential toxin release).
+6
+sophisticated labs. For more information on cyanobacteria identification and differentiation from algae,
+see Rosen and St. Amand (USGS), 2015 or AWWA M57, 2010.
+2.3 Cyanotoxin measurement
+The monitoring methods mentioned above help alert operators to the presence of cyanobacteria and
+potential presence of cyanotoxins in their source water. These indicators may signal the need for more
+quantitative, confirmatory measurements, cyanotoxin analyses.
+Qualitative screening tests, such as commercially-available immunochromatographic strip tests for
+microcystins4, cylindrospermopsin, and anatoxin-a, can be useful to determine the presence or absence
+of cyanotoxins in water samples and alert utilities of the need for further, more quantitative cyanotoxin
+analysis. These analyses can take approximately one hour, or more or less depending on the method,
+sample preparation requirements, and individual lab practitioner.
+When conducting quantitative cyanotoxin analyses, the type and form of cyanotoxins are important for
+a water treatment plant operator to determine, as treatment approaches can differ significantly based
+on which cyanotoxin is present and whether or not the cyanotoxins are primarily intracellular (located
+inside the cyanobacteria cell) or extracellular (located outside the cyanobacteria cell). Regardless of the
+analytical method, sample preparation determines whether the measured cyanotoxins are intracellular
+or extracellular. Typically, a sample is split into two. One fraction is filtered or centrifuged before
+analysis. The filtrate/supernatant is used for the analysis, yielding a measurement of extracellular
+cyanotoxin concentration. The other sample fraction is lysed (e.g., freeze-thaw, sonication techniques)
+before analysis – releasing the cyanotoxins from the cells. The subsequent analysis will then yield the
+total cyanotoxin concentration. The intracellular fraction is then calculated by the difference, such that:
+T - E = I
+[ otal concentration] [ xtracellular concentration] [ntracellular concentration]
+The following subsections describe some of the more common analytical methods for evaluating
+cyanotoxins in water. The description is not all-inclusive, and the body of available analytical methods
+continues to grow. When considering various methods, one should verify that the detection limit is
+appropriate for finished water characterization (e.g., the Health Advisory levels for children less than six
+years old of 0.3 µg/L for total microcystins and 0.7 µg/L for cylindrospermopsin). As with any analytical
+method, it is important to follow the established sample collection, preservation, storage, and
+preparation steps (Kamp et al., 2016). For example, it is important to quench5 finished water samples
+during collection if exposed to oxidants, protect samples from sunlight, and chill samples at a
+temperature according to the method prior to analysis (Ohio EPA, 2015; USEPA, 2015g,h; Kamp et al.,
+2016).
+2.3.1 Enzyme-linked immunosorbent assay (ELISA)
+Enzyme-linked immunosorbent assay (ELISA) kits are commercially available for measurement of
+microcystins and cylindrospermopsin, saxitoxin, and anatoxin-a. These assays utilize antigen/antibody
+interactions to identify and quantify chemical contaminants and can be either “competitive”, where
+color response is inversely proportional to the toxin concentration, or “non-competitive”, where color
+4 Options are available for microcystins for both source (with a lysing step) and finished water.
+5 For example, with sodium thiosulfate, depending on the method requirements, type of oxidant present, and analyte.
+7
+response is directly proportional to the toxin concentration (AWWA, 2010). Because the EPA Health
+Advisory for microcystins applies to “total” microcystins, as opposed to a specific microcystin
+congener(s), operators will generally want to use a method that addresses microcystins broadly. The
+ADDA-ELISA test kits detect the standard 3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic
+acid (ADDA) moiety in the microcystin molecule, which is a unique amino acid within the molecule that
+is common to a majority of microcystin congeners and a related cyanotoxin, nodularin (Fischer et al.,
+2001). Thus, this competitive assay technique is generally believed to provide a good representation of
+total microcystins. USEPA has published EPA Method 546 for determination of total microcystins and
+nodularin by ADDA-ELISA (USEPA, 2016). In addition, the Ohio EPA has posted an “Analytical
+Methodology” for measuring microcystins with the commercially-available ADDA-ELISA technique to its
+website as a resource for water treatment plant operators (Ohio EPA, 2015). To achieve representative,
+reliable results, it is important to have a consistent approach and adhere to the terms of the method.
+EPA Method 546 establishes specific sample collection, preservation, storage, quality control,
+calibration, and data analysis criteria in order to ensure accuracy and precision of the method.
+Table 2-3. Advantages and disadvantages of ELISA for cyanotoxin monitoring
+Strengths Limitations
+• Method is relatively easy to learn and • Since the method involves working with
+use. small volumes, it requires good
+• Relatively inexpensive (as low as $11 per micropipetteing skills and an 8-channel
+sample [as of 2015]6, assuming full plates pipette. Good laboratory technique is
+are run). important to achieve consistent results.
+• Can be run relatively quickly compared to • The calibration curve is non-linear (four-
+LC/MS/MS techniques (discussed further parameter logistic equation) and
+below) – typically about 4 hours, accuracy may be questionable at
+including sample preparation. concentration ranges above or below the
+• Numerous manufacturers of ELISA kits. linear portion of the calibration curve
+• The ADDA-based measurements are (see EPA Method 546 [USEPA, 2016] for a
+congener-independent (i.e., the ADDA discussion on the EC 50 and establishing a
+structure is common to a majority of minimum reporting level [MRL] and
+microcystin congeners), therefore calibration curve).7
+providing an indication of “total • Calibration is based on a microcystin-LR
+microcystins”. standard and other microcystin
+congeners have exhibited variable cross-
+reactivity relative to microcystin-LR. This
+may introduce error into the total
+microcystins result.
+6 This is a minimum cost estimate and assumes full use of the plate (all wells) with the minimum dedicated to
+calibration/control. Assumes $440 for the ELISA ADDA kit, 96 wells with 16 wells dedicated to calibration/control and 80 wells
+for samples. Assumes duplicate wells per sample, therefore there is room for 40 unknowns, which equals $11 per sample. The
+upper bound of this estimate, that is, running only one sample per plate, would be the price of the kit itself (i.e., $440 per
+sample), assuming the minimum 16 wells are dedicated to calibration/control. Therefore, the more samples run on a given
+plate (up to 40), the less expensive each analysis becomes.
+7 As stated in EPA Method 546, the “EC is the concentration of microcystin that yields an absorbance halfway between the
+50
+bottom plateau of the calibration curve and the top plateau. The EC is the concentration at the inflection point (of the
+50
+calibration curve) and is in the center of the most reliable measurement range…”.
+8
+Strengths Limitations
+• Does not yield congener-specific
+information.
+• Since the different manufacturers
+generally use proprietary antibodies in
+the assay, variations in results between
+manufacturers may be expected.
+• Since LC/MS/MS methods for
+microcystins focus on a limited number
+of congeners, and since standards are
+only available for a limited number of
+microcystin congeners, one cannot truly
+“confirm” ELISA-based microcystins
+results with LC/MS/MS methods.
+2.3.2 Liquid chromatography with tandem mass spectrometry (LC/MS/MS)
+Liquid chromatography is a separation technique that allows for mass analysis by mass spectrometry.
+Most water utilities do not have LC/MS/MS capabilities in-house and utilize contract laboratories for this
+purpose. USEPA has published two cyanotoxin-related analytical methods for LC/MS/MS – EPA Method
+544, which measures six microcystin congeners (MC-LA, MC-LF, MC-LR, MC-LY, MC-RR, and MC-YR) and
+nodularin (U.S. EPA, 2015h), and EPA Method 545, which measures anatoxin-a and cylindrospermopsin
+(U.S. EPA, 2015g). Others have developed LC/MS/MS methods as well. Note that EPA Methods 544 and
+545 were developed for analysis of finished drinking water samples. Work is underway to expand the
+scope of EPA Methods 544 and 545 to ambient (source) water samples.
+While there can be value in using LC/MS/MS techniques to understand the occurrence of particular
+microcystin congeners, as of the time this document was written, they cannot practically be used to
+“confirm” ELISA results. LC/MS/MS methods for microcystins currently focus on a limited number of
+specific microcystin congeners, whereas ELISA methods measure microcystins more broadly.
+Work is underway to evaluate an LC/MS/MS technique that is based on measuring 3-methyloxy-2-
+methyl-4-phenylbutyric acid (“MMPB”). MMPB is an oxidation product of microcystins (e.g., produced
+via oxidative cleavage) and has the potential to serve as a measure of microcystins, broadly. Foss et al.
+found that “(w)hen summarizing the total microcystins detected in raw samples…, the MMPB method
+accounted for an average of 99% of the microcystins detected using ELISA, while individual variant
+analysis of 13 congeners using LC/MS/MS accounted for 81%” (Foss and Aubel, 2015). The LC/MS/MS
+MMPB technique has proven valuable for confirming ELISA results from raw water samples, but may
+have some limitations with finished water analysis due to potential for detection of microcystins
+oxidation byproducts.
+LC/MS/MS can reliably confirm cylindrospermopsin or anatoxin-a ELISA results.
+Table 2-4. Advantages and Disadvantages of LC/MS/MS for cyanotoxin monitoring
+Strengths Limitations
+• Congener-specific measurement • Only measures compounds for which an
+analytical standard exists.
+9
+Strengths Limitations
+• Precise, accurate measurement. Can • EPA Methods 544 and 545 are currently
+measure specific microcystin congeners, applicable to finished water samples
+cylindrospermopsin and anatoxin-a. only.
+• More expensive than ELISA.8
+• Requires specialized equipment and
+experienced analyst.
+• The LC/MS/MS results may take longer to
+receive, compared to ELISA analysis, if
+measured by an offsite laboratory.
+2.3.3 Cyanotoxin toxicity measurement
+ELISA and LC/MS/MS methods are used to directly measure cyanotoxin concentrations. There are also
+“indirect” methods that focus on measures of toxicity, such as phosphatase inhibition assay kits. These
+tend to be less selective than ELISA and typically yield results presented in “microcystin-LR toxicity
+equivalents” (AWWA, 2010). It is unclear how applicable the toxicity equivalent is to judge a utility’s risk,
+since EPA’s current Health Advisory is based on cyanotoxin concentration.
+2.4 Source water considerations and associated short-term management strategies
+Source water quality management strategies are usually short-term solutions to larger nutrient loading
+issues. Source water management techniques may be able to temporarily treat HABs, however the
+underlying cause of HABs is usually nutrient loading on the water body (nitrogen and phosphorous)
+(NEIWPCC, 2015). If screening or monitoring shows an increasing trend in cyanobacteria, cyanotoxin, or
+indirect indicators, response strategies for water treatment plant operators generally include exploring
+various treatment adjustments that can be made in order to minimize cell-bound (intracellular)
+cyanotoxin release and passage into finished water. Additional strategies may be needed if extracellular
+cyanotoxins are present. More detailed treatment information is provided in Section 3, however some
+near-term source water treatment strategies, which will have system-specific applicability, include:
+• Continue monitoring biomass (cell identification and enumeration, or screening indicator
+parameters) and toxin type and concentration to determine where toxins are located within the
+water source (i.e., relative to the plant intake).
+• Understand whether the toxins are primarily intracellular or extracellular to best direct
+treatment strategies.
+• Monitoring water quality at various depths and changing intake levels as warranted. Often
+cyanobacteria cells are located at different levels in the water column. Water quality
+monitoring at each depth is important to help discern whether changing the intake level would
+avoid the bloom – and not significantly compromise other treatment objectives (e.g.,
+manganese removal, disinfection byproduct control, corrosion control).
+8 Costs for LC/MS/MS are dependent on several factors including whether the utility has access to LC/MS/MS instrumentation
+and the cost of commercial lab analysis (which varies). For resources to assess cost and laboratory availability, see USEPA’s
+CyanoHAB website (https://www.epa.gov/nutrient-policy-data/state-resources). The New England Interstate Water Pollution
+Control Commission (NEIWPCC) also has produced a list of laboratories that provide cyanobacteria and cyanotoxin services,
+including costs as of March 2016.
+10
+• Cease or limit algaecide applications to source waters in use. In some instances, algaecide can
+prevent full proliferation of a bloom if it is applied very early in the bloom cycle, such that the
+low cell count would result in low toxin levels if cells did lyse and release toxins. However,
+algaecide application during a full cyanotoxin-producing bloom is generally discouraged as it can
+stress or lyse cells resulting in high levels of cyanotoxin release. For source waters actively being
+used, consider sampling the bloom for cyanotoxins prior to any algaecide application to evaluate
+the potential for cyanotoxin release following application. Alternatively, one can temporarily
+discontinue use of a source water during algaecide application and sample for cyanotoxins prior
+to placing it back in service.
+• Utilize an alternate water source (i.e., location not impacted by the bloom). If cyanotoxins are
+elevated to a concentration that may be difficult to treat, consider emergency interconnections
+with neighboring water systems, if available. Thorough source water and water quality analyses
+should be considered if pursuing this option.
+2.5 Long-term strategies to prevent or mitigate cyanobacteria blooms in source water
+A source watershed nutrient management plan or establishing source water nutrient goals can be an
+important element of a longer-term strategy to mitigate cyanobacteria blooms. Nutrients, such as
+nitrogen and phosphorous, are often key factors in cyanobacteria proliferation, and some states are
+beginning to explore watershed-wide nutrient management strategies with the goal of preventing
+future HABs. The New England Interstate Water Pollution Control Commission, in its Harmful Algal
+Bloom Control Methods Synopses document, states that “effective watershed management to reduce
+nutrient pollution to a waterbody is often difficult, expensive, and time consuming. Regardless, it is key
+to reducing the occurrence and frequency of HABs and to addressing other water quality problems
+associated with eutrophication” (NEIWPCC, 2015). As stated in “Recommendations for Public Water
+Systems to Prepare for and Respond to Cyanotoxins in Drinking Water”, “Local source water assessment
+or protection organizations may also be leveraged to communicate key messages to the drinking water
+community; a few of these watershed groups can be found through the Source Water Collaborative
+“How to Collaborate Toolkit” (SWC, 2015a)” (U.S. EPA, 2015c). This approach is watershed-specific and
+would require the cooperation of multiple entities such as local governments, landowners, and nearby
+water utilities and wastewater plants9.
+Utilities with persistent HAB problems can also explore the possibility of accessing or blending with
+alternate water sources that are not impacted by HABs, when needed. Multiple issues such as treatment
+changes, residual maintenance, corrosion control, and state review/approval would have to be
+addressed before implementation. Potential options include:
+• Planning for alternate intake levels or locations in a HAB-impacted reservoir (i.e., identifying an
+area that is not impacted, or is less impacted, by the bloom). Again, water quality monitoring
+would be important to confirm that the alternate intake represents a superior location and that
+other treatment objectives are not compromised.
+• Using an alternate reservoir or source of water, such as a river intake that is not impacted by
+HABs or groundwater. There are significant treatment and distribution system implications that
+must be considered if this strategy is utilized, as mentioned above.
+9 Additional tools for reducing nutrients can be found through ASDWA’s website (www.asdwa.org).
+11
+• Purchasing water from neighboring systems not impacted by HABs. This may require
+distribution system upgrades and may result in other secondary impacts related to distribution
+system water quality and hydraulics. Thorough source water and water quality analyses should
+be considered if pursuing this option.
+• Managing source water or employing preventive treatment measures. Thorough analysis should
+be conducted prior to implementing these strategies to consider all potential water uses,
+ecological effects, design challenges, and resulting impacts on water quality. States or primacy
+agencies may also have regulations that may apply to some source water management /
+preventive treatment measures discussed here:
+Utilities can consider the applicability of circulation (aeration or mixing). This can be
+o
+accomplished using hypolimnetic bubble aeration or mechanical mixing. Cyanobacteria
+prefer calm, stagnant water in order to proliferate. Adding hypolimnetic aeration or
+mixing would disrupt the stratification and stagnation of the water body and mitigate
+cyanobacteria growth. As a cost-effective strategy, hypolimnetic aeration or mechanical
+mixing can be placed strategically close, and at the depth of, the water treatment plant
+intake.
+Strategic, optimized timing/dose of algaecide application. The use of algaecides is
+o
+generally discouraged during a full cyanobacteria bloom, as this risks cell lysis causing
+cyanotoxin release. However, as stated above in Section II.D, in some instances,
+algaecide can prevent full proliferation of a bloom if it is applied very early in the bloom
+cycle, such that the low cell count would result in low toxin levels if cells did lyse and
+release toxins. Long-term, if algaecides are necessary, utilities can investigate optimal
+doses and timing of algaecide application to prevent full bloom proliferation and
+minimize extracellular cyanotoxins.
+Flocculants applied to source water can limit cyanobacteria bloom proliferation by
+o
+addressing biologically-available phosphorous by binding and settling (sometimes
+referred to as “sequestration”). As stated previously, phosphorous is a key nutrient and
+cause of HABs in many water bodies. For example alum, a common coagulant used in
+conventional drinking water treatment, can be used for the purpose of phosphorous
+sequestration in source water. The phosphorous is removed either by precipitation /
+sedimentation or adsorption mechanisms.
+Ultrasound/sonication. Above certain frequencies in water, ultrasound waves cause
+o
+formation of microbubbles which, upon collapse, can damage cell walls. This is called
+“acoustic cavitation”. Low-power ultrasound/sonication systems are also available that
+use sound wave resonance in the water to collapse the gas vesicles in the cyanobacteria
+cell that are used to regulate the cell’s buoyancy, thus rendering the cell incapable of
+moving through the water column to locate optimal light conditions for photosynthesis.
+Different source waters with different cyanobacteria species will require different
+ultrasound frequencies for optimal results. A potential concern with ultrasound
+treatment for cyanobacteria is the possibility of cell disruption causing cyanotoxin
+release.
+Some utilities have reported success with hexagonal tile covers that are placed on the
+o
+surface of the source water, generally for small water bodies, forebays or lagoons. The
+tile covers can serve two purposes in mitigating cyanobacteria proliferation: (1) reducing
+12
+sunlight exposure of the water, thereby reducing photosynthetic activity; and (2)
+deterring birds and other waterfowl from using the water body, which could reduce this
+source of nutrient inputs.
+• For more detailed information on source water management and preventive treatment
+strategies for HABs, the New England Interstate Water Pollution Control Commission (NEIWPCC)
+has developed a Harmful Algal Bloom Control Methods Synopsis document (NEIWPCC, 2015).
+Section 3: Treatment options based on source water quality
+“Conventional” water treatment, defined here as having coagulation, clarification, and filtration
+processes, is typically effective at addressing intracellular cyanotoxins by removing the cyanobacteria
+cells (Health Canada, 2002). When a majority of cyanotoxins exist in the intracellular form (as is often
+the case with microcystins), and cells are not lysed, damaged, or stressed (Ross, et. al., 2006),
+conventional treatment processes are generally effective. However, if the cells become lysed or, in the
+case of cylindrospermopsin, which tends to partition between intracellular and extracellular closer to
+50%-50% (AWWA, 2010), the appropriate approach may involve conventional treatment (i.e.,
+coagulation, clarification and filtration) followed by an adsorption or oxidation step (NHMRC and
+NRMMC, 2011). Additionally, powdered activated carbon (PAC) may be added early in the treatment
+process to enhance extracellular toxin removal.
+In order to evaluate treatment efficacy at a particular plant, regular monitoring and data trending,
+especially during HAB events, is important throughout the plant. Most of the parameters discussed
+above for source water monitoring may also be applicable indicators for the water treatment plant.
+However, once a HAB is confirmed and cyanotoxins are detected in the source water, daily cyanotoxin
+monitoring in the plant is the most prudent way of protecting public health and ensuring the quality of
+the finished water. For additional discussion of monitoring frequency, refer to Steps 4 and 5, and Figure
+2 of “Recommendations for Public Water Systems to Prepare for and Respond to Cyanotoxins in
+Drinking Water” (U.S. EPA, 2015c).
+13
+Figure 3-1. Water treatment decision-tree for cyanotoxins detected in source water.
+This figure begins with a “YES” answer to Step 3 of the “Recommendations” document decision-tree and is intended to provide more treatment
+detail to Steps 4 and 5 of that document.
+14
+Monitoring at multiple locations in the process train (the selection of which will depend on the plant
+configuration and chemical feed locations) can help water treatment plant operators evaluate the
+effectiveness of each unit process. This might include source water, raw water (with chemical addition if
+possible), recycle water feed, after chemical addition in the rapid mix (i.e., after chemicals are
+completely mixed), settled water, individual and combined filter effluent, and finished water. Once
+operators understand the performance of, and identify any limitations in each unit process, treatment
+adjustments can be made to improve toxin removal. The approach to making treatment adjustments for
+cyanotoxins depends on the monitoring results and type of cyanotoxins present (e.g., microcystins,
+cylindrospermopsin, or others). If cyanotoxins are present, it is helpful to understand if they are located
+within the cyanobacteria cell (intracellular) or outside the cell within the water matrix (extracellular).
+This can be accomplished through the analytical techniques mentioned above. Figure 3-1 depicts a
+suggested decision-tree10 for water treatment plant operators that are currently monitoring their source
+water for cyanobacteria, cyanotoxins, and/or indicators.
+3.1 Treatment considerations for intracellular cyanotoxins
+If cyanobacteria species and source water conditions are such that there is a significant fraction of toxins
+in intracellular form, a strategy that limits toxin release and maximizes cyanobacteria cell removal
+through the water plant should be considered. Specifically, operators would generally want to
+investigate their ability to stop or limit any pre-oxidation (i.e., oxidation prior to cell removal) and limit
+algaecide application, while focusing on optimizing their coagulation, clarification, and filtration
+processes for cyanobacteria cell removal. This may compromise other treatment objectives (i.e.,
+manganese removal), that need to be considered while treating for cyanobacteria cell removal. Figure 3-
+2 depicts a plant schematic with treatment considerations for intracellular cyanotoxins at each process,
+which are discussed in more detail below
+10 The decision-tree presented in “Recommendations for Public Water Systems to Prepare for and Respond to Cyanotoxins in
+Drinking Water” provides a framework for assessing vulnerability to, preparation for, monitoring for, and communication to
+stakeholders for HABs. The decision tree presented in the current document (Figure 3-1) provides specific treatment
+optimization strategies to guide water treatment plants that are already performing monitoring for HABs and that detect
+cyanobacteria or toxins in their source water or plant. In that sense, this fits into the treatment portion of Steps 4 and 5 of the
+“Recommendations” document’s decision-tree. Please refer to that document for details about establishing vulnerability
+assessments, preparation, monitoring programs, and communication to stakeholders for HABs.
+15
+Figure 3-2. Intracellular cyanotoxin treatment considerations
+The focus of this figure on intracellular toxin treatment is on the physical removal of cells.
+16
+Although not depicted in Figure 3-2, microfiltration and ultrafiltration may also effectively address
+intracellular toxins by cell removal, without significant cell lysis and associated release of toxins into the
+water. Operational considerations if using micro- or ultrafiltration membranes for cyanobacteria cell
+removal during a HAB include evaluating backwash and cleaning frequencies due to plugging of screens
+and reduced flux and permeability. Microfiltration and ultrafiltration are not effective means of
+removing extracellular toxins however, as the molecular weight cutoff for these types of filters is greater
+than the molecular weight of the toxins (AWWA, 2010). For further discussion on membranes, see the
+“Treatment considerations for extracellular toxins” section below.
+Operational considerations and potential studies for intracellular cyanotoxin removal through use of
+conventional water treatment are discussed below, and a more detailed checklist is provided in Table A-
+1 in the Appendices.
+Operational considerations and potential studies:
+A key component of an optimization program is process control and related problem solving activities.
+Plant staff can use tailored studies, based on the scientific method, to conduct in-house investigations
+on issues impacting performance. Below is a summary of relevant operational considerations and
+potential studies for water plants dealing with a HAB event. Implementing these strategies and
+conducting studies prior to a bloom will help plant operators be in a better position to respond to a
+cyanobacteria event.
+• If a cyanobacteria bloom is detected in source water, operators can measure toxin
+concentrations in the clarifier effluent and compare concentrations at this location to raw water
+to determine if toxins are released prior to this location (e.g., settled cells, or in other upstream
+processes). If they are, consider additional sampling upstream to pinpoint the location of toxin
+release and respond appropriately through treatment (as discussed in Section 3.2) and consider
+tailored studies focused on reducing the release of cyanotoxins.
+• In anticipation of reducing or stopping pre-oxidant use to minimize toxin release, studies can
+help assess and mitigate the impact of doing so on other treatment objectives that the pre-
+oxidant may be used to achieve (e.g., turbidity, TOC, and manganese removal; algae control in
+the plant; mussel control in intake line). Planning for and considering how these objectives will
+be achieved prior to the bloom season is critical.
+• Optimizing coagulant and polymer dosing can maximize cell removal through the treatment
+process. This can be effectively evaluated in most plants using jar testing. Based on the
+literature (Newcombe, et al., 2015; Chow, et al., 1999; Henderson, et al., 2008; Vlaski, et al.,
+1996), NOM11, particle count, streaming current, zeta potential (Walker, 2015), UV, color,
+and/or pigment (i.e., phycocyanin or chlorophyll-a) may be useful parameters to evaluate during
+jar testing for optimization of the coagulation/sedimentation process. Also, coagulation pH will
+be an important variable to optimize. Given the variability that may occur with different
+coagulants and cyanobacteria species, operators should aim to maintain pH in a range between
+6 and 8 through the plant for best cell removal and subsequent toxin oxidation.
+11 Optimized NOM removal (defined as lowest ΔC/C0 for DOC and UV, and color ≤ 0.05) resulted in optimized cyanobacteria cell
+removal in Newcombe, et. al. 2015.
+17
+• Operators should consider trending water quality data, including individual filter effluent (IFE),
+backwash water, and filter-to-waste (where applicable) turbidity values to understand baseline
+performance and compare during water quality challenges such as HABs. Trending settled water
+turbidity and cyanotoxin concentration during HABs will help to understand how the
+sedimentation process is performing.
+• It is important to minimize the sludge age in clarifiers and increase the frequency of filter
+backwashing because settled and/or filtered cells can remain viable and possibly multiply over a
+period of at least 2-3 weeks. Within one day, cells in the sludge can lyse and release NOM and
+T&O compounds, in addition to cyanotoxins (Newcombe, et al., 2015). A water treatment plant
+should investigate options for design or operational modifications to enable more frequent
+cleaning.
+• Operators who ensure that filters are optimized for turbidity removal and strive to achieve the
+optimization goal presented in the CCP Handbook (U.S. EPA, 2004) of ≤0.10 NTU in 95% of
+samples will generally be better prepared to deal with cyanotoxin challenges. Filter aid polymers
+may help cyanobacteria cell removal. Backwashing filters based on water quality data, such as
+effluent turbidity, rather than length of time in service can lead to more optimal filter operation.
+Studies using turbidity data can help operators optimize the backwash and filter-to-waste times,
+if applicable. High-rate backwash times may need to be extended in the event of a
+cyanobacteria bloom, while monitoring the filter so that it does not lose media. Utilities can also
+experiment with air scour, surface wash, and/or collapse-bed pulsing if applicable to their plant.
+• Backwash water recycling during a HAB can be problematic. Studies can help operators
+understand the impacts of stopping backwash water recycling on raw water quality and
+backwash water disposal. Some systems may have backwash water treatment, in which case
+optimization can be pursued with tailored studies.
+3.2 Treatment considerations for extracellular cyanotoxins
+Because water utilities are designed to remove particulates as a matter of course, the preferred
+approach for water plants is to remove toxins while they are still in the intracellular form (i.e., within the
+intact cells), (AWWA, 2010). However, HABs can lyse in the environment, releasing the toxins into the
+extracellular, or dissolved, state. Also, some cyanobacteria species partition toxins between intracellular
+and extracellular states as a matter of course (as mentioned previously, for example,
+cylindrospermopsin tends to partition closer to 50%-50% extracellular-intracellular (AWWA, 2010)).
+From a treatment perspective, the use of a pre-oxidant will increase the risk of cell lysis or stress, which
+could lead to toxin release. Therefore, given the potential for extracellular toxins, specific treatment
+considerations to address them at each process are presented in Figure 3-3 and are discussed in more
+detail below the figure.
+18
+Figure 3-3. Extracellular cyanotoxin treatment considerations
+The focus of this figure on extracellular cyanotoxin treatment is on adsorption, nanofiltration or RO, and oxidation.
+19
+3.2.1 Carbon adsorption
+Carbon is often used at water treatment plants to remove taste and odor (T&O) and other organic
+compounds, typically in the form of powdered activated carbon (PAC) and granular activated carbon
+(GAC). Research has demonstrated effective removal of microcystins using PAC or GAC, and more
+limited research on the removal of cylindrospermopsin, anatoxin-a, and saxitoxin has also exhibited
+promising results (Walker, 2015). The type of carbon and corresponding mesopore size are important
+factors in determining the efficacy that carbon adsorption will have on the extracellular cyanotoxins.
+Wood-based or lignite-type carbon, with mesopores between 2-50 nanometers (nm) has been found to
+be most effective for microcystins (Walker, 2015; Ohio AWWA/Ohio EPA, 2015). However, this may
+challenge a competing objective of using carbon in the water treatment process for T&O compound
+removal, for which other types of carbon have been found to be most effective. Utilities should consider
+this if they need to utilize carbon for removal of multiple constituents. For example, utilities may
+consider using a mixture of carbons to remove cyanotoxins and T&O compounds.
+T&O compounds, such as geosmin and methylisoborneol (MIB), NOM, and pre-oxidants such as
+permanganate and chlorine can affect activated carbon’s ability to remove extracellular cyanotoxins.
+These compounds tend to compete for adsorption sites with the cyanotoxin molecules. Therefore, jar
+testing HAB-impacted raw water is an important step in optimizing not only coagulant/polymer, but also
+PAC dosing. Similarly, performing rapid small-scale column tests (RSSCTs) or accelerated column tests
+(ACTs) is an important step for understanding the empty-bed contact time (EBCT) and resulting media
+life, or adsorption capacity, for GAC.
+3.2.1.1 Powdered activated carbon (PAC)
+PAC can be a short-term solution to cyanotoxin problems until more robust treatment can be installed.
+Short-duration PAC application can also be an effective long-term strategy for systems faced with
+seasonal cyanotoxin problems (repeated seasonal application) but lack the ability to install permanent
+treatment solutions (such as GAC or ozone). Potential PAC feed points can include the raw water intake,
+rapid mix prior to coagulation, or in clarifiers, depending on the application of other treatment
+chemicals (i.e., pre-oxidants), desired contact time and subsequent settling time. In a similar fashion to
+the CyanoTOX oxidant CT calculator, AWWA has also produced a “PAC Calculator for Cyanotoxin
+Removal”, to be used in conjunction with the AWWA Cyanotoxin PAC Jar Testing Protocols12, to assist
+utilities in estimating an appropriate PAC dose during a HAB episode. However, because numerous
+factors impact performance, the optimal dose is best determined by jar testing with the actual water
+that contains the dissolved cyanotoxins. Generally, the most effective removals are achieved using
+wood-based PAC at contact times greater than about 45 minutes at a dose greater than 10 mg/L,
+although this is highly source water dependent (Alvarez, et al., 2010). Operational considerations and
+studies for PAC specific to cyanotoxin removal are discussed below, and a more detailed checklist is
+provided in Table B-1 in the Appendices.
+12 AWWA’s PAC Calculator for Cyanotoxin Removal and Cyanotoxin Jar Testing Protocols mentioned here, and the Cyanotoxin
+Tool for Oxidation Kinetics (CyanoTOX) mentioned in Section 3.2.4, can be found at AWWA’s Cyanotoxins Resource Community
+website (login required).
+As with any tool or model, it is important that the user understands the limitations and assumptions of that tool. AWWA has
+introductory tabs in each spreadsheet that discuss caveats and disclaimers for each tool. It is recommended that these pages be
+consulted prior to using each tool.
+20
+Operational considerations and studies for PAC specific to cyanotoxin removal:
+• If PAC is only used seasonally, planning prior to bloom season should include ensuring sufficient
+supply of PAC and the ability to deliver and adequately mix a high PAC dose (i.e., greater than 10
+mg/L). Utilities should also consider sufficient storage space and safety precautions as dust has
+explosive hazard properties.
+• Utility planning for operational impacts of utilizing PAC on their sedimentation and filtration
+processes (i.e., more frequent sludge removal and disposal/treatment, potential for carbon fines
+on the filters, etc.) is important. PAC cannot be regenerated or recycled.
+• Utilities considering using PAC should ensure that their plant’s clarifiers are designed to allow
+PAC feed. PAC can cause damage to sludge rakes and mixers if they are not designed for settling
+and removing PAC.
+• For plants that are not designed for feeding PAC, doses higher than about 10 mg/L may present
+performance challenges. High PAC doses can result in carbon fines passing through filters and
+increased filter effluent turbidity. Studies can be implemented to determine the optimum PAC
+dose that can be achieved while maintaining turbidity removal goals. The use of flocculant and
+filter aid polymers may be effective in enhancing PAC removal through sedimentation and
+filtration.
+3.2.1.2 Granular activated carbon (GAC)
+Utilities repeatedly affected by cyanotoxins in their source water may consider adding GAC filters. GAC
+has generally been shown to be effective for some cyanotoxin removal, especially using wood-based
+carbon (AWWA, 2010; Walker, 2015). Rapid small-scale column tests (RSSCTs) or accelerated column
+tests (ACTs) are valuable tools to determine if/when GAC is appropriate, to evaluate different carbon
+media types, and to ensure a best-fit for the particular utility and its source water. RSSCTs or ACTs also
+provide information on the necessary empty-bed contact time (EBCT) and the resulting media life before
+regeneration or replacement is needed. Media life will vary depending on numerous factors including
+carbon type, source water quality, and the desired effluent water quality. Due to the vagaries of bloom
+dynamics, it is difficult to conduct a RSSCT test that will be applicable to multiple blooms. Often the
+influent characteristics will differ from bloom to bloom in terms of concentrations and duration for both
+the toxins and other water quality parameters that can affect adsorption such as TOC concentration,
+temperature, pH, etc.
+GAC is typically applied in one of two approaches. The first is as a filter adsorber where a portion of the
+sand bed (the top portion) is replaced with GAC. If an adequate flow distributer is chosen, all of the sand
+could be replaced with GAC. This allows the use of the existing sand filters. However, the depth of the
+bed is often limited to short EBCTs that can fail to remove all the cyanotoxins in the mass transfer zone
+resulting in early breakthrough. Particulate loading issues can also impact flow distribution, which would
+further exacerbate the limited EBCT. The other approach to applying GAC is to utilize a deep bed, where
+GAC column follows the sand filters, receiving the filter effluent. This is advantageous in that the GAC
+column depth can be designed independent of the existing sand filters and the column will not require
+as frequent backwashing as the sand filters. An increased EBCT will be more able to treat the cyanotoxin
+event. The disadvantage to installing separate GAC columns after the sand filters is that this is more
+capital intensive, as it requires the columns, plumbing, piping and instrumentation changes.
+21
+If GAC is pursued as an option, final design should consider that GAC filters are often used for more than
+one purpose, such as control of pesticides, herbicides, disinfection byproduct precursors, taste and odor
+events, and cyanotoxins. EBCTs reported in the literature typically range from 5 to 15 minutes, although
+some carbon vendors recommend at least a 10 minute EBCT. Adequate EBCT allows for greater removal
+of competing constituents such as TOC along with cyanotoxins, and allows for greater operational
+flexibility. Media life reported in the literature for cyanotoxin removal ranges from weeks to 6 months
+(Alvarez, et al., 2010), although this is highly site-specific. Operational considerations and studies for
+GAC specific to cyanotoxin removal are discussed below, and a more detailed checklist is provided in
+Table B-2 in the Appendices.
+Operational considerations and studies for GAC specific to cyanotoxin removal:
+• Consider media regeneration or replacement in routine maintenance schedules in preparation
+for the summer season.
+• Evaluate operational considerations associated with GAC use. For example, not adding chlorine
+prior to the filters when they are in operation, as this affects adsorption capacity. Also, chlorine
+will be reduced in the top portion (about one inch) of the GAC bed, and hence need to be
+reapplied post-GAC filtration.
+• If the GAC column is a filter adsorber, consider developing an adequate backwash procedure
+and schedule so as to:
+Minimize washing GAC out of the filter during backwash,
+o
+Allow a uniform GAC layer to set up after backwashing, and
+o
+Minimize caking of the GAC particles with particulates and any biological growth
+o
+present.
+• Potentially, regeneration frequency could be based on the results of RSSCTs or ACTs conducted
+using the GAC media utilized by the plant and cyanotoxin of concern.
+• Filter maintenance and flow distribution are important. Ensuring even media depth throughout
+the filter will mitigate preferential flow and potential breakthrough.
+3.2.2 Membranes
+Although rare in the drinking water industry in fresh water applications, the “tighter”, high-pressure
+membranes, reverse osmosis (RO) and nanofiltration, are capable of removing extracellular cyanotoxins
+by a combination of size exclusion and charge effects, depending on the cyanotoxin molecule being
+removed. (AWWA, 2010). Operational considerations and studies for high-pressure membranes specific
+to cyanotoxin removal are discussed below, and a more detailed checklist is provided in Table B-3 in the
+Appendices.
+Operational considerations for membranes specific to cyanotoxin removal:
+• Because RO and nanofiltration can remove extracellular cyanotoxins, the concentrate stream of
+these processes can have a high toxin retention level. Consider residual disposal issues that may
+arise due to high cyanotoxin concentrations (AWWA, 2010).
+3.2.3 Biofiltration
+Studies have demonstrated that biodegradation of a variety of cyanotoxins, including microcystins,
+nodularin, cylindrospermopsin, and anatoxin-a can occur in some situations. This is dependent on water
+temperature, the abundance of specific bacteria capabable of degrading the cyanotoxins present, the
+22
+concentration of the target cyanotoxins, the presence of organic matter in the source water, and the
+presence of metals in the source water. Studies have also shown that the biodegradation products of
+saxitoxin may actually result in more toxic forms (Ho et al., 2012).
+The most effective way for water treatment plants to utilize biodegradation for cyanotoxins is likely by
+biological filtration processes, or biofiltration. Water treatment plants can consider if it is feasible to
+modify existing sand or GAC filters to make them biologically active and able to host microorganisms
+that are capable of degrading the cyanotoxins that are present in their source water (Ho et al., 2012).
+Operational considerations for biofiltration specific to cyanotoxin removal:
+• Many studies have documented a lag period prior to the onset of biodegradation of
+cyanotoxins. This could be due to several reasons including time required for the population of
+organisms capable of degradation of the cyanotoxins present to reach sufficient numbers, or
+due to the time required for those organisms to induce the enzymes responsible for degradation
+of the cyanotoxins. This lag time is a significant consideration for utilities faced with
+cyanobacteria blooms that vary on short time periods.
+• Both sand and GAC filters can be adapted to be biologically active, however some research
+suggests that GAC may be preferred, as two removal mechanisms would be applicable
+(adsorption and biodegradation). Refer to Section 3.2.1.2 on GAC for a discussion on the
+adsorption component of cyanotoxin removal. GAC may also be a better substrate for bacterial
+attachment than sand. Other types of media have shown promise for biofiltration in the
+research, including glass beads, porous ceramic, and plastic media. Media characteristics such as
+particle size, chemical composition, and roughness can influence the ability of the media to
+establish biological growth and biodegradation of cyanotoxins (Ho et al., 2012).
+• If saxitoxins are the predominant cyanotoxin present in the source water, biofiltration may not
+be advisable, as research has demonstrated in some cases that the biodegradation products can
+be more toxic than the original cyanotoxin.
+• Other factors that influence the effectiveness of biofiltration are filter contact time and
+hydraulic loading rate. Longer contact time and slower hydraulic loading rates may increase
+biodegradation of cyanotoxins.
+• Utilities considering biofiltration should consider that prechlorination should not be performed
+prior to biological filtration processes. Carrying a chlorine residual onto the filters would impact
+the bacterial population and decrease cyanotoxin biodegradation. This may affect this option’s
+feasibility in certain water treatment plants.
+• Certain organisms are capable of biodegradation of certain cyanotoxins. Even if a filter has an
+active biofilm does not necessarily suggest that biodegradation of the specific cyanotoxins
+present will occur. Some preliminary research suggests that seeding filters with organisms
+capable of biodegrading the specific cyanotoxins present in a given source water may help to
+minimize the lag period and potentially increase the biodegradation. However, thorough
+analysis should be conducted prior to implementing this strategy to consider all potential
+impacts on other treatment objectives and resulting impacts on water quality.
+3.2.4 Oxidation
+A variety of techniques exist for oxidation of cyanotoxins. The more common techniques, along with
+their particular advantages and limitations, are described in Table 3-1 and the subsections below.
+23
+Table 3-1. General effectiveness of cyanotoxin oxidation with common water treatment
+oxidants13
+Oxidant Anatoxin-a Cylindrospermopsin Microcystins Saxitoxin
+Chlorine Not effective Effective (at low pH) Effective* Somewhat
+effective
+Chloramine Not effective Not effective Not effective at Inadequate
+normal doses information
+Chlorine dioxide Not effective at Not effective Not effective at Inadequate
+normal doses normal doses information
+Potassium Effective Data ranges from Effective* Not effective
+permanganate not effective to
+possibly effective
+Ozone Effective Effective Very effective Not effective
+UV / advanced Effective Effective Effective at high Inadequate
+oxidation UV doses* information
+* Dependent on initial cyanotoxin concentration, pH, temperature, and presence of NOM.
+3.2.4.1 Free chlorine
+Research has demonstrated effective oxidation of microcystins and cylindrospermopsin by free chlorine
+(AWWA, 2010; Walker, 2015). Free chlorine is generally ineffective against anatoxin-a (AWWA, 2010).
+The effectiveness of free chlorine oxidation of microcystins and cylindrospermopsin is pH dependent. As
+an example, Tables 3-2 and 3-3 show CT (chlorine concentration x contact time) values for microcystin-
+LR and cylindrospermopsin, respectively, to achieve the EPA Health Advisory lower levels (levels for
+infants to school-age children exposure, which are 0.3 µg/L and 0.7 µg/L, respectively) under varied pH,
+temperature, and cyanotoxin concentrations. These tables were developed using AWWA’s Cyanotoxin
+Tool for Oxidation Kinetics (CyanoTOX). AWWA’s stated purpose of the CyanoTOX tool is to “…provide
+water utilities with a means to assess how changes in their existing treatment (e.g., pH, oxidant dose,
+and contact time) will influence the degradation of specific cyanotoxins or groups of cyanotoxins.” As
+with any tool or model, it is important to understand the limitations and assumptions of that tool prior
+to its use (see footnote 12 at the bottom of page 20 for information on how to access this tool, which
+also provides information about the tool’s limitations). Utilizing this spreadsheet tool, parameters such
+as pH, temperature, cyanotoxin concentration, oxidant type (free chlorine, monochloramine, chlorine
+dioxide, and ozone are available), a plant-specific baffling factor, and cyanotoxin type can be varied to
+achieve a desired cyanotoxin target level. For this example, the results of which are shown in Tables 3-2
+and 3-3, microcystin-LR and cylindrospermopsin targets were selected to correspond with the EPA
+Health Advisories issued for these toxins, and initial toxin concentrations were varied at certain intervals
+to provide the reader an idea of how the CT varies for free chlorine at various pH levels and
+temperatures. Please note that this is only an example, and that effects for different source waters,
+especially those containing compounds with competing oxidant demands, and different treatment may
+result in different CT values than those presented in Tables 3-2 and 3-3.
+Although effects for different waters may vary, the results from this example (Tables 3-2 and 3-3)
+demonstrate that, particularly for microcystin-LR, the desirable pH range for the most efficient oxidation
+13 Adapted with permission from Ohio AWWA and Ohio EPA’s “White Paper on Algal Toxin Treatment” (Ohio AWWA & Ohio
+EPA, 2015).
+24
+with free chlorine is between 6 and 8. Some studies have shown that there is a risk of cell stress or lysis
+and toxin release at pH below 6 (Newcombe, et al., 2015). Above a pH of 8, particularly for microcystins,
+the resulting CT values may be unreasonably high, potentially resulting in plants exceeding the
+maximum residual disinfectant level (MRDL) for free chlorine or necessitating potentially unreasonably
+long contact times. Because this is a generic modeling example and there is no consideration for unique
+water qualities or the exact suite of cyanotoxin congeners, a utility should perform a similar evaluation
+for their own water quality with full understanding of the tool’s assumptions and limitations.
+Table 3-2. Microcystin-LR CT table
+(For free chlorine to achieve the lower level [school-age child exposure] of the EPA Health Advisory)
+Toxin = Microcystin-LR
+Oxidant = Free chlorine
+Target = 0.3 µg/L
+25
+Table 3-3. Cylindrospermopsin CT table
+(For free chlorine to achieve the lower level [school-age child exposure] of the EPA Health Advisory)
+Toxin = Cylindrospermopsin
+Oxidant = Free chlorine
+Target = 0.7 µg/L
+3.2.4.2 Ozone and advanced oxidation
+Research has also demonstrated effective oxidation of microcystins and cylindrospermopsin by ozone
+(AWWA, 2010; Walker, 2015). However, specific CT values have yet to be reported (AWWA, 2010) and
+many factors play a role in ozone’s effectiveness, including pH, temperature, and concentration of NOM.
+In addition, the formation of oxidation byproducts with the use of ozone, such as bromate, should be
+considered. Advanced oxidation, such as ozonation at high pH, ozonation combined with hydrogen
+peroxide (H O ), ferrous iron combined with hydrogen peroxide, or ultraviolet (UV) irradiation combined
+2 2
+with hydrogen peroxide, has proved to be effective at treating extracellular microcystins,
+cylindrospermopsin, and anatoxin-a (AWWA, 2010).
+3.2.4.3 Chlorine dioxide and chloramines
+Chlorine dioxide and chloramines have not been found to be as effective as alternatives at oxidizing
+certain cyanotoxins, including microcystins (AWWA, 2010; Walker, 2015).
+For systems that use chloramines with minimal or no free chlorine contact time, advance HAB-response
+planning is warranted because of the limited effectiveness of chloramines. For example, AWWA’s M57
+Manual, “Algae: Source to Treatment” cites a study that dosed 30 mg/L of monochloramine with a
+contact time of 5 days and was unable to degrade microcystins, with similar results for
+cylindrospermopsin.
+26
+3.2.4.4 Potassium permanganate
+Research indicates that potassium permanganate (KMnO ) is relatively effective against microcystin-LR
+4
+and anatoxin-a (pH independent for microcystins, pH dependent for anatoxin-a), while ineffective
+against cylindrospermopsin. Studies using doses of approximately 1 mg/L have resulted in significant
+microcystins reduction (AWWA, 2010; Walker, 2015). However when used as a pre-oxidant,
+consideration should be given to the possibility of cyanotoxin release from cells. For example, some
+studies have shown that potassium permanganate causes release of toxins from cyanobacteria cells,
+especially at doses greater than 3 mg/L (Ou, et al., 2012), while other studies have shown limited to zero
+toxin release at doses below 3 mg/L (Fan et al., 2013a, 2013b, 2014). The potential for permanganates
+to cause release of cyanotoxins and other intracellular material may be at least partially dependent on
+the type of cyanobacteria present, possibly because some cyanobacteria have more robust cell walls
+that are more difficult to lyse.
+Operational considerations and studies for oxidation technologies specific to cyanotoxin removal:
+• Operational considerations and studies for oxidation technologies specific to cyanotoxin
+removal are discussed below, and a more detailed checklist is provided in Table B-4 in the
+Appendices.
+• Consider what oxidants/disinfectants are available for use, their point of application, and any
+competing technologies that would limit their effectiveness.
+• As with any type of oxidant, consider the potential for formation of regulated disinfection
+byproducts, total trihalomethanes (TTHMs) and haloacetic acids (HAA5s), bromate formation
+(from ozone), and the potential for cyanotoxin oxidation byproducts (Health Canada, 2015).
+• Advance planning for utilities using monochloramine could include temporarily moving the point
+of ammonia addition further downstream in the treatment process train in order to allow more
+contact time with free chlorine to oxidize extracellular toxins during a HAB. Plants in this
+situation should consider evaluating the ability to move the point of ammonia addition and the
+effects that change may have on other water treatment objectives.
+Section 4: Implementing an optimization approach
+This document, as well as other referenced resources, provides information that can be used
+strategically for addressing HABs. However, the challenges associated with implementing change in a
+treatment plant can be daunting. EPA’s CCP has successfully utilized the following guidelines for
+implementing change in organizations since the inception of the program (U.S. EPA, 2004):
+• Establish optimization goals that have the buy-in of utility staff and management.
+• Create accountability by defining expectations of team members through clear roles and
+responsibilities, documentation of meeting outcomes, and assignment of action items.
+• Use data-based decision-making to gain support from utility staff and management for making
+significant process changes (i.e., apply problem solving skills, such as tailored studies and data
+trending and interpretation).
+• Develop operational policies and procedures to enhance communication among utility staff and
+management on critical activities (e.g., decision tree logic, when to sample for toxins,
+monitoring protocols).
+27
+• Establish routine communication (e.g., meetings, data distribution, memorandums) to
+continuously assess water system performance and provide a feedback loop.
+Water utilities that apply this or a similar framework will likely have increased success in implementing
+the strategies presented in this document.
+Section 5: Conclusions
+Increasing occurrence and detection of harmful algal bloom toxins in drinking water sources pose a
+variety of challenges for water treatment plant managers and operators. Optimizing water treatment
+processes for cyanotoxins, in conjunction with other water treatment objectives, can be daunting.
+However, monitoring procedures and process control tools that are already in place at many plants can
+be utilized for cyanotoxin treatment as well. A water treatment plant capable of optimization not only
+consists of good design, but also has supportive administration/management and is well-operated and
+maintained. A central theme to optimization for water treatment involves routine process monitoring
+and applying process control tools and problem solving skills based on that monitoring data. Several
+approaches to monitoring for cyanobacteria and resulting cyanotoxins were discussed. However, to
+evaluate the efficacy of each unit process in the water treatment process train, regular monitoring,
+especially during bloom seasons, is important throughout the plant. Water treatment plant operators
+should consider monitoring at multiple locations in the process train, such as in source water, after rapid
+mix, settled water, individual and combined filter effluent, or finished water. It is important to
+understand which type of cyanotoxin is present and whether the cyanotoxins reside within the cell or as
+extracellular because the optimal treatment approaches will differ. Plant optimization is never
+“finished” – it is an ongoing process; therefore, utilities are encouraged to enhance or modify their
+monitoring and treatment strategies as additional information becomes available through their regular
+source water and process monitoring, and through keeping up to date on research in the drinking water
+field.
+28
+References
+Alvarez, M.B., Rose, J.B., and Bellamy, B. 2010. Treating Algal Toxins Using Oxidation, Adsorption, and
+Membrane Technologies. Water Research Foundation.
+American Water Works Association (AWWA). 2010. Algae: Source to Treatment, Manual of Water
+Supply Practices M57. First Edition. Denver, CO.
+American Water Works Association (AWWA). 2011. Operational Control of Coagulation and Filtration
+Processes, Manual of Water Supply Practices M37. 3rd edition. Denver, CO.
+American Water Works Association (AWWA) and Water Research Foundation (WRF). 2015. A Water
+Utility Manager's Guide to Cyanotoxins. American Water Works Association. Denver, CO.
+American Water Works Association Ohio Section Technology Committee (Ohio AWWA) and Ohio
+Environmental Protection Agency (Ohio EPA). August 2015. Draft White Paper on Cyanotoxin
+Treatment. Retrieved October 15, 2015 at
+http://epa.ohio.gov/portals/28/documents/HAB/AlgalToxinTreatmentWhitePaper.pdf
+Anderson, K., and Chescattie, E. 2003. Incorporating Filter Bed Expansion Measurements Into Your
+Backwashing Routine. Water Quality Technology Conference. Philadelphia, PA: American Water
+Works Association.
+Brient, L., Lengronne, M., Bertrand, E., Rolland, D., Sipel, A., Steinmann, D., Baudin, I., Legeas, M., Le
+Rouzic, B., and Bormans, M. 2008. A phycocyanin probe as a tool for monitoring cyanobacteria
+in freshwater bodies. Journal of Environmental Monitoring. 10, 248-255. doi:10.1039/b714238b
+Carmichael, W. 2000. Assessment of Blue-Green Algal Toxins in Raw and Finished Drinking Water.
+AWWA Research Foundation and American Water Works Association (AWWA).
+Chorus, I., and Bartram, J. ed. 1999. Toxic Cyanobacteria in Water: A guide to their public health
+consequences, monitoring and management. World Health Organization.
+Chow, C. W., Drikas, M., House, J., Burch, M. D., and Velzeboer, R. M. 1999. The impact of conventional
+water treatment processes on cells of the cyanobacterium microcystis aeruginosa. Water
+Research. 33(15), 3253-3262.
+Dokulil, M.T. 2016. Vegetative survival of Cylindrospermopsis raciborskii (Cyanobacteria) at low
+temperature and low light. Hydrobiologia. 764: 241-247. DOI: 10.1007/s10750-015-2228-y.
+Drikas, M., Chow, C.W.K., House, J., Burch, M. 2001. Using coagulation, flocculation, and settling to
+remove toxic cyanobacteria. Journal American Water Works Association (AWWA). February
+2001, 100-111.
+Fan, J., Daly, R., Hobson, P., Ho, L., Brookes, J. 2013a. Impact of potassium permanganate on
+cyanobacterial cell integrity and toxin release and degradation. Chemosphere, 92, 529-534.
+Fan, J., Ho, L., Hobson, P., Brookes, J. 2013b. Evaluating the effectiveness of copper sulphate, chlorine,
+potassium permanganate, hydrogen peroxide and ozone on cyanobacterial cell integrity. Water
+Research. 47, 5153-5164.
+29
+References Continued
+Fan, J., Hobson, P., Ho, L., Daly, R., Brookes, J. 2014. The effects of various control and water treatment
+processes on the membrane integrity and toxin fate of cyanobacteria. Journal of Hazardous
+Materials. 264, 313-322.
+Fischer, W.J., Garthwaite, I., Miles, C.O., Ross, K.M., Aggen, J.B., Chamberlin, A.R., Towers, N.R., Dietrich,
+D.R. 2001. Congener-independent immunoassay for microcystins and nodularins. Environmental
+Science & Technology. 35, 4849-4856.
+Foss, A. J., and Aubel, M. T. 2015. Using the MMPB Technique to Confirm Microcystin Concentrations in
+Water Measured by ELISA and HPLC (UV, MS, MS/MS). Toxicon.
+doi:10.1016/j.toxicon.2015.07.332.
+He, X., Yen-Ling, L., Conklin, A., Westrick, J., Weavers, L.K., Dionysiou, D.D., Lenhart, J.J., Mouser, P.J.,
+Szlag, D., Walker, H.W. 2016. Toxic cyanobacteria and drinking water: Impacts, detection, and
+treatment. Harmful Algae. 54, 174-193.
+Health Canada. 2002. Guidelines for Canadian Drinking Water Quality: Supporting Documentation -
+Cyanobacterial Toxins — Microcystin-LR. Federal-Provincial-Territorial Committee on Drinking
+Water. Health Canada. Retrieved October 1, 2015, from http://www.hc-sc.gc.ca/ewh-
+semt/alt_formats/hecs-sesc/pdf/pubs/water-eau/cyanobacterial_toxins/cyanobacterial_toxins-
+eng.pdf
+Health Canada. 2015. Guidelines for Canadian Drinking Water Quality: Guideline technical document for
+public comment - Cyanobacterial toxins. Ottawa, Ontario: Water and Air Quality Bureau, Healthy
+Environments and Consumer Safety Branch.
+Henderson, R., Parsons, S. A., and Jefferson, B. 2008. The impact of algal properties and pre-oxidation on
+solid-liquid separation of algae. Water Research. 42, 1827-1845.
+Ho, L., Sawade, E., Newcombe, G. 2012. Biological treatment options for cyanobacteria metabolite
+removal – A review. Water Research. 46, 1536-1548.
+Holland, Daryl P. & Walsby, Anthony E. 2008. Viability of the cyanobacterium Planktothrix rubescens in
+the cold and dark, related to over-winter survival and summer recruitment in Lake Zürich,
+European Journal of Phycology. 43:2, 179-184, DOI: 10.1080/09670260801904822.
+Kamp, L., Church, J.L., Carpino, J., Faltin-Mara, E., Rubio, F. 2016. The effects of water sample treatment,
+preparation, and storage prior to cyanotoxin analysis for cylindrospermopsin, microcystin and
+saxitoxin. Chemico-Biological Interactions. 246 45-51.
+Karner, D.A., Standridge, J.H., Harrington, G.W., Barnum, R.P. 2001. Microcystin algal toxins in source
+and finished drinking water. Journal American Water Works Association (AWWA). August 2001,
+72-81.
+Kasinak, J.E., Holt, B.M., Chislock, M.F., Wilson, A.E. 2015. Benchtop fluorometry of phycocyanin as a
+rapid approach for estimating cyanobacterial biovolume. Journal of Plankton Research. 37(1):
+248-257.
+30
+References Continued
+National Health and Medical Research Council (NHMRC) and Natural Resource Management Ministerial
+Council (NRMMC). 2011. National Water Quality Management Strategy: Australian Drinking
+Water Guidelines, version 3.2, updated February 2016, Canberra, Commonwealth of Australia.
+Newcombe, G., Dreyfus, J., Monrolin, Y., Pestana, C., Reeve, P., Sawade, E., Ho, L., Chow, C., Krasner,
+S.W., Yates, R. S. 2015. Optimizing Conventional Treatment for the Removal of Cyanobacteria
+and Toxins. Water Research Foundation. Order Number 4315.
+Newcombe, G., House, J., Ho, L., Baker, P., Burch, M. 2010. Management Strategies for Cyanobacteria
+(Blue-Green Algae): A Guide for Water Utilities. CRC for Water Quality and Treatment - Research
+Report No. 74. Water Quality Research Australia (WQRA).
+New England Interstate Water Pollution Control Commission (NEIWPCC), HAB Workgroup, Control
+Methods – BMP Focus Team. June 2015. Harmful Algal Bloom Control Methods Synopses.
+Retrieved May 4, 2016.
+Ohio Environmental Protection Agency (Ohio EPA). November 2015. Ohio EPA Total (Extracellular and
+Intracellular) Microcystins - ADDA by ELISA Analytical Methodology. Ohio EPA DES 701.0. Version
+2.2. Retrieved April 28, 2016, from
+http://www.epa.ohio.gov/Portals/28/documents/rules/draft/Ohio%20EPA%20DES%20701.0%2
+0Version%202.2_Dec2015.pdf
+Ohio EPA. July 2015. Public Water System Harmful Algal Bloom Response Strategy. Retrieved August 17,
+2015 from: http://epa.ohio.gov/Portals/28/documents/HABs/PWS_HAB_Response_Strategy.pdf
+Ohio EPA. March 2016. Generalized Cyanotoxin Treatment Optimization Recommendations. Retrieved
+May 10, 2016 from:
+http://epa.ohio.gov/Portals/28/documents/habs/Generalized%20Cyanotoxin%20Treatment%20
+Optimization%20Recommendations.pdf
+Ou, H., Gao, N., Chaohai, W., Yang, D., Qiao, J. 2012. Immediate and long-term impacts of potassium
+permanganate on photosynthetic activity, survival and microcystin-LR release risk of Microcystis
+aeruginosa. Journal of Hazardous Materials. 219-220, 267-275.
+Robarts, R. D., and Zohary, T. 1987. Temperature effects on photosynthetic capacity, respiration, and
+growth rates of bloom-forming cyanobacteria. New Zealand Journal of Marine and Freshwater
+Research, 21:3, 391-399, DOI: 10.1080/00288330.1987.9516235.
+Rosen, B.H., St. Amand, A. 2015. Field and laboratory guide to freshwater cyanobacteria harmful algal
+blooms for Native American and Alaska Native Communities. U.S. Geological Survey (USGS)
+Open-File Report 2015-1164. Available online at:
+https://pubs.usgs.gov/of/2015/1164/ofr20151164.pdf
+Ross, C., Santiago-Vásquez, L., and Paul, V. 2006. Toxin release in response to oxidative stress and
+programmed cell death in the cyanobacterium Microcystis aeruginosa. Aquatic Toxicology. 78
+(2006), 66-73. doi:10.1016/j.aquatox.2006.02.007.
+31
+References Continued
+Source Water Collaborative (SWC). 2015a. Collaboration Toolkit: How to Build and Maintain Effective
+Partnerships to Protect Sources of Drinking Water.
+Schmidt, W., Petzoldt, H., Bornmann, K., Imhof, L., and Moldaenke, C. 2009. Use of cyanopigment
+determination as an indicator of cyanotoxins in drinking water. Water Science & Technology.
+59.8, 1531-1540.
+U.S. Environmental Protection Agency (U.S. EPA). 1997. Arar, E. J. and G. B. Collins. Method 445.0: In
+Vitro Determination of Chlorophyll a and Pheophytin a in Marine and Freshwater Algae by
+Fluoresence (Revision 1.2). National Exposure Research Laboratory, Office of Research and
+Development. Cincinnati, OH. Available online at:
+https://cfpub.epa.gov/si/si_public_record_report.cfm?dirEntryId=309417
+U.S. EPA. 2004. Optimizing Water Treatment Plant Performance Using the Composite Correction
+Program. EPA/625/6-91/027. Office of Water, Office of Research and Development. Cincinnati,
+OH.
+U.S. EPA. 2014. Cyanobacteria and Cyanotoxins: Information for Drinking Water Systems. EPA-
+810F11001. Available online at: https://www.epa.gov/sites/production/files/2014-
+08/documents/cyanobacteria_factsheet.pdf
+U.S. EPA. 2015a. Drinking Water Health Advisory for the Cyanobacterial Toxin Cylindrospermopsin. EPA
+820R15101. Available online at: http://www2.epa.gov/sites/production/files/2015-
+06/documents/cylindrospermopsin-report-2015.pdf
+U.S. EPA. 2015b. Drinking Water Health Advisory for the Cyanobacterial Toxin Microcystin. EPA
+820R15100. Available online at: http://www2.epa.gov/sites/production/files/2015-
+06/documents/microcystins-report-2015.pdf
+U.S. EPA. 2015c. Recommendations for Public Water Systems to Manage Cyanotoxins in Drinking Water.
+EPA-815R15010. Washington, DC. Available online at:
+http://www.epa.gov/sites/production/files/2015-06/documents/cyanotoxin-management-
+drinking-water.pdf
+U.S. EPA. 2015d. Health Effects Support Document for the Cyanobacterial Toxin Anatoxin-a. EPA
+820R15104. Available online at: https://www.epa.gov/sites/production/files/2015-
+06/documents/anatoxin-a-report-2015.pdf
+U.S. EPA. 2015e. Health Effects Support Document for the Cyanobacterial Toxin Cylindrospermopsin.
+EPA 820R15103. Available online at: http://www2.epa.gov/sites/production/files/2015-
+06/documents/cylindrospermopsin-support-report-2015.pdf
+U.S. EPA. 2015f. Health Effects Support Document for the Cyanobacterial Toxin Microcystins. EPA
+820R15102. Available online at: http://www2.epa.gov/sites/production/files/2015-
+06/documents/microcystins-support-report-2015.pdf
+32
+References Continued
+U.S. EPA. 2015g. Method 545: Determination of Cylindrospermopsin and Anatoxin-a in Drinking Water
+by Liquid Chromatography Electrospray Ionization Tandem Mass Spectrometry (LC/ESI-MS/MS).
+EPA 815-R-15-009. Office of Water. Cincinnati, OH. Available online at:
+https://www.epa.gov/sites/production/files/2015-11/documents/epa_815-r-15-
+009_method_545.pdf
+U.S. EPA. 2015h. Method 544. Determination of Microcystins and Nodularin in Drinking Water by Solid
+Phase Extraction and Liquid Chromatography/Tandem Mass Spectrometry (LC/MS/MS).
+EPA/600/R-14/474. National Exposure Research Laboratory, Office of Research and
+Development. Cincinnati, Ohio. Available online at:
+https://cfpub.epa.gov/si/si_public_file_download.cfm?p_download_id=522920
+U.S. EPA, 2016. Method 546. Determination of Total Microcystins and Nodularins in Drinking Water and
+Ambient Water by Adda Enzyme-Linked Immunosorbent Assay. EPA 815-B-16-011. Office of
+Water. Cincinnati, OH. Available online at: https://www.epa.gov/sites/production/files/2016-
+09/documents/method-546-determination-total-microcystins-nodularins-drinking-water-
+ambient-water-adda-enzyme-linked-immunosorbent-assay.pdf
+Usui, Y., and Kasubuchi, T. 2011. Effects of herbicide application on carbon dioxide, dissolved oxygen,
+pH, and RpH in paddy-field ponded water. Soil Science and Plant Nutrition, 57, 1-6.
+Usui, Y., Mowjood, M. I., and Kasubuchi, T. 2003. Absorption and Emission of CO2 by Ponded Water of a
+Paddy Field. Soil Science and Plant Nutrition, 49 (6) 853-857.
+Vlaski, A., van Breemen, A., and Alaerts, G. 1996. Optimisation of coagulation conditions for the removal
+of microcystis aeruginosa by dissolved air flotation or sedimentation. J. Water SRT-Aqua, 45(5),
+253-261.
+Walker, H. W. 2015. Harmful Algae Blooms in Drinking Water: Removal of Cyanobacterial Cells and
+Toxins. CRC Press. Boca Raton, FL.
+33
+Glossary
+ADDA. 3-amino-9-methoxy-2,6,8-trimethyl-10-phenyldeca-4,6-dienoic acid. An amino acid that is part of
+the microcystin molecule and is common to a majority of microcystin congeners.
+Congener. Variants of similar molecules. For example, microcystin has five non-protein amino acids that
+are typically constant between variants, and the molecule has positions for two protein amino acids
+which can vary. These protein amino acids distinguish microcystin variants from each other. The
+different microcystin molecules are called congeners.
+CT. Concentration x contact time. A measure of oxidation requirement for inactivating or oxidizing a
+contaminant.
+MMPB. 3-methyloxy-2-methyl-4-phenylbutyric acid. An oxidation product of microcystin that can be
+analyzed by LC/MS/MS. Shows promise as an analytical technique for total microcystin determination.
+Microcystin. Sometimes abbreviated MC. Typically used in conjunction with its congener-specific amino
+acids (e.g. MC-LA, MC-LF, MC-LR, MC-LY, MC-RR, and MC-YR). The two letters after MC denote the
+specific amino acids (e.g. leucine and arginine = LR).
+MIB. 2-Methylisoborneol. A common taste and odor chemical targeted by water treatment.
+PCR. Polymerase chain reaction. A molecular DNA amplification technique that can be used to identify
+cyanobacteria and toxin-producing genes within the cell.
+UV . Water quality test to estimate organic material in drinking water samples; measurement is done
+254
+utilizing UV light at 254 nanometers (nm).
+34
+Appendix A: Process evaluation for treatment of intracellular toxins.
+This appendix is intended for systems experiencing cyanobacteria blooms that have a significant portion of cyanotoxins in intracellular form. It
+can be used as a planning tool, or by systems in the midst of a bloom. The best strategy for controlling cyanotoxins will be system specific, but
+these tables can be used as a starting point to evaluate some common approaches. If the toxins are in both intracellular and extracellular form,
+these tables can be used in conjunction with the tables in Appendix B: Process evaluation for treatment of extracellular toxins.
+It is important to ensure that proper process control monitoring plans are in place prior to implementing any treatment approaches for
+cyanotoxins, so that the impact and effectiveness of treatment can be assessed and informed treatment decisions can be made. Water
+treatment plant staff can design process control monitoring plans for cyanotoxins to best fit their situation (e.g., grab samples and/or online
+instruments depending on location, access, and availability of sampling ports). A good monitoring plan will include sampling for cyanotoxins if
+detected in the source water; surrogate parameters, as discussed in Section II of the main document; and other process control parameters
+specific to each technology (e.g., chemical dosing, feed rates, residuals, etc.).
+It is also important to coordinate with the appropriate state or primacy agency prior to utilizing new or substantial changes in treatment in
+regard to that state’s or primacy agency’s permitting requirements.
+Table A-1. Conventional treatment facility
+Can my conventional treatment facility (coagulation, flocculation, and sedimentation) remove cyanobacteria cells / intracellular toxins?
+Step Question If yes If no Comments/Notes
+1. Source water: Is an algaecide currently Evaluate ability to Continue to next step. This assumes that the
+being added to the source water? cease adding Also, consider other algaecide will result in
+algaecide to minimize source water control release of the toxins
+toxin release (e.g., via strategies summarized (which research suggests
+cell lysis or stress). in the Comments/Notes is likely). Prior
+column. knowledge and frequent
+monitoring of
+intracellular and
+extracellular toxin levels
+will help determine the
+importance of ceasing
+algaecide application.
+Although control
+strategies in the source
+A-1
+Step Question If yes If no Comments/Notes
+water will be system
+specific, there are other
+methods to reduce or
+mitigate the impact of
+cyanobacteria growth in
+the source water that
+may be applicable, such
+as:
+• Aeration to de-
+stratify the
+water column in
+the vicinity of
+the intake.
+• Switching to
+alternate intake
+level that may
+be less exposed
+to cyanotoxins.
+• Blending water
+with another
+source that is
+not exposed to
+cyanotoxins.
+• Raw water
+storage prior to
+a HAB, in
+anticipation of a
+future HAB.
+• If a bloom area
+is limited to a
+specific area or
+intake structure,
+consider bypass
+A-2
+Step Question If yes If no Comments/Notes
+options (e.g.,
+install
+temporary
+piping around
+the intake area
+or basin).
+2 Pre-oxidation: Are pre-oxidants Evaluate ability to Continue to next step. Pre-oxidants are often
+currently being added? cease adding pre- used for a variety of
+oxidant or reduce the water treatment
+dosage due to the objectives, such as
+potential for turbidity, TOC, and
+cyanotoxin release. manganese removal;
+Ensure that other algae control in the
+treatment objectives plant; or mussel control
+that are satisfied by in intake lines. Advance
+pre-oxidant can be planning allows one to
+addressed. consider how these
+objectives will be
+affected if pre-oxidation
+is stopped.
+3 Coagulation/flocculation/clarification: Continue to next step. Review historical Optimized NOM removal
+Has the optimal coagulant dose been dosages that may have (defined as lowest ΔC/C
+0
+determined for the potential/current been effective in for DOC and UV, and
+cyanobacteria bloom? optimizing cyanotoxin color ≤ 0.05) resulted in
+control during past optimized cyanobacteria
+HABs, and conduct jar cell removal during jar
+tests evaluating testing (Newcombe et
+turbidity, NOM, UV254, al., 2015).
+pigments, and color Jar testing may indicate
+removal as surrogates that lower pH is needed
+for cell removal (refer for effective cell
+to the Operational removal. Monitor pH
+considerations and
+A-3
+Step Question If yes If no Comments/Notes
+potential studies and alkalinity to ensure
+section of Section III.A optimized coagulation.
+for more detailed See AWWA’s M37:
+discussion). Operational Control of
+Investigate the Coagulation and
+effectiveness of an Filtration Processes for
+alternate coagulant or information on jar
+flocculant aid polymer testing; monitoring; and
+during the HAB event. coagulation,
+(These studies should flocculation, and
+generally be performed clarification process
+through jar testing information1.
+when possible).
+4. Filter run time/backwash: Have the Continue to next step. Consider impact of the
+filter run time and filter backwash HAB on filter run time
+disposal procedure been determined (i.e., will it be shortened
+for the potential/current and what criteria will be
+cyanobacteria bloom? used to initiate the
+backwash?).
+Assess the effectiveness
+of the filter backwash
+procedure for removing
+cyanobacteria cells
+(e.g., conduct studies
+on bed expansion,
+backwash waste water
+turbidity profile, and
+post-backwash filter
+recovery).
+1 American Water Works Association (AWWA). 2011. Operational Control of Coagulation and Filtration Processes: Manual of Water Supply Practices M37. 3rd edition. Denver,
+CO.
+A-4
+Step Question If yes If no Comments/Notes
+Filter backwash disposal
+may be impacted (i.e.,
+increased volume and
+contamination with
+cyanobacteria cells).
+How will this be
+addressed?
+Consider if the plant is
+recycling filter
+backwash water and if
+the recycle flow can be
+eliminated during the
+HAB event.
+5 Sludge management: Does the plant Continue to next step. Assess sedimentation
+have capacity to handle additional basin sludge removal
+production and removal of settling frequency and potential
+basin sludge, or alter sludge handling for toxin release from
+practices (i.e., sludge recycling)? the sludge blanket.
+Determine the plant’s
+capability for disposal of
+more frequent and
+increased amounts of
+sedimentation basin
+sludge.
+If applicable, assess
+operational and
+disposal implications of
+ceasing sludge recycling
+during a bloom.
+6 Filter Performance: Are the filters Continue using Evaluate filter
+optimized for turbidity removal (i.e. ≤ conventional operational parameters
+0.10 NTU in 95% of turbidity samples)? treatment to remove with a goal to minimize
+effluent turbidity. For
+A-5
+Step Question If yes If no Comments/Notes
+intracellular example, see AWWA’s
+cyanotoxins. M37: Operational
+Control of Coagulation
+and Filtration
+Processes2 for
+information on
+monitoring and process
+control for filtration.
+Assess the condition of
+the filter media
+including media depth.
+Investigate the use of a
+filter aid polymer during
+the HAB event.
+7. Continue monitoring for
+cyanotoxins, reviewing
+and trending data, with
+diligence toward
+treatment to maximize
+cell removal and
+minimize toxin release
+in the plant. For
+extracellular cyanotoxin
+removal, see the tables
+in Appendix B.
+2 American Water Works Association (AWWA). 2011. Operational Control of Coagulation and Filtration Processes: Manual of Water Supply Practices M37. 3rd edition. Denver,
+CO.
+A-6
+Table A-2. Membrane treatment process
+Can my membrane treatment process (microfiltration [MF] or ultrafiltration [UF]) remove cyanobacteria cells / intracellular toxins?
+Step Question If yes If no Comments/Notes
+1. Performance: Does direct or indirect Short term: Can the Continue to next step.
+integrity testing indicate any loss of membranes that
+particle removal effectiveness (LRV, have lost integrity be
+pressure decay, turbidity, particle counts)? cleaned/restored,
+replaced, or
+bypassed? If yes, go
+to the next question.
+Long term: Evaluate
+if replacing the
+affected modules is
+warranted.
+2. Concentrate disposal: Is the reject water Continue to next Consider developing an
+being sent to a location that can handle step. alternative approach to
+high cyanobacteria cell (and potentially handle the concentrate if
+toxin) concentrations? there is concern for high
+Note: if it is recycled and blended with cyanobacteria cell or
+fresh feed water, this will result in higher cyanotoxin
+cyanobacteria cell (and possibly toxin) concentrations.
+loading on the membranes.
+3. Membrane backwashing: can membranes Continue to next Assess options for more Backwash water will contain
+be backwashed more frequently, if step. frequent backwashing. cyanobacteria cells. This may
+needed? Initiate backwash based impact disposal practices.
+Are backwashes initiated based on water on water quality or
+quality, or some other membrane membrane performance
+performance parameter? parameter.
+4a. Membrane cleaning: Can membranes be Continue to next Initiate CIPs based on
+cleaned more frequently, if needed? step. water quality or
+Are clean-in-place (CIP) procedures that membrane performance
+are initiated by water quality, or some parameters. Obtain a
+sufficient quantity of
+A-7
+Step Question If yes If no Comments/Notes
+other parameter in place, and are the chemicals to clean the
+necessary chemicals available? membranes if needed.
+4b. Cleaning solution disposal: Are increased Evaluate the capacity Continue to next step.
+CIP and backwash cleanings anticipated as of the existing waste
+a result of the HAB? disposal system to
+handle the increase.
+5. Membrane pre-treatment: Consider if Perform data-based Continue with using MF or For example, pre-treatment that
+there a need to adjust pre-treatment studies to determine UF to remove intracellular may need adjustment could
+processes during a HAB? the necessary toxins. include physical filters (pre-
+adjustments. filtration – anticipate more
+frequent cleaning during HAB)
+and chemical feeds (if coagulants
+are added to remove organics for
+DBP control, the dose may need
+to be adjusted to also remove
+cyanobacteria – jar testing can
+help optimize the coagulant
+dose).
+6. Continue monitoring for
+cyanotoxins throughout the
+process train, reviewing and
+trending data, and with diligence
+toward making treatment
+adjustments to reduce
+cyanotoxin concentrations in the
+finished water and process train.
+A-8
+Appendix B: Process evaluation for treatment of extracellular toxins.
+These tables (arranged by treatment technology) are intended for systems with cyanobacteria blooms that have a significant portion of the
+cyanotoxins in extracellular form (i.e., outside the cell). The tables can be used as a planning tool, or by systems in the midst of a bloom. The best
+strategy for controlling cyanotoxins will be system specific, but these tables can be used as a starting point to evaluate some common
+approaches. Even if toxins are primarily intracellular, the tables in Appendix B can provide information on treatment for the fraction that exists
+as extracellular toxins; the tables can also be used to address situations involving toxin release due to algaecide or pre-oxidation. The treatment
+processes evaluated in Appendix B can be utilized in combination to increase the removal or destruction of cyanotoxins (particularly using post-
+oxidation as outlined in Table B-4). For removal of intracellular toxins, refer to Section 3.1 and Appendix A: Process evaluation for treatment of
+intracellular toxins for treatment considerations for intracellular toxins.
+It is important to ensure that proper process control monitoring plans are in place prior to implementing any treatment approaches for
+cyanotoxins, so that the impact and effectiveness of treatment can be assessed and informed treatment decisions can be made. Water
+treatment plant staff can design process control monitoring plans for cyanotoxins to best fit their situation (e.g., grab samples and/or online
+instruments depending on location, access, and availability of sampling ports). The monitoring plan should include sampling for cyanotoxins if
+detected in the source water; surrogate parameters, as discussed in Section 2 of the main document; and other process control parameters
+specific to each technology (e.g., chemical dosing, feed rates, residuals, etc.).
+It is also important to coordinate with the appropriate state or primacy agency prior to utilizing new or substantial changes in treatment in
+regard that state’s or primacy agency’s permitting requirements.
+Table B-1. Powdered activated carbon (PAC)
+Can my facility use PAC to treat extracellular cyanotoxins?
+Question If yes If no Comments/Notes
+1. PAC equipment: Continue to next step – for Is this a long-term strategy Document immediate and/or
+Is PAC feed equipment currently in- both immediate (short- that warrants pursuing (i.e., longer-term equipment needs,
+place, or could it be installed in a term) and longer-term possibly for the next bloom if applicable.
+short period of time (i.e., 24-48 implementation of PAC. season)? New PAC feed equipment
+hours)? If PAC feed equipment is should generally be piloted for
+not available in short order, short periods of time prior to
+other treatment strategies implementing on a full-time
+should be considered for basis in order to understand the
+removing extracellular plant’s response to the new
+B-1
+Question If yes If no Comments/Notes
+toxins (see Section 3.2 in equipment and applied dosage
+the document and the other rates.
+tables in Appendix B for
+alternative strategies).
+2. PAC dose: Based on the anticipated Implement dosing protocol Use AWWA’s PAC calculator T&O compounds, NOM, and
+influent cyanotoxin concentration, as determined and and jar testing protocol, the pre-oxidants such as
+has the optimal PAC dose been continue to next step. activated carbon supplier’s permanganate and chlorine can
+determined to achieve treatment recommendation, or affect activated carbon’s ability
+objectives? primacy agency’s to remove extracellular
+recommendation to cyanotoxins.
+estimate an initial optimal Filter breakthrough of PAC fines
+PAC dose. Follow up with may occur as the PAC dose is
+process control monitoring increased. This may limit a plant
+and dose adjustments to from feeding the recommended
+optimize the removal of dose to achieve toxin removal
+cyanotoxins (or surrogate targets. Consider approaches
+parameters). for mitigating this response if it
+occurs (e.g., adding a filter aid
+polymer).
+Is feeder capacity adequate for
+higher feed rates necessary for
+HABs? Coordinate with state
+prior to utilizing new or
+substantial changes in
+treatment in regard to state’s
+permitting requirements.
+3. PAC type: Has the optimal type of Use optimal PAC as Determine optimal type of See discussion of carbon types
+PAC for cyanotoxin adsorption been previously determined and PAC (i.e., as recommended in Section 3.2.1. Wood-based
+identified? continue to next step. by manufacturer, evaluated carbon has been found to be
+through jar testing, used by effective for cyanotoxins but
+a neighboring system) and may not be as effective as other
+any potential supply carbon types for T&O removal.
+issues/limitations. A mixture of carbon types may
+B-2
+Question If yes If no Comments/Notes
+be necessary to achieve all
+treatment objectives during a
+HAB.
+4. PAC supply: Is an adequate supply of Take measures to ensure a Is this a long-term strategy Document immediate and/or
+PAC on-hand? Can more be obtained continued adequate supply that warrants pursuing (i.e., longer-term chemical supply
+quickly (i.e., 24-48 hours), if needed? for the duration of the HAB possibly for the next bloom needs, if applicable.
+and continue to next step. season)? If yes, continue Consider storage/space needs
+with this strategy. and safety in handling/storage.
+If PAC supply is not
+available in short order,
+other treatment strategies
+should be considered for
+removing extracellular
+toxins (see Section 3.2 in
+the document and the other
+tables in Appendix B for
+alternative strategies).
+5. PAC feed and locations: Are there Evaluate the next two Consider a different Ensure that adequate mixing of
+locations in the plant that are questions for optimal approach to removing PAC can be provided.
+practical for feeding PAC at the feed location. extracellular toxins (see
+rate necessary to achieve the needed Section 3.2 in the document
+dose? and the other tables in
+Appendix B for alternative
+strategies).
+5a. PAC contact time: Can PAC be added Use optimal location as It may not be effective to See AWWA’s “PAC Calculator
+in the plant to allow enough contact determined and continue use PAC. Consider for Cyanotoxin Removal”, to be
+time for significant adsorption? Has to next step. alternative approaches for used in conjunction with the
+this been tested? extracellular toxin removal AWWA Cyanotoxin PAC Jar
+(see Section 3.2 in the Testing Protocols, to assist in
+document and the other estimating an appropriate PAC
+tables in Appendix B for dose (CT) during a HAB episode.
+alternative strategies).
+B-3
+Question If yes If no Comments/Notes
+5b. Pre-oxidation: Are pre-oxidants used Stop pre-oxidants, if Continue to next step. Pre-oxidants are often used for
+that may affect PAC performance? possible. Pre-oxidants such a variety of water treatment
+as permanganate and objectives, such as turbidity,
+chlorine can affect TOC, and manganese removal;
+activated carbon’s ability to algae control in the plant; or
+remove extracellular mussel control in intake lines.
+cyanotoxins, and activated Advance planning allows one to
+carbon will reduce the consider how these objectives
+oxidant concentration, will be affected if peroxidation
+possibly rendering it is stopped. Consider whether it
+ineffective as well. is practical to forego meeting
+Evaluate if pre-oxidation some objectives (e.g., mussel
+can be stopped and ensure control) for a short period of
+that other treatment time while addressing the more
+objectives satisfied by pre- immediate cyanotoxin issues.
+oxidant can be addressed.
+If not possible, consider
+alternative approaches to
+removing extracellular
+toxins (see Section 3.2 in
+the document and the
+following tables in
+Appendix B for alternative
+strategies).
+6. Residuals: Can the system handle Continue with using PAC to Estimate the quantity of
+additional sludge from settling basins remove extracellular sludge to be produced
+and more frequent filter cyanotoxins. under the PAC treatment
+backwashes? scheme based on the
+AWWA PAC calculator and
+evaluate the sludge disposal
+capacity of the plant. Can
+these issues be addressed,
+B-4
+Question If yes If no Comments/Notes
+or will this preclude the use
+of PAC?
+7. Continue monitoring for
+cyanotoxins throughout the
+process train, reviewing and
+trending data, with diligence
+toward making treatment
+adjustments to reduce
+cyanotoxin concentrations in
+the finished water and process
+train.
+Table B-2: Granular activated carbon (GAC)
+Can my facility use GAC to treat extracellular cyanotoxins?
+Question If yes If no Comments/Notes
+1. Empty Bed Contact Time (EBCT): Is there a Continue to next Short term: Because the Rapid small-scale column tests
+GAC filter on line that has enough EBCT to step. implementation of a GAC (RSSCTs) or accelerated column
+control a cyanotoxin event (filter adsorber technology takes a tests (ACTs) are tools for
+or post-filter adsorber)? significant time to plan, evaluating adsorption capacity
+permit, and construct; and EBCT for long-term
+consider a different implementation studies.
+approach to removing See Section 3.2.1.2 for discussion
+extracellular toxins (see on GAC.
+Section 3.2 in the
+document and the other
+tables in Appendix B for
+alternative strategies).
+Long term: Utilities
+repeatedly affected by
+cyanotoxins in their
+source water may wish to
+B-5
+Question If yes If no Comments/Notes
+consider adding GAC
+filters as a long-term
+solution. Several factors
+such as plant design,
+financial, and source
+water quality play a role
+in this decision.
+2. Media life: Is there adequate adsorption Continue to next Can the GAC be replaced Media life will vary depending on
+capacity remaining in the GAC? step. quickly? If yes, go to the numerous factors including
+next question. If not, carbon type, source water quality,
+consider a different length of prior operation, and the
+approach to removing desired effluent water quality.
+extracellular toxins (see RSSCTs and ACTs are effective
+Section 3.2 in the tools for evaluating adsorption
+document and the other capacity.
+tables in Appendix B for
+alternative strategies).
+3. Backwashing: Are operational procedures Continue with using Develop backwashing
+in place to backwash the GAC filter(s) and GAC for removing policies, which include
+dispose of the backwash water on a more extracellular criteria for initiating a
+frequent basis, if needed? cyanotoxins. backwash, and planning
+for disposal of backwash
+water.
+4. Continue monitoring for
+cyanotoxins throughout the
+process train, reviewing and
+trending data, and with diligence
+toward making treatment
+adjustments to reduce
+cyanotoxin concentrations in the
+finished water and process train.
+B-6
+Table B-3: High-pressure membranes (reverse osmosis [RO] and nanofiltration [NF])
+Can my facility use high-pressure membranes (i.e., reverse osmosis [RO] or nanofiltration [NF]) to treat extracellular cyanotoxins?
+Question If yes If no Comments/Notes
+1 Membrane Type: Is there a membrane Continue to next Short-term: Because the This table is mainly intended to
+system on line that can remove cyanotoxins step. implementation of a high- provide treatment considerations
+(RO or NF)? pressure membrane for those systems that already
+system takes a significant have RO or NF in place and are
+time to plan, permit, and affected by a HAB. Given that RO
+construct, consider a and NF tend to be expensive and
+different approach to complex/resource-intensive,
+removing extracellular systems will likely find that adding
+toxins (see Section 3.2 in RO or NF membranes to their
+the document and the facility is cost/resource-prohibitive
+other tables in Appendix B
+for alternative strategies).
+Long-term: Assess if RO or
+NF are feasible options for
+cyanotoxin removal.
+RO/NF could be a feasible
+option if it helps meet
+multiple other treatment
+objectives.
+2 Performance: Does the membrane exhibit Continue to next Can the membranes that
+chemical rejections (salts, TOC, specific step. have lost integrity be
+chemicals) that are indicative of cleaned/restored,
+maintaining its original integrity? replaced, or bypassed? If
+yes, go to the next
+question. If not, consider
+a different approach to
+removing extracellular
+toxins (see Section 3.2 in
+the document and the
+B-7
+Question If yes If no Comments/Notes
+other tables in Appendix B
+for alternative strategies).
+3. Concentrate disposal: Is the reject water Continue to next Develop an approach to
+being sent to a location that can handle step. handle concentrate. If not
+high cyanotoxin concentrations? possible, consider a
+different approach to
+removing extracellular
+toxins (see Section 3.2 in
+the document and the
+other tables in Appendix B
+for alternative strategies).
+4a. Membrane cleaning: Can membranes be Continue to next Initiate CIPs based on
+cleaned more frequently, if needed? step. water quality or
+Are clean-in-place (CIP) procedures that are membrane performance
+initiated by water quality, or some other parameters. Obtain a
+parameter in place, and are the necessary sufficient quantity of
+chemicals available? chemicals to clean the
+membranes if needed. If
+this cannot be done
+before the membrane
+fouls, consider a different
+approach to removing
+extracellular toxins (see
+Section 3.2 in the
+document and the other
+tables in Appendix B for
+alternative strategies).
+4b. Cleaning solution disposal: Are increased Evaluate the capacity Continue with using RO or
+CIP and backwash cleanings anticipated? of the existing waste NF for removing
+disposal system to extracellular cyanotoxins.
+handle the increase.
+5. Continue monitoring for
+cyanotoxins throughout the
+B-8
+Question If yes If no Comments/Notes
+process train, reviewing and
+trending data, and with diligence
+toward making treatment
+adjustments to reduce
+cyanotoxin concentrations in the
+finished water and process train.
+Table B-4: Oxidation: Can my facility use oxidation to treat extracellular cyanotoxins?
+The oxidants free chlorine, chloramine, permanganate, ozone and chlorine dioxide are covered in AWWA’s CyanoTOX tool for determining CT.
+See Section III.B.3.0 for discussion on these and other oxidants, such as advanced oxidation processes (AOP). These tables focus on free chlorine
+and chloramine due to their prevalence in the water treatment industry.
+Step Question If yes If no Comments / Notes
+1. Optimal oxidant and application point: Continue to question Continue to question 2.
+Have studies been performed to determine 5.
+the optimal oxidant and application
+location?
+2a. Primary disinfectant: Does the plant Continue and remain Continue to next step. See Section 3.2.4 for discussion on
+currently use free chlorine as a primary mindful of other other oxidants, such as ozone,
+disinfectant (i.e., to achieve CT)? treatment objectives permanganate, chlorine dioxide,
+(e.g., moving the and advanced oxidation processes
+point of chlorination (AOP).
+to prior to removing
+TOC may increase
+DBP formation).
+2b. Secondary disinfectant: Is chlorine used as Continue to next For systems that use See Section 3.2.4 for discussion on
+the secondary disinfectant (i.e., for step. chloramine with other oxidants, such as ozone,
+distribution system residual)? minimal/no free chlorine permanganate, chlorine dioxide,
+contact time, advance and advanced oxidation processes
+planning is important to (AOP).
+best respond to HABs
+because chloramines are
+B-9
+Step Question If yes If no Comments / Notes
+generally not as effective
+at oxidizing cyanotoxins.
+See discussion in Section
+3.2.4.3.
+3. Oxidant feed systems: Is there access to Continue to next Short term: If there is not
+equipment to feed oxidants within the step. enough time to obtain
+next 24 hours? equipment, consider a
+different approach to
+treating extracellular
+toxins (see Section 3.2 in
+the document and the
+other tables in Appendix B
+for alternative strategies).
+Long term: Assess if
+additional oxidation is a
+feasible option for
+cyanotoxin removal.
+Investigate types of
+oxidants, equipment, and
+feed locations.
+4a. Practical feed location: Are there Evaluate the next Short term: If feed points
+locations in the plant that are practical for two questions for cannot be added in time,
+feeding oxidants? optimal location. consider a different
+Consider possible approach to treating
+unintended extracellular toxins (see
+consequences Section 3.2 in the
+related to feeding document and the other
+oxidants (i.e., tables in Appendix B for
+applying chlorine alternative strategies).
+prior to TOC removal Long term: Assess if
+may increase DBP additional oxidation is a
+formation). feasible option for
+cyanotoxin removal.
+B-10
+Step Question If yes If no Comments / Notes
+Investigate types of
+oxidants, equipment, and
+feed locations.
+4b. Contact time: Have the locations that Use optimal location Identify and utilize a feed AWWA’s CyanoTOX tool can be
+provide sufficient contact time been as previously location that maximizes used to estimate CT for
+evaluated? determined contact time and that cyanotoxins. See Section 3.2.4 for a
+doesn’t compromise more detailed discussion.
+other treatment
+objectives (e.g., increase
+DBP formation).
+5. Oxidant dose: Based on influent Continue to next Use AWWA’s CyanoTOX
+concentration, pH, and previous step. tool (which can estimate
+experience, has the optimal oxidant dose CT for cyanotoxins) or
+been determined? follow state’s
+recommendation to
+estimate optimal oxidant
+dose. Further process
+control monitoring of
+cyanotoxins (or surrogate
+parameters) can help to
+determine the optimal
+dose.
+6. Unintended consequences: Are there any Consider adjusting Continue to next step.
+technologies currently used in the plant the planned
+(e.g., PAC, GAC, membranes) that would be oxidation approach
+detrimentally impacted by enhancing the to avoid unintended
+use of oxidation? consequences, or
+consider another
+approach to treating
+extracellular toxins if
+unable to adjust.
+B-11
+Step Question If yes If no Comments / Notes
+7. Oxidant supply: Is there an adequate Begin oxidant dosing, Short term: If time allows
+supply of the oxidant to deliver it at the at optimal dose and during the current HAB,
+intended dose? location as previously purchase oxidant.
+determined Long term: Plan for future
+HABs by ensuring
+adequate supply of
+desired oxidants prior to
+bloom season.
+8. Continue monitoring for
+cyanotoxins throughout the
+process train, reviewing and
+trending data, and with diligence
+toward making treatment
+adjustments to reduce cyanotoxin
+concentrations in the finished
+water and process train.
+B-12

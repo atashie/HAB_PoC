@@ -1,0 +1,2607 @@
+United States Office of Water EPA- 820R15100
+Environmental Mail Code 4304T June 2015
+Protection Agency
+Drinking Water Health Advisory
+for the Cyanobacterial
+Microcystin Toxins
+Drinking Water Health Advisory
+for the Cyanobacterial Microcystin Toxins
+Prepared by:
+U.S. Environmental Protection Agency
+Office of Water (4304T)
+Health and Ecological Criteria Division
+Washington, DC 20460
+EPA Document Number: 820R15100
+Date: June 15, 2015
+ACKNOWLEDGMENTS
+This document was prepared by U.S. EPA Scientists Lesley V. D’Anglada, Dr.P.H. (lead) and
+Jamie Strong, Ph.D. Health and Ecological Criteria Division, Office of Science and Technology,
+Office of Water. EPA gratefully acknowledges the valuable contributions from Health Canada’s
+Water and Air Quality Bureau, in developing the Analytical Methods and Treatment Technologies
+information included in this document.
+This Health Advisory was provided for review and comments were received from staff in the
+following U.S. EPA Program Offices:
+U.S. EPA Office of Ground Water and Drinking Water
+U.S. EPA Office of Science and Technology
+U.S. EPA Office of Research and Development
+U.S. EPA Office of Children’s Health Protection
+U.S. EPA Office of General Counsel
+This Health Advisory was provided for review and comments were received from the following
+other federal and health agencies:
+Health Canada
+U.S. Department of Health and Human Services, Centers for Disease Control and
+Prevention
+Drinking Water Health Advisory for Microcystins-June 2015 i
+TABLE OF CONTENTS
+ACKNOWLEDGMENTS .................................................................................................................I
+TABLE OF CONTENTS ................................................................................................................. II
+LIST OF TABLES .......................................................................................................................... IV
+LIST OF FIGURES ........................................................................................................................ IV
+ABBREVIATIONS AND ACRONYMS ........................................................................................ V
+EXECUTIVE SUMMARY .............................................................................................................. 1
+1.0 INTRODUCTION AND BACKGROUND ......................................................................... 3
+1.1 Current Criteria, Guidance and Standards ........................................................................ 3
+2.0 PROBLEM FORMULATION.............................................................................................. 6
+2.1 Cyanobacteria and Production of Microcystins ................................................................ 6
+2.2 Physical and Chemical Properties ..................................................................................... 6
+2.3 Sources and Occurrence .................................................................................................... 9
+2.3.1 Occurrence in Surface Water ...................................................................................... 10
+2.3.2 Occurrence in Drinking Water .................................................................................... 13
+2.4 Environmental Fate ......................................................................................................... 14
+2.4.1 Persistence................................................................................................................... 14
+2.4.2 Mobility....................................................................................................................... 15
+2.5 Nature of the Stressor-Characteristics of the Microcystin Toxins .................................. 15
+2.5.1 Toxicokinetics ............................................................................................................. 15
+2.5.2 Noncancer Health Effects Data ................................................................................... 16
+2.5.2.1 Human Studies .................................................................................................... 16
+2.5.2.2 Animal Studies .................................................................................................... 17
+2.5.3 Mode of Action for Noncancer Health Effects ........................................................... 18
+2.5.4 Carcinogenicity Data .................................................................................................. 18
+2.6 Conceptual Model for Microcystins ............................................................................... 19
+2.6.1 Conceptual Model Diagram ........................................................................................ 20
+2.6.2 Factors Considered in the Conceptual Model for Microcystins ................................. 22
+2.7 Analysis Plan .................................................................................................................. 23
+3.0 HEALTH EFFECTS ASSESSMENT ................................................................................ 26
+3.1 Dose-Response ................................................................................................................ 26
+3.1.1 Study Selection ........................................................................................................... 26
+3.1.2 Endpoint Selection ...................................................................................................... 28
+3.2 Ten-day Health Advisory ................................................................................................ 28
+3.2.1 Bottle-fed Infants and Young Children of Pre-school Age ........................................ 28
+3.2.2 School-age Children through Adults .......................................................................... 29
+3.2.3 Uncertainty Factor Application ................................................................................... 29
+4.0 RISK CHARACTERIZATION .......................................................................................... 31
+4.1 Use of microcystin-LR as a surrogate for total microcystins ......................................... 31
+Drinking Water Health Advisory for Microcystins-June 2015 ii
+4.2 Consideration of Study Duration .................................................................................... 31
+4.3 Consideration of Reproductive Effects as Endpoint ....................................................... 32
+4.4 Allometric Scaling Approach ......................................................................................... 33
+4.5 Benchmark Dose (BMD) Modeling Analysis................................................................. 33
+4.6 Carcinogenicity Evaluation ............................................................................................. 33
+4.7 Uncertainty and Variability............................................................................................. 34
+4.8 Susceptibility................................................................................................................... 35
+4.9 Distribution of Body Weight and Drinking Water Intake by Age .................................. 35
+4.10 Distribution of Potential Health Advisory Values by Age ............................................. 36
+5.0 ANALYTICAL METHODS .............................................................................................. 38
+6.0 TREATMENT TECHNOLOGIES ..................................................................................... 41
+6.1 Management and Mitigation of Cyanobacterial Blooms in Source Water ..................... 41
+6.2 Drinking Water Treatment .............................................................................................. 42
+6.2.1 Conventional Treatment for Microcystins .................................................................. 43
+6.2.2 Adsorption................................................................................................................... 44
+6.2.3 Chemical Oxidation .................................................................................................... 45
+6.2.4 Other Filtration Technologies ..................................................................................... 46
+6.2.5 Combined Treatment Technologies ............................................................................ 47
+6.3 Point-of-Use (POU) Drinking Water Treatment Units ................................................... 48
+7.0 REFERENCES ................................................................................................................... 49
+Drinking Water Health Advisory for Microcystins-June 2015 iii
+LIST OF TABLES
+Table 1-1. International Guideline Values for Microcystins ............................................................ 4
+Table 1-2. State Guideline Values for Microcystins ......................................................................... 5
+Table 2-1. Abbreviations for Microcystins (Yuan et al., 1999) ........................................................ 8
+Table 2-2. Chemical and Physical Properties of Microcystin-LR .................................................... 9
+Table 2-3. States surveyed as part of the 2007 National Lakes Assessment with water body
+Microcystin concentrations above the WHO advisory guideline level for recreational water
+of 10 µg/L (U.S. EPA, 2009) .................................................................................................. 11
+Table 3-1. Liver Weights and Serum Enzyme Levels in Rats Ingesting Microcystin-LR in
+Drinking Water (Heinze, 1999) .............................................................................................. 27
+Table 3-2. Histological Evaluation of the Rat Livers after Ingesting Microcystin-LR in Drinking
+Water (Heinze, 1999) .............................................................................................................. 27
+LIST OF FIGURES
+Figure 2-1. Structure of Microcystin (Kondo et al., 1992) ............................................................... 7
+Figure 2-2. Structure of the amino acids Adda and Mdha (Harada et al., 1991) .............................. 8
+Figure 2-3. Conceptual Model of Exposure Pathways to Microcystins in Drinking Water ........... 21
+Figure 4-1. 90th Percentile Drinking Water Ingestion Rates by Age Group ................................... 35
+Figure 4-2. Ten-day Health Advisories for Microcystins by Age Group ....................................... 37
+Drinking Water Health Advisory for Microcystins-June 2015 iv
+ABBREVIATIONS AND ACRONYMS
+Γgt Γ-Glutamyltransferase
+A Alanine
+Adda 3-Amino-9-Methoxy-2,-6,-8-,Trimethyl-10-Phenyldeca-4,-6-Dienoic Acid
+ALT Alanine Aminotransferase
+ALP Alkaline Phosphatase
+AST Aspartate Aminotransferase
+AWWARF American Water Works Association Research Foundation
+BMD Benchmark Dose
+BMDL Benchmark Dose Level
+BW Body Weight
+Clo Chlorine Dioxide
+2
+CAS Chemical Abstracts Service
+CASA Computer-Assisted Sperm Analysis
+CCL Contaminant Candidate List
+CWA Clean Water Act
+DBP Disinfection By-Products
+DL Detection Limit
+EBCT Empty Bed Contact Time
+ELISA Enzyme-Linked Immunosorbent Assay
+EPA U.S. Environmental Protection Agency
+FSH Follicle Stimulating Hormone
+g Gram
+GC/MS Gas Chromatograph/Mass Spectrometry
+GAC Granular Activated Carbon
+GLERL Great Lakes Environmental Research Laboratory
+H O Hydrogen Peroxide
+2 2
+HA Health Advisory
+HAB Harmful Algal Bloom
+HESD Health Effects Support Document
+HPLC High-Performance Liquid Chromatography
+IARC International Agency for Research on Cancer
+i.p. Intraperitoneal
+Kg Kilogram
+L Leucine
+LC/MS Liquid Chromatography/Mass Spectrometry
+LDH Lactate Dehydrogenase
+LD Lethal Dose to 50% of Organisms
+50
+LH Luteinizing Hormone
+LOAEL Lowest-Observed-Adverse-Effect Level
+MC-LA Microcystin-LA
+MC-LR Microcystin-LR
+MC-RR Microcystin-RR
+MC-YR Microcystin-YR
+MC-YM Microcystin-YM
+Drinking Water Health Advisory for Microcystins-June 2015 v
+Mdha Methyldehydroalanine
+MERHAB-LGL Monitoring and Event Response to Harmful Algal Blooms in the Lower
+Great Lakes
+µg Microgram
+µm Micromole
+LOQ Level of Quantification
+Mdls Method Detection Limit
+mg Milligram
+ml Milliliter
+MMPB 2-methyl-3-methoxy-4-phenylbutyric acid
+MOA Mode of Action
+MF Microfiltration
+MWCO Molecular Weight Cut-Off
+NDEA N-Nitrosodiethylamine
+NF Nanofiltration
+NLA National Lakes Assessment
+NOAA National Oceanic and Atmospheric Administration
+NOAEL No-Observed-Adverse-Effect Level
+NOD Nodularin
+NOM Natural Organic Material
+OATp Organic Acid Transporter Polypeptides
+PAC Powdered Activated Carbon
+PAS Periodic Acid-Schiff
+PBS Phosphate-Buffered Saline
+PDA Photodiode Array Detector
+P-GST glutathione S-transferase placental form-positive
+POD Point of Departure
+POU Point-of-Use
+PP2 Protein Phosphatase 2A
+PP1 Protein Phosphatase 1
+PPIA Protein Phosphatase Inhibition Assays
+RfD Reference Dose
+RO Reverse Osmosis
+ROS Reactive Oxygen Species
+SDWA Safe Drinking Water Act
+SPE Solid-Phase Extraction
+TEF Toxicity Equivalency Factors
+TOC Total Organic Carbon
+TOXLINE Toxicology Literature Online
+TUNEL Terminal Deoxynucleotidyl Transferase-Mediated dUTP-Biotin Nick End-
+Labeling Assay
+UF Uncertainty Factor
+UF Ultrafiltration
+USGS United States Geological Survey
+UV Ultraviolet
+WHO World Health Organization
+Drinking Water Health Advisory for Microcystins-June 2015 vi
+EXECUTIVE SUMMARY
+Microcystins are toxins produced by a number of cyanobacteria species, including
+members of Microcystis, Anabaena, Nodularia, Nostoc, Oscillatoria, Fischerella, Planktothrix,
+and Gloeotrichia. Approximately 100 microcystin congeners exist, which vary based on amino
+acid composition. Microcystin-LR is one of the most potent congeners and the majority of
+toxicological data on the effects of microcystins are available for this congener.
+Many environmental factors such as the ratio of nitrogen to phosphorus, temperature,
+organic matter availability, light attenuation and pH play an important role in the development of
+microcystin blooms, both in fresh and marine water systems and could encourage toxin
+production. Microcystins are water soluble and tend to remain contained within the cyanobacterial
+cell (intracellular), until the cell breaks and they are released into the water (extracellular).
+This Health Advisory (HA) for microcystins is focused on drinking water as the primary
+source of exposure. Exposure to cyanobacteria and their toxins may also occur by ingestion of
+toxin-contaminated food, including consumption of fish, and by inhalation and dermal contact
+during bathing or showering and during recreational activities in waterbodies with the toxins.
+While these types of exposures cannot be quantified at this time, they are assumed to contribute
+less to the total cyanotoxin exposures than ingestion of drinking water. Due to the seasonality of
+cyanobacterial blooms, exposures are not expected to be chronic.
+Limited data in humans and animals demonstrate the absorption of microcystins from the
+intestinal tract and distribution to the liver, brain, and other tissues. Elimination from the body
+requires facilitated transport using receptors belonging to the Organic Acid Transporter
+polypeptide (OATp) family. Data for humans and other mammals suggest that the liver is a
+primary site for binding these proteins (i.e., increased liver weight in laboratory animals and
+increased serum enzymes in laboratory animals and humans). Once inside the cell, these toxins
+covalently bind to cytosolic proteins (PP1 and PP2) resulting in their retention in the liver.
+Limited data are available on the metabolism of microcystins, but most of the studies indicate that
+microcystins can be conjugated with glutathione and cysteine to increase their solubility and
+facilitate excretion.
+The main source of human health effects data for microcystins is from acute recreational
+exposure to cyanobacterial blooms. Symptoms include headache, sore throat, vomiting and
+nausea, stomach pain, dry cough, diarrhea, blistering around the mouth, and pneumonia.
+However, human data on the oral toxicity of microcystins are limited and confounded by:
+potential co-exposure to other contaminants; a lack of quantitative information; and other
+confounding factors. Reports of human intravenous exposure to dialysate prepared with
+microcystin-contaminated water indicated acute liver failure and death in a large number of the
+exposed patients.
+Studies in laboratory animals demonstrate liver, kidney, and reproductive effects
+following short-term and subchronic oral exposures to microcystin-LR. Studies evaluating the
+chronic toxicity of microcystins have not shown clinical signs of toxicity and are limited by study
+design and by the lack of quantitative data.
+Drinking Water Health Advisory for Microcystins-June 2015 1
+The U.S. Environmental Protection Agency (EPA) identified a study by Heinze (1999)
+conducted on rats as the critical study used in the derivation of the reference dose (RfD) for
+microcystins. The critical effects identified in the study are increased liver weight, slight to
+moderate liver lesions with hemorrhages, and increased enzyme levels as a result of exposure to
+microcystin-LR. The lowest-observed-adverse-effect level (LOAEL) was determined to be 50
+μg/kg/day, based on these effects. The drinking water route of exposure matches potential
+drinking water exposure scenarios in humans. The total uncertainty factor (UF) applied to the
+LOAEL was 1000. This was based on a UF of 10 for intraspecies variability, a UF of 10 for
+interspecies variability, a UF of 3 (10½) for extrapolation from a LOAEL to no-observed-adverse-
+effect level (NOAEL), and a UF of 3 (10½) to account for deficiencies in the database. EPA is
+using microcystin-LR as a surrogate for other microcystin congeners. Therefore, the HA based on
+this critical study applies to total microcystins.
+EPA is issuing a Ten-day HA for microcystins based on the Heinze (1999) short-term, 28-
+day study. Studies of a duration of 7 to 30 days are typically used to derive Ten-day HAs. The HA
+is consistent with this duration and appropriately matches human exposure scenarios for
+microcystins in drinking water. Cyanobacterial blooms are usually seasonal, typically occurring
+from May through October. Microcystins typically have a half-life of 4 days to 14 days in surface
+waters, (depending on the degree of sunlight, natural organic matter, and the presence of bacteria)
+and can be diluted via transport. In addition, concentrations in finished drinking water can be
+reduced by drinking water treatment and management measures.
+The Ten-day HA value for bottle-fed infants and young children of pre-school age is 0.3
+µg/L and for school-age children through adults is 1.6 µg/L for microcystins. The two advisory
+values use the same toxicity data (RfD) and represent differences in drinking water intake and
+body weight for different life stages. The first advisory value is based on the summation of the
+time-weighted drinking water intake/body weight ratios for birth to <12 months of age. The
+second advisory value is based on the mean body weight and 90th percentile drinking water
+consumption rates for adults age 21 and over (U.S. EPA’s Exposure Factors Handbook (2011a)),
+which is similar to that of school-aged children. Populations such as pregnant women and nursing
+mothers, the elderly, and immune-compromised individuals or those receiving dialysis treatment
+may be more susceptible than the general population to the health effects of microcystins. As a
+precautionary measure, individuals that fall into these susceptible groups may want to consider
+following the recommendations for children pre-school age and younger. This HA is not a
+regulation, it is not legally enforceable, and it does not confer legal rights or impose legal
+obligations on any party.
+Applying the U.S. EPA (2005) Guidelines for Carcinogen Risk Assessment, there is
+inadequate information to assess carcinogenic potential of microcystins. The few available
+epidemiological studies are limited by their study design, poor measures of exposure, potential
+co-exposure to other contaminants, and the lack of control for confounding factors. No long term
+animal studies were available to evaluate dose-response for the tumorigenicity of microcystins
+following lifetime exposures. Other studies evaluating the tumor promotion potential of
+microcystin found an increase in the number and/or size of GST-P positive foci observed. In two
+promotion studies, microcystin-LR alone showed no initiating activity.
+Drinking Water Health Advisory for Microcystins-June 2015 2
+1.0 INTRODUCTION AND BACKGROUND
+EPA developed the non-regulatory Health Advisory (HA) Program in 1978 to provide
+information for public health officials or other interested groups on pollutants associated with
+short-term contamination incidents or spills for contaminants that can affect drinking water
+quality, but are not regulated under the Safe Drinking Water Act (SDWA). At present, EPA lists
+HAs for 213 contaminants (http://water.epa.gov/drink/standards/hascience.cfm).
+HAs identify the concentration of a contaminant in drinking water at which adverse health
+effects are not anticipated to occur over specific exposure durations (e.g., one-day, ten-days, and a
+lifetime). HAs serve as informal technical guidance to assist Federal, State and local officials, and
+managers of public or community water systems in protecting public health when emergency
+spills or contamination situations occur. An HA provides information on the environmental
+properties, health effects, analytical methodology, and treatment technologies for removal of
+drinking water contaminants.
+The Health Effects Support Document for Microcystins (U.S.EPA, 2015a) is the peer-
+reviewed, effects assessment that supports this HA. This document is available at
+http://www2.epa.gov/nutrient-policy-data/health-and-ecological-effects. The HAs are not legally
+enforceable Federal standards and are subject to change as new information becomes available.
+The structure of this Health Advisory is consistent with EPA’s Framework for Human Health
+Risk Assessment to Inform Decision Making (U.S.EPA, 2014).
+EPA is releasing the Recommendations for Public Water Systems to Manage Cyanotoxins
+in Drinking Water (U.S. EPA, 2015b) as a companion to the HAs for microcystins and
+cylindrospermopsin. The document is intended to assist public drinking water systems (PWSs)
+that choose to develop system-specific plans for evaluating their source waters for vulnerability to
+contamination by microcystins and cylindrospermopsin. It is designed to provide information and
+a framework that PWSs and others as appropriate may consider to inform their decisions on
+managing the risks from cyanotoxins in drinking water.
+1.1 Current Criteria, Guidance and Standards
+Currently there are no U.S. federal water quality criteria, or regulations for cyanobacteria
+or cyanotoxins in drinking water under the SDWA or in ambient waters under the Clean Water
+Act (CWA). The Safe Drinking Water Act (SDWA), as amended in 1996, requires the EPA to
+publish a list of unregulated contaminants every five years that are not subject to any proposed or
+promulgated national primary drinking water regulations, which are known or anticipated to occur
+in public water systems, and which may require regulation. This list is known as the Contaminant
+Candidate List (CCL). The EPA’s Office of Water included cyanobacteria and cyanotoxins on the
+first and second CCL (CCL 1, 1998; CCL 2, 2005). EPA included cyanotoxins, including
+anatoxin-a, cylindrospermopsin, and microcystin-LR, on CCL 3 (2009) and the draft CCL 4
+(April 2015 for consideration).
+Drinking Water Health Advisory for Microcystins-June 2015 3
+SDWA requires the Agency to make regulatory determinations on at least five CCL
+contaminants every five years. When making a positive regulatory determination, EPA
+determines whether a contaminant meets three criteria:
+• The contaminant may have an adverse effect on the health of persons,
+• The contaminant is known to occur or there is substantial likelihood the contaminant
+will occur in public water systems with a frequency and at levels of concern, and
+• In the sole judgment of the Administrator, regulating the contaminant presents a
+meaningful opportunity for health risk reductions.
+To make these determinations, the Agency uses data to analyze occurrence (prevalence
+and magnitude) and health effects. EPA continues gathering this information to inform future
+regulatory determinations for cyanotoxins under the SDWA. The SDWA also provides the
+authority for EPA to publish non-regulatory HAs or take other appropriate actions for
+contaminants not subject to any national primary drinking water regulation. EPA is providing this
+HA and the HA for cylindrospermopsin to assist State and local officials in evaluating risks from
+these contaminants in drinking water.
+Internationally, eighteen countries and three U.S. states have developed drinking water
+guidelines for microcystins, as shown in Table 1.1 and Table 1.2, respectively, based on lifetime
+exposures.
+Table 1-1. International Guideline Values for Microcystins
+Country Guideline Value Source
+Brazil, China, Czech Republic, Based on the World Health
+1.0 μg/L
+Denmark, Finland, France, Germany, Organization (WHO) Provisional
+microcystin-LR
+Italy, Japan, Korea, Netherlands, Guideline Value of 1ug/L for
+Norway, New Zealand, Poland, drinking water
+South Africa, and Spain (WHO, 1999; 2003)
+1.3 μg/L microcystin- Australian Drinking Water
+Australia LR (toxicity Guidelines 6
+equivalents) (NHMRC, NRMMC, 2011)
+Guidelines for Canadian
+Drinking Water Quality:
+1.5 μg/L Supporting Documentation
+Canada
+microcystin-LR Cyanobacterial Toxins-
+Microcystin-LR
+(Health Canada, 2002)
+Drinking Water Health Advisory for Microcystins-June 2015 4
+Table 1-2. State Guideline Values for Microcystins
+State Guideline Value Source
+Minnesota 0.04 µg/L Microcystin-LR Minnesota Department of Health (MDH, 2012)
+Public Water System Harmful Algal Bloom
+Ohio 1 µg/L Microcystin
+Response Strategy (Ohio EPA, 2014)
+Public Health Advisory Guidelines, Harmful Algae
+Oregon 1 µg/L Microcystin-LR
+Blooms in Freshwater Bodies. (OHA, 2015)
+For drinking water, the provisional WHO Guideline value for microcystin-LR of 1 μg/L
+(or the underlying Tolerable Daily Intake (TDI) of 0.04 μg/kg) has been widely used as the basis
+for national standards or guideline values (WHO, 1999, 2003). Following the release of the WHO
+provisional guideline, drinking-water standards or national guideline values were adopted in 16
+countries. Australia and Canada have used the TDI, but have adapted other factors in the
+calculation to reflect their national circumstances (e.g. body weight or amounts of water
+consumed), thus reaching somewhat higher guidance values or standards (Chorus, 2012). A few
+countries have issued guideline values specifically for microcystin-LR while others use
+microcystin-LR as a surrogate for all microcystin congeners (i.e. toxicity equivalents). Values are
+similar across all countries, ranging between 1.0 and 1.5 μg/L based on lifetime exposures.
+Drinking Water Health Advisory for Microcystins-June 2015 5
+2.0 PROBLEM FORMULATION
+The development of the HA begins with problem formulation, which provides a strategic
+framework by focusing on the most relevant cyanotoxin properties and endpoints identified in the
+Health Effects Support Document for Microcystins (U.S. EPA, 2015a).
+2.1 Cyanobacteria and Production of Microcystins
+Cyanobacteria, formerly known as blue-green algae (Cyanophyceae), are a group of
+bacteria with chlorophyll-a capable of photosynthesis (light and dark phases) (Castenholz and
+Waterbury, 1989). Most cyanobacteria are aerobic photoautotrophs, requiring only water, carbon
+dioxide, inorganic nutrients and light for survival, while others have heterotrophic properties and
+can survive long periods in complete darkness (Fay, 1965). Some species are capable of nitrogen
+fixation (diazotrophs) (Duy et al., 2000), producing inorganic nitrogen compounds for the
+synthesis of nucleic acids and proteins. Cyanobacteria can form symbiotic associations with
+animals and plants, such as fungi, bryophytes, pteriodophytes, gymnosperms and angiosperms
+(Rai, 1990), supporting their growth and reproduction (Sarma, 2013; Hudnell, 2008; Hudnell,
+2010).
+Under the right conditions of pH, nutrient availability, light, and temperature,
+cyanobacteria can reproduce quickly forming a bloom. Although studies of the impact of
+environmental factors on cyanotoxin production are ongoing, nutrient (N, P and trace metals)
+supply rates, light, temperature, oxidative stressors, interactions with other biota (viruses, bacteria
+and animal grazers), and most likely, the combined effects of these factors are all involved (Paerl
+and Otten 2013a; 2013b). Fulvic and humic acids reportedly encourage cyanobacteria growth
+(Kosakowska et al., 2007).
+Microcystins are produced by several cyanobacterial species, including Anabaena,
+Fischerella, Gloeotrichia, Nodularia, Nostoc, Oscillatoria, members of Microcystis, and
+Planktothrix (Duy et al., 2000; Codd et al., 2005; Stewart et al., 2006a; Carey et al., 2012).
+2.2 Physical and Chemical Properties
+The cyclic peptides include around 100 congeners of microcystins. Table 2-1 lists only the
+most common microcystins congeners. Figure 2-1 provides the structure of microcystin where X
+and Y represent variable amino acids. Although substitutions mostly occur in positions X and Y,
+other modifications have been reported for all of the amino acids (Puddick et al., 2015). The
+amino acids are joined end-to-end and then head to tail to form cyclic compounds that are
+comparatively large (molecular weights ranging from ~800 to 1,100 g/mole).
+Drinking Water Health Advisory for Microcystins-June 2015 6
+Figure 2-1. Structure of Microcystin (Kondo et al., 1992)
+Microcystin congeners vary based on their amino acid composition and through
+methylation or demethylation at selected sites within the cyclic peptide (Duy et al., 2000). The
+variations in composition and methylation account for the large number of toxin congeners. The
+microcystins are named based on their variable amino acids, although they have had many other
+names (Carmichael et al., 1988). For example, microcystin-LR, the most common congener,
+contains leucine (L) and arginine (R) (Carmichael, 1992). The letters used to identify the variable
+amino acids are the standard single letter abbreviations for the amino acids found in proteins. The
+variable amino acids are usually the L-amino acids as found in proteins. In this HA, the term
+microcystin may be followed by the abbreviations for the variable amino acids. For example,
+microcystin-LR is for the microcystin with leucine in the X position of Figure 2-1 and arginine in
+the Y position. Most research has concentrated on microcystin-LR, with lesser amounts of data
+available for the other amino acid combinations. For the purpose of this HA, microcystin-LR is
+used as the surrogate for total microcystins.
+Structurally, the microcystins are monocyclic heptapeptides that contain seven amino
+acids: two variable L-amino acids, three common D-amino acids or their derivatives, and two
+novel D-amino acids. These two D-amino acids are: 3S-amino-9S-methoxy-2,6,8S,-trimethyl-10-
+phenyldeca-4,6-dienoic acid (Adda) and methyldehydroalanine (Mdha). Adda is characteristic of
+all toxic microcystin structural congeners and is essential for their biological activity (Rao et al.,
+2002; Funari and Testai, 2008). Mdha plays an important role in the ability of the microcystins to
+inhibit protein phosphatases. Figure 2-2 illustrates the structures of these two unique amino acid
+microcystin components.
+Microcystins are water soluble. In aquatic environments, the cyclic peptides tend to
+remain contained within the cyanobacterial cell and are released in substantial amounts only upon
+cell lysis. The microcystins are most frequently found in cyanobacterial blooms in fresh and
+brackish waters (WHO, 1999). Table 2-2 provides chemical and physical properties of
+microcystin-LR.
+Drinking Water Health Advisory for Microcystins-June 2015 7
+Table 2-1. Abbreviations for Microcystins (Yuan et al., 1999)
+Microcystin Congeners Amino Acid in X Amino Acid in Y
+Microcystin-LR Leucine Arginine
+Microcystin-RR Arginine Arginine
+Microcystin-YR Tyrosine Arginine
+Microcystin-LA Leucine Alanine
+Microcystin-LY Leucine Tyrosine
+Microcystin-LF Leucine Phenylalanine
+Microcystin-LW Leucine Tryptophan
+Figure 2-2. Structure of the amino acids Adda and Mdha (Harada et al., 1991).
+Adda Mdha
+Drinking Water Health Advisory for Microcystins-June 2015 8
+Table 2-2. Chemical and Physical Properties of Microcystin-LR
+Property Microcystin-LR
+Chemical Abstracts Registry (CAS) # 101043-37-2
+Chemical Formula C H N O
+49 74 10 12
+Molecular Weight 995.17 g/mole
+Color/Physical State Solid
+Boiling Point N/A
+Melting Point N/A
+Density 1.29 g/cm3
+Vapor Pressure at 25°C N/A
+Henry’s Law Constant N/A
+K N/A
+ow
+K N/A
+oc
+Solubility in Water Highly
+Other Solvents Ethanol and methanol
+Sources: Chemical Book, 2012; TOXLINE, 2012
+2.3 Sources and Occurrence
+Cyanotoxin production is strongly influenced by the environmental conditions that
+promote growth of particular cyanobacterial species and strain. Nutrient concentrations, light
+intensity, water turbidity, temperature, competing bacteria and phytoplankton, pH, turbulence,
+and salinity are all factors that affect cyanobacterial growth and change in cyanobacteria
+population dynamics. Although environmental conditions affect the formation of blooms, the
+numbers of cyanobacteria and toxin concentrations produced are not always closely related.
+Cyanotoxin concentrations depend on the dominance and diversity of strains within the bloom
+along with environmental and ecosystem influences on bloom dynamics (Hitzfeld et al., 2000;
+Chorus et al., 2000; WHO, 1999). Extracellular microcystins (either dissolved in water or bound
+to other materials) typically make up less than 30% of the total microcystin concentration in
+source water (Graham et al., 2010). Most of the toxin is intracellular, and released into the water
+when the cells rupture or die. Both intracellular and extracellular microcystins may also be
+present in treated water, depending on the type of treatment processes in place.
+Drinking Water Health Advisory for Microcystins-June 2015 9
+2.3.1 Occurrence in Surface Water
+Microcystins are the most common cyanotoxin found worldwide and have been reported
+in surface waters in most of the U.S. and Europe (Funari and Testai, 2008). Dry-weight
+concentrations of microcystins in surface freshwater cyanobacterial blooms or surface freshwater
+samples reported worldwide between 1985 and 1996 ranged from 1 to 7,300 µg/g. Water
+concentrations of extracellular plus intracellular microcystins ranged from 0.04 to 25,000 µg/L.
+The concentration of extracellular microcystins ranged from 0.02 to a high of 1,800 µg/L reported
+following treatment of a large cyanobacteria bloom with algaecide (WHO, 1999) and the U.S.
+Geological Survey (USGS) reported a concentration of 150,000 µg/L total microcystins, in a lake
+in Kansas (Graham et al., 2012).
+According to a survey conducted in Florida in 1999 between the months of June and
+November, the most frequently observed cyanobacteria were Microcystis (43.1%),
+Cylindrospermopsis (39.5%), and Anabaena spp (28.7%) (Burns, 2008). Of 167 surface water
+samples taken from 75 waterbodies, 88 samples were positive for cyanotoxins. Microcystin was
+the most commonly found cyanotoxin in water samples collected, occurring in 87 water samples.
+In 2002, the Monitoring and Event Response to Harmful Algal Blooms in the Lower Great
+Lakes (MERHAB-LGL) project evaluated the occurrence and distribution of cyanobacterial
+toxins in the lower Great Lakes region (Boyer, 2007). Analysis for total microcystins was
+performed using Protein Phosphatase Inhibition Assay (PPIA). Microcystins were detected in at
+least 65% of the samples, mostly in Lake Erie, Lake Ontario, and Lake Champlain. The National
+Oceanic and Atmospheric Administration (NOAA) Center of Excellence for Great Lakes and
+Human Health (CEGLHH) continues to monitor the Great Lakes and regularly samples algal
+blooms for microcystin in response to bloom events.
+A 2004 study of the Great Lakes found high levels of cyanobacteria during the month of
+August (Makarewicz et al., 2006). Microcystin-LR was analyzed by PPIA (limit of detection of
+0.003 µg/L) and was detected at levels of 0.084 μg/L in the nearshore and 0.076 μg/L in the bays
+and rivers. This study reported higher levels of microcystin-LR (1.6 to 10.7μg/L) in smaller lakes
+in the Lake Ontario watershed.
+In 2006, the USGS conducted a study of 23 lakes in the Midwestern U.S. in which
+cyanobacterial blooms were sampled to determine the co-occurrence of toxins in cyanobacterial
+blooms (Graham et al., 2010). This study reported that microcystins were detected in 91% of the
+lakes sampled. Mixtures of all the microcystin congeners measured (LA, LF, LR, LW, LY, RR,
+and YR) were common and all the congeners were present in association with the blooms.
+Microcystin--LR and –RR were the dominant congeners detected with mean concentrations of
+104 and 910 µg/L, respectively.
+EPA’s National Aquatic Resource Surveys (NARS) generate national estimates of
+pollutant occurrence every 5 years. In 2007, the National Lakes Assessment (NLA) conducted the
+first-ever national probability-based survey of the nation's lakes, ponds and reservoirs (U.S.EPA,
+2009). This baseline study of the condition of the nation’s lakes provided estimates of the
+condition of natural and man-made freshwater lakes, ponds, and reservoirs greater than 10 acres
+and at least one meter deep. A total of 1,028 lakes were sampled in the NLA during the summer
+Drinking Water Health Advisory for Microcystins-June 2015 10
+of 2007. The NLA measured microcystins using Enzyme Linked Immunosorbent Assays (ELISA)
+with a detection limit of 0.1 µg/L as well as cyanobacterial cell counts and chlorophyll-a
+concentrations, which were indicators of the presence of cyanobacterial toxins. Samples were
+collected in open water at mid-lake. Due to the design of the survey, no samples were taken
+nearshore or in other areas where scums were present.
+A total of 48 states were sampled in the NLA, and states with lakes reporting microcystins
+levels above the WHO’s moderate risk1 threshold in recreational water (>10 µg/L) are shown in
+Table 2-3. Microcystins were present in 30% of the lakes sampled nationally, with sample
+concentrations that ranged from the limit of detection (0.1 µg/L) to 225 µg/L. Two states (North
+Dakota and Nebraska), had 9% of samples above 10 µg/L. Other states including Iowa, Texas,
+South Dakota, and Utah also had samples that exceeded 10 µg/L. Several samples in North
+Dakota, Nebraska, and Ohio exceeded the WHO high risk threshold value for recreational waters
+of 20 µg/L (192 and 225 µg/L, respectively). EPA completed a second survey of lakes in 2012,
+but data have not yet been published.
+Microcystins have been detected in most of the states of the U.S., and over the years many
+studies have been done to determine their occurrence in surface water. USGS, for example, did a
+study in the Upper Klamath Lake in Oregon in 2007 and detected total microcystin concentrations
+between 1 µg/L and 17 µg/L (VanderKooi et al., 2010). USGS also monitored Lake Houston in
+Texas from 2006 to 2008, and found microcystins in 16% of samples with concentrations less
+than or equal to 0.2 µg/L (Beussink and Graham, 2011). In 2011, USGS conducted a study on the
+upstream reservoirs of the Kansas River, a primary source of drinking water for residents in
+northeastern Kansas, to characterize the transport of cyanobacteria and associated compounds
+(Graham et al., 2012). Concentrations of total microcystin were low in the majority of the
+tributaries with the exception of Milford Lake, which had higher total microcystin concentrations,
+some exceeding the Kansas recreational guidance level of 20 µg/L. Upstream from Milford Lake,
+a cyanobacterial bloom was observed with a total microcystin concentration of 150,000 µg/L.
+When sampled a week later, total microcystin concentrations were less than 1 µg/L. The study
+authors indicated that this may be due to dispersion of microcystins through the water column or
+to other areas, or by degradation of microcystins via abiotic and biological processes. Samples
+taken during the same time from outflow waters contained total microcystin concentrations of 6.2
+µg/L.
+In 2005, Washington State Department of Ecology developed the Ecology Freshwater
+Algae Program to focus on the monitoring and management of cyanobacteria in Washington
+lakes, ponds, and streams (WSDE, 2012). The data collected have been summarized in a series of
+reports for the Washington State Legislature (Hamel, 2009, 2012). Microcystin levels ranged
+from the detection limit (0.05 µg/L) to 4,620 µg/L in 2008, 18,700 µg/L in 2009, 853 µg/L in
+2010, and 26,400 µg/L in 2011.
+1 The WHO established guideline values for recreational exposure to cyanobacteria using a three-tier approach: low
+risk (<20,000 cyanobacterial cells/ml corresponding to <10 µg/L of MC-LR); moderate risk (20,000-100,000
+cyanobacterial cells/ml corresponding to 10-20 µg/L of MC-LR); and high risk (>100,000 cyanobacterial cells/ml
+corresponding to >20 µg/L for MC-LR).
+Drinking Water Health Advisory for Microcystins-June 2015 11
+Table 2-3. States Surveyed as Part of the 2007 National Lakes Assessment with Water Body
+Microcystins Concentrations above the WHO Advisory Guideline Level for Recreational
+Water of 10 µg/L (U.S. EPA, 2009)
+Number Percentage of Samples Maximum Detection
+State of Sites with Detection of of
+Sampled Microcystins >10 µg/L Microcystins
+North Dakota 38 9.1% 192 µg/L
+Nebraska 42 9.1% 225 µg/L
+South Dakota 40 4.9% 33 µg/L
+Ohio 21 4.5% 78 µg/L*
+Iowa 20 4.5% 38 µg/L*
+Utah 26 3.6% 15 µg/L*
+Texas 51 1.8% 28 µg/L *
+* Single Sample
+Other surveys and studies have been conducted to determine the occurrence of
+microcystin in lakes in the United States. A survey conducted during the spring and summer of
+1999 and 2000 in more than 50 lakes in New Hampshire found measureable microcystin
+concentrations in all samples (Haney and Ikawa, 2000). Microcystins were analyzed by ELISA
+and were found in all of the lakes sampled with a mean concentration of 0.1 µg/L. In 2005 and
+2006, a study conducted in New York, including Lake Ontario, found variability in microcystin-
+LR concentrations within the Lake Ontario ecosystem (Makarewicz et al., 2009). Of the samples
+taken in Lake Ontario coastal waters, only 0.3% of the samples exceeded the WHO provisional
+guideline value for drinking water of 1 µg/L. However, 20.4% of the samples taken at upland
+lakes and ponds within the Lake Ontario watershed, some of them sources of drinking water,
+exceeded 1 µg/L. During 2008 and 2009, a study was conducted in Kabetogama Lake, Minnesota
+which detected microcystin concentrations in association with algal blooms (Christensen et al.,
+2011). Microcystin concentrations were detected in 78% of bloom samples. Of these, 50% were
+above 1 μg/L, and two samples were above the high risk WHO recreational level of 20 μg/L.
+A study from 2002 evaluated water quality including chlorophyll-a concentration,
+cyanobacterial assemblages, and microcystin concentrations in 11 potable water supply reservoirs
+within the North Carolina Piedmont during dry summer growing seasons (Touchette et al., 2007).
+Microcystins concentrations were assessed using ELISA. The study found that cyanobacteria
+were the dominant phytoplankton community, averaging 65-95% of the total phytoplankton cells.
+Although microcystin concentrations were detected in nearly all source water samples,
+concentrations were <0.8 µg/L.
+Since 2007, Ohio EPA (OHEPA, 2012) has been monitoring inland lakes for cyanotoxins.
+Of the 19 lakes in Ohio sampled during the NLA, 36% had detectable levels of microcystins. In
+Drinking Water Health Advisory for Microcystins-June 2015 12
+2010, OHEPA sampled Grand Lake St. Marys for anatoxin-a, cylindrospermopsin, microcystins,
+and saxitoxin. Toxin levels ranged from below the detection limit (<0.15 µg/L) to more than
+2,000 µg/L for microcystins. Follow-up samples taken in 2011 for microcystins indicated
+concentrations exceeding 50 µg/L in August. During the same month, sampling in Lake Erie
+found microcystins levels exceeding 100 µg/L.
+In 2008, NOAA began monitoring for cyanobacterial blooms in Lake Erie using high
+temporal resolution satellite imagery. Between 2008 and 2010, Microcystis cyanobacterial blooms
+were detected associated with water temperatures above 18°C (Wynne et al., 2013). Using the
+Great Lakes Coastal Forecast System (GLCFS), forecasts of bloom transport are created to
+estimate the trajectory of the bloom, and these are distributed as bulletins to local managers,
+health departments, researchers and other stakeholders. To evaluate bloom toxicity, the Great
+Lakes Environmental Research Laboratory (GLERL) collected samples at six stations each week
+for 24 weeks, measuring toxin concentrations as well as chlorophyll biomass and an additional 18
+parameters (e.g., nutrients) to improve future forecasts of these blooms. In 2014, particulate toxin
+concentrations, collected from 1 meter depth, ranged from below detection to 36.7
+μg/L. Particulate toxin concentrations peaked in August, 2014 at all sites, with the Maumee Bay
+site yielding the highest toxin concentration of the entire sampling period. Dissolved toxin
+concentrations were collected at each site from September until November when the field season
+ended. During the final months of sampling (October-November), dissolved toxin concentrations
+were detected with peak concentrations of 0.8 μg/L (mean: 0.28 +/- 0.2 μg/L) whereas particulate
+toxin concentrations were below detection limits on many dates, indicating that a majority of the
+toxins (mean: 72% +/- 37%) were in the dissolved pool as the bloom declined in intensity.
+Concentrations of microcystins were detected during sampling in 2005 and 2006 in lakes
+and ponds used as a source of drinking water within the Lake Ontario watershed (Makarewicz et
+al., 2009). A microcystin-LR concentration of 5.07 µg/L was found in Conesus Lake, a source of
+public water supply that provides drinking water to approximately 15,000 people. Microcystin-LR
+was also detected at 10.716 µg/L in Silver Lake, a public drinking water supply for four
+municipalities.
+2.3.2 Occurrence in Drinking Water
+The occurrence of cyanotoxins in drinking water depends on their levels in the raw source
+water and the effectiveness of treatment methods for removing cyanobacteria and cyanotoxins
+during the production of drinking water. Currently, there is no program in place to monitor for the
+occurrence of cyanotoxins at surface-water treatment plants for drinking water in the U.S.
+Therefore, data on the presence or absence of cyanotoxins in finished drinking water are limited.
+The American Water Works Association Research Foundation (AWWARF) conducted a
+study on the occurrence of cyanobacterial toxins in source and treated drinking waters from 24
+public water systems in the United States and Canada in 1996-1998 (AWWARF, 2001). Of 677
+samples tested, microcystin was found in 80% (539) of the waters sampled, including source and
+treated waters. Only two samples of finished drinking water were above 1 μg/L. A survey
+conducted in 2000 in Florida (Burns, 2008) reported that microcystins were the most commonly
+Drinking Water Health Advisory for Microcystins-June 2015 13
+found toxin in pre- and post-treated drinking water. Finished water concentrations ranged from
+below detection levels to 12.5 µg/L.
+During the summer of 2003, a survey was conducted to test for microcystins in 33 U.S.
+drinking water treatment plants in the northeastern and Midwestern U.S. (Haddix et al., 2007).
+Microcystins were detected at low levels ranging from undetectable (<0.15 µg/L) to 0.36 µg/L in
+all 77 finished water samples.
+In August 2014, the city of Toledo, Ohio issued a “do not drink or boil advisory” to nearly
+500,000 customers in response to the presence of total microcystins in the city’s finished drinking
+water at levels up to 2.50 µg/L. The presence of the toxins was due to a cyanobacterial bloom
+near Toledo’s drinking water intake located on Lake Erie. The advisory was lifted two days later,
+after treatment adjustments led to the reduction of the cyanotoxin concentrations to concentrations
+below the WHO guideline value of 1 µg/L in all samples from the treatment plant and distribution
+system.
+2.4 Environmental Fate
+Different physical and chemical processes are involved in the persistence, breakdown, and
+movement of microcystins in aquatic systems as described below.
+2.4.1 Persistence
+Microcystins are relatively stable and resistant to chemical hydrolysis or oxidation at or
+near neutral pH. Elevated or low pH or temperatures above 30°C may cause slow
+hydrolysis. Microcystin is not destroyed by boiling (Rao et al., 2002). In natural waters kept in the
+dark, microcystins have been observed to persist for 21 days to 2-3 months in solution and up to 6
+months in dry scum (Rapala et al., 2006; Funari and Testai, 2008).
+In the presence of full sunlight, microcystins undergo photochemical breakdown, but this
+varies by microcystin congener (WHO, 1999; Chorus et al., 2000). The presence of water-soluble
+cell pigments, in particular phycobiliproteins, enhances this breakdown. Breakdown can occur in
+as few as two weeks to longer than six weeks, depending on the concentration of pigment and the
+intensity of the light (Tsuji et al., 1993; 1995). According to Tsuji et al, microcystin-LR was
+photodegraded with a half-life (time it takes half of the toxin to degrade) of about 5 days in the
+presence of 5 mg/L of extractable cyanobacterial pigment. Humic substances can also act as
+photosensitizers and can increase the rate of microcystin breakdown in sunlight. In deeper or
+turbid water, the breakdown rate is slower.
+Microcystins are susceptible to degradation by aquatic bacteria found naturally in rivers
+and reservoirs (Jones et al., 1994). Bacteria isolates of Arthrobacter, Brevibacterium,
+Rhodococcus, Paucibacter, and various strains of the genus Sphingomonas (Pseudomonas) have
+been reported to be capable of degrading microcystin-LR (de la Cruz et al., 2011; Han et al.,
+2012). These degradative bacteria have also been found in sewage effluent (Lam et al., 1995),
+lake water (Jones et al., 1994; Cousins et al., 1996; Lahti et al., 1997a), and lake sediment (Rapala
+Drinking Water Health Advisory for Microcystins-June 2015 14
+et al., 1994; Lahti et al., 1997b). Lam et al., in 1995 reported that the biotransformation of
+microcystin-LR followed a first-order decay with a half-life of 0.2 to 3.6 days (Lam et al., 1995).
+In a study done by Jones et al. (1994) with microcystin-LR in different natural surface waters,
+microcystin-LR persisted for 3 days to 3 weeks; however, more than 95% loss occurred within 3
+to 4 days. A study by Christoffersen et al., 2002, measured half-lives in the laboratory and in the
+field of approximately 1 day, driven largely by bacterial aerobic metabolism. These researchers
+found that approximately 90% of the initial amount of microcystin disappeared from the water
+phase within 5 days, irrespective of the starting concentration. Other researchers (Edwards et al.,
+2008) have reported half-lives of 4 to 14 days, with longer half-lives associated with a flowing
+stream and shorter half-lives associated with lakes.
+2.4.2 Mobility
+Microcystins may adsorb onto naturally suspended solids and dried crusts of
+cyanobacteria. They can precipitate out of the water column and reside in sediments for months
+(Han et al., 2012: Falconer, 1998). Ground water is generally not expected to be at risk of
+cyanotoxin contamination, however, ground water under the direct influence of surface water can
+be vulnerable. A study conducted by the USGS and the University of Central Florida determined
+that microcystin and cylindrospermopsin did not sorb in sandy aquifers and were transported
+along with ground water (O’Reilly et al., 2011). The authors suggested that the removal of
+microcystin was due to biodegradation.
+2.5 Nature of the Stressor-Characteristics of the Microcystin Toxins
+2.5.1 Toxicokinetics
+No data were available that quantified the intestinal, respiratory or dermal absorption of
+microcystins. Available data indicate that the Organic Acid Transporter polypeptide (OATp)
+receptors facilitate the absorption of toxins from the intestinal tract into liver, brain, and other
+tissues. The OATp family transporters facilitate the cellular, sodium-independent uptake and
+export of amphipathic compounds such as bile salts, steroids, drugs, peptides and toxins (Cheng et
+al., 2005; Fischer et al., 2005; Svoboda et al., 2011). This facilitated transport is necessary for
+both uptake of microcystins into organs and tissues as well as for their export. Microcystins
+compete with bile acids for uptake by the liver and is limited in the presence of bile acids and
+other physiologically-relevant substrates for the transporter (Thompson and Pace, 1992). Other
+studies following in vitro or in vivo exposures have shown that inhibition of microcystin uptake
+by its OATp transporter reduces or eliminates the liver toxicity observed (Runnegar et al., 1981,
+1995; Runnegar and Falconer, 1982; Hermansky et al., 1990a, b).
+Limited information is available on the metabolism of microcystins. Some studies have
+found that metabolism of microcystin-LR in mice occurs in the liver (Robinson et al., 1991; Pace
+et al., 1991). Most of the available studies show minimal if any catabolism (process of breaking
+down molecules into smaller units to release energy). Microcystins can be conjugated with
+cysteine and glutathione to increase their solubility and facilitate excretion (Kondo et al., 1996).
+Drinking Water Health Advisory for Microcystins-June 2015 15
+However, it is not clear whether hepatic cytochromes, such as cytochrome P450-facilitated
+oxidation, precedes conjugation (Cote et al., 1986; Brooks and Codd, 1987). Both in vivo and in
+vitro studies have shown biliary excretion (Falconer et al., 1986; Pace et al., 1991; Robinson et
+al., 1991).
+2.5.2 Noncancer Health Effects Data
+2.5.2.1 Human Studies
+The human data on the oral toxicity of microcystin-LR are limited by the potential co-
+exposure to other pathogens and toxins, by the lack of quantitative information, and by the failure
+to control for confounding factors.
+Only a few epidemiological and case studies are available on the toxicity of microcystins
+in humans. An outbreak among army recruits who had consumed reservoir water with a
+cyanobacteria bloom with M. aeruginosa reported symptoms of headache, sore throat, vomiting
+and nausea, stomach pain, dry cough, diarrhea, blistering around the mouth, and pneumonia
+(Turner et al., 1990). Microcystins, including microcystin-LR, were present in bloom samples.
+However, high levels of Escherichia coli were also found in reservoir water after two weeks. The
+authors suggested that exposure to microcystins may have had a role in some of the clinical
+symptoms.
+An epidemiology study done in Australia compared the hepatic enzyme levels from
+patients served by a public water supply contaminated with a M. aeruginosa bloom with enzyme
+levels from patients living in areas served by water supplies uncontaminated by cyanobacteria
+(Falconer et al., 1983). Although the authors observed significant variability in enzyme levels
+between the two groups, the findings were attributed by the authors to the imprecise method of
+study participant selection and confounding factors such as alcoholism and chronic kidney disease
+among some of the participants.
+A cross-sectional study done in China assessed the relationship between the consumption
+of water and food (carp and duck) contaminated with microcystins and liver damage in children
+(Li et al., 2011a). The authors found that mean serum levels of microcystins ranged from below
+detection to 1.3 μg microcystin-LR equivalents/L. According to the authors, hepatitis B infection
+was a greater risk for liver damage among these children than the microcystin exposure.
+Acute intoxication with microcystin-producing cyanobacteria blooms in recreational water
+was reported in Argentina in 2007 (Giannuzzi et al., 2011). A single person was immersed in a
+Microcystis bloom with concentrations of 48.6 µg/L. After four hours of exposure, the patient
+exhibited fever, nausea, and abdominal pain, and three days later, presented dyspnea and
+respiratory distress and was diagnosed with an atypical pneumonia. A week after the exposure,
+the patient developed a hepatotoxicosis with a significant increase of alanine aminotransferase
+(ALT), aspartate aminotransferase (AST) and γ-glutamyltransferase (γGT). The patient
+completely recovered within 20 days.
+Drinking Water Health Advisory for Microcystins-June 2015 16
+An outbreak of acute liver failure occurred in a dialysis clinic in 1996 in Caruaru, Brazil
+where dialysis water was contaminated with microcystins, and possibly cylindrospermopsin. Of
+the 130 patients who received their routine hemodialysis treatment (intravenously) at that time,
+116 reported symptoms of headache, eye pain, blurred vision, nausea and vomiting. Subsequently,
+100 of the affected patients developed acute liver failure and, of these, 76 died (Carmichael et al.,
+2001; Jochimsen et al., 1998). Analyses of blood, sera, and liver samples from the patients
+revealed microcystins. Although the patients in the study had pre-existing diseases, the direct
+intravenous exposure to dialysate prepared from surface drinking water supplies put them at risk
+for cyanotoxin exposure and resultant adverse effects (Hilborn et al., 2013).
+In another contamination event at a dialysis center in Rio de Janeiro, Brazil in 2001, 44
+dialysis patients were potentially exposed to microcystin concentrations of 0.32 µg/L, detected in
+the activated carbon filter used in an intermediate step for treating drinking water to prepare
+dialysate (Soares et al., 2005). Concentrations of 0.4 µg/L microcystin-LR were detected in the
+drinking water. Serum samples were collected from 13 dialysis patients 31 to 38 days after the
+detections in water samples, and patients were monitored for eight weeks. Concentrations of
+microcystin-LR in the serum ranged from 0.46 to 0.96 ng/mL. Although the biochemical
+outcomes varied among the patients, markers of hepatic cellular injury chlolestasis (elevations of
+AST, ALT bilirubin, ALP and GGT) in serum during weeks one to eight after treatment
+frequently exceeded normal values. Since microcystin-LR was not detected during weekly
+monitoring after the first detection, the authors suggested that the patients were not continuously
+exposed to the toxin and that the toxin detected in the serum after eight weeks may have been
+present in the form of bound toxin in the liver (Soares et al., 2005). Results were consistent with a
+mild to moderate mixed liver injury.
+2.5.2.2 Animal Studies
+Most of the information on the noncancer effects of microcystins in animals is from oral
+and intraperitoneal (i.p.) administration studies in mice and rats exposed to purified microcystin-
+LR. Liver effects are observed following acute oral exposure to microcystin-LR (Yoshida et al.,
+1997; Ito et al., 1997b; Fawell et al., 1999). Effects on the liver, kidney, and male reproductive
+system (testicular function and sperm quality), including changes in organ weights and
+histopathological lesions, are observed following short-term and subchronic oral exposure to
+microcystin-LR (Heinze, 1999; Fawell et al., 1999; Huang et al., 2011; Chen et al., 2011). Oral
+and i.p. developmental toxicity studies in mice provide some evidence for fetal body weight
+changes and maternal mortality (Fawell et al., 1999; Chernoff et al., 2002).
+According to the authors, no clinical signs of toxicity were observed in a chronic study
+done in mice for 18 months by Ueno et al. (1999). Although histopathology from a 280 day study
+in mice revealed infiltrating lymphocytes and fatty degeneration in the livers, no quantitative data
+were provided in the study (Zhang et al., 2012).
+Drinking Water Health Advisory for Microcystins-June 2015 17
+2.5.3 Mode of Action for Noncancer Health Effects
+Mechanistic studies have shown the importance of membrane transporters for systemic
+uptake and tissue distribution of microcystin by all exposure routes (Fischer et al. 2005; Feurstein
+et al., 2010). The importance of the membrane transporters to tissue access is demonstrated when
+a reduction in, or lack of, liver damage happens following OATp inhibition (Hermansky et al.,
+1990 a,b; Thompson and Pace, 1992).
+The uptake of microcystins causes protein phosphatase inhibition and a loss of
+coordination between kinase phosphorylation and phosphatase dephosphorylation, which results
+in the destabilization of the cytoskeleton. This event initiates altered cell function followed by
+cellular apoptosis and necrosis (Barford et al., 1998). Both cellular kinases and phosphatases keep
+the balance between phosphorylation and dephosphorylation of key cellular proteins controlling
+metabolic processes, gene regulation, cell cycle control, transport and secretory processes,
+organization of the cytoskeleton and cell adhesion. Each of the microcystin congeners evaluated
+(LR, LA, and LL) interacts with catalytic subunits of protein phosphatases PP1 and PP2A,
+inhibiting their functions (Craig et al., 1996).
+As a consequence of the microcystin-induced changes in cytoskeleton, increases in
+apoptosis and reactive oxygen species (ROS) occur. In both in vitro and in vivo studies, cellular
+pro-apoptotic Bax and Bid proteins increased while anti-apoptotic Bcl-2 decreased (Fu et al.,
+2005; Weng et al., 2007; Xing et al., 2008; Takumi et al., 2010; Huang et al., 2011; Li et al.,
+2011b). Mitochondrial membrane potential and permeability transition pore changes (Ding and
+Ong, 2003; Zhou et al., 2012) lead to membrane loss of cytochrome c, a biomarker for apoptotic
+events. Wei et al., (2008) found a time-dependent increase in ROS production and lipid
+peroxidation in mice after exposure to microcystin-LR. After receiving a 55 µg/kg of body weight
+i.p. injection of microcystin-LR, the levels of hepatic ROS increased rapidly within 0.5 hours and
+continued to accumulate for up to 12 hours in a time-dependent manner.
+2.5.4 Carcinogenicity Data
+Several human epidemiological studies from China have reported an association between
+liver or colon cancer and consumption of drinking water from surface waters containing
+cyanobacteria and microcystins (Ueno et al., 1996; Zhou et al., 2002). In these studies, a
+concentrations measured in a surface drinking water supply were used as a surrogate for exposure
+to microcystins. Individual exposure to microcystins was not estimated, and there was no
+examination of numerous possible confounding factors, such as co-occurring chemical
+contaminants or hepatitis infections in the population.
+A study done by Flemming et al. (2002, 2004) in Florida failed to find a significant
+association for primary liver cancer between populations living in areas receiving their drinking
+water from a surface water treatment plant (with the potential for microcystin exposures), and the
+Florida general population, or those receiving their water from ground-water sources. The one
+significant association observed was between those people in the surface water service areas,
+versus those in their surrounding areas described as buffer zones. However, the nature of the
+water supply for the buffer zones were not identified.
+Drinking Water Health Advisory for Microcystins-June 2015 18
+The only longer-term oral animal study of purified microcystin-LR was conducted by Ito
+et al. (1997b). Ito et al. (1997b) administered 80 µg microcystin-LR/kg/day by gavage to mice for
+80 or 100 days over 28 weeks (7 months). This single dose failed to induce neoplastic nodules of
+the liver. The lack of hyperplastic nodules at 7 months suggests that microcystins are not a
+mutagenic initiator of tumors, however, the fairly short duration may have been a limiting factor.
+Several studies suggest that microcystin-LR is a tumor promoter. In these studies, animals
+were first exposed to substances known to be tumor initiators (e.g. N-methyl-N-nitroso urea or
+NDEA) alone, or in combination with microcystin-LR at i.p. doses known to have no significant
+impact on liver weight. The combination of the initiator and the microcystin-LR significantly
+increased the number and area of glutathione S-transferase placental form-positive (GST-P) foci
+when compared to treatment with the initiator alone. The same was true for situations where the
+initiator treatment was combined with a partial hepatectomy (to stimulate tissue repair) and then
+exposed to microcystins i.p. (Nishiwaki-Matsushima et al., 1992; Ohta et al., 1994). GST-P foci
+are regarded as indicators for potential tumors formation. The results from these studies support
+the classification of microcystin as a tumor promoter.
+2.6 Conceptual Model for Microcystins
+The conceptual model is intended to explore potential links of exposure to a contaminant
+or stressor with the adverse effects and toxicological endpoints important for management goals,
+including the development of HA values. The conceptual model demonstrates the relationship
+between exposure to microcystins in drinking water and adverse health effects in the populations
+at risk.
+HAs describe non-regulatory concentrations of drinking water contaminants at which
+adverse health effects are not anticipated to occur over specific exposure durations (e.g., one-day,
+ten-days, and a lifetime). HAs also contain a margin of safety to protect sensitive members of the
+population. They serve as informal technical guidance to assist federal, state and local officials, as
+well as managers of public or community water systems, in protecting public health. They are not
+to be construed as legally enforceable federal standards.
+Assessment endpoints for HAs can be developed for both short-term (one-day and ten-
+day) and lifetime exposure periods using information on the non-carcinogenic and carcinogenic
+toxicological endpoints of concern. Where data are available, endpoints will reflect susceptible
+and/or more highly exposed populations.
+• A One-day HA is typically calculated for an infant (0-12 months or 10kg child), assuming
+a single acute exposure to the chemical and is generally derived from a study of less than
+seven days’ duration.
+• A Ten-day HA is typically calculated for an infant (0-12 months or 10kg child), assuming
+a limited period of exposure of one to two weeks, and is generally derived from a study of
+7 to 30-days duration.
+Drinking Water Health Advisory for Microcystins-June 2015 19
+• A Lifetime HA is derived for an adult (>21 years or 80kg adult), and assumes an exposure
+period over a lifetime (approximately 70 years). It is usually derived from a chronic study
+of two years duration, but subchronic studies may be used by adjusting the uncertainty
+factor employed in the calculation. For carcinogens, the HA documents typically provide
+the concentrations in drinking water associated with risks for one excess cancer case per
+ten thousand persons exposed up to one excess cancer case per million exposed for Group
+A and B carcinogens and those classified as known or likely carcinogens (U.S. EPA,
+1986, 2005). Cancer risks are not provided for Group C carcinogens or those classified as
+“suggestive”, unless the cancer risk has been quantified.
+For each assessment endpoint EPA uses one or more measures of effect (also referred to
+as a point of departure), which describe the change in the attribute of the assessment endpoint in
+response to chemical exposure, to develop acute, short-term, longer term (subchronic) or chronic
+reference values when the data are available. The measures of effect selected represent impacts on
+survival, growth, system function, reproduction and development.
+This conceptual model provides useful information to characterize and communicate the
+potential health risks related to exposure to cyanotoxins in drinking water. The sources of
+cyanotoxins in drinking water, the route of exposure for biological receptors of concern (e.g., via
+various human activities such as drinking, food preparation and consumption) and the potential
+assessment endpoints (i.e., effects such as kidney and liver toxicity, and reproductive and
+developmental effects) due to exposure to microcystins are depicted in the conceptual diagram
+below (Figure 2-3).
+2.6.1 Conceptual Model Diagram
+Cyanobacteria are a common part of freshwater and marine ecosystems. An increase in
+water column stability, high water temperatures, elevated concentrations of nutrients, and low
+light intensity have been associated with an increase and or dominance of microcystin-producing
+cyanobacteria in surface waters (or aquatic ecosystems). The presence of detectable
+concentrations of cyanotoxins in the environment is closely associated with these blooms. Winds
+and water currents can potentially transport cyanobacterial blooms to areas within the proximity
+of water intakes for drinking water treatment plants. If not managed in source waters, or removed
+during drinking water treatment, cyanobacteria and cyanotoxins may result in exposure that could
+potentially affect human health.
+Drinking Water Health Advisory for Microcystins-June 2015 20
+Figure 2-3. Conceptual Model of Exposure Pathways to Microcystins in Drinking Water
+Drinking Water Health Advisory for Microcystins-June 2015 21
+2.6.2 Factors Considered in the Conceptual Model for Microcystins
+Stressors: For this HA, the stressor is microcystins concentrations in finished drinking water.
+Sources: Sources of microcystins include potential sources of drinking water such as rivers,
+reservoirs, and lakes in the U.S. where blooms producing microcystins occur. Shallow private
+wells under the direct influence of surface water (in hydraulic connection to a surface water body)
+can also be impacted by microcystins-producing blooms, if the toxins are drawn into the well
+along with the water from the surface water. There is substantially less information on exposure
+from this source.
+Routes of exposure: Exposure to cyanotoxins from contaminated drinking water sources may
+occur via oral exposure (drinking water, cooking with water, and incidental ingesting from
+showering); dermal exposure (contact of exposed parts of the body during bathing or showering,
+washing dishes, or outside activities); inhalation exposure (during bathing, showering or washing
+dishes,); or intravenous exposure (e.g. via dialysis). Toxicity data are available for the oral route
+of exposure from drinking water, but are not available to quantify dose response for other
+exposure routes (inhalation, dermal, dietary, and intravenous exposures).
+Receptors: The general population (adults and children) could be exposed to cyanotoxins through
+dermal contact, inhalation and/or ingestion. Infants and pre-school age children can be at greater
+risk to microcystins because they consume more water per body weight than do adults. Other
+individuals of potential sensitivity are persons with kidney and/or liver disease due to the
+compromised detoxification mechanisms in the liver and impaired excretory mechanisms in the
+kidney. There are no human data to quantify risk to pregnant woman or to evaluate the transfer of
+cyanotoxins across the placenta. Data are also not available on the transfer of cyanotoxins through
+the milk from nursing mothers or regarding the risk to the elderly. Given this lack of information,
+pregnant women, nursing mothers, and the elderly may also be potentially sensitive populations.
+Data from the episode in a dialysis clinic in Caruaru, Brazil where microcystins were not removed
+by treatment of dialysis water, identify dialysis patients as a population of potential concern in
+cases where the drinking water source for the clinic is contaminated with cyanotoxins. Data are
+not available to derive a One-day HA for children because studies with single oral dosing do not
+provide dose-response information. A lifetime HA for microcystins is not recommended as the
+types of exposures being considered are short-term and episodic in nature. Although the majority
+of the cyanobacterial blooms in the U.S. occur seasonally, usually during late summer, some
+toxin-producing strains can occur early in the season and can last for days or weeks.
+Endpoints: Human data on oral toxicity of microcystins are limited, but suggest the liver as the
+primary target organ. Acute, short-term, and subchronic studies in animals also demonstrate that
+the liver and kidney are target organs. In addition, some studies suggest that microcystins may
+lead to reproductive and developmental effects. Studies have suggested that microcystins have
+tumor promotion potential if there has been co-exposure to a carcinogen or cellular organ damage.
+However, these data are limited, and there has been no long term bioassay in animals to evaluate
+cancer. Available toxicity data are described in the Health Effects Support Document (HESD) for
+Microcystins (U.S. EPA, 2015a), and indicate that the primary target organ for microcystins is the
+liver. Kidney and reproductive effects in male mice were also observed, but were either not as
+Drinking Water Health Advisory for Microcystins-June 2015 22
+sensitive as the liver or lack confirmation from more than one laboratory. Data are inadequate to
+assess the carcinogenic potential of microcystins at this time.
+2.7 Analysis Plan
+The Health Effects Support Document for Microcystins (HESD, U.S. EPA, 2015a),
+provides the health effects basis for development of the HA, including the science-based
+decisions providing the basis for estimating the point of departure. To develop the HESD for
+microcystins, a comprehensive literature search was conducted from January 2013 to May 2014
+using Toxicology Literature Online (TOXLINE), PubMed component, and Google Scholar to
+ensure the most recent published information on microcystins was included. Some of the search
+terms included in the literature search were microcystin, microcystin congeners, human toxicity,
+animal toxicity, in vitro toxicity, in vivo toxicity, occurrence, environmental fate, mobility, and
+persistence. EPA assembled available information on occurrence, environmental fate,
+mechanisms of toxicity, acute, short-term, subchronic and chronic toxicity and cancer in humans
+and animals, toxicokinetics, and exposure. Additionally, EPA considered information from the
+following risk assessments during the development of the microcystins health risk assessment:
+• Health Canada (2012) Toxicity Profile for Cyanobacterial Toxins
+• Enzo Funari and Emanuela Testai (2008) Human Health Risk Assessment Related to
+Cyanotoxins Exposure
+• Tai Nguyen Duy, Paul Lam, Glen Shaw and Des Connell (2000) Toxicology and Risk
+Assessment of Freshwater Cyanobacterial (Blue-Green Algal) Toxins in Water
+The toxicity data available for an individual pollutant vary significantly. An evaluation of
+available data was performed by EPA to determine data acceptability. The following study quality
+considerations from U.S. EPA’s (2002) A Review of the Reference Dose and Reference
+Concentration Processes were used in selection of the studies for inclusion in the HESD and
+development of the HA.
+• Clearly defined and stated hypothesis.
+• Adequate description of the study protocol, methods, and statistical analyses.
+• Evaluation of appropriate endpoints. Toxicity depends on the amount, duration, timing,
+and pattern of exposure and may range from frank effects (e.g., mortality) to more subtle
+biochemical, physiological, pathological, or functional changes in multiple organs and
+tissues.
+• Application of the appropriate statistical procedures to determine an effect.
+• Establishment of dose-response relationship (i.e., no observed adverse effect level
+(NOAEL) and/or lowest observed adverse effect level (LOAEL) or data amenable to
+modeling of the dose-response in order to identify a point of departure for a change in the
+effect considered to be adverse (out of the range of normal biological viability). The
+NOAEL is the highest exposure level at which there are no biologically significant
+Drinking Water Health Advisory for Microcystins-June 2015 23
+increases in the frequency or severity of adverse effect between the exposed population
+and its appropriate control. The LOAEL is the lowest exposure level at which there are
+biologically significant increases in frequency or severity of adverse effects between the
+exposed population and its appropriate control group.
+After the available studies were evaluated for inclusion in the HESD and HA, the critical
+study was selected based on consideration of factors including exposure duration (comparable to
+the duration of the HA being derived), route of exposure (oral exposure via drinking water,
+gavage, or diet is preferred), species sensitivity, comparison of the point of departure with other
+available studies demonstrating an effect, and confidence in the study (U.S. EPA, 1999). Once, a
+point of departure is chosen for quantification, uncertainty factors appropriate for the study
+selected are then applied to the point of departure to account for variability and uncertainty in the
+available data.
+For microcystins, toxicity and exposure data are available to develop a Ten-day HA. EPA
+used measures of effect and estimates of exposure to derive the Ten-day HAs using the following
+equation:
+NOAEL or LOAEL or BMDL
+HA =
+UF × DWI/BW
+Where:
+NOAEL or = No- or Lowest-Observed-Adverse-Effect Level (mg/kg bw/day) from a study
+LOAEL of an appropriate duration (7 to 30 days).
+BMDL = When the data available are adequate, benchmark dose (BMD) modeling can
+be performed to determine the point of departure for the calculation of HAs.
+The benchmark dose approach involves dose-response modeling to obtain
+dose levels corresponding to a specific response level near the low end of the
+observable range of the data (U.S.EPA, 2012). The lower 95% confidence
+limit is termed the benchmark dose level (BMDL).
+UF = Uncertainty factors (UF) account for: (1) intraspecies variability (variation in
+susceptibility across individuals); (2) interspecies variability (uncertainty in
+extrapolating animal data to humans; (3) uncertainty in extrapolating from a
+LOAEL to a NOAEL; and (4) uncertainty associated with extrapolation when
+the database is incomplete. These are described in U.S. EPA, 1999 and U.S.
+EPA, 2002.
+DWI/BW = For children, a normalized ratio of drinking water ingestion to body weight
+(DWI/BW) was calculated using data for infants (birth to <12 months). The
+estimated drinking water intake body weight ratio (L/kg/day) used for birth to
+Drinking Water Health Advisory for Microcystins-June 2015 24
+<12 months of age are the 90th percentile values of the consumers only
+estimates of direct and indirect water ingestion based on 1994-1996, 1998
+CSFII (Continuing Survey of Food Intakes by Individuals) (community water,
+mL/kg/day) in Table 3-19 in the U.S. EPA (2011a) Exposure Factors
+Handbook. The time weighted average of DWI/BW ratios values was derived
+from multiplication of age-specific DWI/BW ratios (birth to <1 month, 1 to
+<3 months, 3 to <6 months, and 6 to <12 months) by the age-specific fraction
+of infant exposures for these time periods.
+For adults (>21 years of age), EPA updated the default BW assumption to 80
+kg based on National Health and Nutrition Examination Survey (NHANES)
+data from 1999 to 2006 as reported in Table 8.1 of EPA’s Exposure Factors
+Handbook (U.S. EPA, 2011a). The updated BW represents the mean weight
+for adults ages 21 and older.
+EPA updated the default DWI to 2.5 L/d, rounded from 2.546 L/d, based on
+NHANES data from 2003 to 2006 as reported in EPA’s Exposure Factors
+Handbook (U.S. EPA 2011a, Table 3-33). This rate represents the consumer’s
+only estimate of combined direct and indirect community water ingestion at
+the 90th percentile for adults ages 21 and older.
+Drinking Water Health Advisory for Microcystins-June 2015 25
+3.0 HEALTH EFFECTS ASSESSMENT
+The health effects assessment provides the characterization of adverse effects and includes
+the hazard identification and dose-response assessment. The hazard identification includes
+consideration of available information on toxicokinetics; identification, synthesis and evaluation
+of studies describing the health effects of microcystins; and the potential modes of action
+(MOAs), or toxicity pathways related to the health effects identified.
+3.1 Dose-Response
+3.1.1 Study Selection
+The critical study chosen for determining the guideline value is a short-term study by
+Heinze (1999) in which 11-week-old male hybrid rats (F1 generation of female WELS/Fohm x
+male BDIX) were administered microcystin-LR via drinking water for 28 days at concentrations
+of 0 (n=10), 50 (n=10) or 150 (n=10) μg/kg body weight (Heinze, 1999). Water consumption was
+measured daily, and rats were weighed at weekly intervals. The dose estimates provided by the
+authors were not adjusted to account for incomplete drinking water consumption (3-7% of
+supplied water was not consumed over the 28-day period). Rats were sacrificed by exsanguination
+under ether anesthesia after 28 days of exposure, and evaluation of hematology, serum
+biochemistry plus histopathology of liver and kidneys, and measurement of organ weights (liver,
+kidneys, adrenals, spleen and thymus) was performed.
+Hematological evaluation showed an increase of 38% in the number of leukocytes at the
+highest dose group (150 μg/kg body weight). Serum biochemistry showed a significant increase in
+both treatment groups in mean levels of alkaline phosphatase (ALP) and lactate dehydrogenase
+(LDH); 84 and 100% increase in LDH, and 34 and 33% increase in ALP, in the low and high dose
+groups respectively. No changes were observed in mean levels of AST (aspartate
+aminotransferase), and ALT (alanine aminotransferase). An increase in relative liver weights was
+observed in a dose-dependent manner; 17% at 50 μg/kg body weight, and 26% at 150 μg/kg body
+weight. Mean enzyme levels and relative liver weights are shown in Table 3-1.
+A dose-dependent increase in absolute liver weight was also reported, and data on the liver
+weights were provided by the author in a personal communication. A dose-dependent increase in
+the average absolute liver weights was also observed in all groups: 8.8 grams at the control group,
+9.70 grams at the lower dose and 10.51 grams at the high dose (Table 3-1). No statistically
+significant changes in other organ weights or body weights were reported, and no effects on the
+kidneys were observed. Table 3-2 summarizes the histological observations of liver lesions. Liver
+lesions were considered toxic and spread diffusely throughout the parenchyma indicating cell
+damage expressed by an increase in cell volume, an increase in mitochondria, cell necrosis, the
+activation of Kupffer cells, and an increase in the amounts of periodic acid-Schiff (PAS)-positive
+substances. Liver lesions were observed in both treatment groups. No kidney effects were
+observed in either dose groups. The LOAEL was determined to be 50 μg/kg/day. The selection of
+Heinze (1999) as the critical study was based on the appropriateness of the study duration, the use
+Drinking Water Health Advisory for Microcystins-June 2015 26
+Table 3-1. Liver Weights and Serum Enzyme Levels in Rats Ingesting Microcystin-LR in
+Drinking Water (Heinze, 1999)
+Control 50 μg/kg 150 μg/kg
+(Mean ± SD) (Mean ± SD) (Mean ± SD)
+Serum Enzymes
+Alkaline phosphatase (ALP)
+9.67 ± 2.20 13.00 ± 3.81* 12.86 ± 1.85*
+(microkatals/L)
+Lactate dehydrogenase (LDH)
+16.64 ± 4.48 30.64 ± 5.05* 33.58 ± 1.16*
+(microkatals/L)
+Liver Weight
+Relative (g/100 g body weight) 2.75 ± 0.29 3.22 ± 0.34* 3.47 ± 0.49*
+Absolute (g)** 8.28 ± 1.37 9.70 ± 1.32 10.51 ± 1.02
+* p<0.05 when compared with control; katal=conversion rate of 1 mole of substrate per second.
+**Information provided by the author through a personal communication.
+Table 3-2. Histological Evaluation of the Rat Livers after Ingesting Microcystin-LR in
+Drinking Water (Heinze, 1999)
+Degenerative Degenerative
+and Necrotic and Necrotic
+Activation of PAS-positive
+Hepatocytes Hepatocytes
+Kupffer Cells Material
+with without
+Hemorrhage Hemorrhage
+Control
+Slight 0 0 0 1
+Moderate 0 0 0 0
+Intensive damage 0 0 0 0
+50 μg/kg
+Slight 0 4 0 5
+Moderate 10 6 0 5
+Intensive damage 0 0 0 0
+150 μg/kg
+Slight 0 0 0 0
+Moderate 10 6 1 8
+Intensive damage 0 3 0 2
+Drinking Water Health Advisory for Microcystins-June 2015 27
+of multiple doses, dose-related toxicological responses, and histopathological evaluations of
+toxicity.
+3.1.2 Endpoint Selection
+The point of departure selected from the Heinze (1999) study is the LOAEL (50
+μg/kg/day) for liver effects (increased liver weight, slight to moderate liver necrosis lesions, with
+or without hemorrhages at the low dose and increased severity at the high dose, and changes in
+serum enzymes indicative of liver damage). For the lesions, incidence increases from one animal
+impacted in the control group to ten animals impacted in the dosed groups. This dose-response is
+more dramatic than the difference in liver weight between the control and low dose (1.17 fold)
+and the differences in the ALP and LDH levels between the control and low dose group (1.34 and
+1.84-fold, respectively). Therefore, the liver lesions are identified as the endpoint of greatest
+concern. These differences also advise against application of benchmark dose modeling for these
+effects. The male and female mice in the Fawell et al (1999) study displayed liver lesions, but the
+difference between controls and the low dose group (40 μg/kg/day) was less than two-fold. In an
+i.p. infusion study by Guzman and Solter (1999) with a more direct delivery of dose to the liver,
+necrosis was observed at doses of 32 and 48 μg/kg/day, but not at a dose of 16 μg/kg/day, thus
+providing support for the critical effect and dose.
+3.2 Ten-day Health Advisory
+This Ten-day HA is applied to total microcystins using microcystin-LR as a surrogate.
+The Ten-day HA is considered protective of non-carcinogenic adverse health effects over a ten-
+day exposure to microcystins in drinking water.
+3.2.1 Bottle-fed Infants and Young Children of Pre-school Age
+The Ten-day HA for bottle-fed infants and young children of pre-school age is calculated as
+follows:
+50 μg/kg/day
+Ten-day HA = = 0.3 μg/L
+1000 × 0.15 L/kg/day
+Where:
+50 µg/kg/day = The LOAEL for liver effects in 11-week-old male hybrid rats
+exposed to microcystin-LR in drinking water for 28 days
+(Heinze, 1999).
+1000 = The composite UF including a 10 for intraspecies variability
+(UF ), a 10 for interspecies differences (UF ), a 3 for LOAEL to
+H A
+NOAEL extrapolation (UF ), and a 3 for uncertainties in the
+L
+database (UF ).
+D
+0.15 L/kg/day = Normalized drinking water intake per unit body weight over the
+first year of life based on the 90th percentile of drinking water
+consumption and the mean body weight (U.S. EPA, 2011a).
+Drinking Water Health Advisory for Microcystins-June 2015 28
+The Ten-day HA of 0.3 µg/L is considered protective of non-carcinogenic adverse health effects
+for bottle-fed infants and young children of pre-school age over a ten-day exposure to
+microcystins in drinking water.
+3.2.2 School-age Children through Adults
+The Ten-day HA for school-age children through adults is calculated as follows:
+50 μg/kg/day
+Ten-day HA = = 1.6 μg/L
+1000 × 0.03 L/kg/day
+Where:
+50 µg/kg/day = The LOAEL for liver effects in 11-week-old male hybrid
+rats exposed to microcystin-LR in drinking water for 28
+days (Heinze, 1999).
+1000 = The composite UF including a 10 for intraspecies
+variability (UF ), a 10 for interspecies differences (UF ), a
+H A
+3 for LOAEL to NOAEL extrapolation (UF ), and a 3 for
+L
+uncertainties in the database (UF ).
+D
+0.03 L/kg/day = Drinking water intake per unit body weight based on adult
+default values of 2.5 L/day and 80 kg (U.S. EPA, 2011a).
+The Ten-day HA of 1.6 µg/L is considered protective of non-carcinogenic adverse health effects
+for children of school age through adults over a ten-day exposure to microcystins in drinking
+water.
+3.2.3 Uncertainty Factor Application
+• UF - A Ten-fold value is applied to account for variability in the human population. No
+H
+information was available to characterize interindividual and age-related variability in the
+toxicokinetics or toxicodynamics among humans. Individuals with pre-existing liver
+problems could be more sensitive to microcystins exposures than the general population.
+Pregnant woman, nursing mothers, and the elderly could also be sensitive to microcystins
+exposures.
+• UF - A Ten-fold value is applied to account for uncertainty in extrapolating from
+A
+laboratory animals to humans (i.e., interspecies variability). Information to quantitatively
+assess toxicokinetic or toxicodynamic differences between animals and humans is
+unavailable for microcystins. Allometric scaling is not applied in the development of the
+Ten-day HA values for microcystins. The allometric scaling approach is derived from the
+relationship between body surface area and basal metabolic rate in adults (U.S. EPA,
+2011b). This approach is not appropriate for infants and children due to the comparatively
+slower clearance during these ages and the limited toxicokinetic data available to assess
+the appropriateness of body weight scaling in early life.
+Drinking Water Health Advisory for Microcystins-June 2015 29
+• UF - An uncertainty factor of 3 (100.5 = 3.16) is selected to account for the extrapolation
+L
+from a LOAEL to a NOAEL. The threefold factor is justified based on the evidence
+suggesting that the uptake of microcystins by tissues requires membrane transporters.
+Uptake from the intestines involves both apical and basolateral transporters, uptake by the
+microvilli capillaries and portal transport to the liver. Transporters are again necessary for
+hepatic uptake. When there is slow infusion into the peritoneum and into the portal
+intraperitoneal capillaries, uptake is described as rapid because of the rich blood supply
+and large surface area of the peritoneal cavity (Klassen, 1996). Delivery of the
+microcystins to the intraperitoneum increases the amount of the dose that reaches the liver
+for three additional reasons: 1) the apical and basolateral intestinal barriers to uptake are
+eliminated with the i.p. infusion; 2) there is no dilution of dose by the gastric plus
+intestinal fluids as when food residues are in the gastrointestinal track; and 3) there is no
+delay in reaching the site of absorption because of gastric emptying time (Klassen, 1996).
+In addition, facilitated transporter kinetics are similar to Michaelis Menton enzyme
+kinetics in that there are Km and Vmax components that are defined by the affinity of the
+transported substance for the transporter.
+In the Guzman and Solter (1999) intraperitoneal infusion study in rats, the NOAEL is 16
+µg/kg/day and the LOAEL is 32 µg/kg/day, a two-fold difference. There is no reason to
+believe that the less direct delivery from the intestines to the liver following oral
+exposures through drinking water (as was used in Heinze, 1999) would have a more than
+3-fold separation between a NOAEL and LOAEL had there been one in the Heinze (1999)
+study.
+• UF - An uncertainty factor of 3 (100.5 = 3.16) is selected to account for deficiencies in the
+D
+database for microcystins. The database includes limited human data, including studies
+evaluating the association between microcystin exposure and cancers in liver and colon,
+and systemic effects including liver endpoints such as elevated liver enzymes. Oral and
+i.p. acute and short-term studies on mice and rats, and subchronic studies done in mice are
+available. Chronic data are also available for microcystin, however, are limited by the lack
+of quantitative data provided in the study. Additionally, there are limited neurotoxicity
+studies (including a recent publication on developmental neurotoxicity) and several i.p.
+reproductive and developmental toxicity studies. The database lacks a multi-generation
+reproductive toxicity study.
+The default factors typically used cover a single order of magnitude (i.e., 101). By convention,
+in the Agency, a value of 3 is used in place of one-half power (i.e., 10½) when appropriate (U.S.
+EPA, 2002).
+Drinking Water Health Advisory for Microcystins-June 2015 30
+4.0 RISK CHARACTERIZATION
+The following topics describe important conclusions used in the derivation of the health
+advisory. This section characterizes each topic and its impact on the health advisory.
+4.1 Use of microcystin-LR as a surrogate for total microcystins
+Among the approximately 100 different congeners of microcystins known to exist,
+microcystin-LR is the most common. The difference in toxicity of microcystin congeners depends
+on the amino acid composition (Falconer, 2005). Stoner et al. (1989) administered by
+intraperitoneal (i.p.) purified microcystin congeners (-LR, -LA, -LY and -RR) into ten or more
+adult male and female Swiss albino mice. Necropsies were performed to confirm the presence of
+the pathognomonic hemorrhagic livers. The authors reported 50% lethal doses (LD ) of 36 ng/g-
+50
+bw for -LR, 39 ng/g-bw for -LA, 91 ng/g- bw for -LY and 111 ng/g-bw for –RR. Similarly, Gupta
+et al., (2003) determined LD for the microcystin congeners LR, RR and YR in female mice
+50
+using DNA fragmentation assay and histopathology examinations of the liver and lung. The acute
+LD determination showed that the most toxic congener was microcystin-LR (43.0 µg/kg),
+50
+followed by microcystin-YR (110.6 µg/kg) and microcystin-RR (235.4 µg/kg). The most toxic
+microcystins are those with the more hydrophobic L-amino acids (-LA, -LR, -and -YM), and the
+least toxic are those with hydrophilic amino acids, such as microcystin-RR.
+Wolf and Frank (2002) proposed toxicity equivalency factors (TEFs) for the four major
+microcystin congeners based on LD values obtained after i.p. administration. The proposed
+50
+TEFs, using microcystin-LR as the index compound (TEF=1.0) were 1.0 for microcystin-LA and
+microcystin-YR and 0.1 for microcystin-RR. The application of TEFs based on i.p. LD values to
+50
+assessment of risk from oral or dermal exposure is questionable given that differences in
+lipophilicity and polarity of the congeners may lead to variable absorption by non-injection routes
+of exposure.
+The potential health risks from exposure to mixtures of microcystin congeners is
+unknown, and since microcystin-LR is one of the most potent congeners and has the majority of
+toxicological data on adverse health effects, microcystin-LR is used as a surrogate for all
+microcystins in the health advisory.
+4.2 Consideration of Study Duration
+EPA used a 28-day study conducted by Heinze (1999) to derive the Ten-day HA for
+microcystins. It is standard to use studies that are 7 to 30 days in duration to derive a 10-day
+advisory value. In the study conducted by Heinze (1999), rats were dosed daily via drinking water
+with microcystin and sacrificed at the conclusion of the study. No interim sacrifices were
+performed to evaluate effects at 10 days or any other time less than the full 28 days. At the
+conclusion of the 28-day study, adverse effects observed in the liver included increases in liver
+weight, slight to moderate liver necrosis lesions accompanying hemorrhages at the low dose with
+increased severity at the high dose, and changes in serum enzymes indicative of liver damage.
+Given the lack of interim effects data, it is not known when during the 28-day study these effects
+were manifested.
+Drinking Water Health Advisory for Microcystins-June 2015 31
+4.3 Consideration of Reproductive Effects as Endpoint
+Upon consideration of all available studies, liver effects were considered the most
+appropriate basis for quantitation as it was a common finding among oral toxicology studies
+(Falconer et al., 1994; Fawell et al., 1999; Ito et al., 1997b). However, while the liver is the
+primary target of microcystin toxicity, there have been reports of effects of microcystin-LR on the
+male reproductive system and sperm development following oral exposures (Chen et al., 2011).
+In a study conducted by Chen et al. (2011), oral exposures to low concentrations of
+microcystin-LR for 3 to 6 months showed reproductive toxicity including decreased sperm counts
+and sperm motility, as well as an increase in sperm abnormalities, decreased serum testosterone
+and increased serum luteinizing hormone (LH) levels. Because these effects were observed at
+doses lower (0.79 μg/kg/day) than those observed for liver effects in Heinze (1999), EPA
+evaluated Chen et al. (2011) and the lesions in the testes and effects on sperm motility as the
+potential critical study and points of departure for the derivation of the RfD for microcystins.
+The Chen et al., 2011 study has several limitations in the experimental design and
+reporting. There was a lack of data reported on testis weights and sperm motility. The authors
+reported “no significant differences in testis weights,” but no information was provided on the
+weights of the testis or whether there was a trend toward decreasing weights that failed to be
+statistically significant. Also, no information was given on the methodology used for sperm
+motility evaluation. No information was provided on how samples were handled and what
+measurements were made to determine the percentage of sperm motility. Although body weight
+and amount of water consumed were measured, these data were not presented, and doses to the
+animals were not calculated by the study authors. In addition, the purity of microcystin-LR and
+the species and age of the mouse used were not reported. Male sperm characteristics such as
+volume, motility, and structure of sperm differ developmentally by age. Therefore, not knowing
+the age of the mice in the study introduces uncertainty in the quantification of the reproductive
+effects.
+The fixation and staining of the testes used for microscopic examination
+(paraformaldehyde in phosphate-buffered saline (PBS) and paraffin), could result in the
+generation of artifacts, such as disruption of the testicular tubes. Cytoplasmic shrinkage and
+chromatin aggregations were observed in both control and experimental groups. In order to
+preserve the microstructure of the testis, dual fixation such as Davidson’s or Bouin’s fixation
+followed by PAS staining should have been done. In addition, the histopathology analysis of the
+testes reported by the authors did not provide sufficient detail to adequately assess the degree of
+damage.
+The quality of the medium used for the sperm analysis, and the lack of additional data
+from the sperm analysis measurements carried out through the computer-assisted sperm analysis
+(CASA) are additional limitations in experimental design for this study. Very few details of the
+serum hormone assay protocol and the quantitative parameters of sperm motility from the CASA
+analysis were provided. Therefore, the calculation for the motility of the sperm was unclear and
+could not be verified.
+Drinking Water Health Advisory for Microcystins-June 2015 32
+Based on the limitations in study design, report and methods used by Chen et al. (2011),
+EPA concluded that the quantitative data on decreased sperm counts and sperm motility were not
+appropriate for determining the point of departure for the derivation of the RfD for microcystin.
+4.4 Allometric Scaling Approach
+Allometric scaling was not applied in the development of the short term RfD for
+microcystins. In the development of short-term advisory values (One-day and Ten-day),
+parameters are used that reflect exposures and effects for infants up to one year of age, rather than
+for adults. The body weight scaling approach is derived from the relationship between body
+surface area and basal metabolic rate in adults. Infants/children surface area and basal metabolic
+rates are very different than adults with a slower metabolic rate. In addition, limited toxicokinetic
+data are available to assess the appropriateness of body weight scaling in early life. The body
+weight scaling procedure has typically been applied in the derivation of chronic oral RfDs and
+cancer assessments, both of which are concerned with lifetime repeated exposure scenarios (U.S.
+EPA, 2012). Thus, given the short term duration of the critical study and the development of a
+short term RfD for determination of a Ten-day HA value, and the application of the Ten-day HA
+to infants and pre-school age children, the application of the body weight scaling procedure is not
+appropriate for this scenario.
+In addition, for short-term advisories (one-day and ten-day duration), EPA assumes all
+exposure is derived from drinking water and, therefore, no Relative Source Contribution (RSC)
+term is applied. For lifetime health advisory values, EPA does include an RSC that reduces the
+advisory value to account for other potential sources.
+4.5 Benchmark Dose (BMD) Modeling Analysis
+The data set reported by Heinze (1999) was evaluated for BMD modeling. Heinze (1999)
+demonstrated dose-related liver changes and statistically significant effects at the lowest dose (50
+µg/kg/day). Histological changes were also observed in all the animals (ten) in each dose group
+(Table 3-2). Although differences in the degree of necrosis were observed with or without
+hemorrhage related to dose, all the histological effects including Kupffer cell activation and PAS
+staining showed no dose-response since all ten animals at the low and high doses displayed liver
+damage associated with each effect. Therefore, the dose-response for the sum of the incidence
+categories (slight, moderate, and intensive damage), are not amenable to BMD modeling. As a
+result, the LOAEL of 50 µg/kg/day described by Heinze (1999) was used as the POD for
+development of the HA.
+4.6 Carcinogenicity Evaluation
+While there is evidence of an association between liver and colorectal cancers in humans
+and microcystins exposure and some evidence that microcystin-LR is a tumor promoter in
+mechanistic studies, there is inadequate information to assess carcinogenic potential of
+microcystins in humans (U.S. EPA, 2005). The human studies are limited by lack of exposure
+Drinking Water Health Advisory for Microcystins-June 2015 33
+information and the uncertainty regarding whether or not these studies adequately controlled for
+confounding factors such as Hepatitis B infection. No chronic cancer bioassays for microcystins
+in animals are available.
+The only oral study that examined the tumorgenicity of microcystin-LR failed to find
+preneoplastic nodules in the livers of groups of 22 mice receiving up to 100 doses of 0 or 80
+μg/kg/day over 7 months. Some studies suggest that microcystin-LR is a tumor promoter. Given
+the potential impact on the cell cytoskeleton, necrotic effects on liver cell generation of reactive
+oxygen species (ROS), and other biochemical changes, this finding is not surprising. The work by
+Nishiwaki-Matsushima et al., 1992 that compares glutathione S-transferase placental form-
+positive (P-GST) foci from 10 µg/L microcystin-LR to that from the phenobarbital (0.05% in the
+diet) as a positive control suggests that it is at best a weak promoter. The results from the second
+part of the same study that compare P-GST foci following initiation with DEN followed by
+microcystin-LR (10 µg/kg), both before and after a partial hepatectomy, support this conclusion.
+The International Agency for Research on Cancer (IARC) classified microcystin-LR as a
+Group 2B (possibly carcinogenic to humans) based on the conclusion that there was strong
+evidence supporting a plausible tumor promoter mechanism for these liver toxins. U.S. EPA’s
+Cancer Guidelines (2005) state that the descriptor of “inadequate information to assess
+carcinogenic potential” is appropriate when available data are judged inadequate for applying one
+of the other descriptors or for situations where there is little or no pertinent information or
+conflicting information. The guidelines also state that (p. 2-52) “Descriptors can be selected for
+an agent that has not been tested in a cancer bioassay if sufficient other information, e.g.,
+toxicokinetic and mode of action information, is available to make a strong, convincing, and
+logical case through scientific inference”. In the case of microcystins, the data suggest that
+microcystin-LR may be a tumor promoter but not an initiator. Without stronger epidemiology
+data and a chronic bioassay of purified microcystin-LR, the data do not support classifying
+microcystin-LR as a carcinogen.
+4.7 Uncertainty and Variability
+Several uncertainty factors were applied in several areas to account for incomplete
+information. Human data on the toxic effects of microcystins are limited. Quantification of the
+absorption, distribution, and elimination of microcystins in humans following oral, inhalation or
+dermal exposure is not well understood. The clinical significance in humans for biological
+changes observed in experimental animals such as decreased sperm count and motility, and
+microscopic lesions in the testes needs further analysis. In animal studies with oral exposures to
+microcystins, some adverse effects in males such as reduced testosterone levels, as well as
+toxicity to the female reproductive tissues and those of offspring have not been fully
+characterized. No data are available to quantify the differences between humans and animals for
+the critical health endpoints. There is uncertainty regarding susceptibility and variability in the
+human population following exposure to microcystins and the relative toxicity of other
+microcystins congeners when compared to microcystin-LR. Additional information is needed on
+the potential health risks from mixtures of microcystins with other cyanotoxins, as well as
+biological and chemical stressors present in source water and drinking water supplies.
+Drinking Water Health Advisory for Microcystins-June 2015 34
+In addition, for short-term advisories (One-day and Ten-day duration), EPA assumes all
+exposure is derived from drinking water and, therefore, no Relative Source Contribution (RSC)
+term is applied. For lifetime health advisory values, EPA does include an RSC that reduces the
+advisory value to account for exposure to other potential sources.
+4.8 Susceptibility
+Available animal data are not sufficient to determine if there is a definitive difference in
+the response of males versus females following oral exposure to microcystins. Fawell et al. (1999)
+observed a slight difference between male and female mice in body weight and serum proteins
+(ALT and AST), but no sex-related differences in liver pathology.
+Studies in laboratory rodents suggest that the acute effects of microcystin-LR may be
+more pronounced in adult or aged animals than in juvenile animals (Adams et al., 1985; Ito et al.,
+1997a; Rao et al., 2005). In these studies, young animals showed little or no effect at microcystin-
+LR doses found to be lethal to adult animals. Age-dependent differences in toxicity were observed
+after both oral and i.p. exposure, suggesting that differences in gastrointestinal uptake were not
+entirely responsible for the effect of age. The relevance of these age-related differences to acute
+toxicity in humans is unknown. However, for infants to one-year olds fed exclusively with
+powdered formula prepared with tap water, drinking water is the dominant route of exposure to
+cyanotoxins. There are significant differences in exposure between these life-stages that impact
+risk.
+Based on the available studies in animals, individuals with liver and/or kidney disease
+may be more susceptible than the general population since the detoxification mechanisms in the
+liver and impaired excretory mechanisms in the kidney may be compromised. Data from an
+episode in a dialysis clinic in Caruaru, Brazil where microcystins were not removed by treatment
+of dialysis water, identify dialysis patients as a population of potential concern in cases where the
+drinking water source for the clinic used to prepare the dialysate is contaminated with
+cyanotoxins. Other potentially sensitive individuals include pregnant woman, nursing mothers,
+and the elderly.
+4.9 Distribution of Body Weight and Drinking Water Intake by Age
+Both body weight and drinking water intake are distributions that vary with age. EPA has
+developed two health advisory values, a Ten-day HA of 0.3 µg/L based on exposure to infants
+over the first year of life, and a Ten-day HA of 1.6 µg/L based on exposure to adults, over 21
+years of age. Section 4.10 discusses how EPA recommends application of these values to other
+age groups.
+The U.S. EPA (2011a) Exposure Factors Handbook provides values for drinking water
+ingestion rate and corresponding body weight. The estimated 90th percentile of community water
+ingestion for the general population (males and females of all ages) has been used as the default
+value for water ingestion. EPA plotted the 90th percentile of drinking water intake using Table 3-
+19 for ages ≤3 years, and Table 3-38 for ages >3 years due to sample size in the respective studies.
+Age groups <3 months in Table 3-19 were combined due to insufficient sample sizes. Figure 4.1
+Drinking Water Health Advisory for Microcystins-June 2015 35
+Figure 4-1. 90th Percentile Drinking Water Ingestion Rates by Age Group
+0.25
+0.23
+0.2
+0.148
+0.15
+0.112
+0.1
+0.056 0.052
+0.043
+0.05 0.035 0.034
+0.026 0.023 0.026
+0
+Adapted from U.S. EPA 2011 Exposure Factors Handbook (U.S.EPA, 2011a).
+represents the 90th percentile drinking water ingestion rates (L/kg/day) for each age group (located
+on top of the columns). Bottle-fed ages are shown in red (first three columns on the left).
+Based on the drinking water intake rates for children <12 months (0.15 L/kg-day), the
+exposure of children is over 4 times higher than that of adults >21 years old on a body weight
+basis (0.034 L/kg-day). Infants from birth to 3 months may be exclusively bottle-fed and
+therefore, have a higher ingestion rate. After 3 months of age, typically around 4 to 6 months of
+age, other food and liquids are introduced into the infant diet, lowering the ingestion rate of
+drinking water. Drinking water contributes the highest risk of the total cyanotoxin intake for
+infants to one-year-olds fed exclusively with powdered formula prepared with tap water
+containing cyanotoxins. At the age of 6, children’s intake of drinking water relative to their body
+weight is approximately the same as those of an adult (>21 years). Data evaluating the transfer of
+microcystins through breast milk are not available for humans.
+4.10 Distribution of Potential Health Advisory Values by Age
+Using the ingestion rates for each age-group (from Figure 4-1), EPA estimated Ten-day
+HA values for microcystins for each age group (plotted on Figure 4-2) to demonstrate the
+variability due to body weight and drinking water intake by age.
+)yad/gk/L(
+etaR
+noitsegnI
+retaW
+gniknirD
+elit%09
+Drinking Water Health Advisory for Microcystins-June 2015 36
+Figure 4-2. Ten-day Health Advisories for Microcystins by Age Group
+EPA decided to apply the Ten-day HA value calculated for infants over the first year of
+life (0.3 µg/L) to all bottle-fed infants and young children of pre-school age because these age
+groups have higher intake per body weight relative to adults. As Figure 4.2 demonstrates, when
+the Ten-day HA is estimated by age group, the calculated HA value for infants from birth to 3
+months old is 0.2 µg/L, slightly below the infant health advisory value of 0.3 µg/L. EPA believes
+that infants from birth to 3 months old are not at a disproportionate risk at a 0.3 µg/L advisory
+value because a 30-fold safety factor is built into this calculation to account for human variability
+and deficiencies in the database. The estimated Ten-day HA values for infants from 3 months old
+through pre-school age groups (less than 6 years old) are at or above the advisory value of 0.3
+µg/L. Therefore, children within these age groups are adequately protected by the advisory value
+for bottle-fed infants and young children of pre-school age. EPA decided to apply the adult Ten-
+day HA value of 1.6 µg/L to school age children (children older than or equal to 6 years) through
+adulthood because children’s intake of drinking water relative to body weight in this age group is
+almost the same as those of an adult (>21 years).
+Drinking Water Health Advisory for Microcystins-June 2015 37
+5.0 ANALYTICAL METHODS
+This Health Advisory (HA) for the Cyanobacterial Microcystin Toxins is applied to total
+microcystins which should include all of the measureable microcystin congeners within the
+cyanobacterial cells (intracellular) and outside the cell (extracellular).
+Extracellular microcystins (either dissolved in water or bound to other materials) typically
+make up less than 30% of the total microcystin concentration in source water (Graham et al.,
+2010). Most of the toxin is intracellular, and released into the water when the cells rupture or die.
+Both intracellular and extracellular microcystins may also be present in treated water, depending
+on the type of treatment processes in place. Therefore, it is important to note that analysis for
+microcystins should account for both intracellular and extracellular toxins in samples when intact
+cells may be present. Release of intracellular microcystins is achieved by rupturing or lysing the
+cell walls in order to expose the intracellular microcystins. Cell lysis can be achieved by a variety
+of methods including sequential freeze-thawing, freeze drying, and mechanical or sonic
+homogenization. Following cell lysis, microcystins may need to be extracted for some analytical
+methods. At low concentrations, the direct determination of microcystins may not be feasible, and
+a preconcentration step may be required. Typically samples are filtered and/or centrifuged after
+cell lysis to remove cell fragments and particulates. This may be followed by freeze-drying or
+solid-phase extraction (SPE). Typical elution solvents are dilute acid, methanol, acidified
+methanol/water mixtures, and butanol/methanol/water mixtures.
+Preconcentration is generally needed when techniques such as liquid chromatography are
+used in order to achieve limits of detection in the low-µg/L and ng/L range. Extraction efficiency
+has been shown to vary depending on the type of solvent, the hydrophobicity of the congener, the
+water content of the cells (freeze-dried versus frozen) and differences between field samples and
+laboratory cultures. Variations in extraction efficiency may impact the accurate quantitation of
+microcystins so the use of a surrogate compound to monitor the extraction efficiency is strongly
+recommended. Responsible authorities should ensure that the appropriate methods and
+preparation techniques (extraction, concentration and separation) are being used in the laboratory
+depending on the type of sample and the analytical method selected.
+Analytical methods available for the detection of microcystins in drinking water include
+reversed phase high performance liquid chromatography (HPLC) coupled with mass
+spectrometric (MS, MS/MS) or ultraviolet/photodiode array detectors (UV/PDA), Enzyme Linked
+Immunosorbent Assays (ELISA), and Protein Phosphatase Inhibition Assays (PPIA).
+EPA has developed a liquid chromatography/tandem mass spectrometry (LC/MS/MS)
+method for microcystins and nodularin (combined intracellular and extracellular) in drinking
+water (Method 544; U.S. EPA, 2015). Accuracy and precision data have been generated in
+reagent water, and finished ground and surface waters for the following compounds: microcystin-
+LA (microcystin-LA), -LF (microcystin-LF), -LR (microcystin-LR), -LY (microcystin-LY), -RR
+(microcystin-RR), -YR (microcystin-YR), and nodularin-R (NOD). This method is intended for
+use by analysts skilled in solid phase extractions, operation of LC/MS/MS instruments, and the
+interpretation of associated data. The single laboratory lowest concentration minimum reporting
+levels (LCMRLs) for this method range from 2.9 to 22 ng/L (0.0029-0.022 µg/L). The Detection
+Limit (DL) for analytes in this method range from 1.2 to 4.6 ng/L. In this method, a 500 mL water
+Drinking Water Health Advisory for Microcystins-June 2015 38
+sample (fortified with an extraction surrogate) is filtered, and both the filtrate and the filter are
+collected. The filter is placed in a solution of methanol containing 20% reagent water and held for
+at least one hour at -20 ºC to release the intracellular toxins from cyanobacteria cells captured on
+the filter. The liquid is drawn off the filter and added back to the 500-mL aqueous filtrate. The
+500-mL sample (plus the intracellular toxin solution) is passed through a SPE cartridge to extract
+the method analytes and surrogate. Analytes are eluted from the solid phase with a small amount
+of methanol containing 10% reagent water. The extract is concentrated to dryness by evaporation
+with nitrogen in a heated water bath, and then adjusted to a 1-mL volume with methanol
+containing 10% reagent water. A 10-μL injection is made into an LC equipped with a C8 column
+that is interfaced to an MS/MS. Analytes are separated and identified by comparing the acquired
+mass spectra and retention times to reference spectra and retention times for calibration standards
+acquired under identical LC/MS/MS conditions. The concentration of each analyte is determined
+by external standard calibration. To download Method 544 Determination of Microcystins and
+Nodularin in Drinking Water by Solid Phase Extraction and Liquid Chromatography/tandem
+Mass Spectrometry (LC/MS/MS), please go to: http://www.epa.gov/nerlcwww/ordmeth.htm
+High performance liquid chromatography (HPLC) is widely used to separate microcystin
+congeners. A variety of stationary phases have been used including reversed-phase C columns,
+18
+amide C columns, internal surface reversed-phase columns or ion exchange columns.
+18
+Optimization of chromatographic parameters is needed to ensure a good resolution of analytes. In
+addition to mass spectrometry, ultraviolet/visible absorbance is a commonly used detection
+techniques with HPLC. Most microcystin congeners have similar absorption profiles between 200
+and 300 nm. The wavelength of the UV/visible detector can be set at these values to record the
+responses of microcystins in sample extracts separated by the HPLC. The retention time, UV
+spectra and peak area of commercially available or laboratory standards is the basis of
+identification and quantification of microcystins using HPLC-UV/visible detection. However, due
+to the limited number of commercially available standards, the toxins are often quantified by
+comparison to an microcystin-LR standard and reported in terms of microcystin-LR equivalence.
+HPLC-UV/visible is susceptible to interferences from natural organic materials (NOMs).
+Detection limits will depend partially on the sample volume extracted, the concentration of the
+toxins, and the presence of interfering contaminants.
+A variety of antibodies have been isolated against microcystin-LR and microcystin-RR, as
+well as recombinant antibody fragments and antibodies against the amino acid ADDA.
+Commercial ELISA kits that contain all of the reagents needed for analysis have also been
+developed and typically provide a cross reactivity chart for some of the congeners (i.e.,
+microcystin-LR, -RR, YR, nodularin) that are commonly found in water. These range from 50-
+85% for microcystin-RR, 35-181% for microcystin-YR and 10-124% for microcystin-LA.
+Detection of the total microcystins will be expressed as the sum of the congeners provided from
+ADDA ELISA. The methods detection limit (MDLs) of several commercial laboratory ELISA
+kits have been reported to range from 0.04 to 0.2 µg/L for microcystin-LR. Commercial ELISA
+kits generally have quantitation ranges from 0.2 (LOQ) to an upper limit of 5 µg/L. Two high
+sensitivity ELISA plate kits have become commercially available with MDLs ranging from 0.04
+to 0.05 µg/L.
+Drinking Water Health Advisory for Microcystins-June 2015 39
+PPIAs are used with a variety of detection methods and substrates including radioactive
+detection assays using 32P-radiolabelled substrates and colorimetric assays using p-nitrophenol
+phosphate as the substrate. The method has also been adopted for fluorescence measurements
+using the substrates methylumbelliferyl phosphate. The detection limit of total microcystins,
+reported as microcystin-LR equivalents (microcystin-LR ) using radiometric protein
+equiv
+phosphatase assays is approximately 0.1 µg/L or less, and using colorimetric PP1 inhibition
+assays range between 10 to 20 ng/mL (0.01 to 0.02 µg/L).
+Rapid tests for the identification of the presence of microcystins in water have been
+developed for use in the field. Field test kits can be used as a presence/absence tool for
+determining if a bloom is toxic or if treatment plant operations need to be adjusted during a bloom
+event but do not currently have sufficient sensitivity at microcystin concentrations below 1 µg/L
+to be used for treated water analyses. Commercially-available test kits use a variety of methods
+including immunochromatography (test strips), ELISA, and phosphatase inhibition to estimate the
+level of microcystins in a water sample. In general, the results of field test kits should be
+considered qualitative and should only be used to conduct a preliminary assessment of
+microcystin levels. The applicability of test kits is between 1 and 5 µg/L of microcystins with a
+detection limit of approximately 0.5 µg/L. Several field test kits do not include a lysing agent and,
+therefore, only determine the presence of extracellular microcystins. When using these field test
+kits, users should consult the manufacturer regarding an appropriate lysing technique if the
+detection of both intracellular and extracellular microcystins is required.
+A new approach using laser diode thermal desorption-atmospheric pressure chemical
+ionization interface coupled to tandem mass spectrometry (LDTD-APCI-MS/MS) has been
+developed for the analysis of total microcystins in complex environmental matrices. The method
+is based on oxidation of the MCs in a sample using potassium permanganate under alkaline
+conditions to produce 2-methyl-3-methoxy-4-phenylbutyric acid (MMPB). MMPB is then
+extracted and directly injected (no chromatographic separation) into the LDTD-APCI-MS/MS
+system. This approach results in ultra-fast sample analysis with simple sample preparation,
+reducing time and material costs associated with chromatographic separation. This method does
+not require individual MC standards, but similar to ELISA and PPIA, the results do not provide
+information on the identity of the individual MC congeners. The MDL and LOQ are 0.2 and 0.9
+µg/L, respectively (Roy-Lachapelle et al., 2014).
+Drinking Water Health Advisory for Microcystins-June 2015 40
+6.0 TREATMENT TECHNOLOGIES
+The information below is adapted from the Health Canada Guidelines for Cyanobacteria
+Toxins in Drinking Water, available later in 2015.
+Detailed information on the operational considerations of a variety of treatment methods
+can be found in the EPA Drinking Water Treatability Database for Microcystins (U.S. EPA,
+2007); the International Guidance Manual for the Management of Toxic Cyanobacteria (GWRC,
+2009) available at http://www.waterra.com.au/cyanobacteria-
+manual/PDF/GWRCGuidanceManualLevel1.pdf, and Management Strategies for Cyanobacteria
+(Blue-Green Algae): A Guide for Water Utilities (Newcombe et al., 2010) available at
+http://www.researchgate.net/profile/Lionel_Ho/publication/242740698_Management_Strategies_for_Cyan
+obacteria_(Blue-Green_Algae)_A_Guide_for_Water_Utilities/links/02e7e52d62273e8f70000000.pdf
+For additional information on treatment strategies commonly used or being considered by
+water systems vulnerable to cyanotoxins, please see Recommendations for Public Water Systems
+to Manage Cyanotoxins in Drinking Water (U.S. EPA, 2015b).
+6.1 Management and Mitigation of Cyanobacterial Blooms in Source Water
+Algaecides can be applied to lakes and reservoirs to mitigate algal blooms, including
+cyanobacteria. In most cases, depending on the cyanobacteria species present, the application of
+algaecides has the potential to compromise cell integrity releasing cyanotoxins into the source
+waters. Chemical treatment to control blooms in drinking water sources in the early stages of the
+bloom when cyanobacterial concentrations are still relatively low (usually under 5,000 to 15,000
+cells/mL) (WHO, 1999), are less likely to release significant cyanotoxin concentrations upon cell
+lysis and is able to mitigate or prevent a cyanobacterial bloom from proliferating as the season
+progresses. If harmful cyanobacterial blooms occur, utilities may take action to investigate
+alternative source water sources, change intake locations or levels to withdraw source water with
+minimal cyanotoxin concentrations, or investigate methods of destratification in the water source.
+Purchasing water from a neighboring interconnected water system that is unaffected by the bloom
+may also be an option for some systems.
+Clays and commercial products such as aluminum sulfate (alum) have been used for the
+management of blooms in source waters. Alum treatment efficiency depends on the alum dose
+and the type of flocculant. Aeration and destratification have also been used to treat
+cyanobacterial blooms, usually in smaller water bodies (from one acre to several tens of
+acres). Active mixing devices, diffuse air bubblers, and other means of reducing stratification
+have proven to be effective in controlling outbreaks and persistence of blooms in relatively small
+shallow impoundments (around <20 feet deep). These strategies can be applied to the entire
+source water body or to just a portion of the lake depending on the need, and size and depth of the
+water body relative to the source water intake(s).
+Hydrogen peroxide (H O ) has been used as an algaecide in source water because of a
+2 2
+rapid reaction time (90% of bloom collapsed in 3 days and 99% in 10 days), and environmentally
+safe reaction products (oxygen and water) (Wang et al., 2012; Matthjis et al; 2012). The
+Drinking Water Health Advisory for Microcystins-June 2015 41
+drawbacks (aside from cell lysis) are that oxidant breakdown is so rapid that repeated applications
+are needed. Further understanding of this technique is needed (Matthjis et al., 2012).
+The use of ultrasonic sound waves to disrupt cyanobacterial cells has also been
+investigated as a potential source water treatment option (Rajasekhar et al., 2012). It is
+environmentally friendly compared to chemical treatment strategies. The technique has also been
+reported to be capable of degrading microcystin-LR (Song et al., 2005). Drawbacks include that
+application frequencies are difficult to calculate and are system-specific; and that applications on
+large scale require more powerful and, therefore, more expensive equipment. Sonication shows
+potential for use in cyanobacterial bloom management, but further study to determine effective
+operating procedures is needed before it can be considered as a feasible approach (Rajasekhar et
+al., 2012).
+Excess nutrients are thought to be a primary driver of cyanobacterial blooms. Long-term
+prevention of cyanobacterial blooms likely requires reductions in nutrient pollution. Excess
+nitrogen and phosphorus in aquatic systems can stimulate blooms and create conditions under
+which harmful cyanobacteria thrive. Thus, managing nutrient pollution sources within a
+watershed in addition to waterbody-specific physical controls (in systems that are amenable to
+those controls) tends to be the most effective strategy. Nutrient pollution can be from urban,
+agricultural, and atmospheric sources and, therefore, reductions can be achieved through a variety
+of source control technologies and best management practices.
+6.2 Drinking Water Treatment
+Effective treatment of cyanotoxins in drinking water includes the evaluation and selection
+of appropriate treatment methods. Any variation in treatment methods aimed at reducing toxins
+concentrations need to be tailored to the type(s) of cyanobacteria present and the site-specific
+water quality (e.g. pH, temperature, turbidity, presence of natural organic material (NOM), etc.),
+the treatment processes already in place, and the utility’s multiple treatment goals (e.g., turbidity
+and total organic carbon (TOC) removal, disinfection requirements, control of disinfection by-
+products (DBP) formation, etc.). Utilities need to have an understanding of the type and
+concentration of cyanotoxins present in the source water and should conduct site-specific
+evaluations such as jar testings and piloting in order to determine the most effective treatment
+strategy. Potential target parameters include: chlorophyll-a, turbidity, cyanobacterial cells and
+extracellular and intracelluar toxins.Care should be taken to avoid cell lysisTo remove both
+intracellular and extracellular toxins from drinking water, a multi-barrier approach is required,
+which may consist of conventional filtration for intracellular cylindrospermopsin removal and
+additional processes such as activated carbon, biodegradation, advanced oxidation, and small-pore
+membrane processes (e.g. nanofiltration and reverse osmosis), for the removal or oxidation of
+extracellular cylindrospermopsin. The most effective way to deal with cyanobacteria cells and
+their toxins, is to remove the cells intact, without damaging them, to prevent the release
+of additional extracellular toxins into the water.
+Drinking Water Health Advisory for Microcystins-June 2015 42
+6.2.1 Conventional Treatment for Microcystins
+In the absence of cell damage, conventional treatment employing coagulation,
+flocculation, clarification (sedimentation or dissolved air flotation) and rapid granular filtration
+can be effective at removing intact cells and the majority of intracellular toxins (cell bound)
+(Chow et al., 1998; Newcombe et al., 2015). However, if toxins are released into solution, a
+combination of conventional treatment processes with oxidation, adsorption, and/or advanced
+treatment needs to be considered to treat both intracellular and extracellular cyanotoxins.
+The efficiency of the conventional treatment processes to remove cyanobacterial cells and
+intracellular microcystins has been shown to vary from 60 to 99.9%. Factors that impact removal
+include the cyanobacterial species and cell density, coagulant type and dose, pH, NOM, and
+operational parameters such as flocculation time, frequency of filter backwashing and clarifier
+sludge removal (Vlaski et al., 1996; Hoeger et al., 2004; Jurczak et al., 2005; Zamyadi et al.,
+2012a, 2013c; Newcombe et al., 2015). Typically, 60 to 95% of cells and intracellular
+microcystins can be removed during sedimentation with as much as 99.9% removal achieved
+through filtration (Lepisto et al., 1994; Drikas et al., 2001; Hoeger et al., 2004; Newcombe et al.,
+2015). The efficiency of coagulation and clarification for cell removal is dependent on pH,
+coagulant type and dose and the morphological characteristics of the cyanobacteria. Rapid sand
+filtration without pre-treatment (i.e., direct filtration, without coagulation/clarification) is not
+effective for cyanobacterial cell removal.
+If operated properly, conventional treatment (coagulation, flocculation, clarification and
+filtration), does not cause cell lysis or increases in the extracellular microcystin concentrations of
+treated water (Chow et al., 1998, 1999; Drikas, 2001; Sun et al., 2012). Drinking water treatment
+plants utilizing conventional treatment followed by oxidation or activated carbon may remove
+both intracellular and extracellular microcystins up to 99.99% of total microcystins to achieve
+concentrations below 0.1 µg/L in treated water (Karner et al., 2001; Lahti et al., 2001; Hoeger et
+al., 2005; Jurczak et al., 2005; Rapala et al., 2006; Zamyadi et al., 2013a). Conventional treatment
+is generally considered to have limited effectiveness for the removal of the extracellular
+microcystins. Therefore, additional processes such as adsorption, chemical oxidation,
+biodegradation or reverse osmosis, and nanofiltration are required to remove extracellular
+microcystins.
+Although microfiltration and ultrafiltration membranes can remove both cyanobacterial
+cells and intracellular microcystins, removal of extracellular microcystins using ultrafiltration is
+variable (35 to 70%) and microfiltration is not effective (Gijsbertsen-Abrahamse et al., 2006;
+Dixon et al., 2011a, b). Nanofiltration and reverse osmosis membranes can achieve high removals
+of intracellular and extracellular microcystins, from 82% to complete removal (Westrick et al.,
+2010; Dixon et al., 2010). Pore size, among others, is an important factor in removal efficiency
+for these processes.
+Successful removal of cyanobacterial cells and intracellular microcystins will depend on
+proper operations of the conventional treatment processes (Hoeger et al., 2004; Dugan and
+Williams, 2006; Ho et al., 2013; Zamyadi et al., 2012a, 2013c). Operational considerations for
+removing cyanobacterial cells using coagulation, flocculation and clarification are similar to
+Drinking Water Health Advisory for Microcystins-June 2015 43
+considerations for achieving effective particle removal. The appropriate coagulant and
+coagulation pH should be determined through jar-testing to maximize cell removal. In jar-testing,
+the NOM, chlorophyll-a, or cyanobacterial cell count can be used to optimize the coagulation
+conditions for cyanobacterial cell removal (Sklenar et al., 2014; Newcombe et al., 2015).
+Sufficient mixing should be provided at the point of chemical addition to ensure rapid and
+uniform contact, and an appropriate mixing speed should be determined to optimize the
+flocculation process (GWRC, 2009). It is important to minimize the potential for the
+accumulation of cyanobacterial cells as scums at the surface of sedimentation basins and filters
+(Zamyadi et al., 2012a, 2013c).
+Effective sludge removal from sedimentation/clarification processes is important to
+minimize the release of intracellular and extracellular microcystins into the surrounding waters, as
+significant cell numbers can accumulate within the sludge, and cells contained within the sludge
+can lyse rapidly (Drikas et al., 2001; Ho et al., 2013; Zamyadi et al. 2012a). It has been reported
+that accumulation of cyanobacterial cells and microcystins in clarifiers can lead to their
+breakthrough into filter effluent. In addition, cell lysis can occur in the clarifier sludge, increasing
+the extracellular concentration of microcystins in the treatment plant. Therefore sludge
+management (decreased sludge age) in clarifiers and increased frequency of backwashing of
+filters is important because settled/filtered cells can remain viable and possibly multiply over a
+period of at least 2 to 3 weeks. Within 1 day, some cells in the sludge can lyse and release NOM
+and taste and odor compounds, in addition to cyanotoxins (Newcombe et al., 2015). Additionally,
+backwash water from the filters may contain cyanobacterial cells and/or extracellular
+microcystins; hence, care needs to be taken if spent backwash water is recirculated to the
+beginning of the treatment process to prevent the reintroduction of cells and toxins into the
+treatment train. Although longer filter run-times are typically desirable between backwashing,
+during periods of high algal concentrations, cells can accumulate in the filter, which can
+potentially lead to a significant amount of extracellular microcystins released into the filtered
+water. The optimum balance between maximizing water production and minimizing the risk of
+toxin breakthrough will be plant-specific.
+6.2.2 Adsorption
+Adsorption processes, such as granular activated carbon (GAC) or powdered activated
+carbon (PAC), are effective at removing extracellular microcystins but are not capable of
+removing intact cells and intracellular toxins (Lambert et al., 1996; Newcombe, 2002; Newcombe
+et al., 2003). Removal through adsorption depends on many factors including the type of activated
+carbon used, the microcystin congener and water quality conditions. In general, mesoporous
+carbons (such as chemically-activated wood-based carbons) are the most effective for the removal
+of microcystins (Newcombe et al., 2010). Other factors such as the type of microcystin congener
+present, the raw water quality (i.e., NOM and pH) and contact time affect microcystins removal
+efficiency when using activated carbon processes. In addition, shortened filter run times or filter
+overload may happen during cyanobacteria blooms. Therefore, water treatment plants should
+conduct jar-testing to determine the most effective activated carbon dose, type, and feed point
+prior to the application without affecting other water quality parameters and treatment processes
+(Sklenar et al., 2014).
+Drinking Water Health Advisory for Microcystins-June 2015 44
+The performance of GAC filtration for extracellular microcystin removal depends upon
+the empty bed contact time (EBCT), carbon age, carbon pore size, and raw water quality
+characteristics such as NOM and pH, as well as the microcystin variant (Newcombe, 2002;
+Newcombe et al., 2003; Ho and Newcombe, 2007; Wang et al., 2007). Solution chemistry can
+also affect microcystin-LR adsorption onto GAC. Enhanced removal of microcystin-LR has been
+observed at lower pH (2.5 versus 6.5) due to either precipitation or reduced solvency effect
+(Pendleton et al., 2001).
+Removal of extracellular microcystins by PAC can be highly effective (up to 95%)
+depending on the microcystin congener and concentration, the PAC type and dose, the contact
+time and the water quality characteristics such as TOC (Newcombe et al., 2003; Cook and
+Newcombe; 2008; Ho et al., 2011). According to Newcombe et al. (2010), a PAC dose of 20
+mg/L and a contact time of at least 45 minutes should be considered for removal of most
+extracellular microcystins (with the exception of microcystin-LA).
+6.2.3 Chemical Oxidation
+Chemical oxidation using chlorine, potassium permanganate, or ozonation can be effective
+at oxidizing extracellular microcystins, but can also impaired cell integrity, resulting in an
+increase in concentrations of extracellular microcystins in drinking water. By applying
+conventional filtration (or other filtration process) first to remove the majority of intact cells, the
+extracellular microcystin concentration is less likely to increase due to cell lysis when water is
+treated with oxidants. In cases where pre-oxidation (oxidant applied anywhere along the treatment
+process prior the filter influent) is practiced, it may need to be discontinued during an algal bloom
+or adjustments to the oxidant type and doses may be needed to minimize cell rupture prior to
+filtration (Newcombe et al., 2015).
+The effectiveness of chemical oxidation of microcystins depends on the type of oxidant,
+dose, contact time, microcystin congener and water quality characteristics such as pH and
+dissolved organic carbon (DOC) (GWRC, 2009; Sharma et al., 2012). Laboratory-scale
+experiments have demonstrated that the general trend for the effectiveness of cyanobacterial cell
+and extracellular microcystin oxidation to be: ozone>permanganate>chlorine>chlorine-based
+oxidants (Acero et al., 2005; Rodriguez et al., 2007a, b; Ding et al., 2010; Sharma et al., 2012;).
+However, selection of the most appropriate oxidant for microcystins should be based on the
+characteristics of each water source, the disinfection requirements, and potential formation of
+disinfection by-products (DBPs) (Sharma et al., 2012).
+It is also important to recognize that the use of oxidants may result in the formation of
+DBPs and should be considered when selecting a strategy for oxidizing microcystins (Merel et al.,
+2010; Zamyadi et al., 2012b; Wert et al., 2013). For example, ozone and chlorine dioxide can
+result in the formation of inorganic DBPs, such as bromate and chlorite/chlorate, respectively.
+Additionally, modifying pre-oxidation practices may compromise other treatment objectives (e.g.,
+turbidity removal), and should be considered.
+Drinking Water Health Advisory for Microcystins-June 2015 45
+The oxidation of microcystins by chlorine has been found to be highly effective (>90%
+removal) under experimental conditions (Ho et al., 2006a; Acero et al., 2008; Merel et al., 2009;
+Sorlini and Collivignarelli, 2011). However, the effectiveness of chlorination on the oxidation of
+microcystins depends upon the chlorine dose, contact time, pH, temperature, and other water
+quality characteristics (Sharma et al., 2012). Several studies have found that microcystins are
+efficiently oxidized if pH is maintained below 8, the chlorine dose is greater than 3 mg/L and 0.5
+to 1.5 mg/L of free chlorine residual is present after 30 minutes of contact time (Nicholson et al.,
+1994; Acero et al., 2005; Ho et al., 2006a; Xagoraraki et al., 2006; Newcombe et al., 2010).
+However, much higher chlorine doses (2 to 10 mg/L) are required to lyse the cyanobacterial cell
+and then oxidize the previously cell-bound microcystins (Zamyadi et al., 2013b).
+The oxidation of microcystins in water by permanganate is one of the more effective
+processes for oxidizing extracellular microcystins in water (Sharma et al., 2012). Rodriguez et al.
+(2007a) exhibited a 90% oxidation of microcystin-LR at a dose of 1.0 mg/L, a contact time of 60
+minutes, a pH of 8, and a temperature of 20°C. Complete oxidation occurred at a dose of 1.5
+mg/L (Rodriguez et al., 2007a). Treatment plants considering potassium permanganate for
+oxidation of microcystins should be aware that permanganate can discolor water when it is
+present in excess of 0.05 mg/L. Therefore, dosage control and process monitoring (e.g., visual
+inspection of the basin effluent color, measuring permanganate residual) is important in avoiding
+consumer complaints (MWH, 2012).
+The oxidation of microcystins in water by ozone has been shown to be highly effective
+(greater than 90% oxidation) in laboratory-scale studies (Rositano et al., 2001; Shawwa and
+Smith, 2001; Brooke et al., 2006). The efficacy depends on temperature, pH, ozone dose, contact
+time, and other water quality characteristics such as DOC and alkalinity (Sharma et al., 2012).
+Utilities should also be aware that the use of ozone may result in the formation of bromate and
+other DBPs.
+Monochloramine is a weaker oxidant than chlorine and is not an effective treatment
+barrier for microcystins (Westrick et al., 2010).
+Most laboratory studies have found that chlorine dioxide (ClO ) is not effective for
+2
+oxidizing extracellular microcystins (Kull et al., 2004, 2006; Ding et al., 2010; Sorlini and
+Collivignarelli, 2011) or cyanobacterial cells and intracellular microcystins (Ding et al., 2010;
+Wert et al., 2014) at dosages (1-2 mg/L) and contact times typically applied to drinking water.
+6.2.4 Other Filtration Technologies
+Biological filtration, using either biologically-active sand or activated carbon, has been
+shown to be effective for the removal of extracellular microcystins in bench- and pilot-scale
+studies (Keijola et al., 1998; Bourne et al., 2006; Ho et al., 2006b, 2008, 2012) and in limited full-
+scale studies (Grutzmacher et al., 2002, Rapala et al., 2006). The removal of intact cyanobacterial
+cells and their associated intracellular toxins through physical straining in slow sand filters has
+also been documented (Grutzmacher et al., 2002; Pereira et al., 2012). Biological filters also have
+the capability to remove particulate including intact cyanobacterial cells. Bank filtration may also
+be effective for the removal of microcystins (Lahti et al., 1998; Schijven et al., 2002). A detailed
+Drinking Water Health Advisory for Microcystins-June 2015 46
+review of biological treatment options for cyanotoxin removal conducted by Ho et al., (2012b)
+identified the type and concentration of microcystin-degrading bacteria, concentration of
+microcystins, and temperature as key factors that influence the efficiency of biological filtration
+for the removal of microcystins. In addition, the concentration of other organic matter within the
+source water may inhibit biodegradation, as microcystins may be a secondary substrate in the
+presence of NOM. Particle size, chemical composition and roughness or topography of the
+surface of the media used for filtration have also been identified as important factors for biofilm
+growth and ultimately the biodegradation of microcystins (Wang et al., 2007, Ho et al., 2012).
+Membrane filtration including microfiltration (MF) and ultrafiltration (UF) can achieve
+greater than 98% removal of cyanobacterial cells and intracellular microcystins (Chow et al.,
+1997; Gijsbertsen-Abrahamse et al., 2006; Campinas and Rosa, 2010: Sorlini et al., 2013).
+Nanofiltration (NF), reverse osmosis (RO) and, to a lesser extent UF, can be used for both
+intracellular and extracellular microcystin removal (Neumann and Weckesser, 1998; Lee and
+Walker, 2008; Dixon et al., 2011a,b). The performance of membrane filtration for microcystin
+removal depends on characteristics of the membrane such as molecular weight cut-off (MWCO)
+and hydrophobicity, initial concentration, size and molecular weight of the microcystins, and
+operating parameters such as flux, recoveries and degree of fouling. It is recommended that
+cyanobacterial cells are removed prior to reverse osmosis to prevent membrane clogging and
+fouling.
+Laboratory and pilot-scale studies have demonstrated that MF and UF can remove greater
+than 98% of cyanobacterial cells (Chow et al., 1997, Gijsbertsen-Abrahamse et al., 2006;
+Campinas and Rosa, 2010; Sorlini et al., 2013), and ultrafiltration can be moderately effective
+(35-70%) for removal of extracellular microcystins (Lee and Walker, 2008). Several studies have
+also demonstrated that the release of intracellular microcystins from the shear stress on
+cyanobacterial cells during MF and UF is possible, although it generally results in permeate
+microcystin concentration increases of less than 12 percent (Gijsbertsen-Abrahamse et al., 2006;
+Campinas and Rosa, 2010).
+The removal of extracellular microcystins by NF and RO is very effective (greater than
+90%) and depends on the MWCO, as the filtration of microcystins occurs via size exclusion
+(Gijsbertsen-Abrahamse et al., 2006).
+6.2.5 Combined Treatment Technologies
+In practice, full-scale treatment plants use a combination of treatment technologies (i.e.,
+conventional filtration and chemical oxidation) in order to remove both intracellular and
+extracellular microcystins. Data indicate that utilities can effectively remove both intracellular and
+extracellular microcystins to achieve concentrations below 0.1 µg/L (Lahti et al. 2001; Boyd and
+Clevenger, 2002; Zurawell, 2002; Hoeger et al., 2005, Jurczak et al., 2005; Rapala et al., 2006;
+Haddix et al., 2007; Nasri et al., 2007; Zamyadi et al., 2013c). However, some studies have
+shown that the presence of high concentrations of cells (i.e., 105 cells/mL) and/or microcystins in
+raw water (100 µg/L) may be challenging for treatment plants to reduce concentrations to below
+0.1 µg/L (Tarczyriska et al., 2001; Zamyadi et al., 2012a).
+Drinking Water Health Advisory for Microcystins-June 2015 47
+In most cases, utilities will be able to effectively remove intracellular microcystins with
+processes that are already in place (e.g., conventional treatment) when they are operated with a
+focus on cyanobacteria cell or NOM removal. Extracellular microcystins may also be removed in
+many treatment plants by using existing treatment such as chlorination after filtration or by the
+addition of PAC following conventional treatment (Carriere et al., 2010). Although it is possible
+to remove both intracellular and extracellular microcystins effectively using a combination of
+treatment processes, the removal efficiency can vary considerably. Utilities need to ensure that
+they are utilizing their existing treatment processes to their fullest capacity for removal of both
+cyanobacterial cells and extracellular microcystins and that appropriate monitoring is being
+conducted to ensure that adequate removal is occurring at each step in the treatment process.
+6.3 Point-of-Use (POU) Drinking Water Treatment Units
+Limited information is available on residential treatment units for the removal of
+cyanobacteria cells and microcystins. A study using common water filtration and purification
+systems found that the efficacy of POU filtration devices to remove microcystin (LR) varies
+considerably with the type of device being used (Pawlowicz et al., 2006). Microcystin-LR was
+successfully removed using carbon filters allowing only 0.05 to 0.3% of the toxin load to pass
+through the filter. However, more than 90% of microcystin-LR passed through string-wound
+filters and pleated paper. According to the authors, the use of carbon home filter devices tested in
+this study may provide additional protection beyond that provided by the drinking water treatment
+plant against human exposure to microcystin-LR. Additional studies are recommended to assess
+the efficacy of POU drinking water treatment units for other cyanotoxins and under other
+conditions. Third-party organizations are currently developing certification standards to test POU
+devices to evaluate how well they remove cyanotoxins from drinking water treatment units. Those
+standards are expected in the near future.
+More information about treatment units and the contaminants they can remove can be found at
+http://www.nsf.org/Certified/DWTU/.
+Drinking Water Health Advisory for Microcystins-June 2015 48
+7.0 REFERENCES
+Acero, J. L., Rodriguez, E., Meriluoto, J. (2005). Kinetics of reactions between chlorine and the
+cyanobacterial toxins microcystins. Water Research, 39(8): 1628-1638.
+Acero, J. L., Rodriguez, E., Majado, et al. (2008). Oxidation of microcystin with chlorine and
+permanganate during drinking water treatment. Journal of Water Supply: Research and
+Technology, 57(6): 371-380.
+Adams, W. H., Stoner, R. D., Adams, D. G., et al. (1985). Pathophysiologic effects of a toxic
+peptide from Microcystis aeruginosa. Toxicon. 23(3): 441-447.
+AWWA Research Foundation. (2001). Assessment of Blue-Green Algal Toxins in Raw and
+Finished Drinking Water. Final report #256. Prepared by Carmichael, W. W. AWWA
+Research Foundation and American Water Works Association. Denver, CO.
+Barford, D., Das, A. K., and Egloff, M. (1998). The structure and mechanism of protein
+phosphatases: Insights into catalysis and regulation. Annual Review of Biophysics and
+Biomolecular Structure, 27: 133-164.
+Beussink, A. M., and Graham, J. L. (2011). Relations between hydrology, water quality, and
+taste-and-odor causing organisms and compounds in Lake Houston, Texas, April 2006–
+September 2008. U.S. Geological Survey Scientific Investigations Report 2011-5121,
+pp.27. Reston, VA.
+Bourne, D. G., Blakeley, R. L., Riddles, P., and Jones, G. J. (2006). Biodegradation of the
+cyanobacterial toxin microcystin-LR in natural water and biologically active slow sand
+filters. Water Research, 40(6): 1294-1302.
+Boyd, E. and Clevenger, T. (2002). Removal of cyanobacterial toxins in Midwestern States. In:
+Proceedings of the Water Quality and Technology Conference. American Water Works
+Association, Denver, CO.
+Boyer, G. L. (2007). Cyanobacterial toxins in New York and the Lower Great Lakes ecosystems.
+In: H. K. Hudnell, (Ed.), Proceedings of the Interagency, International Symposium on
+Cyanobacterial Harmful Algal Blooms (ISOC-HAB): State of the Science and Research
+Needs, Advances in Experimental Medicine and Biology. Springer Press, New York, NY.
+pp 151-163.
+Brooke, S., Newcombe, G., Nicholson, B., and Klass, G. (2006). Decrease in toxicity of
+microcystins LA and LR in drinking water by ozonation. Toxicon, 48(8): 1054-1059.
+Brooks, W. P. and Codd, G. A. (1987). Distribution of Microcystis aeruginosa peptide toxin and
+interactions with hepatic microsomes in mice. Pharmacology and Toxicology, 60(3): 187-
+191. (Cited in WHO 1999).
+Drinking Water Health Advisory for Microcystins-June 2015 49
+Burns, J., (2008). Toxic cyanobacteria in Florida waters. In: In: H. K. Hudnell, (Ed.), Proceedings
+of the Interagency, International Symposium on Cyanobacterial Harmful Algal Blooms
+(ISOC-HAB): State of the Science and Research Needs, Advances in Experimental
+Medicine and Biology. Chapter 5. Springer Press, New York, NY. pp.139-152.
+Campinas, M. and Rosa, M. J. (2010). Evaluation of cyanobacterial cells removal and lysis by
+ultrafiltration. Separation and Purification Technology, 70(3): 345-352.
+Carey, C. C., Ibelings, B. W., Hoffmann, E. P., et al. (2012). Eco-physiological adaptations that
+favour freshwater cyanobacteria in a changing climate. Water Research, 46(5): 1394-
+1407.
+Carmichael, W. W. (1992). A Status Report on Planktonic Cyanobacteria (Blue Green Algae) and
+their Toxins. EPA/600/R-92/079, Environmental Monitoring Systems Laboratory, Office
+of Research and Development, U.S. Environmental Protection Agency, Cincinnati, OH.
+(Cited in WHO 1999).
+Carmichael, W. W., Beasley, V., Bunner, D. L., et al. (1988). Naming of cyclic hepatapeptide
+toxins of cyanobacteria (blue-green algae). Toxicon 26(11): 971-973.
+Carmichael W. W., Azevedo S. M., An J. S., et al. (2001). Human fatalities from cyanobacteria:
+chemical and biological evidence for cyanotoxins. Environmental Health Perspectives
+109(7): 663-668
+Carriere, A., Prevost, M., Zamyadi, A., et al. (2010). Vulnerability of Quebec drinking-water
+treatment plants to cyanotoxins in a climate change context. Journal of Water and Health,
+8(3): 455-465.
+Castenholz, R. W. and Waterbury, J. B. (1989). In: J. T. Staley, M. P. Bryant, N. Pfennig and J.
+G. Holt (Eds.), Bergey's Manual of Systematic Bacteriology. Vol. 3, Williams & Wilkins,
+Baltimore, MD. pp. 1710-1727. (Cited in WHO 1999).
+Chen, Y., Xu, J., Li, Y., and Han, X. (2011). Decline of sperm quality and testicular function in
+male mice during chronic low-dose exposure to microcystin-LR. Reproductive
+Toxicology, 31(4): 551-557.
+Cheng, X., Maher, J., Dieter, M. Z., and Klaassen, C. D. (2005). Regulation of mouse organic
+anion-transporting polypeptides (OATPs) in liver by prototypical microsomal enzyme
+inducers that activate transcription factor pathways. Drug Metabolism Disposition, 33(9):
+1276-1282.
+Chernoff, N., Hunter, E. S., III, Hall, L. L, et al. (2002). Lack of teratogenicity of microcystin-LR
+in the mouse and toad. Journal of Applied Toxicology, 22(1): 13-17.
+Christensen, V. G., Maki, R. P., and Kiesling, R. L. (2011). Relation of Nutrient Concentrations,
+Nutrient Loading, and Algal Production to Changes in Water Levels in Kabetogama Lake,
+Drinking Water Health Advisory for Microcystins-June 2015 50
+Voyageurs National Park, Northern Minnesota, 2008–09. U.S. Geological Survey Scientific
+Investigations Report 2011–5096, 50 p.
+Christoffersen, K., Lyck, S., and Winding, A. (2002). Microbial activity and bacterial community
+structure during degradation of microcystins, Aquatic Microbial Ecology, 27: 125-136.
+Chow, C. W. K., Panglisch, S., House, J., et al. (1997). A study of membrane filtration for the
+removal of cyanobacterial cells. Journal of Water Supply: Research and Technology,
+46(6): 324-334.
+Chow, C., Drikas, M. and Ho, J. (1999). The impact of conventional water treatment processes on
+cells of the cyanobacterium Microcystis aeruginosa. Water Research, 33(15): 3253-3262.
+Chow, C. W. K., House, J., Velzeboer, R. M. A., et al. (1998). The effect of ferric chloride
+flocculation on cyanobacterial cells. Water Research, 32(3): 808-814.
+Chorus, I (Ed.). (2012). Current Approaches to Cyanotoxin Risk Assessment, Risk Management
+and Regulations in Different Countries. Federal Environment Agency. Dessau-Roβlau,
+Germany. Online publication: www.uba.de/uba-info-medien-e/4390.html
+Chorus, I., Falconer, I., Salas, H. S., and Bartram, J. (2000). Health risks caused by freshwater
+cyanobacteria in recreational waters. Journal of Toxicology and Environmental Health-
+Part B, Critical Reviews, 3(4): 323-347.
+Codd, G. A., Morrison, L. F., and Metcalf, J. S. (2005). Cyanobacterial toxins: risk management
+for health protection. Toxicology and Applied Pharmacology, 203(3): 264-272.
+Cook, D. and Newcombe, G. (2008). Comparison and modeling of the adsorption of two
+microcystin analogues onto powdered activated carbon. Environmental Technology, 29(5):
+525-534.
+Cote, L-M., Lovell, R. A., Jeffrey, E. H., et al. (1986). Failure of blue-green algae (Microcystis
+aeruginosa) hepatotoxin to alter in vitro mouse liver enzymatic activity. Journal of
+Toxicology Toxin Reviews, 52(2): 256
+Cousins, I. T., Bealing, D. J., James, H. A., and Sutton, A. (1996). Biodegradation of microcystin-
+LR by indigenous mixed bacterial populations. Water Research, 30(2): 481-485. (Cited in
+WHO 1999).
+Craig, M., Luu, H. A., McCready, T. L., et al. (1996). Molecular mechanisms underlying the
+interaction of motuporin and microcystins with type-1 and type-2A protein phosphatases.
+Biochem. Cell Biology, 74(4): 569-578.
+de la Cruz, A., Antoniou, M., Hiskia, A., et al. (2011). Can We Effectively Degrade
+Microcystins? - Implications on Human Health. Anti-Cancer Agents in Medicinal
+Chemistry, 11:19-37.
+Drinking Water Health Advisory for Microcystins-June 2015 51
+Ding, J. Shi, H., Timmons, T., et al. (2010). Release and removal of microcystins from
+Microcystis during oxidative, physical and UV-based disinfection. Journal of
+Environmental Engineering, 136(1): 2-11.
+Ding, W. X. and Ong, C. N.(2003). Role of oxidative stress and mitochondrial changes in
+cyanobacteria-induced apoptosis and hepatotoxicity. FEMS Microbiology Letters, 220(1):
+1-7.
+Dixon, M. B., Falconet, C., Ho, L., et al. (2010). Nanofiltration for the removal of algal
+metabolites and the effects of fouling. Water Science Technology 61(5): 1189-99.
+Dixon, M. B., Falconet C, Ho L., et al.(2011a). Removal of cyanobacterial metabolites by
+nanofiltration from two treated waters. Journal of Hazardous Materials, 188(1-3): 288-95.
+Dixon, M. B., Richard, Y., Ho, L., et al. (2011b). A coagulation-powdered activated carbon
+ultrafiltration, multiple barrier approach for removing toxins from two Australian
+cyanobacterial blooms. Journal of Hazardous Materials, 186(2-3): 553-1559.
+Drikas, M., Chow, C., Christopher, W. K., et al. (2001). Using coagulation, and settling to remove
+toxic cyanobacteria. Journal American Water Works Association, 93(2): 100-111.
+Dugan, N. R. and Williams, D. J. (2006). Cyanobacteria passage through drinking water filters
+during perturbation episodes as a function of cell morphology, coagulant and initial filter
+loading rate. Harmful algae, 5: 26-35.
+Duy, T. N., Lam, P. K. S., Shaw, G. R., and Connell, D. W. (2000). Toxicology and risk
+assessment of freshwater cyanobacterial (blue-green algal) toxins in water. Reviews of
+Envrionemental Contamination and Toxicology, 163: 113-186.
+Edwards C., Graham, D., Fowler, N., and Lawton, L. A. (2008). Biodegradation of microcystins
+and nodularin in freshwaters. Chemosphere, 73(8):1315–1321.
+Falconer, I. R. (1998). Algal toxins and human health. In: J. Hubec (Ed.), Handbook of
+Environmental Chemistry, Vol. 5, Part C, Quality and Treatment of Drinking Water. pp.
+53-82.
+Falconer, I. R., Beresford, A. M., and Runnegar, M. T. C. (1983). Evidence of liver damage by
+toxin from a bloom of the blue-green alga, Microcystis aeruginosa. Medical Journal of
+Australia, 1(11): 511-514.
+Falconer, I. R., Buckley, T., and Runnegar, M. T. C. (1986). Biological half-life organ
+distribution and excretion of 125I-labeled toxic peptide from the blue-green alga
+Microcystis aeruginosa. Australian journal of biological sciences, 39(1): 17-21.
+Drinking Water Health Advisory for Microcystins-June 2015 52
+Falconer, I. R., Burch, M. D., Steffense, M., et al. (1994). Toxicity of the blue-green alga
+(Cyanobacterium) Microcystis aeruginosa in drinking water to growing pigs, as an animal
+model for human injury and risk assessment. Environmental Toxicology and Water
+Quality, 9(2): 131-139.
+Falconer, I.R. (2005). Cyanobacterial Toxins of Drinking Water Supplies: Cylindrospermopsins
+and Microcystins. CRC Press Boca Raton, Florida. 263p
+Fawell, J. K., Mitchell, R. E., Everett, D. J., and Hill, R. E. (1999). The toxicity of cyanobacterial
+toxins in the mouse. 1. Microcystin-LR. Human and Experimental Toxicology, 18(3): 162-
+167.
+Fay, P. (1965). Heterotrophy and nitrogen fixation in Chlorogloea fritschii. Journal of General
+Microbiology, 39: 11-20. (Cited in WHO 1999).
+Feurstein, D., Kleinteich, J., Heussner, A. H., et al. (2010). Investigation of Microcystin
+Congener–Dependent Uptake into Primary Murine Neurons. Environmental Health
+Perspectives, 118(10): 1370-1375.
+Fischer, W. J., Altheimer, S., Cattori, V., et al.(2005). Organic anion transporting polypeptides
+expressed in liver and brain mediate uptake of microcystin. Toxicology and Applied
+Pharmacology, 203(3): 257-263.
+Fleming, L. E., Rivero, C., Burns, J., et al. (2002). Blue green algal (cyanobacterial) toxins,
+surface drinking water and liver cancer in Florida. Harmful Algae, 1(2): 157-168.
+Fleming, L. E., Rivero, C., Burns, J., et al. (2004). Cyanobacteria exposure, drinking water and
+colorectal cancer. In: K. A. Steidinger, J. H. Landsberg, C. R. Tomas and G. A.Vargo,
+(Eds.), Harmful Algae 2002. Proceedings of the Xth International Conference on Harmful
+Algae. Florida Fish and Wildlife Conservation Commission and Intergovernmental
+Oceanographic Commission of UNESCO, Tallahassee, FL. p. 470-472.
+Fu, W. Y., Chen, J. P., Wang, X. M. and Xu, L. H. (2005). Altered expression of p53, Bcl-2 and
+Bax induced by microcystin-LR in vivo and in vitro. Toxicon, 46(2): 171-177.
+Funari, E. and Testai, E. (2008). Human Health Risk Assessment Related to Cyanotoxins
+Exposure. Critical Reviews in Toxicology, 38: 97-125.
+Giannuzzi, L., Sedan, D., Echenique R., and Andrinolo, D. (2011). An Acute Case of Intoxication
+with Cyanobacteria and Cyanotoxins in Recreational Water in Salto Grande Dam,
+Argentina. Marine Drugs, 2011(9): 2164-2175.
+Gijsbertsen-Abrahamse, A. J., Schmidt, W., Chorus, I., and Heijman, S. G. J. (2006). Removal of
+cyanotoxins by ultrafiltration and nanofiltration. Journal of Membrane Science, 276: 252-
+259.
+Drinking Water Health Advisory for Microcystins-June 2015 53
+Graham, J. L., Ziegler, A. C., Loving, B. L., and Loftin, K. A.(2012). Fate and Transport of
+Cyanobacteria and Associated Toxins and Taste-and-Odor Compounds from Upstream
+Reservoir Releases in the Kansas River, Kansas, September and October 2011. U.S.
+Geological Survey Scientific Investigations Report 2012-5129, pp. 65.
+Graham, J., Loftin, K., Meyer, M., and Ziegler, A. (2010). Cyanotoxin mixtures and taste-and-
+odor-compounds in cyanobacterial blooms from the midwestern United States.
+Environmental Science and Technology, 44: 7361-7368.
+Grutzmacher, G. Bottcher, G., Chorus, I., and Bartel, H. (2002). Removal of microcystins by slow
+sand filtration. Environmental Toxicology, 17(4): 386-394.
+Global Water Research Coalition (GWRC). (2009). International Guidance Manual for the
+Management of Toxic Cyanobacteria. G. Newcombe (Ed.). Global Water Research
+Coalition and Water Quality Research Australia. London, United Kingdom.
+Gupta, Nidhi, et al. (2003). Comparative toxicity evaluation of cyanobacterial cyclic peptide toxin
+microcystin congeners (LR, RR, YR) in mice. Toxicology 188; 2: 285-296.
+Guzman, R. E., Solter, P. F. (1999). Hepatic oxidative stress following prolonged sublethal
+Microcystin LR exposure. Toxicologic Pathology, 27: 582–588.
+Haddix, P. L., Hughley, C. J., and Lechevallier, M. W. (2007). Occurrence of microcystins in 33
+US water supplies. Journal American Water Works Association, 99(9): 118-125.
+Han, J., B. Jeon, and H. Park. 2012. Cyanobacteria cell damage and cyanotoxin release in
+response to alum treatment Water Science & Technology: Water Supply, 12.5, pp. 549-
+555.
+Haney, J. and Ikawa, M. (2000). A Survey of 50 NH Lakes for Microcystin (MCs). Final Report
+Prepared for N.H. Department of Environmental Services by University of New
+Hampshire. Retrieved September 25, 2012 from the World Wide Web:
+http://water.usgs.gov/wrri/AnnualReports/2000/NHfy2000_annual_report.pdf
+Harada K., Ogawa, K., Kimura, Y., et al. (1991). Microcystins from Anabaena flos-aquae NRC
+525-17. Chemical Research in Toxicology, 4(5): 535-540.
+Health Canada. (2002). Guidelines for Canadian Drinking Water Quality: Supporting
+Documentation - Cyanobacterial Toxins–Microcystin-LR. Water Quality and Health
+Bureau, Healthy Environments and Consumer Safety Branch, Health Canada, Ottawa,
+Ontario. Available at http://www.hc-sc.gc.ca/ewh-semt/pubs/water-eau/doc_sup-
+appui/index_e.html
+Health Canada. (2012). Toxicity Profile for Cyanobacterial Toxins. Prepared for Water Quality
+and Science Division of Health Canada by MTE GlobalTox. MTE File No.: 36348-100.
+January 27, 2012. pp. 48.
+Drinking Water Health Advisory for Microcystins-June 2015 54
+Health Canada. (2015). Guidelines for Canadian Drinking Water Quality: Guideline technical
+document for public comment - Cyanobacterial toxins. Water and Air Quality Bureau,
+Healthy Environments and Consumer Safety Branch, Ottawa, Ontario. Available in 2015.
+Heinze, R. (1999). Toxicity of the cyanobacterial toxin microcystin-LR to rats after 28 days
+intake with the drinking water. Environmental Toxicology, 14(1): 57-60.
+Hermansky, S. J., Casey, P. J., and Stohs, S. J. (1990a). Cyclosporin A - a chemoprotectant
+against microcystin-LR toxicity. Toxicology Letters, 54(2-3): 279-285.
+Hermansky S. J., Wolff, S. N., and Stohs, S. J. (1990b). Use of rifampin as an effective
+chemoprotectant and antidote against microcystin-LR toxicity. Pharmacology 41(4): 231-
+236.
+Hilborn E. D., Soares R. M., Servaites J. C., et al. (2013). Sublethal Microcystin Exposure and
+Biochemical Outcomes among Hemodialysis Patients. PLoS ONE, 8(7): e69518
+Hitzfeld, B. S., Höeger, J., and Dietrich, D. R. (2000). Cyanobacterial Toxins: Removal during
+Drinking Water Treatment, and Human Risk Assessment. Environmental Health
+Perspectives, 108: 113-122.
+Ho, L., Sawade, E., and Newcombe, G. (2012b). Biological treatment options for cyanobacteria
+metabolite removal-a review. Water Research, 46: 1536-1548.
+Ho, L. and Newcombe, G.(2007). Evaluating the adsorption of microcystin toxins using granular
+activated carbon (GAC). Journal of Water Supply: Research and Technology-Aqua, 56(5):
+281-291.
+Ho, L., Dreyfus, J., Boyer, J., et al. (2012a). Fate of cyanobacteria and their metabolites during
+water treatment sludge management processes. Science of the Total Environment,
+424:232-238.
+Ho, L., Barbero, A., Dreyfus, J., et al. (2013). Behaviour of cyanobacterial bloom material
+following coagulation and/or sedimentation. Journal of Water Supply: Research and
+Technology-Aqua, 62(2): 350-358.
+Ho, L., Onstand, G., von Gunten, U., et al. (2006a). Differences in the chlorine reactivity of four
+microcystin analogues. Water Research, 40(6): 1200-1209.
+Ho, L., Meyn, T., Keegan, A., et al. (2006b). Bacterial degradation of microcystin toxins within a
+biologically active sand filter. Water Research, 40(4): 768-774.
+Ho, L., Wijesundara, S., Shaw, G., et al. (2008). Biological Filtration Processes for the Removal
+of Algal Metabolites. The Cooperative Research Center for Water Quality and Treatment.
+Research Report 64. Salisbury, Australia.
+Drinking Water Health Advisory for Microcystins-June 2015 55
+Ho, L., Lambling, P., Bustamante, H., et al. (2011). Application of powdered activated carbon for
+the adsorption of cylindrospermopsin and microcystin toxins from drinking water
+supplies. Water Research, 45(9): 2954-2964.
+Hoeger, S. J., Shaw, G., Hitzfeld, B. C., Dietrich, D. R. (2004). Occurrence and elimination of
+cyanobacterial toxins in two Australian drinking water treatment plants. Toxicon, 43: 639-
+649.
+Hoeger, S. J., Hitzfeld, B. C., Dietrich, D. R. (2005). Occurrence and elimination of
+cyanobacterial toxins in drinking water treatment plants. Toxicology and Applied
+Pharmacology, 203: 231-242.
+Huang, W. J., Cheng, B. L. and Cheng, Y. L. (2007). Adsorption of microcystin-LR by three
+types of activated carbon. Journal of Hazardous Materials, 141: 115-122.
+Huang, P., Zheng, Q., and Xu, L-H. (2011). The apoptotic effect of oral administration of
+microcystin-RR on mice liver. Environmental Toxicology, 26(5): 443-452.
+Hudnell, H. K. (Ed.) (2008). Cyanobacterial Harmful Algae Blooms, State of the Science and
+Research Needs. Proceedings of the Interagency, International Symposium on
+Cyanobacterial Harmful Algal Blooms. RTP North Carolina, Sept. 2005. Advances in
+Experimental Medicine & Biology. Springer Science. Vol. 619, 948 pp.
+Hudnell, H. K. (2010). The state of U.S. freshwater harmful algal blooms assessments policy and
+legislation. Toxicon, 55: 1024-1034.
+Ito, E., Kondo, F., and Harada, K-I. (1997a). Hepatic necrosis in aged mice by oral administration
+of microcystin-LR. Toxicon, 35(2): 231-239.
+Ito, E., Kondo, F., Terao, K., and Harada, K-I. (1997b). Neoplastic nodular formation in mouse
+liver induced by repeated i.p. injections of microcystin-LR. Toxicon, 35(9): 1453-1457.
+Jochimsen, E. M., Carmichael W. W., An J. S., et al. (1998). Liver failure and death after
+exposure to microcystins at a hemodialysis center in Brazil. New England Journal of
+Medicine, 338(13): 873-8.
+Jones, G. J., Blackburn, S. I., and Parker, N. S. (1994). A toxic bloom of Nodularia spumigena
+Mertens in Orielton Lagoon, Tasmania. Australian Journal of Marine and Freshwater
+Research, 45: 787-800. (Cited in WHO 1999).
+Jurczak, T., Tarczynska, M., Izydorczyk, K., et al. (2005). Elimination of microcystins by water
+treatment processes-examples from Sulejow Resevoir, Poland. Water Research, 39(3):
+2394-2406.
+Drinking Water Health Advisory for Microcystins-June 2015 56
+Karner, D. A., Standridge, J. H., Harrington, G. W., and Barnum, R. P. (2001). Microcystin algal
+toxins in source and finished drinking water. Journal American Water Works Association,
+93(8): 72-81.
+Keijola, A., Himber, K, Esala, A. L., et al. (1998). Removal of cyanobacterial toxins in water
+treatment processes: laboratory and pilot plant experiments. Toxicity Assessment, 3(5):
+643-656.
+Klassen, C. D. and Aleksunes, L. M. (1996). Xenobiotic bile acid and cholesterol transporters:
+function and regulation. Pharmacological Reviews, 62: 1-96. (As cited in Zhou et al.,
+2012).
+Kondo, F., Ikai, Y, Oka, H., et al. (1992). Formation, characterization, and toxicity of the
+glutathione and cysteine conjugates of toxic heptapeptide microcystins. Chemical
+Research in Toxicology, 5(5): 591-596.
+Kondo, F., Matsumoto, H, Yamada, S., et al. (1996). Detection and identification of metabolites
+of microcystins in mouse and rat liver. Chemical Research in Toxicology, 9: 1355–1359.
+Kosakowska, A., Nedzi, M. and Pempkowiak, J. (2007). Responses of the toxic cyanobacterium
+Microcystis aeruginosa to iron and humic substances. Plant Physiology and Biochemistry
+45: 365-370.
+Kull, T. P., Sjovall, O. T., Tammenkoski, M. K., et al. (2006). Oxidation of the cyanobacterial
+hepatotoxin microcystin-LR by chlorine dioxie: influence of natural organic matter.
+Environmental Science and Technology, 40(5): 1504-1510.
+Kull, T. P., Backlund, P. H., Karlsson, K. M., and Meriluoto, J. A. (2004). Oxidation of the
+cyanobacterial hepatotoxin microcystin-LR by chlorine dioxide: reaction kinetics,
+characterization, and toxicity of reaction products. Environmental Science and
+Technology, 38(22): 6025–6031.
+Lahti, K., Niemi, M. R., Rapala, J., and Sivonen, K. (1997a). Biodegradation of cyanobacterial
+hepatotoxins - characterization of toxin degrading bacteria. Proceedings of the VII
+International Conference on Harmful Algae. (Cited in WHO 1999).
+Lahti, K., Rapala, J., Fardig, M., Niemela, M., and Sivonen, K. (1997b). Persistence of
+cyanobacterial hepatotoxin, microcystin-LR, in particulate material and dissolved in lake
+water. Water Research, 31(5): 1005-1012. (Cited in WHO 1999).
+Lahti, K., Rapala, J., Kivimaki, A. L., et al. (2001). Occurrence of microcystins in raw water
+sources and treated drinking water of Finnish waterworks. Water Science and
+Technology, 43(1): 225-228.
+Drinking Water Health Advisory for Microcystins-June 2015 57
+Lahti, K.J. et al. (1998). Fate of cyanobacterial hepatotoxins in artificial recharge of groundwater
+and in bank filtration. In: J. H. Peters, et al. (Eds), Artifical recharge of groundwater. A.S.
+Balkema, Rotterdam, The Netherlands.
+Lam, A. K., Fedorak, P. M, and Prepas, E. E. (1995). Biotransformation of the cyanobacterial
+hepatotoxin microcystin-LR, as determined by HPLC and protein phosphatase bioassay.
+Environmental Science and Technology, 29: 242-246.
+Lambert, T. W., Holmes, C. F. B., and Hrudey, S. E. (1996). Adsorption of microcystin-LR by
+activated carbon and removal in full scale water treatment. Water Research, 30(6): 1411-
+1422.
+Lee, J. and Walker, H. W. (2008). Mechanisms and factors influencing the removal of
+microcystin-LR by ultrafiltration membranes. Journal of Membrane Science, 320: 240-
+247.
+Lepisto, L., Lahti, K., Niemi, J., and Fardig, M. (1994). Removal of cyanobacteria and other
+phytoplankton in four Finish waterworks. Algological Studies, 75: 167-181.
+Li, Y., Chen, J. A., Zhao, Q., et al. (2011a). A Cross-Sectional Investigation of Chronic Exposure
+to Microcystin in Relationship to Childhood Liver Damage in the Three Gorges Reservoir
+Region, China. Environmental Health Perspectives. 119(10): 1483-1488.
+Li, T., Huang, P., Liang, J., et al. (2011b). Microcystin-LR (MCLR) induces a compensation of
+PP2A activity mediated by alpha4 protein in HEK293 cells. International Journal of
+Biological Sciences, 7(6): 740-52.
+MWH. (2012). Water treatment principles and design. 3rd edition. John Wiley & Sons. New
+York, NY.
+Makarewicz, J., Boyer, G., Guenther, W., et al. (2006). The Occurrence of Cyanotoxins in the
+Nearshore and Coastal Embayments of Lake Ontario. Great Lakes Research Review, 7:
+25-29.
+Makarewicz, J., Boyer, G. Lewis, T., et al. (2009). Spatial and temporal distribution of the
+cyanotoxin microcystin-LR in the Lake Ontario ecosystem: Coastal embayments, rivers,
+nearshore and offshore, and upland lakes. Journal of Great Lakes Research, 35: 83-89.
+Matthijs, H. C., Visser, P. M., Reeze, B., et al. (2012). Selective suppression of harmful
+cyanobacteria in an entire lake with hydrogen peroxide. Water Research, 46(5): 1460-
+1472.
+Merel, S., LeBot, B., Clement, M., et al. (2009). MS identification of microcystin-LR chlorination
+by-products. Chemosphere, 74(6): 832-839.
+Drinking Water Health Advisory for Microcystins-June 2015 58
+Merel, S., Clement, M., and Thomas, O. (2010). State of the art on cyanotoxins in water and their
+behaviour towards chlorine. Toxicon, 55: 677-691.
+Minnesota Department of Health (MDH) (2012). Health Based Value for Groundwater. Health
+Risk Assessment Unit, Environmental Health Division, No.651-201-4899. Retrieved April
+25, 2014 from the World Wide Web:
+http://www.health.state.mn.us/divs/eh/risk/guidance/gw/microcystin.pdf
+Nasri, H., Bouaicha, N, and Harche, M. K. (2007). A new morphospecies of Microcystis sp.
+forming bloom in the Cheffia Dam (Algeria): seasonal variation of microcystin
+concentrations in raw water and their removal in a full-scale treatment plant.
+Environmental Toxicology, 22(4): 347-356.
+Neumann, U., and Weckesser, J. (1998). Elimination of microcystin peptide toxins from water by
+reverse osmosis. Environmental Toxicology, 13: 143-148.
+Newcombe, G. (2002). Removal of Algal Toxins from Drinking Water Using Ozone and GAC.
+American Water Works Association Reseach Foundation and American Water Works
+Association. Denver, CO.
+Newcombe, G., Cook, D., Brooke, S., et al. (2003). Treatment options for microcystin toxins:
+similarities and differences between variants. Environmental Toxicology, 24: 299-308.
+Newcombe, G., House, J., Ho, L., et al. (2010). Management Strategies for Cyanobacteria (Blue-
+Green Algae): A Guide for Water Utilities. Water Quality Research Australia, Research
+Report 74. Adelaide, Australia.
+Newcombe, G., Dreyfus, J., Monrolin, Y., et al. (2015). Optimizing Conventional Treatment for
+the Removal of Cyanobacteria and Toxins. Water Research Foundation, Denver, CO.
+NHMRC, NRMMC. (2011). Australian Drinking Water Guidelines Paper 6 National Water
+Quality Management Strategy. National Health and Medical Research Council, National
+Resource Management Ministerial Council, Commonwealth of Australia, Canberra.
+http://www.nhmrc.gov.au/_files_nhmrc/publications/attachments/eh52_australian_drinkin
+g_water_guidelines_150413.pdf
+Nicholson, B. C., Rositano, J., and Burch, M. D. (1994). Destruction of cyanobacterial peptide
+hepatotoxins by chlorine and chloramine.Water Research, 28(6): 1297–1303.
+Nishiwaki-Matsushima, R., Ohta, T., Nishiwaki, S. et al. (1992). Liver tumor promotion by the
+cyanobacterial cyclic peptide toxin microcystin-LR. Journal of Cancer Research and
+Clinical Oncology, 118(6): 420-424.
+O’Reilly, A., Wanielista, M., Loftin, K., and Chang, N. (2011). Laboratory simulated transport of
+microcystin-LR and cylindrospermopsin in groundwater under the influence of stormwater
+ponds: implications for harvesting of infiltrated stormwater. GQ10: Groundwater Quality
+Management in a Rapidly Changing World (Proc. 7th International Groundwater Quality
+Drinking Water Health Advisory for Microcystins-June 2015 59
+Conference held in Zurich, Switzerland, 13–18 June 2010). IAHS Publ 342, 2011, 107-
+111.
+Ohio EPA (OHEPA) (2012). 2011 Grand Lake St. Marys Algal Toxin Sampling Data. Retrieved
+September 25, 2012 from the World Wide Web:
+http://www.epa.state.oh.us/dsw/HAB.aspx
+Ohio EPA (OHEPA). (2014). Public Water System Harmful Algal Bloom Response Strategy.
+Retrieved April 25, 2014 from the World Wide Web:
+http://epa.ohio.gov/Portals/28/documents/HABs/PWS_HAB_Response_Strategy_2014.pd
+f
+Ohta, T., Sueoka, E., Iida, N., et al. (1994). Nodularin, a potent inhibitor of protein phosphatases
+1 and 2A, is a new environmental carcinogen in male F344 rat liver. Cancer Research,
+54(24): 6402-6406.
+Oregon Health Authority (OHA) (2015). Public Health Advisory Guidelines, Harmful Algae
+Blooms in Freshwater Bodies. Harmful Algae Bloom Surveillance (HABS) Program,
+Public Health Division, Center for Health Protection, Retrieved April 25, 2014 from the
+World Wide Web:
+http://public.health.oregon.gov/HealthyEnvironments/Recreation/HarmfulAlgaeBlooms/D
+ocuments/HABPublicHealthAdvisoryGuidelines%2020150424x.pdf
+Pace, J. G., Robinson, N. A., Miura, G. A., et al. (1991). Toxicity and kinetics of 3H microcystin-
+LR in isolated perfused rat livers. Toxicolgy and Applied Pharmacology, 107(3): 391-401.
+Paerl, H. W. and Otten, T. G. (2013a). Blooms Bite the Hand That Feeds Them. Science, 342(25):
+433-434.
+Paerl, H. W. and Otten, T. G. (2013b). Harmful Cyanobacterial Blooms: Causes, Consequences,
+and Controls. Microbial Ecology, 65: 995-1010.
+Pawlowicz, M. B., Evans, J. E., Johnson, D. R., and Brooks, R. G. (2006). A study of the efficacy
+of various home filtration substrates in the removal of microcysin-LR from drinking
+water. Journal of Water and Health, 4(1): 99-107.
+Pendleton, P., Schumann, R. and Wong, S. H. (2001). Microcystin-LR adsorption by activated
+carbon. Journal of Colloid and Interface Science, 240: 1-8.
+Pereira, S. P., Martins, F. C., Gomes, L. N. L., et al. (2012). Removal of cyanobacteria by slow
+sand filtration for drinking water. Journal of Water, Sanitation, and Hygiene for
+Development, 2(3): 133-145.
+Puddick, J., Prinsep, M., Wood, S., et al. (2015). Further Characterization of Glycine-Containing
+Microcystins from the McMurdo Dry Valleys of Antarctica. Toxins, 7: 493-515.
+Drinking Water Health Advisory for Microcystins-June 2015 60
+Rai, A. N. (1990). CRC Handbook of Symbiotic Cyanobacteria. CRC Press, Boca Raton, FL. pp.
+253. (Cited in WHO 1999).
+Rajasekhar, P., Fan, L., Nguyen, T., and Roddick, F. A. (2012). A review of the use of sonication
+to control cyanobacterial blooms. Water Research, 46: 4319-4329.
+Rao, P. V. L., Gupta, N., Bhaskar, A. S. B., and Jayaraj, R. (2002). Toxins and bioactive
+compounds from cyanobacteria and their implications on human health. Journal of
+Environmental Biology, 3: 215-224.
+Rao, P. V. L., Gupta, N., Jayaraj, R., et al. (2005). Age-dependent effects on biochemical
+variables and toxicity induced by cyclic peptide toxin microcystin-LR in mice.
+Comparative Biochemistry and Physiology Part C: Toxicology and Pharmacology,
+140(1): 11-19.
+Rapala, J., Lahti, K., Sivonen, K., and Niemeld, S. (1994). Biodegradability and adsorption on
+lake sediments of cyanobacterial hepatotoxins and anatoxin-a. Letters in Applied
+Microbiology, 19: 423-428. (Cited in WHO 1999).
+Rapala, J., Niemela, M., Berg, K., et al.(2006). Removal of cyanobacteria, cyanotoxins,
+heterotrophic bacteria and endotoxins at an operating surface water treatment plant. Water
+Science and Technology, 54(3): 23-28.
+Robinson, N. A., Pace, J. G., Matson, C. F., et al. (1991). Tissue distribution, excretion and
+hepatic biotransformation of microcystin-LR in mice. Journal of Pharmacology and
+Experimental Therapeutics, 256(1): 176-182.
+Rodriguez, E., Onstad, G. D., Kull, T. P. J., et al. (2007a). Oxidative elimination of cyanotoxins:
+comparison of ozone, chlorine, chlorine dioxide and permanganate. Water Research,
+41(15): 3381-3393.
+Rodriguez, E., Majado, M. E., Meriluoto, J., et al. (2007b). Oxidation of microcystins by
+permanganate: reaction kinetics and implications for water treatment. Water Research,
+41(1): 102-110.
+Rositano, J., Nicholson, B. C., and Pieronne, P. (1998). Destruction of cyanobacterial toxins by
+ozone . Ozone: Science and Engineering: The Journal of the International Ozone
+Association, 20(3): 223-238.
+Rositano, J., Newcombe, G., Nicholson, B., and Sztanjnbok. (2001). Ozonation of NOM and algal
+toxins in four treated waters. Water Research, 35(1): 23-32.
+Roy-Lachapelle, A., Fayad, P. B., Sinotte, M., et al. (2014). Total microcystin analysis in water
+using laser diode thermal desorption-atmospheric pressure chemical ionization-tandem
+mass spectrometry. Analytical Chimica Acta, 820: 76-83.
+Drinking Water Health Advisory for Microcystins-June 2015 61
+Runnegar, M. T. C. and Falconer, I. R. (1982). The in vivo and in vitro biological effects of the
+peptide hepatotoxin from the blue-green alga Microcystis aeruginosa. South African
+Journal of Science, 78: 363-366.
+Runnegar, M., Berndt, N., Kong, S. M., et al. (1995). In vivo and in vitro binding of microcystin
+to protein phosphatases 1 and 2A. Biochemical and Biophysical Research
+Communications, 216(1): 162-169.
+Runnegar, M. T. C., Falconer, I. R., and Silver, J. (1981). Deformation of isolated rat hepatocytes
+by a peptide hepatoxin from the blue-green alga Microcystis aeruginosa. Naunyn-
+Schmiedeberg's Archives of Pharmacology, 317(3): 268-272.
+Sarma, T.A. (2013). Cyanobacterial Toxins in Handbook of Cyanobacteria. CRC Press. Taylor
+and Francis Group, pp. 487-606.
+Schijven, J., Berger, P, and Miettinen, I. (2002). Removal of pathogens, surrogates, indicators and
+toxins using riverbank filtration. In: C. Ray (Ed), Riverbank Filtration: Improving Source-
+Water Quality. Kluwer Academic Publishers, Netherlands. pp. 73-116.
+Sharma, V. K., Triantis, T. M., Antoniou, M. G., et al. (2012). Destruction of microcystins by
+conventional and advanced oxidation processes: a review. Separation and Purification
+Technology, 91: 3-17.
+Shawwa, A. R. and Smith, D. W. (2001). Kinetics of microcystin-LR oxidation by ozone. Ozone:
+Science and Engineering: The Journal of the International Ozone Association, 23: 161-
+170.
+Sklenar, K., Westrick, J., and Szlag, D.(2014). Managing and Mitigating Cyanotoxins in Water
+Supplies. Water Research Foundation Webcast. August 28, 2014.
+Soares, R.M. Yuan, M., Servaites, C. Delgado, A., V.F. Magalhães, V., Hilborn, E., Carmichael,
+W., and Azevedo, S. (2005). Sublethal exposure from microcystins to renal insufficiency
+patients in Rio de Janeiro, Brazil. Environmental Toxicology, 21(2): 95-103
+Song, W., Teshiba, T., Rein, K., and O’Shea, K. E. (2005). Ultrasonically induced degradation
+and detoxification of microcystin-LR (cyanobacterial toxin). Environmental Science and
+Technology, 39(16): 6300-6305.
+Sorlini, S. and Collivignarelli, C.(2011). Microcystin-LR removal from drinking water supplies
+by chemical oxidation and activated carbon adsorption. Journal of Water Supply Research
+and Technology, 60(7): 403–411.
+Sorlini, S., Gialdini, F., and Collivignarelli, C. (2013). Removal of cyanobacterial cells and
+microcystin-LR from drinking water using a hollow fiber microfiltration pilot plant.
+Desalination, 309: 106-112.
+Drinking Water Health Advisory for Microcystins-June 2015 62
+Stewart, I., Schluter, P., and Shaw, G. (2006a). Cyanobacterial lipopolysaccharides and human
+health - a review. Environmental Health, 5(1): 1-23.
+Stoner, R. D.; Adams, W. H.; Slatkin, D. N.; and Siegelman, H. W. (1989). The effects of single
+L-amino acid substitutions on the lethal potencies of microcystins. Toxicon, 27(7): 825-
+828.
+Sun, F., Pei, H.-Y., Hu, W.-R., and Ma, C.-X. (2012). The lysis of Microcystis aeruginosa in
+AlCl coagulation and sedimentation processes. Chemical Engineering Journal, 193-194:
+3
+196-202.
+Svoboda, M., Riha, J., Wlcek, K., et al. (2011). Organic Anion Transporting Polypeptides
+(OATPs): regulation of expression and function. Current Drug Metabolism, 12(2): 139-
+153.
+Takumi, S., Komatsu, M., Furukawa, T., et al.(2010). p53 plays an important role in cell fate
+determination after exposure to microcystin-LR. Environmental Health Perspectives,
+118(9): 1292-1298.
+Tarczyriska, M., Romanowska –Duda, Z., Jurczak, T., and Zalewski, M. (2001). Toxic
+cyanobacterial blooms in drinking water reservoir, causes, consequences, and
+management strategy. Water Science and Technology: Water Supply, 1(2): 237-246.
+Thompson, W. L. and Pace, J. G. (1992). Substances that protect cultured hepatocytes from the
+toxic effects of microcystin-LR. Toxicology In vitro, 6(6): 579-587.
+Touchette, B. W., Burkholder, J. M., Allen, E. H., et al. (2007). Eutrophication and cyanobacteria
+blooms in run-of-river impoundments in North Carolina, U.S.A. Lake and Reservoir
+Management, 23(2): 179-192.
+Toxicology Literature Online (TOXLINE) (2012). Toxicology Data Network, National Institute of
+Health. Retrieved on September 25, 2012 from the World Wide Web:
+http://toxnet.nlm.nih.gov/cgi-bin/sis/htmlgen?TOXLINE
+Tsuji, K., Naito, S., Kondo, F., et al. (1993). Stability of microcystins from cyanobacteria: Effect
+of light on decomposition and isomerization. Environmental Science and Technology, 28:
+173-177. (Cited in WHO 1999).
+Tsuji, K., Naito, S., Kondo, F., et al. (1995). Stability of microcystins from cyanobacteria--II.
+Effect of UV light on decomposition and isomerization. Toxicon, 33(12): 1619-1631.
+Turner, P. C., Gammie, A. J., Hollinrake K., and Codd, G. A. (1990). Pneumonia associated with
+contact with cyanobacteria. British Medical Journal, 300(6737): 1440-1441.
+Drinking Water Health Advisory for Microcystins-June 2015 63
+Ueno, Y., Makita, Y., Nagata, S., et al. (1999). No chronic oral toxicity of a low-dose of
+microcystin-LR, a cyanobacterial hepatoxin, in female Balb/C mice. Environmental
+Toxicology, 14(1): 45-55.
+Ueno, Y., Nagata, S., Tsutsumi, T., et al. (1996). Detection of microcystins, a blue-green algal
+hepatotoxin, in drinking water sampled in Haimen and Fusui, endemic areas of primary
+liver cancer in China, by highly sensitive immunoassay. Carcinogenesis 17(6): 1317-
+1321.
+U.S. EPA (United States Environmental Protection Agency). (1986). Guidelines for Mutagenicity
+Risk Assessment. Fed. Reg. 51(185):34006-34012. Available from:
+http://cfpub.epa.gov/ncea/cfm/recordisplay.cfm?deid=23160
+U.S. EPA (United States Environmental Protection Agency) (1999). Drinking Water Health
+Advisories: Pesticides. Lewis Publishers. ISBN: 978-0-87371-235-4.
+U.S. EPA (United States Environmental Protection Agency) (2002). A Review of the Reference
+Dose and Reference Concentration Processes. Risk Assessment Forum, Washington, DC;
+EPA/630/P-02/0002F. Available from: http://www.epa.gov/iris/backgrd.html
+U.S. EPA (United States Environmental Protection Agency). (2005). Guidelines for Carcinogen
+Risk Assessment. Risk Assessment Forum, Washington, DC; EPA/630/P-03/001B.
+Available from: http://www.epa.gov/iris/backgrd.html
+U.S. EPA (United States Environmental Protection Agency). (2007). Drinking Water Treatability
+Database: Microcystins. Available from:
+http://iaspub.epa.gov/tdb/pages/contaminant/contaminantOverview.do?contaminantId=-
+1336577584
+U.S. EPA (United States Environmental Protection Agency) (2009). National Lakes Assessment:
+A Collaborative Survey of the Nation’s Lakes. EPA 841-R-09-001. Available from:
+http://www.epa.gov/owow/LAKES/lakessurvey/pdf/nla_report_low_res.pdf
+U.S. EPA (United States Environmental Protection Agency). (2011a). Exposure Factors
+Handbook 2011 Edition (Final). Washington, DC, EPA/600/R-09/052F. Available from:
+http://www.epa.gov/ncea/efh/pdfs/efh-complete.pdf
+U.S. EPA (United States Environmental Protection Agency). (2011b). Recommended Use of
+Body Weight 3/4 as the Default Method in Derivation of the Oral Reference Dose.
+EPA/100/R11/0001. http://www2.epa.gov/sites/production/files/2013-
+09/documents/recommended-use-of-bw34.pdf.
+U.S. EPA (United States Environmental Protection Agency). (2012). Benchmark dose technical
+guidance document [external review draft]. EPA/630/R-00/001. Available from:
+http://www.epa.gov/iris/backgrd.html
+Drinking Water Health Advisory for Microcystins-June 2015 64
+U.S. EPA (United States Environmental Protection Agency). (2014). Framework for Human
+Health Risk Assessment to Inform Decision Making. Office of the Science Advisor, Risk
+Assessment Forum, Washington, DC; EPA/100/R-14/001. Available from:
+http://www2.epa.gov/programs-office-science-advisor-osa/framework-human-health-risk-
+assessment-inform-decision-making
+U.S. EPA (United States Environmental Protection Agency). (2015a). Health Effects Support
+Document for the Cyanobacterial Toxin Microcystin. EPA-820R1502, Washington,
+DC; 2015. Available from: http://www2.epa.gov/nutrient-policy-data/health-and-
+ecological-effects
+U.S. EPA (United States Environmental Protection Agency). (2015b). Recommendations for
+Public Water Systems to Manage Cyanotoxins in Drinking Water. EPA-815R15010,
+Washington, DC; 2015. Available from: http://www2.epa.gov/nutrient-policy-data/
+guidelines-and-recommendations
+U.S. EPA (United States Environmental Protection Agency). (2015c) Method 544. Determination
+of Microcystins and Nodularin in Drinking Water by Solid Phase Extraction and Liquid
+Chromatography/Tandem Mass Spectrometry (LC/MS/MS). Version 1.0, EPA/600/R-
+14/474, Cincinnati, OH. Available from:
+http://www.epa.gov/nerlcwww/documents/Method544_Final.pdf
+VanderKooi, S., Burdinck, Echols, K., et al. (2010). Algal Toxin in Upper Klamath Lake, Oregon:
+Linking Water Quality to Juvenile Sucker Health. U.S. Geological Survey Fact Sheet
+2009-3111, pp. 2.
+Vlaski, A. van Breemen, A. N., Alaerts, G. J., et al. (1996). Optimisation of coagulation
+conditions for the removal of cyanobacteria by dissolved air flotation or sedimentation.
+Journal of Water Supply: Research and Technology, 45(5): 253-261.
+Wang, H., Ho., L., Lewis, D. M., et al. (2007). Discriminating and assessing adsorption and
+biodegradation removal mechanisms during granular activated carbon filtration of
+microcystin toxins. Water Research, 41(18): 4262-4270.
+Wang, Z. Li., D, Qin, H., and Li, Y. (2012). An integrated method for removal of harmful
+cyanobacterial blooms in eutrophic lakes. Environmental Pollution, 160: 34-41.
+WSDE (Washington State Department of Ecology). (2012). Freshwater Algae Control Program.
+Accessed December 12,
+2012; http://www.ecy.wa.gov/programs/wq/plants/algae/index.html
+Wei, Y., Weng, D., Li, F., et al. (2008). Involvement of JNK regulation in oxidative stress-
+mediated murine liver injury by microcystin-LR. Apoptosis, 13(8): 1031-1042.
+Weng, D., Y. Lu, Wei, Y., et al. (2007). The role of ROS in microcystin-LR-induced hepatocyte
+apoptosis and liver injury in mice. Toxicology, 232(1-2): 15-23.
+Drinking Water Health Advisory for Microcystins-June 2015 65
+Wert, E. C., and Rosario-Ortiz, F. L. (2013). Intracellular organic matter from cyanobacteria as a
+precursor for carbonaceous and nitrogenous disinfection byproducts. Environmental
+Science and Technology, 47: 6332-6340.
+Wert, E.C., Dong, M. M., Rosario-Ortiz, F. L., and Korak, J. (2014). Release of Intracellular
+Metabolites from Cyanobacteria During Oxidation Processes. Water Research
+Foundation, Denver, CO.
+Westrick, J. A., Szlag, D. C., Southwell, B. J., and Sinclair, J. (2010). A review of cyanobacteria
+and cyanotoxins removal/inactivation in drinking water treatment. Analytical and
+Bioanalytical Chemistry, 397(5): 1705-1714.
+WHO (World Health Organization). (1999). Toxic Cyanobacteria in Water: A Guide to their
+Public Health Consequences, Monitoring, and Management, I. Chorus and J. Bartram,
+(Eds.). E&FN Spon, London, UK.
+WHO (World Health Organization). (2003). Cyanobacterial Toxins: Microcystin-LR in Drinking-
+Water. Background document for development of WHO Guidelines for Drinking-water
+Quality, World Health Organization, 20 Avenue Appia, 1211 Geneva 27, Switzerland.
+Wolf, H.-U. and Frank, C. (2002). Toxicity assessment of cyanobacterial toxin mixtures.
+Environmental Toxicology, 17(4): 395-399.
+Wynne, T., Stumpf, R., Tomlinson, M. et al. (2013). Evolution of a cyanobacterial bloom forecast
+system in western Lake Erie: Development and initial evaluation. Journal of Great Lakes
+Research, Supplement 39(9): 90-99.
+Xagoraraki, I., Harrington, G., Zulliger, K., et al. (2006). Inactivation kinetics of the
+cyanobacterial toxin microcystin-LR by free chlorine. Journal of Environmental
+Engineering, 132(7): 818-823.
+Xing, M. L., Wang, X. F., and Xu, L. H. (2008). Alteration of proteins expression in apoptotic FL
+cells induced by MCLR. Environmental Toxicology, 23(4): 451-458.
+Yuan, M., Namikoshi, M., Otsuki, A., et al. (1999). Electrospray Ionization Mass Spectrometric
+Analysis of Microcystins, Cyclic Heptapeptide Hepatotoxins: Modulation of Charge
+States and [M 1 H]1 to [M 1 Na]1 Ratio. Journal of the Amereican Society for Mass
+Spectrometry, 10: 1138–1151.
+Yoshida, T., Makita, Y, Nagata, S., et al. (1997). Acute oral toxicity of microcystin-LR, a
+cyanobacterial hepatotoxin in mice. Natural Toxins, 5(3): 91-95.
+Zamyadi, A., MacLeod, S. L., Fan, Y., et al. (2012a). Toxic cyanobacterial breakthrough and
+accumulation in a drinking water plant: A monitoring and treatment challenge. Water
+Research, 46(5): 1511-1523.
+Drinking Water Health Advisory for Microcystins-June 2015 66
+Zamyadi, A., Ho, L., Newcombe, G., et al. (2012b). Fate of toxic cyanobacterial cells and
+disinfection by-products formation after chlorination. Water Research, 46(5): 1524-1535.
+Zamyadi, A., Dorner, S., Sauve, S., et al. (2013a). Species dependence of cyanobacteria removal
+efficiency by different drinking water treatment processes. Water Research, 47(8): 2689-
+2700.
+Zamyadi, A., Dorner, S., Ndong, M., et al. (2013b). Low-risk cyanobacterial bloom sources: cell
+accumulation within full-scale treatment plants. Journal American Water Works
+Association, 105(11): 651-663
+Zamyadi, A., Fan, Y, Daly, R. I., Prevost, M. (2013c). Chlorination of Microcystis aeruginosa:
+toxin release and oxidation, cellular chlorine demand and disinfection by-products
+formation. Water Research, 47(3): 1080-1090.
+Zhang, Z., Zhang, X. X., Qin, W., et al. (2012). Effects of microcystin-LR exposure on matrix
+metalloproteinase-2/-9 expression and cancer cell migration. Ecotoxicology and
+Environmental Safety, 77: 88-93.
+Zhou, L., Yu, H., and Chen, K. (2002). Relationship between microcystin in drinking water and
+colorectal cancer. Biomedical and Environmental Sciences, 15(2): 166-171.
+Zhou, Y., Yuan, J., Wu, J., and Han, X. (2012). The toxic effects of microcystin-LR of rat
+spermatogonia in vitro. Toxicology Letters, 212(1): 48-56.
+Zurawell, R. (2002). An Initial Assessment of Microcystin in Raw and Treated Municipal
+Drinking Water Derived from Eutrophic Surface Waters in Alberta. Alberta Environment,
+Edmonton, AB. ISBN No. 0-7785-2417-5.
+Drinking Water Health Advisory for Microcystins-June 2015 67

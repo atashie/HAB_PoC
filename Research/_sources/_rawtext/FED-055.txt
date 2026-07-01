@@ -1,0 +1,967 @@
+Field and Laboratory Guide to Freshwater Cyanobacteria
+Harmful Algal Blooms for Native American and Alaska
+Native Communities
+Open-File Report 2015–1164
+U.S. Department of the Interior
+U.S. Geological Survey
+Cover. Photographs showing
+4
+1 5 1. Cyanobacteria, Gloeotrichia echinulata (Midge Eliassen)
+2. Euglenophyta, Euglena sp. (Ann St. Amand)
+3. Euglenophyta, Euglena sanguinea (Barry H. Rosen)
+6
+4. Anabaenopsis arnoldii (Barry H. Rosen)
+7
+2 5. Dolichospermum circinale (Ann St. Amand)
+6. Dolichospermum crassum (Ann St. Amand)
+8 7. Dolichospermum lemmermannii (Ann St. Amand)
+9
+8. Haplosiphon hibernicus (Barry H. Rosen)
+9. Sphaerospermopsis torques-reginae (Barry H. Rosen)
+3
+10. Microcystis wesenbergii (Barry H. Rosen)
+10
+11 11. Spirogyra sp. (Ann St. Amand)
+Field and Laboratory Guide to Freshwater
+Cyanobacteria Harmful Algal Blooms
+for Native American and Alaska Native
+Communities
+By Barry H. Rosen and Ann St. Amand
+Open-File Report 2015–1164
+U.S. Department of the Interior
+U.S. Geological Survey
+U.S. Department of the Interior
+SALLY JEWELL, Secretary
+U.S. Geological Survey
+Suzette M. Kimball, Acting Director
+U.S. Geological Survey, Reston, Virginia: 2015
+For more information on the USGS—the Federal source for science about the Earth, its natural and living
+resources, natural hazards, and the environment—visit http://www.usgs.gov or call 1–888–ASK–USGS.
+For an overview of USGS information products, including maps, imagery, and publications,
+visit http://www.usgs.gov/pubprod/.
+Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the
+U.S. Government.
+Although this information product, for the most part, is in the public domain, it also may contain copyrighted materials
+as noted in the text. Permission to reproduce copyrighted items must be secured from the copyright owner.
+Suggested citation:
+Rosen, B.H., and St. Amand, Ann, Field and laboratory guide to freshwater cyanobacteria harmful algal blooms
+for Native American and Alaska Native Communities: U.S. Geological Survey Open-File Report 2015–1164, 44 p.,
+http://dx.doi.org/10.3133/ofr20151164.
+ISSN 0196-1497 (print)
+ISSN 2331-1258 (online)
+ISBN 978-1-4113-3971-2
+iii
+Contents
+Acknowledgments .........................................................................................................................................v
+Abstract ...........................................................................................................................................................1
+Introduction.....................................................................................................................................................1
+Field Images ....................................................................................................................................................4
+Microscope Images.....................................................................................................................................16
+Cyanobacteria Microscopic Identification Characteristics ........................................................16
+Cyanobacteria .....................................................................................................................................18
+Anabaenopsis .............................................................................................................................18
+Aphanizomenon .........................................................................................................................19
+Chrysosporum (Anabaena) ......................................................................................................20
+Cuspidothrix (Aphanizomenon) ...............................................................................................20
+Cylindrospermopsis ...................................................................................................................20
+Dolichospermum (Anabaena) ..................................................................................................21
+Gloeotrichia.................................................................................................................................24
+Haplosiphon ................................................................................................................................25
+Microcystis .................................................................................................................................26
+Nodularia .....................................................................................................................................29
+Nostoc sp. ...................................................................................................................................30
+Oscillatoria sp. ............................................................................................................................31
+Planktothrix (Oscillatoria) .........................................................................................................31
+Plectonema (Lyngbya) ...............................................................................................................32
+Raphidiopsis................................................................................................................................32
+Schizothrix sp. ............................................................................................................................33
+Sphaerospermopsis (Anabaena) ............................................................................................33
+Woronichinia (Coelospherium) ................................................................................................35
+Other Organisms Viewed Under the Microscope .........................................................................36
+Euglenophyta (Euglenoids) .......................................................................................................36
+Pyrrhophyta (Dinoflagellates) ..................................................................................................37
+Haptophyta (Golden Algae) ......................................................................................................38
+Chlorophyta (Green Algae) .......................................................................................................39
+References ....................................................................................................................................................41
+iv
+Figures
+1. Cyanobacteria, Dolichospermum lemmermannii ....................................................................4
+2. Cyanobacteria, Microcystis aeruginosa ...................................................................................4
+3. Cyanobacteria, Microcystis aeruginosa ...................................................................................4
+4. Cyanobacteria, Dolichospermum lemmermannii ....................................................................5
+5. Cyanobacteria, Dolichospermum lemmermannii ....................................................................5
+6. Cyanobacteria, Dolichospermum mendotae ............................................................................6
+7. Cyanobacteria, Gloeotrichia echinulata ...................................................................................6
+8. Cyanobacteria, Microcystis viridis ............................................................................................7
+9. Cyanobacteria, Dolichospermum lemmermannii ....................................................................7
+10. Cyanobacteria, Aphanizomenon flos-aquae ............................................................................8
+11. Cyanobacteria, Aphanizomenon flos-aquae ............................................................................8
+12. Cyanobacteria, Nodularia spumigena .......................................................................................9
+13. Cyanobacteria, Plectonema wollei ............................................................................................9
+14. Cyanobacteria, Woronichinia naegeliana ................................................................................9
+15. Cyanobacteria, Cylindrospermopsis raciborskii ....................................................................10
+16. Cyanobacteria, Planktothrix agardhii/prolifica ......................................................................10
+17. Green algae, Mougeotia sp. .....................................................................................................11
+18. Green algae, Spirogyra sp. .......................................................................................................11
+19. Green algae, Cladophora sp. ....................................................................................................11
+20. Green algae, Mougeotia sp. . ....................................................................................................11
+21. Duckweed: Wolffia columbiana ...............................................................................................12
+22. Duckweed: Wolffia columbiana, Lemna minor ......................................................................12
+23. Charophyta, Chara sp. ...............................................................................................................13
+24. Charophyta, Chara sp. ...............................................................................................................13
+25. Rooted macrophytes ..................................................................................................................13
+26. Rooted macrophytes ..................................................................................................................13
+27. Euglenophyta, Euglena sp. ........................................................................................................14
+28. Euglenophyta, Euglena sanguinea ...........................................................................................14
+29. Water fern, Azolla sp. ................................................................................................................15
+30. Pine pollen ...................................................................................................................................15
+31. Pyrrhophyta, Durinskia dybowskii ...........................................................................................15
+32. Morphology of cyanobacteria filaments .................................................................................16
+33. Morphology of cyanobacteria colonies. .................................................................................17
+34. Anabaenopsis arnoldii ...............................................................................................................18
+35. Aphanizomenon flos-aquae ......................................................................................................19
+36. Aphanizomenon gracile .............................................................................................................19
+37. Chrysosporum ovalisporum ......................................................................................................20
+38. Cuspidothrix issatschenkoi .......................................................................................................20
+39. Cylindrospermopsis raciborskii ................................................................................................20
+40. Dolichospermum circinale ........................................................................................................21
+41. Dolichospermum crassum ........................................................................................................22
+42. Dolichospermum lemmermannii ..............................................................................................22
+43. Dolichospermum mendotae ......................................................................................................23
+v
+44. Dolichospermum planctonicum ...............................................................................................23
+45. Gloeotrichia echinulata .............................................................................................................24
+46. Haplosiphon hibernicus .............................................................................................................25
+47. Microcystis aeruginosa .............................................................................................................26
+48. Microcystis viridis ......................................................................................................................27
+49. Microcystis wesenbergii ...........................................................................................................28
+50. Nodularia spumigena .................................................................................................................29
+51. Nodularia spumigena .................................................................................................................29
+52. Nostoc sp. ...................................................................................................................................30
+53. Oscillatoria sp. ............................................................................................................................31
+54. Planktothrix agardhii ..................................................................................................................31
+55. Plectonema wollei ......................................................................................................................32
+56. Raphidiopsis mediterranea .......................................................................................................32
+57. Schizothrix sp. ............................................................................................................................33
+58. Sphaerospermopsis torques-reginae .....................................................................................33
+59. Sphaerospermopsis aphanizomenoides .................................................................................34
+60. Woronichinia naegeliana ..........................................................................................................35
+61. Euglena sp. ..................................................................................................................................36
+62. Euglena sanguinea .....................................................................................................................37
+63. Durinskia dybowskii, Peridinium sp., Ceratium hirundinella ...............................................37
+64. Prymnesium parvum ...................................................................................................................38
+65. Green algae: Spirogyra sp., Cladophora sp., Mougeotia sp. ..............................................39
+66. Green algae: Pithophora sp. ....................................................................................................40
+Tables
+1. Classification, common names, and synonyms for most freshwater algae .......................1
+2. Common cyanotoxin-producing cyanobacteria that are illustrated in this guide .....................3
+3. Cyanobacteria synonyms (see table 2) .............................................................................................3
+Abbreviations
+EPA U.S. Environmental Protection Agency
+HAB harmful algal bloom
+sp. species
+vi
+Acknowledgments
+This project was funded by the U.S. Geological Survey, Office of Tribal Relations. The authors
+thank Monique Fordham and Keith Loftin, U.S. Geological Survey, for their advice and review
+comments. We also thank the numerous photograph contributors who are acknowledged in the
+captions of the figures. All photographs were used with written permission from the respective
+photographers.
+Field and Laboratory Guide to Freshwater Cyanobacteria
+Harmful Algal Blooms for Native American and Alaska
+Native Communities
+By Barry H. Rosen1 and Ann St. Amand2
+Abstract Introduction
+Cyanobacteria can produce toxins and form harmful algal Algae are a group of organisms with similar traits that
+blooms. The Native American and Alaska Native communities unify them as a group but with specific characteristics that are
+that are dependent on subsistence fishing have an increased used to separate one organism from another. As an example,
+risk of exposure to these cyanotoxins. It is important to chlorophyll a, used by algae to capture sunlight for photosyn-
+recognize the presence of an algal bloom in a waterbody and thesis, is common to virtually all organisms called “algae.”
+to distinguish a potentially toxic harmful algal bloom from a One major separation of algae is the basic cellular organization
+non-toxic bloom. This guide provides field images that show into prokaryotic organisms, such as the cyanobacteria that
+cyanobacteria blooms, some of which can be toxin producers, do not have internal organelles, and eukaryotic organisms,
+as well as other non-toxic algae blooms and floating plants that which include all the rest of the algal groups. The eukaryotic
+might be confused with algae. After recognition of a potential organisms are further divided on the basis of pigments, cell
+toxin-producing cyanobacterial bloom in the field, the type(s) wall composition, photosynthetic storage compounds, flagella,
+of cyanobacteria present needs to be identified. Species and genetics. Many flagellated forms have greater affinity and
+identification, which requires microscopic examination, may are often classified as Protozoa.
+help distinguish a toxin-producer from a non-toxin producer. Most recently, genetic affiliations between the hierarchi-
+This guide also provides microscopic images of the common cal organization of algae and the individual species has led to
+cyanobacteria that are known to produce toxins, as well as a continuous flux in the names of organisms. Many approaches
+images of algae that form blooms but do not produce toxins. are available for organizing these groups. Table 1, which is
+based on the “Freshwater Algae of North America, 2015”
+(Wehr and others, 2015), provides a list of the “groups” of
+1U.S. Geological Survey. algae as well as some common names and synonyms for most
+2PhycoTech, Inc. freshwater algae.
+Table 1. Classification, common names, and synonyms for most freshwater algae.
+Division, Phylum, Group, or Class Common name Synonyms
+Cyanobacteria1 Blue-green algae, cyanobacteria, cyanophytes Cyanophyta, Cyanophycota, Cyanophyceae
+Chlorophyta2 Green algae Chlorophycota
+Charophyceae2 Stoneworts Charophyta
+Bacillariophyceae3 Diatoms Bacillariophyta3
+Rhodophyta3 Red algae
+Euglenophyta3 Euglenoids Euglenophyta
+Pyrrhophyta3 Dinoflagellates Dinophyta, Pyrrophyta, Dinophyceae3
+Haptophyceae3 Golden algae Haptophyta, Prymnesiophyta
+Synurophyceae,3 Chrysophyceae3 Golden or golden-brown algae Chrysophytes, Synurophytes
+Cryptophyta3 Cryptomonads
+1Oren (2004). 2Leliaert and others (2012). 3Wehr and others (2015).
+2 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Algae are primary producers and serve as the base of the have become secondary to the genetic makeup of an organism;
+food web in most aquatic habitats. Phytoplankton is a term however, genetic affiliation relies on being able to analyze an
+that describes the assemblage of algae that live in the water individual isolated species. The cyanobacteria have undergone
+column of a waterbody, including ponds, lakes, reservoirs, substantial name changes to align the genetically affiliated
+rivers, and marine habitats. Periphyton are the algae attached organisms into closely related taxa, especially at the genus
+to plants, rocks, sand, and wood in most aquatic habitats. level. Table 3 provides the current name of cyanobacteria
+For phytoplankton, each group of algae has unique qualities described in this document, along with the synonyms used
+that allow it to thrive at a different time and under specific in the past, to assist in properly identifying organisms and
+environmental conditions in a waterbody, typically seasonally, interpreting the literature. It is beyond to scope of this report
+with one group giving way to another as conditions change in to identify all of the synonyms that are used for each purported
+the process called succession. For example, diatoms typically toxin-producing species of cyanobacteria.
+dominate in colder months and cyanobacteria and green Most bloom-forming cyanobacteria can regulate their
+algae in warmer months. When the abundance algae causes buoyancy to optimize their position in the water column and
+a “problem,” typically a surface scum or accumulation on or float to the surface. Wind can also cause massive accumula-
+near a shoreline, it is given the name “algae bloom” and many tions of phytoplankton on downwind shorelines. Improperly
+times “harmful algae blooms” (HABs). An algae bloom forms treated drinking water containing toxic cyanobacteria can
+under the correct environmental conditions, including nutrient cause liver and nervous system impairment in mammals
+abundance, stability of the water column, ample light, and including humans (Chorus and Bartram, 1999). Although
+optimal temperatures. Although many different types of algae many cyanobacteria often produce taste and odor compounds
+are responsible for HABs, cyanobacteria pose the greatest as well, the presence or absence of taste and odor compounds
+problem and are the focus of this guide. is not predictive of the presence of algal toxins.
+Cyanobacteria, also known as blue-green algae, are a The human consumption of fish and shellfish exposed
+group of microorganisms that live in moist terrestrial and to a cyanobacteria (and cyanotoxins) is poorly documented.
+aquatic habitats throughout the world. Several types of Only a few studies have been conducted to examine fish
+cyanobacteria are known to produce a variety of toxins that and shellfish concentrations for key compounds, such as
+can cause a range of effects from simple skin rashes to liver the microcystins (shrimp: Zimba and others, 2006; Ibelings
+and nerve damage and even mortality of fish, wildlife, and and Chorus, 2007; catfish: Zimba and others, 2001; carp: Li
+rarely, humans (Chorus and Bartrum, 1999). The major groups and other, 2004), the nodularins (mullet: Stewart and others,
+of toxins are the microcystins, saxitoxins, anatoxins, cylin- 2012), and the saxitoxins (freshwater mussel, Pereira and
+drospermopsins, nodularins, and dermatoxins. These toxins others, 2004). In a report by the National Environmental
+typically represent a family of structurally related compounds, Justice Advisory Council (2002), which provided advice to the
+termed derivatives, which have similar biological effects. “Environmental Protection Agency (EPA) on how to improve
+The complexity of these toxins and their derivatives the quality, quantity, and integrity of our Nation’s aquatic
+makes attribution of a specific compound to a specific species ecosystems in order to protect the health and safety of people
+difficult. A field sample is often a mixture of organisms, thus consuming or using fish, aquatic plants, and wildlife,” HABs
+the toxin attribution to a given species in a sample is uncertain. are not discussed. This report does recognize that many Native
+The best method for attributing a specific compound to a American and Alaska Native communities are dependent on
+specific species involves isolating an organism and culturing it subsistence fishing, creating an increased risk of exposure
+to ascertain that it is the source of toxin production; however, to traditional toxins, such as mercury and dioxins, which
+this is a difficult task and creates a myriad of secondary issues. accumulate in the aquatic food webs. By comparison, the
+Much of literature describes the dominant organism in a impact of HABs and cyanotoxins on humans, especially the
+bloom and typically attribute the toxin present to that organ- Native American and Alaska Native communities, warrants
+ism. Table 2 provides a synopsis of the toxins found in the 26 additional study.
+cyanobacteria illustrated in the Microscope Images section Warming global temperatures may exacerbate the
+of this guide. Note that some species are known to produce growth of cyanobacterial blooms (Paerl and Huisman, 2009).
+multiple toxins, and it is beyond to scope of this report to One reason is that cyanobacteria proliferate in warm water
+identify all of the genera and species identified in the literature temperatures, generally above 25 degrees Celsius (Robarts and
+as toxin producers. Zohary, 1987), and are more tolerant of these warmer condi-
+Added to this complexity is the definition of a species tions than their competitors, such as the green algae (Elliott and
+in the cyanobacteria. The long-standing identification of a others, 2006; Jöhnk and others, 2008). Warmer surface waters
+species is dependent on the morphology of the organism, also augment vertical stratification (Jöhnk and others, 2008),
+including the shape of the cells, the positioning of key giving the cyanobacteria a unique advantage over eukaryotic
+features, size, and coloration. Some of these features are stable algae because many the cyanobacteria are able to regulate their
+and conservative, while others are more unstable and change buoyancy and overcome vertical stratification. Numerous other
+under certain environmental conditions. With the advent of physiological adaptations will give cyanobacteria an advantage
+genetic techniques, many of these traditional visual features as global climate changes occur (Carey and others, 2012).
+Introduction 3
+Table 2. Common cyanotoxin-producing cyanobacteria that are illustrated in this guide.
+Anabaenopsis sp. Microcystis aeruginosa
+microcystins (Lanaras and Cook, 1994) microcystins (Rinehart and others, 1994)
+saxitoxins (Ballot and others, 2010b-[genes present]) Microcystis viridis
+Aphanizomenon flos-aquae microcystins (Watanabe and others, 1986; Kusumi and
+saxitoxins (Ferreira and others, 2001; Ballot and others, others, 1987)
+2010b-[genes present]) Microcystis wesenbergii
+cylindrospermopsins (Preussel and others, 2006) microcystins (Namikoshi and others, 1992; Tanabe and
+Aphanizomenon gracile others, 2009)
+saxitoxins (Ballot and others, 2010b) Nodularia spumigena
+cylindrospermopsins (Kokociński and others, 2013) nodularins (Carmichael and others, 1988; Sivonen and
+Chrysosporum ovalisporum others, 1989b; Stewart and others, 2012)
+cylindrospermopsins (Akcaalan and others, 2014) Nostoc sp.
+Cuspidothrix issatschenkoi microcystins (Sivonen and others, 1990, 1992b)
+saxitoxins (Ballot and others, 2010b-[genes present]) nodularins (Gehringer and others, 2012)
+anatoxin-a (Ballot and others, 2010a) Oscillatoria sp.
+Cylindrospermopsis raciborskii anatoxin-a (Aráoz and others, 2005)
+cylindrospermopsins (Sinha and others, 2014) Planktothrix agardhii
+Dolichospermum circinale microcystins (Sivonen and others, 1990)
+saxitoxins (D’Agostino and others, 2014) Plectonema wollei
+microcystins (Vezie and others, 1998; D’Agostino and saxitoxins (Mez and others, 1996)
+others, 2014) Raphidiopsis mediterranea
+anatoxin-a (Sivonen and others, 1989a, 1992a) anatoxin-a (Namikoshi and others, 2003; Watanabe and
+Dolichospermum crassum others, 2003)
+anatoxin-a(s) (Becker and others, 2010) Schizothrix sp.
+Dolichospermum lemmermannii dermatotoxins (Lippy and Erb, 1976; Mynderse and others,
+anatoxin-a(s) (Henriksen and others, 1997) 1977)
+Dolichospermum mendotae Sphaerospermopsis torques-reginae
+cylindrospermopsins (Akcaalan and others 2014) anatoxin-a(s) (Molica and others, 2005)
+anatoxin-a (Rapala and others, 1993) Sphaerospermopsis aphanizomenoides
+Dolichospermum planctonicum microcystins (Bittencourt-Oliveira and others, 2011)
+anatoxin-a (Bruno and others, 1994) cylindrospermopsins (Bittencourt-Oliveira and others,
+Gloeotrichia echinulata 2011)
+microcystins (Carey and others, 2007) Woronichinia naegeliana
+Haplosiphon hibernicus microcystins [perhaps] (Faassen and Lürling 2013)
+microcystins (Prinsep and others, 1992)
+Table 3. Cyanobacteria synonyms (see table 2).
+Currently accepted genus/species Synonym Reference
+Chrysosporum ovalisporum Aphanizomenon ovalisporum Zapomelová and others, 2012
+Cuspidothrix issatschenkoi Anabaena issatschenkoi Rajaniemi and others, 2005
+Aphanizomenon issatschenkoi
+Dolichospermum Anabaena (most planktonic forms) Wacklin and others, 2009
+(many species)
+Planktothrix agardhii Oscillatoria agardhii Anagnostidis and Komárek, 1988
+(and many other species)
+Sphaerospermopsis aphanizomenoides Aphanizomenon aphanizomenoides Zapomelová and others, 2010
+Sphaerospermopsis torques-reginae Anabaena torques-reginae Werner and others, 2012
+Woronichinia Coelosphaerium Komárek and Hindák, 1988
+(for many species)
+4 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+In an effort to help Native American and Alaska Native Many cyanobacteria float and often accumlate along the
+communities develop an awareness of what HABs look like shoreline as illustrated in figures 2–7. These accumulations
+in the field and distinguish HABs from a non-toxic bloom, the ofen appear clumped or scummed (figs. 3–5). Cells standed
+U.S. Geological Survey has developed this guide to illustrate on the shoreline often leak their pigments. Phycocyanin is a
+the appearance of both typical algal and cyanobacteria blooms. blue pigment and can turn a waterbody or shoreline turquoise
+Many of the organisms require the use of a microscope to (fig. 6) or chartreuse (fig. 7). Blooms can also be evenly
+correctly determine the type of bloom that is present. Included dispersed in the water (figs. 8–10) or evenly dispersed as
+in this guide are microscopic images that illustrate many of clumps (fig. 11). Some cyanobacteria appear brown in color
+the most common HABs and others that are known to be due to the red pigment phycoerythrin and its combination with
+a nuisance or produce toxins that are not obvious surface other pigments (figs. 12–15). Red to pink blooms are another
+bloom-forming organisms. Graham and others (2008) provide phenonmenon due to phycoerythrin (fig. 16).
+guidelines for the design and sampling for cyanotoxins in
+lakes and reservoirs.
+Field Images
+When approaching a water bloom, caution and safety
+procedures should be used to prevent direct contact with the
+bloom because some cyanotoxins can be absorbed through the
+skin. These field photographs illustrate the color, “texture,”
+and general appearance of water blooms, both harmful and
+non-toxic, including nuisance blooms of green algae, certain
+floating plants, and other known blooms that may be encoun-
+tered. Recognizing a cyanobacterial bloom in a waterbody
+and distinguishing it from other blooms that may or may not
+be harmful is the first step in becoming aware of the potential
+risk in surface water blooms. Figure 1 illustrates the common
+Figure 2. Cyanobacteria, Microcystis aeruginosa. (Photograph:
+coloration of a blue-green algae bloom, or cyanobacterium;
+Ann St. Amand)
+many variations of blue-green algae exist as illustrated in
+figures 2–16. Coloration is not an indicator of the genus of
+the organism(s), although repeated sampling and microscopic
+confirmation from the same waterbody should increase the
+likelihood of correctly identifying the key organisms seen
+when in the field.
+Figure 3. Cyanobacteria, Microcystis aeruginosa. (Photograph:
+Ann St. Amand)
+Figure 1. Cyanobacteria, Dolichospermum lemmermannii.
+(Photograph: Ann St. Amand)
+Field Images 5
+Figure 4. Cyanobacteria, Dolichospermum lemmermannii. (Photograph: Ann St. Amand)
+Figure 5. Cyanobacteria, Dolichospermum lemmermannii. (Photograph: Ann St. Amand)
+6 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 6. Cyanobacteria, Dolichospermum mendotae. (Photograph: Ann St. Amand)
+Figure 7. Cyanobacteria, Gloeotrichia echinulata.
+(Photograph: Midge Eliassen)
+Field Images 7
+Figure 8. Cyanobacteria, Microcystis viridis. (Photograph: Ann St. Amand)
+Figure 9. Cyanobacteria, Dolichospermum lemmermannii. (Photograph: Ann St. Amand)
+8 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 10. Cyanobacteria, Aphanizomenon flos-aquae.
+(Photograph: Ann St. Amand)
+Figure 11. Cyanobacteria, Aphanizomenon flos-aquae. (Photograph: Jacob Kann)
+Field Images 9
+Figure 12. Cyanobacteria, Nodularia spumigena.
+(Photograph: Wayne Wurtsbaugh)
+Figure 13. Cyanobacteria, Plectonema wollei.
+(Photograph: Ken Wagner)
+Figure 14. Cyanobacteria, Woronichinia naegeliana. (Photograph: Ann St. Amand)
+10 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 15. Cyanobacteria, Cylindrospermopsis raciborskii. (Photograph: Ann St. Amand)
+Figure 16. Cyanobacteria, Planktothrix agardhii/prolifica. (Photograph: Richard Holmes)
+Field Images 11
+Other types of HABs and floating plants can be
+distinguished from cyanobacteria blooms by color and texture.
+Green algae commonly are encountered and typically are
+grass-green in color (figs. 17–19). Many types of green algae
+consist of long, stringy filaments (fig. 20) that feel either
+slippery or like cotton. Some floating aquatic plants may
+look like algae (fig. 21), but close examination shows that
+individual plants are present, such as watermeal (fig. 22) and
+duckweed. One group of algae, the charophytes, are macro-
+scopic and typically are rooted but can get dislodged and float
+in a waterbody (fig. 23). Although they may look like vascular
+plants, a closer look shows their characteristic features
+(fig. 24). Aquatic plants are distinct from algae (figs. 25–26).
+Another group of algae, the euglenoids (Euglenophyta), often
+form surface blooms—some are green in color (fig. 27), and
+others are red (fig. 28). Azolla, a small floating aquatic fern Figure 18. Green algae, Spirogyra sp. (Photograph: Ken Wagner)
+also forms a red surface mat (fig. 29). Occasionally, pollen
+from plants can form a thick accumulation, typically with a
+distinct yellowish color (fig. 30). Dinoflagellate (Pyrrhophyta)
+blooms, although typically found in saline waters, occasion-
+ally bloom in freshwater and typically have a tan-brown and
+sometimes blackish appearance (fig. 31).
+Figure 19. Green algae, Cladophora sp. (Photograph: Ann St.
+Amand)
+Figure 17. Green algae, Mougeotia sp. (Photograph: Steve
+Heiskary, Minnesota Pollution Control Agency)
+Figure 20. Green algae, Mougeotia sp. (Photograph: Steve
+Heiskary, Minnesota Pollution Control Agency)
+12 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 21. Duckweed: Wolffia columbiana (also called watermeal). (Photograph: Ann St. Amand)
+Figure 22. Duckweed: Left, Wolffia columbiana; Right, Lemna minor. (Photographs: Barry H. Rosen)
+Field Images 13
+Figure 23. Charophyta, Chara sp. (Photograph: Barry H. Rosen)
+Figure 25. Rooted macrophytes. (Photograph: Ann St. Amand)
+Figure 24. Charophyta, Chara sp. (Photograph: Ann St. Amand)
+Figure 26. Rooted macrophytes. (Photograph: Ann St. Amand)
+14 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 27. Euglenophyta, Euglena sp. (Photograph: Ann St. Amand)
+Figure 28. Euglenophyta, Euglena sanguinea, a known toxin
+producer. (Photograph: Barry H. Rosen)
+Field Images 15
+Figure 29. Water fern,
+Azolla sp. (Photograph:
+Bob Kirschner, Chicago
+Botanic Garden, Illinois)
+Figure 30. Pine pollen. (Photograph: Linda Green, University of
+Rhode Island Watershed Watch)
+Figure 31. Pyrrhophyta, Durinskia dybowskii.
+(Photograph: Brian Magott, Oklahoma
+Department of Environmental Quality)
+16 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Microscope Images
+Filament – a chain or stack of cells
+Field collections of potentially HABs need followup • Some of these filaments consist of cells stacked like a
+examination with a microscope to determine that the bloom roll of coins, with the individual cells being a single
+is in fact cyanobacteria and if it is or is not a known toxin coin (fig. 32, image on the left).
+producer. The following collection of images include some of
+• Some are round cells attached end to end like a string
+the same organisms in the field image section of this guide, as
+of pearls (fig. 32, image on the right).
+well as additional organisms that are of importance because
+of the toxins they produce. In addition, some of the harmless
+• Some filaments are straight, some are coiled (fig. 32,
+organisms are illustrated so the user can distinguish between
+the two images on the left and on the right, respec-
+harmful and non-toxic organisms. Various laboratories are
+tively).
+located around the country that specialize in the identification
+of organisms and perform toxin analyses. Each laboratory has • Some species make a resting spore, an akinete (fig. 32,
+a preferred collection methodology and preservation tech- label A) along the length or at the end of a filament.
+niques that should be followed for the most accurate results.
+• Some species have heterocytes, specialized cells in
+the filament that fix atmospheric nitrogen (previously
+Cyanobacteria Microscopic Identification termed heterocysts) (fig. 32, label H), along the length
+Characteristics or at the end of a filament.
+Recognizing a cyanobacterium under the microscope
+involves observing characteristics associated with that
+morphology. Proper identification often relies on a species
+dichotomous key (Komárek and Anagnostidis, 2001, 2005;
+Komárek, 2013) to determine what the organism might be.
+Often times the shape and dimensions of the cells (length
+and width) are required for resolving a specimen to the
+species level.
+H
+A
+Figure 32. Morphology of cyanobacteria filaments. Straight and coiled forms, as well as features important in
+distinguishing the grouping of organisms. (Photographs: Left and right, Barry H. Rosen; Center, Ann St. Amand)
+Microscope Images 17
+Colony – a collection of cells, most with a distinct or irregular • Some species have a set number of cells per colony,
+pattern others are more heterogeneous.
+• Many species are embedded in a common mucilagi-
+• Some colonies are made up of filaments (fig. 33,
+nous matrix that may or not be visible under the
+bottom image).
+microscope (fig. 33).
+Figure 33. Morphology of cyanobacteria colonies. Round to oval cells or filaments embedded in a mucilaginous
+matrix; features important in distinguishing the grouping of organisms. (Photographs from Rosen and others, 2010)
+18 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Cyanobacteria
+The following images are grouped alphabetically by genus and are based on the latest naming conventions at the time
+of publication. The recent use of genetics has led to the renaming of many organisms and the traditional genera; where
+appropriate, the previous name is included in parentheses.
+Anabaenopsis
+Figure 34. Anabaenopsis arnoldii. Two focal planes of the same filament. Note the heterocyte at
+both ends of this curled filament in the image on the left (arrow). (Photographs: Barry H. Rosen)
+Microscope Images 19
+Aphanizomenon
+Aphanizomenon flos-aquae
+Figure 35. Aphanizomenon flos-aquae. Filaments clustered in bundles (upper) and individual filaments (lower).
+(Photographs: Left, Barry H. Rosen; Right, Ann St. Amand)
+Aphanizomenon gracile
+Figure 36. Aphanizomenon gracile. Filament showing akinetes (left) and a heterocyte (right). (Photographs:
+Ann St. Amand)
+20 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Chrysosporum (Anabaena)
+Cuspidothrix (Aphanizomenon)
+Figure 37. Chrysosporum ovalisporum. Filament showing
+akinetes and heterocytes. (Photograph: Ann St. Amand)
+Figure 38. Cuspidothrix issatschenkoi. Filament showing a
+heterocyte. (Photographs: Barry H. Rosen)
+Cylindrospermopsis
+Figure 39. Cylindrospermopsis raciborskii. Filament showing
+straight and curled morphs. Heterocytes are found at the end of
+the filaments; akinete found adjacent to heterocyte (lower left).
+(Photographs: Barry H. Rosen)
+Microscope Images 21
+Dolichospermum (Anabaena)
+Dolichospermum circinale
+Figure 40. Dolichospermum circinale. Spherical cells in the curved filaments. Heterocytes are along the length of the filaments and
+are about the same size as the vegetative cells. (Photograph: Ann St. Amand)
+22 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Dolichospermum crassum
+Figure 41. Dolichospermum crassum. Spherical cells in the coiled filament. Heterocytes are along
+the length of the filaments and are about the same size as the vegetative cells. (Photograph: Ann
+St. Amand)
+Dolichospermum lemmermannii
+Figure 42. Dolichospermum lemmermannii. Coiled filaments connecting to form a colony. Akinetes enlarged, slightly bent
+(right image). (Photographs: Left, Ann St. Amand; Right, Margaret K. Spoo-Chupka)
+Microscope Images 23
+Dolichospermum mendotae
+Figure 43. Dolichospermum mendotae. Irregularly coiled filaments with heterocytes and elongated akinetes.
+(Photograph: Andrew Chapman)
+Dolichospermum planctonicum
+Figure 44. Dolichospermum planctonicum. Round cells in a straight filament; enlarged akinetes. (Photograph:
+Ann St. Amand)
+24 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Gloeotrichia
+200 µm
+Figure 45. Gloeotrichia echinulata. Filaments tapered, forming a colony, with an overall appearance of a pin cushion
+(lower left image). The base of each filament terminates in a heterocyte (lower right image). (Photographs: Barry H.
+Rosen)
+Microscope Images 25
+Haplosiphon
+5 µm
+Figure 46. Haplosiphon hibernicus. Filament has true branching and rectangular heterocytes.
+(Photographs: Barry H. Rosen)
+26 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Microcystis
+Microcystis aeruginosa
+Figure 47. Microcystis aeruginosa. Round to oval cells embedding a mucilaginous matrix. Cell color varies from
+brown to various shades of green and blue-green. (Photographs: Barry H. Rosen)
+Microscope Images 27
+Microcystis viridis
+Figure 48. Microcystis viridis. Paired cells round to oval cells in “packets” embedded in a
+mucilaginous matrix. (Photographs: Ann St. Amand)
+28 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Microcystis wesenbergii
+Figure 49. Microcystis wesenbergii. Round cells dispersed in a
+robust, well defined common mucilaginous envelope; individual.
+(Photographs: Barry H. Rosen)
+Microscope Images 29
+Nodularia
+Nodularia spumigena
+Figure 50. Nodularia spumigena. Cells arranged in filaments, heterocytes common
+and at somewhat regular intervals, with distinct constrictions at the junction
+between barrel-shaped cells. (Photograph: Ann St. Amand)
+Nodularia spumigena
+Figure 51. Nodularia spumigena. Cells arranged in filaments,
+heterocytes common, with distinct constrictions at the junction
+between cells. (Photograph: Ann St. Amand)
+30 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Nostoc sp.
+Figure 52. Nostoc sp. Filaments have round cells (elongated before cell division). Filaments embedded both
+individual and a common mucilaginous matrix. (Photographs: Barry H. Rosen)
+Microscope Images 31
+Oscillatoria sp.
+Figure 53. Oscillatoria sp. Cells in filaments, shorter than
+wide. Color varies from green, blue-green, to dark brown. Upper
+photograph is O. limosa. (Photographs: Barry H. Rosen)
+Planktothrix (Oscillatoria)
+Figure 54. Planktothrix agardhii. Filaments composed of
+cells that range from longer than wide to slightly shorter
+than wide. Lightly pigmented. Can have both terminal cells
+tapered; often one end of a filament is rounded and the other
+end tapered. (Photographs: Upper and middle, Barry H. Rosen;
+Bottom, Ann St. Amand)
+32 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Plectonema (Lyngbya)
+Figure 55. Plectonema wollei. Cells in filaments with sheaths.
+Large diameter filaments, with cells stacked like coins in the
+filaments. Bottom image illustrates a cell turned on its side.
+Most dark brown in color. (Photographs: Top, Barry H. Rosen;
+Bottom, Ann St. Amand)
+Raphidiopsis
+Figure 56. Raphidiopsis mediterranea. This genus is characterized by curving filaments and the presence of akinetes but not
+heterocytes. This genus may eventually be merged with Cylindrospermopsis. (Photographs: Barry H. Rosen)
+Microscope Images 33
+Schizothrix sp.
+Figure 57. Schizothrix sp. Thin, slender filaments with cells
+longer than wide, within a sheath and typically multiple
+filaments intertwined. (Photographs: Barry H. Rosen)
+Sphaerospermopsis (Anabaena)
+Figure 58. Sphaerospermopsis torques-reginae. Filaments
+composed of round cells and coiled, with some regularity.
+Heterocyte with two adjacent, spherical akinetes (top image),
+often on both sides of the heterocyte. (Photographs: Barry H.
+Rosen)
+34 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 59. Sphaerospermopsis aphanizomenoides. Filaments composed of rounded cells but not
+coiled, akinetes adjacent to both sides of heterocytes (not in this image). (Photograph: Ann St. Amand)
+Microscope Images 35
+Woronichinia (Coelospherium)
+Figure 60. Woronichinia naegeliana. Cells, round to oval, in colonies embedded on the outer edge of the mucilaginous
+matrix (not throughout like Microcystis). (Photographs: Barry H. Rosen)
+36 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Other Organisms Viewed Under the Microscope
+The remaining collection of images include some of the same organisms in the field image section of this guide, as
+well as additional organisms that are of importance because they can cause issues in a waterbody or may be an indicator
+of a water quality concern. In addition, some of the harmless organisms are illustrated so the user can distinguish between
+harmful and harmless organisms.
+Euglenophyta (Euglenoids)
+Euglena
+This organism can form a surface scum on waterbodies that have been enriched with nutrients that look almost oily.
+One species, Euglena sanguinea, is known to produce the alkaloid fish and mammal toxin, euglenophycin (Zimba and
+others, 2010).
+Figure 61. Euglena sp. (see figure 27). Surface scums indicate nutrient enrichment. Euglena cells can swim using a long flagellum,
+and they typically have a visible red eyespot (inset). (Photograph: Ann St. Amand; Inset photograph: Barry H. Rosen)
+Microscope Images 37
+Euglena sanguinea
+Figure 62. Euglena sanguinea (see figure 28). This organism
+accumulates the pigment astaxanthin and imparts a red color
+to individual cells and to surface scums. (Photograph: Barry H.
+Rosen)
+Pyrrhophyta (Dinoflagellates)
+The Pyrrhophyta, more commonly called dinoflagellates, include both freshwater and marine representatives. In the
+marine environment, approximately 5 percent are known to produce toxins. These toxins are associated with red tides and
+shellfish poisoning. Saxitoxin is a common and potent paralytic neurotoxin produced by some marine species. The following
+figure illustrates some common freshwater dinoflagellates that may bloom, but they are not known to produce toxins.
+Figure 63. Left: Durinskia dybowskii (see figure 31). Right:
+Peridinium sp.; Bottom: Ceratium hirundinella. (Photographs:
+Top left, Ann St. Amand; Top right and bottom: Barry H. Rosen)
+38 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Haptophyta (Golden Algae)
+This group of algae is infamous because of one species, Prymnesium parvum. It is known to cause large fish kills in
+brackish waters and is widely distributed, but does not seem to affect humans. Texas, Oklahoma, New Mexico, Colorado,
+Wyoming, North Carolina, South Carolina, Georgia, Arkansas, and Alabama have all reported waterbodies with this
+organism.
+Figure 64. Prymnesium parvum. Note the color of the chromoplast (left) and
+the two flagella (right) that allow this organism to swim. (Photographs: Left,
+Barry H. Rosen; Right, Ann St. Amand)
+Microscope Images 39
+Chlorophyta (Green Algae)
+The green algae generally do not produce toxins; however, enriched waterbodies often experience excess green
+algal growth, visible as long bright or grassy green and sometime dark green filaments. These filaments are typically
+slippery or cottony to the touch, depending on which group of organisms they are associated with. The following figure
+shows three characteristic filamentous green algae and can be compared to the cyanobacteria images.
+Figure 65. Green algae. Top: Spirogyra sp., with helical or spiral chloroplast (see figure 19). Middle: Cladophora sp.,
+showing branched filaments (see figure 18). Bottom: Mougeotia sp., with flat, plate-like chloroplast (see figure 20).
+(Photographs: Top and middle, Ann St. Amand; Bottom, Barry H. Rosen)
+40 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Figure 66. Green algae, Pithophora sp. with characteristic swollen “akinetes” (Photographs: Ann St. Amand)
+References 41
+References Carmichael, W.W., Beasley, V.R., Bunner, D.L., Eloff, J.N.,
+Falconer, I., Gorham, P., Harada, K.I., Krishnamurthy,
+T., Yu, M.J., Moore, R.E., Rinehart, K., Runnegar, M.,
+Akcaalan, R., Köker, L., Oğuz, A., Spoof, L., Meriluoto, J.,
+Skulberg, O.M., and Watanabe, M., 1988, Naming of cyclic
+and Albay, M., 2014, First report of cylindrospermopsin
+heptapeptide toxins of cyanobacteria (blue-green algae):
+production by two cyanobacteria (Dolichospermum
+Toxicon, v. 26, p. 971–973.
+mendotae and Chrysosporum ovalisporum) in Lake Iznik,
+Turkey: Toxins, v. 6, no. 11, p. 3173–3186. Carmichael, W.W., Evans, W.R., Yin, Q.Q., Bell, P., and
+Mocauklowski, E., 1997, Evidence for paralytic shellfish
+American Public Health Association, 2012, Standard methods
+poisons in the freshwater cyanobacterium Lyngbya wollei
+for the examination of water and wastewater (22d ed.):
+(Farlow ex Gomont) comb. nov.: Applied and Environmen-
+Washington D.C.
+tal Microbiology, v. 63, p. 104–110.
+Anagnostidis, K., and Komárek, J., 1988, Modern approach to
+Carty, S., 2014, Freshwater dinoflagellates of North America:
+the classification system of cyanophytes. 3. Oscillatoriales:
+Ithaca and London, Comstock Publishing Associates, A
+Archiv für Hydrobiologie, Supplement 80, p. 327–472.
+division of Cornell University Press, 272 p.
+Aráoz, R., Nghiêm, H.O., Rippka, R., Palibroda, N.,
+Chorus, I., and Bartram, J., eds., 1999, Toxic cyanobacteria in
+de Marsac, N.T., and Herdman, M., 2005, Neurotoxins
+water: New York, E&FN Spon, 416 p.
+in axenic oscillatorian cyanobacteria—Coexistence of
+anatoxin-a and homoanatoxin-a determined by ligand- D’Agostino, P.M., Song, X., Neilan, B.A, and Moffitt, M.C.,
+binding assay and GC/MS: Microbiology, v. 151, pt. 4, 2014, Comparative proteomics reveals that a saxitoxin-
+p. 1263–1273. producing and a nontoxic strain of Anabaena circinalis are
+two different ecotypes: Journal of Proteome Research, v. 13,
+Ballot, A., Fastner, J., Lentz, M., and Wiedner, C., 2010a, First
+no. 3, p. 1474–1484.
+report of anatoxin-a-producing cyanobacterium Aphani-
+zomenon issatschenkoi in northeastern Germany: Toxicon, Elliott, J.A., Jones, I.D., and Thackeray, S.J., 2006, Testing
+v. 56, no. 6, p. 964–971. the sensitivity of phytoplankton communities to changes in
+water temperature and nutrient load, in a temperate lake:
+Ballot A., Fastner J., and Wiedner C., 2010b, Paralytic
+Hydrobiologia, v. 559, p. 401–411.
+shellfish poisoning toxin-producing cyanobacterium
+Aphanizomenon gracile in northeast Germany: Applied and Faassen, E.J., and Lürling, M., 2013, Occurrence of the
+Environmental Microbiology, v. 76, no. 4, p. 1173–1180. microcystins MC-LW and MC-LF in Dutch surface waters
+and their contribution to total microcystin toxicity: Marine
+Becker, V., Ihara, P., Yunes, J.S., and Huszar, V.L.M., 2010,
+Drugs, v. 11, p. 2643–2654.
+Occurrence of anatoxin-a(s) during a bloom of Anabaena
+crassa in a water-supply reservoir in southern Brazil: Ferreira, F.M., Franco Soler, J.M., Fidalgo, M.L., and
+Journal of Applied Phycology, v. 22, p. 235–241. Fernández-Vila, P., 2001, PSP toxins from Aphanizomenon
+flos-aquae (cyanobacteria) collected in the Crestuma-Lever
+Bittencourt-Oliveira, M.C., Piccin-Santos, V., Kujbida, P., and
+reservoir (Douro River, northern Portugal): Toxicon, v. 39,
+Moura, A.N., 2011, Cylindrospermopsin in water supply
+no. 6, p. 757–761.
+reservoirs in Brazil determined by immunochemical and
+molecular methods: Journal of Water Resource Protection, Gehringer, M.M., Adler, L., Roberts, A.A., Moffitt, M.C.,
+v. 3, p. 349–355. Mihali, T.K., Mills, T.J., Fieker, C., and Neilan, B.A., 2012,
+Nodularin, a cyanobacterial toxin, is synthesized in planta
+Bruno, M., Barbini, D.A., Pierdominici, E., Serse, A.P., and
+by symbiotic Nostoc sp.: International Society for Microbial
+Ioppolo, A., 1994, Anatoxin-a and previously unknown
+Ecology Journal, v. 6, no. 10, p. 1834–1847.
+toxin in Anabaena planctonica from blooms found in Lake
+Mulargia (Italy): Toxicon, v. 32, p. 369–373. Graham, J.L., Loftin, K.A., Ziegler, A.C., and Meyer, M.T.,
+2008, Guidelines for design and sampling for cyanobacterial
+Carey, C.C., Haney, J.F., and Cottingham K.L., 2007, First
+toxin and taste-and-odor studies in lakes and reservoirs:
+report of microcystin-LR in the cyanobacterium Gloeot-
+U.S. Geological Survey Scientific Investigations Report
+richia echinulate: Environmental Toxicology, v. 22, no. 3,
+2008–5038, 39 p.
+p. 337–339.
+Henriksen P., Carmichael W.W., An, J., and Mostrup, Ø.,
+Carey, C.C., Ibelings, B.W., Hoffmann, E.P., Hamilton, D.P.,
+1997, Detection of an anatoxin-a(s)-like anticholinesterase
+and Brookes, J.D., 2012, Eco-physiological adaptations
+in natural blooms and cultures of cyanobacteria/blue-green
+that favour freshwater cyanobacteria in a changing climate:
+algae from Danish lakes and in the stomach contents of
+Water Research, v. 46, no. 5, p. 1394–1407.
+poisoned birds, Toxicon, v. 35, p. 901–913.
+42 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Ibelings, B.W., and Chorus, I., 2007, Accumulation of Lippy, E.C., and Erb, J., 1976, Gastrointestinal illness at
+cyanobacterial toxins in freshwater “seafood” and its Srwickley, Pa.: Journal of the American Water Works
+consequences for public health—A review: Environmental Association, v. 68, p. 606–610.
+Pollution, v. 150, no. 1, p. 177–192.
+Mez, K., Hanselmann, K., Naegeli, H., and Preisig, H.R.,
+Jöhnk, K.D., Huisman, J., Sharples, J., Sommeijer, B., Visser, 1996, Protein phosphatase inhibiting activity in cyanobac-
+P.M., and Stroom, J.M., 2008, Summer heatwaves promote teria from alpine lakes in Switzerland: Phycologia, v. 35,
+blooms of harmful cyanobacteria: Global Change Biology, p. 133–139.
+v. 14, p. 495–512.
+Molica, R.J.R., Oliveira, E.J.A., Carvalho, P.V.V.C., Costa,
+Kokociński, M., Mankiewicz-Boczek, J., Jurczak, T., Spoof, A.N.S.F., Cunha, M.C.C., Melo, G.L., and Azevedo,
+L., Meriluoto, J., Rejmonczyk, E., Hautala, H., Vehniäinen, S.M.F.O., 2005, Occurrence of saxitoxins and an anatoxin-
+M., Pawełczyk, J., and Soininen, J., 2013, Aphanizomenon a(s)-like anticholinesterase in a Brazilian drinking water
+gracile (Nostocales), a cylindrospermopsin-producing supply: Harmful Algae, v. 4, p. 743–753.
+cyanobacterium in Polish lakes: Environmental Science and
+Mynderse, J.S., Moore, R.E., Kashiwaga, M., and Norton,
+Pollution International, v. 20, no. 8, p. 5243–5264.
+T.R., 1977, Antileukemia activity in the Oscillatoriaceae—
+Komárek, J., 2013, Cyanoprokaryota III. Teil. Heterocystous Isolation of debromoaplysia toxin from Lyngbya: Science,
+genera, Süsswasserflora von Mitteleuropa: Heidelberg, v. 196, p. 538–540.
+Springer Spektrum, v. 19, 1,130 p.
+Namikoshi, M., Murakamia, T., Watanabe, M.F., Oda, T.,
+Komárek, J., and Anagnostidis, K., 2001, Cyanoprokaryota Yamada, J., Tsujimura, S., Nagaia, H., and Oishi, S., 2003,
+I. Teil. Chroococcales, in Ettl, H., Gartner, G., Heynig, Simultaneous production of homoanatoxin-a, anatoxin-a,
+H., and Mollenhauer, D., eds., Susswasserflora von and a new non-toxic 4-hydroxyhomoanatoxin-a by the
+Mitteleuropa, v. 19, no. 1, Gustav Fischer, Jena-Stuttgart- cyanobacterium Raphidiopsis mediterranea Skuja: Toxicon,
+Lübeck-Ulm, 548 p. v. 42, p. 533–538.
+Komárek, J., and Anagnostidis, K., 2005, Cyanoprokaryota Namikoshi, M., Rinehart, K.L., Sakai, R., Stotts, R.R.,
+II. Teil. Oscillatoriales, in Büdel, B., Gärtner, G., Krienitz, Dahlem, A.M., Beasley, V.R., Carmichael, W.W., and
+L., and Schagerl, M., eds., Susswasserflora von Mitteleu- Evans, W.R., 1992, Identification of 12 hepatotoxins from
+ropa: Heidelberg, Elsevier, v. 19, no. 2, 759 p. a Homer lake bloom of the cyanobacteria Microcystis
+aeruginosa, Microcystis viridis, Microcystis wesenbergii;
+Komárek, J., and Hindák, F., 1988, Taxonomic review
+nine new microcystins: Journal of Organic Chemistry, v. 57,
+of natural populations of the cyanophytes from the
+p. 866–872.
+Gomphosphaeria-complex: Algological Studies/Archiv für
+Hydrobiologie, Supplement, v. 50–53, p. 203–225. National Environmental Justice Advisory Council (NEJAC),
+2002, Fish consumption and environmental justice: A
+Komárek, J., Kastovsky, J., Mares, J., and Johansen, J.R.,
+report developed form the National Environmental Justice
+2014, Taxonomic classification of cyanoprokaryotes
+Advisory Council Meeting of December 3–6, 2001, Federal
+(cyanobacterial genera) using a polyphasic approach:
+Advisory Committee to the U.S. Environmental Protection
+Preslia, v. 86, p. 295–335.
+Agency.
+Kusumi, T., Ooi, T., Watanabe, M.M., Takahashi, H., and
+Oren, A., 2004, A proposal for further integration of the
+Kakisawa, H., 1987, Cyanoviridin RR, a toxin from the
+cyanobacteria under the Bacteriological Code: Interna-
+cyanobacterium (blue-green alga) Microcystis viridis:
+tional Journal of Systematic Bacteriology, v. 54, pt. 5,
+Tetrahedron Letters, v. 28, p. 4695–4698.
+p. 1895–1902.
+Lanaras, T., and Cook, C.M., 1994, Toxin extraction from
+Paerl, H.W., and Huisman, J., 2009, Climate change—A
+an Anabaenopsis milleri-dominated bloom: Science of the
+catalyst for global expansion of harmful cyanobacterial
+Total Environment, v. 142, no. 3, p. 163–169.
+blooms: Environmental Microbiology Reports, v. 1, no. 1,
+p. 27–37.
+Leliaert, F., Smith, D.R., Moreau, H., Herron, M.D.,
+Verbruggen, H., Delwiche, C.F., and de Clerck, O., 2012,
+Pereira, P., Dias, E., Franca, S., Pereira, E., Carolino, M., and
+Phylogeny and molecular evolution of the green algae:
+Vasconcelos, V., 2004, Accumulation and depuration of
+Critical Reviews in Plant Sciences, v. 31, p. 1–46.
+cyanobacterial paralytic shellfish toxins by the freshwater
+mussel Anodonta cygnea: Aquatic Toxicology, v. 68, no. 4,
+Li, X.Y., Chung, I.K., Kim, J.I., and Lee, J.A., 2004,
+p. 339–350.
+Subchronic oral toxicity of microcystin in common carp
+(Cyprinus carpio L.) exposed to Microcystis under labora-
+tory conditions: Toxicon, v. 44, no. 8, p. 821–827.
+References 43
+Preussel, K., Stüken, A., Wiedner, C., Chorus, I., and Fastner, Sivonen, K., Carmichael, W.W., Namikoshi, M., Rinehart,
+J., 2006, First report on cylindrospermopsin producing K.L., Dahlem, A.M., and Niemelä, S.I., 1990, Isolation and
+Aphanizomenon flos-aquae (Cyanobacteria) isolated from characterization of hepatotoxic microcystin homologues
+two German lakes: Toxicon, v. 47, no. 2, p. 156–162. from the filamentous freshwater cyanobacterium Nostoc
+sp. strain 152: Applied Environmental Microbiology, v. 56,
+Prinsep, M.R., Caplan, F.R., Moore, R.E., Patterson, G.M.L.,
+p. 2650–2657.
+Honkanen, R.E., and Boynton, A.L., 1992, Microcystin-LR
+from a blue-green alga belonging to the Stignonematales: Sivonen, K., Himberg, K., Luukkainen, R., Niemelä, S.I.,
+Phytochemistry, v. 31, p. 1247–1248. Poon, G.K., and Codd, G.A., 1989a, Preliminary charac-
+terization of neurotoxic blooms and strains from Finland:
+Rajaniemi, P., Komárek, J., Hoffmann, L., Hrouzek, P.,
+Environmental Toxicology and Water Quality, v. 4, no. 3,
+Kastocská, K., and Sivonen, K., 2005, Taxonomic
+p. 339–352.
+consequences from the combined molecular and phenotype
+evaluation of selected Anabaena and Aphanizomenon Sivonen, K., Kononen, K., Carmichael, W.W., Dahlem, A.M.,
+strains: Algological Studies, v. 117, p. 371–391. Rinehart, K.L., Kiviranta, J., and Niemelä, S.I., 1989b,
+Occurrence of the hepatotoxic cyanobacterium Nodularia
+Rapala, J., Sivonen, K., Luukkainen, R., and Niemelä,
+spumigena in the Baltic Sea and the structure of the toxin:
+S.I., 1993, Anatoxin-a concentration in Anabaena and
+Applied Environmental Microbiology, v. 55, p. 1990–1995.
+Aphanizomenon at different environmental conditions and
+comparison of growth by toxic and non-toxic Anabaena Sivonen, K., Namikoshi, M., Evans, W.R., Carmichael, W.W.,
+strains, a laboratory study: Journal of Applied Phycology, Sun, F., Rouhiainen, L., Luukkainen, R., and Rinehart,
+v. 5, p. 581–591. K.L., 1992a, Isolation and characterization of a variety of
+microcystins from seven strains of the cyanobacterial genus
+Rinehart, K.L., Harada, K.-I., Namikoshi, M., Chen, C.,
+Anabaena: Applied Environmental Microbiology, v. 58,
+Harvis, C.A., Munro, M.H.G., Blunt, J.W., Mulligan,
+p. 2495–2500.
+P.E., Beasley, V.R., Dahlem, A.M. and Carmichael, W.W.,
+1988, Nodularin, microcystin, and the configuration of Sivonen, K., Namikoshi, M., Evans, W.R., Färdig, M.,
+Adda: Journal of the American Chemical Society, v. 110, Carmichael, W.W., and Rinehart, K.L., 1992b, Three new
+p. 8557–8558. microcystins, cyclic heptapeptide hepatotoxins, from Nostoc
+sp. strain 152: Chemical Research in Toxicology, v. 5,
+Rinehart, K.L., Namikoshi, M., and Choi, B.W., 1994,
+p. 464–469.
+Structure and biosynthesis of toxins from blue-green algae
+(Cyanobacteria): Journal of Applied Phycology, v. 6, Stewart I., Eaglesham, G.K., McGregor, G.B., Chong, R.,
+p. 159–176. Seawright, A.A., Wickramasinghe, W.A., Sadler, R.,
+Hunt, L., and Graham, G., 2012, First report of a toxic
+Robarts, R.D., and Zohary, T., 1987, Temperature effects on
+Nodularia spumigena (Nostocales/Cyanobacteria) bloom
+photosynthetic capacity, respiration, and growth rates of
+in sub-tropical Australia. II. Bioaccumulation of nodularin
+bloom-forming cyanobacteria: New Zealand Journal of
+in isolated populations of mullet (Mugilidae): International
+Marine and Freshwater Research, v. 21, p. 391–399.
+Journal of Environmental Research and Public Health, v. 9,
+no. 7, p. 2412–2443.
+Rosen, B.H., Loftin, K.A., Smith, C.E., Lane, R.F., and
+Keydel, S.P., 2010, Microphotographs of cyanobacteria
+Tanabe, Y., Sano, T., Kasai, F., and Watanabe, M.M., 2009,
+documenting the effects of various cell-lysis techniques:
+Recombination, cryptic clades and neutral molecular
+U.S. Geological Survey Open-File Report 2010–1289,
+divergence of the microcystin synthetase (mcy) genes of
+203 p.
+toxic cyanobacterium Microcystis aeruginosa: BioMed
+Central Evolutionary Biology, v. 9, p. 115.
+Sinha, R., Pearson, L.A., Davis, T.W., Muenchhoff, J.,
+Pratama, R., Jex, A., Burford, M.A., and Neilan, B.A., 2014,
+Vezie, C., Brient, L., Sivonen, K., Bertru, G., Lefeuvre, J.C.,
+Comparative genomics of Cylindrospermopsis raciborskii
+and Salkinoja-Salonen, M., 1998, Variation of microcystin
+strains with differential toxicities: BioMed Central Genom-
+content of cyanobacterial blooms and isolated strains
+ics, v. 15, p. 83.
+in Grand-Lieu lake (France): Microbial Ecology, v. 35,
+p. 126–135.
+Sivonen, K., 1990, Effects of light, temperature, nitrate,
+orthophosphate, and bacteria on growth of and hepatotoxin
+Wacklin, P., Hoffmann, L., and Komárek, J., 2009, Nomen-
+production by Oscillatoria agardhii strains: Applied
+clatural validation of the genetically revised cyanobacterial
+Environmental Microbiology, v. 56, p. 2658–2666.
+genus Dolichospermum (Ralfs ex Bornet et Flahault) comb.
+nova: Fottea, v. 9, no. 1, p. 59–64.
+44 Field and Laboratory Guide to Freshwater Cyanobacteria Harmful Algal Blooms for Native American and Alaska Native Communities
+Watanabe, M.F., Oishi, S., Watanabe, Y., and Watanabe, M., Zapomelová, E., Jezberová, J., Hrouzek, P., Hisem, D.,
+1986, Strong probability of lethal toxicity in the blue-green Reháková, K., and Komárková, J., 2010, Nomenclatural
+alga Microcystis viridis Lemmermann: Journal of Phycol- note—Polyphasic characterization of three strains of
+ogy, v. 22, p. 552–556. Anabaena reniformis and Aphanizomenon aphanizomen-
+oides (cyanobacteria) and their reclassification to Sphaero-
+Watanabe, M.F., Tsujimura, S., Oishi, S., Niki, T., and
+spermum gen. nov. (incl. Anabaena kisseleviana): Journal of
+Namikoshi, M., 2003, Isolation and identification of
+Phycology, v. 45, no. 45, p. 1363–1373.
+homoanatoxin-a from a toxic strain of the cyanobacterium
+Raphidiopsis mediterranea Skuja isolated from Lake Biwa, Zapomelová, E., Skaácelová, O., Pumann, P., Kopp, R., and
+Japan: Phycologia, v. 42, p. 364–369. Janecek, E., 2012, Biogeographically interesting planktonic
+Nostocales (Cyanobacteria) in the Czech Republic and their
+Wehr, J.D., Sheath, R.G., and Kociolek, J.P., 2015, Freshwater
+polyphasic evaluation resulting in taxonomic revisions of
+algae of North America, Ecology and classification (2d ed.):
+Anabaena bergii Ostenfeld 1908 (Chrysosporum gen. nov.)
+New York, Academic Press, 1,066 p.
+and A. tenericaulis Nygaard 1949 (Dolichospermum teneri-
+caule comb. nova): Hydrobiologia, v. 698, p. 353–365.
+Werner, V.R., Laughinghouse, H.D., IV, Fiore, M.F.,
+Sant’Anna, C.L., Hoff, C., de Souza Santos, K.R., Neuhaus,
+Zimba, P.V., Camus, A.A., and Burkholder, J.M., 2006,
+E.B., Molica, R.J.R., Honda, R.Y., and Echenique, R.O.,
+Co-occurrence of white shrimp, Litopenaeus vannamei,
+2012, Morphological and molecular studies of Sphaerosper-
+mortalities and microcystin toxin in a southeastern U.S.A.
+mopsis torques-reginae (Cyanobacteria, Nostocales) from
+shrimp facility: Aquaculture, v. 261, no. 3, p. 1048–1055.
+South American water blooms: Phycologia, v. 51, no. 2,
+p. 228–238. Zimba, P.V., Khoo, L., Gaunt, P.S., Brittain, S., and
+Carmichael, W.W., 2001, Confirmation of catfish, Ictalurus
+Willame, R., Jurczak, T., Iffly, J-F., Kull, T., Meriluoto, J., and
+punctatus (Rafinesque), mortality from Microcystis toxins:
+Hoffmann, L., 2005, Distribution of hepatotoxic cyanobac-
+Journal of Fish Diseases, v. 24, no. 1, p. 41–47.
+terial blooms in Belgium and Luxembourg: Hydrobiologia,
+v. 551, p. 99–117. Zimba, P.V., Moeller, P.D., Beauchesne, K., Lane, H.E., and
+Triemer, R.E., 2010, Identification of euglenophycin—A
+toxin found in certain euglenoids: Toxicon, v. 55,
+p. 100–104.
+Manuscript was approved on August 24, 2015.
+Prepared by the U.S. Geological Survey Science Publishing
+Network, Raleigh Publishing Service Center
+For more information concerning this publication, contact
+Barry Rosen, Biologist
+U.S. Geological Survey
+Caribbean-Florida Water Science Center
+12703 Research Parkway
+Orlando, FL 32826
+(407) 803-5508
+brosen@usgs.gov
+Rosen
+and
+St.
+Amand—Field
+and
+Laboratory
+Guide
+to
+Freshwater
+Cyanobacteria
+Harmful
+Algal
+Blooms
+for
+Native
+American
+and
+Alaska
+Native
+Communities—Open-File
+Report
+2015–1164
+ISSN 0196-1497 (print)
+ISSN 2331-1258 (online)
+http://dx.doi.org/10.3133/ofr20151164
