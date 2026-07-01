@@ -1,0 +1,3463 @@
+{
+  "generated_utc": "2026-07-01T22:10:39Z",
+  "raw_dir": "C:\\Users\\arikt\\Documents\\GitHub\\HAB_PoC\\data-sources\\cyan\\data\\raw",
+  "n_files": 52,
+  "n_files_with_flags": 0,
+  "cross_file_by_tile": {
+    "7_2": {
+      "n_files": 52,
+      "crs_consistent": true,
+      "shape_consistent": true,
+      "transform_consistent": true,
+      "crs_values": [
+        "EPSG:5070"
+      ],
+      "shapes": [
+        "(2000, 2000)"
+      ],
+      "transforms": [
+        "[300.0, 0.0, 1034402.95331, 0.0, -300.0, 2714826.267078]"
+      ],
+      "processing_version_tags": {
+        "OBPG_version=6.0": 52
+      },
+      "streams": {
+        "CYAN": 52
+      }
+    }
+  },
+  "per_file": [
+    {
+      "filename": "L20220022022008.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-01-02",
+        "end_date": "2022-01-08"
+      },
+      "manifest_sha256": "a8bdccabfe002c06834fe036d387ecfd440fb0183d0eaabcf1e0b2ea23464c2f",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 748305,
+        "valid": 4030,
+        "land": 2915824,
+        "nodata": 331841
+      },
+      "dn_pct": {
+        "below_detection": 18.7076,
+        "valid": 0.1008,
+        "land": 72.8956,
+        "nodata": 8.296
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4030,
+      "dn_valid_min": 1,
+      "dn_valid_max": 183,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.009048475191279258,
+      "ci_mean": 0.0005580994527548319,
+      "ci_median": 0.00023723862594941727,
+      "flags": []
+    },
+    {
+      "filename": "L20220092022015.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-01-09",
+        "end_date": "2022-01-15"
+      },
+      "manifest_sha256": "fbb064374338eb38425bf8090e62458fbd3f88c634a52369a10c9f86bc6747b9",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 711122,
+        "valid": 4743,
+        "land": 2915824,
+        "nodata": 368311
+      },
+      "dn_pct": {
+        "below_detection": 17.7781,
+        "valid": 0.1186,
+        "land": 72.8956,
+        "nodata": 9.2078
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4743,
+      "dn_valid_min": 1,
+      "dn_valid_max": 173,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.006909321476787905,
+      "ci_mean": 0.0004979569410468032,
+      "ci_median": 0.00023723862594941727,
+      "flags": []
+    },
+    {
+      "filename": "L20220162022022.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-01-16",
+        "end_date": "2022-01-22"
+      },
+      "manifest_sha256": "c80ab60babf7548a0ecf1d01983b9dd65811cf6c20f4eb639ff599dcd4f492db",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 835210,
+        "valid": 5057,
+        "land": 2915824,
+        "nodata": 243909
+      },
+      "dn_pct": {
+        "below_detection": 20.8803,
+        "valid": 0.1264,
+        "land": 72.8956,
+        "nodata": 6.0977
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 5057,
+      "dn_valid_min": 1,
+      "dn_valid_max": 168,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.006037614778168966,
+      "ci_mean": 0.00046715993013571333,
+      "ci_median": 0.00019119362172890828,
+      "flags": []
+    },
+    {
+      "filename": "L20220232022029.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-01-23",
+        "end_date": "2022-01-29"
+      },
+      "manifest_sha256": "6d8333ec61847892ead40588d255f04048f8939e976ceace30c0892e368b00e0",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 784219,
+        "valid": 5769,
+        "land": 2915824,
+        "nodata": 294188
+      },
+      "dn_pct": {
+        "below_detection": 19.6055,
+        "valid": 0.1442,
+        "land": 72.8956,
+        "nodata": 7.3547
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 5769,
+      "dn_valid_min": 1,
+      "dn_valid_max": 174,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.007098219091147282,
+      "ci_mean": 0.00036217042675352725,
+      "ci_median": 0.00017633210823958287,
+      "flags": []
+    },
+    {
+      "filename": "L20220302022036.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-01-30",
+        "end_date": "2022-02-05"
+      },
+      "manifest_sha256": "cc8afb2ff361e46943b63b71bd05757141340cd6b2ffdee4a3a9653901f92a07",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 712190,
+        "valid": 2363,
+        "land": 2915824,
+        "nodata": 369623
+      },
+      "dn_pct": {
+        "below_detection": 17.8047,
+        "valid": 0.0591,
+        "land": 72.8956,
+        "nodata": 9.2406
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 2363,
+      "dn_valid_min": 1,
+      "dn_valid_max": 171,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.006546473285929751,
+      "ci_mean": 0.0003652939464292072,
+      "ci_median": 0.0001626257827800473,
+      "flags": []
+    },
+    {
+      "filename": "L20220372022043.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-02-06",
+        "end_date": "2022-02-12"
+      },
+      "manifest_sha256": "3edbbf93f6d3de29ae6a8146cb6332882d77319262bc6a10ba1e4c78af0f341b",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 571587,
+        "valid": 716,
+        "land": 2915824,
+        "nodata": 511873
+      },
+      "dn_pct": {
+        "below_detection": 14.2897,
+        "valid": 0.0179,
+        "land": 72.8956,
+        "nodata": 12.7968
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 716,
+      "dn_valid_min": 1,
+      "dn_valid_max": 160,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.004865790431142645,
+      "ci_mean": 0.000339054992942104,
+      "ci_median": 0.00015829798984973465,
+      "flags": []
+    },
+    {
+      "filename": "L20220442022050.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-02-13",
+        "end_date": "2022-02-19"
+      },
+      "manifest_sha256": "9d0da5d3c30da9e11f6453a663e57d3f254f6e0f5196f2ed0ac4b3dfbd8f54ab",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 773677,
+        "valid": 6417,
+        "land": 2915824,
+        "nodata": 304082
+      },
+      "dn_pct": {
+        "below_detection": 19.3419,
+        "valid": 0.1604,
+        "land": 72.8956,
+        "nodata": 7.6021
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 6417,
+      "dn_valid_min": 1,
+      "dn_valid_max": 172,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.0067254508006298515,
+      "ci_mean": 0.0003929299704519984,
+      "ci_median": 0.000207307684089783,
+      "flags": []
+    },
+    {
+      "filename": "L20220512022057.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-02-20",
+        "end_date": "2022-02-26"
+      },
+      "manifest_sha256": "1dab602ef6192ddac0ab120fff6537e5ac2678c964bd6a36975a7aea1c2e0ec7",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 846474,
+        "valid": 4809,
+        "land": 2915824,
+        "nodata": 232893
+      },
+      "dn_pct": {
+        "below_detection": 21.1619,
+        "valid": 0.1202,
+        "land": 72.8956,
+        "nodata": 5.8223
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4809,
+      "dn_valid_min": 1,
+      "dn_valid_max": 166,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.005720544917298125,
+      "ci_mean": 0.0003750490522944876,
+      "ci_median": 0.00021879802626908177,
+      "flags": []
+    },
+    {
+      "filename": "L20220582022064.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-02-27",
+        "end_date": "2022-03-05"
+      },
+      "manifest_sha256": "85f668b6b8b88851d00f781e85d7bab89ebc63fd3309c919123f2815ccf1604c",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 826153,
+        "valid": 8378,
+        "land": 2915824,
+        "nodata": 249645
+      },
+      "dn_pct": {
+        "below_detection": 20.6538,
+        "valid": 0.2094,
+        "land": 72.8956,
+        "nodata": 6.2411
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 8378,
+      "dn_valid_min": 1,
+      "dn_valid_max": 170,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.006372258716007311,
+      "ci_mean": 0.0003363085401413627,
+      "ci_median": 0.00018115294552343463,
+      "flags": []
+    },
+    {
+      "filename": "L20220652022071.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-03-06",
+        "end_date": "2022-03-12"
+      },
+      "manifest_sha256": "e21b242a719d3b7729139a93a84112260c7d3c6636b3ed41f5eb790f2b72985c",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 904714,
+        "valid": 5621,
+        "land": 2915824,
+        "nodata": 173841
+      },
+      "dn_pct": {
+        "below_detection": 22.6179,
+        "valid": 0.1405,
+        "land": 72.8956,
+        "nodata": 4.346
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 5621,
+      "dn_valid_min": 1,
+      "dn_valid_max": 166,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.005720544917298125,
+      "ci_mean": 0.0003118135337660435,
+      "ci_median": 0.0001626257827800473,
+      "flags": []
+    },
+    {
+      "filename": "L20220722022078.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-03-13",
+        "end_date": "2022-03-19"
+      },
+      "manifest_sha256": "5d6c7272624102e15cfd7c6b06a625cb3230101fa1750b2e3b9d63b68218720e",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 808677,
+        "valid": 1280,
+        "land": 2915824,
+        "nodata": 274219
+      },
+      "dn_pct": {
+        "below_detection": 20.2169,
+        "valid": 0.032,
+        "land": 72.8956,
+        "nodata": 6.8555
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 1280,
+      "dn_valid_min": 1,
+      "dn_valid_max": 161,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.0049988188634573615,
+      "ci_mean": 0.00046533463425557913,
+      "ci_median": 0.00023723862594941727,
+      "flags": []
+    },
+    {
+      "filename": "L20220792022085.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-03-20",
+        "end_date": "2022-03-26"
+      },
+      "manifest_sha256": "34dcc713f6fcf9c3bddb81d2438861f9f62d0da4d60e5c7df76f0d73f262d582",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 947453,
+        "valid": 3133,
+        "land": 2915824,
+        "nodata": 133590
+      },
+      "dn_pct": {
+        "below_detection": 23.6863,
+        "valid": 0.0783,
+        "land": 72.8956,
+        "nodata": 3.3397
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 3133,
+      "dn_valid_min": 1,
+      "dn_valid_max": 187,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.010079323864733893,
+      "ci_mean": 0.0007497254637487555,
+      "ci_median": 0.00035554567493746266,
+      "flags": []
+    },
+    {
+      "filename": "L20220862022092.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-03-27",
+        "end_date": "2022-04-02"
+      },
+      "manifest_sha256": "443d9f77742bd3a13e981115c3f79e52476a304c40f11bc5f1bd525beb721045",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 987031,
+        "valid": 3851,
+        "land": 2915824,
+        "nodata": 93294
+      },
+      "dn_pct": {
+        "below_detection": 24.6758,
+        "valid": 0.0963,
+        "land": 72.8956,
+        "nodata": 2.3323
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 3851,
+      "dn_valid_min": 1,
+      "dn_valid_max": 178,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.007906884593269861,
+      "ci_mean": 0.0008275034496852328,
+      "ci_median": 0.00036526612723037066,
+      "flags": []
+    },
+    {
+      "filename": "L20220932022099.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-04-03",
+        "end_date": "2022-04-09"
+      },
+      "manifest_sha256": "6dbef17928d583b214875d471f058b2d4bda82528e437d8cccb706edd3e4ab12",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 776406,
+        "valid": 4432,
+        "land": 2915824,
+        "nodata": 303338
+      },
+      "dn_pct": {
+        "below_detection": 19.4102,
+        "valid": 0.1108,
+        "land": 72.8956,
+        "nodata": 7.5835
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4432,
+      "dn_valid_min": 1,
+      "dn_valid_max": 193,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.011849919498210883,
+      "ci_mean": 0.0018718975675205733,
+      "ci_median": 0.0012295307649586363,
+      "flags": []
+    },
+    {
+      "filename": "L20221002022106.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-04-10",
+        "end_date": "2022-04-16"
+      },
+      "manifest_sha256": "9ade3b5df2fac51b678217a279e03d1105245bcade4609a2d9f190253ac1fa4e",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1042856,
+        "valid": 11230,
+        "land": 2915824,
+        "nodata": 30090
+      },
+      "dn_pct": {
+        "below_detection": 26.0714,
+        "valid": 0.2807,
+        "land": 72.8956,
+        "nodata": 0.7522
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 11230,
+      "dn_valid_min": 1,
+      "dn_valid_max": 200,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.014312430803509307,
+      "ci_mean": 0.0011961893097764435,
+      "ci_median": 0.0007365011003070535,
+      "flags": []
+    },
+    {
+      "filename": "L20221072022113.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-04-17",
+        "end_date": "2022-04-23"
+      },
+      "manifest_sha256": "e90f02e3460e9b88772a87aa770ffa270692c987383a0e68e24f5745454a1f35",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1030646,
+        "valid": 12955,
+        "land": 2915824,
+        "nodata": 40575
+      },
+      "dn_pct": {
+        "below_detection": 25.7661,
+        "valid": 0.3239,
+        "land": 72.8956,
+        "nodata": 1.0144
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 12955,
+      "dn_valid_min": 1,
+      "dn_valid_max": 188,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.010354887860243467,
+      "ci_mean": 0.0013948780794303625,
+      "ci_median": 0.0009138720605168643,
+      "flags": []
+    },
+    {
+      "filename": "L20221142022120.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-04-24",
+        "end_date": "2022-04-30"
+      },
+      "manifest_sha256": "ff8a82b57343eceae9ccfd10e4be20e71baff6da6c7960b1951584d24761ddba",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1018491,
+        "valid": 20490,
+        "land": 2915824,
+        "nodata": 45195
+      },
+      "dn_pct": {
+        "below_detection": 25.4623,
+        "valid": 0.5122,
+        "land": 72.8956,
+        "nodata": 1.1299
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 20490,
+      "dn_valid_min": 1,
+      "dn_valid_max": 214,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.020878985851911634,
+      "ci_mean": 0.0013533134422497866,
+      "ci_median": 0.001074408412123669,
+      "flags": []
+    },
+    {
+      "filename": "L20221212022127.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-05-01",
+        "end_date": "2022-05-07"
+      },
+      "manifest_sha256": "23a85a494b879bb9efcc0e8520aeab8642f6fe1211dd34c8a9749d31fbcf4649",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 997863,
+        "valid": 16454,
+        "land": 2915824,
+        "nodata": 69859
+      },
+      "dn_pct": {
+        "below_detection": 24.9466,
+        "valid": 0.4113,
+        "land": 72.8956,
+        "nodata": 1.7465
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 16454,
+      "dn_valid_min": 1,
+      "dn_valid_max": 214,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.020878985851911634,
+      "ci_mean": 0.0013194640176935584,
+      "ci_median": 0.0009908944592761167,
+      "flags": []
+    },
+    {
+      "filename": "L20221282022134.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-05-08",
+        "end_date": "2022-05-14"
+      },
+      "manifest_sha256": "c56a5421f8851c2c019bb6c944946cfbbaa3e6f9ac4fd9a181cd82ce6a1d40e0",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1020112,
+        "valid": 24203,
+        "land": 2915824,
+        "nodata": 39861
+      },
+      "dn_pct": {
+        "below_detection": 25.5028,
+        "valid": 0.6051,
+        "land": 72.8956,
+        "nodata": 0.9965
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 24203,
+      "dn_valid_min": 1,
+      "dn_valid_max": 229,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03129099693196857,
+      "ci_mean": 0.0011612240558317658,
+      "ci_median": 0.0006978231935532213,
+      "flags": []
+    },
+    {
+      "filename": "L20221352022141.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-05-15",
+        "end_date": "2022-05-21"
+      },
+      "manifest_sha256": "500d53adb348e9105c208bd596fd1cabf44b07c446f230b514f0e8c74e18b0e7",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 983180,
+        "valid": 4774,
+        "land": 2915824,
+        "nodata": 96222
+      },
+      "dn_pct": {
+        "below_detection": 24.5795,
+        "valid": 0.1193,
+        "land": 72.8956,
+        "nodata": 2.4055
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4774,
+      "dn_valid_min": 1,
+      "dn_valid_max": 218,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.02325762693933648,
+      "ci_mean": 0.002237712824874896,
+      "ci_median": 0.0017459081809869956,
+      "flags": []
+    },
+    {
+      "filename": "L20221422022148.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-05-22",
+        "end_date": "2022-05-28"
+      },
+      "manifest_sha256": "fd94591963830fdb3c957c0c2feadcaee68c3cbf8f8d26ce923dfe7954a62839",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 992373,
+        "valid": 4676,
+        "land": 2915824,
+        "nodata": 87127
+      },
+      "dn_pct": {
+        "below_detection": 24.8093,
+        "valid": 0.1169,
+        "land": 72.8956,
+        "nodata": 2.1782
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 4676,
+      "dn_valid_min": 1,
+      "dn_valid_max": 210,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.01874361693655935,
+      "ci_mean": 0.0015130227783413553,
+      "ci_median": 0.00047835398910909855,
+      "flags": []
+    },
+    {
+      "filename": "L20221492022155.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-05-29",
+        "end_date": "2022-06-04"
+      },
+      "manifest_sha256": "7b48dcf43c7a8174c8a7cae3f45bd90ae22045023555df137b8b5a8cd2a4fb9d",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1013618,
+        "valid": 3296,
+        "land": 2915824,
+        "nodata": 67262
+      },
+      "dn_pct": {
+        "below_detection": 25.3405,
+        "valid": 0.0824,
+        "land": 72.8956,
+        "nodata": 1.6816
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 3296,
+      "dn_valid_min": 1,
+      "dn_valid_max": 236,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.037793524962700324,
+      "ci_mean": 0.002196309662840771,
+      "ci_median": 0.0007169013529571055,
+      "flags": []
+    },
+    {
+      "filename": "L20221562022162.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-06-05",
+        "end_date": "2022-06-11"
+      },
+      "manifest_sha256": "9f4517a0fdb51832c2c29add126c3b04c4ceaa6cfc463c57cf9320659995363a",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1015627,
+        "valid": 6332,
+        "land": 2915824,
+        "nodata": 62217
+      },
+      "dn_pct": {
+        "below_detection": 25.3907,
+        "valid": 0.1583,
+        "land": 72.8956,
+        "nodata": 1.5554
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 6332,
+      "dn_valid_min": 1,
+      "dn_valid_max": 221,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.02521781184235494,
+      "ci_mean": 0.002201012484879944,
+      "ci_median": 0.00042943100759441867,
+      "flags": []
+    },
+    {
+      "filename": "L20221632022169.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-06-12",
+        "end_date": "2022-06-18"
+      },
+      "manifest_sha256": "e2351f99bdb93a2912c0c59d99d1afb3c490ec5720e430aace31e72c9005d2a3",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1014954,
+        "valid": 6721,
+        "land": 2915824,
+        "nodata": 62501
+      },
+      "dn_pct": {
+        "below_detection": 25.3739,
+        "valid": 0.168,
+        "land": 72.8956,
+        "nodata": 1.5625
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 6721,
+      "dn_valid_min": 1,
+      "dn_valid_max": 229,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03129099693196857,
+      "ci_mean": 0.0026871255154835003,
+      "ci_median": 0.0005474184113914281,
+      "flags": []
+    },
+    {
+      "filename": "L20221702022176.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-06-19",
+        "end_date": "2022-06-25"
+      },
+      "manifest_sha256": "4c99e1e66e4fc38b1a6e11a3cb9f1e4c8342e26337814a7c12aa2092bb612d39",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1017505,
+        "valid": 8911,
+        "land": 2915824,
+        "nodata": 57760
+      },
+      "dn_pct": {
+        "below_detection": 25.4376,
+        "valid": 0.2228,
+        "land": 72.8956,
+        "nodata": 1.444
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 8911,
+      "dn_valid_min": 1,
+      "dn_valid_max": 235,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03678776469917318,
+      "ci_mean": 0.0026913366713114625,
+      "ci_median": 0.0005328505274418883,
+      "flags": []
+    },
+    {
+      "filename": "L20221772022183.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-06-26",
+        "end_date": "2022-07-02"
+      },
+      "manifest_sha256": "51771c4357301860fc5e5d7cf4506c8cee8f48500d3327dc2df074522f6d1514",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1013734,
+        "valid": 7204,
+        "land": 2915824,
+        "nodata": 63238
+      },
+      "dn_pct": {
+        "below_detection": 25.3434,
+        "valid": 0.1801,
+        "land": 72.8956,
+        "nodata": 1.581
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 7204,
+      "dn_valid_min": 1,
+      "dn_valid_max": 235,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03678776469917318,
+      "ci_mean": 0.004617995950076765,
+      "ci_median": 0.0013696052118942733,
+      "flags": []
+    },
+    {
+      "filename": "L20221842022190.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-07-03",
+        "end_date": "2022-07-09"
+      },
+      "manifest_sha256": "39da5913d8c8932bb7d5cb0904c1bca4f2d9f38a61cdd3f42d7eaabf7194a187",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1009610,
+        "valid": 9594,
+        "land": 2915824,
+        "nodata": 64972
+      },
+      "dn_pct": {
+        "below_detection": 25.2402,
+        "valid": 0.2399,
+        "land": 72.8956,
+        "nodata": 1.6243
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 9594,
+      "dn_valid_min": 1,
+      "dn_valid_max": 241,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.04325012828782989,
+      "ci_mean": 0.0037066162475937504,
+      "ci_median": 0.0016994461197228832,
+      "flags": []
+    },
+    {
+      "filename": "L20221912022197.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-07-10",
+        "end_date": "2022-07-16"
+      },
+      "manifest_sha256": "55db6317f0ebad0385f1f9915161ff17fbbb4efa140b95fc08591513cf9026bc",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1010017,
+        "valid": 11748,
+        "land": 2915824,
+        "nodata": 62411
+      },
+      "dn_pct": {
+        "below_detection": 25.2504,
+        "valid": 0.2937,
+        "land": 72.8956,
+        "nodata": 1.5603
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 11748,
+      "dn_valid_min": 1,
+      "dn_valid_max": 251,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.056640541932636894,
+      "ci_mean": 0.0056307655880024525,
+      "ci_median": 0.002546932293333868,
+      "flags": []
+    },
+    {
+      "filename": "L20221982022204.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-07-17",
+        "end_date": "2022-07-23"
+      },
+      "manifest_sha256": "10a9f482b45f2eba452d015f64256c930b57808edacc11edc4b831acd109b0a7",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1010779,
+        "valid": 13011,
+        "land": 2915824,
+        "nodata": 60386
+      },
+      "dn_pct": {
+        "below_detection": 25.2695,
+        "valid": 0.3253,
+        "land": 72.8956,
+        "nodata": 1.5096
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 13011,
+      "dn_valid_min": 1,
+      "dn_valid_max": 249,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05366602146220756,
+      "ci_mean": 0.0054453928523310055,
+      "ci_median": 0.0022256014725742872,
+      "flags": []
+    },
+    {
+      "filename": "L20222052022211.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-07-24",
+        "end_date": "2022-07-30"
+      },
+      "manifest_sha256": "45a28a2992550b76ae296e2c2a4a712149bcedc63b00677eb1ba8cd65697c345",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1001946,
+        "valid": 22902,
+        "land": 2915824,
+        "nodata": 59328
+      },
+      "dn_pct": {
+        "below_detection": 25.0486,
+        "valid": 0.5726,
+        "land": 72.8956,
+        "nodata": 1.4832
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 22902,
+      "dn_valid_min": 1,
+      "dn_valid_max": 250,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05513322536354969,
+      "ci_mean": 0.004809898521439982,
+      "ci_median": 0.002052605082802338,
+      "flags": []
+    },
+    {
+      "filename": "L20222122022218.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-07-31",
+        "end_date": "2022-08-06"
+      },
+      "manifest_sha256": "f70582c0a302dee993a1c4e2edfdd863817df8b6d5b24ad729f0ebe599f43706",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1000973,
+        "valid": 27671,
+        "land": 2915824,
+        "nodata": 55532
+      },
+      "dn_pct": {
+        "below_detection": 25.0243,
+        "valid": 0.6918,
+        "land": 72.8956,
+        "nodata": 1.3883
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 27671,
+      "dn_valid_min": 1,
+      "dn_valid_max": 250,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05513322536354969,
+      "ci_mean": 0.005315035309895821,
+      "ci_median": 0.002166373826416068,
+      "flags": []
+    },
+    {
+      "filename": "L20222192022225.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-08-07",
+        "end_date": "2022-08-13"
+      },
+      "manifest_sha256": "7b7cbbd8b914c534fe1bce8e0635f0f4d684b35c1c786e133a209133096a4815",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 996509,
+        "valid": 33739,
+        "land": 2915824,
+        "nodata": 53928
+      },
+      "dn_pct": {
+        "below_detection": 24.9127,
+        "valid": 0.8435,
+        "land": 72.8956,
+        "nodata": 1.3482
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 33739,
+      "dn_valid_min": 1,
+      "dn_valid_max": 237,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03882678224095402,
+      "ci_mean": 0.0035118137429334248,
+      "ci_median": 0.0015256376578027826,
+      "flags": []
+    },
+    {
+      "filename": "L20222262022232.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-08-14",
+        "end_date": "2022-08-20"
+      },
+      "manifest_sha256": "8d8dd325864b4ca695b8e991b71179ec24ea8837e1051562d012351ec3eb4af9",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 994600,
+        "valid": 30448,
+        "land": 2915824,
+        "nodata": 59128
+      },
+      "dn_pct": {
+        "below_detection": 24.865,
+        "valid": 0.7612,
+        "land": 72.8956,
+        "nodata": 1.4782
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 30448,
+      "dn_valid_min": 1,
+      "dn_valid_max": 253,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05977992970248461,
+      "ci_mean": 0.004968274235527745,
+      "ci_median": 0.002479153400069546,
+      "flags": []
+    },
+    {
+      "filename": "L20222332022239.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-08-21",
+        "end_date": "2022-08-27"
+      },
+      "manifest_sha256": "86f486f57b5df4fc0a111f820ee50e58dc6ba864bc962c018e62c1f0407b2d4c",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 993740,
+        "valid": 28882,
+        "land": 2915824,
+        "nodata": 61554
+      },
+      "dn_pct": {
+        "below_detection": 24.8435,
+        "valid": 0.722,
+        "land": 72.8956,
+        "nodata": 1.5389
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 28882,
+      "dn_valid_min": 1,
+      "dn_valid_max": 251,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.056640541932636894,
+      "ci_mean": 0.005269918465224707,
+      "ci_median": 0.0022864483748491924,
+      "flags": []
+    },
+    {
+      "filename": "L20222402022246.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-08-28",
+        "end_date": "2022-09-03"
+      },
+      "manifest_sha256": "597f083de5d927e6f341d2d81141c3572275e1ac5f6d669a1186cbbe64fc572f",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 994181,
+        "valid": 36518,
+        "land": 2915824,
+        "nodata": 53477
+      },
+      "dn_pct": {
+        "below_detection": 24.8545,
+        "valid": 0.913,
+        "land": 72.8956,
+        "nodata": 1.3369
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 36518,
+      "dn_valid_min": 1,
+      "dn_valid_max": 233,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.034855827690357666,
+      "ci_mean": 0.003604769879610793,
+      "ci_median": 0.0012976793686699736,
+      "flags": []
+    },
+    {
+      "filename": "L20222472022253.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-09-04",
+        "end_date": "2022-09-10"
+      },
+      "manifest_sha256": "c85d1ff2bf2390d485c02632953ce813bcb86c3e2651b480b8919b6425fb0e8a",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 986910,
+        "valid": 37047,
+        "land": 2915824,
+        "nodata": 60219
+      },
+      "dn_pct": {
+        "below_detection": 24.6728,
+        "valid": 0.9262,
+        "land": 72.8956,
+        "nodata": 1.5055
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 37047,
+      "dn_valid_min": 1,
+      "dn_valid_max": 241,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.04325012828782989,
+      "ci_mean": 0.0031741779714061125,
+      "ci_median": 0.0010458162845362108,
+      "flags": []
+    },
+    {
+      "filename": "L20222542022260.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-09-11",
+        "end_date": "2022-09-17"
+      },
+      "manifest_sha256": "e23e32800d59a83693cac67f287606db3e12188fb3e97f25b6724291a016c250",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 977641,
+        "valid": 21907,
+        "land": 2915824,
+        "nodata": 84628
+      },
+      "dn_pct": {
+        "below_detection": 24.441,
+        "valid": 0.5477,
+        "land": 72.8956,
+        "nodata": 2.1157
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 21907,
+      "dn_valid_min": 1,
+      "dn_valid_max": 226,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.028858742295052624,
+      "ci_mean": 0.003366607784827127,
+      "ci_median": 0.0015673478770918932,
+      "flags": []
+    },
+    {
+      "filename": "L20222612022267.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-09-18",
+        "end_date": "2022-09-24"
+      },
+      "manifest_sha256": "151cf775c2d2ad710beab05341010df2ab498183f3b0fa0e8dea61211eab671e",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 987644,
+        "valid": 28775,
+        "land": 2915824,
+        "nodata": 67757
+      },
+      "dn_pct": {
+        "below_detection": 24.6911,
+        "valid": 0.7194,
+        "land": 72.8956,
+        "nodata": 1.6939
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 28775,
+      "dn_valid_min": 1,
+      "dn_valid_max": 228,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03045828176842181,
+      "ci_mean": 0.002694628184894457,
+      "ci_median": 0.0012295307649586363,
+      "flags": []
+    },
+    {
+      "filename": "L20222682022274.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-09-25",
+        "end_date": "2022-10-01"
+      },
+      "manifest_sha256": "af2c08173de9b3be577aecb0bcaacc9a99a2db548c2958cbf4728e5c7703472c",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 974998,
+        "valid": 31009,
+        "land": 2915824,
+        "nodata": 78169
+      },
+      "dn_pct": {
+        "below_detection": 24.3749,
+        "valid": 0.7752,
+        "land": 72.8956,
+        "nodata": 1.9542
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 31009,
+      "dn_valid_min": 1,
+      "dn_valid_max": 234,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.03580876970056082,
+      "ci_mean": 0.001858811956863034,
+      "ci_median": 0.0008204070807291614,
+      "flags": []
+    },
+    {
+      "filename": "L20222752022281.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-10-02",
+        "end_date": "2022-10-08"
+      },
+      "manifest_sha256": "6656e8b0f89d0f4859605dc34dd1c4367aa57802d13f23f44b73431b67dc780d",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 995311,
+        "valid": 44543,
+        "land": 2915825,
+        "nodata": 44321
+      },
+      "dn_pct": {
+        "below_detection": 24.8828,
+        "valid": 1.1136,
+        "land": 72.8956,
+        "nodata": 1.108
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 44543,
+      "dn_valid_min": 1,
+      "dn_valid_max": 253,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05977992970248461,
+      "ci_mean": 0.0025741360764165422,
+      "ci_median": 0.0010179850498743426,
+      "flags": []
+    },
+    {
+      "filename": "L20222822022288.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-10-09",
+        "end_date": "2022-10-15"
+      },
+      "manifest_sha256": "b38eaf84905501e93101ddc41813033c249511a1c1c200f3035871fd965249f9",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1001576,
+        "valid": 38668,
+        "land": 2915824,
+        "nodata": 43932
+      },
+      "dn_pct": {
+        "below_detection": 25.0394,
+        "valid": 0.9667,
+        "land": 72.8956,
+        "nodata": 1.0983
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 38668,
+      "dn_valid_min": 1,
+      "dn_valid_max": 241,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.04325012828782989,
+      "ci_mean": 0.0021148731370844364,
+      "ci_median": 0.0008428366262169363,
+      "flags": []
+    },
+    {
+      "filename": "L20222892022295.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-10-16",
+        "end_date": "2022-10-22"
+      },
+      "manifest_sha256": "3a980755617b869f9e0af9dbdba75fbab9bcdf1d02ae4bac1bc66a716abdac61",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1011849,
+        "valid": 18031,
+        "land": 2915824,
+        "nodata": 54296
+      },
+      "dn_pct": {
+        "below_detection": 25.2962,
+        "valid": 0.4508,
+        "land": 72.8956,
+        "nodata": 1.3574
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 18031,
+      "dn_valid_min": 1,
+      "dn_valid_max": 212,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.019782510276304014,
+      "ci_mean": 0.002106520647815896,
+      "ci_median": 0.0012295307649586363,
+      "flags": []
+    },
+    {
+      "filename": "L20222962022302.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-10-23",
+        "end_date": "2022-10-29"
+      },
+      "manifest_sha256": "956c7ab6453793f18b2e1e115b48353396ab64cbb382c89b70ff08fec8411905",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1013072,
+        "valid": 27914,
+        "land": 2915825,
+        "nodata": 43189
+      },
+      "dn_pct": {
+        "below_detection": 25.3268,
+        "valid": 0.6978,
+        "land": 72.8956,
+        "nodata": 1.0797
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 27914,
+      "dn_valid_min": 1,
+      "dn_valid_max": 253,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05977992970248461,
+      "ci_mean": 0.0019721705850639605,
+      "ci_median": 0.0005048674830098632,
+      "flags": []
+    },
+    {
+      "filename": "L20223032022309.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-10-30",
+        "end_date": "2022-11-05"
+      },
+      "manifest_sha256": "2f356955581eac595df7524a85aca215d98fb9e3daf5a6c80fffda509c1e3531",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1013901,
+        "valid": 19576,
+        "land": 2915825,
+        "nodata": 50698
+      },
+      "dn_pct": {
+        "below_detection": 25.3475,
+        "valid": 0.4894,
+        "land": 72.8956,
+        "nodata": 1.2674
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 19576,
+      "dn_valid_min": 1,
+      "dn_valid_max": 253,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.05977992970248461,
+      "ci_mean": 0.002433732111444822,
+      "ci_median": 0.0006702146138222912,
+      "flags": []
+    },
+    {
+      "filename": "L20223102022316.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-11-06",
+        "end_date": "2022-11-12"
+      },
+      "manifest_sha256": "0255a0559392e1c4ecb85295c7ff293a715759700a59fa76313b7c1d0c126777",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1027710,
+        "valid": 26316,
+        "land": 2915824,
+        "nodata": 30150
+      },
+      "dn_pct": {
+        "below_detection": 25.6928,
+        "valid": 0.6579,
+        "land": 72.8956,
+        "nodata": 0.7538
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 26316,
+      "dn_valid_min": 1,
+      "dn_valid_max": 220,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.024546716116058534,
+      "ci_mean": 0.001734643706531707,
+      "ci_median": 0.0007566366955733099,
+      "flags": []
+    },
+    {
+      "filename": "L20223172022323.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-11-13",
+        "end_date": "2022-11-19"
+      },
+      "manifest_sha256": "72bf27666c9d3bf033f095c2e36ebc450d14e248ad633ea7f2760af024076c9e",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 804979,
+        "valid": 11946,
+        "land": 2915824,
+        "nodata": 267251
+      },
+      "dn_pct": {
+        "below_detection": 20.1245,
+        "valid": 0.2987,
+        "land": 72.8956,
+        "nodata": 6.6813
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 11946,
+      "dn_valid_min": 1,
+      "dn_valid_max": 205,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.016378849789041684,
+      "ci_mean": 0.0011000755431104156,
+      "ci_median": 0.0005048674830098632,
+      "flags": []
+    },
+    {
+      "filename": "L20223242022330.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-11-20",
+        "end_date": "2022-11-26"
+      },
+      "manifest_sha256": "1ab4265d9e74ffad0cbdd07906093877d8ae3e8d51254b76f3db9841a956d9f6",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 1015850,
+        "valid": 20565,
+        "land": 2915824,
+        "nodata": 47761
+      },
+      "dn_pct": {
+        "below_detection": 25.3962,
+        "valid": 0.5141,
+        "land": 72.8956,
+        "nodata": 1.194
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 20565,
+      "dn_valid_min": 1,
+      "dn_valid_max": 198,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.013560802783119358,
+      "ci_mean": 0.0007475010416820017,
+      "ci_median": 0.0002789134129525243,
+      "flags": []
+    },
+    {
+      "filename": "L20223312022337.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-11-27",
+        "end_date": "2022-12-03"
+      },
+      "manifest_sha256": "6bf9de9101b0c08d960d20b1891ca8c1a91ed77487461556ca99701163055592",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 486486,
+        "valid": 6086,
+        "land": 2915824,
+        "nodata": 591604
+      },
+      "dn_pct": {
+        "below_detection": 12.1622,
+        "valid": 0.1522,
+        "land": 72.8956,
+        "nodata": 14.7901
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 6086,
+      "dn_valid_min": 1,
+      "dn_valid_max": 192,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.011534569761210737,
+      "ci_mean": 0.001154752080129018,
+      "ci_median": 0.0004532328711930874,
+      "flags": []
+    },
+    {
+      "filename": "L20223382022344.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-12-04",
+        "end_date": "2022-12-10"
+      },
+      "manifest_sha256": "fbe50b2f80a54baebc13fcd1e324fcda83ed093af55a22031a7392daf77c27f9",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 781696,
+        "valid": 17909,
+        "land": 2915824,
+        "nodata": 284571
+      },
+      "dn_pct": {
+        "below_detection": 19.5424,
+        "valid": 0.4477,
+        "land": 72.8956,
+        "nodata": 7.1143
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 17909,
+      "dn_valid_min": 1,
+      "dn_valid_max": 214,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.020878985851911634,
+      "ci_mean": 0.001431190363666968,
+      "ci_median": 0.0005328505274418883,
+      "flags": []
+    },
+    {
+      "filename": "L20223452022351.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-12-11",
+        "end_date": "2022-12-17"
+      },
+      "manifest_sha256": "5f5eac46a4c33bb2e7b7289b8e48beeffc77a0a0e97db2cfd95bcd15ee150cab",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 644153,
+        "valid": 11076,
+        "land": 2915824,
+        "nodata": 428947
+      },
+      "dn_pct": {
+        "below_detection": 16.1038,
+        "valid": 0.2769,
+        "land": 72.8956,
+        "nodata": 10.7237
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 11076,
+      "dn_valid_min": 1,
+      "dn_valid_max": 196,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.012848647071018005,
+      "ci_mean": 0.0006334021926851477,
+      "ci_median": 0.0002943726110391355,
+      "flags": []
+    },
+    {
+      "filename": "L20223522022358.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-12-18",
+        "end_date": "2022-12-24"
+      },
+      "manifest_sha256": "8c204c9c5ff133628ce55c05e58ca239887f72dbdea898f49ba9a242a567b973",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 726078,
+        "valid": 3191,
+        "land": 2915824,
+        "nodata": 354907
+      },
+      "dn_pct": {
+        "below_detection": 18.1519,
+        "valid": 0.0798,
+        "land": 72.8956,
+        "nodata": 8.8727
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 3191,
+      "dn_valid_min": 1,
+      "dn_valid_max": 196,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.012848647071018005,
+      "ci_mean": 0.0004856193648693584,
+      "ci_median": 0.0002437246189121554,
+      "flags": []
+    },
+    {
+      "filename": "L20223592022365.L3m_7D_CYAN_CI_cyano_CYAN_CONUS_300m_7_2.tif",
+      "parsed": {
+        "stream": "CYAN",
+        "temporal": "7D",
+        "tile": "7_2",
+        "region": "CONUS",
+        "start_date": "2022-12-25",
+        "end_date": "2022-12-31"
+      },
+      "manifest_sha256": "06eb143dbe8882786c37ef8874403d7e926ab9a9f752a11f35eefe178cd8661d",
+      "sha256_ok": true,
+      "band_count": 1,
+      "dtype": "uint8",
+      "width": 2000,
+      "height": 2000,
+      "crs": "EPSG:5070",
+      "transform": [
+        300.0,
+        0.0,
+        1034402.95331,
+        0.0,
+        -300.0,
+        2714826.267078
+      ],
+      "nodata_tag": null,
+      "pixel_size_m": [
+        300.0,
+        300.0
+      ],
+      "bounds": [
+        1034402.9533101199,
+        2114826.2670775685,
+        1634402.95331012,
+        2714826.2670775685
+      ],
+      "gtiff_tags": {
+        "OBPG_version": "6.0",
+        "AREA_OR_POINT": "Area"
+      },
+      "processing_version_tag": "OBPG_version=6.0",
+      "is_single_band_uint8": true,
+      "crs_is_albers": true,
+      "dn_counts": {
+        "below_detection": 852817,
+        "valid": 2052,
+        "land": 2915824,
+        "nodata": 229307
+      },
+      "dn_pct": {
+        "below_detection": 21.3204,
+        "valid": 0.0513,
+        "land": 72.8956,
+        "nodata": 5.7327
+      },
+      "total_pixels": 4000000,
+      "unaccounted_pixels": 0,
+      "valid_pixel_count": 2052,
+      "dn_valid_min": 1,
+      "dn_valid_max": 179,
+      "ci_min": 6.677707623479695e-05,
+      "ci_max": 0.008123055116193332,
+      "ci_mean": 0.0003822521463130246,
+      "ci_median": 0.00018115294552343463,
+      "flags": []
+    }
+  ]
+}

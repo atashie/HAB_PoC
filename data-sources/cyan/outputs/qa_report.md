@@ -1,0 +1,75 @@
+# CyAN CI_cyano — QA/QC report
+
+*Generated 2026-07-01T22:10:39Z · 52 file(s) from `C:\Users\arikt\Documents\GitHub\HAB_PoC\data-sources\cyan\data\raw`*
+
+**0 of 52 files carry QA flags.**
+
+
+## Cross-file consistency (per tile)
+
+| Tile | Files | CRS consistent | Shape consistent | Transform consistent | Processing-version tag(s) | Stream(s) |
+|------|-------|----------------|------------------|----------------------|---------------------------|-----------|
+| 7_2 | 52 | True | True | True | {'OBPG_version=6.0': 52} | {'CYAN': 52} |
+
+## Per-file summary
+
+| File | Stream | Dates | %valid | %below-det | %land | %nodata | CI mean | Ver tag | Flags |
+|------|--------|-------|--------|-----------|-------|---------|---------|---------|-------|
+| L20220022022008.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-01-02→2022-01-08 | 0.1008 | 18.7076 | 72.8956 | 8.296 | 0.0005581 | OBPG_version=6.0 | ok |
+| L20220092022015.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-01-09→2022-01-15 | 0.1186 | 17.7781 | 72.8956 | 9.2078 | 0.000498 | OBPG_version=6.0 | ok |
+| L20220162022022.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-01-16→2022-01-22 | 0.1264 | 20.8803 | 72.8956 | 6.0977 | 0.0004672 | OBPG_version=6.0 | ok |
+| L20220232022029.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-01-23→2022-01-29 | 0.1442 | 19.6055 | 72.8956 | 7.3547 | 0.0003622 | OBPG_version=6.0 | ok |
+| L20220302022036.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-01-30→2022-02-05 | 0.0591 | 17.8047 | 72.8956 | 9.2406 | 0.0003653 | OBPG_version=6.0 | ok |
+| L20220372022043.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-02-06→2022-02-12 | 0.0179 | 14.2897 | 72.8956 | 12.7968 | 0.0003391 | OBPG_version=6.0 | ok |
+| L20220442022050.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-02-13→2022-02-19 | 0.1604 | 19.3419 | 72.8956 | 7.6021 | 0.0003929 | OBPG_version=6.0 | ok |
+| L20220512022057.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-02-20→2022-02-26 | 0.1202 | 21.1619 | 72.8956 | 5.8223 | 0.000375 | OBPG_version=6.0 | ok |
+| L20220582022064.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-02-27→2022-03-05 | 0.2094 | 20.6538 | 72.8956 | 6.2411 | 0.0003363 | OBPG_version=6.0 | ok |
+| L20220652022071.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-03-06→2022-03-12 | 0.1405 | 22.6179 | 72.8956 | 4.346 | 0.0003118 | OBPG_version=6.0 | ok |
+| L20220722022078.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-03-13→2022-03-19 | 0.032 | 20.2169 | 72.8956 | 6.8555 | 0.0004653 | OBPG_version=6.0 | ok |
+| L20220792022085.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-03-20→2022-03-26 | 0.0783 | 23.6863 | 72.8956 | 3.3397 | 0.0007497 | OBPG_version=6.0 | ok |
+| L20220862022092.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-03-27→2022-04-02 | 0.0963 | 24.6758 | 72.8956 | 2.3323 | 0.0008275 | OBPG_version=6.0 | ok |
+| L20220932022099.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-04-03→2022-04-09 | 0.1108 | 19.4102 | 72.8956 | 7.5835 | 0.001872 | OBPG_version=6.0 | ok |
+| L20221002022106.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-04-10→2022-04-16 | 0.2807 | 26.0714 | 72.8956 | 0.7522 | 0.001196 | OBPG_version=6.0 | ok |
+| L20221072022113.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-04-17→2022-04-23 | 0.3239 | 25.7661 | 72.8956 | 1.0144 | 0.001395 | OBPG_version=6.0 | ok |
+| L20221142022120.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-04-24→2022-04-30 | 0.5122 | 25.4623 | 72.8956 | 1.1299 | 0.001353 | OBPG_version=6.0 | ok |
+| L20221212022127.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-05-01→2022-05-07 | 0.4113 | 24.9466 | 72.8956 | 1.7465 | 0.001319 | OBPG_version=6.0 | ok |
+| L20221282022134.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-05-08→2022-05-14 | 0.6051 | 25.5028 | 72.8956 | 0.9965 | 0.001161 | OBPG_version=6.0 | ok |
+| L20221352022141.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-05-15→2022-05-21 | 0.1193 | 24.5795 | 72.8956 | 2.4055 | 0.002238 | OBPG_version=6.0 | ok |
+| L20221422022148.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-05-22→2022-05-28 | 0.1169 | 24.8093 | 72.8956 | 2.1782 | 0.001513 | OBPG_version=6.0 | ok |
+| L20221492022155.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-05-29→2022-06-04 | 0.0824 | 25.3405 | 72.8956 | 1.6816 | 0.002196 | OBPG_version=6.0 | ok |
+| L20221562022162.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-06-05→2022-06-11 | 0.1583 | 25.3907 | 72.8956 | 1.5554 | 0.002201 | OBPG_version=6.0 | ok |
+| L20221632022169.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-06-12→2022-06-18 | 0.168 | 25.3739 | 72.8956 | 1.5625 | 0.002687 | OBPG_version=6.0 | ok |
+| L20221702022176.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-06-19→2022-06-25 | 0.2228 | 25.4376 | 72.8956 | 1.444 | 0.002691 | OBPG_version=6.0 | ok |
+| L20221772022183.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-06-26→2022-07-02 | 0.1801 | 25.3434 | 72.8956 | 1.581 | 0.004618 | OBPG_version=6.0 | ok |
+| L20221842022190.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-07-03→2022-07-09 | 0.2399 | 25.2402 | 72.8956 | 1.6243 | 0.003707 | OBPG_version=6.0 | ok |
+| L20221912022197.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-07-10→2022-07-16 | 0.2937 | 25.2504 | 72.8956 | 1.5603 | 0.005631 | OBPG_version=6.0 | ok |
+| L20221982022204.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-07-17→2022-07-23 | 0.3253 | 25.2695 | 72.8956 | 1.5096 | 0.005445 | OBPG_version=6.0 | ok |
+| L20222052022211.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-07-24→2022-07-30 | 0.5726 | 25.0486 | 72.8956 | 1.4832 | 0.00481 | OBPG_version=6.0 | ok |
+| L20222122022218.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-07-31→2022-08-06 | 0.6918 | 25.0243 | 72.8956 | 1.3883 | 0.005315 | OBPG_version=6.0 | ok |
+| L20222192022225.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-08-07→2022-08-13 | 0.8435 | 24.9127 | 72.8956 | 1.3482 | 0.003512 | OBPG_version=6.0 | ok |
+| L20222262022232.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-08-14→2022-08-20 | 0.7612 | 24.865 | 72.8956 | 1.4782 | 0.004968 | OBPG_version=6.0 | ok |
+| L20222332022239.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-08-21→2022-08-27 | 0.722 | 24.8435 | 72.8956 | 1.5389 | 0.00527 | OBPG_version=6.0 | ok |
+| L20222402022246.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-08-28→2022-09-03 | 0.913 | 24.8545 | 72.8956 | 1.3369 | 0.003605 | OBPG_version=6.0 | ok |
+| L20222472022253.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-09-04→2022-09-10 | 0.9262 | 24.6728 | 72.8956 | 1.5055 | 0.003174 | OBPG_version=6.0 | ok |
+| L20222542022260.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-09-11→2022-09-17 | 0.5477 | 24.441 | 72.8956 | 2.1157 | 0.003367 | OBPG_version=6.0 | ok |
+| L20222612022267.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-09-18→2022-09-24 | 0.7194 | 24.6911 | 72.8956 | 1.6939 | 0.002695 | OBPG_version=6.0 | ok |
+| L20222682022274.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-09-25→2022-10-01 | 0.7752 | 24.3749 | 72.8956 | 1.9542 | 0.001859 | OBPG_version=6.0 | ok |
+| L20222752022281.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-10-02→2022-10-08 | 1.1136 | 24.8828 | 72.8956 | 1.108 | 0.002574 | OBPG_version=6.0 | ok |
+| L20222822022288.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-10-09→2022-10-15 | 0.9667 | 25.0394 | 72.8956 | 1.0983 | 0.002115 | OBPG_version=6.0 | ok |
+| L20222892022295.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-10-16→2022-10-22 | 0.4508 | 25.2962 | 72.8956 | 1.3574 | 0.002107 | OBPG_version=6.0 | ok |
+| L20222962022302.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-10-23→2022-10-29 | 0.6978 | 25.3268 | 72.8956 | 1.0797 | 0.001972 | OBPG_version=6.0 | ok |
+| L20223032022309.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-10-30→2022-11-05 | 0.4894 | 25.3475 | 72.8956 | 1.2674 | 0.002434 | OBPG_version=6.0 | ok |
+| L20223102022316.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-11-06→2022-11-12 | 0.6579 | 25.6928 | 72.8956 | 0.7538 | 0.001735 | OBPG_version=6.0 | ok |
+| L20223172022323.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-11-13→2022-11-19 | 0.2987 | 20.1245 | 72.8956 | 6.6813 | 0.0011 | OBPG_version=6.0 | ok |
+| L20223242022330.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-11-20→2022-11-26 | 0.5141 | 25.3962 | 72.8956 | 1.194 | 0.0007475 | OBPG_version=6.0 | ok |
+| L20223312022337.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-11-27→2022-12-03 | 0.1522 | 12.1622 | 72.8956 | 14.7901 | 0.001155 | OBPG_version=6.0 | ok |
+| L20223382022344.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-12-04→2022-12-10 | 0.4477 | 19.5424 | 72.8956 | 7.1143 | 0.001431 | OBPG_version=6.0 | ok |
+| L20223452022351.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-12-11→2022-12-17 | 0.2769 | 16.1038 | 72.8956 | 10.7237 | 0.0006334 | OBPG_version=6.0 | ok |
+| L20223522022358.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-12-18→2022-12-24 | 0.0798 | 18.1519 | 72.8956 | 8.8727 | 0.0004856 | OBPG_version=6.0 | ok |
+| L20223592022365.L3m_7D_CYAN_CI_cyano_CYA | CYAN | 2022-12-25→2022-12-31 | 0.0513 | 21.3204 | 72.8956 | 5.7327 | 0.0003823 | OBPG_version=6.0 | ok |
+
+## Notes
+
+- DN categories are the exact CyAN encoding: 0=below detection, 1–253=valid CI, 254=land, 255=no-data (see `METADATA.md` §4).
+- `%below-det` (DN 0) is *measured non-detect*, not missing — reported separately from `%nodata`.
+- Processing version is read from the GeoTIFF metadata, not inferred from the filename.

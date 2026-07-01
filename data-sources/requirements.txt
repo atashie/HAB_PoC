@@ -1,0 +1,18 @@
+# data-sources acquisition / QA / viz layer — pinned for reproducibility.
+# Versions are those verified present & working on 2026-07-01 (Python 3.13, win32).
+# Install:  python -m venv .venv && .venv\Scripts\activate && pip install -r requirements.txt
+requests==2.32.4
+numpy==2.3.1
+pandas==2.3.0
+rasterio==1.4.3
+geopandas==1.1.1
+shapely==2.1.1
+pyproj==3.7.1
+xarray==2025.7.1
+netCDF4==1.7.4
+folium==0.20.0
+branca==0.8.1        # folium dep; used directly for the map CI legend
+plotly==6.5.1
+matplotlib==3.10.3
+tqdm==4.68.3
+pdfplumber==0.11.9   # used only to extract/preserve source PDF documentation text

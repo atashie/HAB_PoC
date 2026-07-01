@@ -1,4 +1,4 @@
-# Python
+﻿# Python
 __pycache__/
 *.py[cod]
 .venv/
@@ -20,9 +20,11 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Data — never commit large or raw pulls; cache locally, re-fetch via scripts
+# Data â€” never commit large or raw pulls; cache locally, re-fetch via scripts
 data/raw/
 data/cache/
+data-sources/**/raw/
+data-sources/**/cache/
 *.parquet
 *.nc
 *.tif
@@ -30,3 +32,9 @@ data/cache/
 
 # Notebook/tool outputs
 *.log
+
+data-sources/**/tests/_generated/
+
+# Heavy, regenerable interactive maps (embed base64 rasters -> MBs). Regenerate via
+# data-sources/<dataset>/viz/. Lightweight summaries/PNGs/QA reports ARE tracked.
+data-sources/**/outputs/*_map.html
