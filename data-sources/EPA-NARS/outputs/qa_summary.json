@@ -1,0 +1,376 @@
+{
+  "cycle": 2022,
+  "rawdir": "data\\raw\\nla2022",
+  "flags": [
+    "NLA is a **probability survey**, not a monitoring time series: one index visit per lake (a subset revisited) in a single summer; 5-year cycles with multi-year gaps.",
+    "Only **2 cyanotoxins** are measured (microcystin, cylindrospermopsin); this is not a full toxin panel and detection is class-specific.",
+    "Non-detects (NARS_FLAG=ND) are **measured** below-detection results - handle as left-censored data, do not treat as missing or as zero without justification.",
+    "The raw file is NOT the published 981-lake sample; national/regional percentages require the design weights and probability-site filter (see section 3).",
+    "Geotag is lake **centroid** (LAT_DD83) vs **index sampling point** (INDEX_LAT_DD) - use INDEX_* for matchups to a satellite pixel or an in-situ station.",
+    "Correlation != causation: nutrient/clarity associations with toxins here are cross-sectional and cannot establish drivers on their own."
+  ],
+  "integrity": {
+    "n_files": 9,
+    "n_ok": 9,
+    "n_mismatch": 0,
+    "n_missing": 0,
+    "detail": [
+      {
+        "file": "data\\raw\\nla2022\\nla22_siteinfo.csv",
+        "status": "ok",
+        "bytes": 3171422
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_siteinfo.txt",
+        "status": "ok",
+        "bytes": 12971
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_waterchem_wide.csv",
+        "status": "ok",
+        "bytes": 1252251
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_waterchem_wide.txt",
+        "status": "ok",
+        "bytes": 17775
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_algaltoxins.csv",
+        "status": "ok",
+        "bytes": 388366
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_algaltoxins.txt",
+        "status": "ok",
+        "bytes": 2022
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_secchi.csv",
+        "status": "ok",
+        "bytes": 100730
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla22_secchi.txt",
+        "status": "ok",
+        "bytes": 1440
+      },
+      {
+        "file": "data\\raw\\nla2022\\nla2022_lakes.zip",
+        "status": "ok",
+        "bytes": 24307259
+      }
+    ]
+  },
+  "dictionary": {
+    "nla22_siteinfo.csv": {
+      "n_data_cols": 86,
+      "n_dict_cols": 86,
+      "in_data_not_dict": [],
+      "in_dict_not_data": []
+    },
+    "nla22_waterchem_wide.csv": {
+      "n_data_cols": 220,
+      "n_dict_cols": 220,
+      "in_data_not_dict": [],
+      "in_dict_not_data": []
+    },
+    "nla22_algaltoxins.csv": {
+      "n_data_cols": 24,
+      "n_dict_cols": 24,
+      "in_data_not_dict": [],
+      "in_dict_not_data": []
+    }
+  },
+  "siteinfo": {
+    "n_rows": 3880,
+    "n_unique_site_id": 3784,
+    "n_unique_unique_id": 3784,
+    "n_unique_uid": 1246,
+    "n_sampled_sitesamp_yes": 1225,
+    "visit_no_counts": {
+      "(blank)": 2635,
+      "1": 1149,
+      "2": 96
+    },
+    "lake_orgn_counts": {
+      "(blank)": 2022,
+      "MAN_MADE": 1010,
+      "NATURAL": 848
+    },
+    "published_prob_lakes": 981,
+    "geotag": {
+      "LAT_DD83": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "LON_DD83": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "INDEX_LAT_DD": {
+        "pct_populated": 31.55,
+        "n": 1224
+      },
+      "INDEX_LON_DD": {
+        "pct_populated": 31.55,
+        "n": 1224
+      },
+      "COMID": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "REACHCODE": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "PERM_ID": {
+        "pct_populated": 91.16,
+        "n": 3537
+      },
+      "GNIS_ID": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "HUC2": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "HUC8": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "US_L3CODE": {
+        "pct_populated": 100.0,
+        "n": 3880
+      },
+      "AG_ECO9": {
+        "pct_populated": 100.0,
+        "n": 3880
+      }
+    },
+    "coord_datum": "NAD83 (LAT_DD83/LON_DD83); index-site coords in INDEX_LAT_DD/INDEX_LON_DD",
+    "lat_range": [
+      24.582,
+      49.0039
+    ],
+    "lon_range": [
+      -124.6325,
+      -67.4011
+    ],
+    "coord_out_of_conus_box": 0,
+    "weight_cols_present": [
+      "WGT_TP_CORE_NLA",
+      "WGT_TP_EXT_NLA",
+      "WGT_DSGN",
+      "STRATUM",
+      "PROB_CAT"
+    ]
+  },
+  "joins": [
+    {
+      "name": "algaltoxins",
+      "n_uid_other": 1225,
+      "n_orphans_not_in_siteinfo": 0,
+      "orphans_sample": []
+    },
+    {
+      "name": "waterchem",
+      "n_uid_other": 1225,
+      "n_orphans_not_in_siteinfo": 0,
+      "orphans_sample": []
+    }
+  ],
+  "toxins": {
+    "n_rows": 2450,
+    "analytes": {
+      "CYLSPER": {
+        "n": 1225,
+        "n_nondetect_measured": 1109,
+        "n_detect": 116,
+        "detection_rate_pct": 9.47,
+        "flag_counts": {
+          "ND": 1107,
+          "(none)": 60,
+          "L": 56,
+          "H,ND": 2
+        },
+        "detected_min": 0.05,
+        "detected_median": 0.1,
+        "detected_max": 3.55,
+        "units": [
+          "ug/L"
+        ],
+        "mdl_range": [
+          0.05,
+          0.5
+        ]
+      },
+      "MICX": {
+        "n": 1225,
+        "n_nondetect_measured": 624,
+        "n_detect": 601,
+        "detection_rate_pct": 49.06,
+        "flag_counts": {
+          "ND": 606,
+          "(none)": 409,
+          "L": 172,
+          "ND,Q": 16,
+          "Q": 14,
+          "L,Q": 6,
+          "H,ND": 2
+        },
+        "detected_min": 0.1,
+        "detected_median": 0.19,
+        "detected_max": 355.0,
+        "units": [
+          "ug/L"
+        ],
+        "mdl_range": [
+          0.1,
+          10.0
+        ]
+      }
+    }
+  },
+  "waterchem": {
+    "n_rows": 1225,
+    "analytes": {
+      "CHLA": {
+        "n_populated": 1220,
+        "pct_populated": 99.59,
+        "n_flagged": 209,
+        "min": 0.175,
+        "median": 11.2,
+        "max": 554.0,
+        "units": [
+          "ug/L"
+        ]
+      },
+      "NTL": {
+        "n_populated": 1224,
+        "pct_populated": 99.92,
+        "n_flagged": 137,
+        "min": 0.048,
+        "median": 0.678,
+        "max": 31.1,
+        "units": [
+          "mg/L",
+          "mg N/L"
+        ]
+      },
+      "PTL": {
+        "n_populated": 1221,
+        "pct_populated": 99.67,
+        "n_flagged": 150,
+        "min": 2.5,
+        "median": 38.3,
+        "max": 4130.0,
+        "units": [
+          "ug/L"
+        ]
+      },
+      "NTL_DISS": {
+        "n_populated": 1224,
+        "pct_populated": 99.92,
+        "n_flagged": 136,
+        "min": 0.029,
+        "median": 0.4795,
+        "max": 15.1,
+        "units": [
+          "mg/L"
+        ]
+      },
+      "PTL_DISS": {
+        "n_populated": 1200,
+        "pct_populated": 97.96,
+        "n_flagged": 165,
+        "min": 1.0,
+        "median": 14.4,
+        "max": 3770.0,
+        "units": [
+          "ug/L"
+        ]
+      },
+      "NITRATE_N": {
+        "n_populated": 771,
+        "pct_populated": 62.94,
+        "n_flagged": 539,
+        "min": 0.0006,
+        "median": 0.0053,
+        "max": 5.26,
+        "units": [
+          "mg N/L"
+        ]
+      },
+      "AMMONIA_N": {
+        "n_populated": 1188,
+        "pct_populated": 96.98,
+        "n_flagged": 167,
+        "min": 0.002,
+        "median": 0.013,
+        "max": 6.9,
+        "units": [
+          "mg N/L"
+        ]
+      },
+      "DOC": {
+        "n_populated": 1224,
+        "pct_populated": 99.92,
+        "n_flagged": 136,
+        "min": 0.32,
+        "median": 6.14,
+        "max": 208.0,
+        "units": [
+          "mg/L"
+        ]
+      },
+      "TURB": {
+        "n_populated": 1224,
+        "pct_populated": 99.92,
+        "n_flagged": 147,
+        "min": 0.0,
+        "median": 2.715,
+        "max": 722.0,
+        "units": [
+          "NTU"
+        ]
+      },
+      "COND": {
+        "n_populated": 1191,
+        "pct_populated": 97.22,
+        "n_flagged": 155,
+        "min": 2.0,
+        "median": 236.0,
+        "max": 41500.0,
+        "units": [
+          "uS/cm AT 25 C",
+          "uS/cm"
+        ]
+      },
+      "PH": {
+        "n_populated": 1191,
+        "pct_populated": 97.22,
+        "n_flagged": 155,
+        "min": 3.09,
+        "median": 8.2,
+        "max": 10.23,
+        "units": [
+          "Std. Units"
+        ]
+      },
+      "ANC": {
+        "n_populated": 1223,
+        "pct_populated": 99.84,
+        "n_flagged": 138,
+        "min": -1260.0,
+        "median": 1480.0,
+        "max": 119000.0,
+        "units": [
+          "UEQ/L",
+          "ueq/L"
+        ]
+      }
+    }
+  }
+}
