@@ -25,10 +25,15 @@ data/raw/
 data/cache/
 data-sources/**/raw/
 data-sources/**/cache/
+data-sources/**/derived/
 *.parquet
 *.nc
 *.tif
 *.tiff
+*.grib
+*.grib2
+*.grb
+*.idx
 
 # Notebook/tool outputs
 *.log

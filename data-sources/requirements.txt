@@ -16,3 +16,10 @@ plotly==6.5.1
 matplotlib==3.10.3
 tqdm==4.68.3
 pdfplumber==0.11.9   # used only to extract/preserve source PDF documentation text
+dataretrieval==1.2.0 # USGS WQP/NWIS client — WQP cross-check ONLY (not a canonical path); see WQP/METADATA.md §7.4
+
+# --- weather layer (ERA5 + ECMWF forecast); versions verified present & working 2026-07-02, Py3.13 win32 ---
+cdsapi==0.7.7          # Copernicus CDS API client for ERA5 (pulls ecmwf-datastores-client)
+ecmwf-opendata==0.3.30 # ECMWF open-data (IFS forecast) client — no auth, CC-BY-4.0
+cfgrib==0.9.15.1       # GRIB/GRIB2 reader for xarray
+eccodes==2.47.0        # ECMWF eccodes (bundled binary wheel) — GRIB decode backend for cfgrib

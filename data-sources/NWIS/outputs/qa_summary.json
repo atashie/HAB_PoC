@@ -1,0 +1,422 @@
+{
+  "generated_utc": "2026-07-02T15:02:38Z",
+  "today": "2026-07-02",
+  "raw_dir": "C:\\Users\\arikt\\Documents\\GitHub\\HAB_PoC\\data-sources\\NWIS\\data\\raw",
+  "n_series": 12,
+  "n_series_with_flags": 0,
+  "sites": {
+    "files": [
+      {
+        "filename": "huc_02070008_sites.csv",
+        "n_sites": 6,
+        "by_site_type": {
+          "ST": 6
+        },
+        "n_missing_latlon": 0,
+        "n_missing_huc": 0,
+        "n_non_usgs_agency": 0
+      },
+      {
+        "filename": "sites_01637000_sites.csv",
+        "n_sites": 1,
+        "by_site_type": {
+          "ST": 1
+        },
+        "n_missing_latlon": 0,
+        "n_missing_huc": 0,
+        "n_non_usgs_agency": 0
+      },
+      {
+        "filename": "sites_01646500_01638500_sites.csv",
+        "n_sites": 2,
+        "by_site_type": {
+          "ST": 2
+        },
+        "n_missing_latlon": 0,
+        "n_missing_huc": 0,
+        "n_non_usgs_agency": 0
+      }
+    ]
+  },
+  "by_parameter": {
+    "00060": {
+      "name": "Discharge",
+      "n_series": 6,
+      "n_rows": 11146
+    },
+    "00010": {
+      "name": "Water temperature",
+      "n_series": 4,
+      "n_rows": 5551
+    },
+    "00095": {
+      "name": "Specific conductance",
+      "n_series": 2,
+      "n_rows": 2409
+    }
+  },
+  "per_series": [
+    {
+      "filename": "USGS-01636690__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "d4de90bee26396db5a6e9a4f9d434b6c93f273bbfbd2a7810b5b30cdbc9056ad",
+      "sha256_ok": true,
+      "n_rows": 1096,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 0.07,
+      "value_max": 311.0,
+      "value_median": 5.055,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1096
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ESTIMATED": 25,
+        "ICE": 14
+      },
+      "date_min": "2022-01-01",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636845__00010__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "13701e7654c7d41d4e4e2099fddfd66e8b57c5f2ca544f377ed1819e09001cea",
+      "sha256_ok": true,
+      "n_rows": 1186,
+      "parameter_code": "00010",
+      "parameter_known": true,
+      "parameter_name": "Water temperature",
+      "units": [
+        "degC"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": -0.1,
+      "value_max": 29.1,
+      "value_median": 13.7,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1186
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ICE": 5
+      },
+      "date_min": "2016-11-30",
+      "date_max": "2020-07-05",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636845__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "c7af204a134d23901d9b9c56872edecb8d98e795c7c11ae29368f1cd19c29950",
+      "sha256_ok": true,
+      "n_rows": 1374,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 0.4,
+      "value_max": 582.0,
+      "value_median": 2.835,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1374
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "EQUIP": 3,
+        "ESTIMATED": 270,
+        "ICE": 7,
+        "FLOOD": 3,
+        "REVISED": 2
+      },
+      "date_min": "2016-10-01",
+      "date_max": "2020-07-05",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636845__00095__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "008a9c6ced6282b3e6641dd8bea36e29ea2be188c53b24fc82174c26ab478949",
+      "sha256_ok": true,
+      "n_rows": 1167,
+      "parameter_code": "00095",
+      "parameter_known": true,
+      "parameter_name": "Specific conductance",
+      "units": [
+        "uS/cm"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 174.0,
+      "value_max": 735.0,
+      "value_median": 315.0,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1167
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {},
+      "date_min": "2016-11-30",
+      "date_max": "2020-07-05",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636846__00010__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "418577cb3bc91af7926eec8155f35403a99f7b1dc30bc5622a48ef7ebf91292e",
+      "sha256_ok": true,
+      "n_rows": 1268,
+      "parameter_code": "00010",
+      "parameter_known": true,
+      "parameter_name": "Water temperature",
+      "units": [
+        "degC"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": -0.1,
+      "value_max": 29.8,
+      "value_median": 13.3,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1268
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ICE": 3
+      },
+      "date_min": "2016-12-28",
+      "date_max": "2020-06-30",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636846__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "c17ead571e786256594fbe2962103f7e892dc7b0f4b768719b372062b15a024d",
+      "sha256_ok": true,
+      "n_rows": 1369,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 0.43,
+      "value_max": 732.0,
+      "value_median": 3.32,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1369
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ESTIMATED": 423
+      },
+      "date_min": "2016-10-01",
+      "date_max": "2020-06-30",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01636846__00095__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "81fefb7a913c2917834d854c723dd4d545f07b181d9a2e22b3011b3c145b379f",
+      "sha256_ok": true,
+      "n_rows": 1242,
+      "parameter_code": "00095",
+      "parameter_known": true,
+      "parameter_name": "Specific conductance",
+      "units": [
+        "uS/cm"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 113.0,
+      "value_max": 766.0,
+      "value_median": 321.0,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1242
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {},
+      "date_min": "2016-12-28",
+      "date_max": "2020-06-30",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01637500__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "5fceec84c06a8c240d1a8dd2541bb07755e664e40de2058ca2cd7b53ba0258aa",
+      "sha256_ok": true,
+      "n_rows": 3653,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 1.0,
+      "value_max": 1340.0,
+      "value_median": 41.5,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 3653
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ESTIMATED": 234
+      },
+      "date_min": "2015-01-01",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01638500__00010__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "3cc425e4d2eae83e2b94cbdf9204d167f88ad249b27ff498e649261f3355ec0e",
+      "sha256_ok": true,
+      "n_rows": 1329,
+      "parameter_code": "00010",
+      "parameter_known": true,
+      "parameter_name": "Water temperature",
+      "units": [
+        "degC"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": -0.0,
+      "value_max": 31.2,
+      "value_median": 16.3,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1329
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "EQUIP": 1
+      },
+      "date_min": "2021-05-08",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01638500__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "c3981f937557ba93c20d2dfc585adde5b0c895277d95e1c0812bdccd7a881cc1",
+      "sha256_ok": true,
+      "n_rows": 1827,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 915.0,
+      "value_max": 94500.0,
+      "value_median": 5220.0,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1827
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ESTIMATED": 27
+      },
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01646500__00010__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "48d6377064eca1a69b9d467c63a713a493d1d78036eb4a8035942374cb480df8",
+      "sha256_ok": true,
+      "n_rows": 1768,
+      "parameter_code": "00010",
+      "parameter_known": true,
+      "parameter_name": "Water temperature",
+      "units": [
+        "degC"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": -0.0,
+      "value_max": 32.4,
+      "value_median": 15.9,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1768
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "EQUIP": 2
+      },
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    },
+    {
+      "filename": "USGS-01646500__00060__00003.csv",
+      "service": "daily",
+      "manifest_sha256": "b6352bae5ca84feb485b1d3d1c6ceda281b59ae0f134a8d74df2af6ac6fb7192",
+      "sha256_ok": true,
+      "n_rows": 1827,
+      "parameter_code": "00060",
+      "parameter_known": true,
+      "parameter_name": "Discharge",
+      "units": [
+        "ft^3/s"
+      ],
+      "n_nonnumeric": 0,
+      "value_min": 450.0,
+      "value_max": 102000.0,
+      "value_median": 6100.0,
+      "n_out_of_range": 0,
+      "approval_counts": {
+        "Approved": 1827
+      },
+      "pct_provisional": 0.0,
+      "qualifiers": {
+        "ESTIMATED": 32,
+        "REVISED": 116
+      },
+      "date_min": "2020-01-01",
+      "date_max": "2024-12-31",
+      "n_duplicate_timestamps": 0,
+      "recent_in_pulled_window": false,
+      "flags": []
+    }
+  ]
+}
