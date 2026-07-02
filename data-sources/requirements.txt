@@ -18,6 +18,9 @@ tqdm==4.68.3
 pdfplumber==0.11.9   # used only to extract/preserve source PDF documentation text
 dataretrieval==1.2.0 # USGS WQP/NWIS client — WQP cross-check ONLY (not a canonical path); see WQP/METADATA.md §7.4
 
+# --- cyano-forecasts layer (EPA experimental cyanoHAB forecast); verified 2026-07-02, Py3.13 win32 ---
+websocket-client==1.9.0 # Qlik QIX JSON-RPC-over-WebSocket client — UNOFFICIAL forecast extraction; see cyano-forecasts/METADATA.md §7.2
+
 # --- weather layer (ERA5 + ECMWF forecast); versions verified present & working 2026-07-02, Py3.13 win32 ---
 cdsapi==0.7.7          # Copernicus CDS API client for ERA5 (pulls ecmwf-datastores-client)
 ecmwf-opendata==0.3.30 # ECMWF open-data (IFS forecast) client — no auth, CC-BY-4.0

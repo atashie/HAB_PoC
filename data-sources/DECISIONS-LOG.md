@@ -2,6 +2,66 @@
 
 Running log of choices made building the acquisition layer, with rationale. Newest first.
 
+## 2026-07-02 — EPA experimental cyanoHAB forecast onboarding (`cyano_forecasts`, session 9)
+- **Thorough review of EPA's experimental 7-day cyanoHAB forecast** (Schaeffer et al. 2024, INLA
+  Bayesian) from primary sources + **live probes** → answered the onboarding questions. **⚠ This is a
+  *modeled forecast*, distinct from the `cyan` satellite CI product — and it is itself CyAN-derived.**
+  1. **Restrictions:** underlying data are U.S. public-domain (EPA disclaimers); official model **code**
+     is under the **ScienceHub License** (DOI `10.23719/1529140`). The real caveat is the **access
+     method**, not copyright (see #3).
+  2. **Features/consistency:** a **perfectly rectangular per-lake-week panel** `[probe]` — 10 fields
+     (`COMID`, centroid lat/lon, `State`, `EPA_region`, `WeekEndDate` (Sat), `Year`,
+     `Percent_chance_of_cyanoHAB` 0–100, `Lake_name_for_public`), **identical for every lake**, **zero
+     nulls**. **105,168 rows = 2,191 lakes × 48 weeks**. Weekly, Apr–Nov; latest week ~5 d old (current).
+  3. **API — the big finding:** the live values have **NO official REST/CSV/file/ArcGIS API**
+     `[probe]` — they exist only in **three EPA Qlik Sense dashboards** (`awsedap.epa.gov`, anon `public`
+     virtual proxy). We reverse-engineered the anonymous **Qlik QIX WebSocket** and pull the whole panel
+     (106 pages → 105,168 rows, ~30 s). Tiny → **pull the whole thing weekly**; no subsetting. The
+     **official artifact** = the model-code ZIP at the DOI (33 KB, HTTP, sha-pinned).
+  4. **Geotagging:** **`COMID` (NHDPlus V2)** on every lake `[probe]` + centroid lat/lon + State/Region
+     → joins by identity to `EPA-NARS`/`WQP`/`NWIS`/LakeCat/NLDI (same backbone as those modules).
+- **User decisions (this session):** (1) role = **document to support ALL roles** (benchmark / feature /
+  context), defer the framing; (2) extraction = **scripted QIX pull + WEEKLY SNAPSHOT** (accumulate the
+  history the dashboard's rolling ~2-season window discards), documented honestly as unofficial/fragile.
+  (3, **added by user mid-build**) **document the "solid baseline to judge against / leverage" finding in
+  BOTH the module docs AND the higher-level deliverable docs** → new
+  `../docs/plans/2026-07-02-epa-cyano-forecast-as-baseline.md` + cross-ref in the slides-design doc.
+- **Codex design review BEFORE build (user-requested): 8 must-fixes + MED/LOW, all folded in.**
+  1. (blocker) **Unofficial QIX not defensible alone** → research surfaced the **official DOI code +
+     data.gov record + paper**; adopted a **two-tier** design (official science anchor + explicitly
+     unofficial live-values tier) + EPA escalation contact (Schaeffer). METADATA §7/§12.
+  2. (blocker) **Provable completeness** → fail-closed contract: `ClearAll` → read `qSize.qcy` → page →
+     **assert exact row count** (verified 105,168). 3. (blocker) **App-state contamination** → mandatory
+     `ClearAll`, record selection state, pull only canonical `AllWeeks` apps (not app1's default-week view).
+  4. (high) **Destructive dedup would erase revisions** → append-only immutable snapshots +
+     `(COMID,WeekEndDate)` current view + **revision table**. 5. (high) **Thin manifest** → full
+     provenance (engine/single URLs, appid, vproxy, object def, field order, selection state, qSize, page
+     geometry, sha256, client version). 6. (high) **QA hard-coded shape** → split **live-snapshot QA**
+     (tolerance vs probe baseline) from **archive QA** (shape-agnostic). 7. (high) **Leakage policy** →
+     METADATA §9: benchmark/context default, **never a CyAN-model label**, feature only as-of, always vs
+     persistence/climatology w/ temporal blocking. 8. (high) **Baseline/uncertainty on skill** → recorded
+     EPA point estimates (AUC 0.95, acc 0.90 vs 0.84–0.85 ML baselines, sens 0.88, spec 0.91,
+     **precision 0.49**, base rate ~9–10%), **no CIs**, labeled EPA-reported not repo-validated.
+     MED/LOW: dual-date→ISO + Saturday assert; stable-coords-per-COMID; cross-app consistency mode;
+     offline QIX fixture+tests; predeclared sentinel + peak-week rule (no cherry-pick); diagnostic-labeled
+     summaries.
+- **Built + validated end-to-end (2026-07-02, Py3.13 win32):** `METADATA.md` (14-section) +
+  `reference/PRIMARY-SOURCES.md` (verbatim + probe log) + cached EPA pages + official README + QIX
+  fixture; `access/qlik_public.py` (fail-closed QIX client) + `pull_forecasts.py` (snapshots+revisions)
+  + `pull_official.py`; `qaqc/qa_forecasts.py`; `viz/viz_forecasts.py`; `tests/` (5 offline tests green).
+  **Full snapshot = 105,168 rows, 0 QA flags, two canonical apps agree exactly; official ZIP
+  sha-verified.** Native peak-week map is scientifically sensible — HAB hotspots (Upper Midwest/N.
+  Plains, FL chains, **Grand Lake St Marys OH 99%**) light up; arid West low (visual sanity check passed).
+  `websocket-client==1.9.0` pinned; `.gitignore` already covers `raw/`+`derived/`+`*_map.html`.
+- **Honest limits recorded:** unofficial/fragile access (pin app IDs; fails loud on change); **rolling
+  window — 2024 beta season already gone** (need our snapshots for history); model **over-predicts**
+  (precision 0.49); resolvable-area blind spots; **2,191 delivered vs 2,192 advertised** (flagged);
+  COMID is dashboard-added (validate vs NHDPlus before load-bearing joins); **correlation≠causation**;
+  and the **CyAN-derived circularity** that gates its use as a label.
+- **Higher-level finding (per user):** the forecast is a **validated federal baseline** → our Part-A
+  model can be **judged against it** (in addition to naïve baselines) or **leverage it as a signal**;
+  matches the deck's "established-operational" quality tier for the EPA 7-day forecast [ACAD-050].
+
 ## 2026-07-02 — Weather layer (ERA5 + ECMWF forecast) review + build (session 8)
 - **Thorough review of ERA5 (history) + ECMWF open-data forecasts (operational)** from primary sources +
   **live probes** → answered the five onboarding questions:

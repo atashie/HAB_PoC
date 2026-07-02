@@ -1,0 +1,42 @@
+{
+  "_comment": "A small hand-built fixture in Qlik QIX GetHyperCubeData qMatrix format, for OFFLINE unit tests of the parser/normalizer (no network). Field order matches qlik_public.ALLWEEKS_FIELDS. Rows 1-2 are realistic real-lake values; row 3 is deliberately malformed (Sunday date, Year disagreement, out-of-range %, out-of-CONUS positive lon) to exercise QA flagging. WeekEndDate qNum uses the Qlik/Excel serial (2025-08-23 = 45892).",
+  "fields": ["COMID", "Lake_name_for_public", "State", "EPA_region", "WeekEndDate", "Year", "Percent_chance_of_cyanoHAB", "Lat_centroid", "Lon_centroid", "Date"],
+  "qMatrix": [
+    [
+      {"qText": "120052700", "qNum": 120052700},
+      {"qText": "Grand Lake St Marys", "qNum": "NaN"},
+      {"qText": "OH", "qNum": "NaN"},
+      {"qText": "5", "qNum": 5},
+      {"qText": "08/23/2025", "qNum": 45892},
+      {"qText": "2025", "qNum": 2025},
+      {"qText": "99.00", "qNum": 99.0},
+      {"qText": "40.5400", "qNum": 40.54},
+      {"qText": "-84.5000", "qNum": -84.5},
+      {"qText": "2025-08-23", "qNum": "NaN"}
+    ],
+    [
+      {"qText": "759", "qNum": 759},
+      {"qText": "Pleasant Lake (ME 1)", "qNum": "NaN"},
+      {"qText": "ME", "qNum": "NaN"},
+      {"qText": "1", "qNum": 1},
+      {"qText": "08/23/2025", "qNum": 45892},
+      {"qText": "2025", "qNum": 2025},
+      {"qText": "0.02", "qNum": 0.02},
+      {"qText": "46.02266", "qNum": 46.02266},
+      {"qText": "-68.16240", "qNum": -68.1624},
+      {"qText": "2025-08-23", "qNum": "NaN"}
+    ],
+    [
+      {"qText": "999999", "qNum": 999999},
+      {"qText": "Bad Row Lake", "qNum": "NaN"},
+      {"qText": "XX", "qNum": "NaN"},
+      {"qText": "0", "qNum": 0},
+      {"qText": "08/24/2025", "qNum": 45893},
+      {"qText": "2024", "qNum": 2024},
+      {"qText": "150.0", "qNum": 150.0},
+      {"qText": "10.0000", "qNum": 10.0},
+      {"qText": "5.0000", "qNum": 5.0},
+      {"qText": "2025-08-24", "qNum": "NaN"}
+    ]
+  ]
+}

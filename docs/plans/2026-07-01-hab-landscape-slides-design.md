@@ -4,6 +4,13 @@
 **Goal:** two client-orienting slide topics answering "what is currently possible/available in HAB monitoring & forecasting" (Slide 1) and "what does the research frontier look like, and what drives the models" (Slide 2). Jargon-free; counts shown as simple barplots/tables.
 **Output location:** `./presentation/` (pptx + reproducible code + data + figures).
 
+> **2026-07-02 update — the EPA 7-day forecast (tool #2 / model #1, `ACAD-050`) is now INGESTED and is
+> our baseline.** We reviewed, extracted, and QA'd it into `data-sources/cyano-forecasts/` (2,191 lakes ×
+> 48 weeks, validated). It is a **validated federal baseline to judge our Part-A model against, or to
+> leverage as a signal** — strategy + leakage caveats in
+> [`2026-07-02-epa-cyano-forecast-as-baseline.md`](2026-07-02-epa-cyano-forecast-as-baseline.md). This
+> reinforces its "established-operational" quality tier below (H4) and the tool↔model overlap note (M1).
+
 ## Locked decisions
 - **Layout:** 2 lead slides + 2 appendix slides (full reference tables). ~4 slides.
 - **Scope:** freshwater cyanoHAB only (no marine).

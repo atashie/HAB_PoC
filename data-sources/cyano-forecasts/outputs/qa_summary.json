@@ -1,0 +1,65 @@
+{
+  "access_note": "20260702T000000Z",
+  "integrity": {
+    "n_files": 2,
+    "n_bad": 0,
+    "files": [
+      {
+        "filename": "INLA_CONUS_forecast.zip",
+        "kind": "official_code",
+        "status": "ok"
+      },
+      {
+        "filename": "allweeks_20260702T000000Z.csv",
+        "kind": "snapshot",
+        "status": "ok"
+      }
+    ]
+  },
+  "live_snapshot": {
+    "snapshot_file": "allweeks_20260702T000000Z.csv",
+    "n_rows": 105168,
+    "flags": [],
+    "schema_ok": true,
+    "n_distinct_comid": 2191,
+    "n_null_comid": 0,
+    "n_distinct_weeks": 48,
+    "week_min": "2025-04-05",
+    "week_max": "2026-06-27",
+    "lake_count_note": "delivered 2191; EPA advertises 2192 (known 1-lake gap)",
+    "panel_complete": true,
+    "n_missing_lakeweeks": 0,
+    "n_duplicate_lakeweeks": 0,
+    "n_percent_out_of_range": 0,
+    "n_percent_null": 0,
+    "percent_stats": {
+      "min": 0.0,
+      "max": 99.98,
+      "mean": 10.719
+    },
+    "percent_buckets": {
+      "eq_0": 164,
+      "0_10": 81309,
+      "10_50": 15224,
+      "ge_50": 8471
+    },
+    "n_lat_out_of_conus": 0,
+    "n_lon_out_of_conus": 0,
+    "n_lon_positive": 0,
+    "n_comid_unstable_coords": 0,
+    "n_non_saturday_weeks": 0,
+    "intra_season_week_gaps": [],
+    "n_pull_flagged_rows": 0,
+    "clean": true
+  },
+  "archive": {
+    "flags": [],
+    "n_current_lakeweeks": 105168,
+    "n_distinct_comid": 2191,
+    "n_distinct_weeks": 48,
+    "n_duplicate_current_lakeweeks": 0,
+    "n_comid_with_intra_season_gaps": 0,
+    "n_revisions": 0,
+    "clean": true
+  }
+}
