@@ -40,6 +40,11 @@ data-sources/**/derived/
 
 data-sources/**/tests/_generated/
 
+# models/ — cached downloads (boundaries, etc.) and derived/scratch artifacts; regenerate via scripts
+models/**/_cache/
+models/**/derived/
+models/**/_scratch/
+
 # Heavy, regenerable interactive maps (embed base64 rasters -> MBs). Regenerate via
 # data-sources/<dataset>/viz/. Lightweight summaries/PNGs/QA reports ARE tracked.
 data-sources/**/outputs/*_map.html
