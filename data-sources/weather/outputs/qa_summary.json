@@ -1,0 +1,190 @@
+{
+  "bbox": {
+    "north": 42.5,
+    "west": -84.5,
+    "south": 41.0,
+    "east": -82.0
+  },
+  "files": [
+    {
+      "path": "weather\\data\\raw\\forecast\\20260702060000-oper-fc-0p25.grib2",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 13799517,
+      "sha256": "bc6b653ca3eb7b34c50dfa8d440448ba9cace1136d229a43795ed72b03f067b8",
+      "grid": {
+        "nlat": 721,
+        "nlon": 1440,
+        "lat_min": -90.0,
+        "lat_max": 90.0,
+        "lon_min": -180.0,
+        "lon_max": 179.75,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "steps_h": [
+        0,
+        24,
+        48,
+        72
+      ],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "u10": {
+          "long_name": "10 metre U wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": -3.0585784912109375,
+          "region_max": 7.3164825439453125,
+          "region_mean": 2.2724921703338623,
+          "region_cells": 77
+        },
+        "v10": {
+          "long_name": "10 metre V wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": -3.1202850341796875,
+          "region_max": 4.4873504638671875,
+          "region_mean": 0.9781172871589661,
+          "region_cells": 77
+        },
+        "t2m": {
+          "long_name": "2 metre temperature",
+          "units": "K",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 291.67596435546875,
+          "region_max": 303.4388122558594,
+          "region_mean": 298.0072021484375,
+          "region_cells": 77
+        },
+        "msl": {
+          "long_name": "Mean sea level pressure",
+          "units": "Pa",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 101365.9375,
+          "region_max": 101820.8125,
+          "region_mean": 101555.4609375,
+          "region_cells": 77
+        },
+        "tp": {
+          "long_name": "Total precipitation",
+          "units": "m",
+          "grib_stepType": "accum",
+          "is_accumulation": true,
+          "region_min": 0.0,
+          "region_max": 0.022186279296875,
+          "region_mean": 0.004841742571443319,
+          "region_cells": 77
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5\\era5_sl_202208-202208.grib",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 1834,
+      "sha256": "d16d2c74aba088dbcc1be3409303bcc4dbffe8dc565cfebed475ace55ec6cbc6",
+      "grid": {
+        "nlat": 7,
+        "nlon": 11,
+        "lat_min": 41.0,
+        "lat_max": 42.5,
+        "lon_min": -84.5,
+        "lon_max": -82.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "steps_h": [
+        0,
+        6
+      ],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "msl": {
+          "long_name": "Mean sea level pressure",
+          "units": "Pa",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 101063.3125,
+          "region_max": 101480.0625,
+          "region_mean": 101266.7890625,
+          "region_cells": 77
+        },
+        "u10": {
+          "long_name": "10 metre U wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 0.503997802734375,
+          "region_max": 4.779388427734375,
+          "region_mean": 2.3151915073394775,
+          "region_cells": 77
+        },
+        "v10": {
+          "long_name": "10 metre V wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 3.2132720947265625,
+          "region_max": 6.9759674072265625,
+          "region_mean": 4.6298065185546875,
+          "region_cells": 77
+        },
+        "t2m": {
+          "long_name": "2 metre temperature",
+          "units": "K",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 293.10504150390625,
+          "region_max": 295.82183837890625,
+          "region_mean": 294.79949951171875,
+          "region_cells": 77
+        },
+        "d2m": {
+          "long_name": "2 metre dewpoint temperature",
+          "units": "K",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 290.8106689453125,
+          "region_max": 293.3848876953125,
+          "region_mean": 292.3267822265625,
+          "region_cells": 77
+        },
+        "ssrd": {
+          "long_name": "Surface short-wave (solar) radiation downwards",
+          "units": "J m**-2",
+          "grib_stepType": "accum",
+          "is_accumulation": true,
+          "region_min": 154880.0,
+          "region_max": 419072.0,
+          "region_mean": 271808.84375,
+          "region_cells": 77
+        },
+        "tp": {
+          "long_name": "Total precipitation",
+          "units": "m",
+          "grib_stepType": "accum",
+          "is_accumulation": true,
+          "region_min": 0.0,
+          "region_max": 8.249282836914062e-05,
+          "region_mean": 1.1016795724572148e-05,
+          "region_cells": 77
+        }
+      }
+    }
+  ]
+}
