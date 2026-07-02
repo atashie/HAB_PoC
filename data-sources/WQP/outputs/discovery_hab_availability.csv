@@ -1,0 +1,29 @@
+CharacteristicName,sites,results,latest_year,last_submitted,providers
+"Temperature, water",33,543,2024,2025-08-29,"NWIS,STORET"
+Dissolved oxygen (DO),29,442,2024,2025-08-29,STORET
+Orthophosphate,12,237,2024,2025-08-28,"NWIS,STORET"
+Ammonia,11,135,2024,2025-08-28,STORET
+Nitrate + Nitrite,11,135,2024,2025-08-28,STORET
+Total Kjeldahl nitrogen (Organic N & NH3),11,135,2024,2025-08-28,STORET
+"Total Phosphorus, mixed forms",11,135,2024,2025-08-28,STORET
+Turbidity,10,190,2024,2025-08-28,"NWIS,STORET"
+Nitrite,8,232,2024,2025-08-28,"NWIS,STORET"
+Dissolved oxygen saturation,8,25,2024,2025-08-29,STORET
+"Chlorophyll a, corrected for pheophytin",6,119,2024,2025-08-28,STORET
+"Temperature, air",3,49,2024,2023-12-18,"NWIS,STORET"
+Chemical oxygen demand,3,12,2024,2025-08-28,STORET
+"Carbonaceous biochemical oxygen demand, standard conditions",3,3,2024,2025-08-28,STORET
+Oxygen,2,131,2024,,NWIS
+pH,2,104,2024,,NWIS
+"Depth, Secchi disk depth",2,5,2023,2023-12-18,STORET
+"Nitrogen, mixed forms (NH3), (NH4), organic, (NO2) and (NO3)",1,110,2023,,NWIS
+Ammonia and ammonium,1,102,2023,,NWIS
+Nitrate,1,102,2023,,NWIS
+Phosphorus,1,80,2023,,NWIS
+Organic Nitrogen,1,78,2023,,NWIS
+Kjeldahl nitrogen,1,57,2023,,NWIS
+Inorganic nitrogen (nitrate and nitrite),1,51,2023,,NWIS
+Nitrogen,1,35,2023,,NWIS
+Aminomethylphosphonic acid,1,20,2023,,NWIS
+Turbidity severity (choice list),1,5,2022,,NWIS
+"Biochemical oxygen demand, standard conditions",1,1,2024,2025-08-28,STORET
