@@ -6,9 +6,9 @@ Builds a daily, per-cell feature cube from the daily ERA5 aggregates (derive/agg
   DROUGHT / WATER BALANCE
   * SPEI-1, -2, -4, -6  — Standardized Precipitation-Evapotranspiration Index at 1/2/4/6-month
     scales. Water balance D = P − PET; PET via **Hargreaves** (temp-based; we have Tmax/Tmin/Tmean).
-    Computed with NOAA's `climate_indices` (distribution = **Pearson III** — this package does not
-    offer the original log-logistic; Pearson III is a recognized SPEI distribution). Monthly index,
-    broadcast to daily.
+    **DAILY cadence** (a distinct value every day), standardized per calendar month via **Pearson III**
+    (method-of-moments). Standardization uses a **FROZEN climatology** fit once on the calibration
+    years and reused unchanged at serve time.
 
   ANTECEDENT / TRAILING (backward-looking → leakage-safe for as-of joins with CyAN)
   * precip_trail_{7,14,30,60,90}d_mm        — cumulative rainfall (nutrient-loading / runoff proxy)
@@ -17,10 +17,20 @@ Builds a daily, per-cell feature cube from the daily ERA5 aggregates (derive/agg
   * calm_hours_trail_{7,14,30}d              — trailing calm-hours (AIR-STILLNESS: scum/stratification)
   * wspd_trail_{7,14,30}d_mean_ms            — trailing mean wind speed (lower = stiller)
 
+FROZEN-CLIMATOLOGY API (added 2026-07-05 for the forecast-ensemble pipeline; see
+docs/plans/2026-07-05-forecast-ensemble-features-design.md):
+  * fit_climatology(daily_ds, gdd_base)  → the frozen per-month SPEI Pearson-III moments.
+  * apply_features(daily_ds, clim, ...)  → the 22 features for ANY daily series (history OR a
+    stitched forecast member), applying the frozen climatology. **apply_features NEVER fits** — it
+    errors if the climatology is missing. This makes forecast SPEI leakage-safe by construction:
+    a stitched series containing forecast days can never re-fit its own standardization.
+  * build_features()                     → the historical product: load → fit → apply. Proven
+    OUTPUT-IDENTICAL to the pre-refactor single-pass code by tests/test_features_regression.py.
+
 DESIGN DECISIONS (flagged for review — see DECISIONS-LOG):
   * PET = Hargreaves (not Penman-Monteith): we have T but not humidity/net-radiation; ssrd is on hand
     for a future Penman upgrade. Hargreaves is the standard SPEI PET when only temperature is available.
-  * SPEI distribution = Pearson III (package constraint), calibrated on **complete years only**.
+  * SPEI distribution = Pearson III, calibrated on **complete years only**.
     ⚠ The 2016→present record (~10 yr) is SHORT for a stable SPEI fit — values are provisional;
     a longer ERA5 baseline for calibration is the recommended upgrade (to discuss).
   * GDD base temperature = 10 °C default (tunable): a placeholder to calibrate against the HAB
@@ -72,7 +82,9 @@ GDD_WINDOWS = [30, 60, 90]
 SSRD_WINDOWS = [14, 30]
 STILL_WINDOWS = [7, 14, 30]
 SPEI_SCALES = [1, 2, 4, 6]                        # months
+SPEI_WINDOWS = {1: 30, 2: 60, 4: 120, 6: 180}    # days of trailing water balance per scale
 DEFAULT_GDD_BASE_C = 10.0
+_NAN_SENTINEL = -1.234567e30                      # for content-hashing arrays with NaNs
 
 
 def _sha256(path: Path, chunk: int = 1 << 20) -> str:
@@ -152,69 +164,174 @@ def add_trailing_and_gdd(ds, gdd_base_c):
     return out, gdd_daily
 
 
-def add_spei(ds, pet_da):
-    """DAILY-cadence SPEI-1/2/4/6 per cell — a distinct value EVERY day (no monthly broadcast).
+# ----------------------------------------------------------------------------------------------
+# SPEI — split into FIT (frozen climatology) + APPLY (standardize only). The two share the exact
+# same backward-looking accumulation so fit-then-apply is arithmetically identical to the former
+# single-pass add_spei (pinned by tests/test_features_regression.py).
+# ----------------------------------------------------------------------------------------------
 
-    For scale k, standardize the trailing **k×30-day** water balance D = P − PET:
-      spei_1 → trailing 30 d, spei_2 → 60 d, spei_4 → 120 d, spei_6 → 180 d.
-    Standardization: **Pearson III by method-of-moments, per calendar month**, fit over the
-    calibration years (complete years only) and applied to every day of that month. Per-month
-    climatology preserves seasonality; method-of-moments (mean/std/skew) is stable for the short
-    record. Backward-looking accumulation → leakage-safe; the calibration fit is FIXED (reuse
-    unchanged at serve time — do not re-fit including the target window).
+def _water_balance_cumulative(ds, pet_da):
+    """Trailing k×30-day water-balance accumulation D=P−PET per SPEI scale (backward-looking).
+
+    Returns ({scale: cum_array (nt, nlat, nlon)}, windows). min_periods=window → NaN until a full
+    window of history. IDENTICAL in fit and apply so the two stay consistent to the bit.
     """
-    import numpy as np
-    import pandas as pd
-    import xarray as xr
-    from scipy.stats import pearson3, norm, skew as sp_skew
+    D = ds["tp_sum_mm"] - pet_da
+    cums = {}
+    for scale, w in SPEI_WINDOWS.items():
+        cums[scale] = (D.rolling(date=w, min_periods=w).sum()
+                       .transpose("date", "latitude", "longitude").values)
+    return cums, SPEI_WINDOWS
 
+
+def _calendar(ds):
+    """Return (years, months) numpy arrays for the daily date axis."""
+    import pandas as pd
     dates = pd.to_datetime(ds["date"].values)
-    months = dates.month.to_numpy()
-    years = dates.year.to_numpy()
-    # calibration = complete years only (>=365 days present); partial 2026 excluded from the fit
+    return dates.year.to_numpy(), dates.month.to_numpy()
+
+
+def _calibration_mask(years):
+    """Complete-years-only calibration window (>=365 days present). Returns (mask, cal0, cal1)."""
+    import pandas as pd
     yc = pd.Series(1, index=years).groupby(level=0).sum()
     complete_years = [int(y) for y in yc.index if yc[y] >= 365]
     cal0, cal1 = min(complete_years), max(complete_years)
     calib = (years >= cal0) & (years <= cal1)
+    return calib, cal0, cal1
 
-    D = (ds["tp_sum_mm"] - pet_da)                       # daily water balance (mm)
-    windows = {1: 30, 2: 60, 4: 120, 6: 180}            # days per SPEI scale
-    results = {}
-    for scale, w in windows.items():
-        cum = D.rolling(date=w, min_periods=w).sum().transpose(
-            "date", "latitude", "longitude").values     # (nt, nlat, nlon), backward-looking
-        z = np.full(cum.shape, np.nan, dtype="float64")
+
+def fit_spei_climatology(ds, pet_da):
+    """Fit the FROZEN per-calendar-month Pearson III moments for each SPEI scale.
+
+    method-of-moments (mean/std/skew) over the trailing water-balance accumulation, computed on
+    CALIBRATION YEARS ONLY (complete years). Months with <5 finite reference values are left NaN
+    (→ apply emits NaN there). Fit ONCE on ERA5 history; reused unchanged at serve time.
+    Returns an xr.Dataset dims (scale, month, latitude, longitude).
+    """
+    import numpy as np
+    import xarray as xr
+    from scipy.stats import skew as sp_skew
+
+    cums, _ = _water_balance_cumulative(ds, pet_da)
+    years, months = _calendar(ds)
+    calib, cal0, cal1 = _calibration_mask(years)
+    nlat, nlon = ds.sizes["latitude"], ds.sizes["longitude"]
+
+    mean = np.full((len(SPEI_SCALES), 12, nlat, nlon), np.nan)
+    std = np.full_like(mean, np.nan)
+    skew = np.full_like(mean, np.nan)
+    for si, scale in enumerate(SPEI_SCALES):
+        cum = cums[scale]
         for m in range(1, 13):
-            ref = cum[calib & (months == m)]            # calibration-year values ending in month m
+            ref = cum[calib & (months == m)]                # calibration values ending in month m
             if ref.shape[0] < 5 or not np.isfinite(ref).any():
                 continue
             with np.errstate(all="ignore"):
-                mean = np.nanmean(ref, axis=0)
-                std = np.nanstd(ref, axis=0)
-                sk = np.asarray(sp_skew(ref, axis=0, nan_policy="omit"), dtype="float64")
-                sel = (months == m)
+                mean[si, m - 1] = np.nanmean(ref, axis=0)
+                std[si, m - 1] = np.nanstd(ref, axis=0)
+                skew[si, m - 1] = np.asarray(sp_skew(ref, axis=0, nan_policy="omit"), dtype="float64")
+
+    clim = xr.Dataset(
+        {"spei_mean": (("scale", "month", "latitude", "longitude"), mean),
+         "spei_std": (("scale", "month", "latitude", "longitude"), std),
+         "spei_skew": (("scale", "month", "latitude", "longitude"), skew)},
+        coords={"scale": SPEI_SCALES, "month": list(range(1, 13)),
+                "latitude": ds["latitude"].values, "longitude": ds["longitude"].values})
+    clim.attrs.update({
+        "spei_calibration_years": f"{cal0}-{cal1}", "cal0": int(cal0), "cal1": int(cal1),
+        "spei_windows_days": "1:30, 2:60, 4:120, 6:180",
+        "spei_distribution": "pearson3, method-of-moments, per calendar month (seasonal climatology)",
+        "note": "FROZEN SPEI climatology — fit once on ERA5 history; apply_spei reuses it unchanged "
+                "(no re-fit at serve time). Leakage-safe.",
+    })
+    return clim
+
+
+def apply_spei(ds, pet_da, clim):
+    """Standardize the trailing water balance into SPEI using the FROZEN climatology (no fitting).
+
+    Recomputes the same backward-looking accumulation as the fit, then probit-transforms via the
+    stored per-month Pearson III moments. Errors if `clim` is missing — there is deliberately NO
+    fitting fallback, so a forecast/stitched series can never re-fit its own standardization.
+    """
+    import numpy as np
+    import xarray as xr
+    from scipy.stats import pearson3, norm
+
+    if clim is None or not {"spei_mean", "spei_std", "spei_skew"} <= set(clim.data_vars):
+        raise ValueError("apply_spei requires a fitted climatology (spei_mean/std/skew); call "
+                         "fit_spei_climatology() on ERA5 history first — there is no re-fit here.")
+
+    cums, _ = _water_balance_cumulative(ds, pet_da)
+    _, months = _calendar(ds)
+    results = {}
+    for scale in SPEI_SCALES:
+        cum = cums[scale]
+        z = np.full(cum.shape, np.nan, dtype="float64")
+        cmean = clim["spei_mean"].sel(scale=scale).values       # (12, nlat, nlon)
+        cstd = clim["spei_std"].sel(scale=scale).values
+        cskew = clim["spei_skew"].sel(scale=scale).values
+        for m in range(1, 13):
+            sel = (months == m)
+            if not sel.any():
+                continue
+            mean, std, sk = cmean[m - 1], cstd[m - 1], cskew[m - 1]
+            with np.errstate(all="ignore"):
                 x = cum[sel]
                 cdf = pearson3.cdf(x, sk[None, :, :], loc=mean[None, :, :], scale=std[None, :, :])
                 zz = norm.ppf(np.clip(cdf, 1e-6, 1 - 1e-6))
-            zz = np.where(std[None, :, :] > 1e-9, zz, np.nan)   # guard degenerate cells
+            zz = np.where(std[None, :, :] > 1e-9, zz, np.nan)   # guard degenerate / unfit cells
             z[sel] = np.clip(zz, -3.09, 3.09)
         results[f"spei_{scale}"] = xr.DataArray(
             z, dims=("date", "latitude", "longitude"),
             coords={"date": ds["date"], "latitude": ds["latitude"], "longitude": ds["longitude"]})
-    return results, cal0, cal1
+    return results
 
 
-def build_features(gdd_base_c=DEFAULT_GDD_BASE_C):
+def _climatology_content_hash(clim) -> str:
+    """sha256 of the fitted moments (NaN-canonicalized) — provenance + serve-time verification."""
+    import numpy as np
+    h = hashlib.sha256()
+    for v in ("spei_mean", "spei_std", "spei_skew"):
+        a = np.where(np.isnan(clim[v].values), np.float64(_NAN_SENTINEL), clim[v].values)
+        h.update(np.ascontiguousarray(a, dtype="float64").tobytes())
+    return h.hexdigest()
+
+
+def fit_climatology(ds, gdd_base_c=DEFAULT_GDD_BASE_C):
+    """Fit all frozen parameters needed to serve features (currently: the SPEI climatology).
+
+    GDD base + trailing windows are fixed constants (no fitting). Returns the climatology Dataset,
+    stamped with gdd_base_c and a content hash of the fitted moments.
+    """
+    pet = hargreaves_pet(ds)
+    clim = fit_spei_climatology(ds, pet)
+    clim.attrs["gdd_base_c"] = float(gdd_base_c)
+    clim.attrs["climatology_sha256"] = _climatology_content_hash(clim)
+    return clim
+
+
+def apply_features(ds, clim, gdd_base_c=None):
+    """Compute the 22 features for ANY daily series (history OR a stitched forecast member) using a
+    FROZEN climatology. NO fitting branch — errors if `clim` is missing (enforces SPEI leakage-safety).
+    """
     import xarray as xr
-    ds, src_files = load_daily()
+    if clim is None:
+        raise ValueError("apply_features requires a fitted climatology (fit_climatology / "
+                         "open_climatology). It never fits — that is what keeps forecast SPEI "
+                         "leakage-safe.")
+    if gdd_base_c is None:
+        gdd_base_c = float(clim.attrs.get("gdd_base_c", DEFAULT_GDD_BASE_C))
+
     pet = hargreaves_pet(ds)
     trailing, gdd_daily = add_trailing_and_gdd(ds, gdd_base_c)
-    spei, cal0, cal1 = add_spei(ds, pet)
+    spei = apply_spei(ds, pet, clim)
 
     feats = xr.Dataset({**trailing, **spei})
     feats["pet_hargreaves_mm"] = pet
     feats["gdd_daily"] = gdd_daily
-    # metadata
+    cal0, cal1 = clim.attrs.get("cal0"), clim.attrs.get("cal1")
     feats.attrs.update({
         "title": "HAB weather features (Florida, native 0.25 deg, daily)",
         "gdd_base_c": gdd_base_c,
@@ -223,17 +340,44 @@ def build_features(gdd_base_c=DEFAULT_GDD_BASE_C):
         "spei_pet_method": "hargreaves FAO-56 (vectorized, true calendar day-of-year; not the "
                            "climate_indices 366-day-reshape path which drifts DOY)",
         "spei_calibration_years": f"{cal0}-{cal1}",
+        "spei_climatology_sha256": clim.attrs.get("climatology_sha256", ""),
         "spei_caveat": "FUTURE ISSUE — short (~10yr) calibration record; values provisional; "
                        "pull a longer ERA5 baseline (e.g. 1991-2020) for calibration only",
         "leakage": "trailing features + SPEI trailing-window accumulation are backward-looking "
-                   "(min_periods=window); SPEI standardization uses a FIXED calibration-period "
-                   "per-month climatology (reuse unchanged at serve time)",
-        "source_files": ", ".join(src_files),
+                   "(min_periods=window); SPEI standardization uses a FROZEN calibration-period "
+                   "per-month climatology (apply_features never re-fits)",
         "license": "CC-BY-4.0 (Copernicus / ERA5)",
     })
     for w in PRECIP_WINDOWS:
         feats[f"precip_trail_{w}d_mm"].attrs["units"] = "mm"
-    return feats, src_files, cal0, cal1
+    return feats
+
+
+def build_features(gdd_base_c=DEFAULT_GDD_BASE_C):
+    """Historical product: load daily aggregates → fit climatology on them → apply.
+
+    Output-IDENTICAL to the pre-refactor single-pass implementation (pinned by
+    tests/test_features_regression.py). Returns (feats, src_files, cal0, cal1).
+    """
+    ds, src_files = load_daily()
+    clim = fit_climatology(ds, gdd_base_c)
+    feats = apply_features(ds, clim, gdd_base_c)
+    feats.attrs["source_files"] = ", ".join(src_files)
+    return feats, src_files, int(clim.attrs["cal0"]), int(clim.attrs["cal1"])
+
+
+def write_climatology(clim, path):
+    """Persist a frozen SPEI climatology to NetCDF (float64 preserved). Returns the path."""
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    clim.to_netcdf(path)
+    return path
+
+
+def open_climatology(path):
+    """Load a frozen SPEI climatology written by write_climatology()."""
+    import xarray as xr
+    return xr.open_dataset(path).load()
 
 
 def main(argv=None):
@@ -243,18 +387,30 @@ def main(argv=None):
                    help=f"GDD base temperature °C (default {DEFAULT_GDD_BASE_C})")
     args = p.parse_args(argv)
 
-    feats, src, cal0, cal1 = build_features(args.gdd_base)
-    _DERIVED.mkdir(parents=True, exist_ok=True)
     import pandas as pd
+    ds, src = load_daily()
+    clim = fit_climatology(ds, args.gdd_base)                    # fit once, reuse for feats + persist
+    feats = apply_features(ds, clim, args.gdd_base)
+    feats.attrs["source_files"] = ", ".join(src)
+    cal0, cal1 = int(clim.attrs["cal0"]), int(clim.attrs["cal1"])
+
+    _DERIVED.mkdir(parents=True, exist_ok=True)
     d0 = str(pd.to_datetime(feats["date"].values[0]).date())
     d1 = str(pd.to_datetime(feats["date"].values[-1]).date())
     dest = _DERIVED / f"weather_features_{d0}_{d1}.nc"
     feats.to_netcdf(dest)
 
+    # Persist the FROZEN SPEI climatology — the forecast-ensemble pipeline consumes THIS exact file
+    # so forecast SPEI is on the same standardized scale as the served history.
+    clim_dest = _DERIVED / f"spei_climatology_{cal0}-{cal1}.nc"
+    write_climatology(clim, clim_dest)
+
     rec = {"kind": "weather_features", "path": str(dest.relative_to(_DATA_SOURCES)),
            "bytes": dest.stat().st_size, "sha256": _sha256(dest),
            "n_features": len(feats.data_vars), "span": [d0, d1],
            "gdd_base_c": args.gdd_base, "spei_calibration": f"{cal0}-{cal1}",
+           "spei_climatology_path": str(clim_dest.relative_to(_DATA_SOURCES)),
+           "spei_climatology_sha256": clim.attrs["climatology_sha256"],
            "source_files": src, "accessed_utc": net._utc_now_iso(),
            "license": "CC-BY-4.0 (Copernicus / ERA5)"}
     net.append_manifest(_MANIFEST, rec)
@@ -262,6 +418,7 @@ def main(argv=None):
     print(f"Wrote {dest.name}: {len(feats.data_vars)} features, "
           f"{feats.sizes['date']} days × {feats.sizes['latitude']}×{feats.sizes['longitude']} cells")
     print(f"  SPEI calibration years: {cal0}-{cal1}  | GDD base: {args.gdd_base} °C")
+    print(f"  Frozen climatology: {clim_dest.name}  (sha256 {clim.attrs['climatology_sha256'][:12]}…)")
     print("  features:", ", ".join(sorted(feats.data_vars)))
     return 0
 

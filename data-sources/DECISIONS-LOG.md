@@ -29,7 +29,16 @@ Running log of choices made building the acquisition layer, with rationale. Newe
     **quality flags in the NetCDF** (`temp_extreme_source`, `subdaily_step_hours`, `calm_proxy`,
     `aggregation_complete`, `source_class`); **assert exactly 51 members before write**.
   - **Verdict:** not sound to implement as-is → the three [High] items must land first. Design amended accordingly.
-- **Next:** Phase 0 (refactor `features.py` + golden regression test) as a hard gate, then stages 1–6.
+- **Phase 0 DONE (hard gate passed).** Refactored `features.py`: `add_spei` split into `fit_spei_climatology`
+  (frozen per-month Pearson III moments) + `apply_spei` (standardize only); wrapped by `fit_climatology` /
+  `apply_features`. **`apply_features` has no fitting branch** (errors without a climatology) → forecast SPEI
+  can't re-fit on stitched data (leakage-safe by construction). `build_features` preserved. **Proven
+  output-identical two ways:** (a) synthetic golden captured from the pre-refactor commit → `assert_array_equal`
+  bit-exact on all 22 vars (`tests/test_features_regression.py`, 7 tests); (b) the real **397 MB Florida
+  product regenerated — all 22 variables bit-identical** to the pre-refactor per-var hashes. Suite now 19 green
+  (8+4+7). `features.py` now also persists the frozen `spei_climatology_2016-2025.nc` for the forecast pipeline.
+- **Next:** forecast stages 1–6 (ERA5T refresh → ENS+gap-fill pull → forecast daily aggregation w/ de-accum
+  tests → shared history-to-T0 build → per-member stitch+apply → store ensemble w/ quality/source_class flags).
 
 ## 2026-07-05 — SPEI → daily cadence; discussion of feature results (session 13)
 - **User reviewed the feature results.** Key correction: **SPEI must be DAILY cadence, not monthly-broadcast.**

@@ -9,7 +9,8 @@
 Hourly ERA5 single-levels (CDS, `access/pull_hourly_async.py`, 11 yearly GRIBs, sha256-manifested)
 → daily base fields (`derive/aggregate_daily.py`: Tmax/Tmin/Tmean, precip-sum, solar-sum, wind
 mean/max/min, calm-hours; ERA5 accumulation `time×step` flattened via `valid_time`; **incomplete days
-dropped**) → features (`derive/features.py`). Unit tests: `tests/test_features.py` (8) + `tests/test_era5_daily.py` (4).
+dropped**) → features (`derive/features.py`). Unit tests: `tests/test_features.py` (8) +
+`tests/test_era5_daily.py` (4) + `tests/test_features_regression.py` (7) = **19 green**.
 
 ## Feature inventory (22)
 | Family | Features | Definition |
@@ -71,6 +72,20 @@ calibration excludes partial years, trailing windows backward-looking (`min_peri
   time (never re-fit including the target window) → as-of safe.
 - **Aggregation** — temporal → daily is explicit (user-requested). **No spatial aggregation** (native per-cell).
 
+## Refactor for forecast reuse (2026-07-05) — output-identical gate (Codex #3/#5)
+`features.py` was split so the SAME feature code serves both the history and the forecast ensemble:
+`fit_climatology(daily)` → the **frozen** per-month SPEI Pearson III moments (persisted to
+`data/derived/spei_climatology_<cal>.nc`); `apply_features(daily, clim)` → the 22 features for any
+daily series. **`apply_features` has NO fitting branch — it errors without a climatology**, so a
+stitched forecast series can never re-fit its own SPEI standardization (leakage-safe by construction).
+`build_features()` (the historical product) now = load → fit → apply, and is **proven bit-identical**
+to the pre-refactor single-pass code two ways: (a) a synthetic golden captured from the pre-refactor
+commit (`tests/test_features_regression.py`, exact `assert_array_equal` on all 22 vars); (b) the real
+**397 MB Florida product regenerated — all 22 variables bit-identical** to the pre-refactor hashes.
+The regression suite also enforces the no-refit guard (tail-perturbation changes only the perturbed
+day's SPEI) and a lossless climatology NetCDF round-trip.
+
 ## Reproducibility
 Deterministic; scripted; cached + sha256-manifested (`weather_features_manifest.jsonl`).
-Regenerate: `python derive/aggregate_daily.py` (all years) → `python derive/features.py`.
+Regenerate: `python derive/aggregate_daily.py` (all years) → `python derive/features.py`
+(writes the feature cube **and** the frozen `spei_climatology_<cal>.nc` the forecast pipeline consumes).
