@@ -2,6 +2,155 @@
 
 Running log of choices made building the acquisition layer, with rationale. Newest first.
 
+## 2026-07-05 — Forecast-ensemble feature pipeline design + Codex review (session 14)
+- **Pivot:** this session builds the **forecast-ensemble** weather features (the sister session does the CyAN
+  fusion). Goal: reproduce the same 22 features for the **~15-day horizon as a 51-member ECMWF ensemble**, computed
+  on a stitched `recent-ERA5-history + member-forecast` series so the **memory features** (SPEI-1/2/4/6, trailing
+  precip/GDD/solar/wind) are correct at the seam.
+- **Resolved forks (user):** (1) **thin PoC** — 1 latest ENS run, all 51 members, parameterized so a new run =
+  one command, no new code. (2) **Gap handling** — ERA5T is ~5 d stale, open-data forecasts kept ~2 d, so a gap
+  sits between the history frontier and forecast T0: refresh ERA5T → fill recent ~2 d with the oldest retained
+  run's short leads → interpolate the residual ~3 d (**linear for temp/solar/wind; climatological-median precip,
+  never linear precip**). (3) **Seam bias** — raw stitch, no bias correction, documented (quantile-map vs
+  reforecasts = future work). (4) **Core principle** — refactor `features.py` into `fit_climatology` +
+  `apply_features`; SPEI climatology **fit once on ERA5 2016–2025 and frozen**; `apply_features` has **no fitting
+  branch** (errors if params missing) → forecast SPEI can't leak into its own standardization.
+- **Codex (GPT-5) reviewed the design → 7 findings, all accepted** (verified against the cited real code;
+  checked for YAGNI/stack-fit, none rejected). Folded into `../docs/plans/2026-07-05-forecast-ensemble-features-design.md`:
+  - **[High] Phase-0 golden regression gate** — the `features.py` refactor must prove **output-identical** to the
+    current historical product (all 22 vars) *before any forecast code*; + a leakage-enforcement test.
+  - **[High] De-accumulation algorithm + tests** — forecast `tp`/`ssrd` accumulate from step 0 (different contract
+    than ERA5 hourly increments); difference consecutive lead steps within each member, validate monotonic-nonneg,
+    resample increments to UTC days; tests crossing +144 h (3h→6h) and 00Z.
+  - **[High] Honest ensemble spread** — near-T0 memory features are history-dominated (day-1 spei_6 = 1/180
+    member-specific days); **reject** inflating spread; **emit `effective_member_days_in_window`** + document that
+    spread = forecast divergence only.
+  - **[Med] Seam validation, fail-closed** · **frozen-climatology enforced by API separation** ·
+    **quality flags in the NetCDF** (`temp_extreme_source`, `subdaily_step_hours`, `calm_proxy`,
+    `aggregation_complete`, `source_class`); **assert exactly 51 members before write**.
+  - **Verdict:** not sound to implement as-is → the three [High] items must land first. Design amended accordingly.
+- **Next:** Phase 0 (refactor `features.py` + golden regression test) as a hard gate, then stages 1–6.
+
+## 2026-07-05 — SPEI → daily cadence; discussion of feature results (session 13)
+- **User reviewed the feature results.** Key correction: **SPEI must be DAILY cadence, not monthly-broadcast.**
+  My original impl used the traditional monthly SPEI (via `climate_indices`, monthly periodicity) and broadcast
+  each month's value to its days — the user (correctly) wants each day standardized against its own trailing
+  window: spei_1→trailing 30 d, spei_2→60 d, spei_4→120 d, spei_6→180 d.
+- **Reimplemented `add_spei` as daily-cadence** (`features.py`): daily D = P−PET → trailing k×30-day rolling sum →
+  standardized **per calendar month via Pearson III (method-of-moments: mean/std/skew)** over the calibration years,
+  probit-transformed, clipped ±3.09. Dropped `climate_indices.indices.spei` (kept only as the earlier reference);
+  standardization now hand-rolled with scipy `pearson3`/`norm`. **Validated:** 30 distinct daily values across a
+  sample month (was 1 constant); ≈ N(0,1) (mean −0.03…−0.07, std 1.02…1.04); valid from day 30/60/120/180 per scale.
+  Backward-looking accumulation + fixed per-month climatology → leakage-safe. 12 unit tests green; runs in ~14 s.
+- **User decisions on the other open items:** (2) **GDD base 10 °C — keep for now**, documented as a future issue
+  to revisit vs a cyanobacteria threshold. (3) **Pearson III — good.** (4) **Hargreaves PET — good for now.**
+- **Deferred issues documented** (`weather/outputs/features_qa.md` "Deferred issues"): (a) short (~10-yr) SPEI
+  calibration record → pull a longer ERA5 baseline (e.g. 1991–2020) for the climatology only, later; (b) GDD base.
+- **Next:** leakage-safe as-of fusion of the weather features with CyAN.
+
+## 2026-07-03 — Full Florida hourly pull landed + weather feature engineering (session 12)
+- **Full Florida 2016→present hourly ERA5 landed** via the sliding-window puller (11 yearly GRIBs, ~77 MB/yr,
+  ~850 MB; 2026 partial through Jun-28 = ERA5T frontier). Sliding window held ≤4 concurrent, 0 rejects; CDS ran
+  ~1 job at a time (fair-share after heavy same-day usage) → ~4 h wall-clock. All sha256-manifested; each year
+  aggregated to daily (`derive/aggregate_daily.py`). Cross-year QA clean (precip 1,155–1,348 mm/yr; Tmax 37–40 °C;
+  real events: 2017 Irma winds, panhandle freezes).
+- **Built `derive/features.py`** (user granted autonomy to generate features + then Codex-review them). **22
+  algal-growth features**, native 0.25°, daily, per cell:
+  - **SPEI-1/2/4/6** — D = P − PET; PET via **Hargreaves** (`climate_indices.eto`); **Pearson III** distribution
+    (package doesn't offer log-logistic); monthly, broadcast to daily; partial-2026 padded to full years (100% valid).
+  - **Trailing (backward-looking, leakage-safe):** precip {7,14,30,60,90}d, GDD {30,60,90}d (base 10 °C), downward
+    solar {14,30}d, air-stillness = calm-hours + mean-wind {7,14,30}d.
+  - **Validated:** SPEI ≈ N(0,1) (mean ~0, std ~1, ±3.09 cap); all families physically sensible; unit tests
+    `tests/test_features.py` (7) green. QA + methodology in `weather/outputs/features_qa.md`.
+- **Design decisions flagged for the user discussion** (in `features_qa.md`): (a) **⚠ SPEI calibration ~10 yr is
+  SHORT** → provisional; recommend a longer ERA5 baseline for calibration only. (b) Pearson III vs log-logistic.
+  (c) GDD base 10 °C = tunable placeholder (calibrate to a cyano threshold). (d) Hargreaves PET (Penman-Monteith
+  upgrade later using ssrd + humidity). (e) `ssrd_trail` is **downward** solar, not net.
+- **Codex (GPT-5) review of the feature pipeline → 4 findings, ALL verified real (against source/data, per
+  receiving-code-review) + fixed 2026-07-03:**
+  1. (High) **SPEI within-month look-ahead** — monthly SPEI was broadcast to every day of its month → a day early
+     in the month saw the whole month's water balance. **Fix:** each day now carries the **last FULLY-COMPLETED
+     month before it** (as-of safe; verified all days in a month share the prior month's value; first month NaN).
+  2. (High) **Hargreaves PET DOY drift** — `climate_indices.eto_hargreaves` reshapes to (years, 366) assuming
+     366-day years → continuous multi-year input drifts day-of-year (→ Ra → PET) after each non-leap year
+     (**confirmed in the library source**). **Fix:** replaced with **vectorized FAO-56 Hargreaves using true
+     calendar DOY**; cross-checked to match the library on one aligned leap year; verified PET peak-month = July
+     in both 2016–18 and 2023–26 (no drift).
+  3. (Med) **Incomplete final day** — ERA5T tail ended 2026-06-28 with 3 h. **Fix:** `aggregate_daily.py` drops
+     any day without 24 hourly steps (2026 → 178 days, ends 06-27).
+  4. (Med) **Incomplete final month in SPEI** — **Fix:** months missing calendar days are masked (NaN) pre-transform.
+  5. (Low, accepted) Pearson III + ~10-yr calibration is fragile → already caveated; longer-baseline upgrade open.
+  Codex confirmed correct: unit conversions, accumulation `valid_time` flatten/dedupe, calibration excludes partial
+  years, trailing `min_periods=window`. All 12 weather unit tests green post-fix. QA: `weather/outputs/features_qa.md`.
+- **Deps added:** `climate-indices==2.4.0` (used only for `indices.spei`; PET now hand-rolled). **Next:** discuss
+  results with user (esp. SPEI calibration length) → fuse features with CyAN (as-of, leakage-safe join).
+
+## 2026-07-02 — PIVOT to hourly ERA5 + local daily aggregation; CDS operational findings (session 11)
+- **Decision (user): acquire HOURLY ERA5 + aggregate to daily locally** (not the derived daily-statistics dataset).
+  Rationale: the daily-stats path is slow for bulk (on-demand aggregation, full-year one-var request runs many
+  minutes) *and* can't reliably give daily **Tmax/Tmin** (upstream max/min-temp bug) — which the requested **GDD**
+  and **air-stillness** indices want. Hourly gives true Tmax/Tmin/Tmean, sub-daily wind, correct precip/solar sums,
+  and matches the forecast reconciliation. Cost: ~**77 MB/year** (~850 MB for FL 2016→present) vs ~50 MB.
+- **Built `derive/aggregate_daily.py`** → daily base fields from hourly GRIB, native 0.25°, validated on **2016**:
+  366 days, physically sensible (annual precip ≈ **1,190 mm/yr**; Tmax→38.8 °C, Tmin→−4 °C real Jan-2016 panhandle
+  freeze; solar→30 MJ/m²/day; hurricane-season winds). **Key GRIB nuance handled:** instantaneous vars (t2m/u10/v10)
+  are a flat hourly `time` axis, but **accumulations (tp/ssrd) come as `time×step`** (ERA5's twice-daily forecast
+  accumulations) → flatten via `valid_time` before daily sum (dedupe boundary overlaps). Outputs: `t2m_{mean,max,min}_c`,
+  `tp_sum_mm`, `ssrd_sum_mj`, `wspd_{mean,max,min}_ms`, `calm_hours` (air-stillness precursor).
+- **⚠ CDS operational findings (all live-verified 2026-07-02), folded into `access/pull_hourly_async.py`:**
+  1. **Jobs run server-side and are cached even if the client dies** — a killed `retrieve()` still leaves a
+     `successful` job whose result downloads later via `client.client.get_remote(job_id).download()`. My earlier
+     "kill-and-retry" impatience was the real problem, not the CDS.
+  2. **Per-user concurrency cap ≈ 5** — submitting 10 hourly jobs at once left 5 `accepted`/`running` and **5
+     `rejected`**. Fix = **sliding window ≤4 active**, submit the next year as each completes; requeue rejects.
+  3. Slowness today was largely **queue congestion from my own burst of test requests**, not per-request failure.
+  4. `cdsapi.Client().client` exposes `get_jobs()`, `submit()` (non-blocking), and `Remote.{status,results_ready,
+     download,delete,request_id}` — used for the windowed puller + cancelling orphaned jobs.
+- **Canonical acquisition path going forward = `access/pull_hourly_async.py`** (Florida, 5 driver vars, 2016→present,
+  ≤4 concurrent, cached+manifested+resumable) → `derive/aggregate_daily.py` → `qaqc/qa_weather.py`. The `--daily`
+  daily-stats mode stays as a documented quick-small-pull option, not the bulk path.
+- **Status:** 2016 landed + validated; full 2016→present hourly pull running (sliding window, ~1–1.5 h). **Next
+  (user sequence):** aggregate all years → QA → **Codex review** → resolve → **derive indices** (SPEI-1/2/4/6,
+  n-day trailing precip, trailing GDD/solar, air-stillness). SPEI-calibration-window caveat still open (§ session 10).
+
+## 2026-07-02 — Weather DAILY statistics (`era5_cds.py --daily`) + Florida test run (session 10)
+- **User asks for a daily, multi-year, multi-variable ERA5 pull (Florida: precip/temp/wind/solar)** as a test that
+  the pull works at realistic scope. Two decisions folded in:
+  - **Cadence = the derived daily dataset, not hourly-then-aggregate.** `derived-era5-single-levels-daily-statistics`
+    returns native daily aggregates far smaller than pulling all hours. **Per-variable statistic split** (baked into
+    the module): **daily_sum** for accumulated fields (`total_precipitation`, `surface_solar_radiation_downwards`),
+    **daily_mean** for instantaneous (`2m_temperature`, `10m_u/v`). Output is **NetCDF** (bare `.nc` or a `.zip` of
+    per-variable `.nc`). QA extended to read NetCDF + to size its sanity-crop per file (whole-file for AOI subsets,
+    Lake Erie crop only for the global forecast files).
+  - **Temporal bound = 2016→present** (user): matches the **CyAN OLCI POR** we fuse against (2016-04-24→present).
+    Supersedes the earlier "2008→present" for the weather layer.
+- **Validated (live, 2026-07-02):** July-2024 Florida, 5 vars, both stat groups → 5 per-variable NetCDFs, QA 0 flags,
+  **physically sensible**: temp 25.6–30.7 °C, precip (sum) 0–47.8 mm/day, solar (sum) 5–29 MJ/m²/day, wind ±7 m/s.
+  Unit tests for the pure request logic (`weather/tests/test_era5_daily.py`) green (4/4).
+- **⚠ Debugging finding — 403 = per-request COST limit (not a rate limit).** A first full-span run 403'd on every
+  request. Initial guess was a burst/rate limit — **wrong**; I read the actual response body:
+  `{"title":"cost limits exceeded","detail":"Your request is too large, please reduce your selection."}`.
+  Reproduced deterministically: **3 variables × a full year 403s; 1 variable × a year (or any × 1 month) succeeds.**
+  So backoff-retry can never help (a too-large request is permanently rejected). **Fix in `--daily`:** chunk to
+  **ONE variable per (year, variable) request** (1 var × 365 days is under the limit), **fail fast** on a cost-limit
+  403 (only retry genuine 429/5xx), and **cache-skip** done `(var, year)` files (resumable). Full-span plan =
+  5 vars × 11 yr = **55 small requests**. *(Lesson: read the error body before choosing a fix — the first "rate
+  limit" label was a mislabel, corrected here + in METADATA §11 + PRIMARY-SOURCES.)*
+- **Size/feasibility answer:** daily Florida (27×31 cells) ≈ **78 KB/variable-month** → full 5-var 2016→present
+  ≈ **~50 MB** — cheap to store (no need for the user's "yearly-sample" fallback); the only cost is the on-demand
+  aggregation *time*, handled via a background run. Docs updated (METADATA §8.1b + §11 temporal bound; README
+  quickstart; PRIMARY-SOURCES probes 9–11).
+- **SCOPE PIVOT (user, 2026-07-02): we work in FLORIDA, not Lake Erie.** The weather analysis scope is now the
+  **State of Florida** (area `[31.0, −87.7, 24.4, −79.9]`), 2016→present. Prior "W. Lake Erie" framing for the
+  weather layer is superseded (the forecast/hourly worked examples keep their Lake Erie demo bboxes, but the
+  driver dataset we build on is Florida). README + registry updated. *(Broader question — whether CyAN/WQP/NARS
+  also move to Florida — flagged for the user; CyAN/WQP/NARS cover Florida too, so it's feasible.)*
+- **Next (user-directed sequence):** once the Florida daily set lands + QA passes → **(1) Codex review** the results
+  → **(2)** resolve issues → **(3) derive algal-growth weather indices** (SPEI-1/2/4/6; n-day trailing precip;
+  trailing GDD / net solar / air-stillness). ⚠ Open design issue to raise: **SPEI needs a long climatology** (a
+  ~10-yr 2016→present baseline is short for a robust log-logistic fit) → may pull a longer ERA5 baseline *for
+  calibration only* while keeping the fused series at 2016→present.
+
 ## 2026-07-02 — EPA experimental cyanoHAB forecast onboarding (`cyano_forecasts`, session 9)
 - **Thorough review of EPA's experimental 7-day cyanoHAB forecast** (Schaeffer et al. 2024, INLA
   Bayesian) from primary sources + **live probes** → answered the onboarding questions. **⚠ This is a

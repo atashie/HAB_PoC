@@ -25,6 +25,12 @@
         "dlon": 0.25,
         "lon_convention": "-180..180"
       },
+      "sanity_region": {
+        "north": 42.5,
+        "west": -84.5,
+        "south": 41.0,
+        "east": -82.0
+      },
       "steps_h": [
         0,
         24,
@@ -106,6 +112,7 @@
         "dlon": 0.25,
         "lon_convention": "-180..180"
       },
+      "sanity_region": "whole file (AOI subset)",
       "steps_h": [
         0,
         6
@@ -183,6 +190,191 @@
           "region_max": 8.249282836914062e-05,
           "region_mean": 1.1016795724572148e-05,
           "region_cells": 77
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5_daily\\era5_daily_daily_mean_2024\\2m_temperature_stream-oper_daily-mean.nc",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 79642,
+      "sha256": "5b4c1a58ee0f6c3fe7c3b806bf1d7678aac6e2bc2360eab44c986b262f655dd4",
+      "grid": {
+        "nlat": 27,
+        "nlon": 31,
+        "lat_min": 24.5,
+        "lat_max": 31.0,
+        "lon_min": -87.5,
+        "lon_max": -80.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "sanity_region": "whole file (AOI subset)",
+      "steps_h": [],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "t2m": {
+          "long_name": "2 metre temperature",
+          "units": "K",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": 298.7156066894531,
+          "region_max": 303.8950500488281,
+          "region_mean": 301.6982116699219,
+          "region_cells": 837
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5_daily\\era5_daily_daily_mean_2024\\10m_u_component_of_wind_0_daily-mean.nc",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 98439,
+      "sha256": "a6d4f2f9dab8dfbd3b828cab7c91c9e39b3af15d54fe5aef0467627398d0864a",
+      "grid": {
+        "nlat": 27,
+        "nlon": 31,
+        "lat_min": 24.5,
+        "lat_max": 31.0,
+        "lon_min": -87.5,
+        "lon_max": -80.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "sanity_region": "whole file (AOI subset)",
+      "steps_h": [],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "u10": {
+          "long_name": "10 metre U wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": -7.342831134796143,
+          "region_max": 6.8152031898498535,
+          "region_mean": -0.9655308723449707,
+          "region_cells": 837
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5_daily\\era5_daily_daily_mean_2024\\10m_v_component_of_wind_0_daily-mean.nc",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 99073,
+      "sha256": "d25b404fe8971cb623501e76272089b40c8e1c4929e6b50780ba7e58d8ec90ed",
+      "grid": {
+        "nlat": 27,
+        "nlon": 31,
+        "lat_min": 24.5,
+        "lat_max": 31.0,
+        "lon_min": -87.5,
+        "lon_max": -80.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "sanity_region": "whole file (AOI subset)",
+      "steps_h": [],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "v10": {
+          "long_name": "10 metre V wind component",
+          "units": "m s**-1",
+          "grib_stepType": "instant",
+          "is_accumulation": false,
+          "region_min": -3.598400115966797,
+          "region_max": 6.346982955932617,
+          "region_mean": 1.0509320497512817,
+          "region_cells": 837
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5_daily\\era5_daily_daily_sum_2024\\total_precipitation_stream-oper_daily-sum.nc",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 78228,
+      "sha256": "b135b8c2c9e51ada61cd91915ee0cd8b25700007ea7f275d4d25aa4a1cafd232",
+      "grid": {
+        "nlat": 27,
+        "nlon": 31,
+        "lat_min": 24.5,
+        "lat_max": 31.0,
+        "lon_min": -87.5,
+        "lon_max": -80.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "sanity_region": "whole file (AOI subset)",
+      "steps_h": [],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "tp": {
+          "long_name": "Total precipitation",
+          "units": "m",
+          "grib_stepType": "accum",
+          "is_accumulation": true,
+          "region_min": 0.0,
+          "region_max": 0.04779529571533203,
+          "region_mean": 0.0036873554345220327,
+          "region_cells": 837
+        }
+      }
+    },
+    {
+      "path": "weather\\data\\raw\\era5_daily\\era5_daily_daily_sum_2024\\surface_solar_radiation_downwards_0_daily-sum.nc",
+      "checks": {
+        "integrity": "verified"
+      },
+      "flags": [],
+      "bytes": 84019,
+      "sha256": "aee873e5a96a2f8d4e5f72036e75df6ee8032a7ec6d0cdc066bc1621d1f0cf6c",
+      "grid": {
+        "nlat": 27,
+        "nlon": 31,
+        "lat_min": 24.5,
+        "lat_max": 31.0,
+        "lon_min": -87.5,
+        "lon_max": -80.0,
+        "dlat": 0.25,
+        "dlon": 0.25,
+        "lon_convention": "-180..180"
+      },
+      "sanity_region": "whole file (AOI subset)",
+      "steps_h": [],
+      "expver": [
+        "(none \u2014 forecast or single-provenance netCDF)"
+      ],
+      "variables": {
+        "ssrd": {
+          "long_name": "Surface short-wave (solar) radiation downwards",
+          "units": "J m**-2",
+          "grib_stepType": "accum",
+          "is_accumulation": true,
+          "region_min": 5121152.0,
+          "region_max": 29270720.0,
+          "region_mean": 22789706.0,
+          "region_cells": 837
         }
       }
     }

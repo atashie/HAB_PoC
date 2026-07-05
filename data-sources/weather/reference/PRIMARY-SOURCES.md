@@ -86,3 +86,22 @@ Reproducible via `../access/`, `../qaqc/`, `../viz/`.
    confirms request construction; live retrieve pending a CDS key + one-time licence accept.
 8. **Viz (`viz_weather.py`).** Native per-cell render of `t2m` at +72 h over W. Lake Erie → `outputs/t2m_step72.png`
    (tracked) + `outputs/t2m_step72_map.html` (gitignored); coherent warm band, no aggregation.
+9. **ERA5 DAILY statistics dataset** (`derived-era5-single-levels-daily-statistics`). Confirmed schema by live
+   pull: keys `product_type, variable, year, month, day, daily_statistic, time_zone, frequency, area, data_format`;
+   `daily_statistic ∈ {daily_mean, daily_maximum, daily_minimum, daily_sum}` with **`daily_sum` only valid for
+   accumulated vars**; **area subsetting works**; output is **NetCDF** (bare `.nc` for one var, **`.zip` of
+   per-variable `.nc`** for several). One-month Florida `2m_temperature` daily_mean = 79.6 KB, dims
+   `valid_time=31, latitude=27 (24.5–31.0), longitude=31 (−87.5–−80.0)`; values 25.6–30.7 °C (sensible). Server
+   **aggregates on demand** → ~1 min/month, minutes/year.
+10. **Daily worked example — Florida, July 2024, 5 vars via `era5_cds.py --daily`.** Two requests (daily_mean:
+    temp+10u+10v; daily_sum: tp+ssrd) → 5 per-variable `.nc` (from zips), QA verified 0 flags. Physical ranges:
+    temp 25.6–30.7 °C; precip (daily_sum) 0–47.8 mm/day; solar (daily_sum) 5–29 MJ/m²/day; wind ±7 m/s — all sensible.
+11. **⚠ Per-request COST-limit finding (root cause read from the error body).** A full-span run 403'd on every
+    request. The response body was decisive:
+    `{"type":"permission denied","title":"cost limits exceeded","status":403,"detail":"Your request is too large,
+    please reduce your selection.","instance":".../derived-era5-single-levels-daily-statistics/execution"}`.
+    Reproduced deterministically: **3 variables × full year 2016 → 403**; **1 variable × 1 month, and 1 variable ×
+    full year → success**. So it is a **size/cost limit, not a rate or auth limit** (backoff can't fix it). Mitigation
+    in `era5_cds.py --daily`: **one variable per (year, variable) request** (55 for Florida 5-var 2016→present),
+    **fail-fast** on cost-limit 403, retry only 429/5xx, and cache-skip done `(var, year)` files. *(First-pass
+    "rate limit" label was a misdiagnosis, corrected after reading the body.)*

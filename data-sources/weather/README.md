@@ -8,11 +8,12 @@ the modeling role. Load-bearing source quotes + our live-probe log are in
 
 This README is the **operational run-guide**.
 
-> **Status (2026-07-02):** `METADATA.md` + `reference/` (*document-before-you-pull*) complete. **Both `access/`
-> paths live-validated end-to-end:** the forecast path (pulled the 2026-07-02 06z IFS run → decoded → QA'd →
-> mapped) **and ERA5** (CDS key in `../.env` + licence accepted → Aug-2022 W. Lake Erie pull succeeded → decoded →
-> QA'd, 0 flags). `qaqc/qa_weather.py` + `viz/viz_weather.py` run on real files. **Next:** the daily-driver
-> reconciliation (de-accumulate → daily → bias-correct) + the leakage-safe as-of join to CyAN.
+> **Status (2026-07-03):** End-to-end for **Florida 2016→present**. Full hourly ERA5 pulled
+> (`access/pull_hourly_async.py`, 11 yearly GRIBs, sha256-manifested) → daily base fields
+> (`derive/aggregate_daily.py`) → **22 algal-growth features** (`derive/features.py`: SPEI-1/2/4/6, trailing
+> precip/GDD/solar, air-stillness). **Codex-reviewed (4 findings, all fixed)**; 12 unit tests green;
+> QA in [`outputs/features_qa.md`](outputs/features_qa.md). Forecast + hourly-ERA5 `access/` paths also
+> live-validated earlier. **Next:** discuss results (esp. SPEI calibration length) → leakage-safe as-of fuse with CyAN.
 
 ## Directory map
 
@@ -21,13 +22,19 @@ This README is the **operational run-guide**.
 | `METADATA.md` | Full characterization of both products (11 sections) | yes |
 | `reference/PRIMARY-SOURCES.md` | Verbatim source quotes + our 2026-07-02 probe log | yes |
 | `access/ecmwf_forecast.py` | ECMWF open-data IFS forecast pull (no auth); latest/named run → one GRIB2 + manifest; `--dry-run` | ✅ built + run live |
-| `access/era5_cds.py` | ERA5 single-levels CDS pull (auth); bounded region×vars×time → GRIB + manifest; `--dry-run` (no auth) | ✅ built; `--dry-run` verified, live pull pending CDS key |
+| `access/era5_cds.py` | ERA5 single-levels CDS pull (auth); hourly + `--daily` (derived daily-stats) modes; `--dry-run` | ✅ built + validated |
+| `access/pull_hourly_async.py` | **Canonical bulk pull** — multi-year hourly ERA5 for an AOI; sliding window ≤4 concurrent CDS jobs; cached + manifested + resumable | ✅ built; ran full FL 2016→present |
+| `derive/aggregate_daily.py` | Hourly GRIB → daily base fields (Tmax/Tmin/Tmean, precip/solar sums, wind, calm-hours); drops incomplete days | ✅ built + run (11 yr) |
+| `derive/features.py` | **Feature engineering** → SPEI-1/2/4/6, trailing precip/GDD/solar, air-stillness (native 0.25°, daily, leakage-safe) | ✅ built + Codex-reviewed |
+| `tests/test_features.py` · `tests/test_era5_daily.py` | Unit tests for feature math + daily-request logic (12 total) | yes (12 pass) |
+| `outputs/features_qa.md` | Feature QA + methodology + Codex findings/resolutions + caveats | yes |
 | `qaqc/qa_weather.py` | Integrity (sha256) · grid/encoding from the file · `expver`/accumulation · native-crop sanity → `outputs/` | ✅ built + run |
 | `viz/viz_weather.py` | **Native-resolution** per-cell Folium map + static PNG (no aggregation) | ✅ built + run |
 | `outputs/qa_report.md` + `qa_summary.json` | QA report (human + machine) | yes |
 | `outputs/*.png` | Small static proof renders | yes |
 | `outputs/*_map.html` | Interactive maps | **no (gitignored — heavy)** |
 | `data/raw/…` + `*_manifest.jsonl` | Cached GRIB/GRIB2 pulls + manifest | **no (gitignored)** |
+| `data/derived/era5_daily_agg_*.nc`, `weather_features_*.nc` + manifests | Daily aggregates + feature cube | **no (gitignored; regenerate)** |
 
 ## Credentials
 
@@ -56,16 +63,27 @@ python ../qaqc/qa_weather.py
 # 4) Native-resolution render of one field/step:
 python ../viz/viz_weather.py --file ../data/raw/forecast/<run>-oper-fc-0p25.grib2 --var t2m --step 72
 
-# 5) (after CDS key set) Live ERA5 pull for the same scope:
+# 5) (after CDS key set) Live ERA5 HOURLY pull for the same scope:
 python era5_cds.py --years 2022 --months 8
+
+# 6) ERA5 DAILY statistics (sum for precip/solar, mean for temp/wind) — e.g. Florida 2016→present.
+#    Slow (server aggregates on demand); backs off + retries the burst-403 rate limit; cache-skips.
+python era5_cds.py --daily --years 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 \
+  --variables 2m_temperature total_precipitation 10m_u_component_of_wind 10m_v_component_of_wind \
+              surface_solar_radiation_downwards \
+  --area 31.0 -87.7 24.4 -79.9
+python ../qaqc/qa_weather.py       # QA reads the daily NetCDFs too
 ```
 
 ## Starting scope (user decision, parameterized)
 
-**Western Lake Erie basin, 2008→present** — matches the CyAN validation tile `7_2` and WQP's Maumee
-**HUC8 `04100009`** scope, so all layers fuse on one region/time. Bbox default `N42.5 W-84.5 S41.0 E-82.0`
-(`--area` / `--bbox` to widen). ERA5 product = **single-levels 0.25° only** (aligns cell-for-cell with the
-forecast grid). Access = **bounded CDS pulls** (scripted/cached/manifested), matching the CyAN/NARS/WQP discipline.
+**State of Florida, 2016→present** (user decision 2026-07-02 — **we work in Florida; the analysis is not scoped
+to Lake Erie**). Area `[N 31.0, W −87.7, S 24.4, E −79.9]` (whole state incl. panhandle + keys). **Temporal bound
+= 2016→present** to match the OLCI-era CyAN period of record we fuse against (`cyan` OLCI POR 2016-04-24→present).
+ERA5 product = **single-levels 0.25° only** (aligns cell-for-cell with the forecast grid). **Daily cadence** via the
+derived daily-statistics dataset (`--daily`, one variable per request — under the CDS cost limit). Access =
+**bounded CDS pulls** (scripted/cached/manifested), matching the CyAN/NARS/WQP discipline. `--area` re-scopes freely
+(the forecast/hourly paths still default to a Lake Erie bbox for their older worked examples).
 
 ## Gotchas (see METADATA.md for detail)
 

@@ -26,3 +26,4 @@ cdsapi==0.7.7          # Copernicus CDS API client for ERA5 (pulls ecmwf-datasto
 ecmwf-opendata==0.3.30 # ECMWF open-data (IFS forecast) client — no auth, CC-BY-4.0
 cfgrib==0.9.15.1       # GRIB/GRIB2 reader for xarray
 eccodes==2.47.0        # ECMWF eccodes (bundled binary wheel) — GRIB decode backend for cfgrib
+climate-indices==2.4.0 # NOAA SPEI/SPI + Hargreaves PET reference impl (weather feature engineering)

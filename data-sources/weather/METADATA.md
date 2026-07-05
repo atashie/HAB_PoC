@@ -185,6 +185,25 @@ autocorrelated grids. **Correlation ≠ causation** on any weather→bloom assoc
   grid:[0.25,0.25], data_format}`. **[probe]** `--dry-run` builds a valid request with no account.
 - **Format:** default **GRIB** (keeps `expver`); NetCDF optional.
 
+### 8.1b ERA5 **daily** statistics — `access/era5_cds.py --daily`
+For a daily driver series (the natural HAB cadence, §6) prefer the derived
+**`derived-era5-single-levels-daily-statistics`** dataset over aggregating hours yourself — it
+is far smaller and native-daily. Key facts (**[probe] 2026-07-02**):
+- **Per-variable statistic:** accumulated fields (`total_precipitation`, `surface_solar_radiation_downwards`,
+  runoff, evaporation) require **`daily_sum`**; instantaneous fields (`2m_temperature`, `10m_u/v`) use
+  **`daily_mean`**. `era5_cds.py --daily` splits the request into these two groups automatically.
+- **Output = NetCDF** (a single `.nc` for one variable, a **`.zip` of per-variable `.nc`** for several) — the
+  client handles both and manifests each `.nc`. (This dataset does **not** offer GRIB, so no `expver` tag —
+  provenance is the request + access date.)
+- **⚠ Slow:** the server **computes the aggregation on demand** — a one-month Florida request ≈ 1 min, but a
+  full year is several minutes. **Loop per year; prefer a background run** for multi-year spans.
+- **Separate licence:** it is a distinct dataset → **accept its Terms of Use once** on its own CDS page.
+- **Size is tiny:** Florida (27×31 cells) daily = ~78 KB per variable-month → the full 5-variable
+  **2016→present** set ≈ **~50 MB** (worked example, §11).
+- **Known issue (upstream):** CDS currently flags `maximum/minimum_2m_temperature…`, `10m_wind_gust…`, and
+  `maximum/minimum_total_precipitation_rate…` as unreliable — *we do not request those*; `daily_mean`/`daily_sum`
+  of the core fields are unaffected. (See the CDS forum announcement.)
+
 ### 8.2 ECMWF forecast via open data — `access/ecmwf_forecast.py`
 - **Client:** `ecmwf-opendata` (installed **0.3.30 [probe]**). **No auth.** `Client(source="ecmwf")`;
   `.latest(**req)` resolves the newest run, `.retrieve(target=..., **req)` downloads. **[probe]** latest `oper`
@@ -236,6 +255,15 @@ autocorrelated grids. **Correlation ≠ causation** on any weather→bloom assoc
 
 ## 11. Reproducibility & version pinning (rules for this dataset)
 
+- **Temporal bound for the HAB fusion = 2016→present.** We ingest ERA5 only from **2016 onward** — the
+  OLCI-era CyAN period of record we fuse against (`cyan` OLCI POR **2016-04-24→present**). ERA5's full
+  1940→present exists but is not needed; bounding here keeps the driver history aligned with the satellite label.
+- **Daily-stats per-request COST limit (empirical, 2026-07-02).** The derived daily dataset rejects large requests
+  with **HTTP 403 `{"title":"cost limits exceeded","detail":"Your request is too large, please reduce your
+  selection."}`** — **3 variables × a full year fails; 1 variable × a year (or any × 1 month) succeeds.** This is a
+  size limit, *not* a rate/auth limit, so retrying can't help. `era5_cds.py --daily` therefore requests **one
+  variable per (year, variable)**, **fails fast** on a cost-limit 403 (retries only genuine 429/5xx), and
+  **cache-skips** done `(var, year)` `.nc` files (resumable). Full Florida 5-var 2016→present = **55 requests**.
 - **Scripted, cached, manifested.** `access/era5_cds.py` + `access/ecmwf_forecast.py` write a JSONL manifest
   (`data/raw/{era5,forecast}_manifest.jsonl`) with path, bytes, **sha256**, params/steps/area, source, licence, and
   UTC access time — every weather-driven number traces to exact bytes. `data/` is gitignored → **regenerates from code**.

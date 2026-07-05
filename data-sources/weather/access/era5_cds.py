@@ -39,6 +39,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import sys
+import time
 from pathlib import Path
 
 # --- make `_common` importable when run as a script ------------------------- #
@@ -197,64 +198,104 @@ def build_daily_request(variables, year, daily_statistic, area,
     }
 
 
-def _finalize_daily_download(raw_path: Path, stat: str, year, outdir: Path):
-    """Return the resulting .nc path(s). Single .nc → renamed; .zip → extracted."""
+# The CDS daily-stats dataset enforces a per-request COST limit: a 3-variable full-year
+# request 403s with {"title":"cost limits exceeded","detail":"Your request is too large..."}
+# (verified 2026-07-02). We therefore request ONE VARIABLE PER YEAR (1 var × 365 days is
+# safely under the limit; 3 vars × 365 is over). Retrying a too-large request never helps —
+# only 429/5xx are transient-retryable.
+_TRANSIENT_STATUS = {429, 500, 502, 503, 504}
+
+
+def _retrieve_with_retry(client, dataset, req, target, attempts=4, base_sleep=15):
+    """client.retrieve with backoff on TRANSIENT errors only. Cost-limit 403 → fail fast."""
+    for i in range(attempts):
+        try:
+            client.retrieve(dataset, req, target)
+            return
+        except Exception as e:
+            resp = getattr(e, "response", None)
+            status = getattr(resp, "status_code", None)
+            body = ""
+            try:
+                body = resp.text if resp is not None else ""
+            except Exception:
+                body = ""
+            if status == 403 and ("cost limit" in body.lower() or "too large" in body.lower()):
+                raise RuntimeError(
+                    "CDS rejected the request as too large (cost limits exceeded) — reduce the "
+                    f"selection (fewer variables/months per request). Server said: {body[:200]}") from e
+            if status not in _TRANSIENT_STATUS or i == attempts - 1:
+                raise
+            wait = base_sleep * (2 ** i)
+            print(f"    transient CDS error ({status}); backoff {wait}s then retry {i + 1}/{attempts - 1}")
+            time.sleep(wait)
+
+
+def _stat_for(var: str) -> str:
+    return "daily_sum" if var in ACCUMULATED_VARS else "daily_mean"
+
+
+def _daily_var_path(var: str, stat: str, year, outdir: Path) -> Path:
+    return outdir / f"era5_daily_{var}_{stat}_{year}.nc"
+
+
+def _finalize_daily_var(raw_path: Path, dest: Path) -> Path:
+    """Normalize a single-variable download (bare .nc, or a 1-member .zip) → dest .nc."""
     import zipfile
     with open(raw_path, "rb") as f:
         magic = f.read(4)
-    results = []
-    if magic[:2] == b"PK":                                   # zip of per-variable .nc
-        subdir = outdir / f"era5_daily_{stat}_{year}"
-        subdir.mkdir(parents=True, exist_ok=True)
+    if magic[:2] == b"PK":
         with zipfile.ZipFile(raw_path) as z:
-            for member in z.namelist():
-                if member.endswith(".nc"):
-                    z.extract(member, subdir)
-                    results.append(subdir / member)
+            members = [m for m in z.namelist() if m.endswith(".nc")]
+            if not members:
+                raise RuntimeError(f"No .nc member in {raw_path.name}")
+            with z.open(members[0]) as src, open(dest, "wb") as out:
+                out.write(src.read())
         raw_path.unlink(missing_ok=True)
-    else:                                                    # bare NetCDF (HDF5 magic)
-        dest = outdir / f"era5_daily_{stat}_{year}.nc"
+    else:
         raw_path.replace(dest)
-        results.append(dest)
-    return results
+    return dest
 
 
 def pull_daily(variables, years, area, outdir: Path, manifest: Path,
                months=ALL_MONTHS, days=ALL_DAYS,
                frequency="1_hourly", time_zone="utc+00:00", client=None):
-    """Pull ERA5 daily statistics per (year, statistic-group). Cached + manifested.
+    """Pull ERA5 daily statistics, ONE variable per (year, variable) request.
 
-    Accumulated vars → daily_sum; instantaneous → daily_mean (separate requests).
-    One CDS request per (year, group); the server aggregates on demand (slow).
+    Each variable uses its required statistic (daily_sum for accumulated, daily_mean for
+    instantaneous). One var/year stays under the CDS cost limit. Cached + manifested; a
+    re-run skips (var, year) files already on disk (resume-friendly).
     """
     import cdsapi
     load_credentials()
     outdir.mkdir(parents=True, exist_ok=True)
     client = client or cdsapi.Client()
-    groups = split_by_statistic(variables)
     records = []
     for year in years:
-        for stat, vs in groups.items():
-            req = build_daily_request(vs, year, stat, area, months, days, frequency, time_zone)
-            raw = outdir / f"era5_daily_{stat}_{year}.download"
-            client.retrieve(DAILY_DATASET, req, str(raw))
-            for ncpath in _finalize_daily_download(raw, stat, year, outdir):
-                rec = {
-                    "kind": "era5_daily_statistics",
-                    "dataset": DAILY_DATASET,
-                    "daily_statistic": stat,
-                    "variables": vs,
-                    "year": str(year),
-                    "area": list(area),
-                    "frequency": frequency, "time_zone": time_zone,
-                    "path": str(ncpath.relative_to(_DATA_SOURCES)),
-                    "bytes": ncpath.stat().st_size, "sha256": _sha256(ncpath),
-                    "accessed_utc": net._utc_now_iso(),
-                    "license": "CC-BY-4.0 (Copernicus / ERA5)",
-                }
-                net.append_manifest(manifest, rec)
-                records.append(rec)
-                print(f"  {stat} {year}: {ncpath.name} ({ncpath.stat().st_size:,} B)")
+        for var in variables:
+            stat = _stat_for(var)
+            dest = _daily_var_path(var, stat, year, outdir)
+            if dest.is_file() and dest.stat().st_size > 0:      # cache-skip
+                print(f"  {var} {stat} {year}: cached — skip")
+                records.append({"cached": True, "variable": var, "daily_statistic": stat,
+                                "year": str(year), "path": str(dest.relative_to(_DATA_SOURCES)),
+                                "bytes": dest.stat().st_size})
+                continue
+            req = build_daily_request([var], year, stat, area, months, days, frequency, time_zone)
+            raw = outdir / f"era5_daily_{var}_{stat}_{year}.download"
+            _retrieve_with_retry(client, DAILY_DATASET, req, str(raw))
+            _finalize_daily_var(raw, dest)
+            rec = {
+                "kind": "era5_daily_statistics", "dataset": DAILY_DATASET,
+                "daily_statistic": stat, "variables": [var], "year": str(year),
+                "area": list(area), "frequency": frequency, "time_zone": time_zone,
+                "path": str(dest.relative_to(_DATA_SOURCES)),
+                "bytes": dest.stat().st_size, "sha256": _sha256(dest),
+                "accessed_utc": net._utc_now_iso(), "license": "CC-BY-4.0 (Copernicus / ERA5)",
+            }
+            net.append_manifest(manifest, rec)
+            records.append(rec)
+            print(f"  {var} {stat} {year}: {dest.name} ({dest.stat().st_size:,} B)")
     return records
 
 
@@ -295,13 +336,14 @@ def main(argv=None):
         months = [f"{int(m):02d}" for m in args.months]
         groups = split_by_statistic(args.variables)
         if args.dry_run:
-            print("DRY-RUN (daily) — would retrieve per (year, statistic):")
+            print("DRY-RUN (daily) — would retrieve ONE variable per (year, variable):")
             print(f"  dataset: {DAILY_DATASET}")
             for stat, vs in groups.items():
                 print(f"  {stat}: {vs}")
             print(f"  years: {args.years}  months: {months}  area[N,W,S,E]: {args.area}")
             print(f"  frequency: {args.frequency}  time_zone: {args.time_zone}")
-            print(f"  → {len(args.years) * len(groups)} requests (NetCDF; server aggregates on demand).")
+            print(f"  → {len(args.years) * len(args.variables)} requests "
+                  f"(one variable/year — under the CDS cost limit; NetCDF; aggregated on demand).")
             print("  Reminder: accept the DAILY-stats dataset licence ONCE on its CDS page first.")
             return 0
         recs = pull_daily(args.variables, args.years, args.area, outdir, manifest,
