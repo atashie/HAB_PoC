@@ -376,12 +376,15 @@ def _experiments_families(path):
             started = True; continue
         if started and s.startswith("|"):
             cells = [c.strip() for c in s.strip("|").split("|")]
-            if set("".join(cells)) <= set("-: ") or cells[0] == "config" or len(cells) < 9:
+            if set("".join(cells)) <= set("-: ") or cells[0] == "config" or len(cells) < 11:
                 continue
-            m = cells[-8:]
-            label = " / ".join(cells[:-8])
+            # metric cells (last 10): AUC-ROC, AUC-PR, Brier, MCC, AUC_within, flip_MCC, flip_AUC, n_flip,
+            # onset-MCC, onset-AUC. The label (config, ragged 1-2 cells) is everything before them.
+            m = cells[-10:]
+            label = " / ".join(cells[:-10])
             rows[label] = dict(auc=_num(m[0]), aucpr=_num(m[1]), brier=_num(m[2]), mcc=_num(m[3]),
-                               within=_num(m[4]), flipmcc=_num(m[5]), flipauc=_num(m[6]))
+                               within=_num(m[4]), flipmcc=_num(m[5]), flipauc=_num(m[6]),
+                               onset_mcc=_num(m[8]), onset_auc=_num(m[9]))
         elif started and rows and not s.startswith("|"):
             break
     return rows
@@ -450,7 +453,9 @@ def build_results():
         _, hz = _find_table(t, "persist AUC", "clim AUC", "ladder AUC", "fusion AUC")
         abl = {}
         if perm:
-            abl["perm_importance"] = [dict(block=r["block"], drop=_num(r["AUC drop"])) for r in perm]
+            abl["perm_importance"] = [dict(block=r["block"], drop=_num(r["AUC drop"]),
+                                           onset_drop=_num(r.get("onsetMCC drop")),
+                                           onset_drop_std=_num(r.get("onsetMCC std"))) for r in perm]
         if dab:
             abl["dropone"] = [dict(removed=r["removed"], auc=_num(r["AUC-ROC"]), within=_num(r["AUC_within"])) for r in dab]
         if hz:
@@ -467,6 +472,7 @@ def build_results():
             for r in h1:
                 if r["track"].startswith("Track A"):
                     abl["baseline_auc"] = _num(r["AUC-ROC"])
+                    abl["baseline_onsetmcc"] = _num(r.get("onset-MCC"))
         res["ablation"] = abl
     else:
         print("  WARN: fusion_eval.md missing -> ablation omitted")
@@ -558,9 +564,11 @@ def build_insitu_points():
             dv = pd.read_parquet(dvp)
             dv["date"] = pd.to_datetime(dv["date"])
             if src == "nwis":
+                CODE = {"00060": "discharge", "00065": "gage height", "00010": "water temp"}
                 for sid, g in dv.groupby("site_id"):
                     codes = set(g["parameter_code"].astype(str))
-                    prop[sid] = {"kind": "streamflow" if "00060" in codes else "stage"}
+                    prop[sid] = {"kind": "streamflow" if "00060" in codes else "stage",
+                                 "vars": ", ".join(CODE.get(c, c) for c in sorted(codes) if c in CODE) or "—"}
             else:
                 for sid, g in dv.groupby("site_id"):
                     d = g["date"].dropna().drop_duplicates().sort_values().to_numpy()
@@ -570,6 +578,8 @@ def build_insitu_points():
         feats = []
         for r in sl.itertuples():
             pr = {"tier": str(r.tier)}
+            if src == "nwis":
+                pr["site_id"] = str(r.site_id)
             pr.update(prop.get(r.site_id, {"kind": "nodata"} if src == "nwis" else {"fresh": False}))
             feats.append({"type": "Feature",
                           "geometry": {"type": "Point", "coordinates": [round(float(r.lon), 5), round(float(r.lat), 5)]},

@@ -155,23 +155,33 @@
   "perm_importance": [
    {
     "block": "CYAN",
-    "drop": 0.2729
+    "drop": 0.2756,
+    "onset_drop": 0.2465,
+    "onset_drop_std": 0.0159
    },
    {
     "block": "INSITU",
-    "drop": 0.0045
+    "drop": 0.0046,
+    "onset_drop": 0.089,
+    "onset_drop_std": 0.0286
    },
    {
     "block": "STATIC",
-    "drop": 0.0038
+    "drop": 0.0038,
+    "onset_drop": 0.0702,
+    "onset_drop_std": 0.0201
    },
    {
     "block": "WEATHER",
-    "drop": 0.0018
+    "drop": 0.0017,
+    "onset_drop": 0.0474,
+    "onset_drop_std": 0.0154
    },
    {
     "block": "SEASON",
-    "drop": 0.0011
+    "drop": 0.0009,
+    "onset_drop": 0.0048,
+    "onset_drop_std": 0.0169
    }
   ],
   "dropone": [
@@ -256,7 +266,8 @@
    "n_lakes": 60,
    "note": "Track A fusion minus CyAN-ladder, paired within-lake AUC, lake-block bootstrap"
   },
-  "baseline_auc": 0.983
+  "baseline_auc": 0.983,
+  "baseline_onsetmcc": 0.334
  },
  "onset_baselines": [
   {
@@ -276,11 +287,11 @@
    "auc": 0.955,
    "aucpr": 0.895,
    "brier": 0.081,
-   "mcc": 0.752,
-   "acc": 0.896,
+   "mcc": 0.751,
+   "acc": 0.899,
    "onset_auc": 0.896,
-   "onset_mcc": 0.388,
-   "onset_recall": 0.601,
+   "onset_mcc": 0.371,
+   "onset_recall": 0.456,
    "n_onset": 158
   },
   {
@@ -288,11 +299,11 @@
    "auc": 0.982,
    "aucpr": 0.951,
    "brier": 0.049,
-   "mcc": 0.847,
-   "acc": 0.937,
+   "mcc": 0.842,
+   "acc": 0.934,
    "onset_auc": 0.943,
-   "onset_mcc": 0.351,
-   "onset_recall": 0.222,
+   "onset_mcc": 0.375,
+   "onset_recall": 0.304,
    "n_onset": 158
   },
   {
@@ -332,21 +343,21 @@
    "h": 0,
    "model": "climatology",
    "auc": 0.955,
-   "onset_mcc": 0.324,
+   "onset_mcc": 0.288,
    "onset_auc": 0.893
   },
   {
    "h": 0,
    "model": "CyAN-ladder",
    "auc": 0.986,
-   "onset_mcc": 0.263,
+   "onset_mcc": 0.211,
    "onset_auc": 0.928
   },
   {
    "h": 0,
    "model": "fusion",
    "auc": 0.989,
-   "onset_mcc": 0.226,
+   "onset_mcc": 0.242,
    "onset_auc": 0.942
   },
   {
@@ -367,21 +378,21 @@
    "h": 1,
    "model": "climatology",
    "auc": 0.955,
-   "onset_mcc": 0.388,
+   "onset_mcc": 0.371,
    "onset_auc": 0.896
   },
   {
    "h": 1,
    "model": "CyAN-ladder",
    "auc": 0.982,
-   "onset_mcc": 0.351,
+   "onset_mcc": 0.375,
    "onset_auc": 0.943
   },
   {
    "h": 1,
    "model": "fusion",
    "auc": 0.983,
-   "onset_mcc": 0.474,
+   "onset_mcc": 0.349,
    "onset_auc": 0.944
   },
   {
@@ -402,7 +413,7 @@
    "h": 2,
    "model": "climatology",
    "auc": 0.955,
-   "onset_mcc": 0.44,
+   "onset_mcc": 0.409,
    "onset_auc": 0.904
   },
   {
@@ -437,21 +448,21 @@
    "h": 3,
    "model": "climatology",
    "auc": 0.955,
-   "onset_mcc": 0.485,
+   "onset_mcc": 0.452,
    "onset_auc": 0.917
   },
   {
    "h": 3,
    "model": "CyAN-ladder",
    "auc": 0.973,
-   "onset_mcc": 0.461,
+   "onset_mcc": 0.443,
    "onset_auc": 0.938
   },
   {
    "h": 3,
    "model": "fusion",
    "auc": 0.972,
-   "onset_mcc": 0.461,
+   "onset_mcc": 0.455,
    "onset_auc": 0.925
   },
   {
@@ -472,21 +483,21 @@
    "h": 4,
    "model": "climatology",
    "auc": 0.955,
-   "onset_mcc": 0.516,
+   "onset_mcc": 0.487,
    "onset_auc": 0.922
   },
   {
    "h": 4,
    "model": "CyAN-ladder",
    "auc": 0.972,
-   "onset_mcc": 0.509,
+   "onset_mcc": 0.47,
    "onset_auc": 0.943
   },
   {
    "h": 4,
    "model": "fusion",
    "auc": 0.97,
-   "onset_mcc": 0.403,
+   "onset_mcc": 0.387,
    "onset_auc": 0.927
   },
   {
@@ -563,7 +574,9 @@
     "mcc": 0.853,
     "within": 0.728,
     "flipmcc": -1.0,
-    "flipauc": 0.0
+    "flipauc": 0.0,
+    "onset_mcc": 0.0,
+    "onset_auc": 0.5
    },
    {
     "label": "Climatology",
@@ -574,7 +587,9 @@
     "mcc": 0.75,
     "within": 0.787,
     "flipmcc": 0.071,
-    "flipauc": 0.525
+    "flipauc": 0.525,
+    "onset_mcc": 0.363,
+    "onset_auc": 0.886
    },
    {
     "label": "CyAN ladder (HistGBM)",
@@ -585,7 +600,9 @@
     "mcc": 0.853,
     "within": 0.882,
     "flipmcc": -0.715,
-    "flipauc": 0.047
+    "flipauc": 0.047,
+    "onset_mcc": 0.331,
+    "onset_auc": 0.918
    },
    {
     "label": "GLM \u00b7 logistic (all features)",
@@ -596,7 +613,9 @@
     "mcc": 0.851,
     "within": 0.884,
     "flipmcc": -0.711,
-    "flipauc": 0.059
+    "flipauc": 0.059,
+    "onset_mcc": 0.292,
+    "onset_auc": 0.908
    },
    {
     "label": "HistGBM (all features)",
@@ -607,7 +626,9 @@
     "mcc": 0.863,
     "within": 0.893,
     "flipmcc": -0.506,
-    "flipauc": 0.152
+    "flipauc": 0.152,
+    "onset_mcc": 0.398,
+    "onset_auc": 0.935
    },
    {
     "label": "XGBoost (all features)",
@@ -618,7 +639,9 @@
     "mcc": 0.859,
     "within": 0.893,
     "flipmcc": -0.621,
-    "flipauc": 0.093
+    "flipauc": 0.093,
+    "onset_mcc": 0.28,
+    "onset_auc": 0.933
    }
   ]
  }

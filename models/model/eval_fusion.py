@@ -86,9 +86,12 @@ def evalrow(track, y, p, comid, pers, thr):
     wa = round(float(np.median(list(la.values()))), 3) if la else np.nan
     flip = (y.to_numpy() != pers)
     mf = classification_metrics(y[flip], p[flip], thr) if flip.sum() > 30 else {"MCC": np.nan, "AUC-ROC": np.nan}
+    onset = (pers == 0)  # positive-flip subset (currently-clear weeks that become blooms), at the val-tuned thr
+    mo = (classification_metrics(y[onset], p[onset], thr)
+          if onset.sum() > 30 and y[onset].nunique() == 2 else {"MCC": np.nan, "AUC-ROC": np.nan})
     return {"track": track, **{k: m[k] for k in ["AUC-ROC", "AUC-PR", "Brier", "MCC"]},
             "AUC_within": wa, "n_wl": len(la), "flip_MCC": mf["MCC"], "flip_AUC": mf["AUC-ROC"],
-            "n_flip": int(flip.sum())}, la
+            "n_flip": int(flip.sum()), "onset_MCC": mo["MCC"], "onset_AUC": mo["AUC-ROC"]}, la
 
 
 def main() -> None:
@@ -115,7 +118,7 @@ def main() -> None:
         r, la = evalrow(name, yte, p, cte, pte, thr); rows.append(r)
         lakeaucs[name] = la
         if name == "Track A (fusion, no clim)":
-            trackA_p, trackA_fit, trackA_feats = p, fit, feats
+            trackA_p, trackA_fit, trackA_feats, trackA_thr = p, fit, feats, thr
     res = pd.DataFrame(rows)
 
     # paired within-lake delta (Track A - ladder) + lake-block bootstrap CI
@@ -135,14 +138,37 @@ def main() -> None:
         ablate.append((f"-{blk}", round(roc_auc_score(yte, p), 3),
                        round(float(np.median(list(per_lake_auc(yte.to_numpy(), p, cte.to_numpy()).values()))), 3)))
     mdlA = gbm().fit(Xof(trackA_fit, trackA_feats, trackA_fit), trackA_fit["target_bloom"])
-    baseA = roc_auc_score(yte, mdlA.predict_proba(Xof(te, trackA_feats, trackA_fit))[:, 1])
+    predA = mdlA.predict_proba(Xof(te, trackA_feats, trackA_fit))[:, 1]
+    baseA = roc_auc_score(yte, predA)
+    # onset-MCC drop uses the SAME single shuffle per block as the AUC drop, at Track A's VAL-tuned threshold,
+    # on the currently-clear (persistence==0) subset -- so the onset-MCC bars mirror the AUC bars exactly.
+    onset_te = (pte == 0)
+
+    def onset_mcc_of(pred):
+        yo, po = yte.to_numpy()[onset_te], pred[onset_te]
+        if len(yo) == 0 or len(np.unique(yo)) < 2:
+            return np.nan
+        return classification_metrics(yo, po, trackA_thr)["MCC"]
+
+    base_onsetMCC = onset_mcc_of(predA)
+    # Average the drops over N shuffles: onset-MCC on the small currently-clear subset is noisy under a
+    # single shuffle, so a one-shot block drop overstates non-CyAN blocks. Mean over 20 shuffles matches
+    # exp_perm_importance.py's rigor; AUC drops (large, stable test set) are essentially unchanged by it.
+    N_PERM = 20
     perm = []
     XteA = Xof(te, trackA_feats, trackA_fit)
     for blk, cols in BLOCKS.items():
-        Xp = XteA.copy()
-        for c in [c for c in cols if c in Xp.columns]:
-            Xp[c] = rng.permutation(Xp[c].to_numpy())
-        perm.append((blk, round(baseA - roc_auc_score(yte, mdlA.predict_proba(Xp)[:, 1]), 4)))
+        blk_cols = [c for c in cols if c in XteA.columns]
+        auc_d, on_d = [], []
+        for _ in range(N_PERM):
+            Xp = XteA.copy()
+            for c in blk_cols:
+                Xp[c] = rng.permutation(Xp[c].to_numpy())
+            pp = mdlA.predict_proba(Xp)[:, 1]
+            auc_d.append(baseA - roc_auc_score(yte, pp))
+            on_d.append(base_onsetMCC - onset_mcc_of(pp))
+        perm.append((blk, round(float(np.mean(auc_d)), 4), round(float(np.mean(on_d)), 4),
+                     round(float(np.std(on_d)), 4)))
 
     # ---------- h=0..4 curve (AUC-ROC + flip_MCC) ----------
     curve = []
@@ -168,20 +194,23 @@ def main() -> None:
                  "weather can still fingerprint place under a same-lake split. Climatology is a BASELINE "
                  "(D-35). Threshold tuned on VAL 2024; early stopping on.\n\n")
         fh.write("## h=1 (EPA-comparable)\n\n")
-        fh.write("| track | AUC-ROC | AUC-PR | Brier | MCC | AUC_within(n) | flip_MCC | flip_AUC | n_flip |\n")
-        fh.write("| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n")
+        fh.write("| track | AUC-ROC | AUC-PR | Brier | MCC | AUC_within(n) | flip_MCC | flip_AUC | n_flip "
+                 "| onset-MCC | onset-AUC |\n")
+        fh.write("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n")
         for _, r in res.iterrows():
             fh.write(f"| {r.track} | {r['AUC-ROC']:.3f} | {r['AUC-PR']:.3f} | {r.Brier:.3f} | {r.MCC:.3f} "
-                     f"| {r.AUC_within:.3f} ({int(r.n_wl)}) | {r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.n_flip} |\n")
+                     f"| {r.AUC_within:.3f} ({int(r.n_wl)}) | {r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.n_flip} "
+                     f"| {r.onset_MCC:.3f} | {r.onset_AUC:.3f} |\n")
         fh.write(f"\n**Fusion lift over the CyAN ladder is small and CyAN-dominated.** Paired within-lake "
                  f"AUC delta (Track A - ladder), per lake, lake-block bootstrap: median **{dmed:+.3f}** "
                  f"[{dlo:+.3f}, {dhi:+.3f}], positive in {pos_frac:.0%} of {len(common)} lakes "
                  f"(the headline 0.843->0.891 was difference-of-medians, not paired -- the honest paired "
                  f"lift is ~{dmed:+.3f}).\n\n")
-        fh.write("### Block permutation importance (Track A, test AUC drop when a block is shuffled)\n\n")
-        fh.write("| block | AUC drop |\n| --- | --- |\n")
-        for blk, d in sorted(perm, key=lambda x: -x[1]):
-            fh.write(f"| {blk} | {d:+.4f} |\n")
+        fh.write(f"### Block permutation importance (Track A, mean test drop over 20 shuffles when a block "
+                 f"is shuffled; baseline AUC {baseA:.3f}, baseline onset-MCC {base_onsetMCC:.3f})\n\n")
+        fh.write("| block | AUC drop | onsetMCC drop | onsetMCC std |\n| --- | --- | --- | --- |\n")
+        for blk, d, od, ostd in sorted(perm, key=lambda x: -x[1]):
+            fh.write(f"| {blk} | {d:+.4f} | {od:+.4f} | {ostd:.4f} |\n")
         fh.write("\n### Block ablation (Track A minus a block)\n\n| removed | AUC-ROC | AUC_within |\n| --- | --- | --- |\n")
         for nm, a, w in ablate:
             fh.write(f"| {nm} | {a:.3f} | {w:.3f} |\n")

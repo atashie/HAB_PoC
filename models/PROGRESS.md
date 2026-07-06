@@ -110,6 +110,17 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
 
 ## Status log (newest first)
 
+- **2026-07-06** — **EVAL THRESHOLD-TUNING FIX (D-40, Codex-flagged).** A follow-up Codex leakage
+  re-review confirmed the antecedent-CyAN "no temporal overlap" claim **survives**, but found a *separate*
+  eval leak: the onset head-to-head script (`eval_headtohead_onset.py`) tuned the operating thresholds for
+  climatology / CyAN-ladder / fusion on the **test** labels. Fixed to tune on **validation** (thr-models
+  fit on train, F1 threshold picked on val); EPA stays at fixed 0.10/0.50; persistence 0.5. Re-ran →
+  `headtohead_onset.md` regenerated. **Effect (h1):** fusion onset-MCC **0.474→0.349** — it no longer
+  "leads" the thresholded alert; CyAN-ladder (0.375) ≈ climatology (0.371) ≈ fusion (0.349) tie, so
+  **fusion adds nothing over the CyAN-only ladder on the alert** (strengthens the fusion-negative). onset-
+  AUC (threshold-free) unchanged: fusion 0.944 ≈ ladder 0.943 > clim 0.896 > EPA 0.818. No other eval
+  affected (the shared `experiment_lib` harness already tuned on val; EPA cutoffs are fixed). Propagated
+  to `RESULTS-SUMMARY.md` §3/§4 + `presentation/story.html`.
 - **2026-07-06** — **FEATURE-LEVEL ABLATION + CLUSTERED PERMUTATION IMPORTANCE, Codex-reviewed (D-39).**
   (1) Greedy backward ablation (pooled & onset-AUC criteria) strips to `cyan_median`+`area_sqkm` on any
   AUC metric but loses operating-point skill (onsetMCC 0.466→0.314) — greedy-on-AUC is blind to the alert
@@ -136,7 +147,10 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
   (`experiment_lib.py`): non-redundant CHANGE (non-overlap trends + train-clim anomalies), onset/offset
   split, EPA fixed-threshold, standard train+val refit. **CORRECTED: onsets ARE rankable** — onsetAUC h1
   fusion_full **0.935** / fusion+clim 0.93–0.94 / nocyan+clim ~0.89 / climatology 0.851 / EPA 0.831 /
-  persistence 0.50. **Fusion beats climatology AND EPA on early-warning** (onsetMCC 0.47 vs 0.32 vs 0.23);
+  persistence 0.50. **Fusion beats climatology AND EPA on early-warning** (onsetMCC 0.47 vs 0.32 vs 0.23)
+  [⚠️ SUPERSEDED 2026-07-06 / D-40: the 0.47 was a test-threshold-tuning artifact; with val-tuned
+  thresholds fusion onset-MCC is **0.349** and does NOT beat the CyAN-ladder (0.375) or climatology
+  (0.371) on the alert — the onset-AUC *ranking* result is unaffected];
   CyAN sub-threshold value helps rank onsets. Weather CHANGE still adds ~nothing (negative holds).
   nocyan overfits more (~0.04). → **NEXT: Part 2 feature ablation, then Codex.**
 - **2026-07-05** — **EXPERIMENT SUITE (D-36): split 60/20/20 2yr-test, arch grid logistic/HistGBM/

@@ -5,6 +5,41 @@ it supersedes. This is the audit trail for *why* the model is built the way it i
 
 ---
 
+## 2026-07-06 — Onset head-to-head operating thresholds moved from test → validation (D-40, Codex-flagged)
+
+- **D-40 — Evaluation-leakage fix in `eval_headtohead_onset.py`: onset-MCC thresholds were tuned on TEST,
+  now tuned on VALIDATION.** A follow-up Codex leakage re-review (of the "no temporal overlap in
+  `cyan_median`" claim — which **survived** recomputation) found a *separate* evaluation leak: the onset
+  head-to-head script fit its models on train+val but then picked the F1 operating threshold for
+  climatology / CyAN-ladder / fusion on the **test** labels (`best_f1_threshold(y_test, …)`), which
+  inflates every thresholded onset-MCC. **Fix:** fit threshold-models on **train**, pick the F1 threshold
+  on **validation** predictions, then score on test; EPA keeps its fixed **0.10 / 0.50** cutoffs;
+  persistence = 0.5. Re-ran → `headtohead_onset.md` regenerated.
+- **Effect (h1, shared-FL 2025):** fusion onset-MCC **0.474 → 0.349**. The earlier "fusion leads the
+  thresholded onset alert" was a **test-threshold-tuning artifact**. With honest thresholds the alert is a
+  near three-way tie — **CyAN-ladder 0.375 ≈ climatology 0.371 ≈ fusion 0.349** — i.e. **fusion adds no
+  thresholded-alert skill over the CyAN-only ladder**, consistent with the permutation-importance finding
+  (D-39b) that one CyAN cluster carries ~all the skill. This **strengthens** the clear-eyed fusion-negative
+  result; it weakens no positive claim. onset-**AUC** (threshold-free, the ranking metric) is
+  **unaffected**: fusion 0.944 ≈ ladder 0.943 > climatology 0.896 > EPA 0.818 > persistence 0.500.
+- **Scope — what was NOT affected.** Only `eval_headtohead_onset.py` carried this bug. The shared
+  experiment harness (`experiment_lib.py`) already tuned thresholds on val (Codex confirmed no val/test
+  target leak), so the permutation-importance / ablation / decomposition numbers (D-39, the `exp_*`
+  outputs, `docs/04`) stand unchanged. EPA's onset-MCC is computed at fixed cutoffs and is unchanged
+  everywhere (incl. `epa_headtohead.md`). Propagated to `RESULTS-SUMMARY.md` (§3 headline #1, §4
+  table+prose), `PROGRESS.md` (status log + a superseded-marker on the D-37 entry), and
+  `presentation/story.html` (baselines & final@1wk slides).
+- **D-40b — deck onset-metric charts (traceability).** For the story deck's *model-families* (slide 14)
+  and *feature-importance* (slide 16) charts, onset-AUC/onset-MCC columns were added to
+  `eval_experiments.py` (per-family, val-tuned threshold) and a **20-shuffle per-block onset-MCC
+  permutation** to `eval_fusion.py`; both outputs (`experiments.md`, `fusion_eval.md`) were regenerated
+  and parsed into `results.json`. The pooled AUC/MCC family numbers are unchanged (deterministic). The
+  block onset-MCC permutation shows **CyAN dominating the alert (Δ −0.247 ± 0.016 of a 0.334 baseline)**
+  while non-CyAN blocks show *modest* permutation **reliance** (in-situ −0.089, static −0.070, weather
+  −0.047) that is **not unique value** — block *ablation* barely moves skill and the 27-cluster test
+  (D-39b) caps any single non-CyAN cluster <0.04 (the redundant-but-exploited signature, like `clim`).
+  So the fusion-negative holds on the decision metric too; no conclusion changed.
+
 ## 2026-07-06 — Feature-level ablation + clustered permutation importance (D-39, Codex-reviewed)
 
 - **D-39a — Feature-level greedy backward ablation: the model is AUC-saturated at ~2 features.** Both a

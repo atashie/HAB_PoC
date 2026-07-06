@@ -117,6 +117,7 @@ def main() -> None:
         pers = te["persistence"].to_numpy(float)
         onset_mask = (pers == 0)
 
+        tr, va = fit[fit.split == "train"], fit[fit.split == "val"]
         mL = ladder_pipe().fit(Xof(fit, CYAN + ["clim"], fit, lut, g), fit["target_bloom"])
         mF = gbm().fit(Xof(fit, TRACK_A, fit, lut, g), fit["target_bloom"])
         scores = {
@@ -126,10 +127,15 @@ def main() -> None:
             "fusion": mF.predict_proba(Xof(te, TRACK_A, fit, lut, g))[:, 1],
             "EPA": te["epa_p"].to_numpy(float),
         }
-        # operating thresholds: persistence 0.5; models F1-tuned in-sample; EPA handled at 0.10/0.50 below
-        thr = {"persistence": 0.5, "climatology": best_f1_threshold(y, scores["climatology"]),
-               "CyAN-ladder": best_f1_threshold(y, scores["CyAN-ladder"]),
-               "fusion": best_f1_threshold(y, scores["fusion"])}
+        # operating thresholds tuned on VALIDATION (never on test labels): fit thr-models on TRAIN, pick
+        # the F1 threshold on VAL predictions. persistence = 0.5; EPA at fixed 0.10/0.50 below.
+        mL_tr = ladder_pipe().fit(Xof(tr, CYAN + ["clim"], fit, lut, g), tr["target_bloom"])
+        mF_tr = gbm().fit(Xof(tr, TRACK_A, fit, lut, g), tr["target_bloom"])
+        yv = va["target_bloom"].astype(int).to_numpy()
+        thr = {"persistence": 0.5,
+               "climatology": best_f1_threshold(yv, clim_scores(va, lut, g)),
+               "CyAN-ladder": best_f1_threshold(yv, mL_tr.predict_proba(Xof(va, CYAN + ["clim"], fit, lut, g))[:, 1]),
+               "fusion": best_f1_threshold(yv, mF_tr.predict_proba(Xof(va, TRACK_A, fit, lut, g))[:, 1])}
 
         # horizon curve: AUC + onset-MCC for the 5 model classes (EPA at its deployed 0.10 cutoff)
         for name in ["persistence", "climatology", "CyAN-ladder", "fusion", "EPA"]:
@@ -179,7 +185,8 @@ def main() -> None:
         fh.write("**ONSET / positive-flip** = restrict to currently-CLEAR weeks (persistence==0); score flagging the "
                  "ones that BECOME a bloom. Distinct from the both-direction transition/flip metric (target != "
                  "persistence) in `epa_headtohead.md`. Threshold-free cols reproduce the epa_headtohead W-2/h1 "
-                 "values (consistency check). Operating: in-sample F1 thresholds (models) / fixed 0.10 & 0.50 (EPA). "
+                 "values (consistency check). Operating: F1 thresholds tuned on VALIDATION (never test) — models "
+                 "fit on train, threshold picked on val — / fixed 0.10 & 0.50 (EPA). "
                  "EPA prob is a fixed current-week nowcast held constant across h (flatters EPA at longer leads).\n\n")
         fh.write("## Baselines @ h=1 (the bar to clear) -- all-sample + ONSET\n\n" + md(bt) + "\n\n")
         fh.write("## Horizon curve h=0..4 -- AUC-ROC (all weeks) + ONSET-MCC (positive flips), 5 model classes\n\n"

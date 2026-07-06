@@ -4,25 +4,25 @@ HistGradientBoosting; **no explicit lake ID / lat-lon**; validation = held-out Y
 
 ## h=1 (EPA-comparable)
 
-| track | AUC-ROC | AUC-PR | Brier | MCC | AUC_within(n) | flip_MCC | flip_AUC | n_flip |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| persistence | 0.918 | 0.809 | 0.063 | 0.838 | 0.705 (60) | -1.000 | 0.000 | 429 |
-| climatology (baseline) | 0.955 | 0.887 | 0.076 | 0.750 | 0.800 (60) | 0.048 | 0.544 | 429 |
-| CyAN-ladder (bar) | 0.980 | 0.948 | 0.046 | 0.843 | 0.850 (60) | -0.677 | 0.046 | 429 |
-| Track A (fusion, no clim) | 0.983 | 0.957 | 0.044 | 0.844 | 0.878 (60) | -0.486 | 0.166 | 429 |
-| Track B (+clim) | 0.980 | 0.953 | 0.045 | 0.846 | 0.873 (60) | -0.356 | 0.275 | 429 |
+| track | AUC-ROC | AUC-PR | Brier | MCC | AUC_within(n) | flip_MCC | flip_AUC | n_flip | onset-MCC | onset-AUC |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| persistence | 0.918 | 0.809 | 0.063 | 0.838 | 0.705 (60) | -1.000 | 0.000 | 429 | 0.000 | 0.500 |
+| climatology (baseline) | 0.955 | 0.887 | 0.076 | 0.750 | 0.800 (60) | 0.048 | 0.544 | 429 | 0.374 | 0.897 |
+| CyAN-ladder (bar) | 0.980 | 0.948 | 0.046 | 0.843 | 0.850 (60) | -0.677 | 0.046 | 429 | 0.367 | 0.929 |
+| Track A (fusion, no clim) | 0.983 | 0.957 | 0.044 | 0.844 | 0.878 (60) | -0.486 | 0.166 | 429 | 0.334 | 0.943 |
+| Track B (+clim) | 0.980 | 0.953 | 0.045 | 0.846 | 0.873 (60) | -0.356 | 0.275 | 429 | 0.399 | 0.934 |
 
 **Fusion lift over the CyAN ladder is small and CyAN-dominated.** Paired within-lake AUC delta (Track A - ladder), per lake, lake-block bootstrap: median **+0.015** [+0.003, +0.021], positive in 67% of 60 lakes (the headline 0.843->0.891 was difference-of-medians, not paired -- the honest paired lift is ~+0.015).
 
-### Block permutation importance (Track A, test AUC drop when a block is shuffled)
+### Block permutation importance (Track A, mean test drop over 20 shuffles when a block is shuffled; baseline AUC 0.983, baseline onset-MCC 0.334)
 
-| block | AUC drop |
-| --- | --- |
-| CYAN | +0.2729 |
-| INSITU | +0.0045 |
-| STATIC | +0.0038 |
-| WEATHER | +0.0018 |
-| SEASON | +0.0011 |
+| block | AUC drop | onsetMCC drop | onsetMCC std |
+| --- | --- | --- | --- |
+| CYAN | +0.2756 | +0.2465 | 0.0159 |
+| INSITU | +0.0046 | +0.0890 | 0.0286 |
+| STATIC | +0.0038 | +0.0702 | 0.0201 |
+| WEATHER | +0.0017 | +0.0474 | 0.0154 |
+| SEASON | +0.0009 | +0.0048 | 0.0169 |
 
 ### Block ablation (Track A minus a block)
 

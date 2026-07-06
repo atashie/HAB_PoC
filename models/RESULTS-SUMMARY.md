@@ -47,9 +47,13 @@ one — exactly the outcome the brief prizes.
 ## 3. Headline findings (for the deck)
 
 1. **Early warning works, and it's a positive result.** Among currently-clear lakes, we rank next-week
-   onsets at **onset-AUC ≈ 0.93–0.94** (h1), beating **climatology 0.90** and the **EPA forecast 0.82**,
-   and far above persistence (0.50). At h1 our fusion also beats both on the thresholded alert
-   (**onset-MCC 0.47** vs climatology 0.39 vs EPA 0.24). *(`headtohead_onset.md`)*
+   onsets at **onset-AUC ≈ 0.94** (h1) — **fusion 0.944 ≈ CyAN-ladder 0.943**, both beating
+   **climatology 0.90** and the **EPA forecast 0.82**, and far above persistence (0.50). On the
+   *thresholded* onset alert (onset-MCC, with operating thresholds tuned on **validation, not test**), the
+   CyAN-ladder (**0.375**), climatology (**0.371**) and fusion (**0.349**) are essentially tied — **fusion
+   adds nothing over the CyAN-only ladder** on the alert (consistent with §6 importance). The earlier
+   "fusion leads at onset-MCC 0.47" was a test-threshold-tuning artifact, now corrected (D-40).
+   *(`headtohead_onset.md`)*
 2. **It's a CyAN-autoregression model.** Correlation-clustered permutation importance: **one cluster —
    the real-time CyAN level — accounts for ~100% of skill.** Scrambling it collapses the model to a coin
    flip (onset-MCC 0.466→0.002; within-lake AUC 0.897→0.522; pooled AUC 0.980→0.514), on every
@@ -76,18 +80,25 @@ one — exactly the outcome the brief prizes.
 
 | model | onset-AUC (rank) | onset-MCC (alert) | all-sample AUC-ROC |
 |:--|--:|--:|--:|
-| **fusion (CyAN + drivers)** | **0.944** | **0.474** | 0.983 |
-| CyAN-ladder | 0.943 | 0.351 | 0.982 |
-| climatology | 0.896 | 0.388 | 0.955 |
+| **fusion (CyAN + drivers)** | **0.944** | 0.349 | 0.983 |
+| CyAN-ladder | 0.943 | **0.375** | 0.982 |
+| climatology | 0.896 | 0.371 | 0.955 |
 | EPA forecast | 0.818 | 0.241 | 0.928 |
 | persistence | 0.500 | 0.000 | 0.918 |
 
 - Onset-AUC ~0.93–0.94 holds across the full 2-yr test window too (`exp_change_features.md`,
   `exp_ablation.md`). Onsets are **rankable** — an earlier "onsets unpredictable" impression was a metric
   artifact, corrected (see §5).
-- On onset-MCC across horizons the picture is honest and mixed: fusion clearly leads at **h1**;
-  **climatology (seasonality) ties-or-beats fusion at h0/h2/h3/h4** — seasonality is a real onset signal,
-  but it is a *baseline*, not a driver. *(`headtohead_onset.md`)*
+- **Threshold correction (2026-07-06, D-40):** the onset-MCC operating thresholds are now tuned on
+  **validation**, never on test. Earlier test-tuning inflated fusion to onset-MCC 0.474 and made it look
+  like it "led" the alert; with honest thresholds fusion is **0.349** and does *not* lead. (onset-AUC,
+  being threshold-free, is unchanged.)
+- On onset-MCC across horizons the picture is honest and mixed, and **no model consistently leads**:
+  **climatology (seasonality) tops h0 and h4**, the **CyAN-ladder tops h1 and h2**, and h3 is a three-way
+  tie (fusion 0.455 ≈ climatology 0.452 ≈ ladder 0.443). **Fusion never clearly wins** — at h1 it sits
+  *third* of the three (0.349 vs ladder 0.375 vs climatology 0.371). Seasonality is a real onset signal but
+  is a *baseline*, not a driver; and "fusion" earns **no thresholded-alert edge over the CyAN-only ladder**.
+  *(`headtohead_onset.md`)*
 
 ---
 

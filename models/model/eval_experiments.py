@@ -114,9 +114,15 @@ def row(name, y, p, comid, pers, thr):
     m = classification_metrics(y, p, thr)
     flip = (y.to_numpy() != pers)
     mf = classification_metrics(y[flip], p[flip], thr) if flip.sum() > 30 else {"MCC": np.nan, "AUC-ROC": np.nan}
+    # ONSET (positive-flip): restrict to currently-CLEAR weeks (persistence==0) and score which BECOME a
+    # bloom, at the same VAL-tuned threshold. Same definition as eval_headtohead_onset.py / headtohead_onset.md.
+    onset = (pers == 0)
+    mo = (classification_metrics(y[onset], p[onset], thr)
+          if onset.sum() > 30 and y[onset].nunique() == 2 else {"MCC": np.nan, "AUC-ROC": np.nan})
     return {"config": name, "AUC-ROC": m["AUC-ROC"], "AUC-PR": m["AUC-PR"], "Brier": m["Brier"],
             "MCC": m["MCC"], "AUC_within": per_lake_auc(y.to_numpy(), p, comid.to_numpy()),
-            "flip_MCC": mf["MCC"], "flip_AUC": mf["AUC-ROC"], "n_flip": int(flip.sum())}
+            "flip_MCC": mf["MCC"], "flip_AUC": mf["AUC-ROC"], "n_flip": int(flip.sum()),
+            "onset_MCC": mo["MCC"], "onset_AUC": mo["AUC-ROC"]}
 
 
 def split(df):
@@ -168,11 +174,13 @@ def main() -> None:
                  "identity, D-35 -- trades generalizability for the seasonal onset signal; experiment). "
                  "**Read AUC_within + flip_MCC** (flips = onsets/offsets, the hard case). Logistic is "
                  "disadvantaged on sparse in-situ (needs imputation); GBDTs handle NaN natively.\n\n")
-        fh.write("## h=1 grid\n\n| config | AUC-ROC | AUC-PR | Brier | MCC | AUC_within | flip_MCC | flip_AUC | n_flip |\n")
-        fh.write("| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n")
+        fh.write("## h=1 grid\n\n| config | AUC-ROC | AUC-PR | Brier | MCC | AUC_within | flip_MCC | flip_AUC "
+                 "| n_flip | onset-MCC | onset-AUC |\n")
+        fh.write("| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n")
         for _, r in g1.iterrows():
             fh.write(f"| {r.config} | {r['AUC-ROC']:.3f} | {r['AUC-PR']:.3f} | {r.Brier:.3f} | {r.MCC:.3f} "
-                     f"| {r.AUC_within:.3f} | {r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.n_flip} |\n")
+                     f"| {r.AUC_within:.3f} | {r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.n_flip} "
+                     f"| {r.onset_MCC:.3f} | {r.onset_AUC:.3f} |\n")
         fh.write("\n## Horizon curve h=0..4 (HistGBM; flip focus)\n\n"
                  "| h | config | AUC-ROC | AUC_within | flip_MCC | flip_AUC |\n| --- | --- | --- | --- | --- | --- |\n")
         for _, r in cur.iterrows():

@@ -369,23 +369,14 @@
     </ul>
     <p style="margin-top:14px"><b>The question, in one sentence</b> (each highlighted word is a deliberate filter):</p>
     <p class="goal-sentence">Forecast the probability of a
-      <span class="lim-word">WHO Alert-Level-1 bloom</span>,
-      <span class="lim-word">one to four weeks ahead</span>, for the
-      <span class="lim-word">133 satellite-resolvable lakes</span> in
-      <span class="lim-word">Florida</span>,
-      <span class="lim-word">each week</span>,
-      <span class="lim-word">benchmarked against the EPA forecast</span>, using
-      <span class="lim-word">only public data</span>.</p>
-    <p style="margin-top:8px"><b>Each highlighted word is a unique filter — and a built-in limitation:</b></p>
-    <ul class="tight">
-      <li><span class="lim-word">WHO Alert-Level-1</span> — a satellite chlorophyll/dominance proxy, <em>not</em> a toxin measurement; biomass and toxin risk are decoupled.</li>
-      <li><span class="lim-word">one to four weeks ahead</span> — h≥1 assumes an unrealistic <b>“perfect weather forecast”</b> that does not account for uncertainty in weather forecasts (an upper bound, not operational skill).</li>
-      <li><span class="lim-word">133 satellite-resolvable lakes</span> — excludes the small/narrow waterbodies CyAN can’t see (it needs ≥3×3 of its 300 m pixels, so ~900 m across) — often SePRO’s real customers.</li>
-      <li><span class="lim-word">Florida</span> — one state, not CONUS (too compute-heavy for a PoC); FL has robust data and a relatively <em>easy</em> seasonal signal (no snow/ice).</li>
-      <li><span class="lim-word">each week</span> — weekly aggregation caps temporal resolution; we do it mainly for an apples-to-apples EPA comparison (revisable).</li>
-      <li><span class="lim-word">benchmarked against the EPA forecast</span> — EPA’s forecast is itself CyAN-derived and carries its own uncertainty: an <em>unknown ceiling</em> on achievable skill.</li>
-      <li><span class="lim-word">only public data</span> — no lab toxins, no proprietary feeds.</li>
-    </ul>
+      <span class="lim-word" title="A satellite chlorophyll/dominance proxy — not a toxin measurement; biomass and toxin risk are decoupled">WHO Alert-Level-1 bloom</span>,
+      <span class="lim-word" title="h=0–4 weeks; all inputs are antecedent (available at issue), so this is an operational forecast — but skill decays with lead as the freshest data goes stale">one to four weeks ahead</span>, for the
+      <span class="lim-word" title="Excludes small/narrow waterbodies CyAN can’t see — it needs ≥3×3 of its 300 m pixels, so ~900 m across — often SePRO’s real customers">133 satellite-resolvable lakes</span> in
+      <span class="lim-word" title="One state, not CONUS (too compute-heavy for a PoC); FL has robust data and an easy seasonal signal (no snow/ice)">Florida</span>,
+      <span class="lim-word" title="Weekly aggregation caps temporal resolution; done mainly for an apples-to-apples EPA comparison (revisable)">each week</span>,
+      <span class="lim-word" title="EPA’s forecast is itself CyAN-derived and carries its own uncertainty — an unknown ceiling on achievable skill">benchmarked against the EPA forecast</span>, using
+      <span class="lim-word" title="No lab toxins, no proprietary feeds">only public data</span>.</p>
+    <p class="sub" style="margin-top:6px">Hover any highlighted word for the filter it introduces.</p>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
         <div class="cite"><b>WHO Alert Level 1</b> — WHO recreational-water guidance (lake-wide median chlorophyll-a ≥ 12 µg/L with cyanobacteria dominance); operationalized on CyAN by Schaeffer et al. (2024).</div>
@@ -410,13 +401,14 @@
         drag the slider to watch the bloom grow and recede across 2016.</p>
         <div class="note limitation"><span class="lbl">Read it as:</span> colour = cyanobacteria index (low → high); blank
         water is below detection, not missing. No lake boundaries yet — that comes next.</div>
-        <div class="cyan-key"><span>Low</span><span class="cyan-ramp"></span><span>High cyanobacteria index</span></div>
+        <div class="cyan-key"><span>Low</span><span class="cyan-ramp"></span><span>High</span> · cyanobacteria index (CI_cyano; dimensionless, ≈ 10⁴–10⁶ cyanobacteria cells/mL)</div>
         <div class="step-meta">
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><b>CyAN CI_cyano</b> — U.S. EPA &amp; NASA Cyanobacteria Assessment Network; Sentinel-3 OLCI, 300 m weekly composites (2016, central/south Florida crop). <a href="https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan" target="_blank" rel="noopener">epa.gov — CyAN</a>.</div>
           </div></details>
           <details class="drop terms"><summary>Terms</summary><div class="body">
-            <div class="term"><b>CyAN</b> — the public EPA/NASA satellite product that detects the cyanobacteria signal in lakes from space.</div>
+            <div class="term"><b>Cyanobacteria index (CI_cyano)</b> — a <b>dimensionless spectral-shape index</b> CyAN computes from the satellite’s red / near-infrared bands (a second-derivative reflectance feature near ~665–709 nm). It is <em>cyanobacteria-specific</em> (unlike total chlorophyll) and is calibrated to cyanobacteria abundance (≈ 10⁴–10⁶ cells/mL) — a proxy, not a direct cell count.</div>
+            <div class="term"><b>CyAN</b> — the public EPA/NASA satellite product that computes CI_cyano for lakes from space.</div>
             <div class="term"><b>OLCI</b> — the Sentinel-3 satellite instrument CyAN has used since 2016.</div>
             <div class="term"><b>Pixel</b> — one 300 m × 300 m cell of the satellite image.</div>
           </div></details>
@@ -435,13 +427,13 @@
             <ul class="lim">
               <li><b>Coarse 300 m pixels</b> — reliable only for water ≥ ~900 m across (≥3×3 pixels); only ~5% of U.S. lakes are resolvable, and ~80% of <em>state-reported cyanoHAB records</em> fall in waterbodies too small/ill-shaped for the 3-pixel analysis.</li>
               <li><b>A spectral proxy, not a direct measure</b> — CI_cyano is a reflectance-shape index, not a cyano count; turbidity, sediment, CDOM, thin cloud and shoreline adjacency can bias it, and low-biomass cyano (below ~chl-a 20 µg/L) is hard to see.</li>
-              <li><b>Not toxins</b> — sensors can’t measure cyanotoxins, and biomass↔toxin risk are decoupled (our CyAN↔lab matchup, next slide: CI missed toxins in 70 lakes and over-called 65).</li>
+              <li><b>Not toxins</b> — sensors can’t measure cyanotoxins, and biomass↔toxin risk are decoupled (our CyAN↔lab matchup, in the appendix: CI missed toxins in 70 lakes, over-called 65).</li>
               <li><b>Cloud, ice and shorelines</b> cause gaps and false readings; cloud alone lost the target week in 595 of 929 lakes in that matchup.</li>
               <li><b>Weekly max-composite, ~1-week lag</b>; single sensor since 2016 (OLCI), no long baseline; values are version-dependent (no trending across reprocessings).</li>
               <li><b>“Below detection” ≠ zero</b> — it is below the sensor’s ~10⁴ cells/mL floor, not an absence.</li>
               <li><b>Our bloom label is CyAN-derived</b>, so CyAN is used <b>antecedent-only</b> (never the target week) to avoid circularity.</li>
             </ul>
-            <div class="cite" style="margin-top:6px">We put numbers on this by matching CyAN to independent EPA lab samples — the next slide. </div>
+            <div class="cite" style="margin-top:6px">We put numbers on this by matching CyAN to independent EPA lab samples — see the appendix. </div>
           </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><b>Masking &amp; per-lake median (AL1 target)</b> — recipe from Schaeffer et al. (2024) deposited code; pixel QA in <code>data-sources/cyan/METADATA.md</code>; label in <code>models/docs/03-target-definition.md</code>.</div>
@@ -457,59 +449,43 @@
       </div>
 
       <div class="map-step" data-map="3">
-        <div class="kicker">The aggregation unit — HydroBASINS</div>
-        <h2>HydroBASINS: how we place point data.</h2>
-        <p>Before the in-situ sources: many gages and stations aren’t <em>inside</em> a lake. We use
-        <b>HydroBASINS / BasinATLAS level-12 sub-basins</b> (outlined here, one per lake) as the unit to attach
-        point measurements to — a station inside the lake joins directly; otherwise we take the median of stations
-        in the lake’s containing sub-basin. BasinATLAS also supplies static basin traits (land use, climate normals).</p>
+        <div class="kicker">HydroBASINS + in-situ hydrology (NWIS)</div>
+        <h2>Basins as the aggregation unit — and the USGS gages.</h2>
+        <p>Many gages and stations aren’t <em>inside</em> a lake, so we use <b>HydroBASINS / BasinATLAS level-12
+        sub-basins</b> (outlined here) as the unit to attach point data to — a station in the lake joins directly,
+        otherwise we take the median of stations in its containing sub-basin. BasinATLAS also supplies static basin
+        traits (land use, climate normals).</p>
+        <p>On top, <b>USGS NWIS</b> gages add discharge, gage height and water temperature. Most linked points carry
+        <em>no</em> usable data; the <b>dark points are streamflow (discharge) gages</b> — the robust, continuous ones —
+        usually on a river in the basin, not the lake. <span class="sub">Hover a gage for its ID and variables.</span></p>
+        <div class="note limitation"><span class="lbl">Coverage:</span> 395 gages link in, but only <b>~17 carry data</b>
+        (13 streamflow); just <b>25 of 133</b> lakes get usable NWIS signal (per-variable: water-temp 12, gage-height 24,
+        discharge 21). Many Florida lakes are seepage/closed-basin and ungauged.</div>
         <div class="step-meta">
-          <details class="drop limits"><summary>Limitations — basins</summary><div class="body">
+          <details class="drop limits"><summary>Limitations — basins &amp; NWIS</summary><div class="body">
             <ul class="lim">
-              <li><b>Watershed-median</b> attribution is coarser than an in-lake reading; a sub-basin can hold conditions the lake doesn’t.</li>
-              <li><b>Partial matching:</b> many waterbodies span more than one sub-basin, so a single-L12 match is only <em>partial</em> — resolving multi-basin lakes is future work.</li>
-              <li>Static traits are <b>fixed in time</b> — they encode <em>which</em> lakes differ, not <em>when</em> a bloom happens.</li>
-              <li>Between-lake static gradients are <b>compressed</b> — all Florida lakes are broadly eutrophic, so only 1 static feature survived multiple-comparison correction.</li>
+              <li><b>Basins — watershed-median</b> attribution is coarser than an in-lake reading; a sub-basin can hold conditions the lake doesn’t.</li>
+              <li><b>Basins — partial matching:</b> many waterbodies span more than one sub-basin, so a single-L12 match is only <em>partial</em> (multi-basin lakes = future work).</li>
+              <li><b>Basins — static traits are fixed in time</b>, and between-lake gradients are compressed (all FL lakes broadly eutrophic; only 1 static feature survived FDR).</li>
+              <li><b>NWIS — sparse:</b> 25/133 lakes have any signal (per-variable 12–24); gages often sit on a river, not the lake.</li>
+              <li><b>NWIS — lake vs streamflow gages:</b> streamflow (discharge) gages give robust continuous flow but sit on basin rivers; in-lake stage/temp gages are far rarer, so “coverage” overstates lake-relevant data.</li>
+              <li><b>NWIS — datum artifacts:</b> each gage’s zero differs → raw gage height needs within-site/anomaly forms; the signal is weak-to-modest (higher stage → slightly less bloom).</li>
             </ul>
           </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-            <div class="cite"><b>Basins &amp; static traits</b> — HydroATLAS / BasinATLAS L12 (Linke et al. 2019, <i>Sci. Data</i> 6:283, <a href="https://doi.org/10.1038/s41597-019-0300-6" target="_blank" rel="noopener">doi</a>). Shown: the L12 sub-basins containing our 133 lakes (real polygons).</div>
+            <div class="cite"><b>Basins &amp; static traits</b> — HydroATLAS / BasinATLAS L12 (Linke et al. 2019, <i>Sci. Data</i> 6:283, <a href="https://doi.org/10.1038/s41597-019-0300-6" target="_blank" rel="noopener">doi</a>). Shown: the L12 sub-basins containing our 133 lakes.</div>
+            <div class="cite"><b>Streamflow</b> — USGS NWIS. <a href="https://waterdata.usgs.gov/" target="_blank" rel="noopener">waterdata.usgs.gov</a>. Points = the 395 linked FL sites (<code>models/prepare/pull_link_nwis_fl.py</code>).</div>
           </div></details>
           <details class="drop terms"><summary>Terms</summary><div class="body">
             <div class="term"><b>HydroBASINS / BasinATLAS</b> — a global set of nested drainage sub-basins, each with pre-computed environmental attributes.</div>
             <div class="term"><b>Sub-basin (L12)</b> — the finest level; the local watershed we attach point data to.</div>
-          </div></details>
-        </div>
-      </div>
-
-      <div class="map-step" data-map="4">
-        <div class="kicker">In-situ hydrology — NWIS</div>
-        <h2>USGS streamflow gages (NWIS).</h2>
-        <p>The <b>USGS National Water Information System</b> adds discharge, gage height and water temperature —
-        proxies for loading and flushing. Most linked points carry <em>no</em> usable data; the <b>dark points are
-        streamflow (discharge) gages</b> — the robust, continuous ones — usually on a river in the lake’s basin, not
-        the lake itself. Each carries a <b>staleness</b> (how old the reading is).</p>
-        <div class="note limitation"><span class="lbl">Coverage:</span> 395 gages link in, but only <b>~17 carry data</b> (13 of them streamflow gages); just <b>25 of 133</b> lakes end up with usable NWIS signal, and per-variable coverage is lower still (water-temp 12, gage-height 24, discharge 21 lakes). Many Florida lakes are seepage/closed-basin and ungauged.</div>
-        <div class="step-meta">
-          <details class="drop limits"><summary>Limitations — NWIS</summary><div class="body">
-            <ul class="lim">
-              <li><b>Sparse:</b> 25/133 lakes have any NWIS signal (per-variable 12–24); gages often sit on a river, not the lake.</li>
-              <li><b>Lake vs streamflow gages:</b> streamflow (discharge) gages give robust, continuous flow but sit on rivers in the basin; in-lake stage/temperature gages are far rarer — so “coverage” overstates lake-relevant data.</li>
-              <li><b>Datum artifacts:</b> each gage’s zero differs → raw gage height needs within-site/anomaly forms.</li>
-              <li>Signal is <b>weak-to-modest</b>: higher stage → slightly less bloom (dilution), within-lake only.</li>
-            </ul>
-          </div></details>
-          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-            <div class="cite"><b>Streamflow</b> — USGS NWIS. <a href="https://waterdata.usgs.gov/" target="_blank" rel="noopener">waterdata.usgs.gov</a>. Points = the 395 linked FL sites (<code>models/prepare/pull_link_nwis_fl.py</code>).</div>
-          </div></details>
-          <details class="drop terms"><summary>Terms</summary><div class="body">
             <div class="term"><b>Staleness</b> — days between the last in-situ reading and the forecast week; a stale value is used, but flagged.</div>
             <div class="term"><b>Discharge / gage height</b> — how much water flows / how high it stands.</div>
           </div></details>
         </div>
       </div>
 
-      <div class="map-step" data-map="5">
+      <div class="map-step" data-map="4">
         <div class="kicker">In-situ water quality — WQP</div>
         <h2>Water-quality stations (WQP).</h2>
         <p>The <b>Water Quality Portal</b> (USGS / EPA / 400+ agencies) adds the chemistry the satellite can’t see:
@@ -536,19 +512,20 @@
         </div>
       </div>
 
-      <div class="map-step" data-map="6">
+      <div class="map-step" data-map="5">
         <div class="kicker">Weather — ERA5</div>
         <h2>ERA5 reanalysis weather.</h2>
         <p>ERA5 gives temperature, precipitation, solar radiation, wind and evaporation everywhere — all 133 lakes,
         no gaps. It is the <b>densest and most forecast-eligible</b> driver layer. The grid shows its native
         resolution: a coarse <b>~0.25° (≈28 km)</b> cell, much larger than most lakes.</p>
-        <div class="note limitation"><span class="lbl">The tension:</span> one weather cell can blanket several lakes — good coverage, coarse in space; and our forecasts assume a <b>“perfect weather forecast”</b> that ignores uncertainty in actual forecasts (real forecast weather is future work).</div>
+        <div class="note limitation"><span class="lbl">The tension:</span> one weather cell can blanket several lakes — good coverage, coarse in space. The model uses <b>antecedent</b> weather (trailing windows as-of the cutoff week, before the target) — operationally available, <b>not</b> an oracle.</div>
+        <div class="note insight"><span class="lbl">Going forward:</span> today’s weather features are purely antecedent (they end at the cutoff week). Extending the trailing windows <em>into</em> the forecast horizon with real <b>ECMWF forecasts</b> (IFS / AIFS open data) would add genuine forward-looking weather signal — an enhancement, not a fix.</div>
         <div class="step-meta">
           <details class="drop limits"><summary>Limitations — ERA5</summary><div class="body">
             <ul class="lim">
               <li><b>Coarse grid</b> (~28 km) → nearest-cell extraction blurs lake-scale differences.</li>
               <li><b>Reanalysis, not observations</b> — a model’s best estimate of past weather.</li>
-              <li>Used as a <b>“perfect weather forecast”</b> (coincident) input for h≥1 — an upper bound on predictability, not operational skill.</li>
+              <li><b>Antecedent only:</b> trailing windows end at the cutoff week, so the model gets <em>no</em> weather signal from the forecast horizon itself — operational, but a forward ECMWF forecast could add that signal.</li>
             </ul>
           </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
@@ -556,12 +533,12 @@
           </div></details>
           <details class="drop terms"><summary>Terms</summary><div class="body">
             <div class="term"><b>ERA5</b> — a global hourly weather reanalysis on a ~28 km grid.</div>
-            <div class="term"><b>Perfect weather forecast</b> — pretending we know the target week’s weather exactly; an idealisation that ignores real forecast uncertainty, clearly labelled.</div>
+            <div class="term"><b>Antecedent weather</b> — trailing ERA5 windows (e.g. 30-day precip) ending at the cutoff week, before the target; available at issue time (not an oracle).</div>
           </div></details>
         </div>
       </div>
 
-      <div class="map-step" data-map="7">
+      <div class="map-step" data-map="6">
         <div class="kicker">Fusion</div>
         <h2>One row per lake-week — every source, joined.</h2>
         <p>Each lake, each week becomes a single row: the CyAN median, weather, chemistry, flow and static basin
@@ -569,22 +546,17 @@
         attributes.</p>
         <div id="okeechobee-table" style="margin-top:6px"></div>
         <div class="step-meta">
-          <details class="drop terms"><summary>Terms</summary><div class="body"><div class="term"><b>Lake-week</b> — the unit of analysis: one lake, one 7-day period.</div><div class="term"><b>Fusion table</b> — the joined per-lake-week table the models are trained on.</div></div></details>
-        </div>
-      </div>
-
-      <div class="map-step" data-map="8">
-        <div class="kicker">Explore</div>
-        <h2>Bloom frequency across the 133 lakes.</h2>
-        <p>Lakes shaded by how often they cross the WHO Alert-Level-1 threshold, from the real target (2016–2025).
-        Blooms are common in Florida — on the order of <b>a quarter of lake-weeks</b> (26.6% in the held-out
-        2025 test) — but concentrated: some lakes bloom most weeks, others rarely.</p>
-        <div class="note limitation"><span class="lbl">Read with care:</span> this is the CyAN-derived label’s prevalence — <b>correlation, not causation</b>, and only for lakes CyAN can resolve.</div>
-        <div class="step-meta">
-          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-            <div class="cite"><b>Per-lake bloom frequency</b> — mean of the AL1 target (horizon 0) per COMID, from <code>models/data/derived/modeling_table_cyan_fl.parquet</code> (built by the modeling pipeline).</div>
+          <details class="drop terms"><summary>Terms — the table columns</summary><div class="body">
+            <div class="term"><b>week</b> — the target 7-day period the row forecasts.</div>
+            <div class="term"><b>CyAN median</b> — the lake’s median CI_cyano that week (the satellite bloom signal; antecedent-only).</div>
+            <div class="term"><b>prior bloom</b> — whether the lake was in bloom the previous available week (0/1).</div>
+            <div class="term"><b>solar 30d</b> — trailing 30-day surface solar radiation (ERA5, MJ/m²) — a growth driver.</div>
+            <div class="term"><b>precip 30d mm</b> — trailing 30-day precipitation (ERA5, mm) — flushing / dilution.</div>
+            <div class="term"><b>WQP TP</b> — most-recent in-situ total phosphorus, carried forward with its staleness.</div>
+            <div class="term"><b>area km²</b> — lake surface area (static morphology).</div>
+            <div class="term"><b>bloom (target)</b> — the label: 1 if the lake-median crossed WHO Alert-Level-1 that week, else 0.</div>
+            <div class="term"><b>Lake-week</b> — the unit of analysis: one lake, one 7-day period. <b>Fusion table</b> — the joined per-lake-week table the models train on.</div>
           </div></details>
-          <details class="drop terms"><summary>Terms</summary><div class="body"><div class="term"><b>Base rate</b> — how often blooms actually happen; here about 1 lake-week in 4.</div></div></details>
         </div>
       </div>
 
@@ -604,69 +576,7 @@
         <div class="layer" data-layer="nwis"><span class="sw nwis"></span>NWIS gages <em>(streamflow = dark)</em></div>
         <div class="layer" data-layer="wqp"><span class="sw wqp"></span>WQP stations <em>(fresh = dark)</em></div>
         <div class="layer" data-layer="era5"><span class="sw era5"></span>ERA5 grid (~28 km)</div>
-        <div class="layer" data-layer="freq"><span class="sw freq"></span>Bloom frequency</div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- ==================== PART 2c — TRUSTING THE CyAN SIGNAL (CyAN<->NLA matchup) ==================== -->
-<section class="part" id="part2c">
-  <div class="part-label">Part 2c · Trusting the signal — CyAN vs lab samples</div>
-  <div class="slide" data-layout="wide">
-    <div class="kicker">Signal check — CyAN ↔ EPA National Lakes Assessment</div>
-    <h2>How far can we trust the signal the forecast runs on?</h2>
-    <p class="sub" style="max-width:1120px">We matched CyAN pixels to independent <b>EPA National Lakes Assessment (NLA)</b>
-    lab samples — chlorophyll-a and microcystin — to put numbers on CyAN’s reach and its limits. Two things fall out:
-    a steep <b>coverage funnel</b>, and a <b>biomass-yes / toxin-no</b> gap.</p>
-    <div class="split">
-      <div class="col-fig">
-        <table class="res" style="max-width:660px">
-          <thead><tr><th>Attrition funnel (NLA lake-visits)</th><th>Lakes</th><th>%</th></tr></thead>
-          <tbody>
-            <tr><td>A. Sampled visits with lab chl-a</td><td>1,219</td><td>100%</td></tr>
-            <tr><td>B. + has a lake polygon</td><td>1,219</td><td>100%</td></tr>
-            <tr><td>C. + temporally matched to a weekly mosaic</td><td>1,219</td><td>100%</td></tr>
-            <tr><td>D. + resolvable at 300 m (≥1 in-lake pixel)</td><td>929</td><td>76%</td></tr>
-            <tr class="hi"><td>E. + ≥1 cloud-free water pixel (<b>USABLE</b>)</td><td>334</td><td>27.4%</td></tr>
-          </tbody>
-        </table>
-        <div class="fig-cap">Temporal matching is free (weekly mosaics are continuous — every visit fell inside a week).
-          The attrition is entirely <b>size + cloud</b>: 290 lakes are sub-resolvable at 300 m, then <b>595 of the 929</b>
-          resolvable lakes lost their specific week to cloud. From <code>analysis/cyan_nla_matchup/outputs/matchup_report.md</code>.</div>
-      </div>
-      <div class="col-txt">
-        <ul class="tight">
-          <li><b>CI vs lab chlorophyll-a:</b> ρ = <b>0.62</b> (n = 334) — moderate and robust. A floor of lakes have chlorophyll but no cyano signal, because chl-a is <em>total</em> algae while CI is cyanobacteria-specific.</li>
-          <li><b>CI vs microcystin:</b> ρ = <b>0.56</b> (n = 184 detections) — weaker, and a genuinely different target.</li>
-          <li><b>Poor toxin screen, both directions</b> (~60% agreement): <b>65</b> usable matches where CI sees cyano but no toxin (over-prediction), and <b>70</b> where CI sees nothing yet microcystin was detected (<b>missed toxins</b>).</li>
-        </ul>
-        <div class="note limitation"><span class="lbl">Usable set skews large</span> (median 515 ha) — a resolution-induced
-          bias that survey weights can’t fix, so it is <b>not representative</b> of the lake population.</div>
-      </div>
-    </div>
-    <div class="note honest"><span class="lbl">Verdict:</span> the CyAN↔in-situ bridge is <b>real but thin and cloud-limited</b> —
-      usable mainly for larger lakes, moderately good for biomass, and <b>not</b> a trustworthy toxin screen. So we treat CI as a
-      <b>screening / biomass</b> signal (never a toxin claim), carry the coverage limits explicitly, and use NLA’s lab toxins to
-      <b>bound</b> the CI→risk translation rather than assume it. NLA isn’t a forecast input — it tells us how far to trust the
-      signal the forecast runs on.</div>
-    <div class="step-meta">
-      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><b>CyAN↔NLA matchup</b> — our prototype analysis, <code>analysis/cyan_nla_matchup/</code> (report + README). A correlational / cross-sectional sizing exercise, not a formal validation.</div>
-        <div class="cite"><b>NLA</b> — EPA National Aquatic Resource Surveys / National Lakes Assessment (lab chl-a + microcystin). <a href="https://www.epa.gov/national-aquatic-resource-surveys" target="_blank" rel="noopener">epa.gov — NARS</a>.</div>
-      </div></details>
-      <details class="drop limits"><summary>Limitations of the matchup</summary><div class="body">
-        <ul class="lim">
-          <li><b>Cross-sectional &amp; correlational</b> — roughly one visit per lake, a sizing exercise, not a temporal validation.</li>
-          <li><b>Usable set biased large</b> (median 515 ha); survey weights can’t repair a resolution-induced exclusion.</li>
-          <li>Microcystin only on <b>detections</b> (n = 184); other cyanotoxins not covered.</li>
-        </ul>
-      </div></details>
-      <details class="drop terms"><summary>Terms</summary><div class="body">
-        <div class="term"><b>NLA</b> — EPA’s periodic probability survey of U.S. lakes with standardized lab measurements.</div>
-        <div class="term"><b>Microcystin</b> — the most common freshwater cyanotoxin; measured in the lab, not by satellite.</div>
-        <div class="term"><b>ρ (Spearman)</b> — rank correlation, −1…+1; ~0.6 ≈ moderate.</div>
-      </div></details>
     </div>
   </div>
 </section>
@@ -723,7 +633,7 @@
       <details class="drop limits"><summary>Limitations</summary><div class="body">
         <ul class="lim">
           <li><b>Depth is pending</b> a source (LakeCat / HydroLAKES) — morphology is currently area-only.</li>
-          <li>Weather is used as a <b>“perfect weather forecast”</b> for h≥1 — an upper bound on predictability, not operational skill.</li>
+          <li>Weather features are <b>antecedent</b> (trailing windows as-of the cutoff week, before the target) — operationally available, not an oracle; no signal from the forecast horizon itself.</li>
           <li>Derived features are <b>correlational</b>; their model importance is associational and inflatable by autocorrelation.</li>
         </ul>
       </div></details>
@@ -750,11 +660,13 @@
     forecast</b> (both cutoffs). The <b>onset</b> columns are the decision metric — skill on <em>positive flips</em>
     (currently-clear lakes that bloom next), not the both-direction transition metric that also counts blooms clearing.</p>
     <div id="baseline-tables"></div>
-    <div class="note honest"><span class="lbl">What we optimize vs how we judge:</span> we tune and report
+    <div class="note honest"><span class="lbl">What we optimize vs how we judge:</span> we report
     <b>MCC</b> as the headline balanced metric (robust to the ~29% imbalance, fair to hard 0/1 baselines). But
     aggregate AUC is near-saturated by CyAN autocorrelation, so it flatters everyone. The metric that matters is
-    <b>onset</b> (positive-flip) skill — and the order there is real: at 1 week, <b>fusion leads (onset-MCC 0.47)
-    &gt; climatology 0.39 &gt; CyAN-ladder 0.35 &gt; EPA ≈0.24 &gt; persistence 0</b> (persistence can never call a flip).</div>
+    <b>onset</b> (positive-flip) skill. On onset <b>ranking</b> (onset-AUC), <b>fusion and the CyAN-only ladder tie at ≈0.94</b>,
+    both beating climatology (0.90) and EPA (0.82). On the thresholded onset <b>alert</b> (onset-MCC, tuned on <em>validation</em>,
+    not test), the <b>CyAN-ladder (0.38), climatology (0.37) and fusion (0.35) are essentially tied</b> — fusion adds nothing over
+    the CyAN-only ladder, consistent with the feature-importance slide. (Persistence is 0 by construction.)</div>
     <div class="step-meta">
       <details class="drop terms"><summary>Terms — the metrics</summary><div class="body">
         <div class="metric-gloss">
@@ -781,6 +693,38 @@
     </div>
   </div>
 
+  <!-- Skill vs lead time — baseline predictors decay differently with lead (moved to follow the baselines slide) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Skill vs lead time (0–4 weeks)</div>
+    <h2>The baseline signal decays as we forecast further ahead.</h2>
+    <div class="split">
+      <div class="col-fig">
+        <div id="chart-horizon"></div>
+        <div class="fig-cap">All-sample AUC-ROC by lead time, on the shared FL 2025 EPA weeks — the horizons that extend EPA’s
+          single 1-week forecast. EPA is a <b>current-week nowcast</b> (one lead time), shown as a single point (≈0.93).</div>
+      </div>
+      <div class="col-txt">
+        <p class="sub" style="max-width:560px">These are the <b>reference / baseline</b> predictors and the CyAN ladder — <b>not</b>
+        our intended operational model (its own 0–4-week curve comes later). The result to read here: <b>the available signal
+        decays with lead time as the freshest CyAN goes stale, and each baseline degrades differently</b> — <b>persistence</b>
+        falls fastest, the <b>CyAN ladder</b> and full <b>fusion</b> candidate ride CyAN autocorrelation and decay gently,
+        <b>climatology</b> is flat (season-only, lead-independent), and <b>EPA</b> is a fixed one-week nowcast.</p>
+        <div class="step-meta">
+          <details class="drop limits"><summary>Limitations</summary><div class="body">
+            <ul class="lim">
+              <li>Shared EPA weeks only (Apr–Nov, 35 weeks); same-lake temporal validation, not transfer to unseen lakes.</li>
+              <li>EPA is a fixed current-week nowcast (one lead time) — a single point, not extrapolated across horizons.</li>
+              <li>This is <b>all-weeks AUC-ROC</b> (near-saturated by CyAN autocorrelation); the onset decision metric is compared at a fixed lead on the baselines slide, because cross-horizon onset-MCC is base-rate-confounded (onset rate 3.7%→7.2% over h0→h4).</li>
+            </ul>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><code>models/outputs/headtohead_onset.md</code> — all predictors on identical shared weeks; AUC-ROC per horizon, parsed into <code>results.json</code>.</div>
+          </div></details>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Model families we trial / don't, and why -->
   <div class="slide" data-layout="wide">
     <div class="kicker">Model families</div>
@@ -791,7 +735,6 @@
         <ul class="tight">
           <li><b>Regularized logistic GLM</b> — transparent, signed coefficients as log-odds.</li>
           <li><b>Gradient-boosted trees — XGBoost / HistGBM</b> — handle sparse in-situ NaNs natively, robust to outliers and mixed scales, strong on tabular data, still explainable (SHAP / partial dependence).</li>
-          <li>(A logistic <b>GAM</b> and an <b>SVC</b> round out the explainable spread in the design.)</li>
         </ul>
         <h4 style="color:var(--warn);margin:12px 0 4px">We don’t trial (here):</h4>
         <ul class="tight">
@@ -802,7 +745,6 @@
         <div class="note honest"><span class="lbl">Why:</span> the data regime and the goal both point away from deep nets.
           <ul class="lim" style="margin-top:6px">
             <li><b>Wide feature set, limited/rare targets</b> — many heterogeneous features but relatively few bloom onsets; deep nets are data-hungry and would overfit, while boosted trees and regularized linear models are robust to that ratio and to outliers.</li>
-            <li><b>Explainability is a hard requirement</b> — we must show <em>why</em> each driver matters; neural nets are far harder to interpret defensibly.</li>
             <li><b>Sparse, irregular in-situ</b> with many NaNs — GBDTs handle missingness natively; NNs need imputation that invents structure.</li>
             <li><b>Compute / time</b> — for a PoC the marginal accuracy of a tuned NN doesn’t justify the cost, and EPA’s own comparison shows NNs don’t beat simpler models on this task.</li>
           </ul>
@@ -811,8 +753,11 @@
     </div>
     <div style="margin-top:6px"><div id="chart-families"></div>
       <div class="fig-cap">All-feature model families vs baselines and the CyAN-only ladder (h=1, held-out 2024–2026): <b>AUC-ROC</b> and
-        <b>MCC</b> on all weeks. The families are near-identical on aggregate; the GBDTs (HistGBM/XGBoost) edge the GLM. From
-        <code>models/outputs/experiments.md</code>.</div></div>
+        <b>MCC</b> on all weeks, plus the <b>onset</b> (positive-flip) decision metric — <b>onset-AUC</b> and <b>onset-MCC</b> (lighter bars).
+        <span style="color:#e60000;font-weight:700">Red outline</span> = the three families we actually test (GLM · HistGBM · XGBoost);
+        the rest are reference baselines. On aggregate the families are near-identical; on the onset alert they <b>don’t cleanly separate
+        from the baselines</b> (onset-MCC: HistGBM 0.40 leads, but XGBoost 0.28 and GLM 0.29 sit below even climatology’s 0.36) — architecture
+        barely matters and seasonality competes. From <code>models/outputs/experiments.md</code>.</div></div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
         <div class="cite"><b>Model-family choice</b> — <code>models/DESIGN.md</code> §7 (four explainable classifiers: GLM · SVC · XGBoost · GAM). EPA’s own SVC/RF/DNN/LSTM/RNN/GRU comparison (Schaeffer 2024, Table S1) shows no neural-net advantage on this task.</div>
@@ -820,104 +765,107 @@
     </div>
   </div>
 
-  <!-- Skill vs lead time — AUC + onset-MCC, 5 model classes incl EPA -->
-  <div class="slide" data-layout="wide">
-    <div class="kicker">Skill vs lead time (0–4 weeks)</div>
-    <h2>Aggregate skill decays gently; onset skill is where the models separate.</h2>
-    <p class="sub" style="max-width:1140px">All five predictors on the shared FL 2025 EPA weeks, across lead times.
-    <b>Left:</b> overall AUC-ROC. <b>Right:</b> <b>onset-MCC</b> — positive-flip (clear→bloom) skill, the early-warning
-    metric. EPA is a fixed current-week nowcast, so it shows flat across our horizons.</p>
-    <div class="split">
-      <div class="col-fig">
-        <div id="chart-horizon"></div>
-        <div class="fig-cap">AUC-ROC by lead time. Fusion and the CyAN ladder ride high (CyAN autocorrelation); persistence decays with lead; EPA flat ≈0.93.</div>
-      </div>
-      <div class="col-fig">
-        <div id="chart-horizon-onset"></div>
-        <div class="fig-cap">onset-MCC (positive flips) by lead time. The fusion model posts the best alert <b>only at h1</b>; at <b>h0 and h2–h4 plain climatology (seasonality) ties or beats it</b>; EPA and the ladder trail.</div>
-      </div>
-    </div>
-    <div class="note honest"><span class="lbl">The honest read:</span> on aggregate AUC the models are near-identical and strong —
-      but that is <b>mostly CyAN autocorrelation</b>. On onsets, the fusion model posts the best alert <b>only at h1</b> (onset-MCC 0.47);
-      at every other horizon <b>plain seasonal climatology ties or beats it</b>. And importance testing (next slide) shows even that h1 edge is the
-      <b>CyAN signal plus model nonlinearity</b>, not the weather / in-situ / morphology drivers. Honest read: we rank near-term onsets
-      well, but the added drivers don’t earn their place, and seasonality is hard to beat at longer leads.</div>
-    <div class="step-meta">
-      <details class="drop limits"><summary>Limitations</summary><div class="body">
-        <ul class="lim">
-          <li>Shared EPA weeks only (Apr–Nov, 35 weeks); same-lake temporal validation, not transfer to unseen lakes.</li>
-          <li>EPA held flat across horizons (fixed current-week nowcast) — flatters EPA at long lead in relative terms.</li>
-          <li>The currently-clear (onset) subset grows with horizon (120→236 weeks); read with the sample sizes in the source.</li>
-        </ul>
-      </div></details>
-      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><code>models/outputs/headtohead_onset.md</code> — all five model classes on identical shared weeks; AUC + onset-MCC per horizon, parsed into <code>results.json</code>.</div>
-      </div></details>
-    </div>
-  </div>
-
-  <!-- Feature importance & selection (REAL block importance + PENDING final selection) -->
+  <!-- Feature importance & selection (block importance + greedy 2-feature result) -->
   <div class="slide" data-layout="wide">
     <div class="kicker">Feature importance &amp; selection</div>
-    <h2>The fusion is a negative result: CyAN does the work.</h2>
+    <h2>Which feature families earn their place.</h2>
     <div class="split">
       <div class="col-fig">
         <div id="chart-ablation"></div>
         <div class="fig-cap">Each bar is the full-model test AUC (0.983); the <span style="color:#e60000;font-weight:700">bright-red</span>
-          segment is the AUC <b>lost when that block is shuffled</b>. CyAN is nearly all of it. The 27-cluster permutation test
-          (<code>exp_perm_importance.md</code>) corroborates.</div>
+          segment is the AUC <b>lost when that block is shuffled</b>. CyAN autocorrelation is nearly all of it. From <code>models/outputs/fusion_eval.md</code>.</div>
+        <div id="chart-ablation-onset" style="margin-top:16px"></div>
+        <div class="fig-cap">Same block shuffle, but scored on the <b>onset alert</b> (onset-MCC; full model 0.334; mean of 20 shuffles ± SD).
+          CyAN still dominates (−0.25), but — unlike pooled AUC — the non-CyAN blocks show a <b>modest</b> onset-MCC drop
+          (in-situ −0.09, static −0.07, weather −0.05). That is permutation <em>reliance</em> under broken correlations, <b>not</b>
+          unique value: block <em>ablation</em> (actually removing a block) barely moves skill, and the 27-cluster test caps any single
+          non-CyAN cluster below 0.04 — the redundant-but-exploited pattern (like <code>clim</code>). From <code>models/outputs/fusion_eval.md</code>.</div>
       </div>
       <div class="col-txt">
         <ul class="tight">
-          <li><b>CyAN is ~100% of the skill.</b> Correlation-clustered permutation: the real-time-CyAN cluster carries Δonset-MCC <b>+0.46</b> and Δpooled-AUC <b>+0.47</b>; scrambling it <b>collapses the model to a coin flip</b> (onset-MCC 0.466→0.002, pooled AUC 0.980→0.514) — on every architecture.</li>
-          <li><b>Every other family is small and inconsistent.</b> Weather, in-situ, static, season each ≤ <b>+0.038</b> on onset-MCC, ≈0 on AUC, and <b>flip sign</b> across GLM/HistGBM/XGBoost — <b>no robust incremental held-out skill</b>. (Not “no signal”: the univariate screens <em>did</em> find weather/nutrient associations — they just add nothing on top of CyAN.)</li>
-          <li><b>A 2-feature model matches the 44-feature one.</b> Greedy backward elimination strips to <code>cyan_median</code> + <code>area</code> with no significant held-out AUC loss — massive redundancy (47 feature pairs at |r| &gt; 0.8).</li>
-          <li><b><code>clim</code> is a memorization shortcut.</b> The per-lake seasonal base rate is leaned on as hard as all real-time CyAN (Δonset-MCC +0.351) yet removing it costs only 0.068 — kept as a <em>baseline</em>, not a feature; the deployable model is <b>clim-free</b> and generalizable.</li>
+          <li><b>CyAN autocorrelation dominates</b> — shuffling it costs ~0.27 AUC; weather, in-situ, static and season each add only <b>thousandths</b>.</li>
+          <li><b>Same verdict on the onset <em>alert</em> (onset-MCC) — see the second chart:</b> CyAN dominates the alert too (−0.25 of a 0.334 baseline). The non-CyAN blocks show a <em>modest</em> onset-MCC drop that pooled AUC can’t see — but that is permutation <b>reliance</b> under broken correlations, <b>not</b> unique value: removing a block barely moves skill, and the 27-cluster test caps any single non-CyAN cluster below 0.04. The fusion-negative holds on the decision metric too. <span class="sub">(<code>fusion_eval.md</code> blocks; <code>exp_perm_importance.md</code> clusters.)</span></li>
+          <li>Drop-one agrees: removing CyAN takes AUC 0.985→0.949; removing any other block barely moves it.</li>
+          <li>All fusion features over the CyAN ladder buy a <b>small, real</b> lift: paired within-lake <b>+0.015 AUC</b> [+0.003, +0.021], positive in 67% of 60 lakes.</li>
+          <li><b>The features are heavily cross-correlated</b> — they cluster into ~27 groups at |r| ≥ 0.7, so block-shuffling <em>understates</em> individual features. A <b>clustered-permutation test</b> and <b>greedy backward elimination</b> (both run) confirm the picture: only the CyAN cluster carries robust skill, and a 2-feature model (<code>cyan_median</code> + area) matches the 44-feature one.</li>
         </ul>
-        <div class="note honest"><span class="lbl">This is a good outcome, honestly reported.</span> Aligns with the literature (slide 4):
+        <div class="note honest"><span class="lbl">Alignment with the literature (slide 4):</span> published models rank
           <span style="color:var(--era5);font-weight:700">temperature</span> and <span style="color:var(--wqp);font-weight:700">nutrients</span>
-          explain <em>why</em> lakes bloom, but for a short-horizon forecast of an autocorrelated
-          <span style="color:var(--cyan);font-weight:700">CyAN</span> target, the target’s own recent level answers <em>when</em>. A
-          well-validated <b>simple</b> model beat the complex one — exactly what the brief prizes.</div>
+          as top drivers — the <span style="color:var(--era5);font-weight:700">ERA5</span> and <span style="color:var(--wqp);font-weight:700">WQP</span>
+          families. They still matter, but in a short-horizon forecast of an autocorrelated
+          <span style="color:var(--cyan);font-weight:700">CyAN</span> target, the target’s own recent history swamps them. The
+          literature explains <em>why</em> lakes bloom; our task is <em>when</em>.</div>
       </div>
     </div>
+    <div class="note insight"><span class="lbl">Selection result (greedy backward elimination):</span> stripping 44 features to
+      <b>2</b> — <code>cyan_median</code> + lake <b>area</b> — loses <b>no significant held-out AUC</b> (pooled AUC 0.982 vs 0.980;
+      onset-AUC 0.916 vs 0.929, bootstrap CI includes 0). It does give up some thresholded onset-MCC (0.31 vs 0.47) — the lean set
+      ties on <em>ranking</em> but not the <em>alert threshold</em>. The literature’s temperature/nutrient drivers (slide 4) don’t
+      survive selection here: real-time CyAN carries the skill. <span class="sub">(2-yr held-out test; <code>exp_feature_ablation.md</code>.)</span></div>
     <div class="step-meta">
       <details class="drop limits"><summary>Limitations</summary><div class="body">
         <ul class="lim">
           <li>Importance is <b>associational</b> and inflated by autocorrelation — not causal.</li>
           <li>Same-lake temporal validation only; static + nearest-cell weather can still <b>fingerprint place</b>.</li>
-          <li>“Small / inconsistent” ≠ “no signal” — sparse in-situ (NWIS 25, WQP 123 lakes) and coarse weather likely <b>understate</b> drivers; a denser/harmonized pull could change this.</li>
+          <li>In-situ blocks are <b>sparsely covered</b> (NWIS 25, WQP 123 lakes) → their importance is understated where data is missing.</li>
         </ul>
       </div></details>
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><b>Clustered permutation importance</b> — <code>models/outputs/exp_perm_importance.md</code>; <b>clim decomposition</b> — <code>exp_perm_c1_decomp.md</code>; <b>2-feature greedy ablation</b> — <code>exp_feature_ablation.md</code>; block view — <code>fusion_eval.md</code>. Synopsis: <code>models/RESULTS-SUMMARY.md</code>.</div>
+        <div class="cite"><code>models/outputs/fusion_eval.md</code> (permutation + drop-one + paired lift), <code>exp_feature_ablation.md</code> (greedy selection).</div>
       </div></details>
     </div>
   </div>
 
-  <!-- Final post-ablation model @ 1 week vs baselines (PENDING) -->
+  <!-- Final model @ 1 week vs baselines (REAL) -->
   <div class="slide" data-layout="wide">
     <div class="kicker">Final model — 1-week lead</div>
-    <h2>The post-ablation model at 1 week, against the baselines.</h2>
-    <p class="sub" style="max-width:1100px">The final, feature-selected model at the EPA-comparable 1-week lead, scored against
-    the same bar from the baselines slide (persistence · CyAN ladder · climatology · EPA @0.10 / @0.50).</p>
-    <div class="placeholder"><span class="tag">⏳ PENDING MODEL RUN</span><div class="what">Final-model AUC-ROC / AUC-PR / Brier / MCC and the flip (onset) metrics at h=1, next to every baseline, with clustered CIs.</div><div class="src">Replaces this frame once the post-ablation model is finalized. We will state plainly where it beats the baselines and where it does not — a negative result here is a real, reportable finding.</div></div>
-    <div class="note honest"><span class="lbl">How we’ll judge it honestly:</span> the test is not aggregate AUC (near-saturated by
-      CyAN autocorrelation) but <b>onset (positive-flip) skill</b> and <b>calibration</b> — does it catch new blooms without drowning the
-      user in false alarms, and does its probability mean what it says? The bar to beat on onsets is <b>climatology</b> (onset-MCC 0.39);
-      the all-feature fusion already clears it (0.47), so the open question is whether the leaner selected model holds that edge.</div>
+    <h2>The feature-selected model at 1 week, against the baselines.</h2>
+    <p class="sub" style="max-width:1160px">The greedy-selected model at the EPA-comparable 1-week lead (2-year held-out test).
+    <b>onset-AUC</b> ranks currently-clear lakes that bloom next; <b>onset-MCC</b> is the thresholded alert.</p>
+    <div style="overflow-x:auto">
+    <table class="res" style="max-width:900px">
+      <thead><tr><th>Model (h=1, 2-yr held-out test)</th><th>pooled AUC</th><th>onset-AUC</th><th>onset-MCC</th></tr></thead>
+      <tbody>
+        <tr><td><b>Full fusion (44 features, incl. clim)</b></td><td>0.980</td><td>0.929</td><td>0.466</td></tr>
+        <tr class="hi"><td><b>Lean CyAN model (2 features: median + area)</b></td><td>0.982</td><td>0.916</td><td>0.314</td></tr>
+        <tr><td>Climatology (baseline)</td><td>0.936</td><td>0.851</td><td>0.323</td></tr>
+        <tr><td>EPA forecast @0.10</td><td>0.931</td><td>0.831</td><td>0.248</td></tr>
+        <tr><td>Persistence</td><td>0.926</td><td>0.500</td><td>0.000</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note honest"><span class="lbl">The answer to the open question:</span> the <b>2-feature lean model matches the
+      44-feature</b> on ranking (pooled AUC 0.982; onset-AUC 0.916, not significantly worse) and <b>beats EPA and climatology on onset
+      ranking</b> — competitive with the federal product, generalizable, explainable. The full model’s thresholded
+      <b>onset-MCC</b> edge (0.47 vs 0.31) comes mostly from the <code>clim</code> per-lake base-rate feature (a memorization
+      shortcut, feature-importance slide) — with <code>clim</code> removed, fusion only <b>ties</b> the CyAN-only ladder on the onset
+      alert (baselines slide). So the deployable choice is the compact, clim-free real-time-CyAN model.</div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (greedy backward, 2-yr test) + <code>headtohead_onset.md</code> (shared-2025); synopsis <code>models/RESULTS-SUMMARY.md</code> §4/§8.</div>
+      </div></details>
+    </div>
   </div>
 
-  <!-- Final model skill vs lead time 0-4 (PENDING) -->
+  <!-- Final model skill vs lead time 0-4 (REAL) -->
   <div class="slide" data-layout="wide">
     <div class="kicker">Final model — skill vs lead time</div>
-    <h2>How the final model holds up from 0 to 4 weeks.</h2>
-    <p class="sub" style="max-width:1100px">The post-ablation model’s skill (and its decay) across every lead time, 0–4 weeks —
-    the horizons that extend EPA’s single 1-week forecast.</p>
-    <div class="placeholder"><span class="tag">⏳ PENDING MODEL RUN</span><div class="what">Final-model skill-vs-lead curve (0–4 wk), threshold-free and flip metrics, against persistence, climatology, the ladder and EPA.</div><div class="src">Fills once the final model is run across horizons.</div></div>
-    <div class="note honest"><span class="lbl">Transparent up front:</span> longer leads lose the freshest CyAN, so we expect
-      aggregate skill to fall with horizon (the all-feature pre-ablation model already shows this, AUC 0.99→0.97 over 0–4 wk). The
-      honest open question is whether the fusion drivers slow that decay on the <b>onset</b> weeks that matter — where, so far, they do not.</div>
+    <h2>Levels forecast well at every lead; transitions stay hard.</h2>
+    <p class="sub" style="max-width:1160px">Across 0–4 weeks (2-year held-out test) — the horizons that extend EPA’s single
+    1-week forecast.</p>
+    <ul class="tight">
+      <li><b>Aggregate skill decays gently</b> 0→4 weeks (slide 15): pooled AUC ~0.99→0.97, well above persistence; the 2-feature lean model tracks the full model.</li>
+      <li><b>Transitions stay hard at every lead:</b> the general-transition MCC (onset + offset) is <b>negative at all horizons</b> (full model −0.48→−0.12 over h0→h4; the lean model worse) — we forecast the bloom <em>level</em> well but the <em>change</em> poorly.</li>
+      <li><b>Positive-only onset skill</b> (the decision metric) is strongest at the 1-week lead and is compared at a fixed lead on the baselines slide — cross-horizon onset-MCC is base-rate-confounded (the skill-vs-lead-time slide).</li>
+    </ul>
+    <div class="note honest"><span class="lbl">The honest finding:</span> the model extends EPA’s 1-week horizon to a 0–4-week curve
+      on aggregate skill, but the scientifically hard <b>onset/offset timing</b> problem is <b>not solved</b> at any lead. A clear,
+      reportable negative — and it points the next effort at transition-week skill.</div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (flip-MCC by horizon) and <code>fusion_eval.md</code> (AUC curve); onset at fixed lead in <code>headtohead_onset.md</code>.</div>
+      </div></details>
+    </div>
   </div>
 
   <!-- Defensibility -->
@@ -925,8 +873,8 @@
     <h2>Where the leakage is, and how we guarded it.</h2>
     <ul class="tight">
       <li><b>Circularity:</b> the target is CyAN-derived, so CyAN features are <b>antecedent-only</b> (never the target week); persistence uses the same latency-corrected week, so the model never sees fresher CyAN than the baseline it must beat.</li>
-      <li><b>Temporal split</b> by held-out year (train ≤2023 / tune 2024 / test 2025), not a random shuffle on autocorrelated lake-weeks; normalization and feature selection fit on train only.</li>
-      <li><b>“Perfect weather forecast” caveat</b> (coincident ERA5 for h≥1 — an upper bound, not operational skill); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
+      <li><b>Temporal splits</b> (~60/20/20), never a random shuffle on autocorrelated lake-weeks: the <b>feature / ablation experiments</b> use <b>train &lt; 2022-07 / val 2022-07→2024-07 / test ≥ 2024-07</b> (a 2-year held-out test); the <b>EPA head-to-head &amp; baselines</b> use <b>train ≤ 2023 / val 2024 / test 2025</b> (matching EPA’s issue dates). Normalization and feature selection are fit on train (+val) only.</li>
+      <li><b>Fully antecedent inputs</b> — CyAN, weather (trailing windows), and in-situ are all as-of the cutoff week, never the target week, so this is an <em>operational</em> forecast (no oracle); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
       <li><b>Clustered</b> confidence intervals (block bootstrap by lake/week), never row-level.</li>
     </ul>
     <div class="step-meta">
@@ -1078,6 +1026,67 @@
 </section>
 
 
+<!-- ==================== APPENDIX — TRUSTING THE CyAN SIGNAL (CyAN<->NLA matchup) ==================== -->
+<section class="part" id="appendix">
+  <div class="part-label">Appendix · Trusting the signal — CyAN ↔ EPA lab samples</div>
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Signal check — CyAN ↔ EPA National Lakes Assessment</div>
+    <h2>How far can we trust the signal the forecast runs on?</h2>
+    <p class="sub" style="max-width:1120px">We matched CyAN pixels to independent <b>EPA National Lakes Assessment (NLA)</b>
+    lab samples — chlorophyll-a and microcystin — to put numbers on CyAN’s reach and its limits. Two things fall out:
+    a steep <b>coverage funnel</b>, and a <b>biomass-yes / toxin-no</b> gap.</p>
+    <div class="split">
+      <div class="col-fig">
+        <table class="res" style="max-width:660px">
+          <thead><tr><th>Attrition funnel (NLA lake-visits)</th><th>Lakes</th><th>%</th></tr></thead>
+          <tbody>
+            <tr><td>A. Sampled visits with lab chl-a</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>B. + has a lake polygon</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>C. + temporally matched to a weekly mosaic</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>D. + resolvable at 300 m (≥1 in-lake pixel)</td><td>929</td><td>76%</td></tr>
+            <tr class="hi"><td>E. + ≥1 cloud-free water pixel (<b>USABLE</b>)</td><td>334</td><td>27.4%</td></tr>
+          </tbody>
+        </table>
+        <div class="fig-cap">Temporal matching is free (weekly mosaics are continuous — every visit fell inside a week).
+          The attrition is entirely <b>size + cloud</b>: 290 lakes are sub-resolvable at 300 m, then <b>595 of the 929</b>
+          resolvable lakes lost their specific week to cloud. From <code>analysis/cyan_nla_matchup/outputs/matchup_report.md</code>.</div>
+      </div>
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>CI vs lab chlorophyll-a:</b> ρ = <b>0.62</b> (n = 334) — moderate and robust. A floor of lakes have chlorophyll but no cyano signal, because chl-a is <em>total</em> algae while CI is cyanobacteria-specific.</li>
+          <li><b>CI vs microcystin:</b> ρ = <b>0.56</b> (n = 184 detections) — weaker, and a genuinely different target.</li>
+          <li><b>Poor toxin screen, both directions</b> (~60% agreement): <b>65</b> usable matches where CI sees cyano but no toxin (over-prediction), and <b>70</b> where CI sees nothing yet microcystin was detected (<b>missed toxins</b>).</li>
+        </ul>
+        <div class="note limitation"><span class="lbl">Usable set skews large</span> (median 515 ha) — a resolution-induced
+          bias that survey weights can’t fix, so it is <b>not representative</b> of the lake population.</div>
+      </div>
+    </div>
+    <div class="note honest"><span class="lbl">Verdict:</span> the CyAN↔in-situ bridge is <b>real but thin and cloud-limited</b> —
+      usable mainly for larger lakes, moderately good for biomass, and <b>not</b> a trustworthy toxin screen. So we treat CI as a
+      <b>screening / biomass</b> signal (never a toxin claim), carry the coverage limits explicitly, and use NLA’s lab toxins to
+      <b>bound</b> the CI→risk translation rather than assume it. NLA isn’t a forecast input — it tells us how far to trust the
+      signal the forecast runs on.</div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>CyAN↔NLA matchup</b> — our prototype analysis, <code>analysis/cyan_nla_matchup/</code> (report + README). A correlational / cross-sectional sizing exercise, not a formal validation.</div>
+        <div class="cite"><b>NLA</b> — EPA National Aquatic Resource Surveys / National Lakes Assessment (lab chl-a + microcystin). <a href="https://www.epa.gov/national-aquatic-resource-surveys" target="_blank" rel="noopener">epa.gov — NARS</a>.</div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations of the matchup</summary><div class="body">
+        <ul class="lim">
+          <li><b>Cross-sectional &amp; correlational</b> — roughly one visit per lake, a sizing exercise, not a temporal validation.</li>
+          <li><b>Usable set biased large</b> (median 515 ha); survey weights can’t repair a resolution-induced exclusion.</li>
+          <li>Microcystin only on <b>detections</b> (n = 184); other cyanotoxins not covered.</li>
+        </ul>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>NLA</b> — EPA’s periodic probability survey of U.S. lakes with standardized lab measurements.</div>
+        <div class="term"><b>Microcystin</b> — the most common freshwater cyanotoxin; measured in the lab, not by satellite.</div>
+        <div class="term"><b>ρ (Spearman)</b> — rank correlation, −1…+1; ~0.6 ≈ moderate.</div>
+      </div></details>
+    </div>
+  </div>
+</section>
+
 <script src="vendor/leaflet.js"></script>
 <script src="vendor/plotly.min.js"></script>
 <script src="data/story_data.js"></script>
@@ -1162,7 +1171,11 @@
     if (S.basins) LYR.basins=L.geoJSON(S.basins,{pane:'basins',interactive:false,
       style:{color:'#6b4fb0',weight:2,fillColor:'#7a5cc0',fillOpacity:0.06,opacity:0.9}});  // thicker, easier to see
     // in-situ points (canvas)
-    if (S.nwis) LYR.nwis=L.geoJSON(S.nwis,{pane:'nwis',pointToLayer:function(f,ll){ return L.circleMarker(ll,nwisStyle(f)); }});
+    if (S.nwis) LYR.nwis=L.geoJSON(S.nwis,{pane:'nwis',
+      pointToLayer:function(f,ll){ return L.circleMarker(ll,nwisStyle(f)); },
+      onEachFeature:function(f,layer){ var p=f.properties||{};
+        var v=(p.kind==='nodata')?'no data pulled':(p.vars||'—');
+        layer.bindTooltip((p.site_id||'NWIS gage')+' · '+v,{sticky:true}); }});
     if (S.wqp) LYR.wqp=L.geoJSON(S.wqp,{pane:'wqp',pointToLayer:function(f,ll){ return L.circleMarker(ll,wqpStyle(f)); }});
     // ERA5 grid (real 0.25 deg spacing over the FL view)
     LYR.era5=era5Grid();
@@ -1215,12 +1228,10 @@
   var STEP={
     1:{layers:['cyan'],                     slider:true,  cam:'cyan', freq:false, focus:null},
     2:{layers:['cyan','lakes'],             slider:true,  cam:'cyan', freq:false, focus:null},
-    3:{layers:['basins','lakes'],           slider:false, cam:'fl',   freq:false, focus:null},
-    4:{layers:['basins','lakes','nwis'],    slider:false, cam:'fl',   freq:false, focus:null},
-    5:{layers:['basins','lakes','wqp'],     slider:false, cam:'fl',   freq:false, focus:null},
-    6:{layers:['era5','lakes'],             slider:false, cam:'fl',   freq:false, focus:null},
-    7:{layers:['lakes'],                    slider:false, cam:'okee', freq:false, focus:/okeechobee/},
-    8:{layers:['lakes'],                    slider:false, cam:'fl',   freq:true,  focus:null}
+    3:{layers:['basins','lakes','nwis'],    slider:false, cam:'fl',   freq:false, focus:null},
+    4:{layers:['basins','lakes','wqp'],     slider:false, cam:'fl',   freq:false, focus:null},
+    5:{layers:['era5','lakes'],             slider:false, cam:'fl',   freq:false, focus:null},
+    6:{layers:['lakes'],                    slider:false, cam:'okee', freq:false, focus:/okeechobee/}
   };
   function morphFL(n){
     if(!fl) return; var st=STEP[n]; if(!st) return;
@@ -1228,7 +1239,7 @@
     setFreq(st.freq);
     showLayers(st.layers);
     slider(st.slider);
-    if(st.focus){ var t=findLake(st.focus); highlight(t); if(t){ fl.map.fitBounds(t.getBounds().pad(1.4),{animate:true,duration:.7}); if(n===7) t.openPopup(); } }
+    if(st.focus){ var t=findLake(st.focus); highlight(t); if(t){ fl.map.fitBounds(t.getBounds().pad(1.4),{animate:true,duration:.7}); if(n===6) t.openPopup(); } }
     else if(st.cam==='cyan' && S.flcyan && S.flcyan.bounds){ highlight(null); fl.map.fitBounds(S.flcyan.bounds,{padding:[16,16],animate:true}); }
     else { highlight(null); fitAll(); }
   }
@@ -1346,6 +1357,29 @@
       xaxis:{title:'test AUC-ROC (full model = '+base.toFixed(3)+')',range:[0.6,1.0],fixedrange:true,gridcolor:'#eef2f3'},
       yaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
   }
+  /* ---------- Plotly: same block shuffle, scored on the ONSET ALERT (onset-MCC), loss in red ---------- */
+  function chartAblationOnset(){
+    var el=document.getElementById('chart-ablation-onset'); if(!el||!S.results||!S.results.ablation) return;
+    var B=S.results.ablation, base=(B.baseline_onsetmcc!=null?B.baseline_onsetmcc:0.334);
+    var LAB={CYAN:'CyAN (satellite)',INSITU:'In-situ (NWIS+WQP)',STATIC:'Static / basin',WEATHER:'Weather (ERA5)',SEASON:'Season'};
+    var pi=(B.perm_importance||[]).filter(function(r){return r.onset_drop!=null;}).slice()
+            .sort(function(a,b){return a.onset_drop-b.onset_drop;});   // biggest drop at top
+    var y=pi.map(function(r){return LAB[r.block]||r.block;});
+    var lost=pi.map(function(r){return +(+r.onset_drop).toFixed(4);});
+    var retained=pi.map(function(r){return +(base-r.onset_drop).toFixed(4);});
+    var sd=pi.map(function(r){return r.onset_drop_std!=null?+r.onset_drop_std:0;});
+    var data=[
+      {type:'bar',orientation:'h',name:'onset-MCC retained after shuffle',x:retained,y:y,marker:{color:'#c9bce0'},
+        hovertemplate:'%{y}<br>onset-MCC after shuffle: %{x:.3f}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'onset-MCC lost (bright red)',x:lost,y:y,marker:{color:'#e60000'},customdata:sd,
+        text:lost.map(function(v){return v>=0.01?('−'+v.toFixed(2)):'';}),textposition:'outside',cliponaxis:false,
+        hovertemplate:'%{y}<br>onset-MCC lost when shuffled: %{x:.3f} ± %{customdata:.3f} (SD, 20 shuffles)<extra></extra>'}
+    ];
+    Plotly.newPlot(el,data,{barmode:'stack',font:PLOT_FONT,margin:{l:130,r:44,t:10,b:36},
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
+      xaxis:{title:'onset-MCC (full model = '+base.toFixed(3)+')',range:[0,0.38],fixedrange:true,gridcolor:'#eef2f3'},
+      yaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
+  }
   /* ---------- Plotly: skill vs lead time — 5 model classes incl EPA ---------- */
   var HZ_MODELS=[['persistence','Persistence','#8a99a0','dash'],['climatology','Climatology','#b9770c','dot'],
                  ['CyAN-ladder','CyAN ladder','#8c6bb1','solid'],['fusion','Fusion','#0f6e78','solid'],
@@ -1354,6 +1388,11 @@
     if(!el||!S.results||!S.results.onset_horizon) return;
     var hz=S.results.onset_horizon, hs=[0,1,2,3,4];
     var data=HZ_MODELS.map(function(m){
+      if(m[0]==='EPA'){ // a current-week nowcast has ONE lead time -> single point at h=1
+        var e=hz.filter(function(x){return x.h===1&&x.model==='EPA';})[0];
+        return {type:'scatter',mode:'markers',name:m[1]+' (1-wk nowcast)',x:[1],y:[e?e[key]:null],
+          marker:{color:m[2],size:11,symbol:'diamond'},hovertemplate:m[1]+' (fixed nowcast)<br>h=1: %{y:.3f}<extra></extra>'};
+      }
       var y=hs.map(function(h){ var r=hz.filter(function(x){return x.h===h&&x.model===m[0];})[0]; return r?r[key]:null; });
       return {type:'scatter',mode:'lines+markers',name:m[1],x:hs,y:y,line:{color:m[2],width:2,dash:m[3]},marker:{size:5},
         hovertemplate:m[1]+'<br>h=%{x}: %{y:.3f}<extra></extra>'};
@@ -1373,11 +1412,23 @@
     var SHORT={'Persistence':'Persist.','Climatology':'Clim.','CyAN ladder (HistGBM)':'CyAN ladder',
       'GLM · logistic (all features)':'GLM','HistGBM (all features)':'HistGBM','XGBoost (all features)':'XGBoost'};
     var x=rows.map(function(r){return SHORT[r.label]||r.label;});
+    // red outline = the models WE test (GLM / HistGBM / XGBoost); baselines + CyAN ladder are references
+    var isOurs=rows.map(function(r){return r.kind==='family';});
+    var bcol=isOurs.map(function(o){return o?'#e60000':'rgba(0,0,0,0)';});
+    var bw=isOurs.map(function(o){return o?2.5:0;});
     var data=[
-      {type:'bar',name:'AUC-ROC (all weeks)',x:x,y:rows.map(function(r){return r.auc;}),marker:{color:'#0f6e78'},
+      {type:'bar',name:'AUC-ROC (all weeks)',x:x,y:rows.map(function(r){return r.auc;}),
+        marker:{color:'#0f6e78',line:{color:bcol,width:bw}},
         hovertemplate:'%{x}<br>AUC-ROC %{y:.3f}<extra></extra>'},
-      {type:'bar',name:'MCC (all weeks)',x:x,y:rows.map(function(r){return r.mcc;}),marker:{color:'#6b4fb0'},
-        hovertemplate:'%{x}<br>MCC %{y:.3f}<extra></extra>'}
+      {type:'bar',name:'MCC (all weeks)',x:x,y:rows.map(function(r){return r.mcc;}),
+        marker:{color:'#6b4fb0',line:{color:bcol,width:bw}},
+        hovertemplate:'%{x}<br>MCC %{y:.3f}<extra></extra>'},
+      {type:'bar',name:'onset-AUC (positive flips)',x:x,y:rows.map(function(r){return r.onset_auc;}),
+        marker:{color:'#7fbec7',line:{color:bcol,width:bw}},
+        hovertemplate:'%{x}<br>onset-AUC %{y:.3f}<extra></extra>'},
+      {type:'bar',name:'onset-MCC (positive flips)',x:x,y:rows.map(function(r){return r.onset_mcc;}),
+        marker:{color:'#b39ddb',line:{color:bcol,width:bw}},
+        hovertemplate:'%{x}<br>onset-MCC %{y:.3f}<extra></extra>'}
     ];
     Plotly.newPlot(el,data,{font:PLOT_FONT,barmode:'group',margin:{l:44,r:10,t:10,b:56},
       paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
@@ -1415,7 +1466,7 @@
   }
 
   function resizePlots(){
-    ['chart-features','chart-ablation','chart-horizon','chart-horizon-onset','chart-families']
+    ['chart-features','chart-ablation','chart-horizon','chart-families']
       .concat([].slice.call(document.querySelectorAll('#chart-tools>div')))
       .forEach(function(x){ var el=(typeof x==='string')?document.getElementById(x):x; if(el&&el.data) Plotly.Plots.resize(el); });
   }
@@ -1433,7 +1484,7 @@
     numberSlides();
     initFL();
     chartTools(); chartFeatures(); renderToolSources(); renderModelSources();
-    baselineTables(); chartAblation(); chartHorizon(); chartHorizonOnset(); chartFamilies(); renderOkeechobee();
+    baselineTables(); chartAblation(); chartAblationOnset(); chartHorizon(); chartFamilies(); renderOkeechobee();
   }
   if (document.readyState==='complete' || document.readyState==='interactive') boot();
   else window.addEventListener('DOMContentLoaded', boot);
