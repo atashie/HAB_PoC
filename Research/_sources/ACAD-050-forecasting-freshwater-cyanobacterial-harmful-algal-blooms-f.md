@@ -107,6 +107,39 @@ Authors explicitly state: (1) the satellite/model resolves cyanobacteria only wi
 - **Overall:** flag
 - **Reviewer notes:** Unsupported count: 1. Hallucinated numbers: 10.5 hours, 8-core, 512GB, 10 minutes (all in claim 12). One partial claim (claim 2) contains a neural network model name error (GNU vs GRU), though all performance metrics are correct. Dropped caveats from source text: (1) vertical mixing and cyanobacteria buoyancy regulation can cause model to miss biomass at various depths; (2) general statement 'No forecast is perfect—all forecast models will result in false positives and false negatives'; (3) model's short-term training period cannot account for long-term climatic changes. Major operational limitations are well-represented in claims (2 m surface-only detection, no toxin forecasting, cloud/snow/ice degradation). Core findings—90% accuracy, 88–91% sensitivity/specificity, validation design, fixed-effect estimates with CIs, and interpretive disclaimers—are well-supported by source text."
 
+## Supplemental materials review (added 2026-07-06)
+
+The publisher supplementary files (ScienceDirect PII `S030147972302306X`) were obtained and reviewed
+separately — held locally in `../epa-forecast/` with a full review dossier at `../epa-forecast/README.md`.
+Two files: `mmc1.docx` (Supplemental Material and Methods + supplemental discussion/figures) and
+`mmc2.xlsx` (**Table S1**). Additions/resolutions to the record above:
+
+- **Table S1 gives the Florida-vs-CONUS split for the six comparison models** (previously we had only the
+  CONUS "0.84–0.85" figure at line ~89). Verbatim — **CONUS:** SVC acc 0.838 / **prec 0.030**, Random Forest
+  0.849 / 0.862, DNN/LSTM/RNN/GRU acc ~0.65–0.66 / prec 0.58–0.65. **Florida:** all six acc ~0.93, **prec
+  0.79–0.93** (SVC 0.907, RF 0.931). This confirms our cited "INLA beat SVC/RF at 0.84–0.85 (CONUS)" and
+  exposes the **base-rate → precision mechanism**: precision jumps CONUS→FL for every model (SVC 0.03→0.91)
+  because FL bloom prevalence is far higher. The CONUS SVC precision of 0.03 corroborates the authors' claim
+  that plain ML/NN models can't handle the imbalance without preprocessing.
+- **"GRU," not "GNU" — flag resolved.** The claim-2 reviewer flag ("source specifies 'Gneural Network (GNU)'")
+  is resolved by Table S1, which labels the sixth model **`GRU`**. Comparison models = SVC, Random Forest,
+  DNN, LSTM, RNN, GRU.
+- **Classification cutoff = 0.10** (Youden's index on validation; Fig. S2) — the operating point behind the
+  0.49 precision. Confirms the "Youden-optimized cutoff = 0.10" data point (line ~79) from the supplement.
+- **Lake value = median of CIcyano pixels** on the **weekly-maximum** composite; **CyAN v4.0**, 300 m,
+  Jan 2017–Dec 2021; SRTM **60 m** land mask (static w.r.t. waterbody size).
+- **Study lineage / Florida seasonality:** expanded from **Myer et al. 2020's 103 FL lakes** (ACAD-092) to 9
+  CONUS climate regions (FL is the ~0.5% sub-tropical tail; study is temperate-dominated). The national AR(1)
+  seasonal trend peaks Jul–Sep; the authors note FL specifically shows a May rise and a **strong Nov–Dec
+  secondary peak** (FL winter blooms confirmed, Coffer 2020) that the national model **dampens** — a concrete
+  Florida gap a regionally-tuned model could target.
+- **Compute claim still unverified.** The appendix does **not** contain the 10.5 h / 8-core / 512 GB / 10-min
+  runtime figures — the claim-12 "hallucinated numbers" flag stands; those remain unsourced from any text we hold.
+- **Fidelity for our baseline:** our out-of-sample FL 2025 evaluation of the *deployed* forecast
+  (`../../models/outputs/epa_headtohead.md`: AUC-ROC 0.928, precision ≈0.73) brackets between EPA's CONUS INLA
+  (0.49) and the in-sample FL comparison models (0.79–0.93), consistent with the base-rate mechanism — i.e.
+  we represent the baseline faithfully. Full argument in `../epa-forecast/README.md` §2.
+
 ## Provenance
 - Canonical URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC10842250/
 - Access date: 2026-07-01

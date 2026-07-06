@@ -1,0 +1,56 @@
+{
+ "bounds": [
+  [
+   25.854857728639544,
+   -83.14946436120378
+  ],
+  [
+   30.132140691245162,
+   -79.42760127509246
+  ]
+ ],
+ "frames": [
+  {
+   "label": "2016-05-08",
+   "url": "assets/fl_cyan_129.png",
+   "detected_px": 24368
+  },
+  {
+   "label": "2016-06-05",
+   "url": "assets/fl_cyan_157.png",
+   "detected_px": 10355
+  },
+  {
+   "label": "2016-07-03",
+   "url": "assets/fl_cyan_185.png",
+   "detected_px": 29310
+  },
+  {
+   "label": "2016-07-31",
+   "url": "assets/fl_cyan_213.png",
+   "detected_px": 14844
+  },
+  {
+   "label": "2016-08-28",
+   "url": "assets/fl_cyan_241.png",
+   "detected_px": 20079
+  },
+  {
+   "label": "2016-09-25",
+   "url": "assets/fl_cyan_269.png",
+   "detected_px": 24410
+  },
+  {
+   "label": "2016-10-23",
+   "url": "assets/fl_cyan_297.png",
+   "detected_px": 17106
+  },
+  {
+   "label": "2016-11-20",
+   "url": "assets/fl_cyan_325.png",
+   "detected_px": 22415
+  }
+ ],
+ "default_index": 2,
+ "source": "EPA/NASA CyAN CI_cyano, Sentinel-3 OLCI, weekly composites (central/south Florida crop, 2016), reprojected EPSG:5070->3857"
+}

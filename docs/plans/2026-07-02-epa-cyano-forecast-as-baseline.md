@@ -18,12 +18,25 @@ QA'd, and reproducible.
   the fusion the brief asks us to demonstrate — **satellite (CyAN) + weather (precip, modeled water
   temperature) + lake morphology.**
 - **EPA-reported skill (2021 test year; point estimates, NO CIs — cite as EPA's, not ours):** AUC 0.95;
-  accuracy **0.90** (beating SVC/RF/DNN/LSTM/RNN/GRU at 0.84–0.85); sensitivity 0.88; specificity 0.91;
-  **precision 0.49**; false-omission 0.01; base rate ~9–10%.
+  accuracy **0.90** (beating SVC/RF/DNN/LSTM/RNN/GRU at 0.84–0.85 — confirmed vs Table S1 CONUS: SVC 0.838,
+  RF 0.849); sensitivity 0.88; specificity 0.91; **precision 0.49**; false-omission 0.01; base rate ~9–10%.
+  Operating **cutoff = 0.10** (Youden's index — confirmed in the appendix; the number behind the 0.49 precision).
 - **The precision 0.49 is the headline caveat and an opportunity:** the model **deliberately
   over-predicts** (health-protective). "Keep the sensitivity, cut the false alarms" is a concrete,
   defensible thing an explainable model could try to improve on — with the base rate stated so the
   metrics are honest.
+
+## Fidelity check — appendix review (2026-07-06)
+Reviewed the paper's supplemental appendices (`../../Research/epa-forecast/`: `mmc1.docx`, `mmc2.xlsx` Table S1).
+The appendix gives the **Florida-vs-CONUS split for the six comparison models** — not the INLA forecast — so
+we cannot read an "INLA-in-Florida" number directly. But it lets us **bracket** our own head-to-head: our
+out-of-sample **FL 2025** evaluation of the deployed forecast (`../../models/outputs/epa_headtohead.md`:
+AUC-ROC **0.928** [0.920, 0.936]; precision **≈0.73** at operating point) sits between EPA's CONUS INLA
+(precision **0.49** at ~9% base rate) and their in-sample FL comparison models (precision **0.79–0.93** at
+FL's high base rate) — exactly where the base-rate mechanism predicts. **Conclusion: we represent the baseline
+faithfully** (neither flattered nor understated). One refinement it surfaces: score the EPA probability at
+**cutoff 0.10** for an apples-to-apples confusion matrix vs EPA's 0.49/0.88. Full argument:
+`../../Research/epa-forecast/README.md` §2.
 
 ## How we use it (pick per Part; all defensible)
 1. **Benchmark to beat / match (default, strongest story).** Any risk/early-warning model we build is

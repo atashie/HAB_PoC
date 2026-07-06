@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forecasting harmful algal blooms — SePRO HAB PoC</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<!--
+  SePRO HAB PoC — final presentation (scrolling story). Design: docs/plans/2026-07-02-presentation-design.md
+  Offline: Leaflet + Plotly vendored locally; data in data/story_data.js (loads from file://).
+  Basemaps: "Political (light)" is offline (local state polygons); "Satellite (optical)" uses Esri tiles (needs internet).
+  Regenerate data: python presentation/build_story_assets.py
+  Real data throughout: hero photo (USGS, public domain); FL CyAN raster (EPA/NASA, 2016); NWIS/WQP station
+  points and HydroBASINS L12 basins (pulled, real); Findings numbers parsed from models/outputs/*.md.
+  Slide numbers are auto-assigned in DOM order at boot.
+-->
+<style>
+  :root {
+    --ink:#17272e; --muted:#566a72; --faint:#84969d; --paper:#f6f8f9; --card:#ffffff;
+    --line:#dbe4e7; --water:#0f6e78; --water-deep:#0b4f57; --source:#2d6c9f; --source-bg:#eaf2f9;
+    --warn:#b9770c; --warn-bg:#fbf3e2; --good:#2e7d5b; --good-bg:#e9f5ee; --ph:#8a99a0; --ph-bg:#f2f4f5;
+    --cyan:#8c6bb1; --era5:#3b82c4; --wqp:#e07b39; --nwis:#2e7d5b; --static:#9aa5b1;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink);
+    background:var(--paper); line-height:1.6; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+
+  #progress { position:fixed; top:0; left:0; height:3px; width:0%; background:var(--water); z-index:1200; transition:width .1s linear; }
+  nav { position:fixed; top:0; right:0; left:0; height:46px; z-index:1100; display:flex; align-items:center; gap:18px;
+    padding:0 22px; background:rgba(246,248,249,.93); backdrop-filter:blur(6px); border-bottom:1px solid var(--line); font-size:.82rem; }
+  nav .brand { font-weight:700; color:var(--water-deep); letter-spacing:.2px; }
+  nav a { color:var(--muted); text-decoration:none; }
+  nav a:hover { color:var(--water); }
+  nav .spacer { flex:1; }
+  nav .sub { color:var(--faint); }
+
+  .part { position:relative; }
+  .part-label { position:sticky; top:46px; z-index:800; font-size:.72rem; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--muted); background:var(--paper); padding:8px 22px; border-bottom:1px solid var(--line); }
+
+  /* ---- discrete slides (Parts 1 & 3): WIDE, fill the page ---- */
+  .slide { position:relative; width:min(1480px,94vw); margin:0 auto; padding:7vh 2vw 8vh; min-height:88vh;
+    display:flex; flex-direction:column; justify-content:center;
+    opacity:.28; transform:translateY(14px); transition:opacity .5s ease, transform .5s ease; }
+  .slide.is-active { opacity:1; transform:none; }
+  .kicker { font-size:.74rem; letter-spacing:.13em; text-transform:uppercase; color:var(--water); font-weight:700; margin-bottom:10px; }
+  h1 { font-size:2.5rem; line-height:1.16; letter-spacing:-.015em; margin-bottom:14px; }
+  h2 { font-size:1.7rem; line-height:1.2; letter-spacing:-.01em; margin-bottom:12px; }
+  .slide p { color:var(--ink); max-width:900px; margin-bottom:12px; font-size:1.05rem; }
+  .lede { font-size:1.2rem; color:var(--muted); max-width:1000px; }
+  ul.tight { list-style:none; max-width:1000px; }
+  ul.tight li { position:relative; padding-left:20px; margin:8px 0; font-size:1.05rem; }
+  ul.tight li::before { content:""; position:absolute; left:2px; top:.62em; width:7px; height:7px; border-radius:50%; background:var(--water); }
+  .sub { color:var(--muted); font-size:.95rem; }
+  em { color:var(--water-deep); font-style:italic; }
+
+  /* slide number badge (auto-assigned in DOM order) */
+  .slide-num { position:absolute; right:26px; bottom:16px; font-size:.78rem; font-weight:700; color:var(--faint);
+    letter-spacing:.04em; font-variant-numeric:tabular-nums; z-index:5; }
+  .map-step .slide-num { right:8px; bottom:2vh; }
+
+  /* layout modes */
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:3vw; align-items:center; width:100%; }
+  .split.rev .col-fig { order:-1; }
+  .wide { width:100%; }
+  figure.fig { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px; }
+  figure.fig figcaption { font-size:.84rem; color:var(--muted); margin-top:8px; }
+
+  /* hero (now a real HAB photograph, not the satellite product) */
+  .hero h1 { font-size:2.9rem; max-width:none; }
+  .hero-photo { width:100%; height:52vh; min-height:340px; border-radius:12px; overflow:hidden; border:1px solid var(--line);
+    position:relative; background:#0b3a2e; }
+  .hero-photo img { width:100%; height:100%; object-fit:cover; object-position:center 55%; display:block; }
+  .hero-photo .credit { position:absolute; right:10px; bottom:8px; font-size:.72rem; color:#fff;
+    background:rgba(17,39,46,.62); padding:3px 9px; border-radius:12px; }
+
+  /* CyAN colour ramp key (used in the data section) */
+  .cyan-key { display:flex; align-items:center; gap:8px; font-size:.8rem; color:var(--muted); margin-top:10px; }
+  .cyan-ramp { height:12px; width:180px; border-radius:3px;
+    background:linear-gradient(90deg,#30123b,#4669db,#28d8a8,#a4fc3b,#f9ba38,#e5460b,#7a0403); }
+
+  /* callouts */
+  .note { border-radius:8px; padding:12px 15px; margin:12px 0; font-size:.95rem; max-width:1040px; }
+  .limitation { background:var(--warn-bg); border-left:3px solid var(--warn); }
+  .insight { background:var(--good-bg); border-left:3px solid var(--good); }
+  .honest { background:#eef1f2; border-left:3px solid var(--muted); }
+  .note .lbl { font-weight:700; }
+  .limitation .lbl { color:var(--warn); }
+  .insight .lbl { color:var(--good); }
+
+  /* placeholder (only where a result genuinely doesn't exist yet) */
+  .placeholder { border:2px dashed var(--ph); background:var(--ph-bg); border-radius:10px; padding:22px; margin:14px 0; max-width:1000px; color:var(--muted); }
+  .placeholder .tag { display:inline-block; font-size:.72rem; font-weight:700; letter-spacing:.06em; color:#fff; background:var(--ph); border-radius:20px; padding:3px 11px; margin-bottom:10px; }
+  .placeholder .what { color:var(--ink); font-weight:600; }
+  .placeholder .src { font-size:.84rem; margin-top:6px; }
+
+  /* dropdowns (sources / terms / limitations) */
+  .step-meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; max-width:1180px; }
+  details.drop { flex:1 1 300px; border:1px solid var(--line); border-radius:8px; background:var(--card); font-size:.86rem; }
+  details.drop > summary { cursor:pointer; list-style:none; padding:9px 13px; font-weight:600; display:flex; align-items:center; gap:8px; color:var(--muted); }
+  details.drop > summary::-webkit-details-marker { display:none; }
+  details.drop > summary::before { content:"\25B8"; font-size:.8em; transition:transform .15s; }
+  details.drop[open] > summary::before { transform:rotate(90deg); }
+  details.drop .body { padding:2px 13px 12px; color:var(--ink); }
+  details.sources > summary { color:var(--source); }
+  details.sources { border-color:#cfe0ef; background:var(--source-bg); }
+  details.limits > summary { color:var(--warn); }
+  details.limits { border-color:#ecdcb6; background:var(--warn-bg); }
+  details.drop .body .cite { margin:7px 0; padding-left:12px; border-left:2px solid var(--line); }
+  details.drop .body a { color:var(--source); word-break:break-word; }
+  details.drop .body .term { margin:6px 0; }
+  details.drop .body .term b { color:var(--ink); }
+  ul.lim { list-style:none; }
+  ul.lim li { position:relative; padding-left:16px; margin:5px 0; font-size:.86rem; color:var(--ink); }
+  ul.lim li::before { content:"\2013"; position:absolute; left:0; color:var(--warn); }
+
+  /* goals as checkboxes */
+  ul.goals { list-style:none; max-width:1040px; margin:6px 0 4px; }
+  ul.goals li { position:relative; padding-left:34px; margin:11px 0; font-size:1.08rem; }
+  ul.goals li::before { content:"\2713"; position:absolute; left:0; top:-1px; width:22px; height:22px; line-height:22px;
+    text-align:center; border-radius:5px; background:var(--good-bg); color:var(--good); font-weight:800; border:1px solid #bfe0cd; }
+
+  /* highlight limitation-introducing words in the explicit goal sentence */
+  .goal-sentence { font-size:1.22rem; line-height:1.5; max-width:1040px; margin:6px 0 2px; color:var(--ink); }
+  .lim-word { background:var(--warn-bg); border-bottom:2px solid var(--warn); border-radius:2px; padding:0 2px; cursor:help; }
+
+  /* use-case matrix (multiple hypotheses) */
+  .cases { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:12px; width:100%; max-width:1300px; margin-top:6px; }
+  .case { border:1px solid var(--line); border-radius:10px; background:var(--card); padding:13px 14px; }
+  .case.chosen { border:2px solid var(--good); background:var(--good-bg); box-shadow:0 1px 8px rgba(46,125,91,.12); }
+  .case h4 { font-size:1rem; margin-bottom:4px; color:var(--ink); }
+  .case .want { font-size:.9rem; color:var(--muted); margin-bottom:8px; }
+  .case .need { font-size:.82rem; color:var(--ink); }
+  .case .need b { color:var(--water-deep); }
+  .case .pick { display:inline-block; font-size:.68rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+    color:#fff; background:var(--good); border-radius:12px; padding:2px 9px; margin-bottom:6px; }
+
+  /* feature-family catalog (families -> raw -> derived) */
+  .fcat { width:100%; max-width:1360px; border-collapse:collapse; font-size:.9rem; margin-top:4px; }
+  .fcat th { text-align:left; font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--muted);
+    border-bottom:1px solid var(--line); padding:6px 10px; }
+  .fcat td { vertical-align:top; padding:9px 10px; border-bottom:1px solid var(--line); }
+  .fcat .fam { font-weight:700; white-space:nowrap; }
+  .fcat .fam .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:7px; vertical-align:0; }
+  .fcat .raw { color:var(--ink); }
+  .fcat .der { color:var(--muted); }
+  .fcat code { background:#eef2f3; border-radius:3px; padding:0 4px; font-size:.86em; }
+
+  /* Plotly / result figure hosts */
+  .plot-tools { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; width:100%; }
+  .plot-tools > div { height:340px; }
+  #chart-features { width:100%; height:440px; }
+  #chart-baselines { width:100%; height:390px; }
+  #chart-ablation { width:100%; height:340px; }
+  #chart-horizon { width:100%; height:360px; }
+  .fig-cap { font-size:.84rem; color:var(--muted); margin-top:6px; max-width:1100px; }
+  .fig-legend { font-size:.82rem; color:var(--muted); margin-top:6px; display:flex; gap:14px; flex-wrap:wrap; }
+  .fig-legend .sw { display:inline-block; width:12px; height:12px; border-radius:3px; vertical-align:-1px; margin-right:5px; }
+
+  /* results tables */
+  table.res { border-collapse:collapse; font-size:.9rem; margin:8px 0; width:100%; max-width:960px; }
+  table.res th, table.res td { padding:6px 10px; border-bottom:1px solid var(--line); text-align:right; font-variant-numeric:tabular-nums; }
+  table.res th:first-child, table.res td:first-child { text-align:left; }
+  table.res thead th { font-size:.74rem; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }
+  table.res tr.hi td { background:var(--source-bg); }
+  .metric-gloss { columns:2; column-gap:26px; max-width:1040px; font-size:.9rem; }
+  .metric-gloss div { break-inside:avoid; margin:5px 0; }
+  .metric-gloss b { color:var(--ink); }
+
+  /* Part 2: pinned morphing map */
+  .map-part { position:relative; }
+  .map-wrap { display:grid; grid-template-columns:40% 60%; }
+  .map-steps { padding:0 26px; }
+  .map-step { position:relative; min-height:82vh; display:flex; flex-direction:column; justify-content:center; padding:6vh 0; opacity:.3; transition:opacity .45s ease; }
+  .map-step.is-active { opacity:1; }
+  .map-stage { position:sticky; top:46px; height:calc(100vh - 46px); padding:16px 16px 16px 0; }
+  #fl-map { width:100%; height:100%; border-radius:12px; border:1px solid var(--line); }
+  .map-slider { position:absolute; left:28px; top:26px; z-index:600; background:rgba(255,255,255,.95); border:1px solid var(--line);
+    border-radius:9px; padding:9px 12px; font-size:.82rem; box-shadow:0 1px 6px rgba(0,0,0,.08); display:none; align-items:center; gap:10px; max-width:340px; }
+  .map-slider.show { display:flex; }
+  .map-slider input[type=range] { accent-color:var(--water); width:150px; }
+  .map-slider .wk { font-weight:700; white-space:nowrap; }
+  .map-legend { position:absolute; left:28px; bottom:34px; z-index:600; background:rgba(255,255,255,.95);
+    border:1px solid var(--line); border-radius:9px; padding:11px 13px; font-size:.83rem; max-width:300px; box-shadow:0 1px 6px rgba(0,0,0,.08); }
+  .map-legend h4 { font-size:.72rem; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-bottom:6px; }
+  .map-legend .layer { display:flex; align-items:center; gap:8px; margin:4px 0; color:var(--faint); transition:color .3s; }
+  .map-legend .layer.on { color:var(--ink); font-weight:600; }
+  .map-legend .layer .sw { width:12px; height:12px; border-radius:3px; background:var(--line); flex:none; }
+  .map-legend .layer.on .sw.cyan{background:var(--cyan);} .map-legend .layer.on .sw.lakes{background:#12a6b4;}
+  .map-legend .layer.on .sw.basins{background:#7a5cc0;} .map-legend .layer.on .sw.nwis{background:var(--nwis);}
+  .map-legend .layer.on .sw.wqp{background:var(--wqp);} .map-legend .layer.on .sw.era5{background:var(--era5);}
+  .map-legend .layer.on .sw.freq{background:linear-gradient(90deg,#eef7f0,#e5460b);}
+
+  .leaflet-container { background:#dbe8ea; font:inherit; }
+  .leaflet-control-layers { font-size:.82rem; border-radius:8px; }
+  .cyan-overlay { image-rendering:-webkit-optimize-contrast; image-rendering:-moz-crisp-edges; image-rendering:pixelated; }
+
+  footer.end { padding:60px 26px 90px; text-align:center; color:var(--muted); font-size:.86rem; border-top:1px solid var(--line); }
+
+  @media (max-width:900px) {
+    .split { grid-template-columns:1fr; } .plot-tools { grid-template-columns:1fr; }
+    .map-wrap { grid-template-columns:1fr; } .map-stage { position:relative; height:64vh; top:0; padding:0; }
+    .map-legend { left:14px; bottom:20px; } h1,.hero h1 { font-size:2rem; } .metric-gloss { columns:1; }
+    .fcat { font-size:.82rem; } .fcat, .fcat thead, .fcat tbody, .fcat tr, .fcat td, .fcat th { display:block; }
+  }
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<nav>
+  <span class="brand">HAB forecast · PoC</span>
+  <a href="#part1">Problem</a>
+  <a href="#part2">Data</a>
+  <a href="#part2b">Features</a>
+  <a href="#part3">Findings</a>
+  <span class="spacer"></span>
+  <span class="sub">SePRO · Lead Data Scientist case study</span>
+</nav>
+
+<!-- ==================== PART 1 — THE PROBLEM (discrete slides) ==================== -->
+<section class="part" id="part1">
+  <div class="part-label">Part 1 · The problem &amp; the decision</div>
+
+  <!-- 1 · Hook — a real inland bloom -->
+  <div class="slide hero" data-layout="figure">
+    <div class="kicker">The problem</div>
+    <h1>Forecasting harmful algal blooms before they take hold.</h1>
+    <p class="lede">A harmful algal bloom can turn a lake toxic in days. By the time one looks like this, the
+    water is often already unsafe and the window to act has narrowed. This project forecasts where blooms will
+    appear one to four weeks ahead, so a response can be planned before then.</p>
+    <div class="hero-photo">
+      <img src="assets/hero_okeechobee_bloom_2016_usgs.jpg" alt="Cyanobacterial bloom on Lake Okeechobee, Florida, July 2016">
+      <span class="credit">Lake Okeechobee, FL · July 2016 · Photo: N. Aumen / USGS (public domain)</span>
+    </div>
+    <p class="sub" style="margin-top:12px">A cyanobacteria (blue-green algae) bloom on <b>Lake Okeechobee</b>,
+    Florida — the largest lake in our pilot. The satellite view of this same 2016 event appears later, in the data section. ↓</p>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Image</b> — “Cyanobacterial bloom in Lake Okeechobee, FL,” July 9 2016,
+          N. Aumen, U.S. Geological Survey. <b>Public domain</b> (USGS-authored image).
+          <a href="https://www.usgs.gov/ecosystems/environmental-health/science/cyanobacteria-2016-lake-okeechobee-harmful-algal-bloom-photo" target="_blank" rel="noopener">usgs.gov — 2016 Lake Okeechobee HAB</a> (accessed 2026-07-06).</div>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>Harmful algal bloom (HAB)</b> — a rapid overgrowth of algae; in these freshwater lakes it is typically cyanobacteria (blue-green algae), some of which produce toxins that threaten drinking water, recreation, livestock, and aquatic life.</div>
+        <div class="term"><b>Cyanobacteria</b> — the blue-green “algae” (really bacteria) behind most freshwater HABs; the green paint-like scum in the photo.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- 2 · Multiple hypotheses -> the chosen use case -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Why someone would want to know about a bloom</div>
+    <h2>Different use cases require different tools.</h2>
+    <p>“Know about HABs” is not a single problem. Each reason a person might care implies a different data set
+    and a different kind of model.</p>
+    <div class="cases">
+      <div class="case"><h4>Monitor for the record</h4><div class="want">Regulatory / legal evidence that a bloom occurred, where and when.</div><div class="need"><b>Needs:</b> auditable in-situ grab samples + lab toxin assays; chain-of-custody, not a model.</div></div>
+      <div class="case"><h4>Map severity</h4><div class="want">How bad is it, in cell counts or toxin level, across the water body.</div><div class="need"><b>Needs:</b> calibrated satellite/optical retrieval + in-situ calibration; a severity regression.</div></div>
+      <div class="case"><h4>Map extent</h4><div class="want">How far the bloom reaches — which reaches, which intakes.</div><div class="need"><b>Needs:</b> higher-resolution imagery + hydrodynamic transport; a spatial model.</div></div>
+      <div class="case"><h4>Assess impact</h4><div class="want">Ecological / economic damage; drivers to manage long-term.</div><div class="need"><b>Needs:</b> integrated watershed + nutrient-loading models; causal, not just predictive.</div></div>
+      <div class="case chosen"><span class="pick">Our use case</span><h4>Predict to prevent</h4><div class="want">Where will a bloom appear next, early enough to pre-position treatment.</div><div class="need"><b>Needs:</b> a satellite bloom signal fused with weather + in-situ drivers; a short-horizon risk forecast.</div></div>
+    </div>
+    <div class="note insight"><span class="lbl">Why this one:</span> it is a use case that SePRO’s products and
+    field specialists can directly address (timing and targeting a treatment), and it is buildable from
+    <b>public</b> data with an explainable, <b>benchmarkable</b> model.</div>
+    <div class="step-meta">
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>In-situ / grab sample</b> — a measurement taken in the water itself (sensor or lab), as opposed to from a satellite.</div>
+        <div class="term"><b>Pre-position treatment</b> — stage crews / products at a water body ahead of a predicted bloom, rather than reacting after one appears.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- 3 · What exists today (tools landscape from the review) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Literature review — the operational landscape</div>
+    <h2>Most public tools monitor the present; few forecast ahead.</h2>
+    <p class="sub" style="max-width:1040px">We reviewed <b>261 public sources</b> to map every operational public
+    HAB tool and what published models actually use — this slide is that landscape (N = 12 tools).</p>
+    <div class="split">
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>12 public operational tools</b>; only about <b>4 forecast <em>ahead</em></b> — the rest observe or nowcast.</li>
+          <li>The only freshwater forecast we can <b>benchmark head-to-head</b> is <b>EPA’s experimental CyanoHAB forecast</b>. (NOAA’s other forecasts are marine or a single non-Florida lake; the forecasting vendors are paywalled and unvalidated.)</li>
+        </ul>
+        <div class="note limitation"><span class="lbl">EPA forecast, up close:</span> a single <b>7-day</b>
+        probability · <b>CONUS-only</b> (~2,192 lakes) · <b>experimental / beta</b> · deliberately
+        <b>over-predicts</b> (precision ≈ 0.49 — about half of bloom alerts are false alarms) · <b>no official API</b>.</div>
+      </div>
+      <div class="col-fig">
+        <div id="chart-tools" class="plot-tools"></div>
+        <div class="fig-legend"><span><span class="sw" style="background:#cfe0e2"></span>All tools</span><span><span class="sw" style="background:#0f6e78"></span>Forecast ahead</span> · hover a bar for counts</div>
+        <div class="fig-cap">The public HAB-tool landscape (N = 12), from a review of 261 public sources.</div>
+      </div>
+    </div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data — every tool in the chart, linked</summary><div class="body">
+        <div id="tool-sources"></div>
+        <div class="cite" style="margin-top:8px"><b>EPA forecast specifics</b> (7-day, precision 0.49) — Schaeffer et al. (2024), <i>J. Environ. Manage.</i> 349:119518, <a href="https://doi.org/10.1016/j.jenvman.2023.119518" target="_blank" rel="noopener">doi</a>; <a href="https://www.epa.gov/habs/hab-forecasts" target="_blank" rel="noopener">EPA HAB Forecasts</a>.</div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations of this review</summary><div class="body">
+        <ul class="lim">
+          <li>The review was conducted with AI agents; <b>no human domain expert</b> validated the source set or the synthesis.</li>
+          <li>Source selection can be <b>biased</b> toward what is indexed and English-language; niche or paywalled tools may be missed.</li>
+          <li>A few sources were <b>abstract-only</b>; tool attributes reflect what each provider publishes, not independent testing.</li>
+          <li>Guardrails used: blind verify-against-source review of every source, and one caught confabulation was fixed — but this reduces, not removes, the risk.</li>
+        </ul>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>Nowcast</b> — an estimate of conditions <em>right now</em>. <b>Forecast</b> — a prediction of a <em>future</em> week.</div>
+        <div class="term"><b>Precision</b> — of the events flagged as blooms, the share that really were. 0.49 ≈ half were false alarms.</div>
+        <div class="term"><b>CONUS</b> — the contiguous United States.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- 4 · What research shows works (features, coloured by the dataset WE ingest) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Literature review — what published models use</div>
+    <h2>The literature’s top predictors map onto the data we bring in.</h2>
+    <p class="sub" style="max-width:1040px">From the same review: which predictors the <b>14 published freshwater HAB
+    models</b> use (10 report a feature list). Each bar is <b>coloured by the dataset we ingest</b> to cover it —
+    so “temperature and precipitation matter” reads directly as “we bring in ERA5.”</p>
+    <div class="split rev">
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>Water temperature and nutrients</b> are the most common predictors; temperature is most often ranked strongest.</li>
+          <li>Nearly every top predictor is covered by a source in our stack — <span style="color:var(--cyan);font-weight:700">CyAN</span>, <span style="color:var(--era5);font-weight:700">ERA5</span>, <span style="color:var(--wqp);font-weight:700">WQP</span>, <span style="color:var(--nwis);font-weight:700">NWIS</span>, or static basin traits.</li>
+          <li>Two we deliberately <b>don’t</b> ingest: an in-situ phycocyanin pigment sensor, and raw geolocation (lat/lon).</li>
+          <li>“Strongest predictor” here is <b>correlational</b> — often a seasonal proxy — not a demonstrated cause.</li>
+        </ul>
+      </div>
+      <div class="col-fig">
+        <div id="chart-features"></div>
+        <div class="fig-legend" id="feature-legend"></div>
+        <div class="fig-cap">Features used across 10 of 14 freshwater HAB models; <span style="color:#c0392b;font-weight:600">red outline</span> = times it is the model’s #1 predictor. Colour = the dataset we ingest to cover it. Correlational, not causal.</div>
+      </div>
+    </div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data — all 14 models and their citations</summary><div class="body">
+        <div id="model-sources"></div>
+        <div class="cite" style="margin-top:8px"><b>Caveat</b> — “importance” = how often a feature is a model’s top-ranked predictor (a correlational, model-internal finding), not a demonstrated cause.</div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations of this review</summary><div class="body">
+        <ul class="lim">
+          <li>AI-conducted review, <b>no human domain-expert</b> validation; feature lists depend on how each paper reports importance.</li>
+          <li>Importance measures differ across studies (SHAP, permutation, coefficients) and are <b>not directly comparable</b>.</li>
+          <li>Feature→dataset mapping is <b>our</b> assignment of each literature feature to a primary source in our stack; several features have more than one possible source (e.g. temperature: ERA5, WQP, or NWIS).</li>
+        </ul>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>Feature / predictor</b> — an input the model uses to make its prediction.</div>
+        <div class="term"><b>Fusion</b> — combining different data sources (here: satellite + weather + in-water chemistry) into one model.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- 5 · Goals + the explicit question + limitations (old slides 5 & 6 merged) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">What we set out to do</div>
+    <h2>High level goals:</h2>
+    <ul class="tight">
+      <li>Meaningfully forecast HABs using <b>only public data</b>.</li>
+      <li><b>Match or beat</b> the only public forecast we can benchmark head-to-head — <b>EPA’s CyanoHAB forecast</b>.</li>
+      <li>Forecast at <b>0–4 weeks</b>, extending EPA’s single 1-week horizon.</li>
+      <li>Make <b>every driver’s contribution explainable</b> and physically sensible — show <em>why</em>, not just <em>what</em>.</li>
+      <li>Keep it <b>operationally runnable</b> — reproducible, on public feeds, at sensible cost.</li>
+    </ul>
+    <p style="margin-top:14px"><b>The question, in one sentence</b> (each highlighted word is a deliberate filter):</p>
+    <p class="goal-sentence">Forecast the probability of a
+      <span class="lim-word">WHO Alert-Level-1 bloom</span>,
+      <span class="lim-word">one to four weeks ahead</span>, for the
+      <span class="lim-word">133 satellite-resolvable lakes</span> in
+      <span class="lim-word">Florida</span>,
+      <span class="lim-word">each week</span>,
+      <span class="lim-word">benchmarked against the EPA forecast</span>, using
+      <span class="lim-word">only public data</span>.</p>
+    <p style="margin-top:8px"><b>Each highlighted word is a unique filter — and a built-in limitation:</b></p>
+    <ul class="tight">
+      <li><span class="lim-word">WHO Alert-Level-1</span> — a satellite chlorophyll/dominance proxy, <em>not</em> a toxin measurement; biomass and toxin risk are decoupled.</li>
+      <li><span class="lim-word">one to four weeks ahead</span> — h≥1 assumes an unrealistic <b>“perfect weather forecast”</b> that does not account for uncertainty in weather forecasts (an upper bound, not operational skill).</li>
+      <li><span class="lim-word">133 satellite-resolvable lakes</span> — excludes the small/narrow waterbodies CyAN can’t see (it needs ≥3×3 of its 300 m pixels, so ~900 m across) — often SePRO’s real customers.</li>
+      <li><span class="lim-word">Florida</span> — one state, not CONUS (too compute-heavy for a PoC); FL has robust data and a relatively <em>easy</em> seasonal signal (no snow/ice).</li>
+      <li><span class="lim-word">each week</span> — weekly aggregation caps temporal resolution; we do it mainly for an apples-to-apples EPA comparison (revisable).</li>
+      <li><span class="lim-word">benchmarked against the EPA forecast</span> — EPA’s forecast is itself CyAN-derived and carries its own uncertainty: an <em>unknown ceiling</em> on achievable skill.</li>
+      <li><span class="lim-word">only public data</span> — no lab toxins, no proprietary feeds.</li>
+    </ul>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>WHO Alert Level 1</b> — WHO recreational-water guidance (lake-wide median chlorophyll-a ≥ 12 µg/L with cyanobacteria dominance); operationalized on CyAN by Schaeffer et al. (2024).</div>
+        <div class="cite"><b>“Only benchmarkable public forecast”</b> — from the 12-tool inventory: EPA is the sole public freshwater product that forecasts ahead in a comparable per-lake weekly-probability form (keys FED-060, ACAD-050); NOAA products are marine or single-lake; vendors paywalled/unvalidated.</div>
+        <div class="cite"><b>Lake set</b> — the satellite-resolvable lakes in EPA’s CyAN set (NHDPlus V2 COMID), filtered to Florida (133 lakes).</div>
+      </div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PART 2 — THE DATA (pinned interactive FL map) ==================== -->
+<section class="part map-part" id="part2">
+  <div class="part-label">Part 2 · The data — acquire, inspect, explore</div>
+  <div class="map-wrap">
+    <div class="map-steps">
+
+      <div class="map-step" data-map="1">
+        <div class="kicker">The satellite signal, raw</div>
+        <h2>What the satellite actually sees.</h2>
+        <p>This is the <b>raw CyAN cyanobacteria index</b> over central and southern Florida — the same
+        <b>Lake Okeechobee 2016</b> bloom as the opening photo, from space. Each coloured cell is one 300 m pixel;
+        drag the slider to watch the bloom grow and recede across 2016.</p>
+        <div class="note limitation"><span class="lbl">Read it as:</span> colour = cyanobacteria index (low → high); blank
+        water is below detection, not missing. No lake boundaries yet — that comes next.</div>
+        <div class="cyan-key"><span>Low</span><span class="cyan-ramp"></span><span>High cyanobacteria index</span></div>
+        <div class="step-meta">
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>CyAN CI_cyano</b> — U.S. EPA &amp; NASA Cyanobacteria Assessment Network; Sentinel-3 OLCI, 300 m weekly composites (2016, central/south Florida crop). <a href="https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan" target="_blank" rel="noopener">epa.gov — CyAN</a>.</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>CyAN</b> — the public EPA/NASA satellite product that detects the cyanobacteria signal in lakes from space.</div>
+            <div class="term"><b>OLCI</b> — the Sentinel-3 satellite instrument CyAN has used since 2016.</div>
+            <div class="term"><b>Pixel</b> — one 300 m × 300 m cell of the satellite image.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="2">
+        <div class="kicker">From pixels to lakes — masking</div>
+        <h2>Why we mask to lake polygons.</h2>
+        <p>The raw raster mixes lakes, rivers, wet land and shoreline. We keep only pixels <b>inside a resolvable
+        lake polygon</b> (the 133 outlined here), then take the per-lake <b>median</b> index each week — that median
+        is what defines a bloom. Masking is what turns a noisy image into a clean per-lake signal.</p>
+        <div class="note insight"><span class="lbl">Result:</span> one number per lake per week, tied to a known COMID — joinable to every other data source.</div>
+        <div class="step-meta">
+          <details class="drop limits" open><summary>CyAN limitations — the load-bearing ones</summary><div class="body">
+            <ul class="lim">
+              <li><b>Coarse 300 m pixels</b> — reliable only for water ≥ ~900 m across (≥3×3 pixels); only ~5% of U.S. lakes are resolvable, and ~80% of <em>state-reported cyanoHAB records</em> fall in waterbodies too small/ill-shaped for the 3-pixel analysis.</li>
+              <li><b>A spectral proxy, not a direct measure</b> — CI_cyano is a reflectance-shape index, not a cyano count; turbidity, sediment, CDOM, thin cloud and shoreline adjacency can bias it, and low-biomass cyano (below ~chl-a 20 µg/L) is hard to see.</li>
+              <li><b>Not toxins</b> — sensors can’t measure cyanotoxins, and biomass↔toxin risk are decoupled (our CyAN↔lab matchup, next slide: CI missed toxins in 70 lakes and over-called 65).</li>
+              <li><b>Cloud, ice and shorelines</b> cause gaps and false readings; cloud alone lost the target week in 595 of 929 lakes in that matchup.</li>
+              <li><b>Weekly max-composite, ~1-week lag</b>; single sensor since 2016 (OLCI), no long baseline; values are version-dependent (no trending across reprocessings).</li>
+              <li><b>“Below detection” ≠ zero</b> — it is below the sensor’s ~10⁴ cells/mL floor, not an absence.</li>
+              <li><b>Our bloom label is CyAN-derived</b>, so CyAN is used <b>antecedent-only</b> (never the target week) to avoid circularity.</li>
+            </ul>
+            <div class="cite" style="margin-top:6px">We put numbers on this by matching CyAN to independent EPA lab samples — the next slide. </div>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Masking &amp; per-lake median (AL1 target)</b> — recipe from Schaeffer et al. (2024) deposited code; pixel QA in <code>data-sources/cyan/METADATA.md</code>; label in <code>models/docs/03-target-definition.md</code>.</div>
+            <div class="cite"><b>Lake polygons</b> — USGS / EPA NHDPlus V2 (NHDWaterbody, COMID). <a href="https://www.epa.gov/waterdata/nhdplus-national-hydrography-dataset-plus" target="_blank" rel="noopener">epa.gov — NHDPlus</a>.</div>
+            <div class="cite"><b>CyAN↔toxin matchup</b> — our prototype analysis, <code>analysis/cyan_nla_matchup/</code> (correlational; reproduces the published biomass≠toxin caveat).</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>Masking</b> — keeping only the pixels inside a lake, discarding land/edge/mixed pixels.</div>
+            <div class="term"><b>Median</b> — the middle value; robust to a few extreme pixels.</div>
+            <div class="term"><b>WHO Alert Level 1</b> — the bloom threshold: lake-wide median chlorophyll-a ≥ 12 µg/L with cyanobacteria dominant.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="3">
+        <div class="kicker">The aggregation unit — HydroBASINS</div>
+        <h2>HydroBASINS: how we place point data.</h2>
+        <p>Before the in-situ sources: many gages and stations aren’t <em>inside</em> a lake. We use
+        <b>HydroBASINS / BasinATLAS level-12 sub-basins</b> (outlined here, one per lake) as the unit to attach
+        point measurements to — a station inside the lake joins directly; otherwise we take the median of stations
+        in the lake’s containing sub-basin. BasinATLAS also supplies static basin traits (land use, climate normals).</p>
+        <div class="step-meta">
+          <details class="drop limits"><summary>Limitations — basins</summary><div class="body">
+            <ul class="lim">
+              <li><b>Watershed-median</b> attribution is coarser than an in-lake reading; a sub-basin can hold conditions the lake doesn’t.</li>
+              <li><b>Partial matching:</b> many waterbodies span more than one sub-basin, so a single-L12 match is only <em>partial</em> — resolving multi-basin lakes is future work.</li>
+              <li>Static traits are <b>fixed in time</b> — they encode <em>which</em> lakes differ, not <em>when</em> a bloom happens.</li>
+              <li>Between-lake static gradients are <b>compressed</b> — all Florida lakes are broadly eutrophic, so only 1 static feature survived multiple-comparison correction.</li>
+            </ul>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Basins &amp; static traits</b> — HydroATLAS / BasinATLAS L12 (Linke et al. 2019, <i>Sci. Data</i> 6:283, <a href="https://doi.org/10.1038/s41597-019-0300-6" target="_blank" rel="noopener">doi</a>). Shown: the L12 sub-basins containing our 133 lakes (real polygons).</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>HydroBASINS / BasinATLAS</b> — a global set of nested drainage sub-basins, each with pre-computed environmental attributes.</div>
+            <div class="term"><b>Sub-basin (L12)</b> — the finest level; the local watershed we attach point data to.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="4">
+        <div class="kicker">In-situ hydrology — NWIS</div>
+        <h2>USGS streamflow gages (NWIS).</h2>
+        <p>The <b>USGS National Water Information System</b> adds discharge, gage height and water temperature —
+        proxies for loading and flushing. Most linked points carry <em>no</em> usable data; the <b>dark points are
+        streamflow (discharge) gages</b> — the robust, continuous ones — usually on a river in the lake’s basin, not
+        the lake itself. Each carries a <b>staleness</b> (how old the reading is).</p>
+        <div class="note limitation"><span class="lbl">Coverage:</span> 395 gages link in, but only <b>~17 carry data</b> (13 of them streamflow gages); just <b>25 of 133</b> lakes end up with usable NWIS signal, and per-variable coverage is lower still (water-temp 12, gage-height 24, discharge 21 lakes). Many Florida lakes are seepage/closed-basin and ungauged.</div>
+        <div class="step-meta">
+          <details class="drop limits"><summary>Limitations — NWIS</summary><div class="body">
+            <ul class="lim">
+              <li><b>Sparse:</b> 25/133 lakes have any NWIS signal (per-variable 12–24); gages often sit on a river, not the lake.</li>
+              <li><b>Lake vs streamflow gages:</b> streamflow (discharge) gages give robust, continuous flow but sit on rivers in the basin; in-lake stage/temperature gages are far rarer — so “coverage” overstates lake-relevant data.</li>
+              <li><b>Datum artifacts:</b> each gage’s zero differs → raw gage height needs within-site/anomaly forms.</li>
+              <li>Signal is <b>weak-to-modest</b>: higher stage → slightly less bloom (dilution), within-lake only.</li>
+            </ul>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Streamflow</b> — USGS NWIS. <a href="https://waterdata.usgs.gov/" target="_blank" rel="noopener">waterdata.usgs.gov</a>. Points = the 395 linked FL sites (<code>models/prepare/pull_link_nwis_fl.py</code>).</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>Staleness</b> — days between the last in-situ reading and the forecast week; a stale value is used, but flagged.</div>
+            <div class="term"><b>Discharge / gage height</b> — how much water flows / how high it stands.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="5">
+        <div class="kicker">In-situ water quality — WQP</div>
+        <h2>Water-quality stations (WQP).</h2>
+        <p>The <b>Water Quality Portal</b> (USGS / EPA / 400+ agencies) adds the chemistry the satellite can’t see:
+        nutrients (phosphorus, nitrogen), chlorophyll-a, temperature, turbidity, DO, pH. <b>Dark burnt-orange dots
+        sample ~monthly-or-better; faded dots are sparser / one-off</b> — so most values are stale at forecast time.
+        Each analyte joins as-of the forecast week with its own staleness.</p>
+        <div class="note limitation"><span class="lbl">Freshness:</span> <b>123 of 133</b> lakes have some WQP data, but it is sparse and mostly stale — only <b>~262 of 8,726</b> stations sample at least ~monthly and just <b>~16 sample weekly</b>, so at a given forecast week most values are weeks-to-months old; the (value, staleness) pair carries that age.</div>
+        <div class="step-meta">
+          <details class="drop limits"><summary>Limitations — WQP</summary><div class="body">
+            <ul class="lim">
+              <li><b>Irregular &amp; sparse in time</b> — many analytes ~monthly; carried forward with staleness, not interpolated.</li>
+              <li><b>Not unit/method-harmonized</b> — mixes total/dissolved phosphorus and chlorophyll methods; nutrient signals are indicative until harmonized.</li>
+              <li><b>Chlorophyll-a is partly circular</b> with the target — coincident chl-a barred; only lagged chl-a kept as a modest independent lead.</li>
+              <li><b>TN &amp; pH undercounted</b> by characteristic-name misses — need alias discovery.</li>
+            </ul>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Water quality</b> — Water Quality Portal (USGS/EPA/NWQMC). <a href="https://www.waterqualitydata.us/" target="_blank" rel="noopener">waterqualitydata.us</a>. Points = the 8,726 linked FL stations (<code>models/prepare/pull_link_wqp_fl.py</code>).</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>Analyte</b> — a measured quantity (e.g. total phosphorus).</div>
+            <div class="term"><b>Nutrients (N / P)</b> — nitrogen and phosphorus; the fertilisers that feed blooms.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="6">
+        <div class="kicker">Weather — ERA5</div>
+        <h2>ERA5 reanalysis weather.</h2>
+        <p>ERA5 gives temperature, precipitation, solar radiation, wind and evaporation everywhere — all 133 lakes,
+        no gaps. It is the <b>densest and most forecast-eligible</b> driver layer. The grid shows its native
+        resolution: a coarse <b>~0.25° (≈28 km)</b> cell, much larger than most lakes.</p>
+        <div class="note limitation"><span class="lbl">The tension:</span> one weather cell can blanket several lakes — good coverage, coarse in space; and our forecasts assume a <b>“perfect weather forecast”</b> that ignores uncertainty in actual forecasts (real forecast weather is future work).</div>
+        <div class="step-meta">
+          <details class="drop limits"><summary>Limitations — ERA5</summary><div class="body">
+            <ul class="lim">
+              <li><b>Coarse grid</b> (~28 km) → nearest-cell extraction blurs lake-scale differences.</li>
+              <li><b>Reanalysis, not observations</b> — a model’s best estimate of past weather.</li>
+              <li>Used as a <b>“perfect weather forecast”</b> (coincident) input for h≥1 — an upper bound on predictability, not operational skill.</li>
+            </ul>
+          </div></details>
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Weather</b> — ECMWF ERA5 reanalysis (Hersbach et al. 2020, <i>Q. J. R. Meteorol. Soc.</i> 146:1999–2049, <a href="https://doi.org/10.1002/qj.3803" target="_blank" rel="noopener">doi</a>); Copernicus Climate Data Store. Grid drawn at the real 0.25° spacing.</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body">
+            <div class="term"><b>ERA5</b> — a global hourly weather reanalysis on a ~28 km grid.</div>
+            <div class="term"><b>Perfect weather forecast</b> — pretending we know the target week’s weather exactly; an idealisation that ignores real forecast uncertainty, clearly labelled.</div>
+          </div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="7">
+        <div class="kicker">Fusion</div>
+        <h2>One row per lake-week — every source, joined.</h2>
+        <p>Each lake, each week becomes a single row: the CyAN median, weather, chemistry, flow and static basin
+        traits — every time-varying value paired with its staleness. Here is <b>Lake Okeechobee</b>, with its real
+        attributes.</p>
+        <div id="okeechobee-table" style="margin-top:6px"></div>
+        <div class="step-meta">
+          <details class="drop terms"><summary>Terms</summary><div class="body"><div class="term"><b>Lake-week</b> — the unit of analysis: one lake, one 7-day period.</div><div class="term"><b>Fusion table</b> — the joined per-lake-week table the models are trained on.</div></div></details>
+        </div>
+      </div>
+
+      <div class="map-step" data-map="8">
+        <div class="kicker">Explore</div>
+        <h2>Bloom frequency across the 133 lakes.</h2>
+        <p>Lakes shaded by how often they cross the WHO Alert-Level-1 threshold, from the real target (2016–2025).
+        Blooms are common in Florida — on the order of <b>a quarter of lake-weeks</b> (26.6% in the held-out
+        2025 test) — but concentrated: some lakes bloom most weeks, others rarely.</p>
+        <div class="note limitation"><span class="lbl">Read with care:</span> this is the CyAN-derived label’s prevalence — <b>correlation, not causation</b>, and only for lakes CyAN can resolve.</div>
+        <div class="step-meta">
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><b>Per-lake bloom frequency</b> — mean of the AL1 target (horizon 0) per COMID, from <code>models/data/derived/modeling_table_cyan_fl.parquet</code> (built by the modeling pipeline).</div>
+          </div></details>
+          <details class="drop terms"><summary>Terms</summary><div class="body"><div class="term"><b>Base rate</b> — how often blooms actually happen; here about 1 lake-week in 4.</div></div></details>
+        </div>
+      </div>
+
+    </div><!-- /map-steps -->
+
+    <div class="map-stage">
+      <div id="fl-map"></div>
+      <div class="map-slider" id="mapSlider">
+        <span>Week: <span class="wk" id="mapWeek">—</span></span>
+        <input type="range" id="mapRange" min="0" max="0" value="0" step="1" aria-label="CyAN week">
+      </div>
+      <div class="map-legend" id="mapLegend">
+        <h4>Layers on the map</h4>
+        <div class="layer" data-layer="cyan"><span class="sw cyan"></span>Raw CyAN pixels</div>
+        <div class="layer" data-layer="lakes"><span class="sw lakes"></span>133 resolvable lakes</div>
+        <div class="layer" data-layer="basins"><span class="sw basins"></span>HydroBASINS L12</div>
+        <div class="layer" data-layer="nwis"><span class="sw nwis"></span>NWIS gages <em>(streamflow = dark)</em></div>
+        <div class="layer" data-layer="wqp"><span class="sw wqp"></span>WQP stations <em>(fresh = dark)</em></div>
+        <div class="layer" data-layer="era5"><span class="sw era5"></span>ERA5 grid (~28 km)</div>
+        <div class="layer" data-layer="freq"><span class="sw freq"></span>Bloom frequency</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PART 2c — TRUSTING THE CyAN SIGNAL (CyAN<->NLA matchup) ==================== -->
+<section class="part" id="part2c">
+  <div class="part-label">Part 2c · Trusting the signal — CyAN vs lab samples</div>
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Signal check — CyAN ↔ EPA National Lakes Assessment</div>
+    <h2>How far can we trust the signal the forecast runs on?</h2>
+    <p class="sub" style="max-width:1120px">We matched CyAN pixels to independent <b>EPA National Lakes Assessment (NLA)</b>
+    lab samples — chlorophyll-a and microcystin — to put numbers on CyAN’s reach and its limits. Two things fall out:
+    a steep <b>coverage funnel</b>, and a <b>biomass-yes / toxin-no</b> gap.</p>
+    <div class="split">
+      <div class="col-fig">
+        <table class="res" style="max-width:660px">
+          <thead><tr><th>Attrition funnel (NLA lake-visits)</th><th>Lakes</th><th>%</th></tr></thead>
+          <tbody>
+            <tr><td>A. Sampled visits with lab chl-a</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>B. + has a lake polygon</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>C. + temporally matched to a weekly mosaic</td><td>1,219</td><td>100%</td></tr>
+            <tr><td>D. + resolvable at 300 m (≥1 in-lake pixel)</td><td>929</td><td>76%</td></tr>
+            <tr class="hi"><td>E. + ≥1 cloud-free water pixel (<b>USABLE</b>)</td><td>334</td><td>27.4%</td></tr>
+          </tbody>
+        </table>
+        <div class="fig-cap">Temporal matching is free (weekly mosaics are continuous — every visit fell inside a week).
+          The attrition is entirely <b>size + cloud</b>: 290 lakes are sub-resolvable at 300 m, then <b>595 of the 929</b>
+          resolvable lakes lost their specific week to cloud. From <code>analysis/cyan_nla_matchup/outputs/matchup_report.md</code>.</div>
+      </div>
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>CI vs lab chlorophyll-a:</b> ρ = <b>0.62</b> (n = 334) — moderate and robust. A floor of lakes have chlorophyll but no cyano signal, because chl-a is <em>total</em> algae while CI is cyanobacteria-specific.</li>
+          <li><b>CI vs microcystin:</b> ρ = <b>0.56</b> (n = 184 detections) — weaker, and a genuinely different target.</li>
+          <li><b>Poor toxin screen, both directions</b> (~60% agreement): <b>65</b> usable matches where CI sees cyano but no toxin (over-prediction), and <b>70</b> where CI sees nothing yet microcystin was detected (<b>missed toxins</b>).</li>
+        </ul>
+        <div class="note limitation"><span class="lbl">Usable set skews large</span> (median 515 ha) — a resolution-induced
+          bias that survey weights can’t fix, so it is <b>not representative</b> of the lake population.</div>
+      </div>
+    </div>
+    <div class="note honest"><span class="lbl">Verdict:</span> the CyAN↔in-situ bridge is <b>real but thin and cloud-limited</b> —
+      usable mainly for larger lakes, moderately good for biomass, and <b>not</b> a trustworthy toxin screen. So we treat CI as a
+      <b>screening / biomass</b> signal (never a toxin claim), carry the coverage limits explicitly, and use NLA’s lab toxins to
+      <b>bound</b> the CI→risk translation rather than assume it. NLA isn’t a forecast input — it tells us how far to trust the
+      signal the forecast runs on.</div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>CyAN↔NLA matchup</b> — our prototype analysis, <code>analysis/cyan_nla_matchup/</code> (report + README). A correlational / cross-sectional sizing exercise, not a formal validation.</div>
+        <div class="cite"><b>NLA</b> — EPA National Aquatic Resource Surveys / National Lakes Assessment (lab chl-a + microcystin). <a href="https://www.epa.gov/national-aquatic-resource-surveys" target="_blank" rel="noopener">epa.gov — NARS</a>.</div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations of the matchup</summary><div class="body">
+        <ul class="lim">
+          <li><b>Cross-sectional &amp; correlational</b> — roughly one visit per lake, a sizing exercise, not a temporal validation.</li>
+          <li><b>Usable set biased large</b> (median 515 ha); survey weights can’t repair a resolution-induced exclusion.</li>
+          <li>Microcystin only on <b>detections</b> (n = 184); other cyanotoxins not covered.</li>
+        </ul>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>NLA</b> — EPA’s periodic probability survey of U.S. lakes with standardized lab measurements.</div>
+        <div class="term"><b>Microcystin</b> — the most common freshwater cyanotoxin; measured in the lab, not by satellite.</div>
+        <div class="term"><b>ρ (Spearman)</b> — rank correlation, −1…+1; ~0.6 ≈ moderate.</div>
+      </div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PART 2b — FEATURES (families -> raw -> derived) ==================== -->
+<section class="part" id="part2b">
+  <div class="part-label">Part 2b · From data to features</div>
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Feature engineering</div>
+    <h2>Feature families: raw signals, and what we derive from them.</h2>
+    <p class="sub" style="max-width:1120px">Every model input, by family. <b>Raw</b> = as measured; <b>derived</b> =
+    the lags, trailing windows and anomalies that carry the forecast. Every temporal feature is stored as a
+    <b>(value, staleness)</b> pair, so irregular sampling is handled without interpolation.</p>
+    <p class="sub" style="max-width:1120px"><b>Processing:</b> the tree models (HistGBM / XGBoost) take features as-is — they
+    handle missing values (NaN) natively and don’t need scaling. For the linear / logistic models, features are
+    <b>median-imputed and z-scored</b> (mean/SD <b>fit on the training years only</b>, then applied to validation and test).</p>
+    <div style="overflow-x:auto">
+    <table class="fcat">
+      <thead><tr><th>Family (dataset)</th><th>Raw features</th><th>Derived features</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="fam"><span class="dot" style="background:var(--cyan)"></span>CyAN satellite<br><span class="sub">bloom signal</span></td>
+          <td class="raw">Per-lake weekly <b>median / mean / SD</b> of CI_cyano (antecedent, week W−h−1); pixel QA (valid fraction, no-data fraction)</td>
+          <td class="der"><code>lag-1/2/4</code> median CI · prior <b>bloom state</b> · recent-bloom fraction (roll-4) · cloud-gap weeks (staleness) · per-lake month <b>climatology</b> (train-only, baseline)</td>
+        </tr>
+        <tr>
+          <td class="fam"><span class="dot" style="background:var(--era5)"></span>Weather — ERA5<br><span class="sub">all 133 lakes</span></td>
+          <td class="raw">Air temperature, precipitation, solar radiation, wind, evaporation (nearest 0.25° cell)</td>
+          <td class="der">trailing <b>14/30-day solar</b> · <b>PET</b> (Hargreaves) · growing-degree-days (GDD, 30-day) · trailing <b>30/90-day precip</b> · <b>SPEI-1 / SPEI-4</b> (drought) · 14-day mean wind · calm-hours (7-day)</td>
+        </tr>
+        <tr>
+          <td class="fam"><span class="dot" style="background:var(--wqp)"></span>Water quality — WQP<br><span class="sub">123/133 lakes</span></td>
+          <td class="raw">Total phosphorus, water temperature, chlorophyll-a, ammonia, orthophosphate (+ TN, turbidity, DO, pH, Secchi)</td>
+          <td class="der">antecedent <code>lag-1/2/4</code> · 4/12-week mean/sum · delta-4 · anomaly-vs-recent (<code>anomR</code>) · anomaly-vs-climatology (<code>anomC</code>) · each with <b>staleness</b></td>
+        </tr>
+        <tr>
+          <td class="fam"><span class="dot" style="background:var(--nwis)"></span>Hydrology — NWIS<br><span class="sub">25/133 gauged</span></td>
+          <td class="raw">Discharge, gage height, water temperature (USGS gages)</td>
+          <td class="der">antecedent lags · gage-height <b>anomalies</b> (inverse) · <b>staleness</b></td>
+        </tr>
+        <tr>
+          <td class="fam"><span class="dot" style="background:var(--static)"></span>Static — morphology + BasinATLAS<br><span class="sub">time-invariant</span></td>
+          <td class="raw"><b>Lake surface area</b> (NHDPlus) · mean/max depth (pending) · BasinATLAS L12 attributes</td>
+          <td class="der">inundation % · temperature / PET normals · forest / crop / urban % · human-footprint index (the significant static screens)</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Feature catalog</b> — <code>models/docs/02-feature-catalog.md</code> (temporal protocol, availability matrix) and <code>04-feature-assessment.md</code> (significance screens); assembled by <code>models/prepare/assemble_fusion_table.py</code> and <code>build_cyan_features.py</code>.</div>
+        <div class="cite"><b>What we actually tested</b> — a set of <b>baselines</b> (persistence, CyAN ladder, climatology) and the <b>EPA forecast</b>, then models built from <b>combinations of these feature families</b> (CyAN-only ladder → + weather / in-situ / static). Per <code>models/outputs/experiments.md</code>.</div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations</summary><div class="body">
+        <ul class="lim">
+          <li><b>Depth is pending</b> a source (LakeCat / HydroLAKES) — morphology is currently area-only.</li>
+          <li>Weather is used as a <b>“perfect weather forecast”</b> for h≥1 — an upper bound on predictability, not operational skill.</li>
+          <li>Derived features are <b>correlational</b>; their model importance is associational and inflatable by autocorrelation.</li>
+        </ul>
+      </div></details>
+      <details class="drop terms"><summary>Terms</summary><div class="body">
+        <div class="term"><b>Lag</b> — the value from 1/2/4 weeks earlier. <b>Trailing window</b> — a sum/mean over the prior N days.</div>
+        <div class="term"><b>SPEI</b> — a standardized precipitation-evapotranspiration (drought/wetness) index.</div>
+        <div class="term"><b>(value, staleness)</b> — the last observed value plus how old it is.</div>
+      </div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PART 3 — FINDINGS -> PLATFORM -> ASK ==================== -->
+<section class="part" id="part3">
+  <div class="part-label">Part 3 · Findings, defensibility, platform &amp; the ask</div>
+
+  <!-- Results lead: baseline comparison (positive-flip / onset) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">The bar to clear</div>
+    <h2>Baselines first — and what “good” even means.</h2>
+    <p class="sub" style="max-width:1140px">Five reference predictors on the same <b>4,527 shared Florida 2025
+    lake-weeks</b> (132 lakes × 35 weeks; base rate 28.8%; <b>W−2 / h1</b> — the latency-fair 1-week-ahead scenario):
+    naïve <b>persistence</b>, a <b>CyAN autoregressive ladder</b>, per-lake <b>climatology</b>, and the <b>EPA
+    forecast</b> (both cutoffs). The <b>onset</b> columns are the decision metric — skill on <em>positive flips</em>
+    (currently-clear lakes that bloom next), not the both-direction transition metric that also counts blooms clearing.</p>
+    <div id="baseline-tables"></div>
+    <div class="note honest"><span class="lbl">What we optimize vs how we judge:</span> we tune and report
+    <b>MCC</b> as the headline balanced metric (robust to the ~29% imbalance, fair to hard 0/1 baselines). But
+    aggregate AUC is near-saturated by CyAN autocorrelation, so it flatters everyone. The metric that matters is
+    <b>onset</b> (positive-flip) skill — and the order there is real: at 1 week, <b>fusion leads (onset-MCC 0.47)
+    &gt; climatology 0.39 &gt; CyAN-ladder 0.35 &gt; EPA ≈0.24 &gt; persistence 0</b> (persistence can never call a flip).</div>
+    <div class="step-meta">
+      <details class="drop terms"><summary>Terms — the metrics</summary><div class="body">
+        <div class="metric-gloss">
+          <div><b>AUC-ROC</b> — ranks a random bloom above a random non-bloom this often; 0.5 = chance, 1 = perfect.</div>
+          <div><b>AUC-PR</b> — like AUC-ROC but focused on the rare positive class.</div>
+          <div><b>Brier</b> — mean squared error of the probability; <em>lower is better</em>.</div>
+          <div><b>MCC</b> — a balanced correlation between prediction and truth; −1…+1, fair under imbalance.</div>
+          <div><b>Accuracy</b> — share of lake-weeks called correctly (weak under imbalance).</div>
+          <div><b>onset (positive flip)</b> — restrict to currently-clear weeks; score catching the ones that become a bloom — the early-warning test. Distinct from a both-direction “transition” metric that also counts blooms clearing.</div>
+        </div>
+      </div></details>
+      <details class="drop limits"><summary>Limitations — the head-to-head</summary><div class="body">
+        <ul class="lim">
+          <li><b>EPA values are a dashboard snapshot</b> (2026-07-02), not proven as-issued.</li>
+          <li><b>Structural edge to us:</b> persistence/ladder/climatology are derived from our exact labels; EPA’s model is independent — a gap is not a clean skill test.</li>
+          <li><b>Timing (your question):</b> the join is <em>exact on the target week</em> — EPA’s Saturday-ending week == our week, same COMID — so we score the <em>same dates</em>. But EPA is a <em>current-week</em> forecast (released Tue/Wed, valid that week), so it sees fresher data than our 1-week-ahead issue, and the snapshot may have been revised since issuance. Same dates, different information sets — not a clean apples-to-apples.</li>
+          <li><b>We do not claim to beat EPA:</b> EPA vs persistence ΔAUC = +0.010, 95% CI [−0.000, +0.022] — includes zero.</li>
+          <li><b>Seasonal:</b> EPA ~Apr–Nov, so 35 of 52 weeks (peak season); base rate 28.8% vs 26.6% full-year.</li>
+        </ul>
+      </div></details>
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite">Parsed from the script-generated <code>models/outputs/headtohead_onset.md</code> (onset metrics + EPA at both cutoffs, all five predictors on the identical shared weeks) and <code>epa_headtohead.md</code> into <code>results.json</code> by <code>build_story_assets.py</code>.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Model families we trial / don't, and why -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Model families</div>
+    <h2>Which model families we trial — and which we don’t.</h2>
+    <div class="split">
+      <div class="col-txt">
+        <h4 style="color:var(--good);margin-bottom:4px">We trial — explainable, robust:</h4>
+        <ul class="tight">
+          <li><b>Regularized logistic GLM</b> — transparent, signed coefficients as log-odds.</li>
+          <li><b>Gradient-boosted trees — XGBoost / HistGBM</b> — handle sparse in-situ NaNs natively, robust to outliers and mixed scales, strong on tabular data, still explainable (SHAP / partial dependence).</li>
+          <li>(A logistic <b>GAM</b> and an <b>SVC</b> round out the explainable spread in the design.)</li>
+        </ul>
+        <h4 style="color:var(--warn);margin:12px 0 4px">We don’t trial (here):</h4>
+        <ul class="tight">
+          <li><b>LSTM · RNN · other neural nets · transformers.</b></li>
+        </ul>
+      </div>
+      <div class="col-txt">
+        <div class="note honest"><span class="lbl">Why:</span> the data regime and the goal both point away from deep nets.
+          <ul class="lim" style="margin-top:6px">
+            <li><b>Wide feature set, limited/rare targets</b> — many heterogeneous features but relatively few bloom onsets; deep nets are data-hungry and would overfit, while boosted trees and regularized linear models are robust to that ratio and to outliers.</li>
+            <li><b>Explainability is a hard requirement</b> — we must show <em>why</em> each driver matters; neural nets are far harder to interpret defensibly.</li>
+            <li><b>Sparse, irregular in-situ</b> with many NaNs — GBDTs handle missingness natively; NNs need imputation that invents structure.</li>
+            <li><b>Compute / time</b> — for a PoC the marginal accuracy of a tuned NN doesn’t justify the cost, and EPA’s own comparison shows NNs don’t beat simpler models on this task.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:6px"><div id="chart-families"></div>
+      <div class="fig-cap">All-feature model families vs baselines and the CyAN-only ladder (h=1, held-out 2024–2026): <b>AUC-ROC</b> and
+        <b>MCC</b> on all weeks. The families are near-identical on aggregate; the GBDTs (HistGBM/XGBoost) edge the GLM. From
+        <code>models/outputs/experiments.md</code>.</div></div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Model-family choice</b> — <code>models/DESIGN.md</code> §7 (four explainable classifiers: GLM · SVC · XGBoost · GAM). EPA’s own SVC/RF/DNN/LSTM/RNN/GRU comparison (Schaeffer 2024, Table S1) shows no neural-net advantage on this task.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Skill vs lead time — AUC + onset-MCC, 5 model classes incl EPA -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Skill vs lead time (0–4 weeks)</div>
+    <h2>Aggregate skill decays gently; onset skill is where the models separate.</h2>
+    <p class="sub" style="max-width:1140px">All five predictors on the shared FL 2025 EPA weeks, across lead times.
+    <b>Left:</b> overall AUC-ROC. <b>Right:</b> <b>onset-MCC</b> — positive-flip (clear→bloom) skill, the early-warning
+    metric. EPA is a fixed current-week nowcast, so it shows flat across our horizons.</p>
+    <div class="split">
+      <div class="col-fig">
+        <div id="chart-horizon"></div>
+        <div class="fig-cap">AUC-ROC by lead time. Fusion and the CyAN ladder ride high (CyAN autocorrelation); persistence decays with lead; EPA flat ≈0.93.</div>
+      </div>
+      <div class="col-fig">
+        <div id="chart-horizon-onset"></div>
+        <div class="fig-cap">onset-MCC (positive flips) by lead time. The fusion model posts the best alert <b>only at h1</b>; at <b>h0 and h2–h4 plain climatology (seasonality) ties or beats it</b>; EPA and the ladder trail.</div>
+      </div>
+    </div>
+    <div class="note honest"><span class="lbl">The honest read:</span> on aggregate AUC the models are near-identical and strong —
+      but that is <b>mostly CyAN autocorrelation</b>. On onsets, the fusion model posts the best alert <b>only at h1</b> (onset-MCC 0.47);
+      at every other horizon <b>plain seasonal climatology ties or beats it</b>. And importance testing (next slide) shows even that h1 edge is the
+      <b>CyAN signal plus model nonlinearity</b>, not the weather / in-situ / morphology drivers. Honest read: we rank near-term onsets
+      well, but the added drivers don’t earn their place, and seasonality is hard to beat at longer leads.</div>
+    <div class="step-meta">
+      <details class="drop limits"><summary>Limitations</summary><div class="body">
+        <ul class="lim">
+          <li>Shared EPA weeks only (Apr–Nov, 35 weeks); same-lake temporal validation, not transfer to unseen lakes.</li>
+          <li>EPA held flat across horizons (fixed current-week nowcast) — flatters EPA at long lead in relative terms.</li>
+          <li>The currently-clear (onset) subset grows with horizon (120→236 weeks); read with the sample sizes in the source.</li>
+        </ul>
+      </div></details>
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><code>models/outputs/headtohead_onset.md</code> — all five model classes on identical shared weeks; AUC + onset-MCC per horizon, parsed into <code>results.json</code>.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Feature importance & selection (REAL block importance + PENDING final selection) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Feature importance &amp; selection</div>
+    <h2>The fusion is a negative result: CyAN does the work.</h2>
+    <div class="split">
+      <div class="col-fig">
+        <div id="chart-ablation"></div>
+        <div class="fig-cap">Each bar is the full-model test AUC (0.983); the <span style="color:#e60000;font-weight:700">bright-red</span>
+          segment is the AUC <b>lost when that block is shuffled</b>. CyAN is nearly all of it. The 27-cluster permutation test
+          (<code>exp_perm_importance.md</code>) corroborates.</div>
+      </div>
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>CyAN is ~100% of the skill.</b> Correlation-clustered permutation: the real-time-CyAN cluster carries Δonset-MCC <b>+0.46</b> and Δpooled-AUC <b>+0.47</b>; scrambling it <b>collapses the model to a coin flip</b> (onset-MCC 0.466→0.002, pooled AUC 0.980→0.514) — on every architecture.</li>
+          <li><b>Every other family is small and inconsistent.</b> Weather, in-situ, static, season each ≤ <b>+0.038</b> on onset-MCC, ≈0 on AUC, and <b>flip sign</b> across GLM/HistGBM/XGBoost — <b>no robust incremental held-out skill</b>. (Not “no signal”: the univariate screens <em>did</em> find weather/nutrient associations — they just add nothing on top of CyAN.)</li>
+          <li><b>A 2-feature model matches the 44-feature one.</b> Greedy backward elimination strips to <code>cyan_median</code> + <code>area</code> with no significant held-out AUC loss — massive redundancy (47 feature pairs at |r| &gt; 0.8).</li>
+          <li><b><code>clim</code> is a memorization shortcut.</b> The per-lake seasonal base rate is leaned on as hard as all real-time CyAN (Δonset-MCC +0.351) yet removing it costs only 0.068 — kept as a <em>baseline</em>, not a feature; the deployable model is <b>clim-free</b> and generalizable.</li>
+        </ul>
+        <div class="note honest"><span class="lbl">This is a good outcome, honestly reported.</span> Aligns with the literature (slide 4):
+          <span style="color:var(--era5);font-weight:700">temperature</span> and <span style="color:var(--wqp);font-weight:700">nutrients</span>
+          explain <em>why</em> lakes bloom, but for a short-horizon forecast of an autocorrelated
+          <span style="color:var(--cyan);font-weight:700">CyAN</span> target, the target’s own recent level answers <em>when</em>. A
+          well-validated <b>simple</b> model beat the complex one — exactly what the brief prizes.</div>
+      </div>
+    </div>
+    <div class="step-meta">
+      <details class="drop limits"><summary>Limitations</summary><div class="body">
+        <ul class="lim">
+          <li>Importance is <b>associational</b> and inflated by autocorrelation — not causal.</li>
+          <li>Same-lake temporal validation only; static + nearest-cell weather can still <b>fingerprint place</b>.</li>
+          <li>“Small / inconsistent” ≠ “no signal” — sparse in-situ (NWIS 25, WQP 123 lakes) and coarse weather likely <b>understate</b> drivers; a denser/harmonized pull could change this.</li>
+        </ul>
+      </div></details>
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Clustered permutation importance</b> — <code>models/outputs/exp_perm_importance.md</code>; <b>clim decomposition</b> — <code>exp_perm_c1_decomp.md</code>; <b>2-feature greedy ablation</b> — <code>exp_feature_ablation.md</code>; block view — <code>fusion_eval.md</code>. Synopsis: <code>models/RESULTS-SUMMARY.md</code>.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Final post-ablation model @ 1 week vs baselines (PENDING) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Final model — 1-week lead</div>
+    <h2>The post-ablation model at 1 week, against the baselines.</h2>
+    <p class="sub" style="max-width:1100px">The final, feature-selected model at the EPA-comparable 1-week lead, scored against
+    the same bar from the baselines slide (persistence · CyAN ladder · climatology · EPA @0.10 / @0.50).</p>
+    <div class="placeholder"><span class="tag">⏳ PENDING MODEL RUN</span><div class="what">Final-model AUC-ROC / AUC-PR / Brier / MCC and the flip (onset) metrics at h=1, next to every baseline, with clustered CIs.</div><div class="src">Replaces this frame once the post-ablation model is finalized. We will state plainly where it beats the baselines and where it does not — a negative result here is a real, reportable finding.</div></div>
+    <div class="note honest"><span class="lbl">How we’ll judge it honestly:</span> the test is not aggregate AUC (near-saturated by
+      CyAN autocorrelation) but <b>onset (positive-flip) skill</b> and <b>calibration</b> — does it catch new blooms without drowning the
+      user in false alarms, and does its probability mean what it says? The bar to beat on onsets is <b>climatology</b> (onset-MCC 0.39);
+      the all-feature fusion already clears it (0.47), so the open question is whether the leaner selected model holds that edge.</div>
+  </div>
+
+  <!-- Final model skill vs lead time 0-4 (PENDING) -->
+  <div class="slide" data-layout="wide">
+    <div class="kicker">Final model — skill vs lead time</div>
+    <h2>How the final model holds up from 0 to 4 weeks.</h2>
+    <p class="sub" style="max-width:1100px">The post-ablation model’s skill (and its decay) across every lead time, 0–4 weeks —
+    the horizons that extend EPA’s single 1-week forecast.</p>
+    <div class="placeholder"><span class="tag">⏳ PENDING MODEL RUN</span><div class="what">Final-model skill-vs-lead curve (0–4 wk), threshold-free and flip metrics, against persistence, climatology, the ladder and EPA.</div><div class="src">Fills once the final model is run across horizons.</div></div>
+    <div class="note honest"><span class="lbl">Transparent up front:</span> longer leads lose the freshest CyAN, so we expect
+      aggregate skill to fall with horizon (the all-feature pre-ablation model already shows this, AUC 0.99→0.97 over 0–4 wk). The
+      honest open question is whether the fusion drivers slow that decay on the <b>onset</b> weeks that matter — where, so far, they do not.</div>
+  </div>
+
+  <!-- Defensibility -->
+  <div class="slide" data-layout="text"><div class="kicker">Defensibility</div>
+    <h2>Where the leakage is, and how we guarded it.</h2>
+    <ul class="tight">
+      <li><b>Circularity:</b> the target is CyAN-derived, so CyAN features are <b>antecedent-only</b> (never the target week); persistence uses the same latency-corrected week, so the model never sees fresher CyAN than the baseline it must beat.</li>
+      <li><b>Temporal split</b> by held-out year (train ≤2023 / tune 2024 / test 2025), not a random shuffle on autocorrelated lake-weeks; normalization and feature selection fit on train only.</li>
+      <li><b>“Perfect weather forecast” caveat</b> (coincident ERA5 for h≥1 — an upper bound, not operational skill); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
+      <li><b>Clustered</b> confidence intervals (block bootstrap by lake/week), never row-level.</li>
+    </ul>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Protocol</b> — <code>models/DESIGN.md</code> §6/§8, <code>models/docs/02-feature-catalog.md</code> (leakage guards, mandatory assembler tests).</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- Demo the tool (Part B) -->
+  <div class="slide" data-layout="text"><div class="kicker">Demo</div>
+    <h2>Demo the tool here.</h2>
+    <p>Switch to the separate live tool: pick a lake and a horizon, see the risk with its uncertainty and its baseline,
+    the top drivers, a suggested action window, and the limits — shown as an honest <b>historical replay</b>, not implied
+    live inference.</p>
+    <div class="placeholder"><span class="tag">▶ LIVE DEMO — PART B</span><div class="what">Separate standalone tool (reads precomputed predictions).</div><div class="src">Built on the per-lake-week predictions the model produces; demoed live, and kept out of this deck so nothing here implies a live feed.</div></div>
+  </div>
+
+  <!-- Platform section launcher -->
+  <div class="slide" data-layout="text"><div class="kicker">From prototype to platform (~8 min)</div>
+    <h2>Architecture, production, monitoring — and your first 6–12 months.</h2>
+    <p>The model is a prototype. Turning it into something SePRO runs and trusts is less about more modelling and more
+    about <b>feedback, a chosen direction, affordable production, and honest monitoring</b>.</p>
+    <ul class="tight">
+      <li>Get the feedback we’re missing (science + business).</li>
+      <li>Choose a direction: go deep · go wide · go narrow · go home.</li>
+      <li>Production: what it actually costs to run.</li>
+      <li>Monitoring: hindcast skill and drift.</li>
+      <li>The recommendation.</li>
+    </ul>
+  </div>
+
+  <!-- i. Feedback -->
+  <div class="slide" data-layout="wide"><div class="kicker">i · Feedback we’re missing</div>
+    <h2>Before building more, ask the people we skipped.</h2>
+    <div class="cases">
+      <div class="case"><h4>EO / remote-sensing team</h4><div class="need">What data options, resources and limitations am I missing? Better atmospheric correction, other sensors, in-house or commercial data products?</div></div>
+      <div class="case"><h4>Biology team</h4><div class="need">What am I missing in relating <b>EO chlorophyll → cyanobacteria → HAB risk</b>? Where does the biomass→toxin link break?</div></div>
+      <div class="case"><h4>Business development</h4><div class="need">What do you actually sell, and to whom — and what information would change how you sell it?</div></div>
+      <div class="case"><h4>Field technicians</h4><div class="need">What do you actually <em>do</em> week to week, and what would let you make a better call?</div></div>
+    </div>
+    <div class="note honest"><span class="lbl">Why first:</span> this PoC had no human domain expert. The cheapest accuracy gain
+      right now is not a bigger model — it is these four conversations, and they decide the direction below.</div>
+  </div>
+
+  <!-- ii. Four directions -->
+  <div class="slide" data-layout="wide"><div class="kicker">ii · Choose a direction</div>
+    <h2>Go deep · go wide · go narrow · go home.</h2>
+    <div class="cases">
+      <div class="case"><h4>Go deep</h4><div class="need">Improve and generalize the current framework: better feature cleaning, <b>CONUS-wide</b> data for generalization (and enough data to justify richer architectures).</div></div>
+      <div class="case"><h4>Go wide</h4><div class="need"><b>A clear pathway to global.</b> Use Copernicus <b>“Lake Water Quality” v2</b> for a ready <b>global</b> spatial footprint <span class="sub">(external / web-research — confirm)</span>, and supplement it with <b>CyAN</b> for the <b>longer temporal record</b> (Copernicus is only 2024→present). Copernicus for spatial coverage + CyAN for history → robust global modeling — rather than rebuilding a global CyAN from scratch.</div></div>
+      <div class="case"><h4>Go narrow</h4><div class="need">300 m is coarse. Sentinel-2 / Landsat (10–30 m) lack S3’s cyano-specific bands but may carry enough signal to <b>downscale</b> to the small waterbodies CyAN can’t see — SePRO’s actual customers.</div></div>
+      <div class="case chosen"><span class="pick">Leading option</span><h4>Go home</h4><div class="need">EPA’s forecast is already reasonably accurate. Put it in our internal clients’ hands for a few months: is this information useful at all, and how do they want to consume it (probabilities, alerts)?</div></div>
+    </div>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data — the “go wide” check</summary><div class="body">
+        <div class="cite" style="color:#8a6d1a"><b>⚠ External / web research (2026), not a checked-in repo source — a human should confirm before this drives a decision.</b></div>
+        <div class="cite"><b>Copernicus Global Land “Lake Water Quality” v2.0</b> (Sept 2024) — global chl-a / turbidity / trophic-state + a floating-cyanobacteria risk index, ~4,200 lakes, <b>Sentinel-3 OLCI 300 m</b>, free/open, <b>2024→present</b>. <a href="https://land.copernicus.eu/en/products/water-bodies/lake-water-quality-near-real-time-v2-0-300m" target="_blank" rel="noopener">land.copernicus.eu — LWQ v2</a>. <span class="sub">(The product page shows S3 OLCI; an earlier claim of Sentinel-2 100 m was not confirmed and has been removed.)</span></div>
+        <div class="cite"><b>EPA CyAN is U.S.-only</b> (CONUS + Alaska); a global roll-out is not turnkey — atmospheric correction over inland water carries 25–70% downstream error, and only ≥~1 km² lakes are resolvable at 300 m. CyanoLakes / EOMAP sell global cyano detection commercially (paid). <a href="https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan" target="_blank" rel="noopener">EPA CyAN</a>.</div>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- iii. Production -->
+  <div class="slide" data-layout="wide"><div class="kicker">iii · Production — what it costs</div>
+    <h2>Productionizing is cheap; the choice is what to run.</h2>
+    <p class="sub" style="max-width:1200px">Assume a weekly <b>AWS cron</b>: ingest + QA/QC all inputs for CONUS, then run inference.
+    Order-of-magnitude <b>back-of-envelope estimates</b> (assumptions stated; the <b>weather-forecast pull dominates ingest time</b> —
+    every run refreshes <em>both</em> ERA5 reanalysis and the ECMWF open forecasts for the 0–4-week horizons):</p>
+    <div style="overflow-x:auto">
+    <table class="res" style="max-width:1260px">
+      <thead><tr><th>Option</th><th>Weekly ingest + QA/QC</th><th>Rough compute (machine × rate × time)</th><th>Rough storage (size × S3 rate)</th></tr></thead>
+      <tbody>
+        <tr class="hi"><td><b>Full fusion model<br>(CONUS)</b></td>
+          <td>CyAN weekly mosaic (~0.4 GB) + ERA5 CONUS subset + <b>ECMWF open forecasts</b> (0–4 wk) — the slow part; <b>both</b> refresh every run. ~1–3 hr incl. QA.</td>
+          <td>c6i.4xlarge (16 vCPU/32 GB) @ ~$0.68/hr × ~2.5 hr ≈ <b>$1.70/wk (~$90/yr)</b>; inference on ~2k lakes × 5 leads = seconds.</td>
+          <td>~5–10 GB/wk raw; 2-yr rolling ≈ 0.5–1 TB × $0.023/GB-mo ≈ <b>$12–24/mo</b>; transfer-in free.</td></tr>
+        <tr><td><b>Climatology-only</b></td>
+          <td>Still ingest CyAN weekly (~0.4 GB) to score the label + monitor drift; no weather / in-situ.</td>
+          <td>c6i.large (2 vCPU/4 GB) @ ~$0.085/hr × ~0.5 hr ≈ <b>$0.04/wk (~$2/yr)</b>.</td>
+          <td>~0.4 GB/wk; 2-yr ≈ 40 GB × $0.023 ≈ <b>~$1/mo</b>.</td></tr>
+        <tr><td><b>EPA-forecast<br>passthrough</b></td>
+          <td>Scrape the EPA dashboard weekly (MB); optional CyAN for monitoring.</td>
+          <td>t3.micro @ ~$0.01/hr × minutes ≈ <b>~$0/wk</b>.</td>
+          <td>MB/wk ≈ <b>~$0/mo</b>.</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="note honest"><span class="lbl">Takeaway:</span> even the full model is <b>tens of dollars a month</b> — the weather-forecast
+      pull is the main recurring <em>time</em> cost, storage the main recurring <em>dollar</em> cost, and both are modest. So the decision is
+      driven by <em>value to the user</em>, not by cost. <em>(Back-of-envelope; a costed spike would firm these up.)</em></div>
+    <div class="step-meta">
+      <details class="drop limits"><summary>Estimate assumptions</summary><div class="body">
+        <ul class="lim">
+          <li><b>Compute:</b> AWS on-demand (us-east-1, 2026 order-of-magnitude): c6i.4xlarge ≈ $0.68/hr, c6i.large ≈ $0.085/hr, t3.micro ≈ $0.01/hr. CyAN CONUS mosaic ~0.4 GB (measured); raster reprojection + per-lake aggregation + weather extraction fit in ~2–3 hr on one instance.</li>
+          <li><b>Weather:</b> ERA5 (Copernicus CDS) and ECMWF <b>open-data</b> forecasts (IFS/AIFS) are free to pull, but the download + processing is the slow step — refreshed <b>every run</b> for both reanalysis and forecast.</li>
+          <li><b>Storage:</b> S3 Standard ≈ $0.023/GB-mo; transfer-<em>in</em> free, egress ≈ $0.09/GB (minimal here). Keeping raw archives is optional — process-and-discard cuts storage to near-zero.</li>
+          <li>Excludes one-time build and human QA time — often the actual dominant costs.</li>
+        </ul>
+      </div></details>
+    </div>
+  </div>
+
+  <!-- iv. Monitoring -->
+  <div class="slide" data-layout="wide"><div class="kicker">iv · Monitoring</div>
+    <h2>Issue forecasts, then keep ourselves honest.</h2>
+    <ul class="tight">
+      <li><b>Weekly forecasts + a rolling hindcast:</b> issue the next n weeks every week, then score them as the truth lands —
+        how does the <em>operational</em> forecast actually perform, and <b>when and where are the big misses?</b>
+        <ul class="lim" style="margin-top:6px">
+          <li>Was last week’s forecast within the typical range of performance?</li>
+          <li>Are our predictions substantially diverged from climatology — and if so, why (which features are anomalous)?</li>
+          <li>Are we more or less accurate in certain regions — and if so, why (regional weather patterns)?</li>
+        </ul></li>
+      <li><b>Drift detection:</b> is live performance still inside the validation/test window we signed off on? If it drifts
+        outside, <b>ping to investigate and retrain</b> — with CyAN and the EPA forecast as continuously-ingested references.</li>
+    </ul>
+    <div class="note insight"><span class="lbl">Why this matters:</span> a forecast you don’t score is a claim you can’t defend.
+      The hindcast is the audit trail; drift monitoring is what keeps a deployed model from silently going stale.</div>
+  </div>
+
+  <!-- Claim boundary -->
+  <div class="slide" data-layout="text"><div class="kicker">Claim boundary</div>
+    <h2>Where this applies — and where it doesn’t.</h2>
+    <ul class="tight">
+      <li>It forecasts a <b>satellite bloom proxy</b> (WHO AL1 on CyAN), for <b>known Florida lakes</b>, into future weeks.</li>
+      <li>It does <b>not</b> measure toxins, does not claim treatment efficacy, and is not yet validated on unseen lakes or sub-resolvable waterbodies.</li>
+      <li>Every driver statement is <b>associational and model-relative</b>, not causal.</li>
+    </ul>
+  </div>
+
+  <!-- v. Recommendation + sources -->
+  <div class="slide" data-layout="wide"><div class="kicker">v · The recommendation</div>
+    <h2>Start small and honest, then let users choose the direction.</h2>
+    <p>Stated suggestively, not prescriptively — my honest recommendation:</p>
+    <ul class="tight">
+      <li><b>Ship the simplest useful thing first:</b> a dashboard that makes the <b>EPA forecast</b> more accessible and
+        tailored — <b>alerts on positive flips</b> (clear → bloom) and monitoring of ongoing blooms, from regular CyAN +
+        EPA-forecast ingests.</li>
+      <li><b>Gather feedback for a few weeks/months:</b> is this information useful, and how do users want to consume it?</li>
+      <li><b>Then revisit</b> go deep / go wide / go narrow / go home — with real user signal instead of guesses.</li>
+    </ul>
+    <div class="note honest"><span class="lbl">Why this over “build more model”:</span> our own results say fusion’s edge on new
+      blooms is modest and the EPA forecast is already a credible baseline. The binding uncertainty isn’t the model — it’s whether
+      and how the information is useful. Answer that cheaply first.</div>
+    <div class="step-meta"><details class="drop sources"><summary>Sources &amp; methods (full list)</summary><div class="body">
+      <div class="cite">Every public dataset and paper cited across the talk resolves in <code>Research/REFERENCES.md</code>; tool/model links are in the Part 1 dropdowns; result numbers in <code>models/outputs/*.md</code>; the global-product check is in the “go wide” sources.</div></div></details></div>
+  </div>
+</section>
+
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/plotly.min.js"></script>
+<script src="data/story_data.js"></script>
+<script>
+(function () {
+  var S = window.STORY || {};
+  var PLOT_FONT={family:'-apple-system,Segoe UI,Roboto,sans-serif',size:12,color:'#17272e'};
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  function link(url,label){ return url ? '<a href="'+esc(url)+'" target="_blank" rel="noopener">'+label+'</a>' : label; }
+  function fmt(x,d){ return (x==null||isNaN(x))?'—':(+x).toFixed(d==null?3:d); }
+
+  /* ---------- progress bar ---------- */
+  var progress = document.getElementById('progress');
+  function onScroll(){ var h=document.documentElement; progress.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'; }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* ---------- auto slide numbers (DOM order) ---------- */
+  function numberSlides(){
+    var n=0;
+    document.querySelectorAll('.slide, .map-step').forEach(function(s){
+      n++; var b=document.createElement('div'); b.className='slide-num'; b.textContent=n; s.appendChild(b);
+    });
+  }
+
+  /* ---------- basemaps (political offline, satellite online) ---------- */
+  function makeMap(id, center, zoom, canvas){
+    var map=L.map(id,{center:center,zoom:zoom,zoomControl:true,scrollWheelZoom:true,preferCanvas:!!canvas});
+    map.createPane('basemap'); map.getPane('basemap').style.zIndex=250;
+    var pol=L.geoJSON(S.states,{pane:'basemap',style:{color:'#c3cfd4',weight:1,fillColor:'#ffffff',fillOpacity:1},interactive:false});
+    var sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      {attribution:'Imagery © Esri, Maxar, Earthstar Geographics', maxZoom:18});
+    pol.addTo(map);
+    L.control.layers({'Political (light)':pol,'Satellite (optical)':sat}, null, {collapsed:true,position:'topright'}).addTo(map);
+    return {map:map,pol:pol,sat:sat};
+  }
+
+  /* ---------- Part 2 Florida map (morphs per step) ---------- */
+  var fl, LYR={}, byName={}, lastHi=null, cyanOv=null, freqOn=false;
+  var PANES=['cyan','basins','lakes','wqp','nwis','era5','freq','focus'];
+  var PANE_Z={cyan:300,basins:340,lakes:360,wqp:370,nwis:380,era5:390,freq:360,focus:660};
+
+  function lakeStyle(){ return {color:'#0f6e78',weight:2.2,fill:false,pane:'lakes'}; }  // borders only, thick enough to read
+  function nwisStyle(f){ var k=(f.properties||{}).kind;
+    if(k==='streamflow') return {radius:4.2,color:'#0f3d24',weight:1,fillColor:'#2e7d5b',fillOpacity:0.95,pane:'nwis'};
+    if(k==='stage')      return {radius:3.2,color:'#3a7d5b',weight:1,fillColor:'#6fae8c',fillOpacity:0.85,pane:'nwis'};
+    return {radius:2,color:'#9db4a5',weight:0.5,fillColor:'#cfe0d5',fillOpacity:0.45,pane:'nwis'}; }  // linked, no data
+  function wqpStyle(f){ return (f.properties||{}).fresh
+    ? {radius:3,color:'#7a340f',weight:0.6,fillColor:'#d2600f',fillOpacity:0.95,pane:'wqp'}    // ~monthly-or-better
+    : {radius:2,color:'#e6ad82',weight:0.3,fillColor:'#f2cdaf',fillOpacity:0.38,pane:'wqp'}; }  // stale / one-off
+  function freqColor(v){ // green -> amber -> red ramp for bloom frequency 0..1
+    if(v==null||isNaN(v)) return '#dfe6e9';
+    var stops=[[0.93,0.97,0.94],[0.65,0.85,0.55],[0.98,0.80,0.25],[0.90,0.35,0.05]];
+    var t=Math.max(0,Math.min(1,v))*3, i=Math.floor(t), f=t-i; if(i>2){i=2;f=1;}
+    var a=stops[i],b=stops[i+1], c=[a[0]+(b[0]-a[0])*f,a[1]+(b[1]-a[1])*f,a[2]+(b[2]-a[2])*f];
+    return 'rgb('+Math.round(c[0]*255)+','+Math.round(c[1]*255)+','+Math.round(c[2]*255)+')';
+  }
+  function initFL(){
+    if (!S.lakes) return;
+    fl=makeMap('fl-map',[27.9,-81.4],7,true);
+    PANES.forEach(function(p){ fl.map.createPane(p); fl.map.getPane(p).style.zIndex=PANE_Z[p]; });
+
+    // CyAN raster overlay + slider
+    if (S.flcyan && S.flcyan.frames && S.flcyan.frames.length){
+      var fr=S.flcyan.frames, idx=S.flcyan.default_index||0;
+      cyanOv=L.imageOverlay(fr[idx].url, S.flcyan.bounds, {opacity:0.85,interactive:false,className:'cyan-overlay',pane:'cyan'});
+      var range=document.getElementById('mapRange'), wk=document.getElementById('mapWeek');
+      range.max=fr.length-1; range.value=idx; wk.textContent=fr[idx].label;
+      range.addEventListener('input',function(){ var i=+range.value; cyanOv.setUrl(fr[i].url); wk.textContent=fr[i].label; });
+    }
+    // lakes
+    LYR.lakes=L.geoJSON(S.lakes,{pane:'lakes',style:lakeStyle,onEachFeature:function(f,layer){
+      var p=f.properties||{}; var nm=p.name||('Unnamed lake ('+p.COMID+')');
+      layer.bindTooltip(nm,{sticky:true});
+      layer.bindPopup('<b>'+esc(nm)+'</b><br>Area: '+(p.area_km2!=null?p.area_km2+' km²':'n/r')
+        +'<br>Bloom freq: '+(p.bloom_freq!=null?Math.round(p.bloom_freq*100)+'% of weeks':'n/r')
+        +'<br>NHDPlus COMID: '+p.COMID);
+      layer.on('mouseover',function(){ if(layer!==lastHi&&!freqOn) layer.setStyle({weight:4,color:'#0b4f57'}); });
+      layer.on('mouseout',function(){ if(layer!==lastHi&&!freqOn) LYR.lakes.resetStyle(layer); });
+      if (p.name) byName[p.name.toLowerCase()]=layer;
+    }});
+    // basins
+    if (S.basins) LYR.basins=L.geoJSON(S.basins,{pane:'basins',interactive:false,
+      style:{color:'#6b4fb0',weight:2,fillColor:'#7a5cc0',fillOpacity:0.06,opacity:0.9}});  // thicker, easier to see
+    // in-situ points (canvas)
+    if (S.nwis) LYR.nwis=L.geoJSON(S.nwis,{pane:'nwis',pointToLayer:function(f,ll){ return L.circleMarker(ll,nwisStyle(f)); }});
+    if (S.wqp) LYR.wqp=L.geoJSON(S.wqp,{pane:'wqp',pointToLayer:function(f,ll){ return L.circleMarker(ll,wqpStyle(f)); }});
+    // ERA5 grid (real 0.25 deg spacing over the FL view)
+    LYR.era5=era5Grid();
+
+    setTimeout(function(){ fl.map.invalidateSize(); fitAll(); }, 60);
+  }
+  function era5Grid(){
+    var lines=[], W=-83.2,E=-79.6,Sr=25.6,N=30.4,s=0.25;
+    for(var lon=Math.ceil(W/s)*s; lon<=E; lon+=s) lines.push({type:'Feature',geometry:{type:'LineString',coordinates:[[lon,Sr],[lon,N]]}});
+    for(var lat=Math.ceil(Sr/s)*s; lat<=N; lat+=s) lines.push({type:'Feature',geometry:{type:'LineString',coordinates:[[W,lat],[E,lat]]}});
+    return L.geoJSON({type:'FeatureCollection',features:lines},{pane:'era5',interactive:false,
+      style:{color:'#3b82c4',weight:0.6,opacity:0.5}});
+  }
+  function findLake(rx){ for (var k in byName){ if(rx.test(k)) return byName[k]; } return null; }
+  function fitAll(){ if(LYR.lakes) fl.map.fitBounds(LYR.lakes.getBounds(),{padding:[24,24],animate:true}); }
+  function highlight(layer){
+    if(lastHi){ LYR.lakes.resetStyle(lastHi); }
+    lastHi=layer||null;
+    if(layer){ layer.setStyle({color:'#c0392b',weight:4,fill:false}); layer.bringToFront(); }
+  }
+  function setFreq(on){
+    if(!LYR.lakes) return; freqOn=on;
+    LYR.lakes.eachLayer(function(l){
+      var p=l.feature.properties||{};
+      if(on) l.setStyle({fill:true,fillColor:freqColor(p.bloom_freq),fillOpacity:0.85,weight:1,color:'#5a6b72'});
+      else LYR.lakes.resetStyle(l);
+    });
+  }
+  // show exactly this set of layers, bottom->top (last = on top, item 9)
+  var CUR=[];
+  function showLayers(order){
+    CUR.forEach(function(n){ if(LYR[n]&&fl.map.hasLayer(LYR[n])) fl.map.removeLayer(LYR[n]); });
+    if(cyanOv&&fl.map.hasLayer(cyanOv)&&order.indexOf('cyan')<0) fl.map.removeLayer(cyanOv);
+    CUR=order.slice();
+    order.forEach(function(n,i){
+      var z=310+i*15;
+      if(n==='cyan'){ if(cyanOv){ cyanOv.addTo(fl.map); if(fl.map.getPane('cyan')) fl.map.getPane('cyan').style.zIndex=z; } return; }
+      if(LYR[n]){ LYR[n].addTo(fl.map); if(fl.map.getPane(n)) fl.map.getPane(n).style.zIndex=z; }
+    });
+    updateLegend(order);
+  }
+  function updateLegend(order){
+    var on={}; order.forEach(function(n){ on[n]=1; }); if(freqOn) on.freq=1;
+    document.querySelectorAll('#mapLegend .layer').forEach(function(el){
+      el.classList.toggle('on', !!on[el.getAttribute('data-layer')]);
+    });
+  }
+  function slider(show){ var el=document.getElementById('mapSlider'); if(el) el.classList.toggle('show',!!show); }
+
+  var STEP={
+    1:{layers:['cyan'],                     slider:true,  cam:'cyan', freq:false, focus:null},
+    2:{layers:['cyan','lakes'],             slider:true,  cam:'cyan', freq:false, focus:null},
+    3:{layers:['basins','lakes'],           slider:false, cam:'fl',   freq:false, focus:null},
+    4:{layers:['basins','lakes','nwis'],    slider:false, cam:'fl',   freq:false, focus:null},
+    5:{layers:['basins','lakes','wqp'],     slider:false, cam:'fl',   freq:false, focus:null},
+    6:{layers:['era5','lakes'],             slider:false, cam:'fl',   freq:false, focus:null},
+    7:{layers:['lakes'],                    slider:false, cam:'okee', freq:false, focus:/okeechobee/},
+    8:{layers:['lakes'],                    slider:false, cam:'fl',   freq:true,  focus:null}
+  };
+  function morphFL(n){
+    if(!fl) return; var st=STEP[n]; if(!st) return;
+    fl.map.closePopup();
+    setFreq(st.freq);
+    showLayers(st.layers);
+    slider(st.slider);
+    if(st.focus){ var t=findLake(st.focus); highlight(t); if(t){ fl.map.fitBounds(t.getBounds().pad(1.4),{animate:true,duration:.7}); if(n===7) t.openPopup(); } }
+    else if(st.cam==='cyan' && S.flcyan && S.flcyan.bounds){ highlight(null); fl.map.fitBounds(S.flcyan.bounds,{padding:[16,16],animate:true}); }
+    else { highlight(null); fitAll(); }
+  }
+
+  /* ---------- Plotly: tools landscape ---------- */
+  function chartTools(){
+    var host=document.getElementById('chart-tools'); if(!host||!S.charts) return; host.innerHTML='';
+    S.charts.tools.panels.forEach(function(p){
+      var d=document.createElement('div'); host.appendChild(d);
+      var cats=p.bars.map(function(b){return b.label;});
+      var data=[
+        {type:'bar',x:cats,y:p.bars.map(function(b){return b.total;}),marker:{color:'#cfe0e2'},width:0.62,hovertemplate:'%{x}<br>%{y} tools total<extra></extra>'},
+        {type:'bar',x:cats,y:p.bars.map(function(b){return b.forecast;}),marker:{color:'#0f6e78'},width:0.62,hovertemplate:'%{x}<br>%{y} forecast ahead<extra></extra>'}
+      ];
+      Plotly.newPlot(d,data,{barmode:'overlay',title:{text:p.title,font:{size:13}},font:PLOT_FONT,
+        margin:{l:30,r:8,t:34,b:20},showlegend:false,paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+        yaxis:{dtick:1,rangemode:'tozero',fixedrange:true,gridcolor:'#eef2f3'},
+        xaxis:{tickangle:-35,automargin:true,fixedrange:true,tickfont:{size:11}}},
+        {displayModeBar:false,responsive:true});
+    });
+  }
+  /* ---------- Plotly: features coloured by the dataset we ingest ---------- */
+  function chartFeatures(){
+    var el=document.getElementById('chart-features'); if(!el||!S.charts) return;
+    var it=S.charts.features.items.slice().reverse();
+    var y=it.map(function(i){return i.label;});
+    var data=[
+      {type:'bar',orientation:'h',x:it.map(function(i){return i.count;}),y:y,
+        marker:{color:it.map(function(i){return i.dcolor;})},width:0.68,
+        customdata:it.map(function(i){return [i.dataset,i.top];}),
+        hovertemplate:'%{y}<br>%{x} models use it<br>dataset: %{customdata[0]}<br>#1 predictor in %{customdata[1]} model(s)<extra></extra>'},
+      {type:'bar',orientation:'h',x:it.map(function(i){return i.top;}),y:y,width:0.68,
+        marker:{color:'rgba(0,0,0,0)',line:{color:'#c0392b',width:2.5}},
+        hovertemplate:'%{y}<br>#1 predictor in %{x} model(s)<extra></extra>'}
+    ];
+    Plotly.newPlot(el,data,{barmode:'overlay',font:PLOT_FONT,margin:{l:190,r:14,t:8,b:34},showlegend:false,
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+      xaxis:{title:'number of models',dtick:1,fixedrange:true,gridcolor:'#eef2f3'},yaxis:{fixedrange:true,automargin:true}},
+      {displayModeBar:false,responsive:true});
+    var leg=document.getElementById('feature-legend');
+    if(leg){ var dc=S.charts.features.dataset_color||{};
+      leg.innerHTML=Object.keys(dc).map(function(k){ return '<span><span class="sw" style="background:'+dc[k]+'"></span>'+esc(k)+'</span>'; }).join('');
+    }
+  }
+  /* ---------- Plotly: baselines (all weeks vs transition weeks) ---------- */
+  function chartBaselines(){
+    var el=document.getElementById('chart-baselines'); if(!el||!S.results||!S.results.headtohead) return;
+    var H=S.results.headtohead, order=['Persistence','Climatology','CyAN AR-ladder','EPA forecast'];
+    var tf={}; (H.thresholdfree||[]).forEach(function(r){ tf[r.pred]=r; });
+    var ci={}; (H.ci||[]).forEach(function(r){ ci[r.pred]=r; });
+    var flip={}; (H.flips&&H.flips.rows||[]).forEach(function(r){ flip[r.pred]=r; });
+    var allY=order.map(function(p){ return tf[p]?tf[p].auc:null; });
+    var errPlus=order.map(function(p){ return ci[p]?(ci[p].hi-ci[p].med):0; });
+    var errMinus=order.map(function(p){ return ci[p]?(ci[p].med-ci[p].lo):0; });
+    var flipY=order.map(function(p){ return flip[p]?flip[p].auc:null; });
+    var data=[
+      {type:'bar',name:'All weeks',x:order,y:allY,marker:{color:'#0f6e78'},width:0.36,offset:-0.2,
+        error_y:{type:'data',symmetric:false,array:errPlus,arrayminus:errMinus,color:'#0b4f57',thickness:1.3,width:4},
+        hovertemplate:'%{x}<br>AUC-ROC %{y:.3f} (all weeks)<extra></extra>'},
+      {type:'bar',name:'Transition weeks (onsets)',x:order,y:flipY,marker:{color:'#b9770c'},width:0.36,offset:0.02,
+        hovertemplate:'%{x}<br>AUC-ROC %{y:.3f} (flips)<extra></extra>'}
+    ];
+    Plotly.newPlot(el,data,{font:PLOT_FONT,barmode:'overlay',margin:{l:44,r:12,t:10,b:40},
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+      legend:{orientation:'h',y:1.12,x:0},
+      shapes:[{type:'line',x0:-0.5,x1:3.5,y0:0.5,y1:0.5,line:{color:'#c0392b',width:1,dash:'dot'}}],
+      annotations:[{x:3.5,y:0.5,xanchor:'right',yanchor:'bottom',text:'chance (0.5)',showarrow:false,font:{size:10,color:'#c0392b'}}],
+      yaxis:{title:'AUC-ROC',range:[0,1.02],fixedrange:true,gridcolor:'#eef2f3'},
+      xaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
+  }
+  function baselineTables(){
+    var host=document.getElementById('baseline-tables'); if(!host||!S.results||!S.results.onset_baselines) return;
+    var ob=S.results.onset_baselines, byp={}; ob.forEach(function(r){byp[r.pred]=r;});
+    var LAB={'persistence':'Persistence','climatology':'Climatology','CyAN-ladder':'CyAN AR-ladder',
+             'EPA @0.10':'EPA forecast (@0.10, deployed)','EPA @0.50':'EPA forecast (@0.50)'};
+    function row(p,hi){ var r=byp[p]; if(!r) return '';
+      return '<tr'+(hi?' class="hi"':'')+'><td>'+(LAB[p]||p)+'</td><td>'+fmt(r.auc)+'</td><td>'+fmt(r.aucpr)+'</td>'
+        +'<td>'+fmt(r.brier)+'</td><td>'+fmt(r.mcc)+'</td><td>'+fmt(r.acc)+'</td><td>'+fmt(r.onset_auc)+'</td>'
+        +'<td>'+fmt(r.onset_mcc)+'</td></tr>'; }
+    var rows=['persistence','climatology','CyAN-ladder','EPA @0.10'].map(function(p){return row(p,p==='EPA @0.10');}).join('');
+    var epa='';
+    if(byp['EPA @0.10']&&byp['EPA @0.50']){
+      var a=byp['EPA @0.10'], b=byp['EPA @0.50'];
+      epa='<details class="drop"><summary>EPA at its two cutoffs (0.10 deployed vs 0.50) — detail</summary><div class="body">'
+        +'<p class="sub">Threshold-free metrics are identical across cutoffs (AUC '+fmt(a.auc)+', Brier '+fmt(a.brier)+'); only operating-point and onset metrics move.</p>'
+        +'<table class="res" style="max-width:660px"><thead><tr><th>EPA cutoff</th><th>MCC</th><th>Acc</th><th>onset-MCC</th><th>onset-Recall</th><th>meaning</th></tr></thead><tbody>'
+        +'<tr><td>0.10 (deployed)</td><td>'+fmt(a.mcc)+'</td><td>'+fmt(a.acc)+'</td><td>'+fmt(a.onset_mcc)+'</td><td>'+fmt(a.onset_recall)+'</td><td>health-protective (catches more onsets, ~½ alerts false)</td></tr>'
+        +'<tr><td>0.50 (accuracy-opt)</td><td>'+fmt(b.mcc)+'</td><td>'+fmt(b.acc)+'</td><td>'+fmt(b.onset_mcc)+'</td><td>'+fmt(b.onset_recall)+'</td><td>fewer alerts, misses more onsets</td></tr></tbody></table></div></details>';
+    }
+    host.innerHTML='<table class="res"><thead><tr><th>Predictor (shared FL 2025, W-2/h1, n=4,527)</th>'
+      +'<th>AUC-ROC</th><th>AUC-PR</th><th>Brier</th><th>MCC</th><th>Acc</th>'
+      +'<th title="AUC on positive flips only">onset-AUC</th><th title="MCC on positive flips only">onset-MCC</th></tr></thead><tbody>'
+      +rows+'</tbody></table>'
+      +'<p class="sub"><b>onset</b> = positive flips only — currently-clear weeks (persistence 0) that become a bloom. '
+      +'AUC-ROC/AUC-PR/Brier are threshold-free; MCC/Acc use in-sample thresholds (optimistic); EPA at fixed 0.10. Brier: lower is better.</p>'+epa;
+  }
+  /* ---------- Plotly: block importance as AUC with the shuffled loss in red ---------- */
+  function chartAblation(){
+    var el=document.getElementById('chart-ablation'); if(!el||!S.results||!S.results.ablation) return;
+    var B=S.results.ablation, base=B.baseline_auc||0.983;
+    var LAB={CYAN:'CyAN (satellite)',INSITU:'In-situ (NWIS+WQP)',STATIC:'Static / basin',WEATHER:'Weather (ERA5)',SEASON:'Season'};
+    var pi=(B.perm_importance||[]).slice().sort(function(a,b){return a.drop-b.drop;});  // ascending -> biggest at top
+    var y=pi.map(function(r){return LAB[r.block]||r.block;});
+    var retained=pi.map(function(r){return +(base-r.drop).toFixed(4);});
+    var lost=pi.map(function(r){return +(+r.drop).toFixed(4);});
+    var data=[
+      {type:'bar',orientation:'h',name:'AUC retained after shuffle',x:retained,y:y,marker:{color:'#b9c7cc'},
+        hovertemplate:'%{y}<br>AUC after shuffle: %{x:.3f}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'AUC lost (bright red)',x:lost,y:y,marker:{color:'#e60000'},
+        text:lost.map(function(v){return v>=0.01?('−'+v.toFixed(2)):'';}),textposition:'outside',cliponaxis:false,
+        hovertemplate:'%{y}<br>AUC lost when shuffled: %{x:.4f}<extra></extra>'}
+    ];
+    Plotly.newPlot(el,data,{barmode:'stack',font:PLOT_FONT,margin:{l:130,r:44,t:10,b:36},
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
+      xaxis:{title:'test AUC-ROC (full model = '+base.toFixed(3)+')',range:[0.6,1.0],fixedrange:true,gridcolor:'#eef2f3'},
+      yaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
+  }
+  /* ---------- Plotly: skill vs lead time — 5 model classes incl EPA ---------- */
+  var HZ_MODELS=[['persistence','Persistence','#8a99a0','dash'],['climatology','Climatology','#b9770c','dot'],
+                 ['CyAN-ladder','CyAN ladder','#8c6bb1','solid'],['fusion','Fusion','#0f6e78','solid'],
+                 ['EPA','EPA forecast','#c0392b','dashdot']];
+  function hzSeries(el, key, ytitle, yrange, chance){
+    if(!el||!S.results||!S.results.onset_horizon) return;
+    var hz=S.results.onset_horizon, hs=[0,1,2,3,4];
+    var data=HZ_MODELS.map(function(m){
+      var y=hs.map(function(h){ var r=hz.filter(function(x){return x.h===h&&x.model===m[0];})[0]; return r?r[key]:null; });
+      return {type:'scatter',mode:'lines+markers',name:m[1],x:hs,y:y,line:{color:m[2],width:2,dash:m[3]},marker:{size:5},
+        hovertemplate:m[1]+'<br>h=%{x}: %{y:.3f}<extra></extra>'};
+    });
+    var lay={font:PLOT_FONT,margin:{l:46,r:12,t:10,b:38},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+      legend:{orientation:'h',y:1.16,x:0},xaxis:{title:'lead time (weeks ahead)',dtick:1,fixedrange:true,gridcolor:'#eef2f3'},
+      yaxis:{title:ytitle,range:yrange,fixedrange:true,gridcolor:'#eef2f3'}};
+    if(chance!=null) lay.shapes=[{type:'line',x0:0,x1:4,y0:chance,y1:chance,line:{color:'#c0392b',width:1,dash:'dot'}}];
+    Plotly.newPlot(el,data,lay,{displayModeBar:false,responsive:true});
+  }
+  function chartHorizon(){ hzSeries(document.getElementById('chart-horizon'),'auc','AUC-ROC (all weeks)',[0.85,1.0],null); }
+  function chartHorizonOnset(){ hzSeries(document.getElementById('chart-horizon-onset'),'onset_mcc','onset-MCC (positive flips)',[-0.1,0.6],0); }
+  /* ---------- Plotly: pre-ablation model-family comparison ---------- */
+  function chartFamilies(){
+    var el=document.getElementById('chart-families'); if(!el||!S.results||!S.results.families) return;
+    var rows=S.results.families.rows;
+    var SHORT={'Persistence':'Persist.','Climatology':'Clim.','CyAN ladder (HistGBM)':'CyAN ladder',
+      'GLM · logistic (all features)':'GLM','HistGBM (all features)':'HistGBM','XGBoost (all features)':'XGBoost'};
+    var x=rows.map(function(r){return SHORT[r.label]||r.label;});
+    var data=[
+      {type:'bar',name:'AUC-ROC (all weeks)',x:x,y:rows.map(function(r){return r.auc;}),marker:{color:'#0f6e78'},
+        hovertemplate:'%{x}<br>AUC-ROC %{y:.3f}<extra></extra>'},
+      {type:'bar',name:'MCC (all weeks)',x:x,y:rows.map(function(r){return r.mcc;}),marker:{color:'#6b4fb0'},
+        hovertemplate:'%{x}<br>MCC %{y:.3f}<extra></extra>'}
+    ];
+    Plotly.newPlot(el,data,{font:PLOT_FONT,barmode:'group',margin:{l:44,r:10,t:10,b:56},
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
+      yaxis:{title:'score',range:[0,1.02],fixedrange:true,gridcolor:'#eef2f3'},
+      xaxis:{tickangle:-25,fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
+  }
+
+  function renderToolSources(){
+    var host=document.getElementById('tool-sources'); if(!host||!S.charts) return;
+    host.innerHTML = S.charts.tools.sources.map(function(t){
+      var nm = esc(t.name) + ' <span style="color:#84969d">('+esc(t.org)+')</span>';
+      return '<div class="cite">'+link(t.url,nm)+'</div>';
+    }).join('');
+  }
+  function renderModelSources(){
+    var host=document.getElementById('model-sources'); if(!host||!S.charts) return;
+    host.innerHTML = S.charts.models.citations.map(function(m){
+      var refs = m.refs.map(function(r){
+        var lab = (r.author?esc(r.author)+' ':'') + (r.year?'('+esc(r.year)+')':'');
+        if(!lab.trim()) lab = esc(r.key);
+        return link(r.url,lab);
+      }).join('; ');
+      return '<div class="cite"><b>'+esc(m.id)+'</b> '+esc(m.name)+' — '+refs+'</div>';
+    }).join('');
+  }
+  function renderOkeechobee(){
+    var host=document.getElementById('okeechobee-table'); if(!host||!S.results||!S.results.okeechobee) return;
+    var o=S.results.okeechobee;
+    var head='<tr>'+o.labels.map(function(l){return '<th>'+esc(l)+'</th>';}).join('')+'</tr>';
+    var body=o.rows.map(function(r){return '<tr>'+r.map(function(v){return '<td>'+esc(v)+'</td>';}).join('')+'</tr>';}).join('');
+    host.innerHTML='<div style="overflow-x:auto"><table class="res" style="max-width:1040px"><thead>'+head+'</thead><tbody>'+body+'</tbody></table></div>'
+      +'<p class="sub">Four real recent lake-weeks for <b>Lake Okeechobee</b> (COMID 166757656), h=1 — a slice of the fused table. '
+      +'The WQP total-phosphorus value repeats (carried forward with its staleness) while the satellite index and weather update weekly; '
+      +'the CyAN median rises in the last week. From <code>models/data/derived/modeling_table_fusion_fl.parquet</code>.</p>';
+  }
+
+  function resizePlots(){
+    ['chart-features','chart-ablation','chart-horizon','chart-horizon-onset','chart-families']
+      .concat([].slice.call(document.querySelectorAll('#chart-tools>div')))
+      .forEach(function(x){ var el=(typeof x==='string')?document.getElementById(x):x; if(el&&el.data) Plotly.Plots.resize(el); });
+  }
+
+  /* ---------- observers ---------- */
+  var slideObs=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-active'); resizePlots(); } }); },{threshold:0.28});
+  document.querySelectorAll('.slide').forEach(function(s){ slideObs.observe(s); });
+
+  var mapObs=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('is-active'); morphFL(parseInt(e.target.getAttribute('data-map'),10)); } else { e.target.classList.remove('is-active'); } }); },{threshold:0.6});
+  document.querySelectorAll('.map-step').forEach(function(s){ mapObs.observe(s); });
+
+  /* ---------- go ---------- */
+  function boot(){
+    if (typeof L==='undefined' || typeof Plotly==='undefined' || !window.STORY){ setTimeout(boot,120); return; }
+    numberSlides();
+    initFL();
+    chartTools(); chartFeatures(); renderToolSources(); renderModelSources();
+    baselineTables(); chartAblation(); chartHorizon(); chartHorizonOnset(); chartFamilies(); renderOkeechobee();
+  }
+  if (document.readyState==='complete' || document.readyState==='interactive') boot();
+  else window.addEventListener('DOMContentLoaded', boot);
+})();
+</script>
+</body>
+</html>

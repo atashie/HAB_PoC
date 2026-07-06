@@ -36,3 +36,21 @@ A running record of the substantive choices, assumptions, and trade-offs made du
 - Selecting specific lakes/regions and the modeling approach and stack.
 - Building the satellite↔in-situ join in practice (the research characterizes its feasibility and pitfalls but does not implement it).
 - Any product-claim language — the research supplies the evidence base and its uncertainty bounds; claims are constructed downstream against the claim gate.
+
+## Post-research additions
+
+- **EPA-forecast supplemental appendices reviewed (2026-07-06).** Obtained and reviewed the two publisher
+  supplements to ACAD-050/FED-017 (Schaeffer et al. 2024): `mmc1.docx` (Supplemental Material & Methods) and
+  `mmc2.xlsx` (Table S1 — Florida-vs-CONUS metrics for the six comparison models). Review dossier:
+  `epa-forecast/README.md`; addendum on the source note `_sources/ACAD-050-*.md`. *Why it matters:* it lets us
+  **check that our own head-to-head represents the federal baseline faithfully.** Our out-of-sample FL 2025
+  evaluation of the *deployed* forecast (`../models/outputs/epa_headtohead.md`: AUC-ROC 0.928, precision ≈0.73)
+  **brackets** between EPA's CONUS INLA (precision 0.49, ~9% base rate) and their in-sample FL comparison
+  models (precision 0.79–0.93, high FL base rate) — coherent once the base-rate and in-sample/out-of-sample
+  differences are accounted for. *Conclusion:* baseline faithfully represented — neither flattered nor
+  understated. *Trade-off/limit:* Table S1 reports the **comparison** models, not the INLA forecast (no
+  published INLA-in-Florida number exists), so this is a consistency bracket, not a like-for-like identity.
+  *Carry-forward:* (a) EPA's own cutoff is **0.10** (Youden) — score our EPA head-to-head at 0.10 for an
+  apples-to-apples confusion matrix; (b) plain SVC collapses on the imbalanced CONUS set (precision 0.03) —
+  our SVC family needs explicit imbalance handling; (c) the CONUS-trained model **dampens Florida's Nov–Dec
+  secondary bloom peak** — a concrete place a FL-tuned model could add value (a hypothesis to test, not a claim).

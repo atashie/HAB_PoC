@@ -8,6 +8,19 @@
 > The federal benchmark we mirror is documented in
 > [`../data-sources/cyano-forecasts/METADATA.md`](../data-sources/cyano-forecasts/METADATA.md).
 
+> ⚠️ **RESULTS UPDATE (2026-07-06) — read [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md) for the concluded
+> findings.** This spec is the *plan*; several of its bets resolved as clear-eyed **negatives** once the
+> experiments ran (all logged D-37…D-39):
+> - **Fusion is a negative result** — weather/in-situ/morphology add **no robust incremental held-out
+>   skill** over CyAN; the model is a **real-time-CyAN autoregression** (clustered permutation importance:
+>   the CyAN-level cluster ≈ 100% of skill).
+> - **`clim` stays a BASELINE, not a feature** — it's a redundant-but-exploited per-lake memorization
+>   shortcut; the deployable model is **clim-free** (D-35, empirically vindicated D-39c).
+> - **Lake area (§1/§3 below) was WALKED BACK** — permutation importance shows it is a *whisper*, not a
+>   headline driver (D-27 → **D-39d**); the future-work motivation stands, the "first-class feature"
+>   framing does not.
+> - **Early warning works** — onset-AUC ≈ 0.94 (positive-only onset), beating climatology and EPA.
+
 ---
 
 ## 1. Problem framing & scope
@@ -44,7 +57,9 @@ feature-availability matrix (§3).
 
 **Explicitly deferred to future work** (unchanged): CyAN→cell/toxin linkage; local grab-sample fusion;
 live optical/SAR retrievals; basin-scale hydrologic modeling; a global/transferable model;
-weather-forecast uncertainty (oracle-weather for now).
+weather-forecast uncertainty (oracle-weather for now); and **sub-resolvable (< ~900 m) waterbodies** —
+CyAN can't see them but they're SePRO's core customers, so this is the **priority extension**, and the
+**lake-area feature's importance (§3) is the evidence for prioritizing it** (finer sensors / in-situ).
 
 **Standing caveat.** Every driver/importance statement is **correlational and model-relative**, not
 causal [`ACAD-048`].
@@ -91,9 +106,25 @@ of EPA's predictors (they use water-temp, precip, depth, area):
   the target week's CyAN** (the label is CyAN-derived, so a coincident CyAN feature is circular). Per-
   lake CI is strongly autocorrelated (AR1 α≈0.90 [`ACAD-092`]) → these define the **autoregressive-
   ladder baseline** (§8) that fusion features must beat to earn any importance claim.
-- **Static — lake morphology + BasinATLAS L12** — mean depth, surface area (EPA's morphology
-  predictors), plus L12 sub-basin attributes (land use, climate normals, anthropogenic). Static lake
-  identity/morphology also carries the cross-lake structure EPA models with an SPDE spatial field.
+- **Lake surface area — ⚠️ WALKED BACK (D-39d, 2026-07-06): a *whisper*, not a headline driver.**
+  Permutation importance found area's marginal contribution tiny (Δonset-MCC ~+0.018, Δ pooled ~0; not
+  cross-arch robust; not FDR-significant in the static screen). Report it as a minor/context feature; the
+  future-work motivation (resolving sub-300 m waterbodies matters to SePRO) still stands. *Original plan
+  (superseded framing):* "first-class, prominently-reported feature (and a strategic diagnostic)."
+  Area is already a Schaeffer/EPA-parity predictor (static; `AREASQKM` from the resolvable-lakes
+  shapefile, carried in the FL mask + target table), but we **elevate it deliberately and report its
+  importance + partial-dependence in every model**, never buried in a morphology bundle. Rationale:
+  **area's utility is itself a finding — but hypothesis-generating, not proof (Codex M7).** A strong
+  area effect *prioritizes* investigating smaller waterbodies (CyAN only resolves lakes ≥ ~900 m across,
+  ≥ 3×3 px, **excluding the sub-300 m waterbodies that are SePRO's likely customers**,
+  `../data-sources/cyan/METADATA.md` §5). **Caveats up front:** area is confounded with depth, trophic
+  state, region, and the CyAN measurement process; and importance *within* 133 resolvable lakes does
+  **not** extrapolate below CyAN's support — it *motivates* a finer-sensor/in-situ extension (§1), it
+  does not validate one. We test area **non-linearly** (small- vs large-lake regimes) with **area-binned
+  calibration + blocked lake-size-band validation**, and use *no-extrapolation-below-support* language.
+- **Other static — depth + BasinATLAS L12** — mean/max depth (EPA morphology predictor), plus L12
+  sub-basin attributes (land use, climate normals, anthropogenic). Static lake identity/morphology also
+  carries the cross-lake structure EPA models with an SPDE spatial field.
 - **Weather — ERA5** (we use ERA5, **not** EPA's PRISM): air temperature (proxy for water temp, r>0.93
   [`ACAD-048`]), precipitation (antecedent/cumulative [`ACAD-049`]), solar, wind, evaporation,
   pressure — coincident + antecedent windows.
@@ -111,9 +142,14 @@ water-surface-temperature + lake depth + surface area (Schaeffer's predictors / 
 **(value + staleness) rule (D-02).** Every temporal feature = last observed **value** + **staleness**
 (days before issue date). Handles irregular in-situ sampling **without interpolation**.
 
-**chl-a circularity — ablation (D-15).** WQP chl-a is a biomass proxy and the AL1 target is
-chl-a-defined → potential circularity. chl-a is an **ablation group** (skill reported with/without) and
-barred from early-warning claims unless proven pre-target-available.
+**chl-a circularity — ablation (D-15, refined by the D-34 lead test).** WQP chl-a is a biomass proxy
+and the AL1 target is chl-a-defined → **coincident** chl-a is redundant with the target (circular).
+BUT WQP is a *direct in-situ* measurement, distinct from CyAN's remote cyano-index — and the lead test
+(`outputs/chla_leadlag.md`) shows **lagged chl-a carries genuine independent lead**: conditioned on
+CyAN-clear, antecedent chl-a predicts a bloom h weeks out at AUC_within ≈ 0.59–0.63 (weaker than CyAN's
+own sub-threshold CI, ~0.70–0.82). So: **coincident chl-a barred** from driver/early-warning claims;
+**lagged chl-a kept as an independent (modest) in-situ early-warning feature** (its value is catching
+sub-pixel/nearshore onset CyAN's lake-median misses). Remains an **ablation group** (skill with/without).
 
 **Required artifacts:** per-horizon **feature-availability matrix** (allowed-at-issue / latency /
 staleness / oracle-only); **derived-row provenance** (COMID, source IDs, timestamps, join method +
@@ -123,18 +159,18 @@ distance, staleness, QA flags).
 
 ## 4. Target definition & QA/masking policy (predeclared)
 
-- **AL1 label — PIN FROM SCHAEFFER'S CODE before building labels.** The exact CyAN value/variable
-  defining AL1 (12 µg/L chl-a-equivalent, cyanobacteria-dominant) is **extracted from the deposited
-  Schaeffer R code** (`compile_data.R` / `cyan_processing_conus.R`), not invented. If no authoritative
-  CyAN CI→chl-a cutoff exists, the outcome is labeled a **"Schaeffer-compatible satellite AL1 proxy"**
-  with **threshold sensitivity** reported — we do **not** claim true WHO-AL1 classification. Per
-  lake-week: label = median per-lake CI over resolvable pixels vs that threshold; binary.
+- **AL1 label — PINNED (`docs/03`): per-lake weekly median CyAN DN ≥ 130** (≡ 12 µg/L chl-a, WHO AL1;
+  from Schaeffer `cyan_processing_conus.R:170`). Binary. Sensitivity tiers: DN 97 (3 µg/L) / 151
+  (24 µg/L). Aggregate mean/median/SD over pixels **fully inside the lake polygon**
+  (`coverage_fraction==1`, `na.rm`); the **median** drives the label and is the primary CyAN feature.
+  CI↔chl-a scatter → the label is a satellite AL1 realization, not a lab measure (stated limitation).
 - **Pixel QA + lake-week validity — PIN before aggregation.** DN 0 = below-detection (valid, low
   signal); DN 254 (land) / 255 (no-data/cloud) masked; **mixed/edge pixels masked** (Schaeffer step
-  1/2). A lake-week needs **≥ N valid pixels and ≥ F valid fraction** (N, F pinned in `docs/03`); below
-  that it is **labeled missing, not imputed**. Retain per-lake-week **QA fields** (valid-pixel count,
-  valid fraction, no-data fraction, edge fraction) as features + stratifiers, and run a **missingness
-  sensitivity** — non-random cloud gaps can bias prevalence and persistence skill.
+  1/2). **Primary = Schaeffer parity:** a week is valid with **≥ 1** clear pixel (his `na.rm` median has
+  no coverage guard); **all-cloud → missing, not imputed**. We record **`valid_frac`** and run a
+  **coverage sensitivity** (low-coverage weeks bias prevalence low — ~7% vs ~25%; `docs/03` §3), rather
+  than silently thresholding. Retain per-lake-week **QA fields** (valid-pixel count, valid fraction,
+  no-data fraction) as features + stratifiers.
 - **Resolvable-area caveat.** The label reflects only pixels the sensor resolves (edges/embayments/
   narrow arms under-seen) — a representativeness limit, not an error.
 - **Sensor/version.** **OLCI only** (D-21), single processing version — no cross-sensor CI trend by
@@ -212,19 +248,82 @@ compare across models and vs literature drivers (temp, nutrients, prior CI) — 
   CyAN-only ladder — prior bloom state, prior median CI, **lag-1/2/4 median CI**, per-lake
   climatology — and report **every fusion feature's value as its incremental lift OVER this ladder**,
   *before* any importance claim. This is the active leakage-hunt the claim gate demands.
-- **Persistence** — prior available lake bloom-state / prior-week per-lake median CI carried to t+h
-  (AR1 α≈0.90; the leading studies omitted it [`ACAD-092`, `ACAD-050`] — we do not).
-- **Climatology** — per-lake seasonal bloom rate (by week-of-year).
-- **EPA/Schaeffer forecast** — the **federal benchmark** at **h = 1**. The **fair** comparison is
-  **head-to-head on the same Florida COMID-weeks where both our prediction and EPA's live forecast
-  exist** — the dashboard retains only ~2 recent seasons, so that overlap (recent window) is the
-  actual bar, **not** their paper's CONUS 2017–2021 point estimates (different region/years/sensor
-  window — context only). *Leakage guard:* compare **against** it and may use its lake **geometry** as
-  the mask, but **never** its probability values as a label/feature (CyAN-derived → circular).
+- **Persistence — THE primary reference baseline and the common yardstick (D-28).** Carry forward the
+  AL1 bloom state of the **freshest CyAN composite _actually published_ by issue time**. CyAN weekly
+  composites post ~COB the Monday after the 7-day window closes → **~1-week publication latency**
+  (`../data-sources/cyan/METADATA.md` §13). So for a horizon-`h` forecast of week `W` the freshest
+  *available* composite is week **`W − h − 1`** — the nominal lead **plus one week of latency**, NOT
+  the idealized just-closed week `W−h`. **`Persistence(W,h) = bloom(W − h − 1)`.** (This latency-aware
+  form is also what separates h=0 (freshest `W−1`) from h=1 (freshest `W−2`). Daily products would cut
+  latency to ~2 days — documented, tunable.) Persistence is a *strong* baseline the leading studies omitted [`ACAD-092`, `ACAD-050`] — CyAN
+  autocorrelation is high, though the **honest temporal number is the within-lake AR(1) ≈ 0.66–0.73**
+  (pooled 0.903 is inflated by between-lake baseline spread; `docs/03` §6). The between-lake half
+  ("which lakes bloom") is carried by static lake features; the within-lake half ("when") is what a
+  temporal forecast must actually predict. **Both our models AND
+  the EPA forecast are reported as skill _relative to this same persistence baseline_** — the like-for-
+  like question is *"who beats latency-aware persistence by more, and at what lead?"*
+- **CyAN autoregressive ladder** — persistence's richer extension (lag-1/2/4 median CI + recent-bloom
+  fraction + train-only climatology); fusion features must show **incremental lift over the ladder**.
+- **Climatology** — per-lake week-of-year bloom rate (train-years only).
+- **EPA/Schaeffer forecast** — the **federal benchmark** at **h = 1**, compared **head-to-head on the
+  same Florida COMID-weeks where both exist** (the dashboard retains only ~2 recent seasons → that
+  overlap is the actual bar, **not** their paper's CONUS 2017–2021 point estimates — context only) and,
+  like our model, **scored as skill over the same latency-aware persistence baseline** — but using
+  **EPA's own information set** (persistence cutoff = CyAN published ≤ EPA's Tue/Wed release), reported
+  under **`W−1`/`W−2` sensitivity** since release timestamps aren't in the panel (Codex H2, `docs/02`
+  §1). *Leakage guard:* compare **against** it and may use its lake **geometry** as the mask, but
+  **never** its
+  probability values as a label/feature (CyAN-derived → circular).
 
-**Metrics (classification-first, to match their table):** AUC, accuracy, precision, recall,
-specificity, F1, Brier, false-omission-rate, Cohen's κ — per horizon, vs baselines, with clustered CIs.
-Because the base rate is ~9–10% (imbalanced) and lagged-CI skill decays with horizon, also report
+**Empirical baseline result (built 2026-07-02 → `outputs/cyan_baseline_eval.md`) — this reframes the
+fusion bar.** On held-out test 2025 (base rate 27%): (1) absolute skill is **high but dominated by
+per-lake seasonal identity, not just autocorrelation** — climatology alone hits AUC-ROC 0.955 flat,
+and the CyAN ladder adds only ~+0.02–0.03 AUC-ROC over it. Across metrics the **ladder is the
+strongest CyAN-only baseline** (best AUC-ROC/AUC-PR/Brier at every horizon; on MCC it ties persistence
+at h0 and leads beyond). **Climatology is a strong *ranker* but weak *classifier*** — it beats
+persistence on AUC-ROC by a widening margin as persistence decays, yet has the lowest MCC (≈ 0.75); it
+is never the single best baseline, but its ranking strength quantifies how much of the signal is pure
+seasonality. All three (persistence, climatology, ladder) are reported as explicit comparators (all
+samples + transitions), and the fused model must **beat the best baseline on each metric**. (2) At short
+lead the ladder **ties persistence** on operating-point metrics (h0 MCC 0.88≈0.88). (3) **On transition weeks (the flips) the
+CyAN-only ladder is _anti-predictive_** (AUC-ROC 0.07→0.30 < 0.5, MCC negative at every horizon) —
+being persistence-driven, it predicts the wrong direction on onsets; climatology is the only weakly
+positive CyAN-only flip signal (MCC ≤ 0.15). **⇒ The fused model must show lift over BOTH the ladder
+AND climatology, and the headline test is transition-week skill — not aggregate AUC** (which is
+near-saturated by the circularity, D-26a).
+
+**EPA head-to-head (built 2026-07-02, Codex-reviewed → `outputs/epa_headtohead.md`) — read with FOUR
+caveats.** On shared FL 2025 COMID-weeks (4,527 lake-weeks, 132 lakes × 35 weeks; exact COMID+week
+join), scoring EPA's forecast, our ladder, persistence, and climatology as predictors of **our AL1**:
+EPA AUC-ROC **0.928** vs persistence 0.918, climatology 0.955, ladder 0.982. **EPA does *not* clearly
+beat naive persistence** (week-block bootstrap ΔAUC +0.010, 95% CI **[−0.000, +0.022]** — includes 0);
+Brier 0.101 (worst). *Caveats:* (1) **provenance** — EPA values are the **2026-07-02 dashboard
+snapshot, not proven as-issued** (the view is revisable; one snapshot held); (2) **structural advantage
+to us (subtle)** — our AL1 is the *same* Schaeffer/WHO AL1 concept EPA forecasts (not a different
+threshold), but persistence/climatology/ladder are fit to / derived from our **exact realized labels**
+while EPA's model is independent → not a clean skill test; EPA's Brier gap is *descriptive* (mean prob
+0.246 vs base 0.288), not a proven definition mismatch; (3) **timing** — EPA is a current-week forecast
+(released Tue/Wed, valid through Sat), and W−1/W−2 is *our* CyAN-latency sensitivity, not EPA's info
+set; (4) **seasonal** — Apr–Nov only, peak-season subset (base 28.8% vs 26.6%), modest effect (FL
+near-aseasonal; our baselines' AUC ≈ unchanged). **We do NOT claim to beat EPA.**
+
+**The flips reverse the story (the fusion motivation).** On transition weeks (target ≠ persistence),
+the all-samples ordering *inverts*: climatology AUC-ROC **0.551** > EPA **0.455** > our CyAN-only ladder
+**0.118** (anti-predictive) > persistence 0.000. Our ladder's aggregate dominance is an **artifact of
+persistence-easy weeks**; on the onsets that matter, CyAN-only is useless-to-harmful and **EPA's
+weather/morphology fusion helps**. This is the empirical mandate for the fusion features: **they must
+beat climatology on flips to earn their place** (§3).
+
+**Canonical metric suite — EVERY experiment reports all of it** (enforced by
+`model/metrics.py::classification_metrics`, one source of truth): **AUC-ROC, AUC-PR, Brier, MCC, F1,
+Precision, Recall, Accuracy** — per horizon, vs baselines, with clustered CIs. Threshold-free (AUC-ROC/
+AUC-PR/Brier) *and* operating-point (MCC/F1/Prec/Recall/Acc at a train-tuned threshold). **MCC is the
+headline balanced metric** (robust to the ~23% imbalance and fair to hard classifiers like
+persistence); **AUC-ROC is read with care** — a hard 0/1 baseline has a capped AUC, so it flatters soft
+models (verified: at h0 persistence MCC 0.882 ties the ladder's 0.879 while AUC-ROC 0.941 vs 0.987
+overstates the gap). Because the **measured FL base rate is ~23%** (built 2026-07-02, `docs/03` §6 —
+~2–3× EPA's ~9–10% CONUS rate, i.e. *milder* imbalance) and lagged-CI skill decays with horizon, also
+report
 **PR-AUC and precision at a fixed recall** (AUC is optimistic under imbalance), **calibration /
 reliability curves**, and **absolute event counts + CIs per horizon** (not just rates — h=4 is
 rare-event-dominated). Prefer threshold tuning over resampling; report any SMOTE cost [`ACAD-128`]. The
@@ -232,6 +331,11 @@ tool shows a **calibrated probability with uncertainty**, not a bare class.
 
 **Mandatory stratified diagnostics:** by season, lake size, staleness bin, cloud/no-data fraction,
 in-situ join distance.
+
+**Lake area is a headline output (D-27).** Report area's model importance + partial-dependence
+**explicitly in every model** (not just as a stratifier), and interpret it: a strong/monotone area
+effect is the quantified case for extending the workflow to **sub-resolvable waterbodies** (§1) — the
+smaller waterbodies CyAN can't see but SePRO's customers manage. Stated as association, not causation.
 
 ---
 

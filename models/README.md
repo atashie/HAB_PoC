@@ -25,6 +25,9 @@ weather-forecast uncertainty (we assume perfect coincident weather for now). See
 | [`PROGRESS.md`](PROGRESS.md) | Living phase-by-phase tracker (define → acquire → prepare → explore → model → evaluate → communicate). Status at a glance. |
 | [`OPEN-QUESTIONS.md`](OPEN-QUESTIONS.md) | Decisions still needing resolution or user input, with recommendations. |
 | `docs/NN-*.md` | Phase-specific deep-dive docs, created as we reach each phase (see `DESIGN.md` §9 for the planned set). |
+| [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md) | **⭐ The consolidated results digest** — headline findings, key numbers, honest limitations, and direct links to all code/results/docs. Start here for *what we found* (vs `DESIGN.md` for *the plan*). |
+| `docs/04-feature-assessment.md` | Univariate feature screens **+ the multivariate importance results** (permutation importance, the fusion-negative finding). |
+| `outputs/*.md` | Every experiment's result table (baselines, EPA head-to-head, ablations, permutation importance, feature screens). |
 | `model-cards/` | One card per trained model: config, metrics-vs-baseline, importances, limits. Created at the modeling phase. |
 
 ## Operating principles (inherited, non-negotiable)
@@ -36,7 +39,13 @@ deliverables, not failures. No spatial/temporal aggregation of data without expl
 
 ## Status
 
-**Phase: ACQUIRE.** Design finalized (v3, 2026-07-02) and Codex-reviewed; **pivoted to match the EPA
-CyanoHAB forecast** — resolvable-**lake** unit, **temporal** held-out-year split, **WHO Alert Level 1**
-target. Next: FL resolvable-lakes mask + per-lake CyAN aggregation. No model trained yet — see
-[`PROGRESS.md`](PROGRESS.md).
+**Phase: MODEL + EVALUATE (results in).** Acquire + prepare complete (fused lake-week table built);
+classifiers (logistic/HistGBM/XGBoost) trained multi-horizon and benchmarked against persistence,
+climatology, a CyAN ladder, and the **EPA CyanoHAB forecast**. Feature significance, block + feature-
+level ablation, and clustered permutation importance done and Codex-reviewed.
+
+**Concluded findings (see [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md)):** early warning works (onset-AUC
+≈ 0.94, beats EPA + climatology), but skill is **overwhelmingly the real-time CyAN signal** — the
+weather/in-situ/morphology fusion adds **no robust incremental held-out skill** (a clear-eyed negative).
+Deployable model = a compact, generalizable **clim-free real-time-CyAN autoregression**. Full trail in
+[`DECISIONS-LOG.md`](DECISIONS-LOG.md) (D-01…D-39) and [`PROGRESS.md`](PROGRESS.md).

@@ -2,6 +2,37 @@
 
 Running log of choices made building the acquisition layer, with rationale. Newest first.
 
+## 2026-07-06 — Forecast-ensemble pipeline BUILT (stages 2-6) + real-world findings (session 15)
+- **Built the forecast layer** `weather/forecast/`: `pull_ens.py` (stage 2), `aggregate_forecast.py`
+  (stage 3), `build_feature_ensemble.py` (stages 4-6), `run_forecast_features.py` (one-command
+  orchestrator), `README.md` runbook. Unit tests: `test_deaccum.py` (7), `test_stitch_seam.py` (4) —
+  de-accumulation across the 3h→6h transition + 00Z, the never-linear-interpolate-precip rule,
+  effective-member-days, fail-closed seam validation. All green.
+- **Live-probe findings (these change/confirm the design):**
+  - **50 members, not 51.** Open-data ENS serves NO `cf` control (`type=cf` → "no index entries"); only
+    50 `pf` members. The deterministic **`oper` (HRES)** run is the gap-fill series (control unavailable).
+    Documented as a bounded deviation.
+  - **`ssrd` (solar) IS available** for ENS `pf` → all 22 features derivable from the forecast (no
+    climatological-solar fallback needed). Also `mx2t3/mn2t3` (3-hourly max/min temp) to +144 h.
+  - **Only 00/12z ENS runs reach +360 h** (06/18z reach +144 h) → puller auto-selects a long-range cycle
+    (fixed an early bug where "latest" picked the 18z short run and step>144 requests 404'd).
+  - **Download is ~17 GB** (one ENS field = 33.5 MB × 50 members × global; no server-side crop). Strategy:
+    per-param pull → **stream-crop to FL per step** → delete global. A one-shot cfgrib `.load()`
+    materialises the full (50×85×global) cube (~15 GB) and **OOMs**; per-step streaming keeps peak RAM
+    ~200 MB (~1.3 s/step). Resumable: complete globals + `<param>_fl.nc` are reused.
+  - **Grid mismatch (design assumption was wrong).** The open-data global grid is whole-degree-aligned;
+    our ERA5 grid is **offset ≤0.2°** (CDS `area` registration). Forecast fields are **nearest-neighbour
+    reindexed onto the ERA5 master grid** (values preserved). This only surfaced by running the code.
+  - **Daily-total convention:** forecast tp/ssrd summed to **true UTC days** (increment assigned to the
+    day it covers, floor(end−1s)); ERA5's hourly path has a ≤1 h label offset — negligible for
+    trailing/SPEI features.
+- **Stage 1 done:** ERA5T refreshed → 2026 daily frontier advanced **06-27 → 06-30** (June now final).
+  Frozen SPEI climatology unchanged (calibration = complete years 2016-2025; the 3 added days are in
+  incomplete-year 2026). Residual gap to interpolate shrinks accordingly.
+- **Reproducibility:** `run_forecast_features.py [--ens-date ... | --refresh-era5 | --skip-pull]` repeats a
+  run with no new code; `pull_ens` writes `run_manifest.json` recording the exact dirs downstream consumes.
+- **Next:** first full ensemble run (pull in progress) → validate stages 3-6 on real data → QA the product.
+
 ## 2026-07-05 — Forecast-ensemble feature pipeline design + Codex review (session 14)
 - **Pivot:** this session builds the **forecast-ensemble** weather features (the sister session does the CyAN
   fusion). Goal: reproduce the same 22 features for the **~15-day horizon as a 51-member ECMWF ensemble**, computed

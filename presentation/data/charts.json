@@ -1,0 +1,551 @@
+{
+ "_meta": {
+  "tools_n": 12,
+  "models_n": 14,
+  "features_reported_n": 10,
+  "source": "presentation/data/{tools,models}.json; citations resolved from Research/REFERENCES.md",
+  "importance_caveat": "'top predictor' counts are correlational / model-internal, not causal."
+ },
+ "tools": {
+  "panels": [
+   {
+    "title": "Who makes them",
+    "bars": [
+     {
+      "label": "State / local gov't",
+      "total": 5,
+      "forecast": 0
+     },
+     {
+      "label": "Federal gov't",
+      "total": 4,
+      "forecast": 2
+     },
+     {
+      "label": "Private sector",
+      "total": 3,
+      "forecast": 2
+     }
+    ]
+   },
+   {
+    "title": "Cost of access",
+    "bars": [
+     {
+      "label": "Free",
+      "total": 9,
+      "forecast": 2
+     },
+     {
+      "label": "Freemium",
+      "total": 1,
+      "forecast": 1
+     },
+     {
+      "label": "Paid",
+      "total": 2,
+      "forecast": 1
+     }
+    ]
+   },
+   {
+    "title": "How they work",
+    "bars": [
+     {
+      "label": "Empirical satellite",
+      "total": 5,
+      "forecast": 1
+     },
+     {
+      "label": "In-situ monitoring",
+      "total": 4,
+      "forecast": 0
+     },
+     {
+      "label": "Statistical / ML",
+      "total": 2,
+      "forecast": 2
+     },
+     {
+      "label": "Physics-based",
+      "total": 1,
+      "forecast": 1
+     }
+    ]
+   }
+  ],
+  "class_color": {
+   "weather": "#6baed6",
+   "hydroclimate": "#4c956c",
+   "static": "#9aa5b1",
+   "earth-obs / bloom signal": "#8c6bb1",
+   "chemistry": "#e07b39"
+  },
+  "sources": [
+   {
+    "name": "EPA CyAN / CyANWeb",
+    "org": "US EPA (with NASA, NOAA, USGS)",
+    "key": "FED-008",
+    "url": "https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan"
+   },
+   {
+    "name": "EPA experimental 7-day cyanoHAB forecast",
+    "org": "US EPA",
+    "key": "FED-060",
+    "url": "https://www.epa.gov/habs/hab-forecasts"
+   },
+   {
+    "name": "NOAA Lake Erie HAB Forecast + bulletin",
+    "org": "NOAA NCCOS / GLERL",
+    "key": "FED-024",
+    "url": "https://coastalscience.noaa.gov/science-areas/habs/hab-forecasts/lake-erie/"
+   },
+   {
+    "name": "NOAA HAB Monitoring System",
+    "org": "NOAA NCCOS",
+    "key": "FED-061",
+    "url": "https://coastalscience.noaa.gov/science-areas/habs/hab-monitoring-system/"
+   },
+   {
+    "name": "Florida DEP Algal Bloom Dashboard",
+    "org": "Florida Dept. of Environmental Protection",
+    "key": "SLG-001",
+    "url": "https://floridadep.gov/AlgalBloom"
+   },
+   {
+    "name": "NY NYHABS notifications & map",
+    "org": "NY State Dept. of Environmental Conservation",
+    "key": "SLG-003",
+    "url": "https://dec.ny.gov/environmental-protection/water/water-quality/harmful-algal-blooms/notifications"
+   },
+   {
+    "name": "California SWAMP FHAB + satellite screening",
+    "org": "California State Water Resources Control Board",
+    "key": "SLG-012",
+    "url": "https://www.waterboards.ca.gov/water_issues/programs/swamp/freshwater_cyanobacteria.html"
+   },
+   {
+    "name": "Ohio HAB response (Lake Erie region)",
+    "org": "Ohio EPA / Ohio Dept. of Health",
+    "key": "SLG-004",
+    "url": "https://dam.assets.ohio.gov/image/upload/epa.ohio.gov/Portals/28/documents/habs/PWS-HAB-Strategy.pdf"
+   },
+   {
+    "name": "Utah / Oregon recreational advisory systems",
+    "org": "Utah DEQ/DHHS; Oregon Health Authority",
+    "key": "SLG-002",
+    "url": "https://deq.utah.gov/water-quality/recreational-health-advisory-guidance-for-harmful-algal-blooms"
+   },
+   {
+    "name": "BlueGreen BGi Water Health Intelligence",
+    "org": "BlueGreen Water Technologies",
+    "key": "PVT-001",
+    "url": "https://www.prnewswire.com/news-releases/bluegreen-water-technologies-introduces-bgi-water-health-intelligence-platform-to-power-proactive-scalable-water-management-302603700.html"
+   },
+   {
+    "name": "CyanoLakes",
+    "org": "CyanoLakes (Pty) Ltd",
+    "key": "PVT-003",
+    "url": "https://www.cyanolakes.com/"
+   },
+   {
+    "name": "EOMAP water-quality service",
+    "org": "EOMAP GmbH & Co. KG",
+    "key": "PVT-008",
+    "url": "https://eomap.com/wp-content/uploads/2025/05/WQ_deep_dive_S.pdf"
+   }
+  ]
+ },
+ "features": {
+  "items": [
+   {
+    "label": "Water temperature",
+    "count": 6,
+    "top": 3,
+    "cls": "hydroclimate",
+    "color": "#4c956c",
+    "dataset": "ERA5",
+    "dcolor": "#3b82c4"
+   },
+   {
+    "label": "Nutrients (N / P)",
+    "count": 6,
+    "top": 2,
+    "cls": "chemistry",
+    "color": "#e07b39",
+    "dataset": "WQP",
+    "dcolor": "#e07b39"
+   },
+   {
+    "label": "Satellite reflectance / index",
+    "count": 4,
+    "top": 1,
+    "cls": "earth-obs / bloom signal",
+    "color": "#8c6bb1",
+    "dataset": "CyAN",
+    "dcolor": "#8c6bb1"
+   },
+   {
+    "label": "Precipitation",
+    "count": 4,
+    "top": 0,
+    "cls": "weather",
+    "color": "#6baed6",
+    "dataset": "ERA5",
+    "dcolor": "#3b82c4"
+   },
+   {
+    "label": "Wind / mixing",
+    "count": 3,
+    "top": 1,
+    "cls": "weather",
+    "color": "#6baed6",
+    "dataset": "ERA5",
+    "dcolor": "#3b82c4"
+   },
+   {
+    "label": "Hydrology / flow",
+    "count": 3,
+    "top": 1,
+    "cls": "hydroclimate",
+    "color": "#4c956c",
+    "dataset": "NWIS",
+    "dcolor": "#2e7d5b"
+   },
+   {
+    "label": "Lake depth / area",
+    "count": 2,
+    "top": 0,
+    "cls": "static",
+    "color": "#9aa5b1",
+    "dataset": "Static (NHD / BasinATLAS)",
+    "dcolor": "#9aa5b1"
+   },
+   {
+    "label": "Prior bloom state (persistence)",
+    "count": 1,
+    "top": 1,
+    "cls": "earth-obs / bloom signal",
+    "color": "#8c6bb1",
+    "dataset": "CyAN",
+    "dcolor": "#8c6bb1"
+   },
+   {
+    "label": "pH",
+    "count": 1,
+    "top": 0,
+    "cls": "chemistry",
+    "color": "#e07b39",
+    "dataset": "WQP",
+    "dcolor": "#e07b39"
+   },
+   {
+    "label": "Dissolved oxygen",
+    "count": 1,
+    "top": 0,
+    "cls": "chemistry",
+    "color": "#e07b39",
+    "dataset": "WQP",
+    "dcolor": "#e07b39"
+   },
+   {
+    "label": "Phycocyanin (in-situ pigment)",
+    "count": 1,
+    "top": 1,
+    "cls": "earth-obs / bloom signal",
+    "color": "#8c6bb1",
+    "dataset": "Not in our stack",
+    "dcolor": "#c3ccd2"
+   },
+   {
+    "label": "Geolocation (lat/lon)",
+    "count": 1,
+    "top": 1,
+    "cls": "static",
+    "color": "#9aa5b1",
+    "dataset": "Not in our stack",
+    "dcolor": "#c3ccd2"
+   }
+  ],
+  "class_color": {
+   "weather": "#6baed6",
+   "hydroclimate": "#4c956c",
+   "static": "#9aa5b1",
+   "earth-obs / bloom signal": "#8c6bb1",
+   "chemistry": "#e07b39"
+  },
+  "dataset_color": {
+   "CyAN": "#8c6bb1",
+   "ERA5": "#3b82c4",
+   "WQP": "#e07b39",
+   "NWIS": "#2e7d5b",
+   "Static (NHD / BasinATLAS)": "#9aa5b1",
+   "Not in our stack": "#c3ccd2"
+  }
+ },
+ "models": {
+  "algorithm": [
+   {
+    "label": "Tree / boosting",
+    "count": 5
+   },
+   {
+    "label": "Mechanistic / process-based",
+    "count": 3
+   },
+   {
+    "label": "Bayesian spatiotemporal",
+    "count": 2
+   },
+   {
+    "label": "Deep learning (LSTM/CNN)",
+    "count": 2
+   },
+   {
+    "label": "ANN / SVM",
+    "count": 1
+   },
+   {
+    "label": "Hyperspectral sensor",
+    "count": 1
+   }
+  ],
+  "signal": [
+   {
+    "label": "In-situ (\u00b1 weather/physical)",
+    "count": 8
+   },
+   {
+    "label": "Fusion (satellite + in-situ)",
+    "count": 4
+   },
+   {
+    "label": "Hybrid (ML + process)",
+    "count": 1
+   },
+   {
+    "label": "Satellite only",
+    "count": 1
+   }
+  ],
+  "citations": [
+   {
+    "id": "M1",
+    "name": "Bayesian spatiotemporal fusion (INLA), 2,192 US lakes",
+    "refs": [
+     {
+      "key": "ACAD-050",
+      "author": "Blake A. Schaeffer et al.",
+      "year": "2023",
+      "title": "Forecasting freshwater cyanobacterial harmful algal blooms for Sentinel-3 satellite resolved U.S. lakes and reservoirs",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10842250/"
+     },
+     {
+      "key": "FED-017",
+      "author": "Schaeffer BA et al.",
+      "year": "2024",
+      "title": "Forecasting freshwater cyanobacterial harmful algal blooms for Sentinel-3 satellite resolved U.S. lakes and reservoirs",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10842250/"
+     }
+    ]
+   },
+   {
+    "id": "M2",
+    "name": "R-INLA spatial (SPDE) + AR1, 103 Florida lakes",
+    "refs": [
+     {
+      "key": "ACAD-092",
+      "author": "Mark H. Myer et al.",
+      "year": "2020",
+      "title": "Spatio-Temporal Modeling for Forecasting High-Risk Freshwater Cyanobacterial Harmful Algal Blooms in Florida",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7751622/"
+     },
+     {
+      "key": "ACAD-093",
+      "author": "Caballero, C.B. et al.",
+      "year": "2025",
+      "title": "The need for advancing algal bloom forecasting using remote sensing and modeling: Progress and future directions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1470160X25001736"
+     }
+    ]
+   },
+   {
+    "id": "M3",
+    "name": "Gradient-boosting + attention CNN-LSTM ensemble",
+    "refs": [
+     {
+      "key": "ACAD-043",
+      "author": "Jung Min Ahn et al.",
+      "year": "2023",
+      "title": "Ensemble Machine Learning of Gradient Boosting (XGBoost, LightGBM, CatBoost) and Attention-Based CNN-LSTM for Harmful Algal Blooms Forecasting",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10611362/"
+     }
+    ]
+   },
+   {
+    "id": "M4",
+    "name": "Explainable LSTM + SHAP, 102 sites",
+    "refs": [
+     {
+      "key": "ACAD-048",
+      "author": "Shengyue Chen et al.",
+      "year": "2025",
+      "title": "Explainable deep learning identifies patterns and drivers of freshwater harmful algal blooms",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11786749/"
+     }
+    ]
+   },
+   {
+    "id": "M5",
+    "name": "Interpretable CatBoost + SHAP, Yilong Lake",
+    "refs": [
+     {
+      "key": "ACAD-060",
+      "author": "Yundong Wu et al.",
+      "year": "2025",
+      "title": "Identification of key feature variables and prediction of harmful algal blooms in a water diversion lake based on interpretable machine learning",
+      "url": "https://www.sciencedirect.com/science/article/pii/S001393512500742X"
+     }
+    ]
+   },
+   {
+    "id": "M6",
+    "name": "Intelligible ML early-warning, Lake M\u00fcggelsee",
+    "refs": [
+     {
+      "key": "ACAD-037",
+      "author": "Friedrich Recknagel (University of Adelaide) et al.",
+      "year": "2025",
+      "title": "Early warning of harmful cyanobacteria blooms based on high frequency in situ monitoring and intelligible machine learning modelling: The case study of Lake M\u00fcggelsee (Germany)",
+      "url": "https://doi.org/10.1016/j.watres.2025.124514"
+     }
+    ]
+   },
+   {
+    "id": "M7",
+    "name": "ANN vs SVM reservoir alert-level",
+    "refs": [
+     {
+      "key": "ACAD-001",
+      "author": "Yongeun Park et al.",
+      "year": "2021",
+      "title": "A machine learning approach for early warning of cyanobacterial bloom outbreaks in a freshwater reservoir",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0301479721004771"
+     }
+    ]
+   },
+   {
+    "id": "M8",
+    "name": "RF + boosting ensemble vs CNN/ANN",
+    "refs": [
+     {
+      "key": "ACAD-117",
+      "author": "Seohyun Byeon (Korea Environment Institute et al.",
+      "year": "2025",
+      "title": "Evaluating the applicability of machine learning and deep learning models for predicting cyanobacterial alert levels in a drinking water reservoir",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214714425007573"
+     }
+    ]
+   },
+   {
+    "id": "M9",
+    "name": "NOAA Lake Erie 3-D transport (mechanistic)",
+    "refs": [
+     {
+      "key": "ACAD-024",
+      "author": "Xing Zhou et al.",
+      "year": "2023",
+      "title": "Comparison of Eulerian and Lagrangian transport models for harmful algal bloom forecasts in Lake Erie",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1364815223000270"
+     },
+     {
+      "key": "ACAD-051",
+      "author": "Zhou et al.",
+      "year": "2023",
+      "title": "Forecasting microcystin concentrations in Lake Erie using an Eulerian tracer model",
+      "url": "https://doi.org/10.1016/j.jglr.2023.06.006"
+     },
+     {
+      "key": "ACAD-100",
+      "author": "M.D. Rowe et al.",
+      "year": "2016",
+      "title": "Vertical distribution of buoyant Microcystis blooms in a Lagrangian particle tracking model for short-term forecasts in Lake Erie",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1002/2016JC011720"
+     },
+     {
+      "key": "FED-042",
+      "author": "M.D. Rowe et al.",
+      "year": "2016",
+      "title": "Vertical distribution of buoyant Microcystis blooms in a Lagrangian particle tracking model for short-term forecasts in Lake Erie",
+      "url": "https://www.glerl.noaa.gov/pubs/fulltext/2016/20160026.pdf"
+     }
+    ]
+   },
+   {
+    "id": "M10",
+    "name": "Coupled hydrodynamic-algal biomass, Lake Taihu",
+    "refs": [
+     {
+      "key": "ACAD-052",
+      "author": "Wei Li et al.",
+      "year": "2014",
+      "title": "Forecasting short-term cyanobacterial blooms in Lake Taihu, China, using a coupled hydrodynamic-algal biomass model",
+      "url": "https://doi.org/10.1002/eco.1402"
+     }
+    ]
+   },
+   {
+    "id": "M11",
+    "name": "Multi-source fusion severity classifier (Sentinel-2 + DEM + climate)",
+    "refs": [
+     {
+      "key": "ACAD-008",
+      "author": "Ioannis Nasios",
+      "year": "2025",
+      "title": "AI-driven multi-source data fusion for algal bloom severity classification in small inland water bodies: Leveraging Sentinel-2, DEM, and NOAA climate data",
+      "url": "https://arxiv.org/html/2505.03808v1"
+     }
+    ]
+   },
+   {
+    "id": "M12",
+    "name": "WASP eutrophication process model, Lake Winnipeg",
+    "refs": [
+     {
+      "key": "ACAD-108",
+      "author": "Weitao Zhang et al.",
+      "year": "2012",
+      "title": "Application of a eutrophication model for assessing water quality in Lake Winnipeg",
+      "url": "https://doi.org/10.1016/j.jglr.2011.01.003"
+     }
+    ]
+   },
+   {
+    "id": "M14",
+    "name": "Deep-learning surrogate of a process model (hybrid)",
+    "refs": [
+     {
+      "key": "ACAD-104",
+      "author": "Kim, Young Woo et al.",
+      "year": "2025",
+      "title": "A modular deep learning surrogate model for simulating harmful algal blooms in complex process-based systems",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40591990/"
+     }
+    ]
+   },
+   {
+    "id": "M15",
+    "name": "NASA PACE hyperspectral cyanoHAB validation",
+    "refs": [
+     {
+      "key": "ACAD-106",
+      "author": "Kumar, A. et al.",
+      "year": "2026",
+      "title": "Advancing CyanoHAB monitoring with hyperspectral data from NASA PACE: First results and validation",
+      "url": "https://linkinghub.elsevier.com/retrieve/pii/S156984322500679X"
+     }
+    ]
+   }
+  ]
+ }
+}

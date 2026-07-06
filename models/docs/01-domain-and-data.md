@@ -50,8 +50,13 @@ Per D-23, the modeling unit is the **resolvable lake**. The Florida lake set = t
 resolvable-lakes shapefile** (COMID-keyed) clipped to the FL polygon — the same lake list the EPA
 forecast serves (its panel carries `State`, so `State = FL` gives the benchmark's FL lakes directly).
 Per-lake CyAN features = **mean/median/SD of CI over each lake's resolvable pixels** (Schaeffer recipe;
-`DESIGN.md` §2). Exact FL lake count is pulled in the acquisition step below (order of a few hundred).
-COMID enables **identity joins** to WQP/NARS/NWIS/LakeCat — the reason for the lake-level pivot.
+`DESIGN.md` §2). **FL lake count = 133** (`build_fl_lake_mask.py`, interior-point-in-FL; 134 incl. one
+border-shared), from the CyAN `updatedValidLakes.shp` (2,321 CONUS valid lakes) → mask at
+`models/data/derived/fl_resolvable_lakes.gpkg`. Includes Okeechobee (1,675 km²), George, Kissimmee,
+Apopka, Istokpoga, Tohopekaliga. **133 × 531 weeks = 70,623 lake-weeks** (pre-QA). COMID enables
+**identity joins** to WQP/NARS/NWIS/LakeCat — the reason for the lake-level pivot. *(The forecast's
+2,191-lake set is a subset of these 2,321 valid lakes; reconcile the FL overlap for the EPA head-to-
+head.)*
 
 ## 3. Compute gate — CONTEXT (pixel measurement; superseded by the lake pivot)
 
@@ -91,12 +96,11 @@ hard part).
 
 ## 5. Open items feeding later phases
 
-- **Obtain the CyAN resolvable-lakes shapefile (Acquire).** Authoritative source: **NASA Earthdata**,
-  CyAN CONUS shapefile **derived from NHDPlus v2.0** — all NHDPlus lakes/reservoirs retaining ≥3 water
-  pixels at 300 m = the **2,192 resolvable lakes**, COMID-keyed (matches the EPA forecast's lake set;
-  see `../../data-sources/cyano-forecasts/METADATA.md` §7.4). Likely needs Earthdata Login (token on
-  file). Filter to FL (via `State`/polygon) → the modeling mask + FL lake count. Confirm COMID vs
-  NHDPlus. Cross-check the FL subset against the forecast panel's `State = FL` lakes.
+- ✅ **CyAN resolvable-lakes shapefile obtained.** `MERIS_OLCI_Lakes.zip` → `updatedValidLakes.shp`
+  (2,321 CONUS valid lakes, COMID + polygons + area/GNIS name, CyAN Albers) from **NASA Earthdata**
+  (`/s3fs-public/2026-01/MERIS_OLCI_Lakes.zip`, public, no login). Clipped to FL → **133 lakes**
+  (`build_fl_lake_mask.py` → `data/derived/fl_resolvable_lakes.gpkg`). *Open:* reconcile the 133 vs the
+  forecast panel's `State=FL` COMIDs for a clean h=1 head-to-head.
 - CI↔chl-a / WHO-AL1 threshold mapping (`DESIGN.md` §4) → `docs/03`.
 - Min-valid-pixel-per-lake-week rule + mixed-pixel mask (`DESIGN.md` §4) → `docs/03`.
 - WQP reconciliation specifics (`DESIGN.md` §3) → `docs/02`.

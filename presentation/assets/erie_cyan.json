@@ -1,0 +1,56 @@
+{
+ "bounds": [
+  [
+   40.525756829587216,
+   -83.4925775381807
+  ],
+  [
+   46.759294311501705,
+   -74.82565894947241
+  ]
+ ],
+ "frames": [
+  {
+   "label": "2022-06-19",
+   "url": "assets/erie_cyan_170.png",
+   "detected_px": 9152
+  },
+  {
+   "label": "2022-07-03",
+   "url": "assets/erie_cyan_184.png",
+   "detected_px": 9545
+  },
+  {
+   "label": "2022-07-17",
+   "url": "assets/erie_cyan_198.png",
+   "detected_px": 12687
+  },
+  {
+   "label": "2022-07-31",
+   "url": "assets/erie_cyan_212.png",
+   "detected_px": 26866
+  },
+  {
+   "label": "2022-08-14",
+   "url": "assets/erie_cyan_226.png",
+   "detected_px": 29611
+  },
+  {
+   "label": "2022-08-28",
+   "url": "assets/erie_cyan_240.png",
+   "detected_px": 35966
+  },
+  {
+   "label": "2022-09-11",
+   "url": "assets/erie_cyan_254.png",
+   "detected_px": 22118
+  },
+  {
+   "label": "2022-09-25",
+   "url": "assets/erie_cyan_268.png",
+   "detected_px": 31895
+  }
+ ],
+ "default_index": 2,
+ "source": "EPA/NASA CyAN CI_cyano, Sentinel-3 OLCI v7.2, weekly composites (Western Lake Erie tile, 2022), reprojected to EPSG:3857"
+}
