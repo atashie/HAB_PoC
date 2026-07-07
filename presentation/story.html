@@ -895,35 +895,29 @@
   <!-- Demo the tool (Part B) -->
   <div class="slide" data-layout="wide"><div class="kicker">Demo · Part B</div>
     <h2>The tool, live — pick a lake, read the risk.</h2>
-    <div class="split">
-      <div class="col-fig">
-        <figure class="demo-embed" id="demoEmbed">
-          <button type="button" class="demo-load" aria-label="Load the interactive tool inside this slide">
-            <img src="assets/dashboard_preview.png" alt="Screenshot of the Florida Harmful Algal Bloom risk dashboard: a map of Florida lakes coloured by bloom risk beside a ranked alert list with per-lake probabilities.">
-            <span class="demo-play">▶&nbsp; Load the interactive tool</span>
-          </button>
-        </figure>
-        <div class="fig-cap">Live embed of <a href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">harmful-algal-bloomspoc.vercel.app</a>
-        — click to load it inside the slide, or open it full-screen via the link. Interactive when online; the screenshot stands in if the network is
-        down. Historical replay on a fixed dated snapshot, not a live feed.</div>
-      </div>
-      <div class="col-txt">
-        <p class="sub">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an honest
-        <b>historical replay</b>, not live inference. Pick a lake and a lead time to see the risk with its uncertainty and baseline, the top drivers, a
-        suggested action window, and the limits.
-        <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
-        <p style="margin:10px 0 4px"><b>Who’d use it, and how</b> — illustrative workflows the tool supports (the PoC runs on a fixed historical snapshot):</p>
-        <ul class="tight">
-          <li><b>Customer Success — get ahead of a bloom:</b> spot lakes flipping into <b>Warning</b> over the next 1–4 weeks, find the customers on or
-            near those waterbodies, and <b>pre-position product and crews</b> before the bloom peaks — rather than reacting once it is visible.</li>
-          <li><b>Customer Success / commercial — chronic blooms → new leads:</b> use <em>Current active blooms</em> and the lakes that bloom week after
-            week to find chronically affected waterbodies, identify accounts (or prospects) in that watershed, and <b>reach out with evidence in hand</b>.</li>
-          <li><b>Sales engineer / solutions data scientist — the “why”:</b> open the <em>Deep dive</em> to see which drivers are moving a given forecast
-            (CyAN history, season, weather, nutrients) and whether a lake is <b>diverging from its historical / seasonal pattern</b> — grounding a
-            technical conversation in what the model is actually responding to, not a black box.</li>
-        </ul>
-      </div>
-    </div>
+    <p class="sub" style="max-width:1180px">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an honest
+    <b>historical replay</b>, not live inference. Pick a lake and a lead time to see the risk with its uncertainty and baseline, the top drivers, a
+    suggested action window, and the limits.
+    <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
+    <p style="margin:10px 0 4px"><b>Who’d use it, and how</b> — illustrative workflows the tool supports (the PoC runs on a fixed historical snapshot):</p>
+    <ul class="tight">
+      <li><b>Customer Success — get ahead of a bloom:</b> spot lakes flipping into <b>Warning</b> over the next 1–4 weeks, find the customers on or
+        near those waterbodies, and <b>pre-position product and crews</b> before the bloom peaks — rather than reacting once it is visible.</li>
+      <li><b>Customer Success / commercial — chronic blooms → new leads:</b> use <em>Current active blooms</em> and the lakes that bloom week after
+        week to find chronically affected waterbodies, identify accounts (or prospects) in that watershed, and <b>reach out with evidence in hand</b>.</li>
+      <li><b>Sales engineer / solutions data scientist — the “why”:</b> open the <em>Deep dive</em> to see which drivers are moving a given forecast
+        (CyAN history, season, weather, nutrients) and whether a lake is <b>diverging from its historical / seasonal pattern</b> — grounding a
+        technical conversation in what the model is actually responding to, not a black box.</li>
+    </ul>
+    <figure class="demo-embed" id="demoEmbed">
+      <button type="button" class="demo-load" aria-label="Load the interactive tool inside this slide">
+        <img src="assets/dashboard_preview.png" alt="Screenshot of the Florida Harmful Algal Bloom risk dashboard: a map of Florida lakes coloured by bloom risk beside a ranked alert list with per-lake probabilities.">
+        <span class="demo-play">▶&nbsp; Load the interactive tool</span>
+      </button>
+    </figure>
+    <div class="fig-cap">Live embed of <a href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">harmful-algal-bloomspoc.vercel.app</a>
+    — click to load it inside the slide, or open it full-screen via the link. Interactive when online; the screenshot stands in if the network is
+    down. Historical replay on a fixed dated snapshot, not a live feed.</div>
   </div>
 
   <!-- Platform section launcher -->
