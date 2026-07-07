@@ -130,10 +130,13 @@ the legacy figures (`build_figures.py`) and the live Plotly charts (`build_story
   source tables in `../models/outputs/*.md`).
 - `story.html` verified structurally: balanced tags (5/5 sections, 46/46 details), inline JS parses
   (`node --check`), all local asset references resolve, **27 auto-numbered slides (21 `.slide` + 6 map-steps)**,
-  12 limitations boxes, all six Plotly chart IDs unique. Findings numbers (incl. the EPA head-to-head)
-  are pinned to the **W-2 / h1** scenario end-to-end (the correct 1-week-ahead, latency-fair case).
+  12 limitations boxes, all six Plotly chart IDs unique. Findings numbers use **two clearly-labelled evaluation
+  windows**: the **EPA head-to-head baseline** slide is the **shared-2025 W-2/h1** scenario (the latency-fair
+  1-week-ahead case), while the **final-model @1-week and onset-vs-lead** slides are the **2-year internal
+  held-out test** (train<2022-07 / val / test≥2024-07) — see `../models/DECISIONS-LOG.md` D-40/D-41/D-42.
   Non-ASCII in JS is intentional and valid UTF-8 (—, –, ·, ↔, ©, ², ½); the file declares `charset=utf-8`.
-- Technical-accuracy pass (two Codex reviews): cross-checked every deck number against `models/outputs/*.md`
+- Technical-accuracy pass (several Codex reviews, through 2026-07-07 — incl. a 4-agent full-deck value audit,
+  a deck "GO" review, and the D-43 workflow-review reconciliation): cross-checked every deck number against `models/outputs/*.md`
   + docs; reconciled W-1/W-2 consistency, a per-lake-identity overclaim, and the **both-direction "flip" vs
   onset mislabel**. The Findings now use true **positive-flip (onset)** metrics from a new evaluator,
   `../models/model/eval_headtohead_onset.py` → `../models/outputs/headtohead_onset.md` (all five predictor
