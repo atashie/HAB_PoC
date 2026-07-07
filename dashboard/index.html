@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Florida HAB Dashboard — SePRO PoC</title>
+<link rel="stylesheet" href="vendor/leaflet.css">
+<style>
+  :root{
+    --ink:#12343b; --teal:#0f6e78; --muted:#6b7f83; --line:#dbe4e4;
+    --bg:#eef3f3; --card:#ffffff;
+    --low:#9fb0b5; --watch:#e8a33d; --warning:#d1495b; --grey:#c9d6d9;
+    --fusion:#0f6e78; --lean:#6b4fb0; --clim:#8a8f98; --epa:#d1731f;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       color:var(--ink);background:var(--bg);font-size:14px;line-height:1.4}
+  header{background:var(--card);border-bottom:1px solid var(--line);padding:10px 18px}
+  .titlerow{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .brand{font-size:18px;font-weight:700;color:var(--ink)}
+  .sub{color:var(--muted);font-size:12.5px}
+  .banner{margin-top:6px;background:#fff6e6;border:1px solid #f0d9a8;color:#7a5a12;
+          padding:5px 10px;border-radius:6px;font-size:12px;display:inline-block}
+  .tabs{margin-top:10px;display:flex;gap:4px}
+  .tabs button{border:1px solid var(--line);background:#f4f8f8;color:var(--ink);
+       padding:7px 16px;border-radius:7px 7px 0 0;cursor:pointer;font-size:14px;font-weight:600}
+  .tabs button.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+  main{padding:14px 18px}
+  .tab{display:none}
+  .tab.active{display:block}
+  .controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .seg button{border:0;background:#fff;padding:8px 14px;cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)}
+  .seg button.active{background:var(--teal);color:#fff}
+  label{font-size:13px;color:var(--muted);font-weight:600}
+  select{font-size:13.5px;padding:6px 8px;border:1px solid var(--line);border-radius:6px;background:#fff;color:var(--ink)}
+  .legend{display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+  .legend .sw{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+  .split{display:grid;grid-template-columns:1fr 400px;gap:14px;align-items:stretch}
+  @media(max-width:900px){.split{grid-template-columns:1fr}}
+  .mapbox{height:620px;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#fff}
+  .listbox{height:620px;overflow-y:auto;border:1px solid var(--line);border-radius:10px;background:#fff;padding:8px}
+  .listhead{font-size:12.5px;color:var(--muted);padding:4px 8px 8px;border-bottom:1px solid var(--line);margin-bottom:6px}
+  .row{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;cursor:pointer;border:1px solid transparent}
+  .row:hover{background:#f1f6f6}
+  .row.sel{background:#e7f1f1;border-color:var(--teal)}
+  .row .nm{flex:1;font-weight:600;font-size:13.5px}
+  .row .onset{width:82px;text-align:center;font-variant-numeric:tabular-nums;font-weight:600;font-size:12px;color:var(--muted)}
+  .row .sc{font-variant-numeric:tabular-nums;font-weight:700;width:64px;text-align:right}
+  .rowhead{display:flex;align-items:center;gap:10px;padding:2px 8px 6px;border-bottom:1px solid var(--line);
+    font-size:10.5px;text-transform:uppercase;letter-spacing:.02em;color:var(--muted);font-weight:700}
+  .rowhead .nm{flex:1}
+  .rowhead .onset{width:82px;text-align:center;white-space:normal;line-height:1.15}
+  .rowhead .sc{width:64px;text-align:right}
+  .listhead div{margin-top:2px}
+  .info{cursor:help;color:var(--teal);font-weight:700;font-size:12px}
+  .pill{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:20px;color:#fff;text-transform:uppercase;letter-spacing:.02em}
+  .empty{color:var(--muted);padding:24px;text-align:center;font-size:13px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;min-width:0;overflow:hidden}
+  .card.wide{grid-column:1/-1}
+  .card h3{margin:0 0 4px;font-size:14.5px;color:var(--ink)}
+  .card .note{color:var(--muted);font-size:11.5px;margin:6px 0 0}
+  .plot{width:100%;height:300px}
+  .dd-summary{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--ink)}
+  .dd-summary b{color:var(--teal)}
+  table.feat{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.feat td{padding:3px 6px;border-bottom:1px solid #eef3f3}
+  table.feat td.v{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  .fam h4{margin:10px 0 3px;font-size:12.5px;color:var(--teal);text-transform:uppercase;letter-spacing:.03em}
+  .stale{font-size:10px;color:#b06a12;margin-left:6px}
+  .stale.old{color:var(--warning)}
+  .fresh{font-size:10px;color:#2e8b57;margin-left:6px}
+  .fleetwrap{display:grid;grid-template-columns:minmax(300px,5fr) 7fr;gap:16px}
+  @media(max-width:900px){.fleetwrap{grid-template-columns:1fr}}
+  .fleetscroll{max-height:432px;overflow-y:auto;border:1px solid var(--line);border-radius:8px}
+  table.lb{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.lb thead th{position:sticky;top:0;background:#fff;z-index:1;box-shadow:inset 0 -1px 0 var(--line)}
+  table.lb th{text-align:left;color:var(--muted);font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);font-size:11.5px;cursor:pointer;user-select:none;white-space:nowrap}
+  table.lb th:hover{color:var(--teal)}
+  table.lb th.sort{color:var(--teal)}
+  table.lb td{padding:4px 6px;border-bottom:1px solid #eef3f3}
+  table.lb tbody tr{cursor:pointer}
+  table.lb tbody tr:hover td{background:#f1f6f6}
+  table.lb td.d{text-align:right;font-variant-numeric:tabular-nums;font-weight:700}
+  .deepmap{height:420px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+  .explorer-ctrl{margin-bottom:8px}
+  .deeplegend{display:flex;align-items:center;gap:8px;margin-top:8px;font-size:11.5px;color:var(--muted);flex-wrap:wrap}
+  .deeplegend .bar{height:12px;width:180px;border-radius:3px;border:1px solid var(--line)}
+  details.fam{border-bottom:1px solid #eef3f3}
+  details.fam>summary{cursor:pointer;list-style:none;padding:7px 2px;font-size:12.5px;color:var(--teal);
+    text-transform:uppercase;letter-spacing:.03em;font-weight:600;display:flex;align-items:center;gap:6px}
+  details.fam>summary::-webkit-details-marker{display:none}
+  details.fam>summary::before{content:'▸';font-size:10px;color:var(--muted);transition:transform .1s}
+  details.fam[open]>summary::before{transform:rotate(90deg)}
+  details.fam>summary:hover{color:var(--ink)}
+  details.fam .cnt{color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;font-size:11px}
+  .ext{display:inline-block;margin-top:6px;padding:8px 12px;background:#f4f8f8;border:1px solid var(--line);
+       border-radius:8px;color:var(--teal);text-decoration:none;font-weight:600}
+  .ext:hover{background:#e7f1f1}
+  footer{padding:16px 18px;color:var(--muted);font-size:11.5px;border-top:1px solid var(--line);margin-top:14px}
+  footer code{background:#e7eeee;padding:1px 5px;border-radius:4px}
+  .leaflet-popup-content{font-size:12.5px}
+  .pop b{color:var(--teal)}
+</style>
+</head>
+<body>
+<header>
+  <div class="titlerow">
+    <div class="brand">Florida Harmful Algal Bloom — Risk &amp; State</div>
+    <div class="sub">Proof-of-concept decision tool · 133 CyAN-resolvable Florida lakes · WHO Alert Level 1 (median CyAN index ≥ 130 ≈ 12 µg/L chl-a)</div>
+  </div>
+  <div class="banner" id="snap-banner">loading…</div>
+  <nav class="tabs">
+    <button data-tab="alerts" class="active">Alerts</button>
+    <button data-tab="deep">Deep dive</button>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ TAB 1: ALERTS ============ -->
+  <section id="tab-alerts" class="tab active">
+    <div class="controls">
+      <div class="seg" id="view-toggle">
+        <button data-view="risk" class="active">New-bloom risk</button>
+        <button data-view="current">Current active blooms</button>
+      </div>
+      <div id="horizon-ctrl"><label>Forecast target week: <select id="horizon"></select></label></div>
+      <div class="legend" id="alert-legend"></div>
+    </div>
+    <div class="split">
+      <div id="alert-map" class="mapbox"></div>
+      <aside class="listbox">
+        <div class="listhead" id="list-head"></div>
+        <div id="alert-list"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ============ TAB 2: DEEP DIVE ============ -->
+  <section id="tab-deep" class="tab">
+    <div class="controls">
+      <label>Lake: <select id="lake-select"></select></label>
+      <div class="dd-summary" id="dd-summary"></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Forecast risk by target week</h3>
+        <div id="chart-forecast" class="plot"></div>
+        <p class="note">Bloom probability (%) for each forecast target week — a <b>separate per-horizon model</b>, issued from data
+          as of the cutoff. Our fusion vs the lean CyAN model (median + area — the optimal 2-feature simple model), seasonal climatology, and the EPA CyanoHAB forecast. <b>EPA caveat:</b> the EPA
+          value shown for each target week is its published percent-chance from a <i>later</i> (2026-07-02) snapshot, so at longer leads EPA
+          reflects information our cutoff-based forecast did not have — treat the head-to-head as fair at 1–2 weeks and increasingly
+          favourable to EPA further out. Point estimates of a WHO AL1 bloom probability — not a chlorophyll concentration.</p>
+      </div>
+      <div class="card">
+        <h3>Observed history</h3>
+        <div id="chart-history" class="plot"></div>
+        <p class="note">Satellite <b>CyAN index</b> (0–255) — the dense observed signal — with the WHO Alert-Level lines (index 130 / 151).
+          Real in-situ <b>chlorophyll-a</b> grab samples (Water Quality Portal, non-physical values dropped) on the right axis where they exist (sparse).
+          The dotted vertical line marks the <b>forecast issue cutoff</b>; the shaded region is realized <i>after</i> issue (not known at forecast time).
+          CyAN index↔chl-a is approximate; the CyAN label is a satellite realization, not a lab measurement.</p>
+      </div>
+      <div class="card">
+        <h3>Where we disagree — by target week</h3>
+        <div id="chart-disagree" class="plot"></div>
+        <p class="note">Our forecast minus the reference (percentage points). Positive = we call more risk than
+          seasonal climatology / the EPA forecast; negative = less. The EPA information-set caveat (above) applies —
+          the vs-EPA gap at longer leads is partly a timing mismatch. A disagreement is a hypothesis, not proof — correlation ≠ causation.</p>
+      </div>
+      <div class="card">
+        <h3>Current state of features — by family</h3>
+        <div id="feat-families"></div>
+        <p class="note">Feature values as of the forecast cutoff, each temporal reading tagged with its age (satellite cloud-gap for CyAN,
+          weeks-since-sample for in-situ). Values marked <b>*</b> are <b>raw WQP/NWIS readings — not unit- or censor-harmonized</b>
+          (non-physical values dropped); indicative only, and typically months–years old. The model explicitly uses staleness for
+          <b>total-P, chl-a and the CyAN cloud-gap</b>, and handles missing values natively; other ages are shown for context
+          but are not currently model inputs. Static catchment and gridded weather features do not grow stale.</p>
+      </div>
+      <div class="card wide">
+        <h3>Fleet view — disagreements &amp; explorer</h3>
+        <div class="fleetwrap">
+          <div class="fleetcol">
+            <div id="fleet-tables"></div>
+            <p class="note">Biggest departures from climatology / the EPA forecast at the earliest forecast week. Click a column header to sort; click a row to open that lake. These are where a field sample would be most informative.</p>
+          </div>
+          <div class="explorercol">
+            <div class="explorer-ctrl"><label>Color all lakes by:&nbsp; <select id="deep-metric"></select></label></div>
+            <div id="deep-map" class="deepmap"></div>
+            <div id="deep-legend" class="deeplegend"></div>
+            <p class="note">Every lake in the snapshot, shaded by the selected forecast or feature. Grey = no value. Click a lake to open it above.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Ancillary reference (external)</h3>
+        <p class="note" style="margin-top:2px">Physical grab-sample &amp; toxin monitoring by the Florida Department of Environmental Protection — a
+          separate signal from the CyAN satellite index. <b>Not processed by us</b>; provided for cross-reference only.</p>
+        <a class="ext" id="fldep-link" href="https://floridadep.gov/AlgalBloom" target="_blank" rel="noopener">Open FL DEP Algal Bloom Sampling ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="foot"></footer>
+
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/plotly.min.js"></script>
+<script src="data/geo.js"></script>
+<script src="data/dashboard_data.js"></script>
+<script>
+"use strict";
+var DASH = window.DASH, META = DASH.meta, LAKES = DASH.lakes;
+var byComid = {}; LAKES.forEach(function(l){ byComid[l.comid] = l; });
+var view='risk', selComid=null;   // declared up top: drawLakes()->renderAlerts() runs at boot before the Alerts section
+var ONSET_LIKELY = META.tiers.warning;   // "first likely" onset = first horizon reaching Warning (same reason)
+var TIER = {Low:'var(--low)', Watch:'var(--watch)', Warning:'var(--warning)'};
+var TIERHEX = {Low:'#9fb0b5', Watch:'#e8a33d', Warning:'#d1495b'};
+var C = {fusion:'#0f6e78', lean:'#6b4fb0', clim:'#8a8f98', epa:'#d1731f'};
+var fmtDate = function(s){ var d=new Date(s+'T00:00:00'); return d.toLocaleDateString('en-US',{month:'short',day:'numeric'}); };
+
+/* ---------- snapshot banner + footer ---------- */
+document.getElementById('snap-banner').innerHTML =
+  '<b>Demonstration on a fixed, dated snapshot — not a live feed.</b> &nbsp;Per-horizon forecast issued from data as of <b>'
+  + META.forecast_cutoff + '</b> (target weeks through ' + META.forecast_target_last + '); observations through ' + META.obs_last + '. '
+  + META.n_lakes + ' of ' + META.n_resolvable + ' resolvable lakes this week (' + META.n_lakes_full + ' with all 5 horizons) · '
+  + META.n_blooming_now + ' blooming, ' + META.n_clear_now + ' clear at issue.';
+document.getElementById('foot').innerHTML =
+  '<b>Provisional proof-of-concept — not an operational tool.</b> It combines a satellite cyanobacteria signal (EPA CyAN) '
+  + 'with weather, in-situ water-quality, and catchment data to <b>forecast the weekly probability of a harmful algal bloom</b> '
+  + 'across Florida lakes, and to <b>summarise which lakes are blooming now</b>. Forecasts are probabilities, not certainties, '
+  + 'and this demonstration runs on a fixed historical snapshot — not a live feed. Methods, data sources, and validation are '
+  + 'documented in the project repository.';
+
+/* ---------- horizon (target-week) options ---------- */
+var HZ = [];  // list of {h, label, target_end} from the first lake that has a full forecast
+(function(){
+  var ref = LAKES.find(function(l){ return l.forecast && l.forecast.length===5; }) || LAKES[0];
+  ref.forecast.forEach(function(f){ HZ.push({h:f.h, target_end:f.target_end, label:'week of '+fmtDate(f.target_end)}); });
+})();
+var hzSel = document.getElementById('horizon');
+HZ.forEach(function(o){ var op=document.createElement('option'); op.value=o.h;
+  op.textContent=o.label+(o.h===0?'  (h0 - nowcast)':'  (h'+o.h+')'); hzSel.appendChild(op); });
+hzSel.value = 1; // default: nearest operational forecast (h0 is a diagnostic nowcast, per the modeling docs)
+
+/* ---------- helpers to read a lake's forecast at horizon h ---------- */
+function fAt(l,h){ if(!l.forecast) return null; for(var i=0;i<l.forecast.length;i++) if(l.forecast[i].h===h) return l.forecast[i]; return null; }
+function tierOf(pct){ if(pct==null) return null; var p=pct/100; return p>=META.tiers.warning?'Warning':(p>=META.tiers.watch?'Watch':'Low'); }
+var ACTIVE_HEX = '#c9b0e6';    // "Active HAB" pale-purple map fill (distinct 4th category on the risk map)
+var ACTIVE_TEXT = '#7b3fa0';   // readable purple for Active-HAB labels/text (pale fill is too light for text)
+
+/* ================= MAP ================= */
+var map = L.map('alert-map',{zoomControl:true}).setView([27.8,-81.6],6);
+map.attributionControl.setPrefix(false);
+var markers = {}; // comid -> circleMarker
+var geo = null;
+
+// geometry comes from data/geo.js (window.FL_STATES / window.FL_LAKES) — no fetch, works from file://
+addBasemaps(map);
+drawLakes(window.FL_LAKES);
+
+function centroid(feat){
+  var c = feat.geometry.coordinates;
+  var ring = feat.geometry.type==='Polygon'? c[0] : c[0][0];
+  var x=0,y=0,n=0; ring.forEach(function(p){ x+=p[0]; y+=p[1]; n++; });
+  return [y/n, x/n];
+}
+// Political (offline vector) <-> Satellite (Esri optical tiles, needs internet). Lakes/markers stay on top.
+function addBasemaps(m){
+  var pol = window.FL_STATES ? L.geoJSON(window.FL_STATES,{style:{color:'#cdd9d9',weight:1,fill:true,fillColor:'#e8eeee',fillOpacity:.5}}) : L.layerGroup();
+  var sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+                        {maxZoom:18, attribution:'Imagery © Esri, Maxar, Earthstar Geographics'});
+  pol.addTo(m);
+  L.control.layers({'Political (light)':pol,'Satellite (optical)':sat}, null, {collapsed:false}).addTo(m);
+  return {pol:pol, sat:sat};
+}
+function drawLakes(g){
+  // faint lake outlines for spatial context
+  geo = L.geoJSON(g,{style:{color:'#9fb8bb',weight:1,fill:false}}).addTo(map);
+  g.features.forEach(function(feat){
+    var id = +feat.properties.COMID;
+    var ll = centroid(feat);
+    var area = feat.properties.area_km2 || 1;
+    var r = Math.max(5, Math.min(14, 4+Math.sqrt(area)));
+    var m = L.circleMarker(ll,{radius:r,weight:1.5,color:'#33555b',fillColor:'#c9d6d9',fillOpacity:.9});
+    m._comid=id; m._r=r;
+    m.on('click',function(){ selectLake(id,true); });
+    m.addTo(map);
+    markers[id]=m;
+  });
+  try{ map.fitBounds(geo.getBounds().pad(0.05)); }catch(e){}
+  renderAlerts();
+}
+
+/* ================= ALERTS TAB ================= */
+document.querySelectorAll('#view-toggle button').forEach(function(b){
+  b.onclick=function(){ document.querySelectorAll('#view-toggle button').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active'); view=b.dataset.view;
+    document.getElementById('horizon-ctrl').style.display = view==='risk'?'':'none';
+    renderAlerts(); };
+});
+hzSel.onchange=renderAlerts;
+
+function durBucket(w){ return w>=53?'#8c3b12':(w>=13?'#d1731f':(w>=4?'#ef9d5b':'#f6c99f')); }
+
+/* onset timing: earliest forecast horizon (h0..h4) whose fusion risk reaches the "likely" line (Warning) */
+function onsetH(l){ var best=null; if(l.forecast){ l.forecast.forEach(function(f){ if(f.fusion!=null && f.fusion/100>=ONSET_LIKELY && (best===null||f.h<best)) best=f.h; }); } return best; }
+
+function renderAlerts(){
+  var h = +hzSel.value;
+  // legend
+  var lg = document.getElementById('alert-legend');
+  if(view==='risk'){
+    lg.innerHTML = '<span><span class="sw" style="background:#d1495b"></span>Warning ≥'+Math.round(META.tiers.warning*100)+'%</span>'
+      + '<span><span class="sw" style="background:#e8a33d"></span>Watch ≥'+Math.round(META.tiers.watch*100)+'%</span>'
+      + '<span><span class="sw" style="background:#9fb0b5"></span>Low</span>'
+      + '<span><span class="sw" style="background:'+ACTIVE_HEX+';border:1px solid #a98fce"></span>Active HAB</span>'
+      + '<span style="color:#9aa7a9"><span class="sw" style="background:#efe6cf;border:1px solid #c9b48a"></span>no forecast this week</span>';
+  } else {
+    lg.innerHTML = '<span><span class="sw" style="background:#f6c99f"></span>1–3 wk</span>'
+      + '<span><span class="sw" style="background:#ef9d5b"></span>4–12 wk</span>'
+      + '<span><span class="sw" style="background:#d1731f"></span>13–52 wk</span>'
+      + '<span><span class="sw" style="background:#8c3b12"></span>53+ wk</span>'
+      + '<span><span class="sw" style="background:#c9d6d9"></span>clear now</span>';
+  }
+  // style every marker
+  Object.keys(markers).forEach(function(id){
+    var m=markers[id], l=byComid[id];
+    if(!l){ m.setStyle({fillColor:'#e3ebeb',color:'#c3d0d0',fillOpacity:.5}); return; }
+    if(view==='risk'){
+      if(l.blooming_now){ m.setStyle({fillColor:ACTIVE_HEX,color:'#33555b',weight:1.5,fillOpacity:.9,radius:m._r*0.85}); }  // Active HAB
+      else { var f=fAt(l,h);
+        if(!f || f.fusion==null){ m.setStyle({fillColor:'#efe6cf',color:'#b8942e',weight:1,fillOpacity:.7,radius:m._r*0.8}); } // no forecast at this horizon
+        else { var t=tierOf(f.fusion); m.setStyle({fillColor:TIERHEX[t],color:'#33555b',weight:1.5,fillOpacity:.95,radius:m._r}); } }
+    } else {
+      if(l.blooming_now){ m.setStyle({fillColor:durBucket(l.duration_wk),color:'#33555b',fillOpacity:.95,radius:m._r}); }
+      else { m.setStyle({fillColor:'#c9d6d9',color:'#9fb8bb',fillOpacity:.5,radius:m._r*0.8}); }
+    }
+  });
+  // z-order: in the risk view draw Watch then Warning ON TOP so at-risk clear lakes are easy to spot
+  if(view==='risk'){
+    ['Watch','Warning'].forEach(function(want){
+      Object.keys(markers).forEach(function(id){ var l=byComid[id]; if(!l||l.blooming_now) return;
+        var f=fAt(l,h); if(f && f.fusion!=null && tierOf(f.fusion)===want) markers[id].bringToFront(); });
+    });
+  }
+  // list
+  var list=document.getElementById('alert-list'), head=document.getElementById('list-head'), rows;
+  if(view==='risk'){
+    rows = LAKES.filter(function(l){ return l.clear_now && fAt(l,h) && fAt(l,h).fusion!=null; })
+      .map(function(l){ return {l:l, sc:fAt(l,h).fusion}; })
+      .sort(function(a,b){ return b.sc-a.sc; });
+    var nW=rows.filter(function(r){return tierOf(r.sc)==='Warning';}).length;
+    var nWa=rows.filter(function(r){return tierOf(r.sc)==='Watch';}).length;
+    var nActive=LAKES.filter(function(l){ return l.blooming_now; }).length;  // Active HAB (shown on map, not new-bloom candidates)
+    var nMiss=LAKES.filter(function(l){ return l.clear_now && !fAt(l,h); }).length;  // clear lakes with no forecast this horizon
+    var tip = 'Onset lead = the first forecast lead (horizon 0–4) at which our risk reaches Warning (≥'+Math.round(ONSET_LIKELY*100)+'%); “–” if none in the 0–4 window. It is a horizon index, not a literal week count (lead h targets week T+(h+1), and CyAN carries ~2 weeks latency). '
+      + 'Probability = forecast risk at the selected target week. Forecasts are point estimates; tiers near a threshold are not sharply separable.'
+      + (h===0? ' h0 is a diagnostic nowcast, not an operational forecast.':'')
+      + (nMiss? ' '+nMiss+' clear lake'+(nMiss>1?'s have':' has')+' no forecast at this horizon (not listed).':'');
+    head.innerHTML = '<div><b>New-bloom risk</b> — '+rows.length+' clear lakes ranked <span class="info" title="'+tip+'">ⓘ</span></div>'
+      + '<div style="color:#d1495b;font-weight:700">'+nW+' Warning</div>'
+      + '<div style="color:#b8801f;font-weight:700">'+nWa+' Watch</div>'
+      + '<div style="color:'+ACTIVE_TEXT+';font-weight:700">'+nActive+' Active HAB <span style="color:#8a8f98;font-weight:400">(on map)</span></div>'
+      + '<div style="color:#4a5f63">Target: '+HZ.find(function(x){return x.h===h;}).label+'</div>';
+    list.innerHTML='<div class="rowhead"><span class="nm">Location</span><span class="onset">Onset lead</span><span class="sc">Probability</span></div>';
+    rows.forEach(function(o){ var l=o.l, t=tierOf(o.sc), f=fAt(l,h), oh=onsetH(l);
+      var d=document.createElement('div'); d.className='row'; d.dataset.comid=l.comid;
+      d.innerHTML='<span class="pill" style="background:'+TIERHEX[t]+'">'+t+'</span>'
+        +'<span class="nm">'+(l.name||('COMID '+l.comid))+'</span>'
+        +'<span class="onset" title="onset lead — first forecast horizon (0–4) reaching Warning">'+(oh==null?'–':oh)+'</span>'
+        +'<span class="sc">'+o.sc.toFixed(0)+'%</span>';
+      d.title='EPA '+(f.epa==null?'n/a':f.epa.toFixed(0)+'%')+' · climatology '+(f.clim==null?'n/a':f.clim.toFixed(0)+'%');
+      d.onclick=function(){ selectLake(l.comid,true); };
+      list.appendChild(d); });
+  } else {
+    rows = LAKES.filter(function(l){ return l.blooming_now; })
+      .map(function(l){ return {l:l, sc:l.duration_wk}; })
+      .sort(function(a,b){ return b.sc-a.sc; });
+    head.innerHTML = '<b>Current active blooms</b> — '+rows.length+' lakes blooming now, ranked by duration (consecutive observed bloom weeks up to issue).';
+    list.innerHTML='';
+    rows.forEach(function(o){ var l=o.l;
+      var d=document.createElement('div'); d.className='row'; d.dataset.comid=l.comid;
+      d.innerHTML='<span class="sw" style="width:12px;height:12px;border-radius:3px;background:'+durBucket(l.duration_wk)+'"></span>'
+        +'<span class="nm">'+(l.name||('COMID '+l.comid))+'</span>'
+        +'<span class="sc">'+l.duration_wk+' wk</span>';
+      d.title='CyAN index now: '+(l.cyan_now==null?'n/a':l.cyan_now);
+      d.onclick=function(){ selectLake(l.comid,true); };
+      list.appendChild(d); });
+  }
+  if(!rows.length) list.innerHTML='<div class="empty">No lakes in this category for the current snapshot.</div>';
+  if(selComid) markSel();
+}
+
+function markSel(){
+  document.querySelectorAll('#alert-list .row').forEach(function(r){ r.classList.toggle('sel', +r.dataset.comid===selComid); });
+}
+function selectLake(id,openPop){
+  selComid=id; markSel();
+  var sel=document.querySelector('#alert-list .row.sel'); if(sel) sel.scrollIntoView({block:'nearest'});
+  var l=byComid[id], m=markers[id];
+  if(m && openPop){
+    var h=+hzSel.value, f=l?fAt(l,h):null;
+    var html='<div class="pop"><b>'+((l&&l.name)||('COMID '+id))+'</b><br>';
+    if(!l){ html+='No CyAN data this week.'; }
+    else if(l.blooming_now){ html+='<b style="color:'+ACTIVE_TEXT+'">Active HAB</b> · '+l.duration_wk+' wk · CyAN index '+l.cyan_now+'<br>Not a new-bloom candidate.'; }
+    else if(f){ html+='Clear now · forecast '+f.fusion.toFixed(0)+'% ('+tierOf(f.fusion)+')<br>EPA '+(f.epa==null?'n/a':f.epa.toFixed(0)+'%')+' · clim '+(f.clim==null?'n/a':f.clim.toFixed(0)+'%'); }
+    html+='<br><a href="#" onclick="openDeep('+id+');return false;">Open deep dive →</a></div>';
+    m.bindPopup(html).openPopup();
+  }
+}
+window.openDeep=function(id){ document.querySelector('.tabs button[data-tab=deep]').click(); document.getElementById('lake-select').value=id; renderDeep(id); };
+
+/* ================= DEEP DIVE TAB ================= */
+var lakeSel=document.getElementById('lake-select');
+LAKES.slice().sort(function(a,b){ return (a.name||'zz').localeCompare(b.name||'zz'); })
+  .forEach(function(l){ var o=document.createElement('option'); o.value=l.comid; o.textContent=(l.name||('COMID '+l.comid)); lakeSel.appendChild(o); });
+lakeSel.onchange=function(){ renderDeep(+lakeSel.value); };
+
+var PLOTCFG={displayModeBar:false,responsive:true};
+var PLOTFONT={family:'Segoe UI,Helvetica,Arial,sans-serif',size:11,color:'#12343b'};
+
+function renderDeep(id){
+  var l=byComid[id]; if(!l) return;
+  // summary
+  var st = l.blooming_now? ('<b style="color:#d1495b">Blooming now</b> · '+l.duration_wk+' wk') : '<b style="color:#2e8b57">Clear now</b>';
+  var f1=fAt(l,1);
+  document.getElementById('dd-summary').innerHTML =
+    st + ' &nbsp;·&nbsp; CyAN index now: <b>'+(l.cyan_now==null?'n/a':l.cyan_now)+'</b>'
+    + (f1? ' &nbsp;·&nbsp; forecast week of '+fmtDate(f1.target_end)+': <b>'+f1.fusion.toFixed(0)+'%</b> (EPA '+(f1.epa==null?'n/a':f1.epa.toFixed(0)+'%')+')':'');
+
+  // A. forecast by target week
+  var x=l.forecast.map(function(f){ return 'week of '+fmtDate(f.target_end); });
+  var tr=function(key,name,color){ return {x:x,y:l.forecast.map(function(f){return f[key];}),name:name,type:'bar',marker:{color:color}}; };
+  Plotly.react('chart-forecast',[
+    tr('fusion','Our fusion',C.fusion), tr('lean','Lean CyAN (median + area)',C.lean),
+    tr('clim','Climatology',C.clim), tr('epa','EPA',C.epa)
+  ],{margin:{t:6,r:6,b:34,l:36},barmode:'group',font:PLOTFONT,legend:{orientation:'h',y:1.16,font:{size:10}},
+     yaxis:{title:'risk %',range:[0,100],ticksuffix:'%'},xaxis:{tickfont:{size:10}}},PLOTCFG);
+
+  // B. observed history — both y-axes pinned to a common 0 baseline (max floats)
+  var traces=[{x:l.obs.d,y:l.obs.cyan,name:'CyAN index',type:'scatter',mode:'lines',line:{color:C.fusion,width:1.3}}];
+  if(l.chl && l.chl.v.length) traces.push({x:l.chl.d,y:l.chl.v,name:'in-situ chl-a',yaxis:'y2',type:'scatter',mode:'markers',marker:{color:C.epa,size:5,opacity:.7}});
+  // dummy legend-only traces so the reference lines are explained in the legend
+  traces.push({x:[null],y:[null],name:'WHO Alert Level 1 (index ≥130)',mode:'lines',line:{color:'#d1495b',width:1.4,dash:'dash'}});
+  traces.push({x:[null],y:[null],name:'WHO Alert Level 2 (index ≥151)',mode:'lines',line:{color:'#e8a33d',width:1,dash:'dot'}});
+  var cyanVals=l.obs.cyan.filter(function(v){return v!=null;});
+  var cyanTop=Math.max(155, cyanVals.length?Math.max.apply(null,cyanVals):0)*1.05;   // keep AL1/AL2 lines in view
+  var chlVals=(l.chl&&l.chl.v.length)?l.chl.v.filter(function(v){return v!=null;}):[];
+  var chlTop=(chlVals.length?Math.max.apply(null,chlVals):1)*1.1;
+  var CUT=META.forecast_cutoff, OBSLAST=META.obs_last;
+  Plotly.react('chart-history',traces,{margin:{t:6,r:44,b:28,l:36},font:PLOTFONT,legend:{orientation:'h',y:1.18,font:{size:9.5}},
+     yaxis:{title:'CyAN index',range:[0,cyanTop]},
+     yaxis2:{title:'chl-a µg/L',overlaying:'y',side:'right',range:[0,chlTop],showgrid:false},
+     xaxis:{type:'date'},
+     shapes:[{type:'line',xref:'paper',x0:0,x1:1,y0:130,y1:130,line:{color:'#d1495b',width:1.2,dash:'dash'}},
+             {type:'line',xref:'paper',x0:0,x1:1,y0:151,y1:151,line:{color:'#e8a33d',width:.8,dash:'dot'}},
+             {type:'rect',xref:'x',yref:'paper',x0:CUT,x1:OBSLAST,y0:0,y1:1,fillcolor:'#8a8f98',opacity:.10,line:{width:0},layer:'below'},
+             {type:'line',xref:'x',yref:'paper',x0:CUT,x1:CUT,y0:0,y1:1,line:{color:'#12343b',width:1.2,dash:'dot'}}],
+     annotations:[{xref:'x',x:CUT,y:1,yref:'paper',yanchor:'bottom',text:'forecast issued →',showarrow:false,font:{size:9,color:'#12343b'},xanchor:'right'}]},PLOTCFG);
+
+  // C. disagreement
+  Plotly.react('chart-disagree',[
+    {x:x,y:l.forecast.map(function(f){return f.d_clim;}),name:'vs climatology',type:'bar',marker:{color:C.clim}},
+    {x:x,y:l.forecast.map(function(f){return f.d_epa;}),name:'vs EPA',type:'bar',marker:{color:C.epa}}
+  ],{margin:{t:6,r:6,b:34,l:40},barmode:'group',font:PLOTFONT,legend:{orientation:'h',y:1.16,font:{size:10}},
+     yaxis:{title:'Δ risk (pts)',zeroline:true,zerolinecolor:'#99a',zerolinewidth:1},xaxis:{tickfont:{size:10}}},PLOTCFG);
+
+  // D. features by family — collapsible, all closed by default
+  var fh='';
+  l.families.forEach(function(fam){
+    fh+='<details class="fam"><summary>'+fam.family+' <span class="cnt">('+fam.features.length+')</span></summary><table class="feat">';
+    fam.features.forEach(function(ft){
+      var v = ft.val==null? '<span style="color:#b0bcbc">—</span>' : ft.val + (ft.unit? ' <span style="color:#93a3a3">'+ft.unit+'</span>':'');
+      var stale='';
+      if(ft.stale_wk!=null) stale = ft.stale_wk===0 ? '<span class="fresh">current</span>'
+        : '<span class="stale'+(ft.stale_wk>26?' old':'')+'">'+ft.stale_wk+' wk old</span>';
+      fh+='<tr><td>'+ft.label+stale+'</td><td class="v">'+v+'</td></tr>';
+    });
+    fh+='</table></details>';
+  });
+  document.getElementById('feat-families').innerHTML=fh;
+
+  // update select + resize
+  lakeSel.value=id;
+  setTimeout(function(){ ['chart-forecast','chart-history','chart-disagree'].forEach(function(idc){ try{Plotly.Plots.resize(idc);}catch(e){} }); },30);
+}
+
+/* ---------- fleet table: one table, all lakes, sortable, first ~15 visible then scroll ---------- */
+var fleetSort={key:'d_clim', dir:-1};
+function fleetRows(){
+  return LAKES.map(function(l){ var f=fAt(l,1); if(!f) return null;
+    return {comid:l.comid, name:l.name||('COMID '+l.comid), d_clim:f.d_clim, d_epa:f.d_epa, fusion:f.fusion}; }).filter(Boolean);
+}
+function renderFleet(){
+  var s=fleetSort;
+  var rows=fleetRows().sort(function(a,b){ var av=a[s.key], bv=b[s.key];
+    if(av==null)av=-1e9; if(bv==null)bv=-1e9; return (av-bv)*s.dir; });
+  var arr=function(k){ return s.key===k?(s.dir<0?' ▼':' ▲'):''; };
+  var dcell=function(v){ return v==null?'<td class="d">—</td>'
+    :'<td class="d" style="color:'+(v>=0?'#0f6e78':'#b04a12')+'">'+(v>=0?'+':'')+v.toFixed(0)+'</td>'; };
+  var h='<div class="fleetscroll"><table class="lb"><thead><tr><th style="cursor:default">lake</th>'
+    +'<th class="'+(s.key==='d_clim'?'sort':'')+'" style="text-align:right" data-k="d_clim">Δ vs clim'+arr('d_clim')+'</th>'
+    +'<th class="'+(s.key==='d_epa'?'sort':'')+'" style="text-align:right" data-k="d_epa">Δ vs EPA'+arr('d_epa')+'</th>'
+    +'<th class="'+(s.key==='fusion'?'sort':'')+'" style="text-align:right" data-k="fusion">our %'+arr('fusion')+'</th></tr></thead><tbody>';
+  rows.forEach(function(r){ h+='<tr onclick="openDeep('+r.comid+')"><td>'+r.name+'</td>'
+    +dcell(r.d_clim)+dcell(r.d_epa)+'<td class="d">'+(r.fusion==null?'—':r.fusion.toFixed(0))+'</td></tr>'; });
+  h+='</tbody></table></div>';
+  var host=document.getElementById('fleet-tables'); host.innerHTML=h;
+  host.querySelectorAll('th[data-k]').forEach(function(th){ th.onclick=function(){ var k=th.dataset.k;
+    if(fleetSort.key===k) fleetSort.dir=-fleetSort.dir; else {fleetSort.key=k; fleetSort.dir=-1;} renderFleet(); }; });
+}
+renderFleet();
+
+/* ---------- explorer map: all lakes, colored by a selected forecast/feature ---------- */
+LAKES.forEach(function(l){ l._feat={}; l.families.forEach(function(fam){ fam.features.forEach(function(ft){ l._feat[ft.label]=ft.val; }); }); });
+var METRICS=[];
+HZ.forEach(function(o){ METRICS.push({id:'fc'+o.h,label:'Forecast risk — '+o.label+' (h'+o.h+')',kind:'pct',get:function(l){var f=fAt(l,o.h);return f?f.fusion:null;}}); });
+METRICS.push({id:'cyan',label:'CyAN index now',kind:'seq',get:function(l){return l.cyan_now;}});
+METRICS.push({id:'dur',label:'Current bloom duration (wk)',kind:'seq',get:function(l){return l.blooming_now?l.duration_wk:null;}});
+[['Total phosphorus','Total phosphorus (mg/L)'],['Chlorophyll-a (in-situ)','In-situ chl-a (µg/L)'],['Water temp (WQP)','Water temp (°C)'],
+ ['Precip, trailing 30 d','Precip 30 d (mm)'],['Drought index SPEI-1','Drought SPEI-1'],['Wind speed, trailing 14 d','Wind speed (m/s)'],
+ ['Bloom weeks in last 4','Bloom weeks (of 4)']].forEach(function(p){ METRICS.push({id:p[0],label:p[1],kind:'seq',get:function(l){return l._feat[p[0]];}}); });
+
+var dmSel=document.getElementById('deep-metric');
+METRICS.forEach(function(m){ var o=document.createElement('option'); o.value=m.id; o.textContent=m.label; dmSel.appendChild(o); });
+var dmap=L.map('deep-map',{zoomControl:true}).setView([27.8,-81.6],6);
+dmap.attributionControl.setPrefix(false);
+addBasemaps(dmap);
+var dmarkers={}, dmapFitted=false;
+L.geoJSON(window.FL_LAKES,{style:{color:'#9fb8bb',weight:1,fill:false}}).addTo(dmap);
+window.FL_LAKES.features.forEach(function(feat){
+  var id=+feat.properties.COMID, ll=centroid(feat), area=feat.properties.area_km2||1, r=Math.max(5,Math.min(14,4+Math.sqrt(area)));
+  var mk=L.circleMarker(ll,{radius:r,weight:1.2,color:'#33555b',fillColor:'#c9d6d9',fillOpacity:.9});
+  var l=byComid[id]; if(l) mk.bindTooltip(l.name||('COMID '+id));
+  mk.on('click',function(){ renderDeep(id); });
+  mk.addTo(dmap); dmarkers[id]=mk;
+});
+function lerp(a,b,t){ return Math.round(a+(b-a)*t); }
+function ramp(t){ t=Math.max(0,Math.min(1,t));
+  var st=[[255,247,222],[232,163,61],[209,73,91],[124,40,18]], seg=t*(st.length-1), i=Math.floor(seg), f=seg-i;
+  if(i>=st.length-1){i=st.length-2;f=1;} var a=st[i],b=st[i+1];
+  return 'rgb('+lerp(a[0],b[0],f)+','+lerp(a[1],b[1],f)+','+lerp(a[2],b[2],f)+')'; }
+function renderDeepMap(){
+  var m=METRICS.filter(function(x){return x.id===dmSel.value;})[0]||METRICS[0], vals=[];
+  LAKES.forEach(function(l){ var v=m.get(l); if(v!=null&&isFinite(v)) vals.push(v); });
+  var lo,hi; if(m.kind==='pct'){lo=0;hi=100;} else {lo=Math.min.apply(null,vals);hi=Math.max.apply(null,vals);if(lo===hi)hi=lo+1;}
+  Object.keys(dmarkers).forEach(function(id){ var mk=dmarkers[id], l=byComid[id], v=l?m.get(l):null;
+    if(v==null||!isFinite(v)) mk.setStyle({fillColor:'#e0e8e8',color:'#c3d0d0',fillOpacity:.5});
+    else mk.setStyle({fillColor:ramp((v-lo)/(hi-lo)),color:'#33555b',fillOpacity:.95}); });
+  var fmt=function(x){ return m.kind==='pct'?Math.round(x)+'%':(Math.abs(x)>=100?Math.round(x):Math.round(x*100)/100); };
+  document.getElementById('deep-legend').innerHTML='<span>'+fmt(lo)+'</span>'
+    +'<span class="bar" style="background:linear-gradient(90deg,'+ramp(0)+','+ramp(.5)+','+ramp(1)+')"></span><span>'+fmt(hi)+'</span>'
+    +'<span style="margin-left:6px"><span class="sw" style="display:inline-block;width:12px;height:12px;border-radius:3px;background:#e0e8e8;vertical-align:-1px"></span> no value</span>';
+}
+dmSel.onchange=renderDeepMap;
+renderDeepMap();
+
+/* ================= TABS ================= */
+document.querySelectorAll('.tabs button').forEach(function(b){
+  b.onclick=function(){
+    document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('active');}); b.classList.add('active');
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
+    document.getElementById('tab-'+b.dataset.tab).classList.add('active');
+    if(b.dataset.tab==='alerts'){ setTimeout(function(){ map.invalidateSize(); },40); }
+    else { setTimeout(function(){
+      ['chart-forecast','chart-history','chart-disagree'].forEach(function(idc){ try{Plotly.Plots.resize(idc);}catch(e){} });
+      dmap.invalidateSize(); if(!dmapFitted){ try{ dmap.fitBounds(L.geoJSON(window.FL_LAKES).getBounds().pad(0.05)); dmapFitted=true; }catch(e){} }
+    },60); }
+  };
+});
+
+/* init deep dive with the first clear high-risk candidate for a good default */
+(function(){
+  var def = LAKES.filter(function(l){return l.clear_now && fAt(l,1);}).sort(function(a,b){return fAt(b,1).fusion-fAt(a,1).fusion;})[0] || LAKES[0];
+  renderDeep(def.comid);
+})();
+
+/* deep-linkable: #deep opens the deep-dive tab on load */
+if(location.hash==='#deep'){ document.querySelector('.tabs button[data-tab=deep]').click(); }
+</script>
+</body>
+</html>
