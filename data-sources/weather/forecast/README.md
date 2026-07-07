@@ -9,8 +9,13 @@ precip/GDD/solar/wind) are correct at the seam.
 (Codex-reviewed, 7 findings folded in). **Feature math** is shared with the history layer
 (`../derive/features.py`); this layer only adds the *forecast acquisition + stitch*.
 
-> **Status (2026-07-06):** pipeline built end-to-end; unit tests green (de-accumulation, stitch/seam,
-> feature-refactor regression). First full ensemble run in progress.
+> **⚠️ Status (2026-07-07): PAUSED — not production-viable.** Pipeline is built end-to-end and unit-tested
+> (30 tests green: de-accumulation, stitch/seam, feature-refactor regression), and the faithful pull was
+> **proven feasible** (a full 2.78 GB global param downloaded clean). **But** the Florida crop stage has a
+> **cfgrib per-step memory leak** — RSS climbs ~0.21 GB/step to the full ~17.6 GB cube and thrashes to
+> ~53 GB (near-OOM), so **no feature-ensemble product was ever generated**. Read the
+> **[Post-mortem](../../../docs/plans/2026-07-05-forecast-ensemble-features-design.md#post-mortem--2026-07-07-why-this-is-paused)**
+> before any future work. Stages 3–6 are built + unit-tested but have **never run on real forecast data**.
 
 ## Repeat a run with ONE command (no new code)
 
@@ -52,9 +57,11 @@ Output: `../data/derived/forecast_feature_ensemble_<first-valid-day>.nc`
 - **Step ladder:** 3-hourly to +144 h, 6-hourly to +360 h (15 days). Only 00/12z ENS runs reach +360 h
   (06/18z reach only +144 h) — the puller auto-selects a long-range cycle.
 - **Download is heavy:** one ENS field = ~33.5 MB (50 members × global) and open-data can't server-side
-  crop → the faithful pull is ~17 GB of transfer. Mitigation: pull one param at a time → **stream-crop
-  to Florida per step** (peak RAM ~200 MB; a one-shot load OOMs) → **delete the global GRIB**. Final
-  per-run data is a few MB. Resumable: completed `<param>_fl.nc` and complete global GRIBs are reused.
+  crop → the faithful pull is ~17 GB of transfer. Intended mitigation: pull one param at a time →
+  stream-crop to Florida per step → delete the global GRIB. **⚠️ The per-step crop leaks (~0.21 GB/step,
+  see Status/Post-mortem) — this mitigation does not currently work at scale.** Resume reuses complete
+  global GRIBs by **step/member count only, not integrity** → a corrupt (interrupted) download can be
+  reused and crash eccodes natively; delete a suspect global to force a fresh pull.
 - **Grid reconciliation:** the open-data global grid is whole-degree-aligned; our ERA5 grid is offset
   ≤0.2° (CDS `area` registration). Forecast fields are **nearest-neighbour reindexed onto the ERA5
   master grid** (values preserved, no interpolation).

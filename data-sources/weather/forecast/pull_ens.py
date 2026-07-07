@@ -79,14 +79,20 @@ def _fl_slices(lat, lon, area=FLORIDA_AREA, buffer=CROP_BUFFER_DEG):
 
 
 def stream_crop_grib(grib_path, area=FLORIDA_AREA, buffer=CROP_BUFFER_DEG):
-    """Memory-safe FL crop: single open, stream ONE step at a time.
+    """FL crop: single open, stream ONE step at a time.
 
-    cfgrib materialises the full (members × steps × global) cube before a spatial subset, so a
-    one-shot .load() of a 2.8 GB global (~15 GB in RAM) OOMs. Loading per step keeps peak RAM to one
-    step's global slab (~200 MB). ~1.3 s/step. Returns a loaded FL dataset.
+    ⚠️ KNOWN-BROKEN (2026-07-07) — DO NOT trust for large multi-step globals. See the post-mortem in
+    docs/plans/2026-07-05-forecast-ensemble-features-design.md. A *single* per-step
+    `ds.isel(step=i, lat, lon).load()` is cheap (~0.22 GB, cfgrib pushes the step index down), but
+    **looping over all steps while this one open dataset stays alive LEAKS ~one global step-slab
+    (~207 MB) per call** — the per-message eccodes handles are never freed. RSS climbs ~0.21 GB/step,
+    reaching the full ~17.6 GB cube by ~step 84 and thrashing to ~53 GB (near-OOM on 64 GB). The
+    earlier "~200 MB peak" claim was FALSE across the loop. A viable crop must release the dataset /
+    eccodes handles per step (or per small batch), or read messages directly via eccodes/pygrib with
+    explicit codes_release. Not fixed here — the forecast pull is paused pending a workflow redesign.
 
-    (A corrupt GRIB message crashes eccodes natively here — that is a *download* problem, not a crop
-    problem; run the download to completion so the file is valid. See `_decode` + reuse-validation.)
+    (Separately: a corrupt GRIB message crashes eccodes natively — a *download* problem; the resume
+    reuse-check validates step/member count only, not integrity, so a corrupt global can be reused.)
     """
     import numpy as np
     import xarray as xr

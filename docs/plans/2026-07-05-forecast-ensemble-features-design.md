@@ -1,6 +1,9 @@
 # Forecast-ensemble weather features (Florida HAB PoC) — design
 
-**Date:** 2026-07-05 · **Status:** design, Codex-reviewed (7 findings folded in), ready to implement.
+**Date:** 2026-07-05 · **Status:** ⚠️ **PAUSED 2026-07-07** — pipeline built end-to-end and unit-tested,
+feasibility of the pull proven, but a **cfgrib per-step memory leak in the crop stage** makes the current
+workflow non-viable in production. **No feature-ensemble product was generated.** See the
+**[Post-mortem — 2026-07-07](#post-mortem--2026-07-07-why-this-is-paused)** at the end before any future work.
 **Owner layer:** `../../data-sources/weather/` · registry rows `era5` + `ecmwf_fc` ·
 decisions log 2026-07-05 (session 14). **Sister workstream** handles the CyAN fusion — **not here**.
 
@@ -164,3 +167,73 @@ Feature math stays in the refactored `derive/features.py` (shared with history).
 
 - Which deterministic series backs the gap-fill (ens-mean of the old run vs `oper`/HRES) — decided
   empirically in stage 2; recorded in provenance.
+
+---
+
+## Post-mortem — 2026-07-07 (why this is paused)
+
+The pipeline was built end-to-end (stages 2–6), 30 unit tests pass (de-accumulation, stitch/seam,
+feature-refactor regression), and we attempted the first full run. It **did not complete** and the
+work is paused pending a workflow redesign. **No feature-ensemble product exists.** Reporting the two
+findings plainly, per the fidelity standard — a clear-eyed negative result is a deliverable.
+
+### Finding 1 — the pull is feasible (proven)
+
+The faithful open-data ENS pull is **technically possible**. A full global 2t ensemble field for the
+2026-07-07 00z run — **2.78 GB** (50 members × 85 steps × 721×1440) — downloaded completely and
+**uncorrupted** at ~4 MB/s (~13 min for one param). This confirms the ~17 GB-transfer full pull
+(5 base + 2 extreme params, +360 h) is achievable on this link. Feasibility is not the blocker.
+
+### Finding 2 — the crop stage has a fatal cfgrib memory leak (the blocker)
+
+`pull_ens.stream_crop_grib` streams the Florida crop **one step at a time** to avoid a one-shot
+`.load()` OOM. The design assumed ~200 MB peak (one step's global slab). **That assumption was wrong.**
+
+- A **single** per-step call is genuinely cheap: `ds['t2m'].isel(step=i, lat, lon).load()` → **0.22 GB,
+  0.7 s** (measured, `crop_diag.py`). cfgrib *does* push the step index down to the message reader.
+- But **inside the 85-step loop, while the dataset stays open**, each `.isel(step=i).load()` **leaks
+  ~one global step-slab (~207 MB = 50×721×1440×4 B)** that is never released. RSS climbs **linearly
+  ~0.21 GB/step**, reaching the **full ~17.6 GB cube by ~step 84**, then **thrashes to 53 GB** (near-OOM
+  on this 64 GB machine) and stalls. Measured leak curve (`crop_diag2.py`, exact reproduction of the
+  loop):
+
+  | step | RSS | | step | RSS |
+  |------|------|---|------|------|
+  | 0  | 0.39 GB | | 50 | 10.78 GB |
+  | 10 | 2.47 GB | | 65 | 14.30 GB |
+  | 30 | 6.62 GB | | 70 | **53.27 GB** (thrashing; t 50 s→171 s) |
+
+  Root cause: the per-message eccodes handles allocated by each `.isel().load()` are not freed while the
+  parent `open_dataset` handle is alive. Holding one open dataset across all 85 loads accumulates them.
+  This is what stalled the overnight run for 25+ min at 36–54 GB with **zero** cropped output.
+
+  (Reproduce: download one global param GRIB, open with `cfgrib` (`indexpath=""`), loop
+  `ds.isel(step=i, lat_sl, lon_sl).load()` over all steps holding the one open dataset, sample RSS.)
+
+### Finding 3 — a *separate*, earlier corruption issue (not the same bug)
+
+The first attempt (2026-07-05 12z run) crashed eccodes **natively** (`STATUS_STACK_BUFFER_OVERRUN`,
+exit `0xC0000409`) on a **genuinely corrupt** GRIB message at step 318 h, produced by an **interrupted
+download**. The resume logic reused it because it validated only step/member **count**, not integrity.
+Distinct from the leak; both must be fixed for a viable workflow.
+
+### What a future operationalization must revisit (do not just retry)
+
+1. **Kill the crop leak.** Options, cheapest first: **(a)** open→crop→**close the dataset per step**
+   (or per small batch) so eccodes handles are released — trades re-scan cost for bounded RAM;
+   **(b)** read messages directly via `eccodes`/`pygrib` with explicit `codes_release` per message
+   (true ~4 MB/message streaming); **(c)** pull per-step or per-small-batch GRIBs from the server
+   instead of one 2.8 GB/param file, cropping each before the next.
+2. **Reconsider the whole acquisition granularity.** One 2.8 GB/param × 7 params × per-run, cropped
+   client-side, is heavy and fragile. Evaluate the **AWS/Azure/GCS mirrors** (byte-range / cloud-native
+   access) and whether the full 50-member × 15-day × global pull is even the right unit for the PoC vs a
+   thinner slice (fewer members, coarser steps, or a pre-cropped regional source).
+3. **Integrity-validate downloads.** Guard the resume-reuse against corrupt globals (checksum, or a
+   cheap full decode pass) so Finding 3 cannot recur silently.
+4. **The `~200 MB peak` claim in `stream_crop_grib`'s docstring and the README was false across the
+   loop — corrected in code on 2026-07-07.**
+
+Everything downstream of the crop (aggregate → stitch → frozen-climatology apply → ensemble assembly,
+stages 3–6) is built and unit-tested but has **never run on real forecast data** end-to-end, because the
+crop never delivered its output. Treat stages 3–6 as *unvalidated on real inputs* until a working crop
+feeds them.
