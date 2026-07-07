@@ -4,9 +4,12 @@ Living tracker across the DS arc (define → acquire → prepare → explore →
 communicate). Update the status column and check items as work lands. `[ ]` todo · `[~]` in progress
 · `[x]` done · `[!]` blocked. Newest status note at the top of the log.
 
-**Current front line:** ACQUIRE + PREPARE complete; **MODEL + EVALUATE in progress** — experiment
-suites (baselines / fusion / cyan-less), feature ablation (block done, feature-level running), and the
-EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result into the model spec.
+**Current front line:** **WRAP-UP — all DS-arc phases complete.** Deployed choice = the **lean 2-feature
+CyAN model (`cyan_median` + `area_sqkm`) + the EPA CyanoHAB forecast** ("go simple", D-41); full 44-feature
+fusion+clim is a **tantalizing-but-unproven** onset avenue, not shipped. The **deck** (`presentation/story.html`)
+and the **Part-B dashboard** (`dashboard/`, deployed at https://harmful-algal-bloomspoc.vercel.app/) are shipped.
+Open items are deferred cleanup only: the **D-42** climatology-baseline code fix and the **D-43** Codex-workflow-review
+items (both deferred to the next, OOM-sensitive rerun; neither overturns the shipped conclusions).
 
 ---
 
@@ -17,10 +20,10 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
 | 0 · Define & design | `[x]` done | `DESIGN.md`, `DECISIONS-LOG.md`, this scaffold |
 | 1 · Acquire (Florida) | `[x]` done | CyAN + weather + NWIS + WQP + BasinATLAS pulls landed (`docs/01`) |
 | 2 · Prepare | `[x]` done | fused lake-week table (`modeling_table_fusion_fl.parquet`) + `docs/02/03/04` |
-| 3 · Explore / feature assessment (Task A) | `[~]` in progress | significance screens done; block ablation done; **feature-level ablation running** |
-| 4 · Model (Task B) | `[~]` in progress | logistic/HistGBM/XGBoost classifiers, multi-horizon; experiment suites via `experiment_lib.py` |
-| 5 · Evaluate | `[~]` in progress | EPA head-to-head (both thresholds), onset/offset skill, overfit gaps, ablations |
-| 6 · Communicate | `[ ]` todo | figures/tables feeding the tool + slides |
+| 3 · Explore / feature assessment (Task A) | `[x]` done | significance screens + block **and** feature-level ablation (greedy → lean 2-feature); clustered permutation importance |
+| 4 · Model (Task B) | `[x]` done | logistic/HistGBM/XGBoost classifiers, multi-horizon; experiment suites via `experiment_lib.py`; shipped = lean CyAN + EPA |
+| 5 · Evaluate | `[x]` done | EPA head-to-head (both thresholds), onset/offset skill, overfit gaps, ablations, onset-by-lead |
+| 6 · Communicate | `[x]` done | `presentation/story.html` deck + `dashboard/` Part-B tool (deployed) |
 
 ---
 
@@ -34,21 +37,21 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
 - [x] Codex adversarial review of the plan → sound fixes folded into `DESIGN.md` v2 (D-11…D-19)
 - [x] Resolve blocking `OPEN-QUESTIONS.md` — Q-1/Q-2/Q-6/Q-7 done (Q-3/Q-4/Q-5 are phase-deferred)
 
-## Phase 1 — Acquire (Florida) `[~]`
+## Phase 1 — Acquire (Florida) `[x]`
 
 - [x] Define Florida domain: extent (Census FL polygon, EPSG:5070), POR (OLCI 531 wks), CyAN coverage
       in FL (≈128,628 water px ≈11,577 km²) → `docs/01-domain-and-data.md`
 - [x] **Compute-gate estimate** (`acquire/compute_gate_estimate.py`): ≈68.3 M rows; dense monolith
       unsafe → partitioned columnar; **native-pixel viable, no lake fallback** (D-22)
-- [ ] Obtain CyAN **resolvable-lakes** shapefile → FL lake mask (COMID); confirm FL lake count
-- [ ] Per-lake weekly CyAN **mean/median/SD** (OLCI) + **WHO AL1** target construction
-- [ ] ERA5 FL subset (coincident + antecedent windows)
-- [ ] NWIS FL gages (discharge/stage)
-- [ ] WQP FL stations (nutrients, temp, chl-a, turbidity, EC, DO, pH, Secchi)
-- [ ] BasinATLAS L12 attributes for FL sub-basins (from `bchars_intersected12.csv` / gdb on `D:`)
-- [ ] Write `docs/01-domain-and-data.md` (extents, params, join keys, cost estimate, gate outcome)
+- [x] Obtain CyAN **resolvable-lakes** shapefile → FL lake mask (COMID); **133 FL lakes** confirmed
+- [x] Per-lake weekly CyAN **mean/median/SD** (OLCI) + **WHO AL1** target construction (70,623 lake-weeks)
+- [x] ERA5 FL subset (coincident + antecedent windows) — 133/133 lakes
+- [x] NWIS FL gages (discharge/stage) — 25/133 lakes
+- [x] WQP FL stations (nutrients, temp, chl-a, turbidity, EC, DO, pH, Secchi) — 123/133 lakes
+- [x] BasinATLAS L12 attributes for FL sub-basins — 133/133 (max-overlap L12 join)
+- [x] Write `docs/01-domain-and-data.md` (extents, params, join keys, cost estimate, gate outcome)
 
-## Phase 2 — Prepare `[ ]`
+## Phase 2 — Prepare `[x]`
 
 **PRE-BUILD PINS (resolve before writing pipeline code — Codex v3 review, D-26):**
 - [x] **AL1 threshold** — PINNED: per-lake weekly **median CyAN DN ≥ 130** (≡12 µg/L chl-a) from
@@ -63,26 +66,31 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
 - [x] Target construction DONE: per-lake mean/median/SD (OLCI), AL1 label, QA/masking → `docs/03`
       (`prepare/build_cyan_lake_target.py` → `data/derived/cyan_lake_weekly_fl.parquet`).
       **70,623 lake-weeks (133×531), 96.6% valid, FL bloom prevalence 23.2%** (Apopka ~100%✓)
-- [~] Feature assembly (value + staleness); **two tracks**; CyAN antecedent-only:
+- [x] Feature assembly (value + staleness); **two tracks**; CyAN antecedent-only:
       - [x] **CyAN antecedent block + autoregressive ladder** → `data/derived/cyan_features_fl.parquet`
             (`build_cyan_features.py`; AR(1) corr=0.903 ✓ matches ACAD-092; climatology deferred to split)
-      - [x] lake **area** (headline, D-27) rides along; [ ] depth join (LakeCat/NHD)
-      - [ ] **ERA5 join** — waiting on derived weather features (SPEI etc.) upstream
-      - [ ] NWIS / WQP / BasinATLAS L12 joins
-- [ ] COMID identity joins (WQP/NARS/NWIS/LakeCat) → NLDI/HUC/nearest fallback + distance windows
+      - [x] lake **area** (headline, D-27, later walked back to a whisper in D-39) rides along; depth join skipped (needs HydroLAKES)
+      - [x] **ERA5 join** → fusion table (133/133 lakes); weather features screened (`feature_significance_weather.md`)
+      - [x] NWIS / WQP / BasinATLAS L12 joins → `modeling_table_fusion_fl.parquet` (339,400×58)
+- [x] COMID identity joins (WQP/NARS/NWIS/LakeCat) → NLDI/HUC/nearest fallback + distance windows
 - [x] **Assembler** → `data/derived/modeling_table_cyan_fl.parquet` (`assemble_modeling_table.py`):
       339,400 rows, horizons 0–4, latency-guard `feature=target−7·(h+1)` **PASSED**; split train≤2023 /
       val 2024 / test 2025 / oos 2026 (prevalence rising 22%→27%→29%)
-- [~] Temporal held-out-year split done (above); z-score fit on train only (in model pipe); **secondary
-      blocked-lake** stress test still todo
-- [ ] Leakage checklist run (temporal/circularity/normalization/feature-selection/version)
+- [x] Temporal held-out-year split done (above); z-score fit on train only (in model pipe)
+- [!] **Secondary blocked-lake (unseen-lake) stress test — NOT run (known limitation).** Same-lake temporal
+      validation only; unseen-lake transfer is untested (see D-43 #10; deck says "less tied to per-lake identity", not "generalizes").
+- [x] Leakage checklist run (temporal/circularity/normalization/feature-selection/version) — clean on the core
+      CyAN pairing/CRS/metrics (D-43 #13–15); surfaced two claim-gate deviations logged as known limitations
+      (feature-selection screens ran over all years; non-CyAN joins one week stale — D-43 #1/#2)
 
-## Phase 3 — Feature assessment / Task A `[ ]`
+## Phase 3 — Feature assessment / Task A `[x]`
 
-- [ ] Coincident non-random-distribution test per non-literature candidate (with correction)
-- [ ] Finalize included feature set (literature-precedent + passed-test), log outcomes (no cherry-pick)
+- [x] Coincident non-random-distribution test per non-literature candidate (with correction) — static/in-situ/weather
+      screens (`feature_significance_*.md`). **Known limitation (D-43 #1): screens ran over all years, not train-only.**
+- [x] Finalize included feature set (literature-precedent + passed-test), log outcomes (no cherry-pick) — greedy backward
+      ablation → **lean `cyan_median` + `area_sqkm`**; clustered permutation importance (one CyAN cluster ≈100% of skill)
 
-## Phase 4 — Model / Task B `[ ]`
+## Phase 4 — Model / Task B `[x]`
 
 - [x] Baselines: persistence + climatology + **CyAN ladder** + **EPA head-to-head** DONE per horizon
       (`model/eval_cyan_baselines.py` → `outputs/cyan_baseline_eval.md`; `model/eval_epa_headtohead.py`
@@ -91,25 +99,51 @@ EPA head-to-head (both operating points). Next: fold Part-3 lean-feature result 
       (4,527 lake-wk), EPA AUC 0.928 does NOT clearly beat persistence (ΔAUC CI incl. 0) vs our AL1 —
       but structural advantage to us (all else AL1-derived) + seasonal + definition caveats; **no
       "beat EPA" claim.**
-- [ ] Classifiers: logistic GLM · SVC · XGBoost · logistic GAM — one per horizon (or h-as-feature; log choice)
-- [ ] Explainability: **incremental lift over the ladder** first; then coefficients / SHAP / PDP vs literature
-- [ ] Write `docs/05-modeling-plan.md` + `model-cards/`
+- [x] Classifiers: **logistic GLM · HistGBM · XGBoost** — one model per horizon (h=0–4). *(SVC / logistic GAM were in
+      the DESIGN plan but not built — D-36b: architecture barely mattered, so the three above sufficed.)*
+- [x] Explainability: **incremental lift over the ladder** first (block + feature-level ablation, clustered permutation
+      importance) → fusion adds no robust incremental held-out skill; deployable = lean CyAN autoregression + EPA
+- [~] `docs/05-modeling-plan.md` + `model-cards/` folded into `RESULTS-SUMMARY.md` + `DECISIONS-LOG.md` (no separate files)
 
-## Phase 5 — Evaluate `[ ]`
+## Phase 5 — Evaluate `[x]`
 
-- [ ] Skill-vs-lead-time curve, all models vs baselines, with clustered CIs
-- [ ] Classification skill per horizon: AUC + **PR-AUC / precision@recall / calibration / event counts**
-- [ ] EPA head-to-head on shared FL COMID-weeks; secondary blocked-lake stress test reported
-- [ ] Honest limitations write-up (oracle-weather, circularity/ladder lift, known-lake-only, AL1 proxy)
+- [x] Skill-vs-lead-time curve, all models vs baselines (`experiments.md`, `headtohead_onset.md`); onset-MCC-by-lead
+- [x] Classification skill per horizon: AUC + **PR-AUC / MCC / Brier / onset-AUC / onset-MCC / event counts**
+- [x] EPA head-to-head on shared FL COMID-weeks (both operating points; week-block bootstrap CIs); **blocked-lake
+      stress test NOT run** (known limitation, D-43 #10)
+- [x] Honest limitations write-up (oracle-weather ablation, circularity/ladder lift, known-lake-only, AL1 proxy) →
+      `RESULTS-SUMMARY.md` + deck Defensibility (appendix); Codex-workflow-review limitations logged (D-43)
 
-## Phase 6 — Communicate `[ ]`
+## Phase 6 — Communicate `[x]`
 
-- [ ] Figures/tables that feed Part B (tool) and Part A (slides)
+- [x] Figures/tables that feed Part B (tool) and Part A (slides) — all deck charts built from `data/*.json` (none
+      hardcoded); **deck `presentation/story.html`** + **Part-B dashboard `dashboard/`** (deployed to Vercel)
 
 ---
 
 ## Status log (newest first)
 
+- **2026-07-07** — **WRAP-UP.** All DS-arc phases complete. Shipped: the **deck** (`presentation/story.html`) and the
+  **Part-B dashboard** (`dashboard/`, deployed at https://harmful-algal-bloomspoc.vercel.app/, live-embedded in the deck).
+  Deployed forecaster = **lean 2-feature CyAN (`cyan_median` + `area_sqkm`) + EPA** ("go simple", D-41). Two deferred
+  cleanup items (next OOM-safe rerun), neither overturning the shipped conclusions.
+- **2026-07-07** — **CODEX WORKFLOW REVIEW LOGGED (D-43).** The untracked `models/CODEX_REVIEW_workflow.md` (15-point
+  acquire→evaluate technical audit) was reconciled into the audit trail. **CONFIRMED-clean negatives:** core CyAN
+  horizon pairing, `metrics.py` formulas, CRS/geospatial handling. **Known limitations (documented, deferred; do NOT
+  overturn the shipped lean-model or the fusion-negative):** (#1) feature-selection screens ran over all years, not
+  train-only; (#2) non-CyAN joins one week too stale for h≥1 (conservative — makes fusion look *weaker*); (#5) in-situ
+  ffill without a max-age / staleness companion; (#3/#4) some operating-point thresholds tuned on test/embed val labels
+  in `clim`; (#7) onset metrics lack CIs; (#8/#9) generated-output wording lags the code; (#10) "generalizable" exceeds
+  the same-lake-only design (deck already softened to "less tied to per-lake identity"). See D-43.
+- **2026-07-07** — **CLIMATOLOGY-BASELINE FIT INCONSISTENCY (D-42) + full-deck value audit.** Climatology baseline is
+  fit train+val in `eval_experiments.py` (0.952/0.886/0.363) vs train-only in `experiment_lib.py` (0.936/0.851/0.323);
+  train+val is the fair fit. Deck slide 17 patched to the train+val values (interim); code fix + regeneration deferred.
+  A 4-agent value audit + an independent Codex review (verdict **GO**) found no other same-window numeric conflict.
+- **2026-07-06** — **ONSET-MCC BY HORIZON; full fusion reframed "tantalizing but unproven" (D-41).** Added onset-MCC/
+  onset-AUC across leads to `eval_experiments.py` (+ a `lean` 2-feature suite). Full fusion+clim leads onset-MCC at every
+  lead on the 2-yr test (0.466 vs lean 0.314 at h1) but it is **not significance-tested** (onset-AUC CI includes 0) and
+  **climatology also beats lean at every lead** — so much is seasonality. **Decision: ship the lean CyAN model + EPA
+  ("go simple"); full fusion+clim = an unproven avenue to validate next.** Deck slides 14–18 reworked; Defensibility → appendix.
 - **2026-07-06** — **EVAL THRESHOLD-TUNING FIX (D-40, Codex-flagged).** A follow-up Codex leakage
   re-review confirmed the antecedent-CyAN "no temporal overlap" claim **survives**, but found a *separate*
   eval leak: the onset head-to-head script (`eval_headtohead_onset.py`) tuned the operating thresholds for

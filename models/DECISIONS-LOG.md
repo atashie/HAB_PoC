@@ -5,6 +5,47 @@ it supersedes. This is the audit trail for *why* the model is built the way it i
 
 ---
 
+## 2026-07-07 — Codex workflow review reconciled; deck GO review (D-43)
+
+- **D-43 — the standing Codex technical audit of the modeling workflow (`models/CODEX_REVIEW_workflow.md`, 15 findings,
+  acquire→evaluate) is reconciled into the audit trail with an explicit disposition per item.** We are wrapping the PoC,
+  so the code fixes are **deferred to the next (OOM-sensitive) rerun**; what matters for honesty is that none of the open
+  items overturns the two shipped conclusions — (i) the deployable forecaster is the **lean 2-feature CyAN model + EPA**,
+  and (ii) **fusion adds no robust incremental held-out skill** (the fusion-negative). Reasoning below.
+- **CONFIRMED-clean negatives (good news, keep):** #13 core CyAN horizon pairing is temporally clean (`target_date −
+  feature_date == 7·(h+1)`, guard passes, zero bad gaps); #14 `metrics.py` formulas correct; #15 CRS/geospatial handling
+  correct (reprojects before spatial predicates; BasinATLAS overlap in EPSG:5070).
+- **Known limitations — documented, deferred, and why they don't change the headline:**
+  - **#1 (most severe) feature-selection screens ran over ALL years, not train-only** (`assess_static_features.py`,
+    `screen_insitu_features.py`, `screen_weather_features.py`) — contradicts the train-only claim in `DESIGN.md`. This is a
+    real claim-gate deviation for the *driver* screens. **Impact bounded:** the shipped model is the lean **CyAN-only**
+    2-feature model, which does not depend on the driver screens; and the conclusion the screens fed into is *negative*
+    (drivers don't help), which this deviation would only bias toward *false positives* — yet fusion still showed no skill.
+    Fix on rerun: run screens on train years only, freeze, then evaluate.
+  - **#2 non-CyAN predictors joined one week too stale for h≥1** (`assemble_fusion_table.py` joins on `W−h−1`, docs say
+    `W−h`). **Conservative** — it makes fusion look *weaker*, so it does not inflate any positive claim. Fix on rerun.
+  - **#5 in-situ values forward-filled indefinitely, most without their staleness companion** (max staleness ~9 yr). Weakens
+    in-situ modeling and the "value+staleness" compliance claim; the shipped model uses no in-situ features. Fix on rerun.
+  - **#3 EPA head-to-head operating-point thresholds tuned on the shared/test slice** (`eval_epa_headtohead.py`); **#4 onset
+    head-to-head embeds train+val `clim` before val-threshold tuning** (`eval_headtohead_onset.py`). Threshold-*free* AUC/Brier
+    rows are unaffected and carry the main claims; operating-point rows are optimistic. (D-40 already moved the onset
+    *model* thresholds test→val; #3/#4 are the residual baseline-side cases.) Fix on rerun.
+  - **#7 onset metrics lack CIs** — the deck now states the fusion-vs-ladder onset gaps as "≈tied / not proven" and notes the
+    onset-AUC CI includes 0, but the tables still report point estimates; add lake/week block-bootstrap CIs on rerun.
+  - **#8 `headtohead_onset.md` header still says "in-sample F1 thresholds"** though the script was moved to validation-tuned
+    (D-40) and the numbers are the post-fix values; **#9 `fusion_eval.md` has a val/test wording contradiction.** Generated-output
+    prose lags the code — fix the script header strings so the next regeneration is self-consistent.
+  - **#10 "generalizable real-time-CyAN" exceeds the same-lake-only validation design** — already softened in the deck
+    (slide 17: "less tied to per-lake identity; unseen-lake generalization untested"); `RESULTS-SUMMARY.md` headline wording
+    to be softened to match. The promised **blocked-lake stress test was not run** (see PROGRESS Phase 2/5).
+  - #6, #11, #12 (PLAUSIBLE): exactextract `coverage_fraction==1` approximated (8× oversample ≥0.999, documented); broader
+    experiment EPA rows are "indicative" not horizon-matched (labelled as such); low-coverage target weeks retained but
+    metrics not stratified by `valid_frac` (documented). All disclosed; no action required for the PoC.
+- **Deck GO review (separate, 2026-07-07):** an independent Codex review of the deck + the CyAN-block analysis + the D-42
+  root cause returned verdict **GO**; it confirmed the CyAN-block feature list / clim-not-permuted reasoning and the D-42
+  root cause, and prompted two wording fixes (slide 18 "ordering holds through h3, climatology edges fusion at h4"; slide 17
+  lean "less tied to per-lake identity", not "generalizes"). Both applied.
+
 ## 2026-07-07 — Climatology baseline fit inconsistency; full-deck value audit (D-42)
 
 - **D-42 — the climatology BASELINE is fit two different ways across the modeling scripts, which surfaced as

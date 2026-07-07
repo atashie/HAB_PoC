@@ -107,6 +107,8 @@ modeling row** so any prediction's information set is auditable.
   cyan_features_fl.parquet`) — the §3 ladder, from `cyan_lake_weekly_fl.parquet`. Antecedent-only;
   climatology deferred to split time.
 - ✅ **Lake area / static morphology** — `area_sqkm` rides along; depth join pending source (LakeCat/NHD).
-- ⏳ **ERA5 join** — waiting on derived weather features (SPEI etc.) being computed upstream.
-- ⏳ **NWIS / WQP** — COMID/NLDI joins + (value, staleness); pending per-source FL pulls.
-- ⏳ **BasinATLAS L12** — COMID/spatial join from `D:/BasinATLAS_Data_v10`.
+- ✅ **ERA5 join** — weather features computed + joined; **133/133 lakes** (`feature_significance_weather.md`).
+- ✅ **NWIS / WQP** — COMID/NLDI joins + (value, staleness) done; **NWIS 25/133, WQP 123/133** lakes.
+- ✅ **BasinATLAS L12** — max-overlap L12 join, **133/133** lakes. All four folded into `modeling_table_fusion_fl.parquet`
+  (339,400×58). *(Known limitation, D-43 #2/#5: for h≥1 the non-CyAN blocks join one week stale, and in-situ values are
+  forward-filled without a staleness cap — deferred to next rerun.)*

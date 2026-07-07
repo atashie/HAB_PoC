@@ -17,11 +17,16 @@ in DOM order at boot (bottom-right of each slide). Parts:
   landscape, the literature's predictors (coloured by the dataset **we** ingest), and our goals + the
   question stated exactly (every claim-narrowing word highlighted into a limitations box).
 - **Part 2 · The data** — one **pinned Florida map** that morphs as each source is layered on and QA'd:
-  raw CyAN → masking → HydroBASINS → NWIS → WQP → ERA5 → fusion → bloom-frequency. Each source has its
-  own step + a dedicated **limitations box**.
+  raw CyAN → masking → HydroBASINS + NWIS → WQP → ERA5 → fusion (Lake Okeechobee row). **Six** map-steps;
+  most carry a dedicated **limitations box**. (Per-lake bloom frequency is still carried in `fl_lakes.geojson`
+  and shown in lake popups, but is no longer a separate map step.)
 - **Part 2b · From data to features** — the feature families (raw → derived) that feed the model.
-- **Part 3 · Findings → platform → ask** — now carries **real results** (baseline head-to-head, feature
-  ablation, skill-vs-lead-time), parsed from the modeling outputs; Parts B/C stay lightweight slices.
+- **Part 3 · Findings → platform → ask** — carries **real results** (baseline head-to-head, feature-family
+  ablation with onset-MCC, onset-alert skill-vs-lead-time), parsed from the modeling outputs. **Part B** is a live
+  demo slide that **embeds the deployed dashboard**; **Part C** is a full prototype→platform section (feedback,
+  four directions, costed production, monitoring, recommendation).
+- **Appendix** — *Trusting the signal*: the CyAN ↔ EPA-lab (NLA) matchup (coverage funnel + biomass-yes /
+  toxin-no gap), and the **Defensibility** slide (leakage guards, temporal splits), both moved here out of the main flow.
 
 What it uses:
 - **Interactive maps (Leaflet, vendored):** the Part 2 map is the **133 CyAN-resolvable Florida lakes**
@@ -30,14 +35,16 @@ What it uses:
   **WQP stations** we linked (real coordinates), and the **ERA5 0.25° grid**. Zoom + a basemap toggle:
   *Political (light)* = local state polygons (**offline**) · *Satellite (optical)* = Esri tiles (**needs internet**).
 - **Interactive charts (Plotly, vendored):** the tools landscape; the feature-frequency chart (coloured by
-  the dataset we ingest); and the Findings charts (baseline AUC all-weeks-vs-flips, block permutation
-  importance, skill-vs-lead-time) — all built from `data/*.json`, none hardcoded.
+  the dataset we ingest); and the Findings charts (block-permutation importance with **onset-MCC**, all-weeks
+  skill-vs-lead-time, the **model-family grid** with onset-AUC/onset-MCC bars, and **onset-MCC vs lead time**) —
+  plus the baseline head-to-head **table** — all built from `data/*.json`, none hardcoded.
 - **Real photograph hero:** a public-domain USGS photo of the 2016 Lake Okeechobee bloom (credited on-image).
 - **Three dropdowns per step:** *Sources & data* (the real external source of every datum), *Terms*
   (plain-language), and *Known limitations* (a terse, honest limitations box on most steps).
-- **`[PLACEHOLDER]` blocks** only where a result genuinely does not exist yet (Part B tool, Part C sketch).
+- **No `[PLACEHOLDER]` blocks remain** — Part B embeds the live tool and Part C is fully drafted. (The `.placeholder` style is retained but currently unused.)
 
-Fully offline **except** the optical basemap tiles. Terminology: we forecast **harmful algal blooms
+Fully offline **except** the optical basemap tiles and the Part B live-tool iframe (both have offline fallbacks:
+the political basemap, and the dashboard screenshot poster `assets/dashboard_preview.png`). Terminology: we forecast **harmful algal blooms
 (HABs)**; "cyanobacteria index / dominance" and EPA's "CyanoHAB forecast" are kept where they are the
 correct technical names.
 
@@ -59,6 +66,7 @@ Deterministic + regenerable (claim gate). Reads only checked-in real data and wr
 | `assets/erie_cyan_*.png` + `.json` | 8 weekly CyAN overlays (Western Lake Erie, 2022), EPSG:3857 — kept for reference |
 | `assets/fl_cyan_*.png` + `fl_cyan.json` | **8 weekly Florida CyAN overlays (2016 Okeechobee bloom season)**, EPSG:3857 — the data-section raster |
 | `assets/hero_okeechobee_bloom_2016_usgs.jpg` | **downloaded** public-domain USGS hero photo (N. Aumen, 2016-07-09) — not generated, cited on-slide |
+| `assets/dashboard_preview.png` | **captured** screenshot of the deployed Part B dashboard — not generated; the offline poster / fallback for the Demo slide's live-tool embed |
 
 ```bash
 python presentation/build_story_assets.py
@@ -90,7 +98,7 @@ presentation/
     fl_basins.geojson     # generated: real HydroBASINS L12 sub-basins
     story_data.js         # generated: window.STORY bundle
   assets/                 # generated: erie_cyan_*.png + fl_cyan_*.png (8 weeks each) + *.json;
-                          #   hero_okeechobee_bloom_2016_usgs.jpg (downloaded, public domain)
+                          #   hero_okeechobee_bloom_2016_usgs.jpg (downloaded) + dashboard_preview.png (captured) — not generated
 
   # --- legacy landscape deck (superseded by story.html for the talk; still the source of the tool/model data) ---
   HAB_landscape.pptx      # earlier 5-slide landscape deck (pptx)
@@ -120,9 +128,9 @@ the legacy figures (`build_figures.py`) and the live Plotly charts (`build_story
   with real bloom-frequency; 12/12 tools linked; 14 models / 19 citations; 8 Erie + 8 Florida CyAN weeks;
   395 NWIS + 8,726 WQP linked station points; 94 L12 sub-basins; `results.json` numbers matched to their
   source tables in `../models/outputs/*.md`).
-- `story.html` verified structurally: balanced tags (5/5 sections, 49/49 details), inline JS parses
-  (`node --check`), all local asset references resolve, 30 auto-numbered slides (22 `.slide` + 8 map-steps),
-  14 limitations boxes, all six Plotly chart IDs unique. Findings numbers (incl. the EPA head-to-head)
+- `story.html` verified structurally: balanced tags (5/5 sections, 46/46 details), inline JS parses
+  (`node --check`), all local asset references resolve, **27 auto-numbered slides (21 `.slide` + 6 map-steps)**,
+  12 limitations boxes, all six Plotly chart IDs unique. Findings numbers (incl. the EPA head-to-head)
   are pinned to the **W-2 / h1** scenario end-to-end (the correct 1-week-ahead, latency-fair case).
   Non-ASCII in JS is intentional and valid UTF-8 (—, –, ·, ↔, ©, ², ½); the file declares `charset=utf-8`.
 - Technical-accuracy pass (two Codex reviews): cross-checked every deck number against `models/outputs/*.md`

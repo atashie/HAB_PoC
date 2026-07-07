@@ -92,10 +92,9 @@ random intercept / lat-lon). **EPA** represents location with a *generalizing* c
 field** (~88 km range) + static morphology (area, mean depth) — `conus_inla.R:199`. **We** use no
 discrete ID either, but the fitted AR-ladder logistic carries a **per-lake per-month climatology**
 (`clim`) — a learned per-lake base rate (category-4 identity-by-proxy) that **EPA does not use**.
-*Direction (user 2026-07-05, pending finalization):* prefer generalizability → **demote per-lake
-climatology to a reported baseline (not a model feature)**, replace its between-lake role with EPA-style
-generalizing signals (static morphology incl. depth, general week-of-year seasonality, optional coarse
-spatial), and **prove generalization with the blocked-lake (leave-lakes-out) stress test**.
+*Direction (user 2026-07-05) — FINALIZED (D-35, empirically vindicated D-39c):* per-lake climatology was
+**demoted to a reported baseline, not a model feature** — the deployable model is clim-free. *(The blocked-lake
+leave-lakes-out stress test was **not run** — a known limitation, D-43 #10; unseen-lake transfer is untested.)*
 
 ## Candidate feature set for fusion (from this screen)
 - **CyAN antecedent ladder** (already the baseline to beat) + **lake area** (D-27) + **inundation**.

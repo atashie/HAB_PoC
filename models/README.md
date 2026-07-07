@@ -47,5 +47,6 @@ level ablation, and clustered permutation importance done and Codex-reviewed.
 **Concluded findings (see [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md)):** early warning works (onset-AUC
 ≈ 0.94, beats EPA + climatology), but skill is **overwhelmingly the real-time CyAN signal** — the
 weather/in-situ/morphology fusion adds **no robust incremental held-out skill** (a clear-eyed negative).
-Deployable model = a compact, generalizable **clim-free real-time-CyAN autoregression**. Full trail in
-[`DECISIONS-LOG.md`](DECISIONS-LOG.md) (D-01…D-39) and [`PROGRESS.md`](PROGRESS.md).
+Deployable model = a compact **clim-free real-time-CyAN autoregression** (less tied to per-lake identity;
+unseen-lake transfer untested) **+ the EPA forecast** ("go simple"). Full trail in
+[`DECISIONS-LOG.md`](DECISIONS-LOG.md) (D-01…D-43) and [`PROGRESS.md`](PROGRESS.md).

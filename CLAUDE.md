@@ -60,9 +60,11 @@ Before any number or statement enters the slides or the tool, it must pass all f
 These are a starting palette, not a mandate — but any source we add follows the same citation + traceability rules.
 
 ## Repository conventions
-The repo has four working layers, each with its own README: **`Research/`** (261-source literature base),
+The repo has five working layers, each with its own README: **`Research/`** (261-source literature base),
 **`data-sources/`** (scripted, cited data acquisition + QA), **`models/`** (the Florida CyAN bloom-forecast
-modeling layer, mid-build), and **`presentation/`** (the final HTML scrolling-story deck + its asset builder).
+modeling layer — results in / concluded), **`presentation/`** (the HTML scrolling-story deck + its asset builder),
+and **`dashboard/`** (the deployed Part B static tool — `dashboard/index.html`, live at
+https://harmful-algal-bloomspoc.vercel.app/).
 Keep the repo reproducible and legible:
 - Scripted, re-runnable data acquisition; cache raw pulls and **never hand-edit raw data**.
 - Analysis in notebooks/scripts that regenerate all figures and metrics from source.
@@ -71,12 +73,13 @@ Keep the repo reproducible and legible:
 
 **Commands, per layer** (each layer's README has the detail; add here as more emerge):
 - **Presentation:** `python presentation/build_story_assets.py` regenerates the data assets, then open `presentation/story.html` in a browser. Stack: vanilla JS + vendored Leaflet + Plotly; Python deps `geopandas`, `rasterio`, `matplotlib`, `numpy`.
-- **data-sources / models:** Python; see `data-sources/README.md` and `models/README.md`. The modeling pipeline (acquire → prepare → model → evaluate) is mid-build.
+- **data-sources / models:** Python; see `data-sources/README.md` and `models/README.md`. The modeling pipeline (acquire → prepare → model → evaluate) is concluded (results in; see `models/RESULTS-SUMMARY.md`).
+- **dashboard (Part B):** `python dashboard/build_dashboard_data.py` regenerates the precomputed predictions, then open `dashboard/index.html`; deployed to Vercel (`atashie` account). See `dashboard/README.md`.
 
 Environment note: Python 3.13 is available with `pdfplumber` / `pypdf` / `fitz`. `poppler-utils` (`pdftoppm`) is **not** installed, so the Read tool's PDF page-image rendering fails — extract PDF text with the Python libraries instead.
 
 ## Key decisions (resolved — see linked docs for rationale)
 - **Framing** — **multi-horizon risk forecasting** of WHO Alert Level 1 blooms (probability per lake-week, lead times 0–4 wk), benchmarked head-to-head to the EPA CyanoHAB forecast. (`models/DESIGN.md`)
 - **Geography & scope** — **Florida**: the 133 CyAN-resolvable lakes, OLCI era (2016→present). (`models/DESIGN.md`; `data-sources/`)
-- **Stack** — analysis in **Python**; the presentation is a **self-contained HTML scrolling story** (`presentation/story.html`); the Part B tool is a **separate app** (standalone HTML reading precomputed predictions, recommended). (`docs/plans/2026-07-02-presentation-design.md`)
-- **Model family** — four explainable classifiers: logistic GLM · SVC · XGBoost · logistic GAM — simplest methods that fit the decision and stay explainable. (`models/DESIGN.md`)
+- **Stack** — analysis in **Python**; the presentation is a **self-contained HTML scrolling story** (`presentation/story.html`); the Part B tool is a **standalone static dashboard** (`dashboard/`, vanilla JS + vendored Leaflet/Plotly reading precomputed predictions), **deployed at https://harmful-algal-bloomspoc.vercel.app/** and live-embedded in the deck's Demo slide. (`docs/plans/2026-07-02-presentation-design.md`, `docs/plans/2026-07-06-dashboard-design.md`)
+- **Model family** — explainable classifiers trialed across a feature-suite × architecture grid: **logistic GLM · HistGBM · XGBoost** (SVC / logistic GAM were in the design plan but not built — architecture barely mattered, D-36b). **Outcome (a clear-eyed negative): fusing weather / in-situ / morphology adds no robust incremental held-out skill; the shipped PoC forecaster is the lean 2-feature real-time-CyAN model (`cyan_median` + `area_sqkm`) + the EPA CyanoHAB forecast**; full 44-feature fusion+clim is a tantalizing-but-unproven onset avenue. (`models/DESIGN.md`, `models/RESULTS-SUMMARY.md`)

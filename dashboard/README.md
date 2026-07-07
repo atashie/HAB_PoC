@@ -20,7 +20,7 @@ loaded as local JS, not fetched). No install, no server.
     a forecast-target-week selector. Each row also shows an **Onset lead** column — the earliest forecast
     horizon (0–4) at which risk first reaches the Warning line, or "–" if none. (It is a *horizon index*, not a
     literal week count: lead `h` targets week `T+(h+1)` and CyAN carries ~2 weeks latency.) Risk tiers
-    (Watch/Warning) are **illustrative and tunable**.
+    (Warning / Watch / Low) are **illustrative and tunable**.
   - *Current active blooms*: lakes **blooming now**, ranked by duration (consecutive observed bloom weeks).
 - **Deep dive** — pick a lake: forecast risk by target week (our fusion vs the lean CyAN model [median+area] vs climatology vs
   EPA); observed history (CyAN index + WHO AL1 line + real in-situ chl-a samples, both axes pinned to a
@@ -78,6 +78,10 @@ shaded); in-situ values are flagged **raw/unharmonized**; and lakes missing a ho
 dropped**.
 
 ## Deploy to Vercel (static, from GitHub)
+
+**Deployed:** the tool is live at **https://harmful-algal-bloomspoc.vercel.app/** (Vercel, `atashie` account) and is
+live-embedded in the deck's Demo slide. The steps below record how it was set up / how to redeploy (every `git push`
+auto-redeploys).
 
 The repo is already at `github.com/atashie/HAB_PoC`. The dashboard is a **static site** — Vercel just serves
 the `dashboard/` folder (no build step, no backend).

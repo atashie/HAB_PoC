@@ -8,9 +8,13 @@
 > The federal benchmark we mirror is documented in
 > [`../data-sources/cyano-forecasts/METADATA.md`](../data-sources/cyano-forecasts/METADATA.md).
 
-> ⚠️ **RESULTS UPDATE (2026-07-06) — read [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md) for the concluded
-> findings.** This spec is the *plan*; several of its bets resolved as clear-eyed **negatives** once the
-> experiments ran (all logged D-37…D-39):
+> ⚠️ **RESULTS UPDATE (2026-07-06; extended through D-43, 2026-07-07) — read
+> [`RESULTS-SUMMARY.md`](RESULTS-SUMMARY.md) for the concluded findings.** This spec is the *plan*; several of its
+> bets resolved as clear-eyed **negatives** once the experiments ran (logged D-37…D-43). **Shipped forecaster =
+> the lean 2-feature real-time-CyAN model (`cyan_median` + `area_sqkm`) + the EPA forecast ("go simple", D-41);**
+> the as-built architecture grid was logistic/HistGBM/XGBoost (SVC/GAM in §"Design at a glance" were not built,
+> D-36b). Later refinements: onset thresholds moved test→val (D-40); full-fusion onset edge reframed
+> unproven (D-41); climatology-baseline fit inconsistency (D-42); Codex-workflow-review limitations logged (D-43).
 > - **Fusion is a negative result** — weather/in-situ/morphology add **no robust incremental held-out
 >   skill** over CyAN; the model is a **real-time-CyAN autoregression** (clustered permutation importance:
 >   the CyAN-level cluster ≈ 100% of skill).

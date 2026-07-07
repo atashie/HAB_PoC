@@ -1,8 +1,8 @@
 # Modeling results — summary for the story deck
 
-*Florida cyanobacteria bloom forecasting (HAB PoC). Compiled 2026-07-06. Every number below traces to a
-checked-in result file (linked in §9) produced by checked-in code from cited public data. Written in the
-project's plain/honest/anti-marketing voice — the negatives are findings, not things to hide.*
+*Florida cyanobacteria bloom forecasting (HAB PoC). Compiled 2026-07-06; D-42/D-43 pass 2026-07-07. Every number
+below traces to a checked-in result file (linked in §9) produced by checked-in code from cited public data. Written
+in the project's plain/honest/anti-marketing voice — the negatives are findings, not things to hide.*
 
 ---
 
@@ -15,8 +15,8 @@ central result is a **clear-eyed, well-validated negative-plus-positive**: (a) *
 we can rank which currently-clear lakes will bloom next week with **onset-AUC ≈ 0.94**, beating
 climatology and EPA; but (b) essentially **all of that skill comes from the real-time CyAN signal
 itself** — the weather / in-situ / morphology "fusion" adds **no incremental held-out skill that
-survives rigorous importance testing**. The honest, deployable model is a **compact, generalizable
-real-time-CyAN autoregression**, not a big fusion model. A well-validated simple model beat the complex
+survives rigorous importance testing**. The honest, deployable model is a **compact real-time-CyAN
+autoregression** (less tied to per-lake identity; unseen-lake transfer untested), not a big fusion model. A well-validated simple model beat the complex
 one — exactly the outcome the brief prizes.
 
 ---
@@ -69,7 +69,7 @@ one — exactly the outcome the brief prizes.
 5. **`clim` (per-lake seasonal base rate) is a memorization shortcut — kept as a baseline, not a
    feature.** It's leaned on as hard as all 15 CyAN features combined (permutation Δonset-MCC +0.351),
    yet removing it costs only 0.068 — redundant-but-exploited. The deployable model is **clim-free**, and
-   real-time CyAN alone is sufficient and generalizable. *(`exp_perm_c1_decomp.md`)*
+   real-time CyAN alone is sufficient and less tied to per-lake identity (unseen-lake transfer untested). *(`exp_perm_c1_decomp.md`)*
 6. **We are competitive with a validated federal product** (EPA CyanoHAB forecast) on the same event, at
    EPA's own operating point — a credible "as-good-as-EPA, and explainable" product claim, stated with
    its caveats. *(`epa_headtohead.md`, `headtohead_onset.md`)*
@@ -107,6 +107,11 @@ one — exactly the outcome the brief prizes.
   **tantalizing-but-unproven** avenue to validate next (the "go deep" direction); the *deployable* choice
   stays the lean model + EPA. Note this is the 2-yr window with the **clim-carrying** model — distinct from
   the shared-2025 clim-free head-to-head above. *(`experiments.md` horizon curve; deck slides 17–18.)*
+- **Climatology-baseline fit inconsistency (D-42, deferred fix).** The standalone **climatology baseline** is fit on
+  **train+val** in `experiments.md` (the *fair* fit — it matches how the models are refit on train+val before predicting
+  test → onset-MCC 0.363 at h1) but on **train-only** in the `exp_*ablation` tables (0.323 at h1), which under-credits it.
+  The deck reconciles to the train+val values; the code fix (make the baseline train+val everywhere) + regeneration is
+  deferred to the next OOM-safe rerun. No look-ahead either way (val precedes test); the deployable lean model is unaffected.
 
 ---
 
@@ -150,7 +155,7 @@ Method: cluster 44 features by |Pearson r| (→ 27 clusters, needed because of h
   base-rate feature leaned on as hard as all real-time CyAN. Yet dropping `clim` costs only 0.068
   (block ablation) → **redundant-but-exploited memorization shortcut** (large *reliance*, tiny *unique*
   value). A **clim-free** model ranks onsets strongly (onset-AUC 0.935, onset-MCC 0.398) with **no per-
-  lake identity** → the generalizable choice.
+  lake identity** → less tied to per-lake identity (unseen-lake transfer untested).
 - **`area_sqkm` is a whisper** (Δonset-MCC ~+0.018, Δ pooled ~0; not cross-arch robust; not FDR-
   significant in the static screen) — we **walked back** an earlier "headline feature" framing (D-27→D-39d).
 - **Within real-time CyAN:** current-week obs is the workhorse (+0.214), lags secondary (+0.091),
@@ -183,9 +188,9 @@ Method: cluster 44 features by |Pearson r| (→ 27 clusters, needed because of h
 
 ## 8. The deployable model + honest limitations
 
-**Deployable model:** a **compact, clim-free, generalizable real-time-CyAN autoregression** (current +
-recent CyAN level, lightweight morphology), multi-horizon 0–4 wk, explainable, competitive with EPA on
-the same event. Fusion drivers and `clim` "ride along" but earn no defensible incremental claim.
+**Deployable model:** a **compact, clim-free real-time-CyAN autoregression** (current + recent CyAN level,
+lightweight morphology; less tied to per-lake identity, unseen-lake transfer untested), multi-horizon 0–4 wk,
+explainable, competitive with EPA on the same event. Fusion drivers and `clim` "ride along" but earn no defensible incremental claim.
 
 **Limitations (stated plainly — the brief rewards these):**
 1. **Fusion is a negative result:** weather/in-situ/morphology add no robust incremental held-out skill
@@ -227,7 +232,7 @@ importance findings D-39). Full trail in `models/DECISIONS-LOG.md`.
 - **Univariate screens:** [`feature_significance_static.md`](outputs/feature_significance_static.md), [`feature_significance_weather.md`](outputs/feature_significance_weather.md), [`feature_significance_nwis.md`](outputs/feature_significance_nwis.md), [`feature_significance_wqp.md`](outputs/feature_significance_wqp.md), [`chla_leadlag.md`](outputs/chla_leadlag.md)
 
 ### Documentation (`models/`)
-- **Design & rationale:** [`DESIGN.md`](DESIGN.md) · **Decisions/audit trail (D-01…D-39):** [`DECISIONS-LOG.md`](DECISIONS-LOG.md) · **Progress log:** [`PROGRESS.md`](PROGRESS.md)
+- **Design & rationale:** [`DESIGN.md`](DESIGN.md) · **Decisions/audit trail (D-01…D-43):** [`DECISIONS-LOG.md`](DECISIONS-LOG.md) · **Progress log:** [`PROGRESS.md`](PROGRESS.md)
 - **Domain & data:** [`docs/01-domain-and-data.md`](docs/01-domain-and-data.md) · **Feature catalog:** [`docs/02-feature-catalog.md`](docs/02-feature-catalog.md) · **Target definition (AL1=DN≥130, EPA-pinned):** [`docs/03-target-definition.md`](docs/03-target-definition.md) · **Feature assessment + §Multivariate importance:** [`docs/04-feature-assessment.md`](docs/04-feature-assessment.md)
 
 ### Key data artifacts (`models/data/derived/`)
@@ -244,6 +249,6 @@ importance findings D-39). Full trail in `models/DECISIONS-LOG.md`.
 - **Act 2 — what we found:** (1) early warning works (onset-AUC 0.94, beats EPA/climatology); (2) but it's
   CyAN doing the work — the fusion is a clear-eyed negative; (3) the metric-honesty story (general-flip vs
   positive-onset) and the memorization-shortcut story (`clim`); (4) a 2-feature model matches 44.
-- **Act 3 — the product:** a compact, explainable, generalizable real-time-CyAN early-warning model,
-  competitive with EPA, with its limits stated (transitions weak, same-lake only, fusion didn't pay off).
+- **Act 3 — the product:** a compact, explainable real-time-CyAN early-warning model (less tied to per-lake
+  identity), competitive with EPA, with its limits stated (transitions weak, same-lake only / unseen-lake transfer untested, fusion didn't pay off).
   The value proposition is **rigor + explainability + a defensible claim**, not a bigger model.
