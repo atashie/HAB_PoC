@@ -419,6 +419,18 @@
         water is below detection, not missing. No lake boundaries yet — that comes next.</div>
         <div class="cyan-key"><span>Low</span><span class="cyan-ramp"></span><span>High</span> · cyanobacteria index (CI_cyano; dimensionless, ≈ 10⁴–10⁶ cyanobacteria cells/mL)</div>
         <div class="step-meta">
+          <details class="drop limits" open><summary>CyAN limitations — the load-bearing ones</summary><div class="body">
+            <ul class="lim">
+              <li><b>Coarse 300 m pixels</b> — reliable only for water ≥ ~900 m across (≥3×3 pixels); only ~5% of U.S. lakes are resolvable, and ~80% of <em>state-reported cyanoHAB records</em> fall in waterbodies too small/ill-shaped for the 3-pixel analysis.</li>
+              <li><b>A spectral proxy, not a direct measure</b> — CI_cyano is a reflectance-shape index, not a cyano count; turbidity, sediment, CDOM, thin cloud and shoreline adjacency can bias it, and low-biomass cyano (below ~chl-a 20 µg/L) is hard to see.</li>
+              <li><b>Not toxins</b> — sensors can’t measure cyanotoxins, and biomass↔toxin risk are decoupled (our CyAN↔lab matchup, in the appendix: CI missed toxins in 70 lakes, over-called 65).</li>
+              <li><b>Cloud, ice and shorelines</b> cause gaps and false readings; cloud alone lost the target week in 595 of 929 lakes in that matchup.</li>
+              <li><b>Weekly max-composite, ~1-week lag</b>; single sensor since 2016 (OLCI), no long baseline; values are version-dependent (no trending across reprocessings).</li>
+              <li><b>“Below detection” ≠ zero</b> — it is below the sensor’s ~10⁴ cells/mL floor, not an absence.</li>
+              <li><b>Our bloom label is CyAN-derived</b>, so CyAN is used <b>antecedent-only</b> (never the target week) to avoid circularity.</li>
+            </ul>
+            <div class="cite" style="margin-top:6px">We put numbers on this by matching CyAN to independent EPA lab samples — see the appendix. </div>
+          </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><b>CyAN CI_cyano</b> — U.S. EPA &amp; NASA Cyanobacteria Assessment Network; Sentinel-3 OLCI, 300 m weekly composites (2016, central/south Florida crop). <a href="https://www.epa.gov/water-research/cyanobacteria-assessment-network-cyan" target="_blank" rel="noopener">epa.gov — CyAN</a>.</div>
           </div></details>
@@ -439,18 +451,6 @@
         is what defines a bloom. Masking is what turns a noisy image into a clean per-lake signal.</p>
         <div class="note insight"><span class="lbl">Result:</span> one number per lake per week, tied to a known COMID — joinable to every other data source.</div>
         <div class="step-meta">
-          <details class="drop limits" open><summary>CyAN limitations — the load-bearing ones</summary><div class="body">
-            <ul class="lim">
-              <li><b>Coarse 300 m pixels</b> — reliable only for water ≥ ~900 m across (≥3×3 pixels); only ~5% of U.S. lakes are resolvable, and ~80% of <em>state-reported cyanoHAB records</em> fall in waterbodies too small/ill-shaped for the 3-pixel analysis.</li>
-              <li><b>A spectral proxy, not a direct measure</b> — CI_cyano is a reflectance-shape index, not a cyano count; turbidity, sediment, CDOM, thin cloud and shoreline adjacency can bias it, and low-biomass cyano (below ~chl-a 20 µg/L) is hard to see.</li>
-              <li><b>Not toxins</b> — sensors can’t measure cyanotoxins, and biomass↔toxin risk are decoupled (our CyAN↔lab matchup, in the appendix: CI missed toxins in 70 lakes, over-called 65).</li>
-              <li><b>Cloud, ice and shorelines</b> cause gaps and false readings; cloud alone lost the target week in 595 of 929 lakes in that matchup.</li>
-              <li><b>Weekly max-composite, ~1-week lag</b>; single sensor since 2016 (OLCI), no long baseline; values are version-dependent (no trending across reprocessings).</li>
-              <li><b>“Below detection” ≠ zero</b> — it is below the sensor’s ~10⁴ cells/mL floor, not an absence.</li>
-              <li><b>Our bloom label is CyAN-derived</b>, so CyAN is used <b>antecedent-only</b> (never the target week) to avoid circularity.</li>
-            </ul>
-            <div class="cite" style="margin-top:6px">We put numbers on this by matching CyAN to independent EPA lab samples — see the appendix. </div>
-          </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><b>Masking &amp; per-lake median (AL1 target)</b> — recipe from Schaeffer et al. (2024) deposited code; pixel QA in <code>data-sources/cyan/METADATA.md</code>; label in <code>models/docs/03-target-definition.md</code>.</div>
             <div class="cite"><b>Lake polygons</b> — USGS / EPA NHDPlus V2 (NHDWaterbody, COMID). <a href="https://www.epa.gov/waterdata/nhdplus-national-hydrography-dataset-plus" target="_blank" rel="noopener">epa.gov — NHDPlus</a>.</div>
@@ -853,8 +853,8 @@
       help at bloom <em>initiation</em>, where the science says conditions matter most. But it is <b>not yet robustly proven</b>: the
       onset-AUC lift's bootstrap CI includes 0, and we have not significance-tested the onset-MCC gap. So we flag full fusion + clim as a
       <b>promising avenue to validate next</b> (the “go deep” direction) — and, because the <b>lean</b> model is competitive with EPA,
-      generalizes (no per-lake <code>clim</code> identity), and is trivially cheap to run, we <b>ship the lean CyAN model + EPA for the
-      PoC</b>.</div>
+      is <b>less tied to per-lake identity</b> (no <code>clim</code> feature; unseen-lake generalization is untested), and is trivially cheap
+      to run, we <b>ship the lean CyAN model + EPA for the PoC</b>.</div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
         <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (greedy backward, 2-yr test) for the models, lean &amp; EPA; the <b>climatology</b> row is the train+val baseline from <code>experiments.md</code> (fit on the same train+val the models are refit on — the fair comparator, consistent with the lead-by-lead slide). Synopsis <code>models/RESULTS-SUMMARY.md</code> §4/§8.</div>
@@ -882,7 +882,7 @@
           <li><b>The upward trend is an artifact, not improving skill.</b> Genuine ranking skill <em>falls</em> with lead (all-weeks AUC 0.99→0.97; onset-AUC 0.93→0.92 for the CyAN models). onset-MCC rises only because the onset base rate <b>~doubles (2.8%→5.8%)</b> and long-lead onsets are more <b>seasonal</b> — the task gets easier, the forecast doesn’t.</li>
           <li><b>General transitions stay hard:</b> the both-direction transition MCC (onset + offset) is <b>negative at every lead</b> — we forecast the bloom <em>level</em> well, the <em>change</em> poorly.</li>
         </ul>
-        <div class="note honest"><span class="lbl">The honest finding:</span> a clear mix — the alert ordering is usable and full fusion leads it, but that lead isn’t yet proven and the underlying forecast degrades with lead, as any forecast should.</div>
+        <div class="note honest"><span class="lbl">The honest finding:</span> a clear mix — the alert ordering is usable and full fusion leads it through h3 (climatology edges ahead at h4), but that lead isn’t yet proven and the underlying forecast degrades with lead, as any forecast should.</div>
         <div class="step-meta">
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><code>models/outputs/experiments.md</code> (onset-MCC by horizon, 2-yr window); EPA point from <code>headtohead_onset.md</code>.</div>
@@ -895,19 +895,35 @@
   <!-- Demo the tool (Part B) -->
   <div class="slide" data-layout="wide"><div class="kicker">Demo · Part B</div>
     <h2>The tool, live — pick a lake, read the risk.</h2>
-    <p class="sub" style="max-width:1180px">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an
-    honest <b>historical replay</b> (a fixed dated snapshot), not live inference. Pick a lake and a lead time to see the risk with its uncertainty
-    and baseline, the top drivers, a suggested action window, and the limits.
-    <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
-    <figure class="demo-embed" id="demoEmbed">
-      <button type="button" class="demo-load" aria-label="Load the interactive tool inside this slide">
-        <img src="assets/dashboard_preview.png" alt="Screenshot of the Florida Harmful Algal Bloom risk dashboard: a map of Florida lakes coloured by bloom risk beside a ranked alert list with per-lake probabilities.">
-        <span class="demo-play">▶&nbsp; Load the interactive tool</span>
-      </button>
-    </figure>
-    <div class="fig-cap">Live embed of <a href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">harmful-algal-bloomspoc.vercel.app</a>
-    — click to load it inside the slide, or open it full-screen via the link above. Interactive when online; the screenshot stands in if the network
-    is down. Historical replay on a fixed dated snapshot, not a live feed.</div>
+    <div class="split">
+      <div class="col-fig">
+        <figure class="demo-embed" id="demoEmbed">
+          <button type="button" class="demo-load" aria-label="Load the interactive tool inside this slide">
+            <img src="assets/dashboard_preview.png" alt="Screenshot of the Florida Harmful Algal Bloom risk dashboard: a map of Florida lakes coloured by bloom risk beside a ranked alert list with per-lake probabilities.">
+            <span class="demo-play">▶&nbsp; Load the interactive tool</span>
+          </button>
+        </figure>
+        <div class="fig-cap">Live embed of <a href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">harmful-algal-bloomspoc.vercel.app</a>
+        — click to load it inside the slide, or open it full-screen via the link. Interactive when online; the screenshot stands in if the network is
+        down. Historical replay on a fixed dated snapshot, not a live feed.</div>
+      </div>
+      <div class="col-txt">
+        <p class="sub">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an honest
+        <b>historical replay</b>, not live inference. Pick a lake and a lead time to see the risk with its uncertainty and baseline, the top drivers, a
+        suggested action window, and the limits.
+        <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
+        <p style="margin:10px 0 4px"><b>Who’d use it, and how</b> — illustrative workflows the tool supports (the PoC runs on a fixed historical snapshot):</p>
+        <ul class="tight">
+          <li><b>Customer Success — get ahead of a bloom:</b> spot lakes flipping into <b>Warning</b> over the next 1–4 weeks, find the customers on or
+            near those waterbodies, and <b>pre-position product and crews</b> before the bloom peaks — rather than reacting once it is visible.</li>
+          <li><b>Customer Success / commercial — chronic blooms → new leads:</b> use <em>Current active blooms</em> and the lakes that bloom week after
+            week to find chronically affected waterbodies, identify accounts (or prospects) in that watershed, and <b>reach out with evidence in hand</b>.</li>
+          <li><b>Sales engineer / solutions data scientist — the “why”:</b> open the <em>Deep dive</em> to see which drivers are moving a given forecast
+            (CyAN history, season, weather, nutrients) and whether a lake is <b>diverging from its historical / seasonal pattern</b> — grounding a
+            technical conversation in what the model is actually responding to, not a black box.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <!-- Platform section launcher -->
