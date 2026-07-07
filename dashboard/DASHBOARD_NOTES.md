@@ -27,6 +27,13 @@ user-facing, that must trace to a model that actually ingests `clim`.
 to promote Track B (+clim feature) later. Switching would re-touch the Gate A / Gate B numbers (they are
 computed on the shipped estimator), so it is a deliberate, re-benchmarked change — not a silent swap.
 
+**Two different senses of "the model" (so the deck and the tool don't read as a contradiction):** the tool's
+**default display forecast** is the full **fusion (Track A)** model — the richer view — with the **lean 2-feature
+model** and **EPA** shown *beside* it in the Deep dive. The **PoC's recommended *production* model** is the
+**lean CyAN model + EPA** ("go simple", D-41) — chosen for cost, simplicity, and being less tied to per-lake
+identity, *not* because fusion loses (its onset edge is "tantalizing but unproven"). The deck's Demo slide states
+this explicitly. These are consistent: the tool showcases the full model; the recommendation ships the lean one.
+
 **If we do switch to Track B later, the checklist is:**
 1. Add `"clim"` to the `TRACK_A` feature list (or define a `TRACK_B`) in `build_dashboard_data.py`.
 2. Re-run the build; confirm Gate A still reproduces the published test AUC within band (or update the

@@ -896,7 +896,8 @@
     <h2>The tool, live — pick a lake, read the risk.</h2>
     <p class="sub" style="max-width:1180px">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an honest
     <b>historical replay</b>, not live inference. Pick a lake and a lead time to see the risk with its uncertainty and baseline, the top drivers, a
-    suggested action window, and the limits.
+    suggested action window, and the limits. <em>(The tool’s default forecast is the richer full-fusion model; the lean 2-feature model we
+    recommend shipping and the EPA forecast sit alongside it in the Deep dive — so you can see all three at once.)</em>
     <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
     <p style="margin:10px 0 4px"><b>Who’d use it, and how</b> — illustrative workflows the tool supports (the PoC runs on a fixed historical snapshot):</p>
     <ul class="tight">
@@ -1120,6 +1121,7 @@
       <li><b>Temporal splits</b> (~60/20/20), never a random shuffle on autocorrelated lake-weeks: the <b>feature / ablation experiments</b> use <b>train &lt; 2022-07 / val 2022-07→2024-07 / test ≥ 2024-07</b> (a 2-year held-out test); the <b>EPA head-to-head &amp; baselines</b> use <b>train ≤ 2023 / val 2024 / test 2025</b> (matching EPA’s issue dates). Normalization and feature selection are fit on train (+val) only.</li>
       <li><b>Fully antecedent inputs</b> — CyAN, weather (trailing windows), and in-situ are all as-of the cutoff week, never the target week, so this is an <em>operational</em> forecast (no oracle); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
       <li><b>Clustered</b> confidence intervals (block bootstrap by lake/week), never row-level.</li>
+      <li><b>Known limitations from our own workflow audit</b> (independent Codex review; fixes deferred to the next rerun, none overturning the shipped lean model or the fusion-negative): the <b>driver-feature screens ran over all years, not train-only</b> — but that biases only toward <em>finding</em> driver signal, and none survived; non-CyAN blocks join <b>one week stale</b> for h≥1 (makes fusion look <em>weaker</em>, not stronger); in-situ values are <b>forward-filled without a staleness cap</b>; and the <b>blocked-lake (unseen-lake) transfer test was not run</b>. The shipped lean CyAN model uses none of the affected driver / in-situ features.</li>
     </ul>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
