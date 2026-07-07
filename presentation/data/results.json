@@ -508,6 +508,128 @@
    "onset_auc": 0.842
   }
  ],
+ "onset_horizon_2yr": [
+  {
+   "h": 0,
+   "model": "Persistence",
+   "onset_mcc": 0.0,
+   "onset_auc": 0.5
+  },
+  {
+   "h": 0,
+   "model": "Climatology",
+   "onset_mcc": 0.286,
+   "onset_auc": 0.876
+  },
+  {
+   "h": 0,
+   "model": "Lean CyAN (2-feat)",
+   "onset_mcc": 0.255,
+   "onset_auc": 0.925
+  },
+  {
+   "h": 0,
+   "model": "Full fusion + clim",
+   "onset_mcc": 0.336,
+   "onset_auc": 0.934
+  },
+  {
+   "h": 1,
+   "model": "Persistence",
+   "onset_mcc": 0.0,
+   "onset_auc": 0.5
+  },
+  {
+   "h": 1,
+   "model": "Climatology",
+   "onset_mcc": 0.363,
+   "onset_auc": 0.886
+  },
+  {
+   "h": 1,
+   "model": "Lean CyAN (2-feat)",
+   "onset_mcc": 0.314,
+   "onset_auc": 0.916
+  },
+  {
+   "h": 1,
+   "model": "Full fusion + clim",
+   "onset_mcc": 0.466,
+   "onset_auc": 0.929
+  },
+  {
+   "h": 2,
+   "model": "Persistence",
+   "onset_mcc": 0.0,
+   "onset_auc": 0.5
+  },
+  {
+   "h": 2,
+   "model": "Climatology",
+   "onset_mcc": 0.401,
+   "onset_auc": 0.894
+  },
+  {
+   "h": 2,
+   "model": "Lean CyAN (2-feat)",
+   "onset_mcc": 0.307,
+   "onset_auc": 0.907
+  },
+  {
+   "h": 2,
+   "model": "Full fusion + clim",
+   "onset_mcc": 0.432,
+   "onset_auc": 0.927
+  },
+  {
+   "h": 3,
+   "model": "Persistence",
+   "onset_mcc": 0.0,
+   "onset_auc": 0.5
+  },
+  {
+   "h": 3,
+   "model": "Climatology",
+   "onset_mcc": 0.45,
+   "onset_auc": 0.904
+  },
+  {
+   "h": 3,
+   "model": "Lean CyAN (2-feat)",
+   "onset_mcc": 0.335,
+   "onset_auc": 0.911
+  },
+  {
+   "h": 3,
+   "model": "Full fusion + clim",
+   "onset_mcc": 0.491,
+   "onset_auc": 0.927
+  },
+  {
+   "h": 4,
+   "model": "Persistence",
+   "onset_mcc": 0.0,
+   "onset_auc": 0.5
+  },
+  {
+   "h": 4,
+   "model": "Climatology",
+   "onset_mcc": 0.476,
+   "onset_auc": 0.909
+  },
+  {
+   "h": 4,
+   "model": "Lean CyAN (2-feat)",
+   "onset_mcc": 0.346,
+   "onset_auc": 0.91
+  },
+  {
+   "h": 4,
+   "model": "Full fusion + clim",
+   "onset_mcc": 0.466,
+   "onset_auc": 0.925
+  }
+ ],
  "okeechobee": {
   "labels": [
    "week",

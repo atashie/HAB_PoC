@@ -95,6 +95,22 @@
   .placeholder .what { color:var(--ink); font-weight:600; }
   .placeholder .src { font-size:.84rem; margin-top:6px; }
 
+  /* Part B live-tool embed (Demo slide) */
+  .tool-link { display:inline-block; margin-left:4px; font-weight:700; color:var(--water-deep);
+    text-decoration:none; border-bottom:2px solid var(--water-deep); white-space:nowrap; }
+  .tool-link:hover { opacity:.72; }
+  .demo-embed { position:relative; width:100%; max-width:1180px; margin:14px 0 4px; border:1px solid #cdd6da;
+    border-radius:12px; overflow:hidden; background:#eef2f4; box-shadow:0 6px 22px rgba(11,79,87,.10);
+    aspect-ratio:1680 / 1050; }
+  .demo-embed iframe { position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .demo-embed .demo-load { position:absolute; inset:0; width:100%; height:100%; padding:0; border:0;
+    cursor:pointer; background:none; display:block; }
+  .demo-embed .demo-load img { width:100%; height:100%; object-fit:cover; object-position:top center; display:block; }
+  .demo-embed .demo-play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    background:rgba(11,79,87,.92); color:#fff; font-weight:700; font-size:1rem; letter-spacing:.02em;
+    padding:12px 22px; border-radius:30px; box-shadow:0 4px 16px rgba(0,0,0,.28); transition:transform .12s ease; }
+  .demo-embed .demo-load:hover .demo-play { transform:translate(-50%,-50%) scale(1.05); }
+
   /* dropdowns (sources / terms / limitations) */
   .step-meta { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; max-width:1180px; }
   details.drop { flex:1 1 300px; border:1px solid var(--line); border-radius:8px; background:var(--card); font-size:.86rem; }
@@ -226,9 +242,9 @@
   <div class="slide hero" data-layout="figure">
     <div class="kicker">The problem</div>
     <h1>Forecasting harmful algal blooms before they take hold.</h1>
-    <p class="lede">A harmful algal bloom can turn a lake toxic in days. By the time one looks like this, the
-    water is often already unsafe and the window to act has narrowed. This project forecasts where blooms will
-    appear one to four weeks ahead, so a response can be planned before then.</p>
+    <p class="lede">A harmful algal bloom (HAB) can turn a lake toxic in days. By the time one looks like this, the
+    water is often already unsafe and the window to act has narrowed. This project assesses options for forecasting
+    where blooms will appear one to four weeks ahead, so a response can be planned before then.</p>
     <div class="hero-photo">
       <img src="assets/hero_okeechobee_bloom_2016_usgs.jpg" alt="Cyanobacterial bloom on Lake Okeechobee, Florida, July 2016">
       <span class="credit">Lake Okeechobee, FL · July 2016 · Photo: N. Aumen / USGS (public domain)</span>
@@ -277,7 +293,7 @@
     <div class="kicker">Literature review — the operational landscape</div>
     <h2>Most public tools monitor the present; few forecast ahead.</h2>
     <p class="sub" style="max-width:1040px">We reviewed <b>261 public sources</b> to map every operational public
-    HAB tool and what published models actually use — this slide is that landscape (N = 12 tools).</p>
+    HAB tool and what published models actually use (N = 12 tools).</p>
     <div class="split">
       <div class="col-txt">
         <ul class="tight">
@@ -665,8 +681,10 @@
     aggregate AUC is near-saturated by CyAN autocorrelation, so it flatters everyone. The metric that matters is
     <b>onset</b> (positive-flip) skill. On onset <b>ranking</b> (onset-AUC), <b>fusion and the CyAN-only ladder tie at ≈0.94</b>,
     both beating climatology (0.90) and EPA (0.82). On the thresholded onset <b>alert</b> (onset-MCC, tuned on <em>validation</em>,
-    not test), the <b>CyAN-ladder (0.38), climatology (0.37) and fusion (0.35) are essentially tied</b> — fusion adds nothing over
-    the CyAN-only ladder, consistent with the feature-importance slide. (Persistence is 0 by construction.)</div>
+    not test), the <b>CyAN-ladder (0.38), climatology (0.37) and fusion (0.35) are essentially tied</b> — here the <b>clim-free</b> fusion
+    adds nothing over the CyAN-only ladder on these EPA-shared 2025 weeks (consistent with the feature-importance slide). <em>The
+    clim-carrying full model shows a tantalizing but unproven onset-MCC edge on the longer 2-year internal test — see the final-model
+    slides.</em> (Persistence is 0 by construction.)</div>
     <div class="step-meta">
       <details class="drop terms"><summary>Terms — the metrics</summary><div class="body">
         <div class="metric-gloss">
@@ -714,7 +732,7 @@
             <ul class="lim">
               <li>Shared EPA weeks only (Apr–Nov, 35 weeks); same-lake temporal validation, not transfer to unseen lakes.</li>
               <li>EPA is a fixed current-week nowcast (one lead time) — a single point, not extrapolated across horizons.</li>
-              <li>This is <b>all-weeks AUC-ROC</b> (near-saturated by CyAN autocorrelation); the onset decision metric is compared at a fixed lead on the baselines slide, because cross-horizon onset-MCC is base-rate-confounded (onset rate 3.7%→7.2% over h0→h4).</li>
+              <li>This is <b>all-weeks AUC-ROC</b> (near-saturated by CyAN autocorrelation); the onset decision metric is shown by lead on the <b>final-model slide</b> — compare models <em>at each lead</em>, since the cross-horizon <em>trend</em> is partly the rising onset base rate over h0→h4, not skill improving with lead.</li>
             </ul>
           </div></details>
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
@@ -772,29 +790,23 @@
     <div class="split">
       <div class="col-fig">
         <div id="chart-ablation"></div>
-        <div class="fig-cap">Each bar is the full-model test AUC (0.983); the <span style="color:#e60000;font-weight:700">bright-red</span>
-          segment is the AUC <b>lost when that block is shuffled</b>. CyAN autocorrelation is nearly all of it. From <code>models/outputs/fusion_eval.md</code>.</div>
-        <div id="chart-ablation-onset" style="margin-top:16px"></div>
-        <div class="fig-cap">Same block shuffle, but scored on the <b>onset alert</b> (onset-MCC; full model 0.334; mean of 20 shuffles ± SD).
-          CyAN still dominates (−0.25), but — unlike pooled AUC — the non-CyAN blocks show a <b>modest</b> onset-MCC drop
-          (in-situ −0.09, static −0.07, weather −0.05). That is permutation <em>reliance</em> under broken correlations, <b>not</b>
-          unique value: block <em>ablation</em> (actually removing a block) barely moves skill, and the 27-cluster test caps any single
-          non-CyAN cluster below 0.04 — the redundant-but-exploited pattern (like <code>clim</code>). From <code>models/outputs/fusion_eval.md</code>.</div>
+        <div class="fig-cap">One figure, two metrics on a shared 0–1 axis: for each feature block the <b>top</b> bar is pooled <b>AUC-ROC</b>
+          (full model 0.98) and the bar just <b>below</b> it is the <b>onset alert</b> (onset-MCC, full model 0.33; mean of 20 shuffles ± SD).
+          The <span style="color:#e60000;font-weight:700">bright-red</span> tip is the skill <b>lost when that block is shuffled</b>.
+          <b>CyAN dominates both.</b> On onset-MCC the non-CyAN blocks show a modest drop that pooled AUC can’t see — but that is permutation
+          <em>reliance</em> under broken correlations, not unique value (block <em>removal</em> barely moves skill; no single non-CyAN cluster
+          exceeds 0.04). From <code>models/outputs/fusion_eval.md</code>.</div>
       </div>
       <div class="col-txt">
         <ul class="tight">
-          <li><b>CyAN autocorrelation dominates</b> — shuffling it costs ~0.27 AUC; weather, in-situ, static and season each add only <b>thousandths</b>.</li>
-          <li><b>Same verdict on the onset <em>alert</em> (onset-MCC) — see the second chart:</b> CyAN dominates the alert too (−0.25 of a 0.334 baseline). The non-CyAN blocks show a <em>modest</em> onset-MCC drop that pooled AUC can’t see — but that is permutation <b>reliance</b> under broken correlations, <b>not</b> unique value: removing a block barely moves skill, and the 27-cluster test caps any single non-CyAN cluster below 0.04. The fusion-negative holds on the decision metric too. <span class="sub">(<code>fusion_eval.md</code> blocks; <code>exp_perm_importance.md</code> clusters.)</span></li>
-          <li>Drop-one agrees: removing CyAN takes AUC 0.985→0.949; removing any other block barely moves it.</li>
-          <li>All fusion features over the CyAN ladder buy a <b>small, real</b> lift: paired within-lake <b>+0.015 AUC</b> [+0.003, +0.021], positive in 67% of 60 lakes.</li>
-          <li><b>The features are heavily cross-correlated</b> — they cluster into ~27 groups at |r| ≥ 0.7, so block-shuffling <em>understates</em> individual features. A <b>clustered-permutation test</b> and <b>greedy backward elimination</b> (both run) confirm the picture: only the CyAN cluster carries robust skill, and a 2-feature model (<code>cyan_median</code> + area) matches the 44-feature one.</li>
+          <li><b>The general bloom pattern (AUC-ROC) is almost all CyAN autocorrelation</b> — shuffling it costs ~0.27; every other family costs only <b>thousandths</b>. A 2-feature model (<code>cyan_median</code> + area) matches all 44.</li>
+          <li><b>But <em>when</em> a clear lake switches to bloom (onset-MCC), the literature's driver families matter far more:</b> shuffling <span style="color:var(--wqp);font-weight:700">in-situ</span>, <span style="color:var(--era5);font-weight:700">weather</span> or static each costs <b>roughly 0.05–0.09</b> (vs ~0 on AUC) — a real fraction of CyAN's 0.25. The <span style="color:var(--wqp);font-weight:700">nutrient</span>/<span style="color:var(--era5);font-weight:700">temperature</span> drivers the literature cites for bloom <em>initiation</em> surface here, not in the general pattern.</li>
+          <li><b>Honest caveat:</b> this is permutation <em>reliance</em> and still below CyAN; block-removal barely moves aggregate skill and no single cluster tops 0.04 — suggestive, not a proven unique contribution.</li>
         </ul>
-        <div class="note honest"><span class="lbl">Alignment with the literature (slide 4):</span> published models rank
-          <span style="color:var(--era5);font-weight:700">temperature</span> and <span style="color:var(--wqp);font-weight:700">nutrients</span>
-          as top drivers — the <span style="color:var(--era5);font-weight:700">ERA5</span> and <span style="color:var(--wqp);font-weight:700">WQP</span>
-          families. They still matter, but in a short-horizon forecast of an autocorrelated
-          <span style="color:var(--cyan);font-weight:700">CyAN</span> target, the target’s own recent history swamps them. The
-          literature explains <em>why</em> lakes bloom; our task is <em>when</em>.</div>
+        <div class="note honest"><span class="lbl">The differentiation that matters:</span> CyAN's own recent history swamps everything for the
+          <b>general week-to-week pattern</b> — but the literature's <span style="color:var(--era5);font-weight:700">temperature</span> /
+          <span style="color:var(--wqp);font-weight:700">nutrient</span> drivers re-emerge as materially important for the harder
+          <b>state-switch (onset)</b> question. The literature explains <em>why</em> lakes bloom; those drivers help most with <em>when</em> a clear lake tips over.</div>
       </div>
     </div>
     <div class="note insight"><span class="lbl">Selection result (greedy backward elimination):</span> stripping 44 features to
@@ -820,29 +832,32 @@
   <div class="slide" data-layout="wide">
     <div class="kicker">Final model — 1-week lead</div>
     <h2>The feature-selected model at 1 week, against the baselines.</h2>
-    <p class="sub" style="max-width:1160px">The greedy-selected model at the EPA-comparable 1-week lead (2-year held-out test).
-    <b>onset-AUC</b> ranks currently-clear lakes that bloom next; <b>onset-MCC</b> is the thresholded alert.</p>
+    <p class="sub" style="max-width:1160px">How our two candidate models — the <b>full 44-feature fusion</b> and the <b>2-feature lean</b> model —
+    compare with the baselines at a 1-week lead (2-year held-out test): overall ranking plus the two early-warning (onset) metrics.</p>
     <div style="overflow-x:auto">
     <table class="res" style="max-width:900px">
       <thead><tr><th>Model (h=1, 2-yr held-out test)</th><th>pooled AUC</th><th>onset-AUC</th><th>onset-MCC</th></tr></thead>
       <tbody>
-        <tr><td><b>Full fusion (44 features, incl. clim)</b></td><td>0.980</td><td>0.929</td><td>0.466</td></tr>
-        <tr class="hi"><td><b>Lean CyAN model (2 features: median + area)</b></td><td>0.982</td><td>0.916</td><td>0.314</td></tr>
-        <tr><td>Climatology (baseline)</td><td>0.936</td><td>0.851</td><td>0.323</td></tr>
+        <tr><td><b>Full fusion (44 features, incl. clim)</b> <span class="sub">— tantalizing, unproven</span></td><td>0.980</td><td><b style="color:#0f6e78">0.929</b></td><td><b style="color:#0f6e78">0.466</b></td></tr>
+        <tr class="hi"><td><b>Lean CyAN model (2 features: median + area)</b> <span class="sub">— shipped for the PoC</span></td><td>0.982</td><td>0.916</td><td>0.314</td></tr>
+        <tr><td>Climatology (baseline)</td><td>0.952</td><td>0.886</td><td>0.363</td></tr>
         <tr><td>EPA forecast @0.10</td><td>0.931</td><td>0.831</td><td>0.248</td></tr>
         <tr><td>Persistence</td><td>0.926</td><td>0.500</td><td>0.000</td></tr>
       </tbody>
     </table>
     </div>
-    <div class="note honest"><span class="lbl">The answer to the open question:</span> the <b>2-feature lean model matches the
-      44-feature</b> on ranking (pooled AUC 0.982; onset-AUC 0.916, not significantly worse) and <b>beats EPA and climatology on onset
-      ranking</b> — competitive with the federal product, generalizable, explainable. The full model’s thresholded
-      <b>onset-MCC</b> edge (0.47 vs 0.31) comes mostly from the <code>clim</code> per-lake base-rate feature (a memorization
-      shortcut, feature-importance slide) — with <code>clim</code> removed, fusion only <b>ties</b> the CyAN-only ladder on the onset
-      alert (baselines slide). So the deployable choice is the compact, clim-free real-time-CyAN model.</div>
+    <div class="note honest"><span class="lbl">The answer to the open question:</span> on this 2-year held-out test the full
+      44-feature <b>fusion + clim</b> model discriminates onsets <b>better</b> than the 2-feature lean model —
+      <b>onset-MCC 0.47 vs 0.31, onset-AUC 0.93 vs 0.92</b> — a gap split roughly half-and-half between the <code>clim</code>
+      base-rate feature (+0.07) and the wider CyAN + driver set (+0.08). That is a genuinely <b>tantalizing</b> hint that the drivers may
+      help at bloom <em>initiation</em>, where the science says conditions matter most. But it is <b>not yet robustly proven</b>: the
+      onset-AUC lift's bootstrap CI includes 0, and we have not significance-tested the onset-MCC gap. So we flag full fusion + clim as a
+      <b>promising avenue to validate next</b> (the “go deep” direction) — and, because the <b>lean</b> model is competitive with EPA,
+      generalizes (no per-lake <code>clim</code> identity), and is trivially cheap to run, we <b>ship the lean CyAN model + EPA for the
+      PoC</b>.</div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (greedy backward, 2-yr test) + <code>headtohead_onset.md</code> (shared-2025); synopsis <code>models/RESULTS-SUMMARY.md</code> §4/§8.</div>
+        <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (greedy backward, 2-yr test) for the models, lean &amp; EPA; the <b>climatology</b> row is the train+val baseline from <code>experiments.md</code> (fit on the same train+val the models are refit on — the fair comparator, consistent with the lead-by-lead slide). Synopsis <code>models/RESULTS-SUMMARY.md</code> §4/§8.</div>
       </div></details>
     </div>
   </div>
@@ -850,47 +865,49 @@
   <!-- Final model skill vs lead time 0-4 (REAL) -->
   <div class="slide" data-layout="wide">
     <div class="kicker">Final model — skill vs lead time</div>
-    <h2>Levels forecast well at every lead; transitions stay hard.</h2>
-    <p class="sub" style="max-width:1160px">Across 0–4 weeks (2-year held-out test) — the horizons that extend EPA’s single
-    1-week forecast.</p>
-    <ul class="tight">
-      <li><b>Aggregate skill decays gently</b> 0→4 weeks (slide 15): pooled AUC ~0.99→0.97, well above persistence; the 2-feature lean model tracks the full model.</li>
-      <li><b>Transitions stay hard at every lead:</b> the general-transition MCC (onset + offset) is <b>negative at all horizons</b> (full model −0.48→−0.12 over h0→h4; the lean model worse) — we forecast the bloom <em>level</em> well but the <em>change</em> poorly.</li>
-      <li><b>Positive-only onset skill</b> (the decision metric) is strongest at the 1-week lead and is compared at a fixed lead on the baselines slide — cross-horizon onset-MCC is base-rate-confounded (the skill-vs-lead-time slide).</li>
-    </ul>
-    <div class="note honest"><span class="lbl">The honest finding:</span> the model extends EPA’s 1-week horizon to a 0–4-week curve
-      on aggregate skill, but the scientifically hard <b>onset/offset timing</b> problem is <b>not solved</b> at any lead. A clear,
-      reportable negative — and it points the next effort at transition-week skill.</div>
-    <div class="step-meta">
-      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (flip-MCC by horizon) and <code>fusion_eval.md</code> (AUC curve); onset at fixed lead in <code>headtohead_onset.md</code>.</div>
-      </div></details>
-    </div>
-  </div>
-
-  <!-- Defensibility -->
-  <div class="slide" data-layout="text"><div class="kicker">Defensibility</div>
-    <h2>Where the leakage is, and how we guarded it.</h2>
-    <ul class="tight">
-      <li><b>Circularity:</b> the target is CyAN-derived, so CyAN features are <b>antecedent-only</b> (never the target week); persistence uses the same latency-corrected week, so the model never sees fresher CyAN than the baseline it must beat.</li>
-      <li><b>Temporal splits</b> (~60/20/20), never a random shuffle on autocorrelated lake-weeks: the <b>feature / ablation experiments</b> use <b>train &lt; 2022-07 / val 2022-07→2024-07 / test ≥ 2024-07</b> (a 2-year held-out test); the <b>EPA head-to-head &amp; baselines</b> use <b>train ≤ 2023 / val 2024 / test 2025</b> (matching EPA’s issue dates). Normalization and feature selection are fit on train (+val) only.</li>
-      <li><b>Fully antecedent inputs</b> — CyAN, weather (trailing windows), and in-situ are all as-of the cutoff week, never the target week, so this is an <em>operational</em> forecast (no oracle); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
-      <li><b>Clustered</b> confidence intervals (block bootstrap by lake/week), never row-level.</li>
-    </ul>
-    <div class="step-meta">
-      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><b>Protocol</b> — <code>models/DESIGN.md</code> §6/§8, <code>models/docs/02-feature-catalog.md</code> (leakage guards, mandatory assembler tests).</div>
-      </div></details>
+    <h2>Comparing the models on the onset alert, lead by lead.</h2>
+    <p class="sub" style="max-width:1160px">Across 0–4 weeks (2-year held-out test — the same window as the slide-17 table, so the model and
+    baseline curves’ h=1 points match that table; the EPA marker is the shared-2025 nowcast, EPA’s only forecast weeks) — the horizons that extend EPA’s single 1-week forecast.</p>
+    <div class="split">
+      <div class="col-fig">
+        <div id="chart-onset-horizon"></div>
+        <div class="fig-cap"><b>Onset alert (onset-MCC) vs lead time.</b> <b style="color:#0f6e78">Full fusion + clim</b> leads the
+          <b style="color:#6b4fb0">lean CyAN</b> model at every lead — the tantalizing-but-unproven signal (slide 17) — yet <b style="color:#b9770c">climatology</b>,
+          a <em>baseline</em>, also beats the lean model at every lead and even edges past fusion by h4 (0.48 vs 0.47): much of the onset signal is
+          <b>seasonality</b>, carried via <code>clim</code>. EPA (2025) sits below all; persistence is 0 by construction.</div>
+      </div>
+      <div class="col-txt">
+        <ul class="tight">
+          <li><b>Read it model-vs-model at each lead:</b> the ordering (fusion &gt; climatology &gt; lean &gt; EPA) holds through h3, with climatology edging past fusion at h4 — the honest takeaway. The full-fusion edge over lean is the <b>tantalizing-but-unproven</b> avenue (slide 17); climatology shows how much is just seasonality. <b>We ship the lean model + EPA.</b></li>
+          <li><b>The upward trend is an artifact, not improving skill.</b> Genuine ranking skill <em>falls</em> with lead (all-weeks AUC 0.99→0.97; onset-AUC 0.93→0.92 for the CyAN models). onset-MCC rises only because the onset base rate <b>~doubles (2.8%→5.8%)</b> and long-lead onsets are more <b>seasonal</b> — the task gets easier, the forecast doesn’t.</li>
+          <li><b>General transitions stay hard:</b> the both-direction transition MCC (onset + offset) is <b>negative at every lead</b> — we forecast the bloom <em>level</em> well, the <em>change</em> poorly.</li>
+        </ul>
+        <div class="note honest"><span class="lbl">The honest finding:</span> a clear mix — the alert ordering is usable and full fusion leads it, but that lead isn’t yet proven and the underlying forecast degrades with lead, as any forecast should.</div>
+        <div class="step-meta">
+          <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+            <div class="cite"><code>models/outputs/experiments.md</code> (onset-MCC by horizon, 2-yr window); EPA point from <code>headtohead_onset.md</code>.</div>
+          </div></details>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Demo the tool (Part B) -->
-  <div class="slide" data-layout="text"><div class="kicker">Demo</div>
-    <h2>Demo the tool here.</h2>
-    <p>Switch to the separate live tool: pick a lake and a horizon, see the risk with its uncertainty and its baseline,
-    the top drivers, a suggested action window, and the limits — shown as an honest <b>historical replay</b>, not implied
-    live inference.</p>
-    <div class="placeholder"><span class="tag">▶ LIVE DEMO — PART B</span><div class="what">Separate standalone tool (reads precomputed predictions).</div><div class="src">Built on the per-lake-week predictions the model produces; demoed live, and kept out of this deck so nothing here implies a live feed.</div></div>
+  <div class="slide" data-layout="wide"><div class="kicker">Demo · Part B</div>
+    <h2>The tool, live — pick a lake, read the risk.</h2>
+    <p class="sub" style="max-width:1180px">The standalone Part&nbsp;B tool, built on the model’s precomputed per-lake-week predictions and shown as an
+    honest <b>historical replay</b> (a fixed dated snapshot), not live inference. Pick a lake and a lead time to see the risk with its uncertainty
+    and baseline, the top drivers, a suggested action window, and the limits.
+    <a class="tool-link" href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">Open the live tool&nbsp;↗</a></p>
+    <figure class="demo-embed" id="demoEmbed">
+      <button type="button" class="demo-load" aria-label="Load the interactive tool inside this slide">
+        <img src="assets/dashboard_preview.png" alt="Screenshot of the Florida Harmful Algal Bloom risk dashboard: a map of Florida lakes coloured by bloom risk beside a ranked alert list with per-lake probabilities.">
+        <span class="demo-play">▶&nbsp; Load the interactive tool</span>
+      </button>
+    </figure>
+    <div class="fig-cap">Live embed of <a href="https://harmful-algal-bloomspoc.vercel.app/" target="_blank" rel="noopener">harmful-algal-bloomspoc.vercel.app</a>
+    — click to load it inside the slide, or open it full-screen via the link above. Interactive when online; the screenshot stands in if the network
+    is down. Historical replay on a fixed dated snapshot, not a live feed.</div>
   </div>
 
   <!-- Platform section launcher -->
@@ -900,7 +917,7 @@
     about <b>feedback, a chosen direction, affordable production, and honest monitoring</b>.</p>
     <ul class="tight">
       <li>Get the feedback we’re missing (science + business).</li>
-      <li>Choose a direction: go deep · go wide · go narrow · go home.</li>
+      <li>Choose a direction: go deep · go wide · go narrow · go simple.</li>
       <li>Production: what it actually costs to run.</li>
       <li>Monitoring: hindcast skill and drift.</li>
       <li>The recommendation.</li>
@@ -922,12 +939,12 @@
 
   <!-- ii. Four directions -->
   <div class="slide" data-layout="wide"><div class="kicker">ii · Choose a direction</div>
-    <h2>Go deep · go wide · go narrow · go home.</h2>
+    <h2>Go deep · go wide · go narrow · go simple.</h2>
     <div class="cases">
       <div class="case"><h4>Go deep</h4><div class="need">Improve and generalize the current framework: better feature cleaning, <b>CONUS-wide</b> data for generalization (and enough data to justify richer architectures).</div></div>
       <div class="case"><h4>Go wide</h4><div class="need"><b>A clear pathway to global.</b> Use Copernicus <b>“Lake Water Quality” v2</b> for a ready <b>global</b> spatial footprint <span class="sub">(external / web-research — confirm)</span>, and supplement it with <b>CyAN</b> for the <b>longer temporal record</b> (Copernicus is only 2024→present). Copernicus for spatial coverage + CyAN for history → robust global modeling — rather than rebuilding a global CyAN from scratch.</div></div>
       <div class="case"><h4>Go narrow</h4><div class="need">300 m is coarse. Sentinel-2 / Landsat (10–30 m) lack S3’s cyano-specific bands but may carry enough signal to <b>downscale</b> to the small waterbodies CyAN can’t see — SePRO’s actual customers.</div></div>
-      <div class="case chosen"><span class="pick">Leading option</span><h4>Go home</h4><div class="need">EPA’s forecast is already reasonably accurate. Put it in our internal clients’ hands for a few months: is this information useful at all, and how do they want to consume it (probabilities, alerts)?</div></div>
+      <div class="case chosen"><span class="pick">Leading option</span><h4>Go simple</h4><div class="need">Ship the cheapest defensible thing: our <b>2-feature lean-CyAN model</b> (extends EPA’s single 1-week call to a 0–4-week horizon) <b>alongside EPA’s own forecast</b>. Put that combination in our internal clients’ hands for a few months — is this information useful at all, and how do they want to consume it (probabilities, alerts)?</div></div>
     </div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data — the “go wide” check</summary><div class="body">
@@ -948,7 +965,11 @@
     <table class="res" style="max-width:1260px">
       <thead><tr><th>Option</th><th>Weekly ingest + QA/QC</th><th>Rough compute (machine × rate × time)</th><th>Rough storage (size × S3 rate)</th></tr></thead>
       <tbody>
-        <tr class="hi"><td><b>Full fusion model<br>(CONUS)</b></td>
+        <tr class="hi"><td><b>Go simple:<br>lean CyAN + EPA</b></td>
+          <td>CyAN weekly mosaic (~0.4 GB) to score + monitor drift, plus a weekly EPA-dashboard scrape (MB). <b>No weather / in-situ pull</b> — the slow step disappears. ~10–20 min incl. QA.</td>
+          <td>c6i.large (2 vCPU/4 GB) @ ~$0.085/hr × ~0.4 hr ≈ <b>$0.03/wk (~$2/yr)</b>; inference on the 2-feature model is trivial.</td>
+          <td>~0.4 GB/wk; 2-yr ≈ 40 GB × $0.023 ≈ <b>~$1/mo</b>.</td></tr>
+        <tr><td><b>Full fusion model<br>(CONUS)</b> <span class="sub">— the “go deep” upgrade</span></td>
           <td>CyAN weekly mosaic (~0.4 GB) + ERA5 CONUS subset + <b>ECMWF open forecasts</b> (0–4 wk) — the slow part; <b>both</b> refresh every run. ~1–3 hr incl. QA.</td>
           <td>c6i.4xlarge (16 vCPU/32 GB) @ ~$0.68/hr × ~2.5 hr ≈ <b>$1.70/wk (~$90/yr)</b>; inference on ~2k lakes × 5 leads = seconds.</td>
           <td>~5–10 GB/wk raw; 2-yr rolling ≈ 0.5–1 TB × $0.023/GB-mo ≈ <b>$12–24/mo</b>; transfer-in free.</td></tr>
@@ -991,19 +1012,15 @@
         </ul></li>
       <li><b>Drift detection:</b> is live performance still inside the validation/test window we signed off on? If it drifts
         outside, <b>ping to investigate and retrain</b> — with CyAN and the EPA forecast as continuously-ingested references.</li>
+      <li><b>Where this applies — and where it doesn’t:</b> the claim boundary we hold to as it goes operational.
+        <ul class="lim" style="margin-top:6px">
+          <li>It forecasts a <b>satellite bloom proxy</b> (WHO AL1 on CyAN), for <b>known Florida lakes</b>, into future weeks.</li>
+          <li>It does <b>not</b> measure toxins, does not claim treatment efficacy, and is not yet validated on unseen lakes or sub-resolvable waterbodies.</li>
+          <li>Every driver statement is <b>associational and model-relative</b>, not causal.</li>
+        </ul></li>
     </ul>
     <div class="note insight"><span class="lbl">Why this matters:</span> a forecast you don’t score is a claim you can’t defend.
       The hindcast is the audit trail; drift monitoring is what keeps a deployed model from silently going stale.</div>
-  </div>
-
-  <!-- Claim boundary -->
-  <div class="slide" data-layout="text"><div class="kicker">Claim boundary</div>
-    <h2>Where this applies — and where it doesn’t.</h2>
-    <ul class="tight">
-      <li>It forecasts a <b>satellite bloom proxy</b> (WHO AL1 on CyAN), for <b>known Florida lakes</b>, into future weeks.</li>
-      <li>It does <b>not</b> measure toxins, does not claim treatment efficacy, and is not yet validated on unseen lakes or sub-resolvable waterbodies.</li>
-      <li>Every driver statement is <b>associational and model-relative</b>, not causal.</li>
-    </ul>
   </div>
 
   <!-- v. Recommendation + sources -->
@@ -1011,15 +1028,15 @@
     <h2>Start small and honest, then let users choose the direction.</h2>
     <p>Stated suggestively, not prescriptively — my honest recommendation:</p>
     <ul class="tight">
-      <li><b>Ship the simplest useful thing first:</b> a dashboard that makes the <b>EPA forecast</b> more accessible and
-        tailored — <b>alerts on positive flips</b> (clear → bloom) and monitoring of ongoing blooms, from regular CyAN +
-        EPA-forecast ingests.</li>
+      <li><b>Ship the simplest useful thing first (“go simple”):</b> a dashboard combining our <b>2-feature lean-CyAN model</b>
+        (which extends EPA’s single 1-week call to <b>0–4-week</b> horizons) with the <b>EPA forecast</b> itself — <b>alerts on positive
+        flips</b> (clear → bloom) and monitoring of ongoing blooms, from regular CyAN + EPA-forecast ingests.</li>
       <li><b>Gather feedback for a few weeks/months:</b> is this information useful, and how do users want to consume it?</li>
-      <li><b>Then revisit</b> go deep / go wide / go narrow / go home — with real user signal instead of guesses.</li>
+      <li><b>Then revisit</b> go deep / go wide / go narrow / go simple — with real user signal instead of guesses.</li>
     </ul>
     <div class="note honest"><span class="lbl">Why this over “build more model”:</span> our own results say fusion’s edge on new
-      blooms is modest and the EPA forecast is already a credible baseline. The binding uncertainty isn’t the model — it’s whether
-      and how the information is useful. Answer that cheaply first.</div>
+      blooms is <b>tantalizing but not yet proven</b>, and the EPA forecast is already a credible baseline. The binding uncertainty isn’t
+      the model — it’s whether and how the information is useful. Answer that cheaply first.</div>
     <div class="step-meta"><details class="drop sources"><summary>Sources &amp; methods (full list)</summary><div class="body">
       <div class="cite">Every public dataset and paper cited across the talk resolves in <code>Research/REFERENCES.md</code>; tool/model links are in the Part 1 dropdowns; result numbers in <code>models/outputs/*.md</code>; the global-product check is in the “go wide” sources.</div></div></details></div>
   </div>
@@ -1085,6 +1102,25 @@
       </div></details>
     </div>
   </div>
+
+  <!-- Defensibility (moved from Part 3 to the appendix) -->
+  <div class="slide" data-layout="text"><div class="kicker">Defensibility</div>
+    <h2>Where the leakage is, and how we guarded it.</h2>
+    <ul class="tight">
+      <li><b>Circularity:</b> the target is CyAN-derived, so CyAN features are <b>antecedent-only</b> (never the target week); persistence uses the same latency-corrected week, so the model never sees fresher CyAN than the baseline it must beat.</li>
+      <li><b>Temporal splits</b> (~60/20/20), never a random shuffle on autocorrelated lake-weeks: the <b>feature / ablation experiments</b> use <b>train &lt; 2022-07 / val 2022-07→2024-07 / test ≥ 2024-07</b> (a 2-year held-out test); the <b>EPA head-to-head &amp; baselines</b> use <b>train ≤ 2023 / val 2024 / test 2025</b> (matching EPA’s issue dates). Normalization and feature selection are fit on train (+val) only.</li>
+      <li><b>Fully antecedent inputs</b> — CyAN, weather (trailing windows), and in-situ are all as-of the cutoff week, never the target week, so this is an <em>operational</em> forecast (no oracle); <b>known-lake-only</b> claim (a blocked-lake stress test is the check for transfer); <b>AL1 is a satellite proxy</b>, not a toxin measure.</li>
+      <li><b>Clustered</b> confidence intervals (block bootstrap by lake/week), never row-level.</li>
+    </ul>
+    <div class="step-meta">
+      <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
+        <div class="cite"><b>Protocol</b> — <code>models/DESIGN.md</code> §6/§8, <code>models/docs/02-feature-catalog.md</code> (leakage guards, mandatory assembler tests).</div>
+      </div></details>
+    </div>
+  </div>
+
+  
+
 </section>
 
 <script src="vendor/leaflet.js"></script>
@@ -1183,7 +1219,7 @@
     setTimeout(function(){ fl.map.invalidateSize(); fitAll(); }, 60);
   }
   function era5Grid(){
-    var lines=[], W=-83.2,E=-79.6,Sr=25.6,N=30.4,s=0.25;
+    var lines=[], W=-87.7,E=-79.9,Sr=24.4,N=31.1,s=0.25;  // full FL bbox: panhandle (W/N) through the Keys (S)
     for(var lon=Math.ceil(W/s)*s; lon<=E; lon+=s) lines.push({type:'Feature',geometry:{type:'LineString',coordinates:[[lon,Sr],[lon,N]]}});
     for(var lat=Math.ceil(Sr/s)*s; lat<=N; lat+=s) lines.push({type:'Feature',geometry:{type:'LineString',coordinates:[[W,lat],[E,lat]]}});
     return L.geoJSON({type:'FeatureCollection',features:lines},{pane:'era5',interactive:false,
@@ -1336,49 +1372,40 @@
       +'<p class="sub"><b>onset</b> = positive flips only — currently-clear weeks (persistence 0) that become a bloom. '
       +'AUC-ROC/AUC-PR/Brier are threshold-free; MCC/Acc use in-sample thresholds (optimistic); EPA at fixed 0.10. Brier: lower is better.</p>'+epa;
   }
-  /* ---------- Plotly: block importance as AUC with the shuffled loss in red ---------- */
+  /* ---------- Plotly: block importance — pooled AUC-ROC + onset-MCC in ONE figure, shared 0–1 x-axis ---------- */
   function chartAblation(){
     var el=document.getElementById('chart-ablation'); if(!el||!S.results||!S.results.ablation) return;
-    var B=S.results.ablation, base=B.baseline_auc||0.983;
+    var B=S.results.ablation, baseAuc=(B.baseline_auc||0.983), baseOn=(B.baseline_onsetmcc!=null?B.baseline_onsetmcc:0.334);
     var LAB={CYAN:'CyAN (satellite)',INSITU:'In-situ (NWIS+WQP)',STATIC:'Static / basin',WEATHER:'Weather (ERA5)',SEASON:'Season'};
-    var pi=(B.perm_importance||[]).slice().sort(function(a,b){return a.drop-b.drop;});  // ascending -> biggest at top
-    var y=pi.map(function(r){return LAB[r.block]||r.block;});
-    var retained=pi.map(function(r){return +(base-r.drop).toFixed(4);});
-    var lost=pi.map(function(r){return +(+r.drop).toFixed(4);});
+    var pi=(B.perm_importance||[]).slice().sort(function(a,b){return b.drop-a.drop;});  // biggest AUC drop first -> CyAN on top
+    var n=pi.length, PITCH=2.6, W=0.85;
+    var blk=[], aucY=[], onY=[], aucRet=[], aucLost=[], onRet=[], onLost=[], onSd=[], tickv=[], tickt=[];
+    pi.forEach(function(r,i){
+      var ay=(n-1-i)*PITCH+1, oy=(n-1-i)*PITCH, lbl=LAB[r.block]||r.block;   // AUC bar sits immediately atop the onset bar
+      blk.push(lbl); aucY.push(ay); onY.push(oy);
+      aucRet.push(+(baseAuc-r.drop).toFixed(4)); aucLost.push(+(+r.drop).toFixed(4));
+      onRet.push(+(baseOn-(r.onset_drop||0)).toFixed(4)); onLost.push(+(+(r.onset_drop||0)).toFixed(4));
+      onSd.push(r.onset_drop_std!=null?+r.onset_drop_std:0);
+      tickv.push((ay+oy)/2); tickt.push(lbl);   // one label centered on each pair; metric is read from the legend colour
+    });
+    var lostX=aucLost.concat(onLost), lostY=aucY.concat(onY), lostBase=aucRet.concat(onRet);
+    var lostCd=blk.map(function(b){return [b+' · AUC-ROC',''];})
+                  .concat(blk.map(function(b,i){return [b+' · onset-MCC',' ± '+onSd[i].toFixed(3)+' SD (20×)'];}));
     var data=[
-      {type:'bar',orientation:'h',name:'AUC retained after shuffle',x:retained,y:y,marker:{color:'#b9c7cc'},
-        hovertemplate:'%{y}<br>AUC after shuffle: %{x:.3f}<extra></extra>'},
-      {type:'bar',orientation:'h',name:'AUC lost (bright red)',x:lost,y:y,marker:{color:'#e60000'},
-        text:lost.map(function(v){return v>=0.01?('−'+v.toFixed(2)):'';}),textposition:'outside',cliponaxis:false,
-        hovertemplate:'%{y}<br>AUC lost when shuffled: %{x:.4f}<extra></extra>'}
+      {type:'bar',orientation:'h',name:'AUC-ROC kept after shuffle',x:aucRet,y:aucY,width:W,base:0,marker:{color:'#9fb9c0'},
+        customdata:blk,hovertemplate:'%{customdata} · AUC-ROC<br>kept after shuffle: %{x:.3f}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'onset-MCC kept after shuffle',x:onRet,y:onY,width:W,base:0,marker:{color:'#c9bce0'},
+        customdata:blk,hovertemplate:'%{customdata} · onset-MCC<br>kept after shuffle: %{x:.3f}<extra></extra>'},
+      {type:'bar',orientation:'h',name:'lost when shuffled (bright red)',x:lostX,y:lostY,base:lostBase,width:W,marker:{color:'#e60000'},
+        customdata:lostCd,text:lostX.map(function(v){return v>=0.03?('−'+v.toFixed(2)):'';}),textposition:'outside',cliponaxis:false,
+        hovertemplate:'%{customdata[0]}<br>lost when shuffled: %{x:.3f}%{customdata[1]}<extra></extra>'}
     ];
-    Plotly.newPlot(el,data,{barmode:'stack',font:PLOT_FONT,margin:{l:130,r:44,t:10,b:36},
-      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
-      xaxis:{title:'test AUC-ROC (full model = '+base.toFixed(3)+')',range:[0.6,1.0],fixedrange:true,gridcolor:'#eef2f3'},
-      yaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
-  }
-  /* ---------- Plotly: same block shuffle, scored on the ONSET ALERT (onset-MCC), loss in red ---------- */
-  function chartAblationOnset(){
-    var el=document.getElementById('chart-ablation-onset'); if(!el||!S.results||!S.results.ablation) return;
-    var B=S.results.ablation, base=(B.baseline_onsetmcc!=null?B.baseline_onsetmcc:0.334);
-    var LAB={CYAN:'CyAN (satellite)',INSITU:'In-situ (NWIS+WQP)',STATIC:'Static / basin',WEATHER:'Weather (ERA5)',SEASON:'Season'};
-    var pi=(B.perm_importance||[]).filter(function(r){return r.onset_drop!=null;}).slice()
-            .sort(function(a,b){return a.onset_drop-b.onset_drop;});   // biggest drop at top
-    var y=pi.map(function(r){return LAB[r.block]||r.block;});
-    var lost=pi.map(function(r){return +(+r.onset_drop).toFixed(4);});
-    var retained=pi.map(function(r){return +(base-r.onset_drop).toFixed(4);});
-    var sd=pi.map(function(r){return r.onset_drop_std!=null?+r.onset_drop_std:0;});
-    var data=[
-      {type:'bar',orientation:'h',name:'onset-MCC retained after shuffle',x:retained,y:y,marker:{color:'#c9bce0'},
-        hovertemplate:'%{y}<br>onset-MCC after shuffle: %{x:.3f}<extra></extra>'},
-      {type:'bar',orientation:'h',name:'onset-MCC lost (bright red)',x:lost,y:y,marker:{color:'#e60000'},customdata:sd,
-        text:lost.map(function(v){return v>=0.01?('−'+v.toFixed(2)):'';}),textposition:'outside',cliponaxis:false,
-        hovertemplate:'%{y}<br>onset-MCC lost when shuffled: %{x:.3f} ± %{customdata:.3f} (SD, 20 shuffles)<extra></extra>'}
-    ];
-    Plotly.newPlot(el,data,{barmode:'stack',font:PLOT_FONT,margin:{l:130,r:44,t:10,b:36},
-      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.16,x:0},
-      xaxis:{title:'onset-MCC (full model = '+base.toFixed(3)+')',range:[0,0.38],fixedrange:true,gridcolor:'#eef2f3'},
-      yaxis:{fixedrange:true,automargin:true}},{displayModeBar:false,responsive:true});
+    Plotly.newPlot(el,data,{barmode:'overlay',font:PLOT_FONT,margin:{l:152,r:46,t:52,b:40},
+      paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',legend:{orientation:'h',y:1.24,x:0,yanchor:'bottom'},
+      xaxis:{title:'skill kept + lost when a feature block is shuffled  (full model: AUC-ROC '+baseAuc.toFixed(2)+', onset-MCC '+baseOn.toFixed(2)+')',
+        range:[0,1],fixedrange:true,gridcolor:'#eef2f3'},
+      yaxis:{tickvals:tickv,ticktext:tickt,range:[-0.8,(n-1)*PITCH+2.2],fixedrange:true,automargin:true}},
+      {displayModeBar:false,responsive:true});
   }
   /* ---------- Plotly: skill vs lead time — 5 model classes incl EPA ---------- */
   var HZ_MODELS=[['persistence','Persistence','#8a99a0','dash'],['climatology','Climatology','#b9770c','dot'],
@@ -1405,6 +1432,23 @@
   }
   function chartHorizon(){ hzSeries(document.getElementById('chart-horizon'),'auc','AUC-ROC (all weeks)',[0.85,1.0],null); }
   function chartHorizonOnset(){ hzSeries(document.getElementById('chart-horizon-onset'),'onset_mcc','onset-MCC (positive flips)',[-0.1,0.6],0); }
+  /* ---------- Plotly: onset-MCC vs lead time (slide 18) — 2-yr window, full fusion vs lean vs baselines ---------- */
+  function chartOnsetHorizon(){
+    var el=document.getElementById('chart-onset-horizon'); if(!el||!S.results||!S.results.onset_horizon_2yr) return;
+    var oh=S.results.onset_horizon_2yr, hs=[0,1,2,3,4];
+    var MODELS=[['Persistence','#8a99a0','dash'],['Climatology','#b9770c','dot'],
+                ['Lean CyAN (2-feat)','#6b4fb0','solid'],['Full fusion + clim','#0f6e78','solid']];
+    function ser(name){ return hs.map(function(h){ var r=oh.filter(function(x){return x.h===h&&x.model===name;})[0]; return r?r.onset_mcc:null; }); }
+    var data=MODELS.map(function(m){ var emph=(m[0]==='Full fusion + clim');
+      return {type:'scatter',mode:'lines+markers',name:m[0],x:hs,y:ser(m[0]),line:{color:m[1],width:emph?3:2,dash:m[2]},
+        marker:{size:emph?7:5},hovertemplate:m[0]+'<br>h=%{x}: onset-MCC %{y:.3f}<extra></extra>'}; });
+    var epa=(S.results.onset_horizon||[]).filter(function(x){return x.h===1&&x.model==='EPA';})[0];  // fixed 1-wk nowcast -> one point
+    if(epa) data.push({type:'scatter',mode:'markers',name:'EPA (2025, 1-wk nowcast)',x:[1],y:[epa.onset_mcc],
+      marker:{color:'#c0392b',size:11,symbol:'diamond'},hovertemplate:'EPA (2025 shared weeks)<br>h=1: onset-MCC %{y:.3f}<extra></extra>'});
+    Plotly.newPlot(el,data,{font:PLOT_FONT,margin:{l:48,r:12,t:10,b:40},paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',
+      legend:{orientation:'h',y:1.16,x:0},xaxis:{title:'lead time (weeks ahead)',dtick:1,fixedrange:true,gridcolor:'#eef2f3'},
+      yaxis:{title:'onset-MCC (positive flips)',range:[-0.03,0.55],fixedrange:true,gridcolor:'#eef2f3'}},{displayModeBar:false,responsive:true});
+  }
   /* ---------- Plotly: pre-ablation model-family comparison ---------- */
   function chartFamilies(){
     var el=document.getElementById('chart-families'); if(!el||!S.results||!S.results.families) return;
@@ -1484,7 +1528,16 @@
     numberSlides();
     initFL();
     chartTools(); chartFeatures(); renderToolSources(); renderModelSources();
-    baselineTables(); chartAblation(); chartAblationOnset(); chartHorizon(); chartFamilies(); renderOkeechobee();
+    baselineTables(); chartAblation(); chartHorizon(); chartFamilies(); chartOnsetHorizon(); renderOkeechobee();
+    wireDemo();
+  }
+  function wireDemo(){
+    var host=document.getElementById('demoEmbed'); if(!host) return;
+    var btn=host.querySelector('.demo-load'); if(!btn) return;
+    btn.addEventListener('click', function(){
+      host.innerHTML='<iframe src="https://harmful-algal-bloomspoc.vercel.app/" title="Florida HAB risk dashboard (Part B)" '
+        +'loading="lazy" referrerpolicy="no-referrer" allow="fullscreen"></iframe>';
+    });
   }
   if (document.readyState==='complete' || document.readyState==='interactive') boot();
   else window.addEventListener('DOMContentLoaded', boot);

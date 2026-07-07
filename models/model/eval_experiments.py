@@ -49,7 +49,8 @@ WEATHER = ["wx_ssrd_trail_14d_mj", "wx_ssrd_trail_30d_mj", "wx_pet_hargreaves_mm
 INSITU = ["wqp_TP_val", "wqp_TP_stale", "wqp_water_temp_val", "wqp_ammonia_val", "wqp_orthoP_val",
           "wqp_chl_a_val", "wqp_chl_a_stale", "nwis_water_temp_val", "nwis_gage_height_val"]
 DRIVERS = STATIC + SEASON + WEATHER + INSITU
-SUITES = {"cyan_ladder": CYAN, "fusion_full": CYAN + DRIVERS, "fusion_nocyan": DRIVERS,
+SUITES = {"lean": ["cyan_median", "area_sqkm"],   # the greedy-selected 2-feature deployable model (Part 3)
+          "cyan_ladder": CYAN, "fusion_full": CYAN + DRIVERS, "fusion_nocyan": DRIVERS,
           # +clim = climatology added as a FEATURE (reintroduces per-lake identity, D-35 -- experiment)
           "cyan_ladder+clim": CYAN + ["clim"], "fusion_full+clim": CYAN + DRIVERS + ["clim"],
           "fusion_nocyan+clim": DRIVERS + ["clim"]}
@@ -181,11 +182,13 @@ def main() -> None:
             fh.write(f"| {r.config} | {r['AUC-ROC']:.3f} | {r['AUC-PR']:.3f} | {r.Brier:.3f} | {r.MCC:.3f} "
                      f"| {r.AUC_within:.3f} | {r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.n_flip} "
                      f"| {r.onset_MCC:.3f} | {r.onset_AUC:.3f} |\n")
-        fh.write("\n## Horizon curve h=0..4 (HistGBM; flip focus)\n\n"
-                 "| h | config | AUC-ROC | AUC_within | flip_MCC | flip_AUC |\n| --- | --- | --- | --- | --- | --- |\n")
+        fh.write("\n## Horizon curve h=0..4 (HistGBM; flip + onset)\n\n"
+                 "| h | config | AUC-ROC | AUC_within | flip_MCC | flip_AUC | onset-MCC | onset-AUC |\n"
+                 "| --- | --- | --- | --- | --- | --- | --- | --- |\n")
         for _, r in cur.iterrows():
-            fh.write(f"| {int(r.h)} | {r.config} | {r['AUC-ROC']:.3f} | {r.AUC_within:.3f} | "
-                     f"{r.flip_MCC:.3f} | {r.flip_AUC:.3f} |\n")
+            cfg = r.config.replace(" | histgbm", "")   # single-token config (curve is HistGBM-only) -> easy to parse
+            fh.write(f"| {int(r.h)} | {cfg} | {r['AUC-ROC']:.3f} | {r.AUC_within:.3f} | "
+                     f"{r.flip_MCC:.3f} | {r.flip_AUC:.3f} | {r.onset_MCC:.3f} | {r.onset_AUC:.3f} |\n")
     print("\nwrote", OUT)
 
 

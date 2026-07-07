@@ -99,6 +99,14 @@ one — exactly the outcome the brief prizes.
   *third* of the three (0.349 vs ladder 0.375 vs climatology 0.371). Seasonality is a real onset signal but
   is a *baseline*, not a driver; and "fusion" earns **no thresholded-alert edge over the CyAN-only ladder**.
   *(`headtohead_onset.md`)*
+- **On the 2-year internal test the story differs by model (a genuine nuance, D-41):** the full **fusion +
+  clim** model leads onset-MCC at *every* lead (h0–4: 0.34/0.47/0.43/0.49/0.47) over the lean 2-feature
+  model (0.26/0.31/0.31/0.34/0.35) — a consistent **point-estimate** edge that is **not yet proven** (~half
+  `clim`/seasonality at h1, ~half the wider CyAN+driver set; the onset-AUC lift's CI includes 0), and
+  **climatology (a baseline) also beats the lean model at every lead**. So full fusion+clim is a
+  **tantalizing-but-unproven** avenue to validate next (the "go deep" direction); the *deployable* choice
+  stays the lean model + EPA. Note this is the 2-yr window with the **clim-carrying** model — distinct from
+  the shared-2025 clim-free head-to-head above. *(`experiments.md` horizon curve; deck slides 17–18.)*
 
 ---
 

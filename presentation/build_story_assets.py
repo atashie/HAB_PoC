@@ -494,6 +494,20 @@ def build_results():
     else:
         print("  WARN: headtohead_onset.md missing -> onset metrics omitted")
 
+    # --- slide 18: onset-MCC by horizon on the 2-yr internal test (same window as the slide-17 table, so the
+    # h=1 points match). From experiments.md horizon curve; EPA is added from the shared-2025 head-to-head above.
+    exp_path = os.path.join(OUT_DIR, "experiments.md")
+    if os.path.exists(exp_path):
+        _, hz2 = _find_table(_md_tables(exp_path), "h", "config", "onset-MCC")
+        WANT = {"persistence": "Persistence", "climatology": "Climatology",
+                "lean": "Lean CyAN (2-feat)", "fusion_full+clim": "Full fusion + clim"}
+        if hz2:
+            res["onset_horizon_2yr"] = [dict(h=int(_num(r["h"])), model=WANT[r["config"]],
+                onset_mcc=_num(r["onset-MCC"]), onset_auc=_num(r["onset-AUC"]))
+                for r in hz2 if r.get("config") in WANT]
+        else:
+            print("  WARN: experiments.md horizon curve (onset) not parsed")
+
     # --- Lake Okeechobee example rows (slide 12): a few real rows/cols of the fusion table ----------------
     try:
         import pandas as pd

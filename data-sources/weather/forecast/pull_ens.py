@@ -69,27 +69,34 @@ EXTREME_PARAMS = ["mx2t3", "mn2t3"]               # 3-hourly max/min temp (to +1
 ATTRIBUTION = "Contains ECMWF open data (IFS/ENS forecasts), CC-BY-4.0. Attribute ECMWF."
 
 
-def crop_to_florida(ds, area=FLORIDA_AREA, buffer=CROP_BUFFER_DEG):
-    """Memory-safe FL crop via INTEGER indexing, STREAMED per step.
+def _fl_slices(lat, lon, area=FLORIDA_AREA, buffer=CROP_BUFFER_DEG):
+    import numpy as np
+    N, W, S, E = area
+    lat_i = np.where((lat <= N + buffer) & (lat >= S - buffer))[0]
+    lon_i = np.where((lon >= W - buffer) & (lon <= E + buffer))[0]
+    return (slice(int(lat_i[0]), int(lat_i[-1]) + 1),
+            slice(int(lon_i[0]), int(lon_i[-1]) + 1))
 
-    cfgrib materialises the full (members × steps × global) cube before applying a spatial subset, so
-    a one-shot .load() on a 2.79 GB global (~15 GB in RAM) OOMs. Streaming one step at a time keeps
-    peak memory to a single step's global slab (~200 MB). ~1.3 s/step. Returns a LOADED dataset.
+
+def stream_crop_grib(grib_path, area=FLORIDA_AREA, buffer=CROP_BUFFER_DEG):
+    """Memory-safe FL crop: single open, stream ONE step at a time.
+
+    cfgrib materialises the full (members × steps × global) cube before a spatial subset, so a
+    one-shot .load() of a 2.8 GB global (~15 GB in RAM) OOMs. Loading per step keeps peak RAM to one
+    step's global slab (~200 MB). ~1.3 s/step. Returns a loaded FL dataset.
+
+    (A corrupt GRIB message crashes eccodes natively here — that is a *download* problem, not a crop
+    problem; run the download to completion so the file is valid. See `_decode` + reuse-validation.)
     """
     import numpy as np
     import xarray as xr
-    N, W, S, E = area
-    lat = ds["latitude"].values
-    lon = ds["longitude"].values
-    lat_i = np.where((lat <= N + buffer) & (lat >= S - buffer))[0]
-    lon_i = np.where((lon >= W - buffer) & (lon <= E + buffer))[0]
-    lasl = slice(int(lat_i[0]), int(lat_i[-1]) + 1)
-    losl = slice(int(lon_i[0]), int(lon_i[-1]) + 1)
-    if "step" in ds.dims and ds.sizes["step"] > 1:
-        parts = [ds.isel(step=i, latitude=lasl, longitude=losl).load()
-                 for i in range(ds.sizes["step"])]
-        return xr.concat(parts, dim="step")
-    return ds.isel(latitude=lasl, longitude=losl).load()
+    with _decode(grib_path) as ds:
+        lasl, losl = _fl_slices(ds["latitude"].values, ds["longitude"].values, area, buffer)
+        if "step" in ds.dims and ds.sizes["step"] > 1:
+            parts = [ds.isel(step=i, latitude=lasl, longitude=losl).load()
+                     for i in range(ds.sizes["step"])]
+            return xr.concat(parts, dim="step")
+        return ds.isel(latitude=lasl, longitude=losl).load()
 
 
 def _decode(grib_path: Path):
@@ -130,9 +137,7 @@ def pull_param(client, run, stream, ftype, param, steps, outdir: Path,
                         date=run.strftime("%Y%m%d"), time=run.hour, target=str(global_grib))
     gbytes = global_grib.stat().st_size
 
-    ds = _decode(global_grib)
-    ds_fl = crop_to_florida(ds)                    # streamed per-step; already loaded
-    ds.close()
+    ds_fl = stream_crop_grib(global_grib)          # batched-open + per-step stream; already loaded
     comp = {v: {"zlib": True, "complevel": 4} for v in ds_fl.data_vars}
     ds_fl.to_netcdf(fl_path, encoding=comp)
 

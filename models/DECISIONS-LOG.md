@@ -5,6 +5,73 @@ it supersedes. This is the audit trail for *why* the model is built the way it i
 
 ---
 
+## 2026-07-07 — Climatology baseline fit inconsistency; full-deck value audit (D-42)
+
+- **D-42 — the climatology BASELINE is fit two different ways across the modeling scripts, which surfaced as
+  a cross-slide numeric conflict in the deck.** `eval_experiments.py` (→ `experiments.md` → deck slides
+  15 & 18) fits the per-lake-per-month base-rate table on **train+val** for the test prediction
+  (`add_clim(fit, te)`, `fit = concat[tr, va]`), mirroring how the models are refit on train+val before
+  predicting test. `experiment_lib.py::run_experiment` (→ `exp_feature_ablation.md` → deck slide 17) fits the
+  same baseline on **train-only** (`add_clim(trh, teh)`). Persistence and the fusion models are byte-identical
+  across both files (same test rows), so this is purely the baseline's fit source — and because onset-**AUC**
+  (threshold-free) differs too (0.886 vs 0.851), it is the climatology *probabilities* that differ, not a
+  threshold effect. Values: train+val **0.952 / 0.886 / 0.363** (pooledAUC / onsetAUC / onsetMCC) vs
+  train-only **0.936 / 0.851 / 0.323**.
+- **Which is correct:** train+val is the *fair* baseline — the deployed models get train+val, so the baseline
+  should too; train-only handicaps it (no leakage either way: train+val all precede the ≥2024-07 test). The
+  train-only version under-credits climatology.
+- **Decision (user, 2026-07-07): patch the deck now, defer the code fix to the next rerun** (avoids re-running
+  the OOM-sensitive modeling layer today). Deck slide 17's climatology row was changed 0.936/0.851/0.323 →
+  **0.952/0.886/0.363** (the train+val values from `experiments.md`) so slides 15/17/18 are internally
+  consistent; slide 17's source note now attributes the climatology row to `experiments.md` (train+val). A
+  precise `# TODO (D-42)` was added at the fix site in `experiment_lib.py` (predict on train+val, keep the
+  threshold train-only). **On next rerun:** apply that fix, regenerate `exp_feature_ablation.md` /
+  `exp_ablation.md`, and re-source slide 17's climatology from `exp_feature_ablation.md` (it will then equal
+  `experiments.md`). Consequence to keep in mind: with 0.363, climatology (a baseline) clearly beats the lean
+  model on onset-MCC at h=1 too — already the story on slide 18; the lean model's case rests on cost,
+  generalization, and overall/level skill (AUC 0.982), not on beating climatology at onset.
+- **Full-deck value audit (4 parallel review agents, per user request).** Every numeric claim across all 28
+  slides + `results.json` / `story_data.js` was traced to `models/outputs/*.md`. **The climatology baseline
+  above was the only genuine cross-source data conflict.** Three secondary fixes applied: (a) slide 18's
+  "fusion leads at **every** lead" / "fusion > climatology > lean > EPA" was **false at h4** (climatology
+  0.476 > fusion 0.466) — reworded to "leads the *lean* model at every lead; climatology edges fusion by h4;
+  ordering holds through h3"; (b) slide 18's "h=1 numbers = slide 17" claim narrowed to exclude the EPA
+  marker (0.241 shared-2025 vs 0.248 2-yr); (c) slide 16's "each costs 0.05–0.09" softened to "roughly
+  0.05–0.09" (weather block is 0.047). **Verified clean:** all scope/counts (133 universe vs 132 evaluable,
+  4,527 weeks, 28.8% / 26.6% base rates, 261 sources, N=12 tools, 44→2 features, costs), the 2.8%→5.8% onset
+  base rate (no stale "3.7%→7.2%" remains), and all other metric values trace correctly. Cross-window
+  differences (e.g. climatology onset-MCC 0.371 shared-2025 vs 0.363 2-yr) are legitimate, not conflicts.
+
+## 2026-07-06 — Onset-MCC by horizon; full-fusion framed "tantalizing but unproven" (D-41)
+
+- **D-41 — the full fusion + clim model's onset-MCC edge is presented as a "tantalizing but not-yet-proven"
+  avenue (deck slide 17/18), NOT a validated claim; we ship the lean 2-feature CyAN model + EPA.** Prompted
+  by the user's (fair) push that onset-MCC **0.466** (full+clim) / **0.398** (clim-free) are substantially
+  above lean **0.314** on the **2-year** held-out test — the *more-robust* window (≈2× the data of the
+  shared-2025 subset). Added onset-MCC across horizons to `eval_experiments.py` (plus a `lean` 2-feature
+  suite); `experiments.md` horizon curve now carries onset-MCC/onset-AUC.
+- **Finding:** full fusion+clim leads onset-MCC at **every** lead (h0–4: 0.34/0.47/0.43/0.49/0.47) vs lean
+  (0.26/0.31/0.31/0.34/0.35). The full-vs-lean gap at h1 is ~half `clim` (+0.068) and ~half the wider
+  CyAN+driver set (+0.084). **But** it is not significance-tested, the onset-AUC lift's bootstrap CI
+  includes 0, and **climatology (a baseline) also beats lean at every lead** and nearly ties fusion by h4 —
+  so much of the "edge" is **seasonality**, which the full model carries via `clim`.
+- **Corrections to my earlier wording (logged for honesty):** (a) "the onset edge is *mostly* clim" was
+  wrong — it's ~half clim, ~half the broader feature set; (b) leaning on the shorter shared-2025 window
+  (fusion 0.349 "ties" the ladder) to dismiss it conflated a *smaller seasonal subset* **and** a
+  *clim-free-vs-clim* comparator — the 2-yr window is the more robust estimate.
+- **Deck changes:** slide 17 reframed (full fusion "tantalizing, unproven"; lean "shipped for PoC"); slide
+  18 gains the onset-MCC-by-horizon figure (2-yr window; EPA as its 2025 point); slide 16's two ablation
+  charts merged into one shared-axis figure; **"Go home" → "Go simple" = lean-CyAN + EPA**; production
+  table + recommendation realigned. The **aggregate / ranking** fusion-negative (D-35/D-39) is unchanged;
+  this nuance is specific to the thresholded **onset-MCC** decision metric.
+- **onset-MCC *rises* with lead time = an artifact, not improving skill (verified for slide 18).** The onset
+  base rate **~doubles over h0→h4 (2.8%→5.8%** on the 2-yr test; a lake clear h+1 wk ago is likelier to have
+  bloomed by the target week), and long-lead onsets are more *seasonal* — so the thresholded onset-MCC climbs
+  even though every **ranking** metric falls with lead (all-weeks AUC 0.985→0.970; onset-AUC 0.934→0.925
+  fusion, 0.925→0.910 lean; climatology's onset-AUC *rises* 0.876→0.909 because long-lead onsets are seasonal).
+  Slide 18 states this and must be read **model-vs-model at each fixed lead**, not as a trend. Corrects a stray
+  "3.7%→7.2%" (that was the shared-2025 window, not the 2-yr window slide 18 plots).
+
 ## 2026-07-06 — Onset head-to-head operating thresholds moved from test → validation (D-40, Codex-flagged)
 
 - **D-40 — Evaluation-leakage fix in `eval_headtohead_onset.py`: onset-MCC thresholds were tuned on TEST,

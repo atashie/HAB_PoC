@@ -219,6 +219,19 @@ def run_experiment(suites, archs, out_path, title, df=None, baselines=True):
         cp = {}
         for h in HORIZONS:
             trh, vah, teh = Hs[h]
+            # TODO (D-42, apply on next rerun): the climatology BASELINE test prediction below is fit
+            # TRAIN-ONLY (add_clim(trh, teh)), but the MODELS in this harness are refit on train+val
+            # before predicting test (see fit_predict) -- so this baseline is handicapped vs the models
+            # it is compared against. eval_experiments.py fits the SAME baseline on train+val
+            # (add_clim(fit, te), fit=concat[tr,va]) -> pooledAUC 0.952 / onsetAUC 0.886 / onsetMCC 0.363,
+            # vs the train-only 0.936 / 0.851 / 0.323 here. That inconsistency surfaced as a cross-slide
+            # conflict in the deck (slide 17 vs 15/18); deck slide 17 was patched to the train+val values
+            # in the interim. FIX: predict on train+val to match the model refit protocol (threshold stays
+            # train-only, tuned on val, as eval_experiments.py does -- onset/pooled AUC are threshold-free):
+            #     fith = pd.concat([trh, vah])
+            #     cp[h] = (add_clim(fith, teh), best_f1_threshold(vah["target_bloom"], add_clim(trh, vah)))
+            # After the fix, regenerate exp_feature_ablation.md / exp_ablation.md and re-source slide 17
+            # from exp_feature_ablation.md (it will then equal experiments.md's climatology row).
             cp[h] = (add_clim(trh, teh), best_f1_threshold(vah["target_bloom"], add_clim(trh, vah)))
         r = assemble("climatology", cp); r["valAUC-testAUC"] = np.nan; rows.append(r)
 
