@@ -305,7 +305,7 @@ flowchart LR
     EPA["cyano-forecasts snapshot .csv"] --> B
     WQP["…/wqp_fl links + daily_values"] --> B
     LK["presentation/fl_lakes + states geojson"] --> B
-    B -->|fit per-horizon: fusion(HistGBM) · lean(LogReg cyan_median+area) · climatology| SCORE["score cutoff 2026-05-17, h0-4"]
+    B -->|fit per-horizon| SCORE["score cutoff 2026-05-17, h0-4<br/>fusion HistGBM · lean LogReg cyan_median+area · climatology"]
     SCORE --> GATEA["Gate A: reproduce fusion h1 AUC 0.983 or refuse to write"]
     SCORE --> GATEB["Gate B: shipped model vs persistence on held-out 2026 + onset-AUC"]
     GATEA --> D1["data/dashboard_data.js (window.DASH)"]
