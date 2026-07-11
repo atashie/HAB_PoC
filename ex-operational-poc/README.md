@@ -28,8 +28,9 @@ python 05_predict.py      # refit on all history; store the latest per-lake fore
 python -m pytest tests/   # leakage-alignment + metric tests
 ```
 
-Runs against the CyAN rasters already cached in the repo; with a fresh cache, `01_ingest`
-downloads from NASA Earthdata (needs a free `OB_DAAC_EDL_TOKEN` in `../data-sources/.env`).
+Runs against the CyAN rasters already cached in the repo. With an empty cache, `01_ingest` points
+you to the repo's cited CyAN pull (`data-sources/cyan`, which fetches the weekly CONUS mosaics from
+NASA Earthdata with a free `OB_DAAC_EDL_TOKEN`) rather than re-implementing that multi-GB download.
 
 ## Files
 

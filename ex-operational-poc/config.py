@@ -28,6 +28,11 @@ DN_VALID_MAX = 253    # 0..253 are valid measurements (0 = below-detection, stil
 DN_LAND = 254         # masked
 DN_NODATA = 255       # cloud / no-data -> masked
 AL1_THRESHOLD = 130   # WHO Alert Level 1: per-lake median DN >= 130 (~12 ug/L chl-a); EPA/Schaeffer
+# Minimum valid (cloud-free) pixels for a lake-week to be labelled. Default 1 = EPA/Schaeffer
+# parity (his na.rm median has no coverage guard), so our label stays comparable to the
+# benchmark; we SURFACE the low-coverage fraction rather than silently threshold (matching
+# ../models DESIGN sec.4). Raise this for a stricter operational coverage floor.
+MIN_VALID_PIXELS = 1
 
 # --- Sensor / period ------------------------------------------------------
 # CyAN weekly filenames start with the sensor letter: 'L' = OLCI era (2016->present),

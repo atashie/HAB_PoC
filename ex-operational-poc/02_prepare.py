@@ -24,10 +24,11 @@ from rasterio.windows import from_bounds
 import config
 from common import parse_week_start
 
-sys.path.insert(0, str(config.ROOT))
-
 
 def _olci_rasters():
+    # NB: mirrors 01_ingest.list_olci_rasters by design - kept as a tiny local helper so
+    # `common.py` stays pure (no filesystem I/O) and the two steps stay file-to-file
+    # decoupled. Do not "DRY" this into common without moving I/O there.
     out = []
     for p in sorted(config.CYAN_RAW_DIR.glob("*.tif")):
         ws = parse_week_start(p.name, config.OLCI_PREFIX)
@@ -93,6 +94,11 @@ def main(argv=None):
 
     panel = pd.DataFrame(rows, columns=["comid", "week_start", "cyan_median",
                                         "n_valid", "bloom", "area_sqkm"])
+    # Coverage floor: a lake-week is labelled from its valid (cloud-free) pixels. We keep
+    # the EPA/Schaeffer-parity default (>= 1 pixel) but expose the knob and REPORT how many
+    # low-coverage weeks exist, rather than silently thresholding (../models DESIGN sec.4).
+    low_frac = float((panel["n_valid"] < 5).mean())          # weeks decided by < 5 pixels
+    panel = panel[panel["n_valid"] >= config.MIN_VALID_PIXELS].reset_index(drop=True)
     config.DATA.mkdir(parents=True, exist_ok=True)
     config.OUTPUTS.mkdir(parents=True, exist_ok=True)
     panel.to_parquet(config.LAKE_WEEK_PARQUET, index=False)
@@ -103,9 +109,10 @@ def main(argv=None):
         f"- Source: {len(rasters)} OLCI weekly CyAN CONUS mosaics "
         f"[{rasters[0][1].date()} -> {rasters[-1][1].date()}]\n"
         f"- Lakes: {panel['comid'].nunique()} of {len(lakes)} Florida resolvable lakes\n"
-        f"- Rows (valid lake-weeks): {len(panel):,}\n"
+        f"- Rows (valid lake-weeks, >= {config.MIN_VALID_PIXELS} px): {len(panel):,}\n"
         f"- Bloom base rate (median DN >= {config.AL1_THRESHOLD}): {base:.3f}\n"
         f"- Median valid pixels/lake-week: {int(panel['n_valid'].median())}\n"
+        f"- Low-coverage weeks (< 5 valid px, label is noise-prone): {low_frac:.1%}\n"
     )
     (config.OUTPUTS / "prepare_summary.md").write_text(summary, encoding="utf-8")
     print(summary)

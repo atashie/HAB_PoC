@@ -12,7 +12,6 @@ Outputs (committed):
 Run:  python 05_predict.py
 """
 import json
-import numpy as np
 import pandas as pd
 import geopandas as gpd
 
@@ -64,8 +63,10 @@ def main():
     for _, r in new_risk.iterrows():
         md.append(f"| {r['name'] or '(unnamed)'} | {r['comid']} | {r['cyan_median']:.0f} | "
                   f"{r['risk_h1']:.0f}% | {r['risk_h2']:.0f}% | {r['risk_h3']:.0f}% | {r['risk_h4']:.0f}% |")
-    md += ["", "Risks are probabilities of a WHO-AL1 bloom, not chlorophyll values; "
-           "tiers near the threshold are not sharply separable. Correlation, not causation."]
+    md += ["", "Risks are probabilities of a WHO-AL1 bloom, not chlorophyll values; tiers "
+           "near the threshold are not sharply separable. Risk is nearly flat across h0-h4 "
+           "by design - all horizons are scored from the same freshest antecedent CyAN, so a "
+           "2-feature snapshot barely separates 1-week from 4-week lead. Correlation, not causation."]
     (config.OUTPUTS / "predictions_summary.md").write_text("\n".join(md), encoding="utf-8")
 
     print("\n".join(md))

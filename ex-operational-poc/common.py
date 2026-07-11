@@ -71,6 +71,8 @@ def build_horizon_frame(panel: pd.DataFrame, h: int) -> pd.DataFrame:
         columns={"week_start": "target_date", "bloom": "target_bloom"}
     )
     tgt["cutoff"] = tgt["target_date"] - pd.Timedelta(weeks=h + 1)
+    # merge_asof requires each side sorted by its ON key ALONE (not by [comid, key]);
+    # the `by="comid"` grouping is handled internally. Keep these sorts single-key.
     tgt = tgt.sort_values("cutoff")
 
     # Feature source: the antecedent composite (its cyan_median and its own bloom).
@@ -118,17 +120,25 @@ def temporal_split(df: pd.DataFrame, train_end: str, val_end: str):
 
 
 # --- Per-lake climatology baseline (fit on labelled history only) ---------
+def _woy(dates) -> np.ndarray:
+    """Week-of-year 1..52, with ISO week 53 folded into 52 so the seasonal key is stable
+    across years (week 53 exists only in some years; without folding, a week-53 target
+    would miss the lookup and fall back to the global rate, under-crediting climatology)."""
+    w = pd.to_datetime(dates).dt.isocalendar().week.astype(int).to_numpy()
+    return np.minimum(w, 52)
+
+
 def climatology_lookup(fit_df: pd.DataFrame) -> tuple[dict, float]:
     """Per-(comid, week-of-year) bloom rate, learned ONLY from `fit_df` (train[+val]).
     Returns the lookup and a global fallback rate for unseen keys."""
     f = fit_df.copy()
-    f["woy"] = pd.to_datetime(f["target_date"]).dt.isocalendar().week.astype(int)
+    f["woy"] = _woy(f["target_date"])
     lut = f.groupby(["comid", "woy"])["bloom"].mean().to_dict()
     return lut, float(f["bloom"].mean())
 
 
 def climatology_scores(df: pd.DataFrame, lut: dict, glob: float) -> np.ndarray:
-    woy = pd.to_datetime(df["target_date"]).dt.isocalendar().week.astype(int)
+    woy = _woy(df["target_date"])
     return np.array([lut.get((c, w), glob) for c, w in zip(df["comid"], woy)])
 
 
@@ -180,10 +190,7 @@ def auc(y, p) -> float:
     n0 = len(y) - n1
     if n1 == 0 or n0 == 0:
         return float("nan")
-    order = p.argsort(kind="mergesort")
-    ranks = np.empty(len(p), float)
-    ranks[order] = np.arange(1, len(p) + 1)
-    # average ranks for ties
+    # Mann-Whitney U via average ranks (ties get the mean rank, matching roc_auc_score).
     _, inv, counts = np.unique(p, return_inverse=True, return_counts=True)
     csum = np.cumsum(counts)
     avg = {i: (csum[i] - counts[i] + 1 + csum[i]) / 2.0 for i in range(len(counts))}

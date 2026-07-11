@@ -20,4 +20,4 @@
 | (unnamed) | 16631376 | 97 | 24% | 27% | 28% | 29% |
 | (unnamed) | 166757656 | 95 | 13% | 15% | 16% | 17% |
 
-Risks are probabilities of a WHO-AL1 bloom, not chlorophyll values; tiers near the threshold are not sharply separable. Correlation, not causation.
+Risks are probabilities of a WHO-AL1 bloom, not chlorophyll values; tiers near the threshold are not sharply separable. Risk is nearly flat across h0-h4 by design - all horizons are scored from the same freshest antecedent CyAN, so a 2-feature snapshot barely separates 1-week from 4-week lead. Correlation, not causation.
