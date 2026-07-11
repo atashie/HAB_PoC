@@ -1,0 +1,9 @@
+# Minimal deps for the lean operational forecaster (verified on Python 3.13 / win32).
+numpy
+pandas
+pyarrow            # parquet I/O
+geopandas          # lake polygons
+rasterio           # CyAN GeoTIFF windowed reads + rasterize
+shapely            # geometry (geopandas dep, listed explicitly)
+scikit-learn       # logistic regression + threshold/MCC metrics
+pytest             # tests/

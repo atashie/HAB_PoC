@@ -180,6 +180,7 @@ HAB_PoC/
 ├── README.md                     # Product overview — what the system does + how to run it
 ├── ARCHITECTURE.md               # This document: all folders, documents, and code (visual)
 ├── CODE-MAP.md                   # Function-level code tour + pipeline diagrams
+├── CODE-MAP-PoC-SIMPLE.md        # Map of the standalone operational lean-model workflow
 ├── .gitignore                    # Raw/derived data, parquet, secrets, caches excluded
 │
 ├── SePRO/
@@ -234,6 +235,13 @@ HAB_PoC/
 │
 ├── analysis/                     # LAYER 3b — standalone validation study
 │   └── cyan_nla_matchup/         # README · matchup.py · outputs/ (matched csv, report, scatter)
+│
+├── ex-operational-poc/           # LAYER 3c — standalone OPERATIONAL lean-model workflow
+│   ├── README.md  config.py  common.py  requirements.txt
+│   ├── 01_ingest.py 02_prepare.py 03_train.py 04_evaluate.py 05_predict.py  # 5 numbered steps
+│   ├── tests/                    # leakage-alignment + metric tests (9)
+│   └── outputs/                  # committed real results (models.json, eval_metrics, predictions)
+│        # documented at root in CODE-MAP-PoC-SIMPLE.md
 │
 ├── presentation/                 # LAYER 4 — the scrollytelling deck
 │   ├── README.md  story.html  vercel.json
@@ -432,7 +440,7 @@ dossiers under `Research/_sources/` are catalogued in their layers rather than l
 
 **Root / governance**
 - `README.md` — product overview (what the system does + how to run it)
-- `ARCHITECTURE.md` (this doc) + `CODE-MAP.md` — the repo/code maps
+- `ARCHITECTURE.md` (this doc) + `CODE-MAP.md` — the repo/code maps; `CODE-MAP-PoC-SIMPLE.md` — the operational lean-model workflow (`ex-operational-poc/`)
 - `CLAUDE.md` — operating principles + claim gate
 - `SePRO/…Brief.pdf`, `docs/brief_extracted.txt` — the brief
 - `docs/plans/` — 6 design & decision plans (research, EPA-baseline, presentation, forecast-ensemble, dashboard)

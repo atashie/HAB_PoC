@@ -16,10 +16,11 @@ The deliverable has three parts, presented in ~45 min to a mixed panel (scientif
 
 ## Top-level orientation docs — keep in sync
 
-Three root-level docs describe the repo for different readers, and **must be kept current: whenever we push changes, double-check all three still reflect the repo as it now is** (structure, code, behavior) and update them in the same change.
+Four root-level docs describe the repo for different readers, and **must be kept current: whenever we push changes, double-check all four still reflect the repo as it now is** (structure, code, behavior) and update them in the same change.
 - `README.md` — the product-facing overview: what the system does functionally and how to run it (no SePRO/case-study framing).
 - `ARCHITECTURE.md` — the map of every folder, document, and code file, with visual (Mermaid) diagrams.
 - `CODE-MAP.md` — the function-level tour of all code: entry points, pipeline DAGs, and call/data-flow graphs.
+- `CODE-MAP-PoC-SIMPLE.md` — the dedicated map of the standalone operational workflow in `ex-operational-poc/` (the lean 2-feature model, with the autoregressive-leakage handling documented).
 
 ## Non-negotiable operating principles — READ FIRST
 

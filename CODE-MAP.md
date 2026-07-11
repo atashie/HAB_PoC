@@ -2,7 +2,9 @@
 
 > A function-level tour of **all the code in the repository**: entry points, shared libraries,
 > per-module call/data-flow graphs, and the pipeline DAGs. For the folder/document structure and the
-> big-picture layer diagram, see the companion [`ARCHITECTURE.md`](ARCHITECTURE.md).
+> big-picture layer diagram, see the companion [`ARCHITECTURE.md`](ARCHITECTURE.md). For the
+> standalone **operational lean-model** workflow (`ex-operational-poc/`), see the dedicated
+> [`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md).
 >
 > Generated 2026-07-10 from a full read of the repo. Function names, inputs, and outputs were read
 > from the source; line counts came from `git ls-files | xargs wc -l`.
