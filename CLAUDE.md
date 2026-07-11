@@ -14,6 +14,13 @@ The deliverable has three parts, presented in ~45 min to a mixed panel (scientif
 
 **Authoritative source of truth:** `SePRO/SePRO_Lead_Data_Scientist_Presentation_Brief.pdf` (verbatim text copy at `docs/brief_extracted.txt`). When a requirement is in doubt, re-read the brief — do not rely on paraphrase, including this file.
 
+## Top-level orientation docs — keep in sync
+
+Three root-level docs describe the repo for different readers, and **must be kept current: whenever we push changes, double-check all three still reflect the repo as it now is** (structure, code, behavior) and update them in the same change.
+- `README.md` — the product-facing overview: what the system does functionally and how to run it (no SePRO/case-study framing).
+- `ARCHITECTURE.md` — the map of every folder, document, and code file, with visual (Mermaid) diagrams.
+- `CODE-MAP.md` — the function-level tour of all code: entry points, pipeline DAGs, and call/data-flow graphs.
+
 ## Non-negotiable operating principles — READ FIRST
 
 These are the spine of the project. The brief grades on exactly these axes: results that *"hold up to scrutiny,"* an approach *"explainable and auditable"* enough to stand behind a claim, showing *"why the model says what it says, not just what it predicts,"* and *"the rigor and honesty of your modeling and validation."* They are not aspirational — they gate every artifact we produce.

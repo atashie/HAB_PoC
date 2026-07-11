@@ -90,7 +90,7 @@ differ in how the climatology is fit (fit-once-and-freeze, for leakage safety).
 ```mermaid
 flowchart TB
     subgraph access["access/"]
-        HOURLY["pull_hourly_async.py<br/>sliding-window <=4 CDS jobs -> hourly GRIB"]
+        HOURLY["pull_hourly_async.py<br/>sliding-window ≤4 CDS jobs -> hourly GRIB"]
         ERA5["era5_cds.py<br/>bounded CDS pull (hourly / --daily)"]
         ECM["ecmwf_forecast.py<br/>open-data IFS/ENS run"]
     end

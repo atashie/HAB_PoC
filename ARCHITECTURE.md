@@ -177,6 +177,9 @@ Three things to notice:
 ```
 HAB_PoC/
 ├── CLAUDE.md                     # Project constitution: claim gate + operating principles
+├── README.md                     # Product overview — what the system does + how to run it
+├── ARCHITECTURE.md               # This document: all folders, documents, and code (visual)
+├── CODE-MAP.md                   # Function-level code tour + pipeline diagrams
 ├── .gitignore                    # Raw/derived data, parquet, secrets, caches excluded
 │
 ├── SePRO/
@@ -428,6 +431,8 @@ Every tracked prose document, grouped. (Result-table markdown under `models/outp
 dossiers under `Research/_sources/` are catalogued in their layers rather than listed here.)
 
 **Root / governance**
+- `README.md` — product overview (what the system does + how to run it)
+- `ARCHITECTURE.md` (this doc) + `CODE-MAP.md` — the repo/code maps
 - `CLAUDE.md` — operating principles + claim gate
 - `SePRO/…Brief.pdf`, `docs/brief_extracted.txt` — the brief
 - `docs/plans/` — 6 design & decision plans (research, EPA-baseline, presentation, forecast-ensemble, dashboard)
