@@ -12,7 +12,7 @@ REPO = ROOT.parent
 # --- Data locations -------------------------------------------------------
 # CyAN weekly CONUS mosaics. Default reuses the repo's already-pulled cache so the
 # pipeline runs end-to-end without re-downloading multi-GB rasters. Point this at a
-# fresh local dir and 01_ingest will download from NASA Earthdata instead.
+# fresh/empty dir and 01_ingest will point you to the repo's cited CyAN pull to populate it.
 CYAN_RAW_DIR = REPO / "data-sources" / "cyan" / "data" / "raw" / "conus_mosaic_weekly"
 
 # Florida resolvable-lakes layer (COMID + AREASQKM + geometry, EPSG:5070). This is

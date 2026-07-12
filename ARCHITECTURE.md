@@ -36,11 +36,12 @@ folder structure is built to serve.
 | **Data engineering** | `data-sources/` | Scripted, cited acquisition + QA of every public source | ~70 Python files, 9.6k LOC | per-dataset README + METADATA + QA reports |
 | **Modeling (Part A)** | `models/` | Acquire → prepare → model → evaluate the FL bloom forecaster | 25 Python files, 3.7k LOC | DESIGN, RESULTS-SUMMARY, decisions, 4 phase docs, 19 result files |
 | **Standalone analysis** | `analysis/` | CyAN ↔ EPA-lab (NLA) validation matchup | 1 Python file, 361 LOC | README + report |
+| **Operational example** | `ex-operational-poc/` | Standalone lean 2-feature forecaster, end-to-end (ingest→predict) | 8 Python files, 833 LOC | README + `CODE-MAP-PoC-SIMPLE.md` + committed outputs |
 | **Presentation** | `presentation/` | Self-contained HTML scrolling-story deck | 3 Python builders + `story.html` | README + 6 design plans (in `docs/`) |
 | **Tool (Part B)** | `dashboard/` | Deployed static risk dashboard | 1 Python builder + `index.html` | README + notes + 2 Codex reviews |
 | **Brief & plans** | `SePRO/`, `docs/` | Source-of-truth brief + design/decision plans | — | brief PDF + text, 6 plan docs |
 
-**Totals:** 599 git-tracked files · ~17k LOC of first-party Python · ~2.7k LOC of app HTML/JS
+**Totals:** 619 git-tracked files · ~18k LOC of first-party Python · ~2.7k LOC of app HTML/JS
 (excluding vendored Leaflet/Plotly) · **two deployed static sites** on Vercel.
 
 **Corpus of literature:** 261 sources — ACAD 148 (peer-reviewed), FED 78 (EPA/USGS/NOAA/NASA/CDC),
@@ -370,6 +371,16 @@ well does the CyAN satellite index track EPA's in-situ NLA-2022 chlorophyll and 
 many usable matches survive resolution/cloud constraints? Result: a real-but-thin bridge (334 of
 1,219 lake-visits usable; Spearman ρ ≈ 0.62 to chlorophyll, 0.56 to toxin). It feeds the deck's
 "Trusting the signal" appendix.
+
+### 6.5b `ex-operational-poc/` — the operational lean-model workflow
+
+A deliberately-minimal, **self-contained** pipeline that ingests → prepares → trains → evaluates →
+runs the deployable lean 2-feature model (`cyan_median` + `area_sqkm`), forecasting WHO-AL1 blooms
+0–4 weeks ahead for the 133 Florida lakes. Five numbered steps (`01_ingest`…`05_predict`) over a
+tested core (`common.py`), with the autoregressive-leakage handling documented and unit-tested, and
+real committed outputs (models, held-out metrics vs. baselines, a live forecast). It reuses only the
+repo's cached CyAN rasters + FL-lakes layer at runtime; the broader study (`models/`) is what
+selected this 2-feature model. Fully mapped in **[`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md)**.
 
 ### 6.6 `presentation/` — the deck
 

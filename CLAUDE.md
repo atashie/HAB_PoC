@@ -68,11 +68,13 @@ Before any number or statement enters the slides or the tool, it must pass all f
 These are a starting palette, not a mandate — but any source we add follows the same citation + traceability rules.
 
 ## Repository conventions
-The repo has five working layers, each with its own README: **`Research/`** (261-source literature base),
+The repo has these working layers, each with its own README: **`Research/`** (261-source literature base),
 **`data-sources/`** (scripted, cited data acquisition + QA), **`models/`** (the Florida CyAN bloom-forecast
 modeling layer — results in / concluded), **`presentation/`** (the HTML scrolling-story deck + its asset builder),
 and **`dashboard/`** (the deployed Part B static tool — `dashboard/index.html`, live at
-https://harmful-algal-bloomspoc.vercel.app/).
+https://harmful-algal-bloomspoc.vercel.app/). Two standalone slices sit alongside them: **`analysis/`**
+(the CyAN↔NLA validation matchup) and **`ex-operational-poc/`** (a minimal end-to-end pipeline for the
+deployable lean 2-feature model; mapped in `CODE-MAP-PoC-SIMPLE.md`).
 Keep the repo reproducible and legible:
 - Scripted, re-runnable data acquisition; cache raw pulls and **never hand-edit raw data**.
 - Analysis in notebooks/scripts that regenerate all figures and metrics from source.

@@ -20,6 +20,7 @@
 | `presentation/` | Python + HTML/JS | 3 + 1 | 1,273 + `story.html` (1,558) | `build_story_assets.py`; `story.html` |
 | `dashboard/` | Python + HTML/JS | 1 + 1 | 468 + `index.html` (585) | `build_dashboard_data.py`; `index.html` |
 | `analysis/` | Python | 1 | 361 | `matchup.py` (CLI) |
+| `ex-operational-poc/` | Python | 8 | 833 | numbered `01_ingest.py`..`05_predict.py` (CLIs) — mapped in [`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md) |
 | `Research/` | Python + generated JS | 8 + 17 | 1,523 + JS | `scripts/*.py`; `scripts/phase{3,4}_*.js` |
 
 **Biggest first-party files:** `presentation/story.html` (1,558) · `presentation/build_story_assets.py`

@@ -4,9 +4,9 @@ beside baselines and with an uncertainty.
 Baselines (every horizon, every metric):
   * persistence  = the latency-aware label carried from the feature week (a stiff,
     honest yardstick because bloom state is strongly autocorrelated).
-  * climatology  = per-(lake, week-of-year) bloom rate; fit on train (for its own
-    val-tuned threshold) then refit on train+val for test scoring - mirroring the lean
-    model's protocol so the operating-point comparison is fair.
+  * climatology  = per-(lake, week-of-year) bloom rate; alert threshold tuned on val (from
+    a train-only fit), then refit on TRAIN+VAL for test scoring - the same fair fit the lean
+    model uses (03_train refits on train+val), so the comparison is apples-to-apples.
 
 Three metric families, each with its baselines:
   A. all-sample AUC-ROC   - overall ranking; autocorrelation-inflated, NOT the result.
@@ -37,10 +37,12 @@ def _ci(lo, hi):
 
 
 def _mcc(y, pred):
-    """MCC, or nan when a class is absent in labels or predictions (avoids sklearn's
-    undefined-0.0-with-warning corner)."""
-    if len(np.unique(y)) < 2 or len(np.unique(pred)) < 2:
+    """MCC. nan only when the LABELS are single-class (genuinely undefined); a constant
+    prediction on mixed labels is 0.0 = no skill (matches sklearn, without its 0/0 warning)."""
+    if len(np.unique(y)) < 2:
         return float("nan")
+    if len(np.unique(pred)) < 2:
+        return 0.0
     return matthews_corrcoef(y, pred)
 
 
@@ -59,7 +61,8 @@ def main():
 
         # lean (val-tuned threshold from 03_train)
         p_lean = common.logreg_score(p, te[config.FEATURES].to_numpy())
-        # climatology: fit-on-train -> threshold-on-val -> refit-on-train+val -> score-test
+        # climatology mirrors the lean model's fair fit: threshold tuned on val (train-only
+        # rate), then refit on train+val for test scoring.
         lut_tr, gl_tr = common.climatology_lookup(tr)
         clim_thr = common.best_f1_threshold(va[config.TARGET],
                                             common.climatology_scores(va, lut_tr, gl_tr))

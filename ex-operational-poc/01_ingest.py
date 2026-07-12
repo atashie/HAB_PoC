@@ -39,7 +39,8 @@ def main():
             f"ERROR: no CyAN OLCI weekly CONUS mosaics in {config.CYAN_RAW_DIR}\n"
             f"This PoC reads the weekly-CONUS-mosaic CyAN product. Populate the cache from\n"
             f"source with the repo's cited CyAN pull (needs a free NASA Earthdata token in\n"
-            f"data-sources/.env):  python data-sources/cyan/access/pull_cyan.py --help\n"
+            f"data-sources/.env); from the REPO ROOT:\n"
+            f"  python data-sources/cyan/access/pull_cyan.py --help\n"
             f"or point config.CYAN_RAW_DIR at an existing cache.")
 
     # Completeness check: OLCI weekly composites are a strict 7-day grid, so any non-7-day

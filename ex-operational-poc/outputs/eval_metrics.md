@@ -28,9 +28,9 @@ AUC 95% CIs (brackets) are block-bootstrapped by lake.
 | h | lean MCC | persistence MCC | climatology MCC |
 |--:|--:|--:|--:|
 | 0 | 0.894 | 0.893 | 0.731 |
-| 1 | 0.852 | 0.853 | 0.731 |
+| 1 | 0.851 | 0.853 | 0.731 |
 | 2 | 0.825 | 0.825 | 0.732 |
-| 3 | 0.799 | 0.800 | 0.731 |
+| 3 | 0.797 | 0.800 | 0.731 |
 | 4 | 0.787 | 0.786 | 0.730 |
 
 **Reading it (honestly).**

@@ -20,23 +20,28 @@ import common
 def main():
     panel = pd.read_parquet(config.LAKE_WEEK_PARQUET)
     models = {}
-    print(f"{'h':>2} {'n_train':>8} {'n_val':>7} {'n_test':>7} "
-          f"{'thr':>5} {'AUC_tr':>7} {'AUC_val':>7}")
+    print(f"{'h':>2} {'n_fit':>8} {'n_test':>7} {'thr':>5} {'AUC_fit':>7}")
     for h in config.HORIZONS:
         frame = common.build_horizon_frame(panel, h)
         tr, va, te = common.temporal_split(frame, config.TRAIN_END, config.VAL_END)
+        trva = pd.concat([tr, va])
 
-        params = common.fit_logreg(tr, config.FEATURES, config.TARGET, config.SEED)
-        p_val = common.logreg_score(params, va[config.FEATURES].to_numpy())
-        params["threshold"] = common.best_f1_threshold(va[config.TARGET], p_val)
+        # Threshold: tuned on val (genuinely held out) using a TRAIN-ONLY fit.
+        thr_fit = common.fit_logreg(tr, config.FEATURES, config.TARGET, config.SEED)
+        thr = common.best_f1_threshold(
+            va[config.TARGET], common.logreg_score(thr_fit, va[config.FEATURES].to_numpy()))
+        # Deployed-for-test model: refit on TRAIN+VAL (the fair fit for a held-out test -
+        # val is used, not wasted; matches ../models' protocol). 05_predict refits on ALL
+        # history for the live forecast.
+        params = common.fit_logreg(trva, config.FEATURES, config.TARGET, config.SEED)
+        params["threshold"] = thr
 
-        p_tr = common.logreg_score(params, tr[config.FEATURES].to_numpy())
-        params.update(n_train=len(tr), n_val=len(va), n_test=len(te),
-                      auc_train=round(common.auc(tr[config.TARGET], p_tr), 3),
-                      auc_val=round(common.auc(va[config.TARGET], p_val), 3))
+        p_fit = common.logreg_score(params, trva[config.FEATURES].to_numpy())
+        params.update(n_fit=len(trva), n_test=len(te),
+                      auc_fit=round(common.auc(trva[config.TARGET], p_fit), 3))
         models[str(h)] = params
-        print(f"{h:>2} {len(tr):>8,} {len(va):>7,} {len(te):>7,} "
-              f"{params['threshold']:>5.2f} {params['auc_train']:>7} {params['auc_val']:>7}")
+        print(f"{h:>2} {len(trva):>8,} {len(te):>7,} "
+              f"{params['threshold']:>5.2f} {params['auc_fit']:>7}")
 
     config.OUTPUTS.mkdir(parents=True, exist_ok=True)
     meta = {"features": config.FEATURES, "target_rule": f"median CyAN DN >= {config.AL1_THRESHOLD} (WHO AL1)",
