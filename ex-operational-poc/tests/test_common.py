@@ -105,3 +105,63 @@ def test_onset_auc_uses_only_clear_weeks():
     per = np.array([1, 1, 0, 0, 0])     # first two already blooming -> excluded
     # only rows 2,3,4 count: y=[0,1,0], p=[.2,.7,.1] -> perfect ranking
     assert common.onset_auc(y, p, per) == 1.0
+
+
+def test_mcc_edges():
+    # single-class labels -> undefined (nan); constant prediction on mixed labels -> 0.0
+    assert np.isnan(common.mcc([1, 1, 1], [1, 0, 1]))
+    assert common.mcc([0, 1, 0, 1], [1, 1, 1, 1]) == 0.0
+    assert common.mcc([0, 0, 1, 1], [0, 0, 1, 1]) == 1.0
+
+
+def test_onset_mcc_uses_only_clear_weeks():
+    y =   np.array([0, 1, 0, 1, 1])
+    p =   np.array([.1, .9, .2, .8, .95])
+    per = np.array([0, 0, 0, 1, 1])     # last two already blooming -> excluded
+    # clear rows 0,1,2: y=[0,1,0], thr .5 -> pred=[0,1,0] -> perfect
+    assert common.onset_mcc(y, p, per, 0.5) == 1.0
+
+
+# --- optimized lean model: HistGBM fit / score / persist ------------------
+def _rich_panel(n_weeks=260, comids=(1, 2, 3, 4), start="2016-01-03"):
+    """A seasonal synthetic panel: cyan_median rises and falls each year (so both bloom
+    and clear weeks exist for every lake), larger lakes bloom a touch less. Enough rows
+    for HistGBM's internal early-stopping holdout."""
+    weeks = pd.date_range(start, periods=n_weeks, freq="7D")
+    areas = {1: 3.0, 2: 15.0, 3: 60.0, 4: 200.0}
+    rows = []
+    for comid in comids:
+        for k, w in enumerate(weeks):
+            season = 100 + 80 * np.sin(2 * np.pi * k / 52.0)      # 20..180, crosses 130
+            med = max(0.0, season - 0.02 * areas[comid])
+            rows.append(dict(comid=comid, week_start=w, cyan_median=float(med),
+                             bloom=int(med >= 130), area_sqkm=areas[comid]))
+    return pd.DataFrame(rows)
+
+
+def test_hgb_fit_score_and_persist(tmp_path):
+    import config
+    panel = _rich_panel()
+    frame = common.build_horizon_frame(panel, 1)
+    model = common.fit_hgb(frame, config.FEATURES, config.TARGET, config.HGB_PARAMS, config.SEED)
+    p = common.hgb_score(model, frame[config.FEATURES].to_numpy())
+    assert p.shape == (len(frame),)
+    assert ((p >= 0) & (p <= 1)).all()
+    # On this strongly-seasonal signal the model should rank blooms well.
+    assert common.auc(frame[config.TARGET].to_numpy(), p) > 0.9
+    # persist -> load round-trips to identical scores
+    path = tmp_path / "hgb.joblib"
+    common.save_model(model, path)
+    p2 = common.hgb_score(common.load_model(path), frame[config.FEATURES].to_numpy())
+    assert np.allclose(p, p2)
+
+
+def test_permutation_importance_cyan_dominates():
+    import config
+    panel = _rich_panel()
+    frame = common.build_horizon_frame(panel, 1)
+    model = common.fit_hgb(frame, config.FEATURES, config.TARGET, config.HGB_PARAMS, config.SEED)
+    base, imp = common.permutation_importance(model, frame, config.FEATURES, config.TARGET,
+                                              n_repeats=5, seed=config.SEED)
+    # cyan_median carries the signal; shuffling it must hurt AUC more than shuffling area.
+    assert imp["cyan_median"][0] > imp["area_sqkm"][0]

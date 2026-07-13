@@ -685,7 +685,7 @@
   ]
  },
  "families": {
-  "window": "2024-07 .. 2026 held-out test, h=1, ALL features (pre-ablation)",
+  "window": "2024-07 .. 2026 held-out test, h=1, all features + climatology (pre-ablation)",
   "rows": [
    {
     "label": "Persistence",
@@ -727,43 +727,43 @@
     "onset_auc": 0.918
    },
    {
-    "label": "GLM \u00b7 logistic (all features)",
+    "label": "GLM \u00b7 logistic (all features + clim)",
+    "kind": "family",
+    "auc": 0.983,
+    "aucpr": 0.955,
+    "brier": 0.043,
+    "mcc": 0.856,
+    "within": 0.904,
+    "flipmcc": -0.512,
+    "flipauc": 0.164,
+    "onset_mcc": 0.377,
+    "onset_auc": 0.931
+   },
+   {
+    "label": "HistGBM (all features + clim)",
     "kind": "family",
     "auc": 0.98,
-    "aucpr": 0.948,
-    "brier": 0.044,
-    "mcc": 0.851,
-    "within": 0.884,
-    "flipmcc": -0.711,
-    "flipauc": 0.059,
-    "onset_mcc": 0.292,
-    "onset_auc": 0.908
+    "aucpr": 0.953,
+    "brier": 0.043,
+    "mcc": 0.861,
+    "within": 0.897,
+    "flipmcc": -0.303,
+    "flipauc": 0.291,
+    "onset_mcc": 0.466,
+    "onset_auc": 0.929
    },
    {
-    "label": "HistGBM (all features)",
+    "label": "XGBoost (all features + clim)",
     "kind": "family",
-    "auc": 0.985,
-    "aucpr": 0.963,
-    "brier": 0.04,
-    "mcc": 0.863,
-    "within": 0.893,
-    "flipmcc": -0.506,
-    "flipauc": 0.152,
-    "onset_mcc": 0.398,
-    "onset_auc": 0.935
-   },
-   {
-    "label": "XGBoost (all features)",
-    "kind": "family",
-    "auc": 0.985,
-    "aucpr": 0.963,
-    "brier": 0.04,
-    "mcc": 0.859,
-    "within": 0.893,
-    "flipmcc": -0.621,
-    "flipauc": 0.093,
-    "onset_mcc": 0.28,
-    "onset_auc": 0.933
+    "auc": 0.984,
+    "aucpr": 0.96,
+    "brier": 0.043,
+    "mcc": 0.858,
+    "within": 0.902,
+    "flipmcc": -0.408,
+    "flipauc": 0.227,
+    "onset_mcc": 0.437,
+    "onset_auc": 0.94
    }
   ]
  }

@@ -1,4 +1,10 @@
-# Held-out evaluation - lean 2-feature model vs. baselines
+> ⚠️ **STALE — regenerate.** The pipeline now ships the optimized **HistGBM** lean model, but the
+> table below is from the **previous logistic-GLM** run and was not regenerated in this change (the
+> raw CyAN rasters are not in this checkout). Refresh with `python 03_train.py && python 04_evaluate.py`.
+> Study reference for the shipped HistGBM at **h=1**: all-sample AUC **0.982** · onset-AUC **0.916** ·
+> onset-MCC **0.314** (`../../models/outputs/exp_feature_ablation.md`). See `REGENERATE.md`.
+
+# Held-out evaluation - lean 2-feature model vs. baselines  (SUPERSEDED — previous logistic run)
 
 Features: `cyan_median + area_sqkm`  |  target: median CyAN DN >= 130 (WHO AL1)  |  test = target week >= 2024-07-01.
 AUC 95% CIs (brackets) are block-bootstrapped by lake.

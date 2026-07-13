@@ -375,12 +375,14 @@ many usable matches survive resolution/cloud constraints? Result: a real-but-thi
 ### 6.5b `ex-operational-poc/` — the operational lean-model workflow
 
 A deliberately-minimal, **self-contained** pipeline that ingests → prepares → trains → evaluates →
-runs the deployable lean 2-feature model (`cyan_median` + `area_sqkm`), forecasting WHO-AL1 blooms
+runs the deployable lean 2-feature model — a **HistGradientBoostingClassifier** on `cyan_median` +
+`area_sqkm`, the architecture the study selected for this feature set — forecasting WHO-AL1 blooms
 0–4 weeks ahead for the 133 Florida lakes. Five numbered steps (`01_ingest`…`05_predict`) over a
-tested core (`common.py`), with the autoregressive-leakage handling documented and unit-tested, and
-real committed outputs (models, held-out metrics vs. baselines, a live forecast). It reuses only the
-repo's cached CyAN rasters + FL-lakes layer at runtime; the broader study (`models/`) is what
-selected this 2-feature model. Fully mapped in **[`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md)**.
+tested core (`common.py`), with the autoregressive-leakage handling documented and unit-tested. It
+reuses only the repo's cached CyAN rasters + FL-lakes layer at runtime; the broader study (`models/`)
+is what selected both the 2 features **and** the tree architecture over a logistic GLM (better
+held-out onset skill). Fully mapped in **[`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md)**. *(The
+committed `outputs/` are pending regeneration to the HistGBM model — see `ex-operational-poc/outputs/REGENERATE.md`.)*
 
 ### 6.6 `presentation/` — the deck
 

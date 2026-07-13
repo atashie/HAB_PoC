@@ -164,8 +164,8 @@
     "top": 3,
     "cls": "hydroclimate",
     "color": "#4c956c",
-    "dataset": "ERA5",
-    "dcolor": "#3b82c4"
+    "dataset": "NWIS / WQP",
+    "dcolor": "#1f9e89"
    },
    {
     "label": "Nutrients (N / P)",
@@ -279,6 +279,7 @@
    "ERA5": "#3b82c4",
    "WQP": "#e07b39",
    "NWIS": "#2e7d5b",
+   "NWIS / WQP": "#1f9e89",
    "Static (NHD / BasinATLAS)": "#9aa5b1",
    "Not in our stack": "#c3ccd2"
   }

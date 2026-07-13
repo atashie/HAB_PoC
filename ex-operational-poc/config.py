@@ -48,3 +48,27 @@ TRAIN_END = "2022-07-01"                   # train:  target week <  TRAIN_END
 VAL_END = "2024-07-01"                     # val:    TRAIN_END <= target week < VAL_END
 #                                            test:   target week >= VAL_END
 SEED = 42
+
+# --- Model architecture: the OPTIMIZED lean model -------------------------
+# We ship a HistGradientBoostingClassifier on the two lean features. This is the
+# architecture the full study selected: on the identical greedy 2-feature set, the
+# gradient-boosted trees materially out-discriminate a logistic GLM on the decision-
+# relevant early-warning metric (h=1 onset-AUC 0.916 vs 0.823, onset-MCC 0.314 vs 0.158;
+# see ../models/outputs/exp_feature_ablation.md and presentation/story.html). The trees
+# capture the non-linear cyan_median x area interaction a linear logit cannot. These
+# hyperparameters are copied verbatim from the study harness (../models/model/
+# experiment_lib.py::_hgb) so this operational pipeline reproduces the shipped model.
+HGB_PARAMS = dict(
+    max_iter=400,
+    learning_rate=0.06,
+    max_leaf_nodes=31,
+    l2_regularization=1.0,
+    early_stopping=True,       # internal early stop on a seeded 10% holdout of the fit data
+    validation_fraction=0.1,
+    n_iter_no_change=20,
+)
+# Where 03_train persists one fitted booster per horizon (a serialized sklearn estimator,
+# read back by 04_evaluate). Trees are not human-readable coefficients like the old GLM,
+# so we preserve the "why" via permutation importance + a partial-dependence readout in
+# models.json rather than by inspecting weights.
+MODEL_DIR = OUTPUTS / "models"

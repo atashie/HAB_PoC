@@ -142,31 +142,80 @@ def climatology_scores(df: pd.DataFrame, lut: dict, glob: float) -> np.ndarray:
     return np.array([lut.get((c, w), glob) for c, w in zip(df["comid"], woy)])
 
 
-# --- Transparent model scoring --------------------------------------------
-# We fit a logistic regression with scikit-learn (03_train) but persist only its
-# standardizer stats + coefficients as JSON, and score with this 3-line function.
-# The model is small enough to be fully human-readable, and scoring needs no sklearn.
-def logreg_score(params: dict, X: np.ndarray) -> np.ndarray:
-    """P(bloom) for rows X (columns in params['features'] order)."""
-    mean = np.asarray(params["mean"]); scale = np.asarray(params["scale"])
-    coef = np.asarray(params["coef"]); b = float(params["intercept"])
-    z = ((np.asarray(X, float) - mean) / scale) @ coef + b
-    return 1.0 / (1.0 + np.exp(-z))
+# --- Model: the optimized lean HistGBM ------------------------------------
+# The study selected gradient-boosted trees over the logistic GLM on this exact
+# 2-feature set (better early-warning skill; ../models/outputs/exp_feature_ablation.md).
+# A tree ensemble is not readable coefficients, so we persist the fitted estimator with
+# joblib and recover the "why" through permutation importance + partial dependence
+# (see `permutation_importance` / `partial_dependence_1d` below), not by reading weights.
+def fit_hgb(df: pd.DataFrame, features, target: str, params: dict, seed: int = 42):
+    """Fit the lean HistGradientBoostingClassifier and return the fitted estimator.
 
-
-def fit_logreg(df: pd.DataFrame, features, target: str, seed: int = 42) -> dict:
-    """Fit a standardized logistic regression and return its params as a plain dict
-    (the same shape `logreg_score` consumes). sklearn is imported here so that merely
-    *scoring* a saved model never needs sklearn installed."""
-    from sklearn.linear_model import LogisticRegression
-    from sklearn.preprocessing import StandardScaler
+    `params` are the study's hyperparameters (config.HGB_PARAMS); `seed` fixes both the
+    boosting RNG and its internal early-stopping holdout so the fit is deterministic.
+    sklearn is imported here so that modules which only *load & score* a saved model do
+    not pay the import at collection time."""
+    from sklearn.ensemble import HistGradientBoostingClassifier
     X = df[list(features)].to_numpy(float)
     y = df[target].to_numpy(int)
-    sc = StandardScaler().fit(X)
-    lr = LogisticRegression(max_iter=1000, random_state=seed).fit(sc.transform(X), y)
-    return {"features": list(features), "mean": sc.mean_.tolist(),
-            "scale": sc.scale_.tolist(), "coef": lr.coef_[0].tolist(),
-            "intercept": float(lr.intercept_[0])}
+    model = HistGradientBoostingClassifier(random_state=seed, **params)
+    model.fit(X, y)
+    return model
+
+
+def hgb_score(model, X: np.ndarray) -> np.ndarray:
+    """P(bloom) for rows X (columns in the model's fitted feature order)."""
+    return model.predict_proba(np.asarray(X, float))[:, 1]
+
+
+def save_model(model, path) -> None:
+    """Persist a fitted estimator (joblib). The deployable model artifact."""
+    import joblib
+    from pathlib import Path
+    Path(path).parent.mkdir(parents=True, exist_ok=True)
+    joblib.dump(model, path)
+
+
+def load_model(path):
+    import joblib
+    return joblib.load(path)
+
+
+# --- Explainability: behaviour, not weights -------------------------------
+def permutation_importance(model, df, features, target, n_repeats: int = 20, seed: int = 42):
+    """Permutation feature importance = mean drop in AUC when a feature is shuffled.
+    The transparent stand-in for GLM coefficients: it shows how hard the model leans on
+    each feature. Returns (base_auc, {feature: (mean_drop, std_drop)}), deterministic."""
+    rng = np.random.default_rng(seed)
+    X = df[list(features)].to_numpy(float)
+    y = df[target].to_numpy(int)
+    base = auc(y, hgb_score(model, X))
+    imp = {}
+    for j, f in enumerate(features):
+        drops = []
+        for _ in range(n_repeats):
+            Xp = X.copy()
+            Xp[:, j] = rng.permutation(Xp[:, j])
+            drops.append(base - auc(y, hgb_score(model, Xp)))
+        imp[f] = (float(np.mean(drops)), float(np.std(drops)))
+    return float(base), imp
+
+
+def partial_dependence_1d(model, df, features, feature: str, grid=None, n: int = 9):
+    """1-D partial dependence: mean P(bloom) as `feature` sweeps its observed range with
+    the other feature(s) held at each row's real value. A readable 'how risk responds to
+    CyAN' curve for the deck/tool, replacing the old logit coefficient."""
+    feats = list(features)
+    j = feats.index(feature)
+    X = df[feats].to_numpy(float)
+    col = X[:, j]
+    if grid is None:
+        grid = np.quantile(col[~np.isnan(col)], np.linspace(0.05, 0.95, n))
+    curve = []
+    for v in grid:
+        Xg = X.copy(); Xg[:, j] = v
+        curve.append(float(hgb_score(model, Xg).mean()))
+    return [float(v) for v in grid], curve
 
 
 def best_f1_threshold(y, p) -> float:
@@ -206,6 +255,28 @@ def onset_auc(y, p, persistence) -> float:
     if m.sum() == 0:
         return float("nan")
     return auc(np.asarray(y)[m], np.asarray(p)[m])
+
+
+def mcc(y, pred) -> float:
+    """Matthews correlation. NaN when labels are single-class (undefined); 0.0 when the
+    prediction is constant on mixed labels (no skill) — matches sklearn without its warning."""
+    from sklearn.metrics import matthews_corrcoef
+    y = np.asarray(y, int)
+    pred = np.asarray(pred, int)
+    if len(np.unique(y)) < 2:
+        return float("nan")
+    if len(np.unique(pred)) < 2:
+        return 0.0
+    return float(matthews_corrcoef(y, pred))
+
+
+def onset_mcc(y, p, persistence, thr) -> float:
+    """Onset alert quality: MCC at threshold `thr`, on currently-clear lake-weeks only —
+    the thresholded early-warning metric the deck headlines (h=1 lean onset-MCC)."""
+    m = np.asarray(persistence) == 0
+    if m.sum() == 0:
+        return float("nan")
+    return mcc(np.asarray(y)[m], (np.asarray(p)[m] >= thr).astype(int))
 
 
 def block_bootstrap_auc_ci(y, p, groups, metric="auc", persistence=None,

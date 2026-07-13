@@ -72,11 +72,12 @@ def build_charts():
     # item 5: map each literature feature to the dataset WE ingest to cover it (so the panel reads
     # "precip matters -> we bring in ERA5"). Two features are honestly "not in our stack".
     DATASET_OF = {"satellite_reflectance": "CyAN", "prior_bloom_state": "CyAN",
-                  "water_temperature": "ERA5", "precipitation": "ERA5", "wind_mixing": "ERA5",
+                  "water_temperature": "NWIS / WQP", "precipitation": "ERA5", "wind_mixing": "ERA5",
                   "nutrients": "WQP", "pH": "WQP", "dissolved_oxygen": "WQP",
                   "hydrology_flow": "NWIS", "lake_morphology": "Static (NHD / BasinATLAS)",
                   "phycocyanin_signal": "Not in our stack", "geolocation": "Not in our stack"}
     DATASET_COLOR = {"CyAN": "#8c6bb1", "ERA5": "#3b82c4", "WQP": "#e07b39", "NWIS": "#2e7d5b",
+                     "NWIS / WQP": "#1f9e89",
                      "Static (NHD / BasinATLAS)": "#9aa5b1", "Not in our stack": "#c3ccd2"}
     ORG_LABEL = {"federal": "Federal gov't", "state-local": "State / local gov't", "private": "Private sector"}
     MTYPE_LABEL = {"empirical-RS": "Empirical satellite", "statistical-ML": "Statistical / ML",
@@ -538,10 +539,10 @@ def build_results():
         SEL = [("persistence", "Persistence", "baseline"),
                ("climatology", "Climatology", "baseline"),
                ("cyan_ladder / histgbm", "CyAN ladder (HistGBM)", "ladder"),
-               ("fusion_full / logistic", "GLM · logistic (all features)", "family"),
-               ("fusion_full / histgbm", "HistGBM (all features)", "family"),
-               ("fusion_full / xgboost", "XGBoost (all features)", "family")]
-        res["families"] = {"window": "2024-07 .. 2026 held-out test, h=1, ALL features (pre-ablation)",
+               ("fusion_full+clim / logistic", "GLM · logistic (all features + clim)", "family"),
+               ("fusion_full+clim / histgbm", "HistGBM (all features + clim)", "family"),
+               ("fusion_full+clim / xgboost", "XGBoost (all features + clim)", "family")]
+        res["families"] = {"window": "2024-07 .. 2026 held-out test, h=1, all features + climatology (pre-ablation)",
                            "rows": [dict(label=lab, kind=kind, **fam[key]) for key, lab, kind in SEL if key in fam]}
     else:
         print("  WARN: experiments.md families not parsed")

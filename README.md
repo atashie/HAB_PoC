@@ -83,8 +83,9 @@ ERA5 / ECMWF (weather)         ┘    models/  → prepare a fused lake-week tab
    grounds the modeling choices.
 
 A standalone, minimal **operational slice** lives in **`ex-operational-poc/`**: an end-to-end
-pipeline (ingest → prepare → train → evaluate → run) for just the deployable lean 2-feature model,
-with the autoregressive-leakage handling documented and tested.
+pipeline (ingest → prepare → train → evaluate → run) for just the deployable lean 2-feature model —
+the study-selected **HistGBM** on `cyan_median` + `area_sqkm` — with the autoregressive-leakage
+handling documented and tested.
 
 For the full folder/document map see **[`ARCHITECTURE.md`](ARCHITECTURE.md)**; for the function-level
 code tour see **[`CODE-MAP.md`](CODE-MAP.md)** (and **[`CODE-MAP-PoC-SIMPLE.md`](CODE-MAP-PoC-SIMPLE.md)**

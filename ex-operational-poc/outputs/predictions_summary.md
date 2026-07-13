@@ -1,4 +1,8 @@
-# Operational forecast - issued from CyAN week 2026-06-21
+> ⚠️ **STALE — regenerate.** This forecast (and `predictions.csv`) is from the **previous
+> logistic-GLM** model, not the HistGBM model the pipeline now ships. Re-run
+> `python 03_train.py && python 05_predict.py` against the CyAN cache to refresh. See `REGENERATE.md`.
+
+# Operational forecast - issued from CyAN week 2026-06-21  (SUPERSEDED — previous logistic run)
 
 - Model: lean logistic regression on `cyan_median + area_sqkm`, one per horizon, refit on all labelled history.
 - Target weeks: {'h0': '2026-06-28', 'h1': '2026-07-05', 'h2': '2026-07-12', 'h3': '2026-07-19', 'h4': '2026-07-26'}

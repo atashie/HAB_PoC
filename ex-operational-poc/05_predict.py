@@ -26,9 +26,11 @@ def main():
              .rename(columns={"COMID": "comid", "GNIS_NAME": "name"}))
     tuned = json.loads((config.OUTPUTS / "models.json").read_text(encoding="utf-8"))["horizons"]
 
-    # Deployed model = refit on ALL labelled history, per horizon.
-    deployed = {h: common.fit_logreg(common.build_horizon_frame(panel, h),
-                                     config.FEATURES, config.TARGET, config.SEED)
+    # Deployed model = the optimized lean HistGBM, refit on ALL labelled history per horizon
+    # (more data -> better deployed model; still leakage-safe, since every row's feature
+    # already sits (h+1) weeks before its target).
+    deployed = {h: common.fit_hgb(common.build_horizon_frame(panel, h),
+                                  config.FEATURES, config.TARGET, config.HGB_PARAMS, config.SEED)
                 for h in config.HORIZONS}
 
     # Freshest valid CyAN per lake (the operational feature "as of now").
@@ -41,7 +43,7 @@ def main():
     out = latest[["comid", "feature_date", "cyan_median", "area_sqkm"]].copy()
     out["blooming_now"] = latest["bloom"].astype(int).to_numpy()
     for h in config.HORIZONS:
-        out[f"risk_h{h}"] = (common.logreg_score(deployed[h], X) * 100).round(1)
+        out[f"risk_h{h}"] = (common.hgb_score(deployed[h], X) * 100).round(1)
     out = out.merge(names, on="comid", how="left").sort_values("risk_h1", ascending=False)
 
     config.OUTPUTS.mkdir(parents=True, exist_ok=True)
@@ -53,7 +55,7 @@ def main():
     new_risk = out[out["blooming_now"] == 0].head(10)
     thr = tuned["1"]["threshold"] * 100
     md = [f"# Operational forecast - issued from CyAN week {issue_week.date()}", "",
-          f"- Model: lean logistic regression on `{' + '.join(config.FEATURES)}`, one per horizon, "
+          f"- Model: optimized lean HistGBM on `{' + '.join(config.FEATURES)}`, one per horizon, "
           f"refit on all labelled history.", f"- Target weeks: {targets}",
           f"- Lakes forecast: {len(out)}   |   currently blooming: {int(out['blooming_now'].sum())}",
           f"- h1 alert threshold (val-tuned): {thr:.0f}%", "",

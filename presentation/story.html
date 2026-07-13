@@ -337,7 +337,8 @@
     <h2>The literature’s top predictors map onto the data we bring in.</h2>
     <p class="sub" style="max-width:1040px">From the same review: which predictors the <b>14 published freshwater HAB
     models</b> use (10 report a feature list). Each bar is <b>coloured by the dataset we ingest</b> to cover it —
-    so “temperature and precipitation matter” reads directly as “we bring in ERA5.”</p>
+    so “precipitation and wind matter” reads directly as “we bring in ERA5,” and “water temperature matters” as
+    “we bring in NWIS / WQP.”</p>
     <div class="split rev">
       <div class="col-txt">
         <ul class="tight">
@@ -362,7 +363,7 @@
         <ul class="lim">
           <li>AI-conducted review, <b>no human domain-expert</b> validation; feature lists depend on how each paper reports importance.</li>
           <li>Importance measures differ across studies (SHAP, permutation, coefficients) and are <b>not directly comparable</b>.</li>
-          <li>Feature→dataset mapping is <b>our</b> assignment of each literature feature to a primary source in our stack; several features have more than one possible source (e.g. temperature: ERA5, WQP, or NWIS).</li>
+          <li>Feature→dataset mapping is <b>our</b> assignment of each literature feature to a primary source in our stack; several features have more than one possible source (e.g. water temperature is measured in-situ by both NWIS gages and WQP, and ERA5 also carries a modelled lake-surface temperature).</li>
         </ul>
       </div></details>
       <details class="drop terms"><summary>Terms</summary><div class="body">
@@ -690,7 +691,6 @@
         <div class="metric-gloss">
           <div><b>AUC-ROC</b> — ranks a random bloom above a random non-bloom this often; 0.5 = chance, 1 = perfect.</div>
           <div><b>AUC-PR</b> — like AUC-ROC but focused on the rare positive class.</div>
-          <div><b>Brier</b> — mean squared error of the probability; <em>lower is better</em>.</div>
           <div><b>MCC</b> — a balanced correlation between prediction and truth; −1…+1, fair under imbalance.</div>
           <div><b>Accuracy</b> — share of lake-weeks called correctly (weak under imbalance).</div>
           <div><b>onset (positive flip)</b> — restrict to currently-clear weeks; score catching the ones that become a bloom — the early-warning test. Distinct from a both-direction “transition” metric that also counts blooms clearing.</div>
@@ -769,12 +769,14 @@
       </div>
     </div>
     <div style="margin-top:6px"><div id="chart-families"></div>
-      <div class="fig-cap">All-feature model families vs baselines and the CyAN-only ladder (h=1, held-out 2024–2026): <b>AUC-ROC</b> and
-        <b>MCC</b> on all weeks, plus the <b>onset</b> (positive-flip) decision metric — <b>onset-AUC</b> and <b>onset-MCC</b> (lighter bars).
-        <span style="color:#e60000;font-weight:700">Red outline</span> = the three families we actually test (GLM · HistGBM · XGBoost);
-        the rest are reference baselines. On aggregate the families are near-identical; on the onset alert they <b>don’t cleanly separate
-        from the baselines</b> (onset-MCC: HistGBM 0.40 leads, but XGBoost 0.28 and GLM 0.29 sit below even climatology’s 0.36) — architecture
-        barely matters and seasonality competes. From <code>models/outputs/experiments.md</code>.</div></div>
+      <div class="fig-cap">Full-fusion model families (all 44 features <b>incl. climatology</b>) vs baselines and the CyAN-only ladder
+        (h=1, held-out 2024–2026): <b>AUC-ROC</b> and <b>MCC</b> on all weeks, plus the <b>onset</b> (positive-flip) decision metric —
+        <b>onset-AUC</b> and <b>onset-MCC</b> (lighter bars). <span style="color:#e60000;font-weight:700">Red outline</span> = the three
+        families we actually test (GLM · HistGBM · XGBoost), each on the same 44-feature set (incl. climatology) that slide 17’s full-fusion model uses;
+        the rest are reference baselines (the CyAN AR-ladder stays clim-free). On aggregate AUC the families are near-identical
+        (0.980–0.984); on the onset alert all three edge above climatology (onset-MCC: HistGBM 0.47 leads, XGBoost 0.44 and GLM 0.38 vs
+        climatology’s 0.36) — but the separation is modest and, as slide 17 shows, <b>not yet proven</b>. Architecture barely moves
+        aggregate skill; on onset, HistGBM leads. From <code>models/outputs/experiments.md</code>.</div></div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
         <div class="cite"><b>Model-family choice</b> — <code>models/DESIGN.md</code> §7 (four explainable classifiers: GLM · SVC · XGBoost · GAM). EPA’s own SVC/RF/DNN/LSTM/RNN/GRU comparison (Schaeffer 2024, Table S1) shows no neural-net advantage on this task.</div>
@@ -1364,24 +1366,24 @@
              'EPA @0.10':'EPA forecast (@0.10, deployed)','EPA @0.50':'EPA forecast (@0.50)'};
     function row(p,hi){ var r=byp[p]; if(!r) return '';
       return '<tr'+(hi?' class="hi"':'')+'><td>'+(LAB[p]||p)+'</td><td>'+fmt(r.auc)+'</td><td>'+fmt(r.aucpr)+'</td>'
-        +'<td>'+fmt(r.brier)+'</td><td>'+fmt(r.mcc)+'</td><td>'+fmt(r.acc)+'</td><td>'+fmt(r.onset_auc)+'</td>'
+        +'<td>'+fmt(r.mcc)+'</td><td>'+fmt(r.acc)+'</td><td>'+fmt(r.onset_auc)+'</td>'
         +'<td>'+fmt(r.onset_mcc)+'</td></tr>'; }
     var rows=['persistence','climatology','CyAN-ladder','EPA @0.10'].map(function(p){return row(p,p==='EPA @0.10');}).join('');
     var epa='';
     if(byp['EPA @0.10']&&byp['EPA @0.50']){
       var a=byp['EPA @0.10'], b=byp['EPA @0.50'];
       epa='<details class="drop"><summary>EPA at its two cutoffs (0.10 deployed vs 0.50) — detail</summary><div class="body">'
-        +'<p class="sub">Threshold-free metrics are identical across cutoffs (AUC '+fmt(a.auc)+', Brier '+fmt(a.brier)+'); only operating-point and onset metrics move.</p>'
+        +'<p class="sub">Threshold-free metrics are identical across cutoffs (AUC '+fmt(a.auc)+'); only operating-point and onset metrics move.</p>'
         +'<table class="res" style="max-width:660px"><thead><tr><th>EPA cutoff</th><th>MCC</th><th>Acc</th><th>onset-MCC</th><th>onset-Recall</th><th>meaning</th></tr></thead><tbody>'
         +'<tr><td>0.10 (deployed)</td><td>'+fmt(a.mcc)+'</td><td>'+fmt(a.acc)+'</td><td>'+fmt(a.onset_mcc)+'</td><td>'+fmt(a.onset_recall)+'</td><td>health-protective (catches more onsets, ~½ alerts false)</td></tr>'
         +'<tr><td>0.50 (accuracy-opt)</td><td>'+fmt(b.mcc)+'</td><td>'+fmt(b.acc)+'</td><td>'+fmt(b.onset_mcc)+'</td><td>'+fmt(b.onset_recall)+'</td><td>fewer alerts, misses more onsets</td></tr></tbody></table></div></details>';
     }
     host.innerHTML='<table class="res"><thead><tr><th>Predictor (shared FL 2025, W-2/h1, n=4,527)</th>'
-      +'<th>AUC-ROC</th><th>AUC-PR</th><th>Brier</th><th>MCC</th><th>Acc</th>'
+      +'<th>AUC-ROC</th><th>AUC-PR</th><th>MCC</th><th>Acc</th>'
       +'<th title="AUC on positive flips only">onset-AUC</th><th title="MCC on positive flips only">onset-MCC</th></tr></thead><tbody>'
       +rows+'</tbody></table>'
       +'<p class="sub"><b>onset</b> = positive flips only — currently-clear weeks (persistence 0) that become a bloom. '
-      +'AUC-ROC/AUC-PR/Brier are threshold-free; MCC/Acc use in-sample thresholds (optimistic); EPA at fixed 0.10. Brier: lower is better.</p>'+epa;
+      +'AUC-ROC/AUC-PR are threshold-free; MCC/Acc use in-sample thresholds (optimistic); EPA at fixed 0.10.</p>'+epa;
   }
   /* ---------- Plotly: block importance — pooled AUC-ROC + onset-MCC in ONE figure, shared 0–1 x-axis ---------- */
   function chartAblation(){
@@ -1465,7 +1467,7 @@
     var el=document.getElementById('chart-families'); if(!el||!S.results||!S.results.families) return;
     var rows=S.results.families.rows;
     var SHORT={'Persistence':'Persist.','Climatology':'Clim.','CyAN ladder (HistGBM)':'CyAN ladder',
-      'GLM · logistic (all features)':'GLM','HistGBM (all features)':'HistGBM','XGBoost (all features)':'XGBoost'};
+      'GLM · logistic (all features + clim)':'GLM','HistGBM (all features + clim)':'HistGBM','XGBoost (all features + clim)':'XGBoost'};
     var x=rows.map(function(r){return SHORT[r.label]||r.label;});
     // red outline = the models WE test (GLM / HistGBM / XGBoost); baselines + CyAN ladder are references
     var isOurs=rows.map(function(r){return r.kind==='family';});
