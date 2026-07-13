@@ -72,12 +72,11 @@ def build_charts():
     # item 5: map each literature feature to the dataset WE ingest to cover it (so the panel reads
     # "precip matters -> we bring in ERA5"). Two features are honestly "not in our stack".
     DATASET_OF = {"satellite_reflectance": "CyAN", "prior_bloom_state": "CyAN",
-                  "water_temperature": "NWIS / WQP", "precipitation": "ERA5", "wind_mixing": "ERA5",
+                  "water_temperature": "NWIS", "precipitation": "ERA5", "wind_mixing": "ERA5",
                   "nutrients": "WQP", "pH": "WQP", "dissolved_oxygen": "WQP",
                   "hydrology_flow": "NWIS", "lake_morphology": "Static (NHD / BasinATLAS)",
                   "phycocyanin_signal": "Not in our stack", "geolocation": "Not in our stack"}
     DATASET_COLOR = {"CyAN": "#8c6bb1", "ERA5": "#3b82c4", "WQP": "#e07b39", "NWIS": "#2e7d5b",
-                     "NWIS / WQP": "#1f9e89",
                      "Static (NHD / BasinATLAS)": "#9aa5b1", "Not in our stack": "#c3ccd2"}
     ORG_LABEL = {"federal": "Federal gov't", "state-local": "State / local gov't", "private": "Private sector"}
     MTYPE_LABEL = {"empirical-RS": "Empirical satellite", "statistical-ML": "Statistical / ML",

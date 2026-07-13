@@ -338,7 +338,7 @@
     <p class="sub" style="max-width:1040px">From the same review: which predictors the <b>14 published freshwater HAB
     models</b> use (10 report a feature list). Each bar is <b>coloured by the dataset we ingest</b> to cover it —
     so “precipitation and wind matter” reads directly as “we bring in ERA5,” and “water temperature matters” as
-    “we bring in NWIS / WQP.”</p>
+    “we bring in NWIS.”</p>
     <div class="split rev">
       <div class="col-txt">
         <ul class="tight">
@@ -721,11 +721,11 @@
           single 1-week forecast. EPA is a <b>current-week nowcast</b> (one lead time), shown as a single point (≈0.93).</div>
       </div>
       <div class="col-txt">
-        <p class="sub" style="max-width:560px">These are the <b>reference / baseline</b> predictors and the CyAN ladder — <b>not</b>
-        our intended operational model (its own 0–4-week curve comes later). The result to read here: <b>the available signal
-        decays with lead time as the freshest CyAN goes stale, and each baseline degrades differently</b> — <b>persistence</b>
-        falls fastest, the <b>CyAN ladder</b> rides CyAN autocorrelation and decays gently,
-        <b>climatology</b> is flat (season-only, lead-independent), and <b>EPA</b> is a fixed one-week nowcast.</p>
+        <ul class="tight" style="max-width:560px">
+          <li>These are <b>reference / baseline</b> predictors and the CyAN ladder — <b>not</b> our operational model (its 0–4-week curve comes later).</li>
+          <li><b>The signal decays with lead time</b> as the freshest CyAN goes stale.</li>
+          <li>Each baseline degrades differently: <b>persistence</b> falls fastest, the <b>CyAN ladder</b> decays gently, <b>climatology</b> is flat, and <b>EPA</b> is a fixed one-week nowcast.</li>
+        </ul>
         <div class="step-meta">
           <details class="drop limits"><summary>Limitations</summary><div class="body">
             <ul class="lim">
@@ -791,23 +791,23 @@
     <div class="split">
       <div class="col-fig">
         <div id="chart-ablation"></div>
-        <div class="fig-cap">One figure, two metrics on a shared 0–1 axis: for each feature block the <b>top</b> bar is pooled <b>AUC-ROC</b>
+        <details class="drop"><summary>How to read this figure</summary><div class="body">One figure, two metrics on a shared 0–1 axis: for each feature block the <b>top</b> bar is pooled <b>AUC-ROC</b>
           (full model 0.98) and the bar just <b>below</b> it is the <b>onset alert</b> (onset-MCC, full model 0.33; mean of 20 shuffles ± SD).
           The <span style="color:#e60000;font-weight:700">bright-red</span> tip is the skill <b>lost when that block is shuffled</b>.
           <b>CyAN dominates both.</b> On onset-MCC the non-CyAN blocks show a modest drop that pooled AUC can’t see — but that is permutation
           <em>reliance</em> under broken correlations, not unique value (block <em>removal</em> barely moves skill; no single non-CyAN cluster
-          exceeds 0.04). From <code>models/outputs/fusion_eval.md</code>.</div>
+          exceeds 0.04). From <code>models/outputs/fusion_eval.md</code>.</div></details>
       </div>
       <div class="col-txt">
         <ul class="tight">
           <li><b>The general bloom pattern (AUC-ROC) is almost all CyAN autocorrelation</b> — shuffling it costs ~0.27; every other family costs only <b>thousandths</b>. A 2-feature model (<code>cyan_median</code> + area) matches all 44.</li>
           <li><b>But <em>when</em> a clear lake switches to bloom (onset-MCC), the literature's driver families matter far more:</b> shuffling <span style="color:var(--wqp);font-weight:700">in-situ</span>, <span style="color:var(--era5);font-weight:700">weather</span> or static each costs <b>roughly 0.05–0.09</b> (vs ~0 on AUC) — a real fraction of CyAN's 0.25. The <span style="color:var(--wqp);font-weight:700">nutrient</span>/<span style="color:var(--era5);font-weight:700">temperature</span> drivers the literature cites for bloom <em>initiation</em> surface here, not in the general pattern.</li>
-          <li><b>Honest caveat:</b> this is permutation <em>reliance</em> and still below CyAN; block-removal barely moves aggregate skill and no single cluster tops 0.04 — suggestive, not a proven unique contribution.</li>
+          <li><b>Greedy backward elimination confirms it:</b> trimming 44 features to just <code>cyan_median</code> + lake area holds held-out AUC (0.982 vs 0.980) — real-time CyAN carries the skill.</li>
         </ul>
-        <div class="note honest"><span class="lbl">The differentiation that matters:</span> CyAN's own recent history swamps everything for the
+        <details class="drop"><summary>The differentiation that matters</summary><div class="body">CyAN's own recent history swamps everything for the
           <b>general week-to-week pattern</b> — but the literature's <span style="color:var(--era5);font-weight:700">temperature</span> /
           <span style="color:var(--wqp);font-weight:700">nutrient</span> drivers re-emerge as materially important for the harder
-          <b>state-switch (onset)</b> question. The literature explains <em>why</em> lakes bloom; those drivers help most with <em>when</em> a clear lake tips over.</div>
+          <b>state-switch (onset)</b> question. The literature explains <em>why</em> lakes bloom; those drivers help most with <em>when</em> a clear lake tips over.</div></details>
       </div>
     </div>
     <div class="note insight"><span class="lbl">Selection result (greedy backward elimination):</span> stripping 44 features to
@@ -847,7 +847,7 @@
       </tbody>
     </table>
     </div>
-    <div class="note honest"><span class="lbl">The answer to the open question:</span> on this 2-year held-out test the full
+    <details class="drop"><summary>The answer to the open question</summary><div class="body">on this 2-year held-out test the full
       44-feature <b>fusion + clim</b> model discriminates onsets <b>better</b> than the 2-feature lean model —
       <b>onset-MCC 0.47 vs 0.31, onset-AUC 0.93 vs 0.92</b> — a gap split roughly half-and-half between the <code>clim</code>
       base-rate feature (+0.07) and the wider CyAN + driver set (+0.08). That is a genuinely <b>tantalizing</b> hint that the drivers may
@@ -855,7 +855,7 @@
       onset-AUC lift's bootstrap CI includes 0, and we have not significance-tested the onset-MCC gap. So we flag full fusion + clim as a
       <b>promising avenue to validate next</b> (the “go deep” direction) — and, because the <b>lean</b> model is competitive with EPA,
       is <b>less tied to per-lake identity</b> (no <code>clim</code> feature; unseen-lake generalization is untested), and is trivially cheap
-      to run, we <b>ship the lean CyAN model + EPA for the PoC</b>.</div>
+      to run, we <b>ship the lean CyAN model + EPA for the PoC</b>.</div></details>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
         <div class="cite"><code>models/outputs/exp_feature_ablation.md</code> (greedy backward, 2-yr test) for the models, lean &amp; EPA; the <b>climatology</b> row is the train+val baseline from <code>experiments.md</code> (fit on the same train+val the models are refit on — the fair comparator, consistent with the lead-by-lead slide). Synopsis <code>models/RESULTS-SUMMARY.md</code> §4/§8.</div>
@@ -883,7 +883,6 @@
           <li><b>The upward trend is an artifact, not improving skill.</b> Genuine ranking skill <em>falls</em> with lead (all-weeks AUC 0.99→0.97; onset-AUC 0.93→0.92 for the CyAN models). onset-MCC rises only because the onset base rate <b>~doubles (2.8%→5.8%)</b> and long-lead onsets are more <b>seasonal</b> — the task gets easier, the forecast doesn’t.</li>
           <li><b>General transitions stay hard:</b> the both-direction transition MCC (onset + offset) is <b>negative at every lead</b> — we forecast the bloom <em>level</em> well, the <em>change</em> poorly.</li>
         </ul>
-        <div class="note honest"><span class="lbl">The honest finding:</span> a clear mix — the alert ordering is usable and full fusion leads it through h3 (climatology edges ahead at h4), but that lead isn’t yet proven and the underlying forecast degrades with lead, as any forecast should.</div>
         <div class="step-meta">
           <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
             <div class="cite"><code>models/outputs/experiments.md</code> (onset-MCC by horizon, 2-yr window); EPA point from <code>headtohead_onset.md</code>.</div>
@@ -1037,7 +1036,7 @@
 
   <!-- v. Recommendation + sources -->
   <div class="slide" data-layout="wide"><div class="kicker">v · The recommendation</div>
-    <h2>Start small and honest, then let users choose the direction.</h2>
+    <h2>Start small, let user feedback guide the direction.</h2>
     <p>Stated suggestively, not prescriptively — my honest recommendation:</p>
     <ul class="tight">
       <li><b>Ship the simplest useful thing first (“go simple”):</b> a dashboard combining our <b>2-feature lean-CyAN model</b>
