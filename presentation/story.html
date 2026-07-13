@@ -724,7 +724,7 @@
         <p class="sub" style="max-width:560px">These are the <b>reference / baseline</b> predictors and the CyAN ladder — <b>not</b>
         our intended operational model (its own 0–4-week curve comes later). The result to read here: <b>the available signal
         decays with lead time as the freshest CyAN goes stale, and each baseline degrades differently</b> — <b>persistence</b>
-        falls fastest, the <b>CyAN ladder</b> and full <b>fusion</b> candidate ride CyAN autocorrelation and decay gently,
+        falls fastest, the <b>CyAN ladder</b> rides CyAN autocorrelation and decays gently,
         <b>climatology</b> is flat (season-only, lead-independent), and <b>EPA</b> is a fixed one-week nowcast.</p>
         <div class="step-meta">
           <details class="drop limits"><summary>Limitations</summary><div class="body">
@@ -1420,7 +1420,7 @@
   }
   /* ---------- Plotly: skill vs lead time — 5 model classes incl EPA ---------- */
   var HZ_MODELS=[['persistence','Persistence','#8a99a0','dash'],['climatology','Climatology','#b9770c','dot'],
-                 ['CyAN-ladder','CyAN ladder','#8c6bb1','solid'],['fusion','Fusion','#0f6e78','solid'],
+                 ['CyAN-ladder','CyAN ladder','#8c6bb1','solid'],
                  ['EPA','EPA forecast','#c0392b','dashdot']];
   function hzSeries(el, key, ytitle, yrange, chance){
     if(!el||!S.results||!S.results.onset_horizon) return;
