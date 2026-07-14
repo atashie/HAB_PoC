@@ -484,6 +484,15 @@
         (13 streamflow); just <b>25 of 133</b> lakes get usable NWIS signal (per-variable: water-temp 12, gage-height 24,
         discharge 21). Many Florida lakes are seepage/closed-basin and ungauged.</div>
         <div class="step-meta">
+          <details class="drop"><summary>Why so many linked gages show no data</summary><div class="body">
+            <p style="margin:2px 0 6px">A dot means an NWIS <b>monitoring location is registered</b> there — not that a sensor streams what we need. All 395 fall inside a lake +250 m, yet only <b>17 carry data</b> (13 with discharge) because we pull one narrow product: <b>daily-mean discharge / gage-height / water-temp, 2016→present</b>. A coinciding site reads “nodata” when it:</p>
+            <ul class="lim">
+              <li><b>measures something else</b> — most are discrete water-quality sample sites (nutrients, chl-a) that live in <b>WQP, not NWIS daily</b>; others are wells, tide/canal-structure, or precip sites;</li>
+              <li><b>is discontinued / out of window</b> — its daily series ended <b>before 2016</b>;</li>
+              <li><b>is partial-record only</b> — ad-hoc field visits or annual peaks, not a continuous daily series (we fetch only the <code>daily</code> collection).</li>
+            </ul>
+            <p style="margin:6px 0 2px">The deeper reason: most FL lakes are <b>seepage / closed-basin</b> — rain- and groundwater-fed, with <b>no channel to gage</b>, so there is often nothing streamflow-gageable even where a lake exists. We linked <b>everything that exists</b>; the gap is upstream, not a dropped join. (“No NWIS daily hydrology” ≠ no in-situ data — WQP still covers 123/133 lakes.)</p>
+          </div></details>
           <details class="drop limits"><summary>Limitations — basins &amp; NWIS</summary><div class="body">
             <ul class="lim">
               <li><b>Basins — watershed-median</b> attribution is coarser than an in-lake reading; a sub-basin can hold conditions the lake doesn’t.</li>
@@ -530,6 +539,7 @@
           <details class="drop terms"><summary>Terms</summary><div class="body">
             <div class="term"><b>Analyte</b> — a measured quantity (e.g. total phosphorus).</div>
             <div class="term"><b>Nutrients (N / P)</b> — nitrogen and phosphorus; the fertilisers that feed blooms.</div>
+            <div class="term"><b>Fresh</b> (dark orange) — a station whose <b>median gap between consecutive samples is ≤ 30 days</b> (samples ~monthly-or-better). A measure of sampling <em>cadence over the record</em>, <b>not</b> recency — a fresh station's value can still be weeks old at a given forecast week (that age is the separate <b>staleness</b>).</div>
           </div></details>
         </div>
       </div>
@@ -852,7 +862,7 @@
       </tbody>
     </table>
     </div>
-    <details class="drop"><summary>The answer to the open question</summary><div class="body">on this 2-year held-out test the full
+    <details class="drop" style="flex:0 0 auto;margin-top:12px"><summary>The answer to the open question</summary><div class="body">on this 2-year held-out test the full
       44-feature <b>fusion + clim</b> model discriminates onsets <b>better</b> than the 2-feature lean model —
       <b>onset-MCC 0.47 vs 0.31, onset-AUC 0.93 vs 0.92</b> — a gap split roughly half-and-half between the <code>clim</code>
       base-rate feature (+0.07) and the wider CyAN + driver set (+0.08). That is a genuinely <b>tantalizing</b> hint that the drivers may
@@ -1028,12 +1038,6 @@
         </ul></li>
       <li><b>Drift detection:</b> is live performance still inside the validation/test window we signed off on? If it drifts
         outside, <b>ping to investigate and retrain</b> — with CyAN and the EPA forecast as continuously-ingested references.</li>
-      <li><b>Where this applies — and where it doesn’t:</b> the claim boundary we hold to as it goes operational.
-        <ul class="lim" style="margin-top:6px">
-          <li>It forecasts a <b>satellite bloom proxy</b> (WHO AL1 on CyAN), for <b>known Florida lakes</b>, into future weeks.</li>
-          <li>It does <b>not</b> measure toxins, does not claim treatment efficacy, and is not yet validated on unseen lakes or sub-resolvable waterbodies.</li>
-          <li>Every driver statement is <b>associational and model-relative</b>, not causal.</li>
-        </ul></li>
     </ul>
     <div class="note insight"><span class="lbl">Why this matters:</span> a forecast you don’t score is a claim you can’t defend.
       The hindcast is the audit trail; drift monitoring is what keeps a deployed model from silently going stale.</div>
