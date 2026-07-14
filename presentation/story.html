@@ -419,8 +419,13 @@
         <div class="note limitation"><span class="lbl">Read it as:</span> colour = cyanobacteria index (low → high); blank
         water is below detection, not missing. No lake boundaries yet — that comes next.</div>
         <div class="cyan-key"><span>Low</span><span class="cyan-ramp"></span><span>High</span> · cyanobacteria index (CI_cyano; dimensionless, ≈ 10⁴–10⁶ cyanobacteria cells/mL)</div>
+        <ul class="tight">
+          <li><b>Indirect</b> — an optical estimate of chlorophyll-a / biomass, not a direct cyanobacteria or toxin measure.</li>
+          <li><b>Slow refresh</b> — optical, so clouds block it; ~1 pass / 2 days, composited to weekly.</li>
+          <li><b>Coarse 300 m</b> — too big for SePRO ponds / small waters; even ~1 km lakes bleed onto land.</li>
+        </ul>
         <div class="step-meta">
-          <details class="drop limits" open><summary>CyAN limitations — the load-bearing ones</summary><div class="body">
+          <details class="drop limits"><summary>CyAN limitations — the load-bearing ones</summary><div class="body">
             <ul class="lim">
               <li><b>Coarse 300 m pixels</b> — reliable only for water ≥ ~900 m across (≥3×3 pixels); only ~5% of U.S. lakes are resolvable, and ~80% of <em>state-reported cyanoHAB records</em> fall in waterbodies too small/ill-shaped for the 3-pixel analysis.</li>
               <li><b>A spectral proxy, not a direct measure</b> — CI_cyano is a reflectance-shape index, not a cyano count; turbidity, sediment, CDOM, thin cloud and shoreline adjacency can bias it, and low-biomass cyano (below ~chl-a 20 µg/L) is hard to see.</li>
