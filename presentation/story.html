@@ -622,8 +622,8 @@
     <p class="sub" style="max-width:1120px">Every model input, by family. <b>Raw</b> = as measured; <b>derived</b> =
     the lags, trailing windows and anomalies that carry the forecast. Every temporal feature is stored as a
     <b>(value, staleness)</b> pair, so irregular sampling is handled without interpolation.</p>
-    <p class="sub" style="max-width:1120px"><b>Processing:</b> the tree models (HistGBM / XGBoost) take features as-is — they
-    handle missing values (NaN) natively and don’t need scaling. For the linear / logistic models, features are
+    <p class="sub" style="max-width:1120px"><b>Processing:</b> the tree model (HistGBM) takes features as-is — it
+    handles missing values (NaN) natively and doesn’t need scaling. For the linear / logistic models, features are
     <b>median-imputed and z-scored</b> (mean/SD <b>fit on the training years only</b>, then applied to validation and test).</p>
     <div style="overflow-x:auto">
     <table class="fcat">
@@ -763,10 +763,10 @@
     <h2>Which model families we trial — and which we don’t.</h2>
     <div class="split">
       <div class="col-txt">
-        <h4 style="color:var(--good);margin-bottom:4px">We trial — explainable, robust:</h4>
+        <h4 style="color:var(--good);margin-bottom:4px">Simple PoC models:</h4>
         <ul class="tight">
           <li><b>Regularized logistic GLM</b> — transparent, signed coefficients as log-odds.</li>
-          <li><b>Gradient-boosted trees — XGBoost / HistGBM</b> — handle sparse in-situ NaNs natively, robust to outliers and mixed scales, strong on tabular data, still explainable (SHAP / partial dependence).</li>
+          <li><b>Gradient-boosted trees — HistGBM</b> — handle sparse in-situ NaNs natively, robust to outliers and mixed scales, strong on tabular data, still explainable (SHAP / partial dependence).</li>
         </ul>
         <h4 style="color:var(--warn);margin:12px 0 4px">We don’t trial (here):</h4>
         <ul class="tight">
@@ -786,15 +786,15 @@
     <div style="margin-top:6px"><div id="chart-families"></div>
       <div class="fig-cap">Full-fusion model families (all 44 features <b>incl. climatology</b>) vs baselines and the CyAN-only ladder
         (h=1, held-out 2024–2026): <b>AUC-ROC</b> and <b>MCC</b> on all weeks, plus the <b>onset</b> (positive-flip) decision metric —
-        <b>onset-AUC</b> and <b>onset-MCC</b> (lighter bars). <span style="color:#e60000;font-weight:700">Red outline</span> = the three
-        families we actually test (GLM · HistGBM · XGBoost), each on the same 44-feature set (incl. climatology) that slide 17’s full-fusion model uses;
+        <b>onset-AUC</b> and <b>onset-MCC</b> (lighter bars). <span style="color:#e60000;font-weight:700">Red outline</span> = the two
+        families we actually test (GLM · HistGBM), each on the same 44-feature set (incl. climatology) that slide 17’s full-fusion model uses;
         the rest are reference baselines (the CyAN AR-ladder stays clim-free). On aggregate AUC the families are near-identical
-        (0.980–0.984); on the onset alert all three edge above climatology (onset-MCC: HistGBM 0.47 leads, XGBoost 0.44 and GLM 0.38 vs
+        (0.980–0.983); on the onset alert both edge above climatology (onset-MCC: HistGBM 0.47 leads, GLM 0.38 vs
         climatology’s 0.36) — but the separation is modest and, as slide 17 shows, <b>not yet proven</b>. Architecture barely moves
         aggregate skill; on onset, HistGBM leads. From <code>models/outputs/experiments.md</code>.</div></div>
     <div class="step-meta">
       <details class="drop sources"><summary>Sources &amp; data</summary><div class="body">
-        <div class="cite"><b>Model-family choice</b> — <code>models/DESIGN.md</code> §7 (four explainable classifiers: GLM · SVC · XGBoost · GAM). EPA’s own SVC/RF/DNN/LSTM/RNN/GRU comparison (Schaeffer 2024, Table S1) shows no neural-net advantage on this task.</div>
+        <div class="cite"><b>Model-family choice</b> — <code>models/DESIGN.md</code> §7 (explainable tabular classifiers only). EPA’s own SVC/RF/DNN/LSTM/RNN/GRU comparison (Schaeffer 2024, Table S1) shows no neural-net advantage on this task.</div>
       </div></details>
     </div>
   </div>
@@ -1475,9 +1475,9 @@
     var el=document.getElementById('chart-families'); if(!el||!S.results||!S.results.families) return;
     var rows=S.results.families.rows;
     var SHORT={'Persistence':'Persist.','Climatology':'Clim.','CyAN ladder (HistGBM)':'CyAN ladder',
-      'GLM · logistic (all features + clim)':'GLM','HistGBM (all features + clim)':'HistGBM','XGBoost (all features + clim)':'XGBoost'};
+      'GLM · logistic (all features + clim)':'GLM','HistGBM (all features + clim)':'HistGBM'};
     var x=rows.map(function(r){return SHORT[r.label]||r.label;});
-    // red outline = the models WE test (GLM / HistGBM / XGBoost); baselines + CyAN ladder are references
+    // red outline = the models WE test (GLM / HistGBM); baselines + CyAN ladder are references
     var isOurs=rows.map(function(r){return r.kind==='family';});
     var bcol=isOurs.map(function(o){return o?'#e60000':'rgba(0,0,0,0)';});
     var bw=isOurs.map(function(o){return o?2.5:0;});

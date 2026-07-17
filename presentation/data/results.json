@@ -751,19 +751,6 @@
     "flipauc": 0.291,
     "onset_mcc": 0.466,
     "onset_auc": 0.929
-   },
-   {
-    "label": "XGBoost (all features + clim)",
-    "kind": "family",
-    "auc": 0.984,
-    "aucpr": 0.96,
-    "brier": 0.043,
-    "mcc": 0.858,
-    "within": 0.902,
-    "flipmcc": -0.408,
-    "flipauc": 0.227,
-    "onset_mcc": 0.437,
-    "onset_auc": 0.94
    }
   ]
  }

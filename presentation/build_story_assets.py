@@ -539,8 +539,7 @@ def build_results():
                ("climatology", "Climatology", "baseline"),
                ("cyan_ladder / histgbm", "CyAN ladder (HistGBM)", "ladder"),
                ("fusion_full+clim / logistic", "GLM · logistic (all features + clim)", "family"),
-               ("fusion_full+clim / histgbm", "HistGBM (all features + clim)", "family"),
-               ("fusion_full+clim / xgboost", "XGBoost (all features + clim)", "family")]
+               ("fusion_full+clim / histgbm", "HistGBM (all features + clim)", "family")]
         res["families"] = {"window": "2024-07 .. 2026 held-out test, h=1, all features + climatology (pre-ablation)",
                            "rows": [dict(label=lab, kind=kind, **fam[key]) for key, lab, kind in SEL if key in fam]}
     else:
